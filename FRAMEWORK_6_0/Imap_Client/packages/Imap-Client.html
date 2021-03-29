@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                    </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="packages/Imap.html">Imap</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -package">
+        <h2 class="phpdocumentor-content__title">Client</h2>
+
+        
+
+<h3 id="interfaces_class_traits">
+    Interfaces, Classes and Traits
+    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Imap-Client-Base-Password.html"><abbr title="\Horde_Imap_Client_Base_Password">Horde_Imap_Client_Base_Password</abbr></a></dt>
+        <dd>Interface to allow dynamic generation of server password.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Imap-Client-Data-Format-String-Support-Nonascii.html"><abbr title="\Horde_Imap_Client_Data_Format_String_Support_Nonascii">Horde_Imap_Client_Data_Format_String_Support_Nonascii</abbr></a></dt>
+        <dd>Interface a Horde_Imap_Client_Data_Format_String object should extend if
+it supports non-ASCII output (RFC 3501 [4.3.1]).</dd>
+    
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Auth-DigestMD5.html"><abbr title="\Horde_Imap_Client_Auth_DigestMD5">Horde_Imap_Client_Auth_DigestMD5</abbr></a></dt>
+        <dd>Provides the code needed to authenticate via the DIGEST-MD5 SASL mechanism
+(defined in RFC 2831). This method has been obsoleted by RFC 6331, but
+still is in use on legacy servers.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Auth-Scram.html"><abbr title="\Horde_Imap_Client_Auth_Scram">Horde_Imap_Client_Auth_Scram</abbr></a></dt>
+        <dd>Provides authentication via the SCRAM SASL mechanism (RFC 5802 [3]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Base-Alerts.html"><abbr title="\Horde_Imap_Client_Base_Alerts">Horde_Imap_Client_Base_Alerts</abbr></a></dt>
+        <dd>Handle IMAP alerts sent from the server.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Base.html"><abbr title="\Horde_Imap_Client_Base">Horde_Imap_Client_Base</abbr></a></dt>
+        <dd>An abstracted API interface to IMAP backends supporting the IMAP4rev1
+protocol (RFC 3501).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Cache-Backend-Cache.html"><abbr title="\Horde_Imap_Client_Cache_Backend_Cache">Horde_Imap_Client_Cache_Backend_Cache</abbr></a></dt>
+        <dd>A Horde_Cache implementation for caching IMAP/POP data.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Cache-Backend-Db.html"><abbr title="\Horde_Imap_Client_Cache_Backend_Db">Horde_Imap_Client_Cache_Backend_Db</abbr></a></dt>
+        <dd>A SQL database implementation for caching IMAP/POP data.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Cache-Backend-Hashtable.html"><abbr title="\Horde_Imap_Client_Cache_Backend_Hashtable">Horde_Imap_Client_Cache_Backend_Hashtable</abbr></a></dt>
+        <dd>A Horde_HashTable implementation for caching IMAP/POP data.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Cache-Backend-Mongo.html"><abbr title="\Horde_Imap_Client_Cache_Backend_Mongo">Horde_Imap_Client_Cache_Backend_Mongo</abbr></a></dt>
+        <dd>A MongoDB database implementation for caching IMAP/POP data.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Cache-Backend-Null.html"><abbr title="\Horde_Imap_Client_Cache_Backend_Null">Horde_Imap_Client_Cache_Backend_Null</abbr></a></dt>
+        <dd>A null backend class for storing cached IMAP/POP data.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Cache-Backend.html"><abbr title="\Horde_Imap_Client_Cache_Backend">Horde_Imap_Client_Cache_Backend</abbr></a></dt>
+        <dd>The abstract backend class for storing IMAP cached data.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Cache.html"><abbr title="\Horde_Imap_Client_Cache">Horde_Imap_Client_Cache</abbr></a></dt>
+        <dd>An interface to cache data retrieved from the IMAP server.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Acl.html"><abbr title="\Horde_Imap_Client_Data_Acl">Horde_Imap_Client_Data_Acl</abbr></a></dt>
+        <dd>ACL rights for a mailbox (see RFC 2086/4314).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-AclCommon.html"><abbr title="\Horde_Imap_Client_Data_AclCommon">Horde_Imap_Client_Data_AclCommon</abbr></a></dt>
+        <dd>Provides common methods shared in all ACL classes (see RFC 2086/4314).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-AclNegative.html"><abbr title="\Horde_Imap_Client_Data_AclNegative">Horde_Imap_Client_Data_AclNegative</abbr></a></dt>
+        <dd>ACL *negative* rights for a mailbox (see RFC 2086/4314 [2]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-AclRights.html"><abbr title="\Horde_Imap_Client_Data_AclRights">Horde_Imap_Client_Data_AclRights</abbr></a></dt>
+        <dd>Available ACL rights for a mailbox/identifier (see RFC 2086/4314).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-BaseSubject.html"><abbr title="\Horde_Imap_Client_Data_BaseSubject">Horde_Imap_Client_Data_BaseSubject</abbr></a></dt>
+        <dd>Determines the &quot;base subject&quot; of a string (RFC 5256 [2.1]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Capability-Imap.html"><abbr title="\Horde_Imap_Client_Data_Capability_Imap">Horde_Imap_Client_Data_Capability_Imap</abbr></a></dt>
+        <dd>Query the capabilities of an IMAP server.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Capability.html"><abbr title="\Horde_Imap_Client_Data_Capability">Horde_Imap_Client_Data_Capability</abbr></a></dt>
+        <dd>Query the capabilities of a server.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Envelope.html"><abbr title="\Horde_Imap_Client_Data_Envelope">Horde_Imap_Client_Data_Envelope</abbr></a></dt>
+        <dd>Envelope data as returned by the IMAP FETCH command (RFC 3501 [7.4.2]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Fetch-Pop3.html"><abbr title="\Horde_Imap_Client_Data_Fetch_Pop3">Horde_Imap_Client_Data_Fetch_Pop3</abbr></a></dt>
+        <dd>Object containg POP3 fetch data.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Fetch.html"><abbr title="\Horde_Imap_Client_Data_Fetch">Horde_Imap_Client_Data_Fetch</abbr></a></dt>
+        <dd>Object containing data returned by the Horde_Imap_Client_Base#fetch()
+command.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-Astring-Nonascii.html"><abbr title="\Horde_Imap_Client_Data_Format_Astring_Nonascii">Horde_Imap_Client_Data_Format_Astring_Nonascii</abbr></a></dt>
+        <dd>Extend astring element to allow for non-ASCII characters.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-Astring.html"><abbr title="\Horde_Imap_Client_Data_Format_Astring">Horde_Imap_Client_Data_Format_Astring</abbr></a></dt>
+        <dd>Object representation of an IMAP astring (atom or string) (RFC 3501 [4.3]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-Atom.html"><abbr title="\Horde_Imap_Client_Data_Format_Atom">Horde_Imap_Client_Data_Format_Atom</abbr></a></dt>
+        <dd>Object representation of an IMAP atom (RFC 3501 [4.1]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-Date.html"><abbr title="\Horde_Imap_Client_Data_Format_Date">Horde_Imap_Client_Data_Format_Date</abbr></a></dt>
+        <dd>Object representation of an IMAP date string (RFC 3501 [9]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-DateTime.html"><abbr title="\Horde_Imap_Client_Data_Format_DateTime">Horde_Imap_Client_Data_Format_DateTime</abbr></a></dt>
+        <dd>Object representation of an IMAP date-time string (RFC 3501 [9]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-Exception.html"><abbr title="\Horde_Imap_Client_Data_Format_Exception">Horde_Imap_Client_Data_Format_Exception</abbr></a></dt>
+        <dd>Exception object for IMAP data format errors.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-Filter-Quote.html"><abbr title="\Horde_Imap_Client_Data_Format_Filter_Quote">Horde_Imap_Client_Data_Format_Filter_Quote</abbr></a></dt>
+        <dd>Stream filter to output a quoted IMAP string.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-Filter-String.html"><abbr title="\Horde_Imap_Client_Data_Format_Filter_String">Horde_Imap_Client_Data_Format_Filter_String</abbr></a></dt>
+        <dd>Stream filter to analyze an IMAP string to determine how to send to the
+server.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-List.html"><abbr title="\Horde_Imap_Client_Data_Format_List">Horde_Imap_Client_Data_Format_List</abbr></a></dt>
+        <dd>Object representation of an IMAP parenthesized list (RFC 3501 [4.4]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-ListMailbox-Utf8.html"><abbr title="\Horde_Imap_Client_Data_Format_ListMailbox_Utf8">Horde_Imap_Client_Data_Format_ListMailbox_Utf8</abbr></a></dt>
+        <dd>Object representation of an IMAP mailbox string used in a LIST command
+when UTF8=ACCEPT is supported/enabled on the server (RFC 6855 [3]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-ListMailbox.html"><abbr title="\Horde_Imap_Client_Data_Format_ListMailbox">Horde_Imap_Client_Data_Format_ListMailbox</abbr></a></dt>
+        <dd>Object representation of an IMAP mailbox string used in a LIST command.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-Mailbox-Utf8.html"><abbr title="\Horde_Imap_Client_Data_Format_Mailbox_Utf8">Horde_Imap_Client_Data_Format_Mailbox_Utf8</abbr></a></dt>
+        <dd>Object representation of an IMAP mailbox string allowed when UTF8=ACCEPT
+is supported/enabled on the server (RFC 6855 [3]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-Mailbox.html"><abbr title="\Horde_Imap_Client_Data_Format_Mailbox">Horde_Imap_Client_Data_Format_Mailbox</abbr></a></dt>
+        <dd>Object representation of an IMAP mailbox string (RFC 3501 [9]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-Nil.html"><abbr title="\Horde_Imap_Client_Data_Format_Nil">Horde_Imap_Client_Data_Format_Nil</abbr></a></dt>
+        <dd>Object representation of an IMAP NIL (RFC 3501 [4.5]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-Nstring-Nonascii.html"><abbr title="\Horde_Imap_Client_Data_Format_Nstring_Nonascii">Horde_Imap_Client_Data_Format_Nstring_Nonascii</abbr></a></dt>
+        <dd>Extend nstring element to allow for non-ASCII characters.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-Nstring.html"><abbr title="\Horde_Imap_Client_Data_Format_Nstring">Horde_Imap_Client_Data_Format_Nstring</abbr></a></dt>
+        <dd>Object representation of an IMAP nstring (NIL or string) (RFC 3501 [4.5]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-Number.html"><abbr title="\Horde_Imap_Client_Data_Format_Number">Horde_Imap_Client_Data_Format_Number</abbr></a></dt>
+        <dd>Object representation of an IMAP number (RFC 3501 [4.2]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-String-Nonascii.html"><abbr title="\Horde_Imap_Client_Data_Format_String_Nonascii">Horde_Imap_Client_Data_Format_String_Nonascii</abbr></a></dt>
+        <dd>Extend string element to allow for non-ASCII characters.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format-String.html"><abbr title="\Horde_Imap_Client_Data_Format_String">Horde_Imap_Client_Data_Format_String</abbr></a></dt>
+        <dd>Object representation of an IMAP string (RFC 3501 [4.3]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Format.html"><abbr title="\Horde_Imap_Client_Data_Format">Horde_Imap_Client_Data_Format</abbr></a></dt>
+        <dd>Object representation of an IMAP data format (RFC 3501 [4]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Namespace.html"><abbr title="\Horde_Imap_Client_Data_Namespace">Horde_Imap_Client_Data_Namespace</abbr></a></dt>
+        <dd>Namespace data.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-SearchCharset-Utf8.html"><abbr title="\Horde_Imap_Client_Data_SearchCharset_Utf8">Horde_Imap_Client_Data_SearchCharset_Utf8</abbr></a></dt>
+        <dd>Query the search charsets available on a server that supports the UTF-8
+IMAP extension (RFC 6855).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-SearchCharset.html"><abbr title="\Horde_Imap_Client_Data_SearchCharset">Horde_Imap_Client_Data_SearchCharset</abbr></a></dt>
+        <dd>Query the search charsets available on a server.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Sync.html"><abbr title="\Horde_Imap_Client_Data_Sync">Horde_Imap_Client_Data_Sync</abbr></a></dt>
+        <dd>Mailbox synchronization results.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Data-Thread.html"><abbr title="\Horde_Imap_Client_Data_Thread">Horde_Imap_Client_Data_Thread</abbr></a></dt>
+        <dd>Object representing the threaded sort results from
+Horde_Imap_Client_Base#thread().</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-DateTime.html"><abbr title="\Horde_Imap_Client_DateTime">Horde_Imap_Client_DateTime</abbr></a></dt>
+        <dd>A wrapper around PHP&#039;s native DateTime class that handles improperly
+formatted dates and adds a few features missing from the base object
+(string representation; doesn&#039;t fail on bad date input).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Exception-NoSupportExtension.html"><abbr title="\Horde_Imap_Client_Exception_NoSupportExtension">Horde_Imap_Client_Exception_NoSupportExtension</abbr></a></dt>
+        <dd>Exception thrown for non-supported server extensions.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Exception-NoSupportPop3.html"><abbr title="\Horde_Imap_Client_Exception_NoSupportPop3">Horde_Imap_Client_Exception_NoSupportPop3</abbr></a></dt>
+        <dd>Exception thrown for non-supported IMAP features on POP3 servers.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Exception-SearchCharset.html"><abbr title="\Horde_Imap_Client_Exception_SearchCharset">Horde_Imap_Client_Exception_SearchCharset</abbr></a></dt>
+        <dd>Exception thrown if search query text cannot be converted to different
+charset.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Exception-ServerResponse.html"><abbr title="\Horde_Imap_Client_Exception_ServerResponse">Horde_Imap_Client_Exception_ServerResponse</abbr></a></dt>
+        <dd>Exception thrown for server error responses.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Exception-Sync.html"><abbr title="\Horde_Imap_Client_Exception_Sync">Horde_Imap_Client_Exception_Sync</abbr></a></dt>
+        <dd>Exception thrown for mailbox synchronization errors.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Exception.html"><abbr title="\Horde_Imap_Client_Exception">Horde_Imap_Client_Exception</abbr></a></dt>
+        <dd>Exception handler for the Horde_Imap_Client package.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Fetch-Query.html"><abbr title="\Horde_Imap_Client_Fetch_Query">Horde_Imap_Client_Fetch_Query</abbr></a></dt>
+        <dd>Fetch query object for use with Horde_Imap_Client_Base#fetch().</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Fetch-Results.html"><abbr title="\Horde_Imap_Client_Fetch_Results">Horde_Imap_Client_Fetch_Results</abbr></a></dt>
+        <dd>Fetch results object for use with Horde_Imap_Client_Base#fetch().</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Ids-Map.html"><abbr title="\Horde_Imap_Client_Ids_Map">Horde_Imap_Client_Ids_Map</abbr></a></dt>
+        <dd>An object implementing lookups between UIDs and message sequence numbers.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Ids-Pop3.html"><abbr title="\Horde_Imap_Client_Ids_Pop3">Horde_Imap_Client_Ids_Pop3</abbr></a></dt>
+        <dd>Wrapper around Ids object that correctly handles POP3 UID strings.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Ids.html"><abbr title="\Horde_Imap_Client_Ids">Horde_Imap_Client_Ids</abbr></a></dt>
+        <dd>An object that provides a way to identify a list of IMAP indices.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Interaction-Client.html"><abbr title="\Horde_Imap_Client_Interaction_Client">Horde_Imap_Client_Interaction_Client</abbr></a></dt>
+        <dd>An object representing an IMAP client command interaction (RFC 3501
+[2.2.1]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Interaction-Command-Continuation.html"><abbr title="\Horde_Imap_Client_Interaction_Command_Continuation">Horde_Imap_Client_Interaction_Command_Continuation</abbr></a></dt>
+        <dd>An object representing a portion of an IMAP command that requires data
+sent in a continuation response (RFC 3501 [2.2.1]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Interaction-Command.html"><abbr title="\Horde_Imap_Client_Interaction_Command">Horde_Imap_Client_Interaction_Command</abbr></a></dt>
+        <dd>An object representing an IMAP command (RFC 3501 [2.2.1]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Interaction-Pipeline.html"><abbr title="\Horde_Imap_Client_Interaction_Pipeline">Horde_Imap_Client_Interaction_Pipeline</abbr></a></dt>
+        <dd>An object representing a series of IMAP client commands (RFC 3501 [2.2.1])
+to be processed at the same time.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Interaction-Server-Continuation.html"><abbr title="\Horde_Imap_Client_Interaction_Server_Continuation">Horde_Imap_Client_Interaction_Server_Continuation</abbr></a></dt>
+        <dd>An object representing an IMAP continuation response (RFC 3501 [2.2.2]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Interaction-Server-Tagged.html"><abbr title="\Horde_Imap_Client_Interaction_Server_Tagged">Horde_Imap_Client_Interaction_Server_Tagged</abbr></a></dt>
+        <dd>An object representing an IMAP tagged response (RFC 3501 [2.2.2]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Interaction-Server-Untagged.html"><abbr title="\Horde_Imap_Client_Interaction_Server_Untagged">Horde_Imap_Client_Interaction_Server_Untagged</abbr></a></dt>
+        <dd>An object representing an IMAP untagged response (RFC 3501 [2.2.2]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Interaction-Server.html"><abbr title="\Horde_Imap_Client_Interaction_Server">Horde_Imap_Client_Interaction_Server</abbr></a></dt>
+        <dd>An object representing an IMAP server command interaction (RFC 3501
+[2.2.2]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Mailbox-List.html"><abbr title="\Horde_Imap_Client_Mailbox_List">Horde_Imap_Client_Mailbox_List</abbr></a></dt>
+        <dd>Container of IMAP mailboxes.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Mailbox.html"><abbr title="\Horde_Imap_Client_Mailbox">Horde_Imap_Client_Mailbox</abbr></a></dt>
+        <dd>An object that provides a way to switch between UTF7-IMAP and
+human-readable representations of a mailbox name.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Namespace-List.html"><abbr title="\Horde_Imap_Client_Namespace_List">Horde_Imap_Client_Namespace_List</abbr></a></dt>
+        <dd>List of namespaces.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Password-Xoauth2.html"><abbr title="\Horde_Imap_Client_Password_Xoauth2">Horde_Imap_Client_Password_Xoauth2</abbr></a></dt>
+        <dd>Generates an OAuth 2.0 authentication token as used in the Gmail XOAUTH2
+authentication mechanism.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Search-Query.html"><abbr title="\Horde_Imap_Client_Search_Query">Horde_Imap_Client_Search_Query</abbr></a></dt>
+        <dd>Abstraction of the IMAP4rev1 search criteria (see RFC 3501 [6.4.4]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Socket-Pop3.html"><abbr title="\Horde_Imap_Client_Socket_Pop3">Horde_Imap_Client_Socket_Pop3</abbr></a></dt>
+        <dd>An interface to a POP3 server using PHP functions.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Socket.html"><abbr title="\Horde_Imap_Client_Socket">Horde_Imap_Client_Socket</abbr></a></dt>
+        <dd>An interface to an IMAP4rev1 server (RFC 3501) using standard PHP code.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Translation.html"><abbr title="\Horde_Imap_Client_Translation">Horde_Imap_Client_Translation</abbr></a></dt>
+        <dd>Translation wrapper class for Horde_Imap_Client.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Url-Base.html"><abbr title="\Horde_Imap_Client_Url_Base">Horde_Imap_Client_Url_Base</abbr></a></dt>
+        <dd>Base object representation of a mail server URL.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Url-Imap-Relative.html"><abbr title="\Horde_Imap_Client_Url_Imap_Relative">Horde_Imap_Client_Url_Imap_Relative</abbr></a></dt>
+        <dd>Object representation of a relative IMAP (RFC 5092/5593) URL.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Url-Imap.html"><abbr title="\Horde_Imap_Client_Url_Imap">Horde_Imap_Client_Url_Imap</abbr></a></dt>
+        <dd>Object representation of an IMAP (RFC 5092/5593) URL.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Url-Pop3.html"><abbr title="\Horde_Imap_Client_Url_Pop3">Horde_Imap_Client_Url_Pop3</abbr></a></dt>
+        <dd>Object representation of a a POP3 (RFC 2384) URL.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Url.html"><abbr title="\Horde_Imap_Client_Url">Horde_Imap_Client_Url</abbr></a></dt>
+        <dd>Object representation of a a POP3 (RFC 2384) or IMAP (RFC 5092/5593) URL.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client-Utf7imap.html"><abbr title="\Horde_Imap_Client_Utf7imap">Horde_Imap_Client_Utf7imap</abbr></a></dt>
+        <dd>Allows conversions between UTF-8 and UTF7-IMAP (RFC 3501 [5.1.3]).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Imap-Client.html"><abbr title="\Horde_Imap_Client">Horde_Imap_Client</abbr></a></dt>
+        <dd>Base class for Horde_Imap_Client package. Defines common constants for use
+in the package.</dd>
+    
+    </dl>
+
+
+
+        
+
+        
+    </article>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+            </div>
+        </div>
+        <a href="packages/Imap-Client.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+</body>
+</html>
