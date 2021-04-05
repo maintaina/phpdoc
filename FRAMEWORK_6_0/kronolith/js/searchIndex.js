@@ -3276,6 +3276,21 @@ Search.appendIndex(
             "summary": "Return\u0020the\u0020driver\u0020instance.",
             "url": "classes/Kronolith-Factory-Geo.html#method_create"
         },                {
+            "fqsen": "\\Kronolith_Factory_IcalendarStorage",
+            "name": "Kronolith_Factory_IcalendarStorage",
+            "summary": "Horde_Injector\u0020based\u0020factory\u0020for\u0020Icalendar\u0020storage.",
+            "url": "classes/Kronolith-Factory-IcalendarStorage.html"
+        },                {
+            "fqsen": "\\Kronolith_Factory_IcalendarStorage\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "Return\u0020the\u0020caldav\u0020driver\u0020instance.",
+            "url": "classes/Kronolith-Factory-IcalendarStorage.html#method_create"
+        },                {
+            "fqsen": "\\Kronolith_Factory_IcalendarStorage\u003A\u003A\u0024_instances",
+            "name": "_instances",
+            "summary": "Instances.",
+            "url": "classes/Kronolith-Factory-IcalendarStorage.html#property__instances"
+        },                {
             "fqsen": "\\Kronolith_Factory_Shares",
             "name": "Kronolith_Factory_Shares",
             "summary": "Horde_Injector\u0020based\u0020factory\u0020for\u0020the\u0020Kronolith\u0020share\u0020driver.",
@@ -3921,6 +3936,11 @@ Search.appendIndex(
             "summary": "Responsible\u0020for\u0020any\u0020logic\u0020needed\u0020before\u0020the\u0020event\u0020is\u0020saved.\u0020Called\u0020for\nEVERY\u0020component\u0020in\u0020the\u0020iCalendar\u0020object.\u0020Returning\u0020false\u0020from\u0020this\u0020method\nwill\u0020cause\u0020the\u0020current\u0020component\u0020to\u0020be\u0020ignored.\u0020Returning\u0020true\u0020causes\u0020it\nto\u0020be\u0020processed.",
             "url": "classes/Kronolith-Icalendar-Handler-Dav.html#method__preSave"
         },                {
+            "fqsen": "\\Kronolith_Icalendar_Handler_Dav\u003A\u003A_relevantEventChanges\u0028\u0029",
+            "name": "_relevantEventChanges",
+            "summary": "Is\u0020an\u0020event\u0020update\u0020worthy\u0020of\u0020an\u0020Itip\u0020update\u003F",
+            "url": "classes/Kronolith-Icalendar-Handler-Dav.html#method__relevantEventChanges"
+        },                {
             "fqsen": "\\Kronolith_Icalendar_Handler_Dav\u003A\u003A_postSave\u0028\u0029",
             "name": "_postSave",
             "summary": "Responsible\u0020for\u0020any\u0020logic\u0020needed\u0020after\u0020each\u0020event\u0020is\u0020saved.\u0020Only\u0020called\nwhen\u0020base\u0020event\u0020\u0028or\u0020an\u0020event\u0020with\u0020no\u0020recurrence\u0029\u0020is\u0020saved.\u0020Exception\nevents\u0020are\u0020not\u0020passed.",
@@ -3930,6 +3950,11 @@ Search.appendIndex(
             "name": "_dav",
             "summary": "The\u0020DAV\u0020storage\u0020driver.",
             "url": "classes/Kronolith-Icalendar-Handler-Dav.html#property__dav"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Handler_Dav\u003A\u003A\u0024_storage",
+            "name": "_storage",
+            "summary": "The\u0020iCalendar\u0020storage\u0020driver.",
+            "url": "classes/Kronolith-Icalendar-Handler-Dav.html#property__storage"
         },                {
             "fqsen": "\\Kronolith_Icalendar_Handler_Dav\u003A\u003A\u0024_calendar",
             "name": "_calendar",
@@ -3950,6 +3975,86 @@ Search.appendIndex(
             "name": "_oldAttendees",
             "summary": "List\u0020of\u0020attendess\u0020that\u0020have\u0020been\u0020previously\u0020invited.\u0020Used\u0020to\u0020detect\u0020if\nattendees\u0020are\u0020removed\u0020and\u0020to\u0020send\u0020ITIP_CANCEL\u0020to\u0020these\u0020attendees.",
             "url": "classes/Kronolith-Icalendar-Handler-Dav.html#property__oldAttendees"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage_Null",
+            "name": "Kronolith_Icalendar_Storage_Null",
+            "summary": "Noop\u0020storage\u0020driver\u0020for\u0020CalDAV\u0020data",
+            "url": "classes/Kronolith-Icalendar-Storage-Null.html"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage_Null\u003A\u003Aput\u0028\u0029",
+            "name": "put",
+            "summary": "",
+            "url": "classes/Kronolith-Icalendar-Storage-Null.html#method_put"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage_Null\u003A\u003Aremove\u0028\u0029",
+            "name": "remove",
+            "summary": "",
+            "url": "classes/Kronolith-Icalendar-Storage-Null.html#method_remove"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage_Null\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Kronolith-Icalendar-Storage-Null.html#method_get"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage_Sql",
+            "name": "Kronolith_Icalendar_Storage_Sql",
+            "summary": "Simple\u0020storage\u0020for\u0020caldav\u0020related\u0020data",
+            "url": "classes/Kronolith-Icalendar-Storage-Sql.html"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage_Sql\u003A\u003Aremove\u0028\u0029",
+            "name": "remove",
+            "summary": "Remove\u0020existing\u0020item.",
+            "url": "classes/Kronolith-Icalendar-Storage-Sql.html#method_remove"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage_Sql\u003A\u003Aput\u0028\u0029",
+            "name": "put",
+            "summary": "Create\u0020or\u0020update\u0020item.",
+            "url": "classes/Kronolith-Icalendar-Storage-Sql.html#method_put"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage_Sql\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Retrieve\u0020stored\u0020item.",
+            "url": "classes/Kronolith-Icalendar-Storage-Sql.html#method_get"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage_Sql\u003A\u003A_getEntity\u0028\u0029",
+            "name": "_getEntity",
+            "summary": "",
+            "url": "classes/Kronolith-Icalendar-Storage-Sql.html#method__getEntity"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage_Sql\u003A\u003A_noNullString\u0028\u0029",
+            "name": "_noNullString",
+            "summary": "Filter\u0020out\u0020invalid\/malicious\u0020calls,\u0020throw\u0020Exception",
+            "url": "classes/Kronolith-Icalendar-Storage-Sql.html#method__noNullString"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage_Sql\u003A\u003A\u0024_classname",
+            "name": "_classname",
+            "summary": "",
+            "url": "classes/Kronolith-Icalendar-Storage-Sql.html#property__classname"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage_Sql\u003A\u003A\u0024_table",
+            "name": "_table",
+            "summary": "",
+            "url": "classes/Kronolith-Icalendar-Storage-Sql.html#property__table"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage",
+            "name": "Kronolith_Icalendar_Storage",
+            "summary": "",
+            "url": "classes/Kronolith-Icalendar-Storage.html"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage\u003A\u003Aput\u0028\u0029",
+            "name": "put",
+            "summary": "",
+            "url": "classes/Kronolith-Icalendar-Storage.html#method_put"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Kronolith-Icalendar-Storage.html#method_get"
+        },                {
+            "fqsen": "\\Kronolith_Icalendar_Storage\u003A\u003Aremove\u0028\u0029",
+            "name": "remove",
+            "summary": "",
+            "url": "classes/Kronolith-Icalendar-Storage.html#method_remove"
         },                {
             "fqsen": "\\Kronolith",
             "name": "Kronolith",

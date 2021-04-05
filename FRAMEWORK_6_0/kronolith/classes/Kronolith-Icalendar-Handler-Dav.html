@@ -213,6 +213,13 @@ account necessary steps to deal with recurrence series and exceptions.</p>
 <dd>List of attendess that have been previously invited. Used to detect if
 attendees are removed and to send ITIP_CANCEL to these attendees.</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Kronolith-Icalendar-Handler-Dav.html#property__storage">$_storage</a>
+    <span>
+                &nbsp;: <a href="classes/Kronolith-Icalendar-Storage.html"><abbr title="\Kronolith_Icalendar_Storage">Kronolith_Icalendar_Storage</abbr></a>            </span>
+</dt>
+<dd>The iCalendar storage driver.</dd>
+
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Kronolith-Icalendar-Handler-Dav.html#method___construct">__construct()</a>
     <span>
@@ -253,6 +260,13 @@ to be processed.</dd>
 </dt>
 <dd>Process the iCalendar data.</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Kronolith-Icalendar-Handler-Dav.html#method__relevantEventChanges">_relevantEventChanges()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Is an event update worthy of an Itip update?</dd>
+
         </dl>
 
 
@@ -281,7 +295,7 @@ to be processed.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Icalendar/Handler/Dav.php"><a href="files/icalendar-handler-dav.html"><abbr title="Icalendar/Handler/Dav.php">Dav.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 </aside>
 
         <p class="phpdocumentor-summary">The calendar id to be imported into.</p>
@@ -407,7 +421,7 @@ to be processed.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Icalendar/Handler/Dav.php"><a href="files/icalendar-handler-dav.html"><abbr title="Icalendar/Handler/Dav.php">Dav.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 </aside>
 
         <p class="phpdocumentor-summary">Temporary cache of the existing copy of an event being replaced.</p>
@@ -471,7 +485,7 @@ to be processed.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Icalendar/Handler/Dav.php"><a href="files/icalendar-handler-dav.html"><abbr title="Icalendar/Handler/Dav.php">Dav.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 </aside>
 
         <p class="phpdocumentor-summary">List of attendees that should not be sent iTip notifications.</p>
@@ -503,7 +517,7 @@ to be processed.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Icalendar/Handler/Dav.php"><a href="files/icalendar-handler-dav.html"><abbr title="Icalendar/Handler/Dav.php">Dav.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 </aside>
 
         <p class="phpdocumentor-summary">List of attendess that have been previously invited. Used to detect if
@@ -513,6 +527,38 @@ attendees are removed and to send ITIP_CANCEL to these attendees.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Kronolith-Attendee-List.html"><abbr title="\Kronolith_Attendee_List">Kronolith_Attendee_List</abbr></a></span>
     <span class="phpdocumentor-signature__name">$_oldAttendees</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property__storage">
+        $_storage
+        <a href="classes/Kronolith-Icalendar-Handler-Dav.html#property__storage" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Icalendar/Handler/Dav.php"><a href="files/icalendar-handler-dav.html"><abbr title="Icalendar/Handler/Dav.php">Dav.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">37</span>
+</aside>
+
+        <p class="phpdocumentor-summary">The iCalendar storage driver.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Kronolith-Icalendar-Storage.html"><abbr title="\Kronolith_Icalendar_Storage">Kronolith_Icalendar_Storage</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$_storage</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -540,13 +586,13 @@ attendees are removed and to send ITIP_CANCEL to these attendees.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Icalendar/Handler/Dav.php"><a href="files/icalendar-handler-dav.html"><abbr title="Icalendar/Handler/Dav.php">Dav.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Icalendar">Horde_Icalendar</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$iCal</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Kronolith-Driver.html"><abbr title="\Kronolith_Driver">Kronolith_Driver</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$driver</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Icalendar">Horde_Icalendar</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$iCal</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Kronolith-Driver.html"><abbr title="\Kronolith_Driver">Kronolith_Driver</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$driver</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Kronolith-Icalendar-Storage.html"><abbr title="\Kronolith_Icalendar_Storage">Kronolith_Icalendar_Storage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$storage</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -571,9 +617,18 @@ attendees are removed and to send ITIP_CANCEL to these attendees.</p>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$storage</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Kronolith-Icalendar-Storage.html"><abbr title="\Kronolith_Icalendar_Storage">Kronolith_Icalendar_Storage</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The raw Icalendar Storage driver.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$params</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Any additional parameters needed for
 the importer. For this driver we
@@ -641,7 +696,7 @@ identifier for the (base) event.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Icalendar/Handler/Dav.php"><a href="files/icalendar-handler-dav.html"><abbr title="Icalendar/Handler/Dav.php">Dav.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">182</span>
+    <span class="phpdocumentor-element-found-in__line">247</span>
 </aside>
 
         <p class="phpdocumentor-summary">Responsible for any logic needed after each event is saved. Only called
@@ -689,7 +744,7 @@ events are not passed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Icalendar/Handler/Dav.php"><a href="files/icalendar-handler-dav.html"><abbr title="Icalendar/Handler/Dav.php">Dav.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 </aside>
 
         <p class="phpdocumentor-summary">Responsible for any logic needed before the event is saved. Called for
@@ -773,6 +828,80 @@ to be processed.</p>
             &mdash;
             <section class="phpdocumentor-description"><p>A hash of UID =&gt; id.</p>
 </section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method__relevantEventChanges">
+        _relevantEventChanges()
+        <a href="classes/Kronolith-Icalendar-Handler-Dav.html#method__relevantEventChanges" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Icalendar/Handler/Dav.php"><a href="files/icalendar-handler-dav.html"><abbr title="Icalendar/Handler/Dav.php">Dav.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">218</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Is an event update worthy of an Itip update?</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">_relevantEventChanges</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Kronolith-Event.html"><abbr title="\Kronolith_Event">Kronolith_Event</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Kronolith-Event.html"><abbr title="\Kronolith_Event">Kronolith_Event</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$existing</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"><p>TODO: Factor out to separate class
+Prevent update itip spam for minor changes
+Relevant:</p>
+<ul>
+<li>change of attendee list or resources</li>
+<li>title</li>
+<li>description</li>
+<li>location</li>
+<li>recurrences and exceptions</li>
+<li>url</li>
+<li>private flag changes</li>
+<li>timezone</li>
+<li>start &amp; end time</li>
+</ul>
+<p>Irrelevant:</p>
+<ul>
+<li>noop updates</li>
+<li>alerts &amp; snoozes</li>
+<li>X- attributes</li>
+<li>tags</li>
+<li>status</li>
+<li>everything else</li>
+</ul>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$event</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Kronolith-Event.html"><abbr title="\Kronolith_Event">Kronolith_Event</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$existing</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Kronolith-Event.html"><abbr title="\Kronolith_Event">Kronolith_Event</abbr></a></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
 
     
 </article>
