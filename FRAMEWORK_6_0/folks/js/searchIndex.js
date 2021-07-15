@@ -171,6 +171,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Folks-Application.html#property_version"
         },                {
+            "fqsen": "\\HORDE_BASE",
+            "name": "HORDE_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_HORDE_BASE"
+        },                {
+            "fqsen": "\\FOLKS_BASE",
+            "name": "FOLKS_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_FOLKS_BASE"
+        },                {
             "fqsen": "\\Folks_Block_Activities",
             "name": "Folks_Block_Activities",
             "summary": "",
