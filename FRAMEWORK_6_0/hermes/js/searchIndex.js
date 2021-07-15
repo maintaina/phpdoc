@@ -141,6 +141,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hermes-Ajax.html#method__addBaseVars"
         },                {
+            "fqsen": "\\HERMES_BASE",
+            "name": "HERMES_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_HERMES_BASE"
+        },                {
+            "fqsen": "\\HORDE_BASE",
+            "name": "HORDE_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_HORDE_BASE"
+        },                {
             "fqsen": "\\Hermes_Application",
             "name": "Hermes_Application",
             "summary": "",
