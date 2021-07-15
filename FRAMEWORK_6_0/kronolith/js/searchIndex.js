@@ -486,6 +486,16 @@ Search.appendIndex(
             "summary": "Links.",
             "url": "classes/Kronolith-Api.html#property__links"
         },                {
+            "fqsen": "\\KRONOLITH_BASE",
+            "name": "KRONOLITH_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_KRONOLITH_BASE"
+        },                {
+            "fqsen": "\\HORDE_BASE",
+            "name": "HORDE_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_HORDE_BASE"
+        },                {
             "fqsen": "\\Kronolith_Application",
             "name": "Kronolith_Application",
             "summary": "",
