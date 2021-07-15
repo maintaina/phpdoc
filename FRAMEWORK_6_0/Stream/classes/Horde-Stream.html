@@ -8,12 +8,16 @@
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -48,12 +52,15 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
+        
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                    </section>
+            </section>
 
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Stream.html"><abbr title="\Stream">Stream</abbr></a></h3>
+                        </section>
     
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
@@ -78,6 +85,12 @@
     Horde_Stream
 
     
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Stream.html">Stream</a></li>
+                            </ul>
+        </div>
     
             <span class="phpdocumentor-element__implements">
             implements
@@ -89,12 +102,12 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">27</span>
-</aside>
+
+    </aside>
 
             <p class="phpdocumentor-summary">Object that adds convenience/utility methods to interacting with PHP
 streams.</p>
 
-    <section class="phpdocumentor-description"></section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -381,7 +394,8 @@ are the byte position in the stream.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">34</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Stream resource.</p>
 
@@ -391,8 +405,8 @@ are the byte position in the stream.</dd>
     <span class="phpdocumentor-signature__name">$stream</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -413,7 +427,8 @@ are the byte position in the stream.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -425,6 +440,8 @@ are the byte position in the stream.</dd>
         <section class="phpdocumentor-description"><p>Parse character as UTF-8 data instead of
 single byte (@since 1.4.0).</p>
 </section>
+
+        <section class="phpdocumentor-description"></section>
 
     
 
@@ -446,7 +463,8 @@ single byte (@since 1.4.0).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">41</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Configuration parameters.</p>
 
@@ -456,8 +474,8 @@ single byte (@since 1.4.0).</p>
     <span class="phpdocumentor-signature__name">$_params</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -478,7 +496,8 @@ single byte (@since 1.4.0).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">48</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Parse character as UTF-8 data instead of single byte.</p>
 
@@ -488,8 +507,8 @@ single byte (@since 1.4.0).</p>
     <span class="phpdocumentor-signature__name">$_utf8_char</span>
      = <span class="phpdocumentor-signature__default-value">alse</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -514,23 +533,22 @@ single byte (@since 1.4.0).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">95</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__clone</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -547,7 +565,8 @@ single byte (@since 1.4.0).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">55</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Constructor.</p>
 
@@ -555,8 +574,7 @@ single byte (@since 1.4.0).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -575,8 +593,7 @@ single byte (@since 1.4.0).</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -593,15 +610,15 @@ single byte (@since 1.4.0).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">74</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -609,7 +626,8 @@ single byte (@since 1.4.0).</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -618,8 +636,7 @@ single byte (@since 1.4.0).</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -636,15 +653,15 @@ single byte (@since 1.4.0).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">84</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -652,14 +669,16 @@ single byte (@since 1.4.0).</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$value</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -668,8 +687,7 @@ single byte (@since 1.4.0).</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -686,7 +704,8 @@ single byte (@since 1.4.0).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">110</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">String representation of object.</p>
 
@@ -694,8 +713,7 @@ single byte (@since 1.4.0).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__toString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -709,8 +727,7 @@ single byte (@since 1.4.0).</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">1.1.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -736,7 +753,8 @@ single byte (@since 1.4.0).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">124</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Adds data to the stream.</p>
 
@@ -744,8 +762,7 @@ single byte (@since 1.4.0).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$reset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -775,8 +792,7 @@ adding?</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -793,7 +809,8 @@ adding?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">590</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Close the stream.</p>
 
@@ -801,8 +818,7 @@ adding?</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">close</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -816,16 +832,14 @@ adding?</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">1.4.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -842,7 +856,8 @@ adding?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">568</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Move internal pointer to the end of the stream.</p>
 
@@ -850,8 +865,7 @@ adding?</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">end</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -877,8 +891,7 @@ adding?</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">1.4.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -904,7 +917,8 @@ adding?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">580</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Has the end of the stream been reached?</p>
 
@@ -912,8 +926,7 @@ adding?</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">eof</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -927,8 +940,7 @@ adding?</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">1.4.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -954,7 +966,8 @@ adding?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">449</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return a character from the string.</p>
 
@@ -962,8 +975,7 @@ adding?</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getChar</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -977,8 +989,7 @@ adding?</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">1.4.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1005,7 +1016,8 @@ $utf8_char is true).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">419</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Auto-determine the EOL string.</p>
 
@@ -1013,8 +1025,7 @@ $utf8_char is true).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getEOL</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -1028,8 +1039,7 @@ $utf8_char is true).</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">1.3.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1055,7 +1065,8 @@ $utf8_char is true).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">332</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns the stream (or a portion of it) as a string. Position values
 are the byte position in the stream.</p>
@@ -1064,8 +1075,7 @@ are the byte position in the stream.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getString</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1118,7 +1128,8 @@ reads to the end of the stream.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">198</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get a string up to a certain character (or EOF).</p>
 
@@ -1126,8 +1137,7 @@ reads to the end of the stream.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getToChar</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$all</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1179,7 +1189,8 @@ return data).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">162</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns the length of the data. Does not change the stream position.</p>
 
@@ -1187,8 +1198,7 @@ return data).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">length</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$utf8</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1216,8 +1226,7 @@ byte length of the stream.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Stream-Exception.html"><abbr title="\Horde_Stream_Exception">Horde_Stream_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1243,7 +1252,8 @@ byte length of the stream.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">239</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return the current character(s) without moving the pointer.</p>
 
@@ -1251,8 +1261,7 @@ byte length of the stream.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">peek</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$length</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1290,7 +1299,8 @@ byte length of the stream.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">488</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return the current stream pointer position.</p>
 
@@ -1298,8 +1308,7 @@ byte length of the stream.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">pos</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -1313,8 +1322,7 @@ byte length of the stream.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">1.4.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1340,7 +1348,8 @@ byte length of the stream.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">500</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Rewind the internal stream to the beginning.</p>
 
@@ -1348,8 +1357,7 @@ byte length of the stream.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">rewind</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -1363,8 +1371,7 @@ byte length of the stream.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">1.4.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1390,7 +1397,8 @@ byte length of the stream.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">266</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Search for character(s) and return its position.</p>
 
@@ -1398,8 +1406,7 @@ byte length of the stream.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">search</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$char</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$reverse</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$reset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1457,7 +1464,8 @@ null if character not found.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">518</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Move internal pointer.</p>
 
@@ -1465,8 +1473,7 @@ null if character not found.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">seek</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$curr</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$char</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1512,8 +1519,7 @@ If false, $offset is the length in bytes.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">1.4.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1539,23 +1545,22 @@ If false, $offset is the length in bytes.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">601</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">serialize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1572,7 +1577,8 @@ If false, $offset is the length in bytes.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">367</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return part of the stream as a string.</p>
 
@@ -1580,8 +1586,7 @@ If false, $offset is the length in bytes.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">substring</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$length</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$char</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1630,8 +1635,7 @@ length in bytes.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">1.4.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1657,15 +1661,15 @@ length in bytes.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">613</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">unserialize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1673,7 +1677,8 @@ length in bytes.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1682,8 +1687,7 @@ length in bytes.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1700,7 +1704,8 @@ length in bytes.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Stream.php"><a href="files/horde-stream.html"><abbr title="Horde/Stream.php">Stream.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">64</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Initialization method.</p>
 
@@ -1708,19 +1713,79 @@ length in bytes.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_init</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
             </section>
+
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
 
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
@@ -1743,5 +1808,9 @@ length in bytes.</p>
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>
