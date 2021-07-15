@@ -61,6 +61,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Gollem-Api.html#method__getBackend"
         },                {
+            "fqsen": "\\GOLLEM_BASE",
+            "name": "GOLLEM_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_GOLLEM_BASE"
+        },                {
+            "fqsen": "\\HORDE_BASE",
+            "name": "HORDE_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_HORDE_BASE"
+        },                {
             "fqsen": "\\Gollem_Application",
             "name": "Gollem_Application",
             "summary": "",
