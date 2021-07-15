@@ -8,12 +8,16 @@
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -48,12 +52,15 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
+        
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                    </section>
+            </section>
 
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Icalendar.html"><abbr title="\Icalendar">Icalendar</abbr></a></h3>
+                        </section>
     
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
@@ -81,6 +88,12 @@
         extends <a href="classes/Horde-Icalendar.html"><abbr title="\Horde_Icalendar">Horde_Icalendar</abbr></a>
     </span>
     
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Icalendar.html">Icalendar</a></li>
+                            </ul>
+        </div>
     
     
     </h2>
@@ -89,11 +102,11 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar/Valarm.php"><a href="files/horde-icalendar-valarm.html"><abbr title="Horde/Icalendar/Valarm.php">Valarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">23</span>
-</aside>
+
+    </aside>
 
             <p class="phpdocumentor-summary">Class representing vAlarms.</p>
 
-    <section class="phpdocumentor-description"></section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -516,7 +529,8 @@ date and time.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar/Valarm.php"><a href="files/horde-icalendar-valarm.html"><abbr title="Horde/Icalendar/Valarm.php">Valarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">30</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The component type of this class.</p>
 
@@ -526,8 +540,8 @@ date and time.</dd>
     <span class="phpdocumentor-signature__name">$type</span>
      = <span class="phpdocumentor-signature__default-value">&#039;vAlarm&#039;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -548,7 +562,8 @@ date and time.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">46</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The name/value pairs of attributes for this object (UID,
 DTSTART, etc.). Which are present depends on the object and on
@@ -560,8 +575,8 @@ what kind of component it is.</p>
     <span class="phpdocumentor-signature__name">$_attributes</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -582,7 +597,8 @@ what kind of component it is.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">53</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Any children (contained) iCalendar components of this object.</p>
 
@@ -592,8 +608,8 @@ what kind of component it is.</p>
     <span class="phpdocumentor-signature__name">$_components</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -614,7 +630,8 @@ what kind of component it is.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">37</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The parent (containing) iCalendar object.</p>
 
@@ -624,8 +641,8 @@ what kind of component it is.</p>
     <span class="phpdocumentor-signature__name">$_container</span>
      = <span class="phpdocumentor-signature__default-value">alse</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -646,7 +663,8 @@ what kind of component it is.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">60</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">According to RFC 2425, we should always use CRLF-terminated lines.</p>
 
@@ -657,8 +675,8 @@ what kind of component it is.</p>
      = <span class="phpdocumentor-signature__default-value">&quot;
 &quot;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -679,7 +697,8 @@ what kind of component it is.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">77</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Whether entry is vcalendar 1.0, vcard 2.1 or vnote 1.1.</p>
 
@@ -693,6 +712,8 @@ what kind of component it is.</p>
 formats icalendar 2.0 and vcard 3.0 are defined in rfc2426 and rfc2445
 respectively.</p>
 </section>
+
+        <section class="phpdocumentor-description"></section>
 
     
 
@@ -714,7 +735,8 @@ respectively.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">68</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">iCalendar format version (different behavior for 1.0 and 2.0 especially
 with recurring events).</p>
@@ -725,8 +747,8 @@ with recurring events).</p>
     <span class="phpdocumentor-signature__name">$_version</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -751,7 +773,8 @@ with recurring events).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">84</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Constructor.</p>
 
@@ -759,8 +782,7 @@ with recurring events).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;2.0&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -768,7 +790,8 @@ with recurring events).</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;2.0&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -777,8 +800,7 @@ with recurring events).</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -795,7 +817,8 @@ with recurring events).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1451</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Export a DateTime field.</p>
 
@@ -803,8 +826,7 @@ with recurring events).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">_exportDateTime</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|object|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$floating</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -870,7 +892,8 @@ needs to be marked public for now.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1207</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Export a UTC Offset field.</p>
 
@@ -878,8 +901,7 @@ needs to be marked public for now.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">_exportUtcOffset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -898,8 +920,7 @@ needs to be marked public for now.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -916,7 +937,8 @@ needs to be marked public for now.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1376</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns the difference between the datetime indicated by $a and the
 datetime indicated by $b after normalizing both values to a unix
@@ -927,8 +949,7 @@ mixed format end times.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">_getEndDifference</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$a</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$b</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -936,14 +957,16 @@ mixed format end times.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$b</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -988,7 +1011,8 @@ no longer support PHP 5.3.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1485</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Parses a Date field.</p>
 
@@ -996,8 +1020,7 @@ no longer support PHP 5.3.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">_parseDate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1035,7 +1058,8 @@ no longer support PHP 5.3.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1400</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Parses a DateTime field and returns a unix timestamp. If the
 field cannot be parsed then the original text is returned
@@ -1045,8 +1069,7 @@ unmodified.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">_parseDateTime</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tzid</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1108,7 +1131,8 @@ unmodified.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">360</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Add a vCalendar component (eg vEvent, vTimezone, etc.).</p>
 
@@ -1116,8 +1140,7 @@ unmodified.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">addComponent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$components</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1125,7 +1148,8 @@ unmodified.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1134,8 +1158,7 @@ unmodified.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1152,7 +1175,8 @@ unmodified.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">503</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Clears the iCalendar object (resets the components and attributes
 arrays).</p>
@@ -1161,16 +1185,14 @@ arrays).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">clear</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1187,7 +1209,8 @@ arrays).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar/Valarm.php"><a href="files/horde-icalendar-valarm.html"><abbr title="Horde/Icalendar/Valarm.php">Valarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">37</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">TODO</p>
 
@@ -1195,16 +1218,14 @@ arrays).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">exportvCalendar</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1221,7 +1242,8 @@ arrays).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">451</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Locates the first child component of the specified class, and returns a
 reference to it.</p>
@@ -1230,8 +1252,7 @@ reference to it.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">findComponent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$childclass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1239,7 +1260,8 @@ reference to it.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1248,8 +1270,7 @@ reference to it.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1266,7 +1287,8 @@ reference to it.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">477</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Locates the first matching child component of the specified class, and
 returns a reference to it.</p>
@@ -1275,8 +1297,7 @@ returns a reference to it.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">findComponentByAttribute</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$childclass</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attribute</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1314,8 +1335,7 @@ for it to match.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1332,7 +1352,8 @@ for it to match.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">338</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get attributes for all tags or for a given tag.</p>
 
@@ -1340,8 +1361,7 @@ for it to match.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getAllAttributes</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tag</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1380,7 +1400,8 @@ if not given.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">220</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get the value of an attribute.</p>
 
@@ -1388,8 +1409,7 @@ if not given.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getAttribute</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1425,8 +1445,7 @@ of its value.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Icalendar-Exception.html"><abbr title="\Horde_Icalendar_Exception">Horde_Icalendar_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1454,7 +1473,8 @@ multiple values for an attribute.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">307</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns the value of an attribute, or a specified default value
 if the attribute does not exist.</p>
@@ -1463,8 +1483,7 @@ if the attribute does not exist.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getAttributeDefault</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1513,7 +1532,8 @@ $name does not exist.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">257</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get a single value of an attribute.</p>
 
@@ -1550,8 +1570,7 @@ value to return.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">2.1.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                                                 <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">throws</span>
@@ -1559,8 +1578,7 @@ value to return.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Icalendar-Exception.html"><abbr title="\Horde_Icalendar_Exception">Horde_Icalendar_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1586,7 +1604,8 @@ value to return.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">280</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Gets the values of an attribute as an array.  Multiple values
 are possible due to:</p>
@@ -1626,8 +1645,7 @@ will return array('a', 'b', 'c').</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Icalendar-Exception.html"><abbr title="\Horde_Icalendar_Exception">Horde_Icalendar_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1653,7 +1671,8 @@ will return array('a', 'b', 'c').</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">434</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Retrieve a specific component.</p>
 
@@ -1661,8 +1680,7 @@ will return array('a', 'b', 'c').</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getComponent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idx</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1701,7 +1719,8 @@ will return array('a', 'b', 'c').</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">400</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return the classes (entry types) we have.</p>
 
@@ -1709,8 +1728,7 @@ will return array('a', 'b', 'c').</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getComponentClasses</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -1737,7 +1755,8 @@ and number of components of this class as value.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">421</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Number of components in this container.</p>
 
@@ -1745,8 +1764,7 @@ and number of components of this class as value.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getComponentCount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -1772,7 +1790,8 @@ and number of components of this class as value.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">379</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Retrieve all the components.</p>
 
@@ -1780,8 +1799,7 @@ and number of components of this class as value.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getComponents</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -1807,7 +1825,8 @@ and number of components of this class as value.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">389</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">TODO</p>
 
@@ -1815,16 +1834,14 @@ and number of components of this class as value.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getType</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1841,7 +1858,8 @@ and number of components of this class as value.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">98</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return a reference to a new component.</p>
 
@@ -1849,8 +1867,7 @@ and number of components of this class as value.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">newComponent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Icalendar.html"><abbr title="\Horde_Icalendar">Horde_Icalendar</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$container</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1898,7 +1915,8 @@ will be associated with.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">576</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Parses a string containing vCalendar data.</p>
 
@@ -1906,8 +1924,7 @@ will be associated with.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">parsevCalendar</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$base</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;VCALENDAR&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clear</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1960,8 +1977,7 @@ will be associated with.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Icalendar-Exception.html"><abbr title="\Horde_Icalendar_Exception">Horde_Icalendar_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1987,7 +2003,8 @@ will be associated with.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">321</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Remove all occurences of an attribute.</p>
 
@@ -1995,8 +2012,7 @@ will be associated with.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">removeAttribute</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2015,8 +2031,7 @@ will be associated with.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -2033,7 +2048,8 @@ will be associated with.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">146</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Sets the value of an attribute.</p>
 
@@ -2041,8 +2057,7 @@ will be associated with.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setAttribute</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$append</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2101,8 +2116,7 @@ not set use $value as single array element.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -2119,7 +2133,8 @@ not set use $value as single array element.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">195</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Sets parameter(s) for an (already existing) attribute.  The
 parameter set is merged into the existing set.</p>
@@ -2128,8 +2143,7 @@ parameter set is merged into the existing set.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setParameter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2177,7 +2191,8 @@ this attribute.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">127</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Sets the version of this component.</p>
 
@@ -2185,8 +2200,7 @@ this attribute.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setVersion</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2229,8 +2243,7 @@ this attribute.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -2247,7 +2260,8 @@ this attribute.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">547</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Export this entry as a hash array with tag names as keys.</p>
 
@@ -2255,8 +2269,7 @@ this attribute.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">toHash</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$paramsInKeys</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2303,22 +2316,23 @@ If set to true, array keys look like
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">508</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">toString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
+        <section class="phpdocumentor-description"></section>
+
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -2335,7 +2349,8 @@ If set to true, array keys look like
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1347</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Utility method to aid in checking the end date of a transition.</p>
 
@@ -2343,8 +2358,7 @@ If set to true, array keys look like
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_checkEndDate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$t</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$times</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2392,7 +2406,8 @@ otherwise false.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1513</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Exports a date field.</p>
 
@@ -2400,8 +2415,7 @@ otherwise false.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_exportDate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$autoconvert</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2431,8 +2445,7 @@ date as datetime when exporting to Vcalendar
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -2449,7 +2462,8 @@ date as datetime when exporting to Vcalendar
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1573</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Export a duration value.</p>
 
@@ -2457,8 +2471,7 @@ date as datetime when exporting to Vcalendar
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_exportDuration</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2477,8 +2490,7 @@ date as datetime when exporting to Vcalendar
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -2495,7 +2507,8 @@ date as datetime when exporting to Vcalendar
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1245</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Export a Time Period field.</p>
 
@@ -2503,8 +2516,7 @@ date as datetime when exporting to Vcalendar
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_exportPeriod</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2523,8 +2535,7 @@ date as datetime when exporting to Vcalendar
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -2541,7 +2552,8 @@ date as datetime when exporting to Vcalendar
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">895</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Export this component in vCal format.</p>
 
@@ -2549,8 +2561,7 @@ date as datetime when exporting to Vcalendar
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_exportvData</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$base</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;VCALENDAR&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2588,7 +2599,8 @@ date as datetime when exporting to Vcalendar
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1531</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Parses a DURATION value field.</p>
 
@@ -2596,8 +2608,7 @@ date as datetime when exporting to Vcalendar
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_parseDuration</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2635,7 +2646,8 @@ date as datetime when exporting to Vcalendar
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1226</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Parse a Time Period field.</p>
 
@@ -2643,8 +2655,7 @@ date as datetime when exporting to Vcalendar
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_parsePeriod</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2682,7 +2693,8 @@ date as datetime when exporting to Vcalendar
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1464</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Parses a Time field.</p>
 
@@ -2690,8 +2702,7 @@ date as datetime when exporting to Vcalendar
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_parseTime</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2710,8 +2721,7 @@ date as datetime when exporting to Vcalendar
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -2728,7 +2738,8 @@ date as datetime when exporting to Vcalendar
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1265</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Groks the TZID and returns an offset in seconds from UTC for this
 date and time.</p>
@@ -2737,8 +2748,7 @@ date and time.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_parseTZID</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$time</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tzid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2795,7 +2805,8 @@ timezone and date/time.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Icalendar.php"><a href="files/horde-icalendar.html"><abbr title="Horde/Icalendar.php">Icalendar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1183</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Parse a UTC Offset field.</p>
 
@@ -2803,8 +2814,7 @@ timezone and date/time.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_parseUtcOffset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2823,11 +2833,72 @@ timezone and date/time.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
             </section>
+
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
 
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
@@ -2850,5 +2921,9 @@ timezone and date/time.</p>
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>
