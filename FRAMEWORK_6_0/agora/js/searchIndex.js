@@ -156,6 +156,16 @@ Search.appendIndex(
             "summary": "Prepare\u0020the\u0020moderate\u0020form",
             "url": "classes/Agora-Api.html#method_moderateForm"
         },                {
+            "fqsen": "\\AGORA_BASE",
+            "name": "AGORA_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_AGORA_BASE"
+        },                {
+            "fqsen": "\\HORDE_BASE",
+            "name": "HORDE_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_HORDE_BASE"
+        },                {
             "fqsen": "\\Agora_Application",
             "name": "Agora_Application",
             "summary": "",
