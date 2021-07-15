@@ -8,12 +8,16 @@
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -48,12 +52,18 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
+        
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                    </section>
+            </section>
 
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Service.html"><abbr title="\Service">Service</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="packages/Service-Gravatar.html"><abbr title="\Service\Gravatar">Gravatar</abbr></a></li>
+                            </ul>
+                        </section>
     
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
@@ -79,6 +89,13 @@
     Horde_Service_Gravatar
 
     
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Service.html">Service</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Service-Gravatar.html">Gravatar</a></li>
+                            </ul>
+        </div>
     
     
     </h2>
@@ -87,12 +104,12 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Service/Gravatar.php"><a href="files/horde-service-gravatar.html"><abbr title="Horde/Service/Gravatar.php">Gravatar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">24</span>
-</aside>
+
+    </aside>
 
             <p class="phpdocumentor-summary">Horde_Service_Gravatar abstracts communication with Services supporting the
 Gravatar API.</p>
 
-    <section class="phpdocumentor-description"></section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -246,7 +263,8 @@ returned URL can be directly used with an IMG tag e.g.:
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Service/Gravatar.php"><a href="files/horde-service-gravatar.html"><abbr title="Horde/Service/Gravatar.php">Gravatar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">30</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The Gravatar base URL in SSL context</p>
 
@@ -258,6 +276,7 @@ returned URL can be directly used with an IMG tag e.g.:
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -273,7 +292,8 @@ returned URL can be directly used with an IMG tag e.g.:
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Service/Gravatar.php"><a href="files/horde-service-gravatar.html"><abbr title="Horde/Service/Gravatar.php">Gravatar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">27</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The default Gravatar base URL</p>
 
@@ -285,6 +305,7 @@ returned URL can be directly used with an IMG tag e.g.:
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -315,7 +336,8 @@ returned URL can be directly used with an IMG tag e.g.:
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Service/Gravatar.php"><a href="files/horde-service-gravatar.html"><abbr title="Horde/Service/Gravatar.php">Gravatar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">37</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The base Gravatar URL.</p>
 
@@ -325,8 +347,8 @@ returned URL can be directly used with an IMG tag e.g.:
     <span class="phpdocumentor-signature__name">$_base</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -347,7 +369,8 @@ returned URL can be directly used with an IMG tag e.g.:
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Service/Gravatar.php"><a href="files/horde-service-gravatar.html"><abbr title="Horde/Service/Gravatar.php">Gravatar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">44</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The HTTP client to access the server.</p>
 
@@ -357,8 +380,8 @@ returned URL can be directly used with an IMG tag e.g.:
     <span class="phpdocumentor-signature__name">$_client</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -383,7 +406,8 @@ returned URL can be directly used with an IMG tag e.g.:
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Service/Gravatar.php"><a href="files/horde-service-gravatar.html"><abbr title="Horde/Service/Gravatar.php">Gravatar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">58</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Constructor.</p>
 
@@ -425,8 +449,7 @@ this service as $base.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -443,7 +466,8 @@ this service as $base.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Service/Gravatar.php"><a href="files/horde-service-gravatar.html"><abbr title="Horde/Service/Gravatar.php">Gravatar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">175</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Fetch the avatar image.</p>
 
@@ -451,8 +475,7 @@ this service as $base.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">fetchAvatar</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mail</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -500,7 +523,8 @@ returned an error.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Service/Gravatar.php"><a href="files/horde-service-gravatar.html"><abbr title="Horde/Service/Gravatar.php">Gravatar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">148</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Fetch the Gravatar profile information.</p>
 
@@ -508,8 +532,7 @@ returned an error.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">fetchProfile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mail</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -547,7 +570,8 @@ returned an error.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Service/Gravatar.php"><a href="files/horde-service-gravatar.html"><abbr title="Horde/Service/Gravatar.php">Gravatar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">104</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return the Gravatar image URL for the specified mail address. The
 returned URL can be directly used with an IMG tag e.g.:
@@ -557,8 +581,7 @@ returned URL can be directly used with an IMG tag e.g.:
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getAvatarUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mail</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Url">Horde_Url</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -614,7 +637,8 @@ are available:</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Service/Gravatar.php"><a href="files/horde-service-gravatar.html"><abbr title="Horde/Service/Gravatar.php">Gravatar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">77</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return the Gravatar ID for the specified mail address.</p>
 
@@ -622,8 +646,7 @@ are available:</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mail</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -661,7 +684,8 @@ are available:</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Service/Gravatar.php"><a href="files/horde-service-gravatar.html"><abbr title="Horde/Service/Gravatar.php">Gravatar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">161</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return the Gravatar profile information as an array.</p>
 
@@ -669,8 +693,7 @@ are available:</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getProfile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mail</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -708,7 +731,8 @@ are available:</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Service/Gravatar.php"><a href="files/horde-service-gravatar.html"><abbr title="Horde/Service/Gravatar.php">Gravatar.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">136</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return the Gravatar profile URL.</p>
 
@@ -716,8 +740,7 @@ are available:</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getProfileUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mail</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -743,6 +766,68 @@ are available:</p>
 </article>
             </section>
 
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
+
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
@@ -764,5 +849,9 @@ are available:</p>
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>
