@@ -8,12 +8,16 @@
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -48,12 +52,15 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
+        
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                    </section>
+            </section>
 
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Alarm.html"><abbr title="\Alarm">Alarm</abbr></a></h3>
+                        </section>
     
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
@@ -78,6 +85,12 @@
     Horde_Alarm
 
     
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Alarm.html">Alarm</a></li>
+                            </ul>
+        </div>
     
     
     </h2>
@@ -86,12 +99,12 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">24</span>
-</aside>
+
+    </aside>
 
             <p class="phpdocumentor-summary">The Horde_Alarm class provides an interface to deal with reminders, alarms
 and notifications through a standardized API.</p>
 
-    <section class="phpdocumentor-description"></section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -424,7 +437,8 @@ the application setting the alarm.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">68</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">A list of errors, exceptions etc. that occured during notify() calls.</p>
 
@@ -434,8 +448,8 @@ the application setting the alarm.</dd>
     <span class="phpdocumentor-signature__name">$_errors</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -456,7 +470,8 @@ the application setting the alarm.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">54</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">All registered notification handlers.</p>
 
@@ -466,8 +481,8 @@ the application setting the alarm.</dd>
     <span class="phpdocumentor-signature__name">$_handlers</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -488,7 +503,8 @@ the application setting the alarm.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">61</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Whether handler classes have been dynamically loaded already.</p>
 
@@ -498,8 +514,8 @@ the application setting the alarm.</dd>
     <span class="phpdocumentor-signature__name">$_handlersLoaded</span>
      = <span class="phpdocumentor-signature__default-value">alse</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -520,7 +536,8 @@ the application setting the alarm.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">38</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Alarm loader callback.</p>
 
@@ -530,8 +547,8 @@ the application setting the alarm.</dd>
     <span class="phpdocumentor-signature__name">$_loader</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -552,7 +569,8 @@ the application setting the alarm.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">31</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Logger.</p>
 
@@ -562,8 +580,8 @@ the application setting the alarm.</dd>
     <span class="phpdocumentor-signature__name">$_logger</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -584,7 +602,8 @@ the application setting the alarm.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">45</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Hash containing connection parameters.</p>
 
@@ -594,8 +613,8 @@ the application setting the alarm.</dd>
     <span class="phpdocumentor-signature__name">$_params</span>
      = <span class="phpdocumentor-signature__default-value">array(&#039;ttl&#039; =&gt; 300)</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -620,7 +639,8 @@ the application setting the alarm.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">79</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Constructor.</p>
 
@@ -628,8 +648,7 @@ the application setting the alarm.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -652,8 +671,7 @@ the application setting the alarm.</dd>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -670,7 +688,8 @@ the application setting the alarm.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">464</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Registers a notification handler.</p>
 
@@ -678,8 +697,7 @@ the application setting the alarm.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">addHandler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Alarm-Handler.html"><abbr title="\Horde_Alarm_Handler">Horde_Alarm_Handler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -707,8 +725,7 @@ the application setting the alarm.</dd>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -725,7 +742,8 @@ the application setting the alarm.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">399</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Deletes an alarm from the backend.</p>
 
@@ -733,8 +751,7 @@ the application setting the alarm.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">delete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -769,16 +786,14 @@ the application setting the alarm.</dd>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -795,7 +810,8 @@ the application setting the alarm.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">287</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns whether an alarm with the given id exists already.</p>
 
@@ -803,8 +819,7 @@ the application setting the alarm.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">exists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$instanceid</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -861,7 +876,8 @@ the application setting the alarm.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">528</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Garbage collects old alarms in the backend.</p>
 
@@ -869,8 +885,7 @@ the application setting the alarm.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">gc</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$force</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -897,16 +912,14 @@ with a 1% chance.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -923,7 +936,8 @@ with a 1% chance.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">185</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns an alarm hash from the backend.</p>
 
@@ -931,8 +945,7 @@ with a 1% chance.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -967,8 +980,7 @@ with a 1% chance.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1008,7 +1020,8 @@ instanceid: Holds an instance identifier for recurring alarms.
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">515</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns a list of errors, exceptions etc. that occured during notify()
 calls.</p>
@@ -1017,8 +1030,7 @@ calls.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getErrors</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -1069,7 +1081,8 @@ with a NUL character and an alarm method key.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">144</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns a list of all global alarms from the backend.</p>
 
@@ -1077,8 +1090,7 @@ with a NUL character and an alarm method key.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">globalAlarms</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -1092,8 +1104,7 @@ with a NUL character and an alarm method key.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1119,7 +1130,8 @@ with a NUL character and an alarm method key.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">482</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns a list of available notification handlers and parameters.</p>
 
@@ -1160,7 +1172,8 @@ this parameter is required.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">548</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Attempts to initialize the backend.</p>
 
@@ -1168,8 +1181,7 @@ this parameter is required.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">initialize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -1183,16 +1195,14 @@ this parameter is required.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1209,7 +1219,8 @@ this parameter is required.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">275</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Updates internal alarm properties, i.e. properties not determined by
 the application setting the alarm.</p>
@@ -1218,8 +1229,7 @@ the application setting the alarm.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">internal</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$internal</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1263,16 +1273,14 @@ the application setting the alarm.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1289,7 +1297,8 @@ the application setting the alarm.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">361</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns whether an alarm is snoozed.</p>
 
@@ -1297,8 +1306,7 @@ the application setting the alarm.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">isSnoozed</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Date">Horde_Date</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$time</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1343,8 +1351,7 @@ Defaults to now.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1370,7 +1377,8 @@ Defaults to now.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">106</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns a list of alarms from the backend.</p>
 
@@ -1378,8 +1386,7 @@ Defaults to now.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">listAlarms</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Date">Horde_Date</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$time</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$load</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$preload</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1435,8 +1442,7 @@ ttl time span?</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1462,7 +1468,8 @@ ttl time span?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">427</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Notifies the user about any active alarms.</p>
 
@@ -1470,8 +1477,7 @@ ttl time span?</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">notify</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$load</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$preload</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exclude</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1536,8 +1542,7 @@ notifying of individual alarms fails.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1554,7 +1559,8 @@ notifying of individual alarms fails.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">220</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Stores an alarm hash in the backend.</p>
 
@@ -1602,16 +1608,14 @@ sent again.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1628,7 +1632,8 @@ sent again.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">318</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Delays (snoozes) an alarm for a certain period.</p>
 
@@ -1636,8 +1641,7 @@ sent again.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">snooze</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$minutes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1682,16 +1686,14 @@ dismisses the alarm completely.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1708,7 +1710,8 @@ dismisses the alarm completely.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">253</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Adds an alarm hash to the backend.</p>
 
@@ -1716,8 +1719,7 @@ dismisses the alarm completely.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">_add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$alarm</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1743,16 +1745,14 @@ dismisses the alarm completely.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1769,7 +1769,8 @@ dismisses the alarm completely.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">412</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Deletes an alarm from the backend.</p>
 
@@ -1777,8 +1778,7 @@ dismisses the alarm completely.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">_delete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1813,16 +1813,14 @@ dismisses the alarm completely.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1839,7 +1837,8 @@ dismisses the alarm completely.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">389</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Dismisses an alarm.</p>
 
@@ -1847,8 +1846,7 @@ dismisses the alarm completely.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">_dismiss</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1883,16 +1881,14 @@ dismisses the alarm completely.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1909,7 +1905,8 @@ dismisses the alarm completely.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">306</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns whether an alarm with the given id exists already.</p>
 
@@ -1917,8 +1914,7 @@ dismisses the alarm completely.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">_exists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$instanceid</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1962,8 +1958,7 @@ dismisses the alarm completely.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1989,7 +1984,8 @@ dismisses the alarm completely.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">557</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Converts a value from the driver&#039;s charset.</p>
 
@@ -1997,8 +1993,7 @@ dismisses the alarm completely.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">_fromDriver</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2036,7 +2031,8 @@ dismisses the alarm completely.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">541</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Garbage collects old alarms in the backend.</p>
 
@@ -2044,8 +2040,7 @@ dismisses the alarm completely.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">_gc</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -2059,16 +2054,14 @@ dismisses the alarm completely.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -2085,7 +2078,8 @@ dismisses the alarm completely.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">205</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns an alarm hash from the backend.</p>
 
@@ -2093,8 +2087,7 @@ dismisses the alarm completely.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">_get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2129,8 +2122,7 @@ dismisses the alarm completely.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -2156,7 +2148,8 @@ dismisses the alarm completely.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">160</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns a list of all global alarms from the backend.</p>
 
@@ -2164,8 +2157,7 @@ dismisses the alarm completely.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">_global</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -2191,7 +2183,8 @@ dismisses the alarm completely.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">379</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns whether an alarm is snoozed.</p>
 
@@ -2199,8 +2192,7 @@ dismisses the alarm completely.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">_isSnoozed</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Date">Horde_Date</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$time</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2244,8 +2236,7 @@ dismisses the alarm completely.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -2271,7 +2262,8 @@ dismisses the alarm completely.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">136</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns a list of alarms from the backend.</p>
 
@@ -2279,8 +2271,7 @@ dismisses the alarm completely.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">_list</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Date">Horde_Date</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$time</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2316,8 +2307,7 @@ null, or global alarms if empty.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -2343,7 +2333,8 @@ null, or global alarms if empty.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">347</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Delays (snoozes) an alarm for a certain period.</p>
 
@@ -2351,8 +2342,7 @@ null, or global alarms if empty.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">_snooze</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Date">Horde_Date</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$snooze</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2396,16 +2386,14 @@ null, or global alarms if empty.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -2422,7 +2410,8 @@ null, or global alarms if empty.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">566</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Converts a value to the driver&#039;s charset.</p>
 
@@ -2430,8 +2419,7 @@ null, or global alarms if empty.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">_toDriver</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2469,7 +2457,8 @@ null, or global alarms if empty.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Alarm.php"><a href="files/horde-alarm.html"><abbr title="Horde/Alarm.php">Alarm.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">263</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Updates an alarm hash in the backend.</p>
 
@@ -2477,8 +2466,7 @@ null, or global alarms if empty.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">_update</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$alarm</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keepsnooze</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2513,19 +2501,79 @@ null, or global alarms if empty.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Alarm-Exception.html"><abbr title="\Horde_Alarm_Exception">Horde_Alarm_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
             </section>
+
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
 
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
@@ -2548,5 +2596,9 @@ null, or global alarms if empty.</p>
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>
