@@ -56,6 +56,16 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020count\u0020of\u0020stories\u0020in\u0020the\u0020specified\u0020channel",
             "url": "classes/Jonah-Api.html#method_storyCount"
         },                {
+            "fqsen": "\\JONAH_BASE",
+            "name": "JONAH_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_JONAH_BASE"
+        },                {
+            "fqsen": "\\HORDE_BASE",
+            "name": "HORDE_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_HORDE_BASE"
+        },                {
             "fqsen": "\\Jonah_Application",
             "name": "Jonah_Application",
             "summary": "",
