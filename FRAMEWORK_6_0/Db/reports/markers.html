@@ -9,12 +9,16 @@
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -49,12 +53,19 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
+        
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                    </section>
+            </section>
 
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Db.html"><abbr title="\Db">Db</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="packages/Db-Adapter.html"><abbr title="\Db\Adapter">Adapter</abbr></a></li>
+                                    <li><a href="packages/Db-Migration.html"><abbr title="\Db\Migration">Migration</abbr></a></li>
+                            </ul>
+                        </section>
     
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
@@ -80,11 +91,1139 @@
                     <h3>Table of Contents</h3>
             <table class="phpdocumentor-table_of_contents">
                                                             <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Base/Column.php">Horde/Db/Adapter/Base/Column.php</a></td>
+                            <td class="phpdocumentor-cell">6</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Base/ColumnDefinition.php">Horde/Db/Adapter/Base/ColumnDefinition.php</a></td>
+                            <td class="phpdocumentor-cell">6</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Base/Index.php">Horde/Db/Adapter/Base/Index.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Base/Result.php">Horde/Db/Adapter/Base/Result.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Base/Schema.php">Horde/Db/Adapter/Base/Schema.php</a></td>
+                            <td class="phpdocumentor-cell">11</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Base/Table.php">Horde/Db/Adapter/Base/Table.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Base/TableDefinition.php">Horde/Db/Adapter/Base/TableDefinition.php</a></td>
+                            <td class="phpdocumentor-cell">9</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Base.php">Horde/Db/Adapter/Base.php</a></td>
+                            <td class="phpdocumentor-cell">7</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Mysql/Column.php">Horde/Db/Adapter/Mysql/Column.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Mysql/Result.php">Horde/Db/Adapter/Mysql/Result.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Mysql/Schema.php">Horde/Db/Adapter/Mysql/Schema.php</a></td>
+                            <td class="phpdocumentor-cell">8</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Mysql.php">Horde/Db/Adapter/Mysql.php</a></td>
+                            <td class="phpdocumentor-cell">5</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Mysqli/Result.php">Horde/Db/Adapter/Mysqli/Result.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Mysqli.php">Horde/Db/Adapter/Mysqli.php</a></td>
+                            <td class="phpdocumentor-cell">9</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Oci8.php">Horde/Db/Adapter/Oci8.php</a></td>
+                            <td class="phpdocumentor-cell">6</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Oracle/Column.php">Horde/Db/Adapter/Oracle/Column.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Oracle/Result.php">Horde/Db/Adapter/Oracle/Result.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Oracle/Schema.php">Horde/Db/Adapter/Oracle/Schema.php</a></td>
+                            <td class="phpdocumentor-cell">13</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Oracle/TableDefinition.php">Horde/Db/Adapter/Oracle/TableDefinition.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Pdo/Base.php">Horde/Db/Adapter/Pdo/Base.php</a></td>
+                            <td class="phpdocumentor-cell">13</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Pdo/Mysql.php">Horde/Db/Adapter/Pdo/Mysql.php</a></td>
+                            <td class="phpdocumentor-cell">10</td>
+                        </tr>
+                                                                                <tr>
                             <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Pdo/Pgsql.php">Horde/Db/Adapter/Pdo/Pgsql.php</a></td>
-                            <td class="phpdocumentor-cell">1</td>
+                            <td class="phpdocumentor-cell">27</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Pdo/Result.php">Horde/Db/Adapter/Pdo/Result.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Pdo/Sqlite.php">Horde/Db/Adapter/Pdo/Sqlite.php</a></td>
+                            <td class="phpdocumentor-cell">7</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Postgresql/Column.php">Horde/Db/Adapter/Postgresql/Column.php</a></td>
+                            <td class="phpdocumentor-cell">30</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Postgresql/Schema.php">Horde/Db/Adapter/Postgresql/Schema.php</a></td>
+                            <td class="phpdocumentor-cell">23</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/SplitRead.php">Horde/Db/Adapter/SplitRead.php</a></td>
+                            <td class="phpdocumentor-cell">17</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Sqlite/Column.php">Horde/Db/Adapter/Sqlite/Column.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter/Sqlite/Schema.php">Horde/Db/Adapter/Sqlite/Schema.php</a></td>
+                            <td class="phpdocumentor-cell">9</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Adapter.php">Horde/Db/Adapter.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Exception.php">Horde/Db/Exception.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Migration/Base.php">Horde/Db/Migration/Base.php</a></td>
+                            <td class="phpdocumentor-cell">6</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Migration/Exception.php">Horde/Db/Migration/Exception.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Migration/Migrator.php">Horde/Db/Migration/Migrator.php</a></td>
+                            <td class="phpdocumentor-cell">7</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/SearchParser.php">Horde/Db/SearchParser.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/StatementParser.php">Horde/Db/StatementParser.php</a></td>
+                            <td class="phpdocumentor-cell">5</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Value/Binary.php">Horde/Db/Value/Binary.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Value/Lob.php">Horde/Db/Value/Lob.php</a></td>
+                            <td class="phpdocumentor-cell">5</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Value/Text.php">Horde/Db/Value/Text.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db/Value.php">Horde/Db/Value.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Db.php">Horde/Db.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
                         </tr>
                                                 </table>
         
+                    <a id="Horde/Db/Adapter/Base/Column.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Base/Column.php">Column.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">234</td>
+                        <td class="phpdocumentor-cell">preserve &#039;0000-00-00&#039; (http://bugs.php.net/bug.php?id=45647)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">252</td>
+                        <td class="phpdocumentor-cell">preserve &#039;0000-00-00 00:00:00&#039; (http://bugs.php.net/bug.php?id=45647)</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Base/ColumnDefinition.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Base/ColumnDefinition.php">ColumnDefinition.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">52</td>
+                        <td class="phpdocumentor-cell">Protected</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">55</td>
+                        <td class="phpdocumentor-cell">Public</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Base/Index.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Base/Index.php">Index.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Base/Result.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Base/Result.php">Result.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">3</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">6</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">10</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">21</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Base/Schema.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">14</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">30</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">463</td>
+                        <td class="phpdocumentor-cell">Add a backend specific option to the generated SQL (MySQL)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">474</td>
+                        <td class="phpdocumentor-cell">Rename the primary key column</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">488</td>
+                        <td class="phpdocumentor-cell">Do not add a primary key column, use fluent interface, use type</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">489</td>
+                        <td class="phpdocumentor-cell">method.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">561</td>
+                        <td class="phpdocumentor-cell">Drop previous table.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">921</td>
+                        <td class="phpdocumentor-cell">If there is no explicit limit, adjust $nativeLimit for unsigned</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">922</td>
+                        <td class="phpdocumentor-cell">integers.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Base/Table.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Base/Table.php">Table.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Base/TableDefinition.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Base/TableDefinition.php">TableDefinition.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">90</td>
+                        <td class="phpdocumentor-cell">Assuming $def is an instance of Horde_Db_Adapter_Base_TableDefinition</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">93</td>
+                        <td class="phpdocumentor-cell">=&gt; granted BOOLEAN</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">96</td>
+                        <td class="phpdocumentor-cell">=&gt; picture BLOB(4096)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">99</td>
+                        <td class="phpdocumentor-cell">=&gt; sales_stage VARCHAR(20) DEFAULT &#039;new&#039; NOT NULL</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">232</td>
+                        <td class="phpdocumentor-cell">Specify composite primary keys as well</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Base.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Base.php">Base.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">152</td>
+                        <td class="phpdocumentor-cell">Default to UTF-8</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">271</td>
+                        <td class="phpdocumentor-cell">Create the database-specific (but not adapter specific) schema</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">272</td>
+                        <td class="phpdocumentor-cell">object.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Mysql/Column.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Mysql/Column.php">Column.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Mysql/Result.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Mysql/Result.php">Result.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">14</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">30</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Mysql/Schema.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Mysql/Schema.php">Schema.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">14</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">30</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">147</td>
+                        <td class="phpdocumentor-cell">Share the column cache with the columns() method</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">219</td>
+                        <td class="phpdocumentor-cell">Create columns from rows.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">466</td>
+                        <td class="phpdocumentor-cell">If there is no explicit limit, adjust $nativeLimit for unsigned</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">467</td>
+                        <td class="phpdocumentor-cell">integers.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Mysql.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Mysql.php">Mysql.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">100</td>
+                        <td class="phpdocumentor-cell">Set the default charset. http://dev.mysql.com/doc/refman/5.1/en/charset-connection.html</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Mysqli/Result.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Mysqli/Result.php">Result.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">14</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">30</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Mysqli.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Mysqli.php">Mysqli.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">141</td>
+                        <td class="phpdocumentor-cell">If supported, request real datatypes from MySQL instead of returning</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">142</td>
+                        <td class="phpdocumentor-cell">everything as a string.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">150</td>
+                        <td class="phpdocumentor-cell">Set the default charset. http://dev.mysql.com/doc/refman/5.1/en/charset-connection.html</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">329</td>
+                        <td class="phpdocumentor-cell">@TODO if ($this-&gt;_connection-&gt;info) $this-&gt;_loginfo($sql, $this-&gt;_connection-&gt;info);</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">330</td>
+                        <td class="phpdocumentor-cell">@TODO also log warnings? http://php.net/mysqli.warning-count and http://php.net/mysqli.get-warnings</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Oci8.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Oci8.php">Oci8.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">3</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">6</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">10</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">21</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">400</td>
+                        <td class="phpdocumentor-cell">Protect against empty values being passed for blobs.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">448</td>
+                        <td class="phpdocumentor-cell">Protect against empty values for blobs.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Oracle/Column.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Oracle/Column.php">Column.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">3</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">6</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">10</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">21</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Oracle/Result.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Oracle/Result.php">Result.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">3</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">6</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">10</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">21</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Oracle/Schema.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Oracle/Schema.php">Schema.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">3</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">6</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">10</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">22</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">302</td>
+                        <td class="phpdocumentor-cell">Create columns from rows.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">621</td>
+                        <td class="phpdocumentor-cell">Build the table that holds the last autoincremented value. Used for</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">622</td>
+                        <td class="phpdocumentor-cell">example for returning the ID from last INSERT.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">629</td>
+                        <td class="phpdocumentor-cell">Create a sequence that automatically increments when queried with</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">630</td>
+                        <td class="phpdocumentor-cell">.NEXTVAL.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">636</td>
+                        <td class="phpdocumentor-cell">See if the column already has values, to start the sequence at a</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">637</td>
+                        <td class="phpdocumentor-cell">higher value.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">650</td>
+                        <td class="phpdocumentor-cell">Create the actual trigger that inserts the next value from the</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">651</td>
+                        <td class="phpdocumentor-cell">sequence into the autoincrementKey column when inserting a row.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Oracle/TableDefinition.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Oracle/TableDefinition.php">TableDefinition.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">3</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">6</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">10</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">21</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Pdo/Base.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Pdo/Base.php">Base.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">121</td>
+                        <td class="phpdocumentor-cell">Required to really close the connection.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">143</td>
+                        <td class="phpdocumentor-cell">Required to really close the connection.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">163</td>
+                        <td class="phpdocumentor-cell">Required to really close the connection.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">183</td>
+                        <td class="phpdocumentor-cell">Required to really close the connection.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">205</td>
+                        <td class="phpdocumentor-cell">Required to really close the connection.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">510</td>
+                        <td class="phpdocumentor-cell">Normalize config parameters to what PDO expects.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">545</td>
+                        <td class="phpdocumentor-cell">try an empty password if it&#039;s not set.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">550</td>
+                        <td class="phpdocumentor-cell">collect options to build PDO Data Source Name (DSN) string</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">563</td>
+                        <td class="phpdocumentor-cell">return DSN and user/pass for connection</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Pdo/Mysql.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Pdo/Mysql.php">Mysql.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">70</td>
+                        <td class="phpdocumentor-cell">? $this-&gt;_connection-&gt;setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">72</td>
+                        <td class="phpdocumentor-cell">Set the default charset. http://dev.mysql.com/doc/refman/5.1/en/charset-connection.html</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">86</td>
+                        <td class="phpdocumentor-cell">pecl.php.net/bugs/7234</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">108</td>
+                        <td class="phpdocumentor-cell">Try an empty password if it&#039;s not set.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">113</td>
+                        <td class="phpdocumentor-cell">Collect options to build PDO Data Source Name (DSN) string.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">135</td>
+                        <td class="phpdocumentor-cell">Return DSN and user/pass for connection.</td>
+                    </tr>
+                                </tbody>
+            </table>
                     <a id="Horde/Db/Adapter/Pdo/Pgsql.php"></a>
             <h3><abbr title="Horde/Db/Adapter/Pdo/Pgsql.php">Pgsql.php</abbr></h3>
             <table>
@@ -97,9 +1236,1131 @@
                 </thead>
                 <tbody>
                                     <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">60</td>
+                        <td class="phpdocumentor-cell">Temporarily set the client message level above error to prevent unintentional</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">61</td>
+                        <td class="phpdocumentor-cell">error messages in the logs when working on a PostgreSQL database server that</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">62</td>
+                        <td class="phpdocumentor-cell">does not support standard conforming strings.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">130</td>
+                        <td class="phpdocumentor-cell">Extract the table from the insert sql. Yuck.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">134</td>
+                        <td class="phpdocumentor-cell">Try an insert with &#039;returning id&#039;</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">144</td>
+                        <td class="phpdocumentor-cell">If neither pk nor sequence name is given, look them up.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">149</td>
+                        <td class="phpdocumentor-cell">Otherwise, insert then grab last_insert_id.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">155</td>
+                        <td class="phpdocumentor-cell">If a pk is given, fallback to default sequence name.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">156</td>
+                        <td class="phpdocumentor-cell">Don&#039;t fetch last insert id for a table without a pk.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">203</td>
+                        <td class="phpdocumentor-cell">PDO for PostgreSQL does not accept a socket argument</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">204</td>
+                        <td class="phpdocumentor-cell">in the connection string; the location can be set via the</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">205</td>
+                        <td class="phpdocumentor-cell">&quot;host&quot; argument instead.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">247</td>
+                        <td class="phpdocumentor-cell">If this is a money type column and there are any currency</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">248</td>
+                        <td class="phpdocumentor-cell">symbols, then strip them off. Indeed it would be prettier to do</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">249</td>
+                        <td class="phpdocumentor-cell">this in Horde_Db_Adapter_Postgres_Column::stringToDecimal but</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">250</td>
+                        <td class="phpdocumentor-cell">would break form input fields that call valueBeforeTypeCast.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">252</td>
+                        <td class="phpdocumentor-cell">Because money output is formatted according to the locale, there are two</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">253</td>
+                        <td class="phpdocumentor-cell">cases to consider (note the decimal separators):</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">254</td>
+                        <td class="phpdocumentor-cell">(1) $12,345,678.12</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">255</td>
+                        <td class="phpdocumentor-cell">(2) $12.345.678,12</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">256</td>
+                        <td class="phpdocumentor-cell">#1</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">258</td>
+                        <td class="phpdocumentor-cell">#2</td>
+                    </tr>
+                                    <tr>
                         <td class="phpdocumentor-cell">TODO</td>
                         <td class="phpdocumentor-cell">277</td>
                         <td class="phpdocumentor-cell">Remove unused $table parameter.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Pdo/Result.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Pdo/Result.php">Result.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">3</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">6</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">10</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">21</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Pdo/Sqlite.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Pdo/Sqlite.php">Sqlite.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">211</td>
+                        <td class="phpdocumentor-cell">check required config keys are present</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">217</td>
+                        <td class="phpdocumentor-cell">collect options to build PDO Data Source Name (DSN) string</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">221</td>
+                        <td class="phpdocumentor-cell">return DSN and dummy user/pass for connection</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Postgresql/Column.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Postgresql/Column.php">Column.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">68</td>
+                        <td class="phpdocumentor-cell">Numeric and monetary types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">72</td>
+                        <td class="phpdocumentor-cell">Monetary types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">76</td>
+                        <td class="phpdocumentor-cell">Character types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">80</td>
+                        <td class="phpdocumentor-cell">Binary data types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">84</td>
+                        <td class="phpdocumentor-cell">Date/time types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">91</td>
+                        <td class="phpdocumentor-cell">Geometric types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">95</td>
+                        <td class="phpdocumentor-cell">Network address types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">99</td>
+                        <td class="phpdocumentor-cell">Bit strings</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">103</td>
+                        <td class="phpdocumentor-cell">XML type</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">107</td>
+                        <td class="phpdocumentor-cell">Arrays</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">111</td>
+                        <td class="phpdocumentor-cell">Object identifier types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">116</td>
+                        <td class="phpdocumentor-cell">Pass through all types that are not specific to PostgreSQL.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">127</td>
+                        <td class="phpdocumentor-cell">Numeric types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">130</td>
+                        <td class="phpdocumentor-cell">Character types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">133</td>
+                        <td class="phpdocumentor-cell">Character types (8.1 formatting)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">137</td>
+                        <td class="phpdocumentor-cell">Binary data types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">140</td>
+                        <td class="phpdocumentor-cell">Date/time types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">145</td>
+                        <td class="phpdocumentor-cell">Boolean type</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">150</td>
+                        <td class="phpdocumentor-cell">Geometric types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">153</td>
+                        <td class="phpdocumentor-cell">Network address types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">156</td>
+                        <td class="phpdocumentor-cell">Bit string types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">159</td>
+                        <td class="phpdocumentor-cell">XML type</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">162</td>
+                        <td class="phpdocumentor-cell">Arrays</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">165</td>
+                        <td class="phpdocumentor-cell">Object identifier types</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">168</td>
+                        <td class="phpdocumentor-cell">Anything else is blank, some user type, or some function</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">169</td>
+                        <td class="phpdocumentor-cell">and we can&#039;t know the value of that, so return nil.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Postgresql/Schema.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Postgresql/Schema.php">Schema.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">14</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">30</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">108</td>
+                        <td class="phpdocumentor-cell">Not truly string input, so doesn&#039;t require (or allow) escape</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">109</td>
+                        <td class="phpdocumentor-cell">string syntax.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">114</td>
+                        <td class="phpdocumentor-cell">Hexadecimal notation</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">118</td>
+                        <td class="phpdocumentor-cell">Bit-string notation</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">357</td>
+                        <td class="phpdocumentor-cell">Create columns from rows.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">452</td>
+                        <td class="phpdocumentor-cell">Add the column.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">521</td>
+                        <td class="phpdocumentor-cell">This is PostgreSQL 7.x, or the old type could not be coerced to</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">522</td>
+                        <td class="phpdocumentor-cell">the new type, so we have to use a more arcane way of doing it.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">524</td>
+                        <td class="phpdocumentor-cell">Booleans can&#039;t always be cast to other data types; do extra</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">525</td>
+                        <td class="phpdocumentor-cell">work to handle them.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">820</td>
+                        <td class="phpdocumentor-cell">Construct a clean list of column names from the ORDER BY clause,</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">821</td>
+                        <td class="phpdocumentor-cell">removing any ASC/DESC modifiers.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">827</td>
+                        <td class="phpdocumentor-cell">Return a DISTINCT ON() clause that&#039;s distinct on the columns we want</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">828</td>
+                        <td class="phpdocumentor-cell">but includes all the required columns for the ORDER BY to work</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">829</td>
+                        <td class="phpdocumentor-cell">properly.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">981</td>
+                        <td class="phpdocumentor-cell">www.postgresql.org/docs/current/static/ddl-schemas.html</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">1111</td>
+                        <td class="phpdocumentor-cell">First try looking for a sequence with a dependency on the</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">1112</td>
+                        <td class="phpdocumentor-cell">given table&#039;s primary key.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">1145</td>
+                        <td class="phpdocumentor-cell">[primary_key, sequence]</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/SplitRead.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">14</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">30</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">331</td>
+                        <td class="phpdocumentor-cell">Can&#039;t assume this will always be a read action, use _write.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">335</td>
+                        <td class="phpdocumentor-cell">Once doing writes, keep using the write backend even for reads</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">336</td>
+                        <td class="phpdocumentor-cell">at least during the same request, to help against stale data.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">363</td>
+                        <td class="phpdocumentor-cell">Once doing writes, keep using the write backend even for reads</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">364</td>
+                        <td class="phpdocumentor-cell">at least during the same request, to help against stale data.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">392</td>
+                        <td class="phpdocumentor-cell">Once doing writes, keep using the write backend even for reads</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">393</td>
+                        <td class="phpdocumentor-cell">at least during the same request, to help against stale data.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">416</td>
+                        <td class="phpdocumentor-cell">Once doing writes, keep using the write backend even for reads</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">417</td>
+                        <td class="phpdocumentor-cell">at least during the same request, to help against stale data.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">440</td>
+                        <td class="phpdocumentor-cell">Once doing writes, keep using the write backend even for reads</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">441</td>
+                        <td class="phpdocumentor-cell">at least during the same request, to help against stale data.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">464</td>
+                        <td class="phpdocumentor-cell">Once doing writes, keep using the write backend even for reads</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">465</td>
+                        <td class="phpdocumentor-cell">at least during the same request, to help against stale data.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Sqlite/Column.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Sqlite/Column.php">Column.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter/Sqlite/Schema.php"></a>
+            <h3><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">14</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">30</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">133</td>
+                        <td class="phpdocumentor-cell">Share the columns cache with the columns() method</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">168</td>
+                        <td class="phpdocumentor-cell">ignore internal sqlite_* index tables</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">203</td>
+                        <td class="phpdocumentor-cell">create columns from rows</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">256</td>
+                        <td class="phpdocumentor-cell">See last paragraph on http://www.sqlite.org/lang_altertable.html</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">703</td>
+                        <td class="phpdocumentor-cell">Index name can&#039;t be the same</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Adapter.php"></a>
+            <h3><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Exception.php"></a>
+            <h3><abbr title="Horde/Db/Exception.php">Exception.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">26</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Migration/Base.php"></a>
+            <h3><abbr title="Horde/Db/Migration/Base.php">Base.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">90</td>
+                        <td class="phpdocumentor-cell">benchmark method call</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">96</td>
+                        <td class="phpdocumentor-cell">print stats</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Migration/Exception.php"></a>
+            <h3><abbr title="Horde/Db/Migration/Exception.php">Exception.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Migration/Migrator.php"></a>
+            <h3><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">4</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">7</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">13</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">97</td>
+                        <td class="phpdocumentor-cell">migrate down</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">144</td>
+                        <td class="phpdocumentor-cell">Sort by version.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">207</td>
+                        <td class="phpdocumentor-cell">Sort by version.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/SearchParser.php"></a>
+            <h3><abbr title="Horde/Db/SearchParser.php">SearchParser.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">3</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">6</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">10</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">47</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/StatementParser.php"></a>
+            <h3><abbr title="Horde/Db/StatementParser.php">StatementParser.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">3</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">6</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">11</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">22</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">92</td>
+                        <td class="phpdocumentor-cell">Leave off the ending ;</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Value/Binary.php"></a>
+            <h3><abbr title="Horde/Db/Value/Binary.php">Binary.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">3</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">6</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">10</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">21</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Value/Lob.php"></a>
+            <h3><abbr title="Horde/Db/Value/Lob.php">Lob.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">3</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">6</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">10</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">21</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">78</td>
+                        <td class="phpdocumentor-cell">temp&#039;, &#039;r+&#039;);</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Value/Text.php"></a>
+            <h3><abbr title="Horde/Db/Value/Text.php">Text.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">3</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">6</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">10</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">21</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db/Value.php"></a>
+            <h3><abbr title="Horde/Db/Value.php">Value.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">3</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">6</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">10</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">20</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="Horde/Db.php"></a>
+            <h3><abbr title="Horde/Db.php">Db.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">3</td>
+                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">6</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">10</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell"></td>
+                        <td class="phpdocumentor-cell">20</td>
+                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd</td>
                     </tr>
                                 </tbody>
             </table>
@@ -124,5 +2385,9 @@
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>
