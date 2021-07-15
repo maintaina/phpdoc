@@ -8,12 +8,16 @@
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -48,12 +52,15 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
+        
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                    </section>
+            </section>
 
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Mime.html"><abbr title="\Mime">Mime</abbr></a></h3>
+                        </section>
     
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
@@ -81,6 +88,12 @@
         extends <a href="classes/Horde-Mime-Headers-Identification.html"><abbr title="\Horde_Mime_Headers_Identification">Horde_Mime_Headers_Identification</abbr></a>
     </span>
     
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Mime.html">Mime</a></li>
+                            </ul>
+        </div>
     
     
     </h2>
@@ -89,11 +102,11 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/MessageId.php"><a href="files/horde-mime-headers-messageid.html"><abbr title="Horde/Mime/Headers/MessageId.php">MessageId.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">24</span>
-</aside>
+
+    </aside>
 
             <p class="phpdocumentor-summary">This class represents the Message-ID header value (RFC 2822 [3.6.4]).</p>
 
-    <section class="phpdocumentor-description"></section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -143,8 +156,7 @@
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">2.5.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -323,7 +335,8 @@ to a RFC compliant mail submission server.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Element/Single.php"><a href="files/horde-mime-headers-element-single.html"><abbr title="Horde/Mime/Headers/Element/Single.php">Single.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -334,6 +347,8 @@ to a RFC compliant mail submission server.</dd>
 
         <section class="phpdocumentor-description"><p>Full header value.</p>
 </section>
+
+        <section class="phpdocumentor-description"></section>
 
     
 
@@ -355,7 +370,8 @@ to a RFC compliant mail submission server.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Element.php"><a href="files/horde-mime-headers-element.html"><abbr title="Horde/Mime/Headers/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -366,6 +382,8 @@ to a RFC compliant mail submission server.</dd>
 
         <section class="phpdocumentor-description"><p>Header name.</p>
 </section>
+
+        <section class="phpdocumentor-description"></section>
 
     
 
@@ -387,7 +405,8 @@ to a RFC compliant mail submission server.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Element/Single.php"><a href="files/horde-mime-headers-element-single.html"><abbr title="Horde/Mime/Headers/Element/Single.php">Single.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -398,6 +417,8 @@ to a RFC compliant mail submission server.</dd>
 
         <section class="phpdocumentor-description"><p>Header value.</p>
 </section>
+
+        <section class="phpdocumentor-description"></section>
 
     
 
@@ -419,7 +440,8 @@ to a RFC compliant mail submission server.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Element.php"><a href="files/horde-mime-headers-element.html"><abbr title="Horde/Mime/Headers/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -430,6 +452,8 @@ to a RFC compliant mail submission server.</dd>
 
         <section class="phpdocumentor-description"><p>The first header value.</p>
 </section>
+
+        <section class="phpdocumentor-description"></section>
 
     
 
@@ -451,7 +475,8 @@ to a RFC compliant mail submission server.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Element.php"><a href="files/horde-mime-headers-element.html"><abbr title="Horde/Mime/Headers/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">35</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Header name (UTF-8, although limited to US-ASCII subset by RFCs).</p>
 
@@ -461,8 +486,8 @@ to a RFC compliant mail submission server.</dd>
     <span class="phpdocumentor-signature__name">$_name</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -483,7 +508,8 @@ to a RFC compliant mail submission server.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Element.php"><a href="files/horde-mime-headers-element.html"><abbr title="Horde/Mime/Headers/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">42</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Header values.</p>
 
@@ -493,8 +519,8 @@ to a RFC compliant mail submission server.</dd>
     <span class="phpdocumentor-signature__name">$_values</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -519,15 +545,15 @@ to a RFC compliant mail submission server.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/MessageId.php"><a href="files/horde-mime-headers-messageid.html"><abbr title="Horde/Mime/Headers/MessageId.php">MessageId.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">45</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -535,14 +561,16 @@ to a RFC compliant mail submission server.</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$value</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -551,8 +579,7 @@ to a RFC compliant mail submission server.</dd>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -569,15 +596,15 @@ to a RFC compliant mail submission server.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Element.php"><a href="files/horde-mime-headers-element.html"><abbr title="Horde/Mime/Headers/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">61</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -585,7 +612,8 @@ to a RFC compliant mail submission server.</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -594,8 +622,7 @@ to a RFC compliant mail submission server.</dd>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -612,23 +639,22 @@ to a RFC compliant mail submission server.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Element/Single.php"><a href="files/horde-mime-headers-element-single.html"><abbr title="Horde/Mime/Headers/Element/Single.php">Single.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">46</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__toString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -645,7 +671,8 @@ to a RFC compliant mail submission server.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/MessageId.php"><a href="files/horde-mime-headers-messageid.html"><abbr title="Horde/Mime/Headers/MessageId.php">MessageId.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">35</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Creates a Message-ID header conforming to RFC 2822 [3.6.4] and the
 standards outlined in &#039;draft-ietf-usefor-message-id-01.txt&#039;.</p>
@@ -654,8 +681,7 @@ standards outlined in &#039;draft-ietf-usefor-message-id-01.txt&#039;.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;Horde&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Mime-Headers-MessageId.html"><abbr title="\Horde_Mime_Headers_MessageId">Horde_Mime_Headers_MessageId</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -693,7 +719,8 @@ standards outlined in &#039;draft-ietf-usefor-message-id-01.txt&#039;.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/MessageId.php"><a href="files/horde-mime-headers-messageid.html"><abbr title="Horde/Mime/Headers/MessageId.php">MessageId.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">52</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return list of explicit header names handled by this driver.</p>
 
@@ -701,8 +728,7 @@ standards outlined in &#039;draft-ietf-usefor-message-id-01.txt&#039;.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getHandles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -728,7 +754,8 @@ standards outlined in &#039;draft-ietf-usefor-message-id-01.txt&#039;.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Identification.php"><a href="files/horde-mime-headers-identification.html"><abbr title="Horde/Mime/Headers/Identification.php">Identification.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">32</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get the identification object for the header value.</p>
 
@@ -736,8 +763,7 @@ standards outlined in &#039;draft-ietf-usefor-message-id-01.txt&#039;.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getIdentificationOb</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Mail_Rfc822_Identification">Horde_Mail_Rfc822_Identification</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -763,23 +789,22 @@ standards outlined in &#039;draft-ietf-usefor-message-id-01.txt&#039;.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Element.php"><a href="files/horde-mime-headers-element.html"><abbr title="Horde/Mime/Headers/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">176</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getIterator</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -796,7 +821,8 @@ standards outlined in &#039;draft-ietf-usefor-message-id-01.txt&#039;.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Element.php"><a href="files/horde-mime-headers-element.html"><abbr title="Horde/Mime/Headers/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">155</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">If true, indicates the contents of the header is the default value.</p>
 
@@ -804,8 +830,7 @@ standards outlined in &#039;draft-ietf-usefor-message-id-01.txt&#039;.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">isDefault</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -819,8 +844,7 @@ standards outlined in &#039;draft-ietf-usefor-message-id-01.txt&#039;.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">2.8.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -846,7 +870,8 @@ standards outlined in &#039;draft-ietf-usefor-message-id-01.txt&#039;.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Element.php"><a href="files/horde-mime-headers-element.html"><abbr title="Horde/Mime/Headers/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">97</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns the encoded string value(s) needed when sending the header text
 to a RFC compliant mail submission server.</p>
@@ -855,8 +880,7 @@ to a RFC compliant mail submission server.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__final">final</span>        <span class="phpdocumentor-signature__name">sendEncode</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -898,7 +922,8 @@ DEFAULT: UTF-8</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Element.php"><a href="files/horde-mime-headers-element.html"><abbr title="Horde/Mime/Headers/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">77</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set the value of the header.</p>
 
@@ -906,8 +931,7 @@ DEFAULT: UTF-8</li>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__final">final</span>        <span class="phpdocumentor-signature__name">setValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -926,8 +950,7 @@ DEFAULT: UTF-8</li>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -944,7 +967,8 @@ DEFAULT: UTF-8</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Element.php"><a href="files/horde-mime-headers-element.html"><abbr title="Horde/Mime/Headers/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">119</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Perform sanity checking on a header value.</p>
 
@@ -952,8 +976,7 @@ DEFAULT: UTF-8</li>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_sanityCheck</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -991,7 +1014,8 @@ DEFAULT: UTF-8</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Element.php"><a href="files/horde-mime-headers-element.html"><abbr title="Horde/Mime/Headers/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">107</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">TODO</p>
 
@@ -999,8 +1023,7 @@ DEFAULT: UTF-8</li>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_sendEncode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opts</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1008,7 +1031,8 @@ DEFAULT: UTF-8</li>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1017,8 +1041,7 @@ DEFAULT: UTF-8</li>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1035,7 +1058,8 @@ DEFAULT: UTF-8</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mime/Headers/Element.php"><a href="files/horde-mime-headers-element.html"><abbr title="Horde/Mime/Headers/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">85</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">TODO</p>
 
@@ -1043,8 +1067,7 @@ DEFAULT: UTF-8</li>
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">_setValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1052,7 +1075,8 @@ DEFAULT: UTF-8</li>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1061,11 +1085,72 @@ DEFAULT: UTF-8</li>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
             </section>
+
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
 
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
@@ -1088,5 +1173,9 @@ DEFAULT: UTF-8</li>
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>
