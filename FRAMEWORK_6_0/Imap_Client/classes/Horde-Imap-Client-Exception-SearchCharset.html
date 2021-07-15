@@ -8,12 +8,16 @@
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -48,12 +52,18 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
+        
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                    </section>
+            </section>
 
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Imap.html"><abbr title="\Imap">Imap</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="packages/Imap-Client.html"><abbr title="\Imap\Client">Client</abbr></a></li>
+                            </ul>
+                        </section>
     
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
@@ -82,6 +92,13 @@
         extends <a href="classes/Horde-Imap-Client-Exception.html"><abbr title="\Horde_Imap_Client_Exception">Horde_Imap_Client_Exception</abbr></a>
     </span>
     
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Imap.html">Imap</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Imap-Client.html">Client</a></li>
+                            </ul>
+        </div>
     
     
     </h2>
@@ -90,12 +107,12 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception/SearchCharset.php"><a href="files/horde-imap-client-exception-searchcharset.html"><abbr title="Horde/Imap/Client/Exception/SearchCharset.php">SearchCharset.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">24</span>
-</aside>
+
+    </aside>
 
             <p class="phpdocumentor-summary">Exception thrown if search query text cannot be converted to different
 charset.</p>
 
-    <section class="phpdocumentor-description"></section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -489,7 +506,8 @@ errors of this type.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">132</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The operation failed because the requested creation object already
 exists.</p>
@@ -502,6 +520,7 @@ exists.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -517,7 +536,8 @@ exists.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">48</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The charset used in the search query is not supported on the
 server.</p>
@@ -530,6 +550,7 @@ server.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -545,7 +566,8 @@ server.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">64</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The comparator specified by setComparator() was not recognized by the
 IMAP server</p>
@@ -558,6 +580,7 @@ IMAP server</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -573,7 +596,8 @@ IMAP server</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">90</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Thrown on CATENATE if the URL is invalid.</p>
 
@@ -585,6 +609,7 @@ IMAP server</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -600,7 +625,8 @@ IMAP server</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">95</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Thrown on CATENATE if the message was too big.</p>
 
@@ -612,6 +638,7 @@ IMAP server</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -627,7 +654,8 @@ IMAP server</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">116</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The operation failed because data on the server was corrupt.</p>
 
@@ -639,6 +667,7 @@ IMAP server</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -654,7 +683,8 @@ IMAP server</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">43</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The server ended the connection.</p>
 
@@ -666,6 +696,7 @@ IMAP server</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -681,7 +712,8 @@ IMAP server</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">111</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The operation was not successful because another user is holding
 a necessary resource. The operation may succeed if attempted later.</p>
@@ -694,6 +726,7 @@ a necessary resource. The operation may succeed if attempted later.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -709,7 +742,8 @@ a necessary resource. The operation may succeed if attempted later.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">121</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The operation failed because it exceeded some limit on the server.</p>
 
@@ -721,6 +755,7 @@ a necessary resource. The operation may succeed if attempted later.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -736,7 +771,8 @@ a necessary resource. The operation may succeed if attempted later.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">180</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Generic authentication failure.</p>
 
@@ -748,6 +784,7 @@ a necessary resource. The operation may succeed if attempted later.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -763,7 +800,8 @@ a necessary resource. The operation may succeed if attempted later.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">190</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Authentication succeeded, but authorization failed.</p>
 
@@ -775,6 +813,7 @@ a necessary resource. The operation may succeed if attempted later.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -790,7 +829,8 @@ a necessary resource. The operation may succeed if attempted later.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">195</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Authentication is no longer permitted with this passphrase.</p>
 
@@ -802,6 +842,7 @@ a necessary resource. The operation may succeed if attempted later.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -817,7 +858,8 @@ a necessary resource. The operation may succeed if attempted later.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">175</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Could not find an available authentication method.</p>
 
@@ -829,6 +871,7 @@ a necessary resource. The operation may succeed if attempted later.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -844,7 +887,8 @@ a necessary resource. The operation may succeed if attempted later.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">200</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Login requires privacy.</p>
 
@@ -856,6 +900,7 @@ a necessary resource. The operation may succeed if attempted later.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -871,7 +916,8 @@ a necessary resource. The operation may succeed if attempted later.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">205</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Server verification failed (SCRAM authentication).</p>
 
@@ -883,6 +929,7 @@ a necessary resource. The operation may succeed if attempted later.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -898,7 +945,8 @@ a necessary resource. The operation may succeed if attempted later.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">170</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Could not start mandatory TLS connection.</p>
 
@@ -910,6 +958,7 @@ a necessary resource. The operation may succeed if attempted later.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -925,7 +974,8 @@ a necessary resource. The operation may succeed if attempted later.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">185</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Remote server is unavailable.</p>
 
@@ -937,6 +987,7 @@ a necessary resource. The operation may succeed if attempted later.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -952,7 +1003,8 @@ a necessary resource. The operation may succeed if attempted later.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">213</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Could not open/access mailbox</p>
 
@@ -964,6 +1016,7 @@ a necessary resource. The operation may succeed if attempted later.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -979,7 +1032,8 @@ a necessary resource. The operation may succeed if attempted later.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">218</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Could not complete the command because the mailbox is read-only</p>
 
@@ -991,6 +1045,7 @@ a necessary resource. The operation may succeed if attempted later.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1006,7 +1061,8 @@ a necessary resource. The operation may succeed if attempted later.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">70</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">RFC 7162 [3.1.2.2] - All mailboxes are not required to support
 mod-sequences.</p>
@@ -1019,6 +1075,7 @@ mod-sequences.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1034,7 +1091,8 @@ mod-sequences.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">162</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Invalid metadata entry.</p>
 
@@ -1046,6 +1104,7 @@ mod-sequences.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1061,7 +1120,8 @@ mod-sequences.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">145</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Setting metadata failed because the size of its value is too large.</p>
 
@@ -1077,6 +1137,8 @@ mod-sequences.</p>
 in the exception message string.</p>
 </section>
 
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -1090,7 +1152,8 @@ in the exception message string.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">157</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Setting metadata failed because the server does not support private
 annotations on one of the specified mailboxes.</p>
@@ -1103,6 +1166,7 @@ annotations on one of the specified mailboxes.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1118,7 +1182,8 @@ annotations on one of the specified mailboxes.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">151</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Setting metadata failed because the maximum number of allowed
 annotations has already been reached.</p>
@@ -1131,6 +1196,7 @@ annotations has already been reached.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1146,7 +1212,8 @@ annotations has already been reached.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">138</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The operation failed because the requested deletion object did not
 exist.</p>
@@ -1159,6 +1226,7 @@ exist.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1174,7 +1242,8 @@ exist.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">105</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The user did not have permissions to carry out the operation.</p>
 
@@ -1186,6 +1255,7 @@ exist.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1201,7 +1271,8 @@ exist.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">240</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Function/feature is not supported on this server.</p>
 
@@ -1213,6 +1284,7 @@ exist.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1228,7 +1300,8 @@ exist.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">126</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The operation failed because the user is over their quota.</p>
 
@@ -1240,6 +1313,7 @@ exist.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1255,7 +1329,8 @@ exist.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">53</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">There were errors parsing the MIME/RFC 2822 header of the part.</p>
 
@@ -1267,6 +1342,7 @@ exist.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1282,7 +1358,8 @@ exist.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">232</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Permanent error indicated by server.</p>
 
@@ -1294,6 +1371,7 @@ exist.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1309,7 +1387,8 @@ exist.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">227</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Temporary issue. Generally, there is no need to alarm the user for
 errors of this type.</p>
@@ -1322,6 +1401,7 @@ errors of this type.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1337,7 +1417,8 @@ errors of this type.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">75</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Thrown if server denies the network connection.</p>
 
@@ -1349,6 +1430,7 @@ errors of this type.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1364,7 +1446,8 @@ errors of this type.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">80</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Thrown if read error for server response.</p>
 
@@ -1376,6 +1459,7 @@ errors of this type.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1391,7 +1475,8 @@ errors of this type.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">85</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Thrown if write error in server interaction.</p>
 
@@ -1403,6 +1488,7 @@ errors of this type.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1418,7 +1504,8 @@ errors of this type.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">58</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The server could not decode the MIME part (see RFC 3516).</p>
 
@@ -1430,6 +1517,7 @@ errors of this type.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1445,7 +1533,8 @@ errors of this type.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">33</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Unspecified error (DEFAULT).</p>
 
@@ -1453,10 +1542,11 @@ errors of this type.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">UNSPECIFIED</span>
-    = <span class="phpdocumentor-signature__default-value">""</span>
+    = <span class="phpdocumentor-signature__default-value">0</span>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1472,7 +1562,8 @@ errors of this type.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">100</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Thrown on CREATE if special-use attribute is not supported.</p>
 
@@ -1484,6 +1575,7 @@ errors of this type.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1499,7 +1591,8 @@ errors of this type.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">38</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">There was an unrecoverable error in UTF7IMAP -&gt; UTF8 conversion.</p>
 
@@ -1511,6 +1604,7 @@ errors of this type.</p>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -1541,7 +1635,8 @@ errors of this type.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception/SearchCharset.php"><a href="files/horde-imap-client-exception-searchcharset.html"><abbr title="Horde/Imap/Client/Exception/SearchCharset.php">SearchCharset.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">32</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Charset that was attempted to be converted to.</p>
 
@@ -1551,8 +1646,8 @@ errors of this type.</p>
     <span class="phpdocumentor-signature__name">$charset</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -1573,7 +1668,8 @@ errors of this type.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">250</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Raw error message (in English).</p>
 
@@ -1583,8 +1679,8 @@ errors of this type.</p>
     <span class="phpdocumentor-signature__name">$raw_msg</span>
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -1597,8 +1693,7 @@ errors of this type.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">2.18.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1624,7 +1719,8 @@ errors of this type.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception/SearchCharset.php"><a href="files/horde-imap-client-exception-searchcharset.html"><abbr title="Horde/Imap/Client/Exception/SearchCharset.php">SearchCharset.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">40</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Constructor.</p>
 
@@ -1632,8 +1728,7 @@ errors of this type.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$charset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1653,8 +1748,7 @@ to.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1671,7 +1765,8 @@ to.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">297</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Perform substitution of variables in the error message.</p>
 
@@ -1707,16 +1802,14 @@ to.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">2.22.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1733,7 +1826,8 @@ to.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">283</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Allow the error code to be altered.</p>
 
@@ -1741,8 +1835,7 @@ to.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setCode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$code</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1761,8 +1854,7 @@ to.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1779,7 +1871,8 @@ to.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Exception.php"><a href="files/horde-imap-client-exception.html"><abbr title="Horde/Imap/Client/Exception.php">Exception.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">273</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Allow the error message to be altered.</p>
 
@@ -1787,8 +1880,7 @@ to.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setMessage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$msg</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1807,11 +1899,72 @@ to.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
             </section>
+
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
 
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
@@ -1834,5 +1987,9 @@ to.</p>
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>

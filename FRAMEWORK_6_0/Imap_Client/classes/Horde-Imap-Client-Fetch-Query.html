@@ -8,12 +8,16 @@
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -48,12 +52,18 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
+        
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                    </section>
+            </section>
 
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Imap.html"><abbr title="\Imap">Imap</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="packages/Imap-Client.html"><abbr title="\Imap\Client">Client</abbr></a></li>
+                            </ul>
+                        </section>
     
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
@@ -79,6 +89,13 @@
     Horde_Imap_Client_Fetch_Query
 
     
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Imap.html">Imap</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Imap-Client.html">Client</a></li>
+                            </ul>
+        </div>
     
             <span class="phpdocumentor-element__implements">
             implements
@@ -90,11 +107,11 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">23</span>
-</aside>
+
+    </aside>
 
             <p class="phpdocumentor-summary">Fetch query object for use with Horde_Imap_Client_Base#fetch().</p>
 
-    <section class="phpdocumentor-description"></section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -398,7 +415,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">30</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Internal data array.</p>
 
@@ -408,8 +426,8 @@
     <span class="phpdocumentor-signature__name">$_data</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -434,7 +452,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">143</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return the body part data for a MIME ID.</p>
 
@@ -442,8 +461,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">bodyPart</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -484,8 +502,7 @@ DEFAULT: The entire text is returned.</li>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -502,7 +519,8 @@ DEFAULT: The entire text is returned.</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">154</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns the decoded body part size for a MIME ID.</p>
 
@@ -510,8 +528,7 @@ DEFAULT: The entire text is returned.</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">bodyPartSize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -531,8 +548,7 @@ for.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -549,7 +565,8 @@ for.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">96</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return body text.</p>
 
@@ -592,8 +609,7 @@ DEFAULT: The entire text is returned.</li>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -610,7 +626,8 @@ DEFAULT: The entire text is returned.</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">269</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Does the query contain the given criteria?</p>
 
@@ -618,8 +635,7 @@ DEFAULT: The entire text is returned.</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">contains</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$criteria</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -657,23 +673,22 @@ DEFAULT: The entire text is returned.</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">337</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">count</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -690,23 +705,22 @@ DEFAULT: The entire text is returned.</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">346</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">current</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -723,7 +737,8 @@ DEFAULT: The entire text is returned.</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">206</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return envelope header data.</p>
 
@@ -731,16 +746,14 @@ DEFAULT: The entire text is returned.</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">envelope</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -757,7 +770,8 @@ DEFAULT: The entire text is returned.</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">214</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return flags set for the message.</p>
 
@@ -765,16 +779,14 @@ DEFAULT: The entire text is returned.</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">flags</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -791,7 +803,8 @@ DEFAULT: The entire text is returned.</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">45</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get the full text of the message.</p>
 
@@ -799,8 +812,7 @@ DEFAULT: The entire text is returned.</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">fullText</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -829,8 +841,7 @@ DEFAULT: The entire text is returned.</li>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -847,7 +858,8 @@ DEFAULT: The entire text is returned.</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">296</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns a hash of the current query object.</p>
 
@@ -855,8 +867,7 @@ DEFAULT: The entire text is returned.</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">hash</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -882,7 +893,8 @@ DEFAULT: The entire text is returned.</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">185</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns RFC 2822 header text that matches a search string.</p>
 
@@ -948,8 +960,7 @@ DEFAULT: The entire text is returned.</li>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -966,7 +977,8 @@ DEFAULT: The entire text is returned.</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">69</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return header text.</p>
 
@@ -1009,8 +1021,7 @@ DEFAULT: The entire text is returned.</li>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1027,7 +1038,8 @@ DEFAULT: The entire text is returned.</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">222</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return the internal (IMAP) date of the message.</p>
 
@@ -1035,16 +1047,14 @@ DEFAULT: The entire text is returned.</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">imapDate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1061,23 +1071,22 @@ DEFAULT: The entire text is returned.</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">357</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">key</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1094,7 +1103,8 @@ DEFAULT: The entire text is returned.</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">121</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return MIME header text.</p>
 
@@ -1143,8 +1153,7 @@ DEFAULT: The entire text is returned.</li>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1161,7 +1170,8 @@ DEFAULT: The entire text is returned.</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">257</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return the mod-sequence value for the message.</p>
 
@@ -1179,8 +1189,7 @@ must support mod-sequences.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1197,23 +1206,22 @@ must support mod-sequences.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">364</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">next</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1230,15 +1238,15 @@ must support mod-sequences.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">305</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">offsetExists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1246,7 +1254,8 @@ must support mod-sequences.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1255,8 +1264,7 @@ must support mod-sequences.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1273,15 +1281,15 @@ must support mod-sequences.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">312</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">offsetGet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1289,7 +1297,8 @@ must support mod-sequences.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1298,8 +1307,7 @@ must support mod-sequences.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1316,15 +1324,15 @@ must support mod-sequences.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">321</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">offsetSet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1332,14 +1340,16 @@ must support mod-sequences.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$value</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1348,8 +1358,7 @@ must support mod-sequences.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1366,15 +1375,15 @@ must support mod-sequences.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">328</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">offsetUnset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1382,7 +1391,8 @@ must support mod-sequences.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1391,8 +1401,7 @@ must support mod-sequences.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1409,7 +1418,8 @@ must support mod-sequences.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">280</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Remove an entry under a given criteria.</p>
 
@@ -1417,8 +1427,7 @@ must support mod-sequences.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">remove</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$criteria</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1446,8 +1455,7 @@ must support mod-sequences.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1464,23 +1472,22 @@ must support mod-sequences.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">371</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">rewind</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1497,7 +1504,8 @@ must support mod-sequences.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">246</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return the sequence number of the message.</p>
 
@@ -1505,16 +1513,14 @@ must support mod-sequences.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">seq</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1531,7 +1537,8 @@ must support mod-sequences.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">230</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return the size (in bytes) of the message.</p>
 
@@ -1539,16 +1546,14 @@ must support mod-sequences.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">size</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1565,7 +1570,8 @@ must support mod-sequences.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">198</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return MIME structure information.</p>
 
@@ -1573,16 +1579,14 @@ must support mod-sequences.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">structure</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1599,7 +1603,8 @@ must support mod-sequences.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">238</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return the unique ID of the message.</p>
 
@@ -1607,16 +1612,14 @@ must support mod-sequences.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">uid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1633,26 +1636,87 @@ must support mod-sequences.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Fetch/Query.php"><a href="files/horde-imap-client-fetch-query.html"><abbr title="Horde/Imap/Client/Fetch/Query.php">Query.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">378</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">valid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
             </section>
+
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
 
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
@@ -1675,5 +1739,9 @@ must support mod-sequences.</p>
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>

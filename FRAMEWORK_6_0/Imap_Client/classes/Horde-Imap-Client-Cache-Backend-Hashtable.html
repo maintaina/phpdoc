@@ -8,12 +8,16 @@
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -48,12 +52,18 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
+        
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                    </section>
+            </section>
 
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Imap.html"><abbr title="\Imap">Imap</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="packages/Imap-Client.html"><abbr title="\Imap\Client">Client</abbr></a></li>
+                            </ul>
+                        </section>
     
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
@@ -82,6 +92,13 @@
         extends <a href="classes/Horde-Imap-Client-Cache-Backend.html"><abbr title="\Horde_Imap_Client_Cache_Backend">Horde_Imap_Client_Cache_Backend</abbr></a>
     </span>
     
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Imap.html">Imap</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Imap-Client.html">Client</a></li>
+                            </ul>
+        </div>
     
     
     </h2>
@@ -90,7 +107,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">25</span>
-</aside>
+
+    </aside>
 
             <p class="phpdocumentor-summary">A Horde_HashTable implementation for caching IMAP/POP data.</p>
 
@@ -145,8 +163,7 @@
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">2.17.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -357,7 +374,8 @@ this data.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">29</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Separator for CID between mailbox and UID.</p>
 
@@ -369,6 +387,7 @@ this data.</dd>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -399,7 +418,8 @@ this data.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">37</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The working data for the current pageload. All changes take place to
 this data.</p>
@@ -410,8 +430,8 @@ this data.</p>
     <span class="phpdocumentor-signature__name">$_data</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -432,7 +452,8 @@ this data.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">44</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">HashTable object.</p>
 
@@ -442,8 +463,8 @@ this data.</p>
     <span class="phpdocumentor-signature__name">$_hash</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -464,7 +485,8 @@ this data.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">51</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Mailbox level data.</p>
 
@@ -474,8 +496,8 @@ this data.</p>
     <span class="phpdocumentor-signature__name">$_mbox</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -496,7 +518,8 @@ this data.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">58</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Horde_Pack singleton object.</p>
 
@@ -506,8 +529,8 @@ this data.</p>
     <span class="phpdocumentor-signature__name">$_pack</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -528,7 +551,8 @@ this data.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend.php"><a href="files/horde-imap-client-cache-backend.html"><abbr title="Horde/Imap/Client/Cache/Backend.php">Backend.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">31</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Configuration paramters.</p>
 
@@ -541,6 +565,7 @@ this data.</p>
         <section class="phpdocumentor-description"><p>Values set by the base Cache object: hostspec, port, username</p>
 </section>
 
+    
     
 
 </article>
@@ -561,7 +586,8 @@ this data.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">71</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">List of mailbox/UIDs to update.</p>
 
@@ -579,6 +605,7 @@ this data.</p>
 </pre>
 </section>
 
+    
     
 
 </article>
@@ -603,7 +630,8 @@ this data.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">86</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Constructor.</p>
 
@@ -611,8 +639,7 @@ this data.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -639,8 +666,7 @@ this data.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -657,7 +683,8 @@ this data.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">260</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Clear the cache.</p>
 
@@ -665,8 +692,7 @@ this data.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">clear</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lifetime</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -686,8 +712,7 @@ seconds). If null, deletes all entries.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -704,7 +729,8 @@ seconds). If null, deletes all entries.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">240</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Delete a mailbox from the cache.</p>
 
@@ -712,8 +738,7 @@ seconds). If null, deletes all entries.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">deleteMailbox</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -732,8 +757,7 @@ seconds). If null, deletes all entries.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -750,7 +774,8 @@ seconds). If null, deletes all entries.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">218</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Delete messages in the cache.</p>
 
@@ -758,8 +783,7 @@ seconds). If null, deletes all entries.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">deleteMsgs</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uids</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -787,8 +811,7 @@ seconds). If null, deletes all entries.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -805,7 +828,8 @@ seconds). If null, deletes all entries.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">108</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get information from the cache for a set of UIDs.</p>
 
@@ -813,8 +837,7 @@ seconds). If null, deletes all entries.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uids</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fields</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uidvalid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -883,7 +906,8 @@ undefined if not found).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">154</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get the list of cached UIDs.</p>
 
@@ -891,8 +915,7 @@ undefined if not found).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getCachedUids</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uidvalid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -939,7 +962,8 @@ undefined if not found).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">194</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get metadata information for a mailbox.</p>
 
@@ -947,8 +971,7 @@ undefined if not found).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getMetaData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uidvalid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entries</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1010,7 +1033,8 @@ defaults and always present:</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">273</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Updates the cache.</p>
 
@@ -1018,16 +1042,14 @@ defaults and always present:</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">save</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1044,23 +1066,22 @@ defaults and always present:</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend.php"><a href="files/horde-imap-client-cache-backend.html"><abbr title="Horde/Imap/Client/Cache/Backend.php">Backend.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">152</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">serialize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1077,7 +1098,8 @@ defaults and always present:</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">162</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Store data in cache.</p>
 
@@ -1085,8 +1107,7 @@ defaults and always present:</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uidvalid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1125,8 +1146,7 @@ to save.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1143,7 +1163,8 @@ to save.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">205</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set metadata information for a mailbox.</p>
 
@@ -1151,8 +1172,7 @@ to save.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setMetaData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1183,8 +1203,7 @@ the 'uidvalid' key in $data.)</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1201,7 +1220,8 @@ the 'uidvalid' key in $data.)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend.php"><a href="files/horde-imap-client-cache-backend.html"><abbr title="Horde/Imap/Client/Cache/Backend.php">Backend.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">56</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Add configuration parameters.</p>
 
@@ -1209,8 +1229,7 @@ the 'uidvalid' key in $data.)</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setParams</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1229,8 +1248,7 @@ the 'uidvalid' key in $data.)</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1247,15 +1265,15 @@ the 'uidvalid' key in $data.)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend.php"><a href="files/horde-imap-client-cache-backend.html"><abbr title="Horde/Imap/Client/Cache/Backend.php">Backend.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">159</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">unserialize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1263,7 +1281,8 @@ the 'uidvalid' key in $data.)</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1272,8 +1291,7 @@ the 'uidvalid' key in $data.)</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1290,7 +1308,8 @@ the 'uidvalid' key in $data.)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">390</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Create the unique ID used to store the mailbox data in the cache.</p>
 
@@ -1298,8 +1317,7 @@ the 'uidvalid' key in $data.)</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_getCid</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1337,7 +1355,8 @@ the 'uidvalid' key in $data.)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">409</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return a list of cache IDs for mailbox/UID pairs.</p>
 
@@ -1345,8 +1364,7 @@ the 'uidvalid' key in $data.)</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_getMsgCids</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ids</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1393,7 +1411,8 @@ the 'uidvalid' key in $data.)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">99</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Initialization tasks.</p>
 
@@ -1401,16 +1420,14 @@ the 'uidvalid' key in $data.)</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_initOb</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1427,7 +1444,8 @@ the 'uidvalid' key in $data.)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">321</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Loads basic mailbox information.</p>
 
@@ -1435,8 +1453,7 @@ the 'uidvalid' key in $data.)</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_loadMailbox</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uidvalid</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1464,8 +1481,7 @@ the 'uidvalid' key in $data.)</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1482,7 +1498,8 @@ the 'uidvalid' key in $data.)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Imap/Client/Cache/Backend/Hashtable.php"><a href="files/horde-imap-client-cache-backend-hashtable.html"><abbr title="Horde/Imap/Client/Cache/Backend/Hashtable.php">Hashtable.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">354</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Load UIDs by regenerating from the cache.</p>
 
@@ -1490,8 +1507,7 @@ the 'uidvalid' key in $data.)</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_loadUids</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uids</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uidvalid</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1528,11 +1544,72 @@ the 'uidvalid' key in $data.)</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
             </section>
+
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
 
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
@@ -1555,5 +1632,9 @@ the 'uidvalid' key in $data.)</p>
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>
