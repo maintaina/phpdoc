@@ -8,12 +8,16 @@
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -48,12 +52,15 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
+        
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                    </section>
+            </section>
 
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Mail.html"><abbr title="\Mail">Mail</abbr></a></h3>
+                        </section>
     
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
@@ -81,6 +88,12 @@
         extends <a href="classes/Horde-Mail-Rfc822.html"><abbr title="\Horde_Mail_Rfc822">Horde_Mail_Rfc822</abbr></a>
     </span>
     
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Mail.html">Mail</a></li>
+                            </ul>
+        </div>
     
     
     </h2>
@@ -89,12 +102,12 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822/Identification.php"><a href="files/horde-mail-rfc822-identification.html"><abbr title="Horde/Mail/Rfc822/Identification.php">Identification.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">25</span>
-</aside>
+
+    </aside>
 
             <p class="phpdocumentor-summary">Class to parse identification headers (RFC 5322 [3.6.4]): Message-ID,
 References, and In-Reply-To.</p>
 
-    <section class="phpdocumentor-description"></section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -144,8 +157,7 @@ References, and In-Reply-To.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">2.2.0</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -454,7 +466,8 @@ strict RFC checks.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">67</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Valid atext characters.</p>
 
@@ -466,6 +479,7 @@ strict RFC checks.</dd>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -479,8 +493,7 @@ strict RFC checks.</dd>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                                                 <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">since</span>
@@ -488,8 +501,7 @@ strict RFC checks.</dd>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">2.0.3</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -504,7 +516,8 @@ strict RFC checks.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">75</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Excluded (in ASCII decimal): 0-8, 10-31, 34, 40-41, 44, 58-60, 62, 64,
 91-93, 127</p>
@@ -518,6 +531,7 @@ strict RFC checks.</dd>
 </code>
 
 
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -532,8 +546,7 @@ strict RFC checks.</dd>
                 <dd class="phpdocumentor-tag-list__definition">
                                             <span class="phpdocumentor-tag-link">2.0.3</span>
                                                                                 
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -563,7 +576,8 @@ strict RFC checks.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822/Identification.php"><a href="files/horde-mail-rfc822-identification.html"><abbr title="Horde/Mail/Rfc822/Identification.php">Identification.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">32</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">List of message IDs parsed.</p>
 
@@ -573,8 +587,8 @@ strict RFC checks.</dd>
     <span class="phpdocumentor-signature__name">$ids</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -595,7 +609,8 @@ strict RFC checks.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">96</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Comment cache.</p>
 
@@ -605,8 +620,8 @@ strict RFC checks.</dd>
     <span class="phpdocumentor-signature__name">$_comments</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -627,7 +642,8 @@ strict RFC checks.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">82</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The address string to parse.</p>
 
@@ -637,8 +653,8 @@ strict RFC checks.</dd>
     <span class="phpdocumentor-signature__name">$_data</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -659,7 +675,8 @@ strict RFC checks.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">89</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Length of the address string.</p>
 
@@ -669,8 +686,8 @@ strict RFC checks.</dd>
     <span class="phpdocumentor-signature__name">$_datalen</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -691,7 +708,8 @@ strict RFC checks.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">103</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">List object to return in parseAddressList().</p>
 
@@ -701,8 +719,8 @@ strict RFC checks.</dd>
     <span class="phpdocumentor-signature__name">$_listob</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -723,7 +741,8 @@ strict RFC checks.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">110</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Configuration parameters.</p>
 
@@ -733,8 +752,8 @@ strict RFC checks.</dd>
     <span class="phpdocumentor-signature__name">$_params</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -755,7 +774,8 @@ strict RFC checks.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">117</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Data pointer.</p>
 
@@ -765,8 +785,8 @@ strict RFC checks.</dd>
     <span class="phpdocumentor-signature__name">$_ptr</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -791,7 +811,8 @@ strict RFC checks.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822/Identification.php"><a href="files/horde-mail-rfc822-identification.html"><abbr title="Horde/Mail/Rfc822/Identification.php">Identification.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">39</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Constructor.</p>
 
@@ -799,8 +820,7 @@ strict RFC checks.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -819,8 +839,7 @@ strict RFC checks.</dd>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -837,7 +856,8 @@ strict RFC checks.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">867</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns an approximate count of how many addresses are in the string.</p>
 
@@ -886,7 +906,8 @@ preceding backslash.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">201</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Quotes and escapes the given string if necessary using rules contained
 in RFC 2822 [3.2.5].</p>
@@ -895,8 +916,7 @@ in RFC 2822 [3.2.5].</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">encode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;address&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -944,7 +964,8 @@ in RFC 2822 [3.2.5].</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">885</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Validates whether an email is of the common internet form:
 &lt;user&gt;@&lt;domain&gt;. This can be sufficient for most people.</p>
@@ -1004,7 +1025,8 @@ it matches.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822/Identification.php"><a href="files/horde-mail-rfc822-identification.html"><abbr title="Horde/Mail/Rfc822/Identification.php">Identification.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">49</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Parse an identification header.</p>
 
@@ -1012,8 +1034,7 @@ it matches.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">parse</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1032,8 +1053,7 @@ it matches.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1050,7 +1070,8 @@ it matches.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">145</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Starts the whole process.</p>
 
@@ -1058,8 +1079,7 @@ it matches.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">parseAddressList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$address</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Mail-Rfc822-List.html"><abbr title="\Horde_Mail_Rfc822_List">Horde_Mail_Rfc822_List</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1112,8 +1132,7 @@ DEFAULT: false</li>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Mail-Exception.html"><abbr title="\Horde_Mail_Exception">Horde_Mail_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1139,7 +1158,8 @@ DEFAULT: false</li>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">242</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">If an email address has no personal information, get rid of any angle
 brackets (&lt;&gt;) around it.</p>
@@ -1148,8 +1168,7 @@ brackets (&lt;&gt;) around it.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">trimAddress</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$address</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1187,7 +1206,8 @@ brackets (&lt;&gt;) around it.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">849</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Return current character.</p>
 
@@ -1195,8 +1215,7 @@ brackets (&lt;&gt;) around it.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_curr</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$advance</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1234,7 +1253,8 @@ brackets (&lt;&gt;) around it.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">291</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">address = mailbox / group</p>
 
@@ -1242,16 +1262,14 @@ brackets (&lt;&gt;) around it.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_parseAddress</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1268,7 +1286,8 @@ brackets (&lt;&gt;) around it.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">256</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">address-list = (address *(&quot;,&quot; address)) / obs-addr-list</p>
 
@@ -1276,16 +1295,14 @@ brackets (&lt;&gt;) around it.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_parseAddressList</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1302,7 +1319,8 @@ brackets (&lt;&gt;) around it.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">401</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">addr-spec = local-part &quot;@&quot; domain</p>
 
@@ -1310,8 +1328,7 @@ brackets (&lt;&gt;) around it.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_parseAddrSpec</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -1325,8 +1342,7 @@ brackets (&lt;&gt;) around it.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Mail-Exception.html"><abbr title="\Horde_Mail_Exception">Horde_Mail_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1352,7 +1368,8 @@ brackets (&lt;&gt;) around it.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">460</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">&quot;&lt;&quot; [ &quot;@&quot; route &quot;:&quot; ] local-part &quot;@&quot; domain &quot;&gt;&quot;</p>
 
@@ -1360,8 +1377,7 @@ brackets (&lt;&gt;) around it.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_parseAngleAddr</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -1375,8 +1391,7 @@ brackets (&lt;&gt;) around it.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Mail-Exception.html"><abbr title="\Horde_Mail_Exception">Horde_Mail_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1402,7 +1417,8 @@ brackets (&lt;&gt;) around it.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">496</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">obs-domain-list = &quot;@&quot; domain *(*(CFWS / &quot;,&quot; ) [CFWS] &quot;@&quot; domain)</p>
 
@@ -1410,8 +1426,7 @@ brackets (&lt;&gt;) around it.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_parseDomainList</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -1425,8 +1440,7 @@ brackets (&lt;&gt;) around it.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Mail-Exception.html"><abbr title="\Horde_Mail_Exception">Horde_Mail_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1452,7 +1466,8 @@ brackets (&lt;&gt;) around it.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">310</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">group           = display-name &quot;:&quot; [mailbox-list / CFWS] &quot;;&quot; [CFWS]
 display-name    = phrase</p>
@@ -1461,8 +1476,7 @@ display-name    = phrase</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_parseGroup</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -1476,8 +1490,7 @@ display-name    = phrase</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Mail-Exception.html"><abbr title="\Horde_Mail_Exception">Horde_Mail_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1503,7 +1516,8 @@ display-name    = phrase</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">438</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">local-part      = dot-atom / quoted-string / obs-local-part
 obs-local-part  = word *(&quot;.&quot; word)</p>
@@ -1512,8 +1526,7 @@ obs-local-part  = word *(&quot;.&quot; word)</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_parseLocalPart</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -1527,8 +1540,7 @@ obs-local-part  = word *(&quot;.&quot; word)</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Mail-Exception.html"><abbr title="\Horde_Mail_Exception">Horde_Mail_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -1554,7 +1566,8 @@ obs-local-part  = word *(&quot;.&quot; word)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">358</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">mailbox = name-addr / addr-spec</p>
 
@@ -1562,8 +1575,7 @@ obs-local-part  = word *(&quot;.&quot; word)</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_parseMailbox</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -1589,7 +1601,8 @@ obs-local-part  = word *(&quot;.&quot; word)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">382</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">name-addr    = [display-name] angle-addr
 display-name = phrase</p>
@@ -1598,8 +1611,7 @@ display-name = phrase</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_parseNameAddr</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -1625,7 +1637,8 @@ display-name = phrase</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">799</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Check if data is an atom.</p>
 
@@ -1633,8 +1646,7 @@ display-name = phrase</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_rfc822IsAtext</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$chr</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$validate</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1682,7 +1694,8 @@ as the non-atom delimiters.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">642</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">atom  = [CFWS] 1*atext [CFWS]
 atext = ; Any character except controls, SP, and specials.</p>
@@ -1719,16 +1732,14 @@ atext = ; Any character except controls, SP, and specials.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Mail-Exception.html"><abbr title="\Horde_Mail_Exception">Horde_Mail_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1745,7 +1756,8 @@ atext = ; Any character except controls, SP, and specials.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">670</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">domain          = dot-atom / domain-literal / obs-domain
 domain-literal  = [CFWS] &quot;[&quot; *([FWS] dcontent) [FWS] &quot;]&quot; [CFWS]
@@ -1755,8 +1767,7 @@ obs-domain      = atom *(&quot;.&quot; atom)</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_rfc822ParseDomain</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1782,16 +1793,14 @@ obs-domain      = atom *(&quot;.&quot; atom)</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Mail-Exception.html"><abbr title="\Horde_Mail_Exception">Horde_Mail_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1808,7 +1817,8 @@ obs-domain      = atom *(&quot;.&quot; atom)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">697</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">domain-literal  = [CFWS] &quot;[&quot; *([FWS] dcontent) [FWS] &quot;]&quot; [CFWS]
 dcontent        = dtext / quoted-pair
@@ -1821,8 +1831,7 @@ dtext           = NO-WS-CTL /     ; Non white space controls
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_rfc822ParseDomainLiteral</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1848,16 +1857,14 @@ dtext           = NO-WS-CTL /     ; Non white space controls
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Mail-Exception.html"><abbr title="\Horde_Mail_Exception">Horde_Mail_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1874,7 +1881,8 @@ dtext           = NO-WS-CTL /     ; Non white space controls
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">604</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">dot-atom        = [CFWS] dot-atom-text [CFWS]
 dot-atom-text   = 1*atext *(&quot;.&quot; 1*atext)</p>
@@ -1921,16 +1929,14 @@ dot-atom-text   = 1*atext *(&quot;.&quot; 1*atext)</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Mail-Exception.html"><abbr title="\Horde_Mail_Exception">Horde_Mail_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1947,7 +1953,8 @@ dot-atom-text   = 1*atext *(&quot;.&quot; 1*atext)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">525</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">phrase     = 1*word / obs-phrase
 word       = atom / quoted-string
@@ -1957,8 +1964,7 @@ obs-phrase = word *(word / &quot;.&quot; / CFWS)</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_rfc822ParsePhrase</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$phrase</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1984,16 +1990,14 @@ obs-phrase = word *(word / &quot;.&quot; / CFWS)</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Mail-Exception.html"><abbr title="\Horde_Mail_Exception">Horde_Mail_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -2010,15 +2014,15 @@ obs-phrase = word *(word / &quot;.&quot; / CFWS)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">557</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_rfc822ParseQuotedString</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2026,7 +2030,8 @@ obs-phrase = word *(word / &quot;.&quot; / CFWS)</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -2042,16 +2047,14 @@ obs-phrase = word *(word / &quot;.&quot; / CFWS)</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Mail-Exception.html"><abbr title="\Horde_Mail_Exception">Horde_Mail_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -2068,15 +2071,15 @@ obs-phrase = word *(word / &quot;.&quot; / CFWS)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">755</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_rfc822SkipComment</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -2090,16 +2093,14 @@ obs-phrase = word *(word / &quot;.&quot; / CFWS)</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Mail-Exception.html"><abbr title="\Horde_Mail_Exception">Horde_Mail_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -2116,15 +2117,15 @@ obs-phrase = word *(word / &quot;.&quot; / CFWS)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822.php"><a href="files/horde-mail-rfc822.html"><abbr title="Horde/Mail/Rfc822.php">Rfc822.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">727</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_rfc822SkipLwsp</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$advance</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2150,16 +2151,14 @@ obs-phrase = word *(word / &quot;.&quot; / CFWS)</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Mail-Exception.html"><abbr title="\Horde_Mail_Exception">Horde_Mail_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -2176,7 +2175,8 @@ obs-phrase = word *(word / &quot;.&quot; / CFWS)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Mail/Rfc822/Identification.php"><a href="files/horde-mail-rfc822-identification.html"><abbr title="Horde/Mail/Rfc822/Identification.php">Identification.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">90</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Message IDs are defined in RFC 5322 [3.6.4]. In short, they can only
 contain one &#039;@&#039; character. However, Outlook can produce invalid
@@ -2205,8 +2205,7 @@ brackets to be valid.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/Horde-Mail-Exception.html"><abbr title="\Horde_Mail_Exception">Horde_Mail_Exception</abbr></a></span>
                                                             
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -2219,6 +2218,68 @@ brackets to be valid.</p>
     
 </article>
             </section>
+
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
 
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
@@ -2241,5 +2302,9 @@ brackets to be valid.</p>
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>
