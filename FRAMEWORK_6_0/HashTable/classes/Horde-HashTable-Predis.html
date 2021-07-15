@@ -8,12 +8,16 @@
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -48,12 +52,15 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
+        
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                    </section>
+            </section>
 
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/HashTable.html"><abbr title="\HashTable">HashTable</abbr></a></h3>
+                        </section>
     
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
@@ -81,6 +88,12 @@
         extends <a href="classes/Horde-HashTable-Base.html"><abbr title="\Horde_HashTable_Base">Horde_HashTable_Base</abbr></a>
     </span>
     
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/HashTable.html">HashTable</a></li>
+                            </ul>
+        </div>
     
             <span class="phpdocumentor-element__implements">
             implements
@@ -92,7 +105,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">25</span>
-</aside>
+
+    </aside>
 
             <p class="phpdocumentor-summary">Implementation of HashTable for a Redis server (using the Predis library).</p>
 
@@ -424,7 +438,8 @@ from other PHP processes.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">30</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -435,7 +450,10 @@ from other PHP processes.</dd>
 </code>
 
 
-    
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -449,7 +467,8 @@ from other PHP processes.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">33</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -460,7 +479,10 @@ from other PHP processes.</dd>
 </code>
 
 
-    
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -489,7 +511,8 @@ from other PHP processes.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -501,6 +524,8 @@ from other PHP processes.</dd>
         <section class="phpdocumentor-description"><p>Does hash table provide locking? (@since
 1.1.0)</p>
 </section>
+
+        <section class="phpdocumentor-description"></section>
 
     
 
@@ -522,7 +547,8 @@ from other PHP processes.</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -534,6 +560,8 @@ from other PHP processes.</dd>
         <section class="phpdocumentor-description"><p>Does hash table provide persistent
 storage?</p>
 </section>
+
+        <section class="phpdocumentor-description"></section>
 
     
 
@@ -555,7 +583,8 @@ storage?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -566,6 +595,8 @@ storage?</p>
 
         <section class="phpdocumentor-description"><p>Set the hash key prefix.</p>
 </section>
+
+        <section class="phpdocumentor-description"></section>
 
     
 
@@ -587,7 +618,8 @@ storage?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">40</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Locked keys.</p>
 
@@ -597,8 +629,8 @@ storage?</p>
     <span class="phpdocumentor-signature__name">$_locks</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -619,7 +651,8 @@ storage?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">37</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">A list of items known not to exist.</p>
 
@@ -629,8 +662,8 @@ storage?</p>
     <span class="phpdocumentor-signature__name">$_noexist</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -651,7 +684,8 @@ storage?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">44</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Configuration parameters.</p>
 
@@ -661,8 +695,8 @@ storage?</p>
     <span class="phpdocumentor-signature__name">$_params</span>
      = <span class="phpdocumentor-signature__default-value">array(&#039;prefix&#039; =&gt; &#039;hht_&#039;)</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -683,7 +717,8 @@ storage?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">53</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Persistent storage provided by driver?</p>
 
@@ -693,8 +728,8 @@ storage?</p>
     <span class="phpdocumentor-signature__name">$_persistent</span>
      = <span class="phpdocumentor-signature__default-value">alse</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -715,7 +750,8 @@ storage?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">47</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Predis client object.</p>
 
@@ -725,8 +761,8 @@ storage?</p>
     <span class="phpdocumentor-signature__name">$_predis</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -751,7 +787,8 @@ storage?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">55</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Constructor.</p>
 
@@ -759,8 +796,7 @@ storage?</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -782,8 +818,7 @@ storage?</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -800,15 +835,15 @@ storage?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">94</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -816,7 +851,8 @@ storage?</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -825,8 +861,7 @@ storage?</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -843,15 +878,15 @@ storage?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">83</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$val</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -859,14 +894,16 @@ storage?</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$val</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -875,8 +912,7 @@ storage?</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -893,7 +929,8 @@ storage?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">154</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Clear all hash table entries.</p>
 
@@ -901,16 +938,14 @@ storage?</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">clear</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -927,7 +962,8 @@ storage?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">112</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Delete a key(s).</p>
 
@@ -935,8 +971,7 @@ storage?</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">delete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keys</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -974,7 +1009,8 @@ storage?</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">155</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Do the keys exists?</p>
 
@@ -982,8 +1018,7 @@ storage?</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">exists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keys</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1022,7 +1057,8 @@ type is the type of $keys).</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">177</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get data associated with a key(s).</p>
 
@@ -1030,8 +1066,7 @@ type is the type of $keys).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keys</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1070,7 +1105,8 @@ $keys); false value(s) on failure.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">173</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Add local prefix to beginning of key.</p>
 
@@ -1078,8 +1114,7 @@ $keys); false value(s) on failure.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">hkey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1117,7 +1152,8 @@ $keys); false value(s) on failure.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">182</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Obtain lock on a key.</p>
 
@@ -1125,8 +1161,7 @@ $keys); false value(s) on failure.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">lock</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1145,8 +1180,7 @@ $keys); false value(s) on failure.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1163,15 +1197,15 @@ $keys); false value(s) on failure.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">327</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">offsetExists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1179,7 +1213,8 @@ $keys); false value(s) on failure.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1188,8 +1223,7 @@ $keys); false value(s) on failure.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1206,15 +1240,15 @@ $keys); false value(s) on failure.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">334</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">offsetGet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1222,7 +1256,8 @@ $keys); false value(s) on failure.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1231,8 +1266,7 @@ $keys); false value(s) on failure.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1249,15 +1283,15 @@ $keys); false value(s) on failure.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">341</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">offsetSet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1265,14 +1299,16 @@ $keys); false value(s) on failure.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$value</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1281,8 +1317,7 @@ $keys); false value(s) on failure.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1299,15 +1334,15 @@ $keys); false value(s) on failure.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">348</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">offsetUnset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1315,7 +1350,8 @@ $keys); false value(s) on failure.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1324,8 +1360,7 @@ $keys); false value(s) on failure.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1342,23 +1377,22 @@ $keys); false value(s) on failure.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">357</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">serialize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1375,7 +1409,8 @@ $keys); false value(s) on failure.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">265</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set the value of a key.</p>
 
@@ -1383,8 +1418,7 @@ $keys); false value(s) on failure.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$val</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1447,7 +1481,8 @@ $keys); false value(s) on failure.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">76</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Shutdown function.</p>
 
@@ -1455,16 +1490,14 @@ $keys); false value(s) on failure.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">shutdown</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1481,7 +1514,8 @@ $keys); false value(s) on failure.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">197</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Release lock on a key.</p>
 
@@ -1489,8 +1523,7 @@ $keys); false value(s) on failure.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">unlock</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1509,8 +1542,7 @@ $keys); false value(s) on failure.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1527,15 +1559,15 @@ $keys); false value(s) on failure.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">364</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">unserialize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1543,7 +1575,8 @@ $keys); false value(s) on failure.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1552,8 +1585,7 @@ $keys); false value(s) on failure.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1570,7 +1602,8 @@ $keys); false value(s) on failure.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">85</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Delete keys.</p>
 
@@ -1578,8 +1611,7 @@ $keys); false value(s) on failure.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_delete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keys</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1587,7 +1619,8 @@ $keys); false value(s) on failure.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1615,7 +1648,8 @@ $keys); false value(s) on failure.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">92</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get data associated with keys.</p>
 
@@ -1623,8 +1657,7 @@ $keys); false value(s) on failure.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_exists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keys</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1662,7 +1695,8 @@ $keys); false value(s) on failure.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">108</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get data associated with keys.</p>
 
@@ -1670,8 +1704,7 @@ $keys); false value(s) on failure.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keys</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1710,7 +1743,8 @@ false as the value.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Base.php"><a href="files/horde-hashtable-base.html"><abbr title="Horde/HashTable/Base.php">Base.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">200</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Does a get/exists action on a set of keys.</p>
 
@@ -1718,8 +1752,7 @@ false as the value.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_getExists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keys</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1766,7 +1799,8 @@ false as the value.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">68</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Do initialization.</p>
 
@@ -1774,16 +1808,14 @@ false as the value.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_init</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1800,7 +1832,8 @@ false as the value.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/HashTable/Predis.php"><a href="files/horde-hashtable-predis.html"><abbr title="Horde/HashTable/Predis.php">Predis.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">134</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set the value of a key.</p>
 
@@ -1808,8 +1841,7 @@ false as the value.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$val</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opts</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1853,6 +1885,68 @@ false as the value.</p>
 </article>
             </section>
 
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
+
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
@@ -1874,5 +1968,9 @@ false as the value.</p>
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>
