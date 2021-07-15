@@ -1,6 +1,16 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\CHORA_BASE",
+            "name": "CHORA_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_CHORA_BASE"
+        },                {
+            "fqsen": "\\HORDE_BASE",
+            "name": "HORDE_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_HORDE_BASE"
+        },                {
             "fqsen": "\\Chora_Application",
             "name": "Chora_Application",
             "summary": "",
