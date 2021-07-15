@@ -8,12 +8,16 @@
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -48,12 +52,18 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
+        
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                    </section>
+            </section>
 
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Xml.html"><abbr title="\Xml">Xml</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="packages/Xml-Element.html"><abbr title="\Xml\Element">Element</abbr></a></li>
+                            </ul>
+                        </section>
     
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
@@ -79,6 +89,13 @@
     Horde_Xml_Element
 
     
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Xml.html">Xml</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Xml-Element.html">Element</a></li>
+                            </ul>
+        </div>
     
             <span class="phpdocumentor-element__implements">
             implements
@@ -90,11 +107,11 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">26</span>
-</aside>
+
+    </aside>
 
             <p class="phpdocumentor-summary">Wraps a DOMElement allowing for SimpleXML-like access to attributes.</p>
 
-    <section class="phpdocumentor-description"></section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -367,7 +384,8 @@ key =&gt; value hash. Keys can be:</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">96</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -376,8 +394,8 @@ key =&gt; value hash. Keys can be:</dd>
     <span class="phpdocumentor-signature__name">$_appended</span>
      = <span class="phpdocumentor-signature__default-value">	rue</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -398,7 +416,8 @@ key =&gt; value hash. Keys can be:</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">91</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -408,8 +427,8 @@ key =&gt; value hash. Keys can be:</dd>
      = <span class="phpdocumentor-signature__default-value">
 ull</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -430,7 +449,8 @@ ull</span></code>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">73</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -439,8 +459,8 @@ ull</span></code>
     <span class="phpdocumentor-signature__name">$_element</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -461,7 +481,8 @@ ull</span></code>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">31</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -470,8 +491,8 @@ ull</span></code>
     <span class="phpdocumentor-signature__name">$_namespaces</span>
      = <span class="phpdocumentor-signature__default-value">array(&#039;opensearch&#039; =&gt; &#039;http://a9.com/-/spec/opensearchrss/1.0/&#039;, &#039;atom&#039; =&gt; &#039;http://www.w3.org/2005/Atom&#039;, &#039;rss&#039; =&gt; &#039;http://blogs.law.harvard.edu/tech/rss&#039;, &#039;rdf&#039; =&gt; &#039;http://www.w3.org/1999/02/22-rdf-syntax-ns&#039;)</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -492,7 +513,8 @@ ull</span></code>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">86</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -501,8 +523,8 @@ ull</span></code>
     <span class="phpdocumentor-signature__name">$_parentElement</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -523,7 +545,8 @@ ull</span></code>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">81</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">A string representation of the element, used when
 serializing/unserializing.</p>
@@ -534,8 +557,8 @@ serializing/unserializing.</p>
     <span class="phpdocumentor-signature__name">$_serialized</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -560,7 +583,8 @@ serializing/unserializing.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">416</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get the value of an element with method syntax.</p>
 
@@ -589,7 +613,8 @@ return an array of those objects.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -617,7 +642,8 @@ return an array of those objects.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">104</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Horde_Xml_Element constructor.</p>
 
@@ -625,8 +651,7 @@ return an array of those objects.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$element</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -634,7 +659,8 @@ return an array of those objects.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -643,8 +669,7 @@ return an array of those objects.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -661,7 +686,8 @@ return an array of those objects.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">330</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Map variable access onto the underlying entry representation.</p>
 
@@ -692,8 +718,7 @@ with the __call() overriding.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -710,7 +735,8 @@ with the __call() overriding.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">400</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Map isset calls onto the underlying entry representation.</p>
 
@@ -718,8 +744,7 @@ with the __call() overriding.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__isset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -727,7 +752,8 @@ with the __call() overriding.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -736,8 +762,7 @@ with the __call() overriding.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -754,7 +779,8 @@ with the __call() overriding.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">370</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Map variable sets onto the underlying entry representation.</p>
 
@@ -762,8 +788,7 @@ with the __call() overriding.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$val</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -791,8 +816,7 @@ with the __call() overriding.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -809,7 +833,8 @@ with the __call() overriding.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">314</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Prepare for serialization</p>
 
@@ -817,16 +842,14 @@ with the __call() overriding.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__sleep</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -843,7 +866,8 @@ with the __call() overriding.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">442</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Remove all children matching $var.</p>
 
@@ -851,8 +875,7 @@ with the __call() overriding.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__unset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -860,7 +883,8 @@ with the __call() overriding.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -869,8 +893,7 @@ with the __call() overriding.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -887,7 +910,8 @@ with the __call() overriding.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">258</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Unserialization handler; handles $this-&gt;_element being an instance of
 DOMElement or Horde_Xml_Element, or parses it as an XML string.</p>
@@ -896,16 +920,14 @@ DOMElement or Horde_Xml_Element, or parses it as an XML string.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__wakeup</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -922,7 +944,8 @@ DOMElement or Horde_Xml_Element, or parses it as an XML string.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">213</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Append a child node to this element.</p>
 
@@ -930,8 +953,7 @@ DOMElement or Horde_Xml_Element, or parses it as an XML string.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">appendChild</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Xml-Element.html"><abbr title="\Horde_Xml_Element">Horde_Xml_Element</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$element</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -950,8 +972,7 @@ DOMElement or Horde_Xml_Element, or parses it as an XML string.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -968,7 +989,8 @@ DOMElement or Horde_Xml_Element, or parses it as an XML string.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">153</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Add child elements and attributes to this element from a simple
 key =&gt; value hash. Keys can be:</p>
@@ -1006,8 +1028,7 @@ set to $value</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1024,7 +1045,8 @@ set to $value</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">118</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get a DOM representation of the element</p>
 
@@ -1042,8 +1064,7 @@ full DOM methods.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\DOMElement">DOMElement</abbr></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1060,7 +1081,8 @@ full DOM methods.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">48</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get the full version of a namespace prefix</p>
 
@@ -1081,7 +1103,8 @@ registered.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1090,8 +1113,7 @@ registered.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1108,7 +1130,8 @@ registered.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">65</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Add a namespace and prefix to the registered list</p>
 
@@ -1148,8 +1171,7 @@ Horde_Xml_Element::lookupNamespace().</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1166,7 +1188,8 @@ Horde_Xml_Element::lookupNamespace().</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">228</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get an XML string representation of this element</p>
 
@@ -1185,7 +1208,8 @@ prologue.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1194,8 +1218,7 @@ prologue.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1212,7 +1235,8 @@ prologue.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">245</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get the XML for only this element</p>
 
@@ -1230,7 +1254,8 @@ prologue.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1239,8 +1264,7 @@ prologue.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1257,7 +1281,8 @@ prologue.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">132</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Update the object from a DOM element</p>
 
@@ -1277,8 +1302,7 @@ DOM tree for this Horde_Xml_Element.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DOMElement">DOMElement</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1287,8 +1311,7 @@ DOM tree for this Horde_Xml_Element.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1305,7 +1328,8 @@ DOM tree for this Horde_Xml_Element.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -1325,8 +1349,7 @@ the tag does not exist.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1343,7 +1366,8 @@ the tag does not exist.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">534</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Build a cache of child nodes.</p>
 
@@ -1351,16 +1375,14 @@ the tag does not exist.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_cacheChildren</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1377,7 +1399,8 @@ the tag does not exist.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">503</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Finds children with tagnames matching $var</p>
 
@@ -1395,7 +1418,8 @@ the tag does not exist.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1404,8 +1428,7 @@ the tag does not exist.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1422,7 +1445,8 @@ the tag does not exist.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Xml/Element.php"><a href="files/horde-xml-element.html"><abbr title="Horde/Xml/Element.php">Element.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">554</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Expire cached children.</p>
 
@@ -1430,19 +1454,79 @@ the tag does not exist.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_expireCachedChildren</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
             </section>
+
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
 
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
@@ -1465,5 +1549,9 @@ the tag does not exist.</p>
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>
