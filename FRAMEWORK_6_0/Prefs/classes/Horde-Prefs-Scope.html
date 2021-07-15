@@ -8,12 +8,16 @@
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -48,12 +52,15 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
+        
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                    </section>
+            </section>
 
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Prefs.html"><abbr title="\Prefs">Prefs</abbr></a></h3>
+                        </section>
     
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
@@ -78,6 +85,12 @@
     Horde_Prefs_Scope
 
     
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Prefs.html">Prefs</a></li>
+                            </ul>
+        </div>
     
             <span class="phpdocumentor-element__implements">
             implements
@@ -89,11 +102,11 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">22</span>
-</aside>
+
+    </aside>
 
             <p class="phpdocumentor-summary">This class provides the storage for a preference scope.</p>
 
-    <section class="phpdocumentor-description"></section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -362,7 +375,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">29</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Is the object being initialized?</p>
 
@@ -372,8 +386,8 @@
     <span class="phpdocumentor-signature__name">$init</span>
      = <span class="phpdocumentor-signature__default-value">alse</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -394,7 +408,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">36</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The scope name.</p>
 
@@ -404,8 +419,8 @@
     <span class="phpdocumentor-signature__name">$scope</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -426,7 +441,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">43</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">List of dirty prefs.</p>
 
@@ -436,8 +452,8 @@
     <span class="phpdocumentor-signature__name">$_dirty</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -458,7 +474,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">62</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Preferences list.  Each preference has the following format:
 &lt;pre&gt;
@@ -481,6 +498,7 @@ If not present, pref is not locked.
 </pre></p>
 </section>
 
+    
     
 
 </article>
@@ -505,7 +523,8 @@ If not present, pref is not locked.
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">69</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Constructor.</p>
 
@@ -513,8 +532,7 @@ If not present, pref is not locked.
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scope</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -533,8 +551,7 @@ If not present, pref is not locked.
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -551,23 +568,22 @@ If not present, pref is not locked.
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">279</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">current</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -584,7 +600,8 @@ If not present, pref is not locked.
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">125</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Does a preference exist in this scope?</p>
 
@@ -592,8 +609,7 @@ If not present, pref is not locked.
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">exists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -601,7 +617,8 @@ If not present, pref is not locked.
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -629,7 +646,8 @@ If not present, pref is not locked.
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">137</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns the value of a preference.</p>
 
@@ -637,8 +655,7 @@ If not present, pref is not locked.
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -676,7 +693,8 @@ If not present, pref is not locked.
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">200</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Returns the default value of a preference.</p>
 
@@ -684,8 +702,7 @@ If not present, pref is not locked.
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getDefault</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -723,7 +740,8 @@ If not present, pref is not locked.
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">212</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get the list of dirty preferences.</p>
 
@@ -731,8 +749,7 @@ If not present, pref is not locked.
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getDirty</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -758,7 +775,8 @@ If not present, pref is not locked.
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">186</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Is a preference&#039;s value the default?</p>
 
@@ -766,8 +784,7 @@ If not present, pref is not locked.
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">isDefault</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -805,7 +822,8 @@ If not present, pref is not locked.
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">225</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Is a preference marked dirty?</p>
 
@@ -813,8 +831,7 @@ If not present, pref is not locked.
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">isDirty</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pref</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -853,7 +870,8 @@ scope contains at least one dirty pref.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">172</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Is a preference locked?</p>
 
@@ -861,8 +879,7 @@ scope contains at least one dirty pref.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">isLocked</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -900,23 +917,22 @@ scope contains at least one dirty pref.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">286</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">key</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -933,23 +949,22 @@ scope contains at least one dirty pref.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">293</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">next</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -966,7 +981,8 @@ scope contains at least one dirty pref.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">81</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Removes a preference entry.</p>
 
@@ -974,8 +990,7 @@ scope contains at least one dirty pref.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">remove</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1013,23 +1028,22 @@ scope contains at least one dirty pref.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">300</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">rewind</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1046,23 +1060,22 @@ scope contains at least one dirty pref.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">316</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">serialize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1079,7 +1092,8 @@ scope contains at least one dirty pref.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">103</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Sets the value for a preference.</p>
 
@@ -1087,8 +1101,7 @@ scope contains at least one dirty pref.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pref</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$val</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1116,8 +1129,7 @@ scope contains at least one dirty pref.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1134,7 +1146,8 @@ scope contains at least one dirty pref.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">238</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set the dirty flag for a preference</p>
 
@@ -1142,8 +1155,7 @@ scope contains at least one dirty pref.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setDirty</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pref</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dirty</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1171,8 +1183,7 @@ scope contains at least one dirty pref.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1189,7 +1200,8 @@ scope contains at least one dirty pref.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">150</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Mark a preference as locked.</p>
 
@@ -1197,8 +1209,7 @@ scope contains at least one dirty pref.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setLocked</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pref</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$locked</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1226,8 +1237,7 @@ scope contains at least one dirty pref.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1244,15 +1254,15 @@ scope contains at least one dirty pref.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">326</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">unserialize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1260,7 +1270,8 @@ scope contains at least one dirty pref.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1269,8 +1280,7 @@ scope contains at least one dirty pref.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1287,23 +1297,22 @@ scope contains at least one dirty pref.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">307</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">valid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1320,15 +1329,15 @@ scope contains at least one dirty pref.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">249</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_fromInternal</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1336,7 +1345,8 @@ scope contains at least one dirty pref.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1345,8 +1355,7 @@ scope contains at least one dirty pref.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1363,15 +1372,15 @@ scope contains at least one dirty pref.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Prefs/Scope.php"><a href="files/horde-prefs-scope.html"><abbr title="Horde/Prefs/Scope.php">Scope.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">262</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">_toInternal</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pref</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1379,14 +1388,16 @@ scope contains at least one dirty pref.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$value</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1395,11 +1406,72 @@ scope contains at least one dirty pref.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
             </section>
+
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
 
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
@@ -1422,5 +1494,9 @@ scope contains at least one dirty pref.</p>
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>
