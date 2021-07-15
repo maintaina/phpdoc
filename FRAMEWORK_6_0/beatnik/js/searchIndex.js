@@ -1,6 +1,16 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\BEATNIK_BASE",
+            "name": "BEATNIK_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_BEATNIK_BASE"
+        },                {
+            "fqsen": "\\HORDE_BASE",
+            "name": "HORDE_BASE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_HORDE_BASE"
+        },                {
             "fqsen": "\\Beatnik_Application",
             "name": "Beatnik_Application",
             "summary": "",
