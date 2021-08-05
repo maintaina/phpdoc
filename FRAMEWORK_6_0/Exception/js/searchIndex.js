@@ -61,16 +61,6 @@ Search.appendIndex(
             "summary": "Horde_Exception_Translation\u0020is\u0020the\u0020translation\u0020wrapper\u0020class\u0020for\u0020Horde_Exception.",
             "url": "classes/Horde-Exception-Translation.html"
         },                {
-            "fqsen": "\\Horde_Exception_Translation\u003A\u003A\u0024_domain",
-            "name": "_domain",
-            "summary": "The\u0020translation\u0020domain",
-            "url": "classes/Horde-Exception-Translation.html#property__domain"
-        },                {
-            "fqsen": "\\Horde_Exception_Translation\u003A\u003A\u0024_pearDirectory",
-            "name": "_pearDirectory",
-            "summary": "The\u0020absolute\u0020PEAR\u0020path\u0020to\u0020the\u0020translations\u0020for\u0020the\u0020default\u0020gettext\u0020handler.",
-            "url": "classes/Horde-Exception-Translation.html#property__pearDirectory"
-        },                {
             "fqsen": "\\Horde_Exception_Wrapped",
             "name": "Horde_Exception_Wrapped",
             "summary": "Horde\u0020exception\u0020class\u0020that\u0020can\u0020wrap\u0020and\u0020set\u0020its\u0020details\u0020from\u0020PEAR_Error,\nException,\u0020and\u0020other\u0020objects\u0020with\u0020similar\u0020interfaces.",
@@ -85,31 +75,6 @@ Search.appendIndex(
             "name": "Horde_Exception",
             "summary": "Horde\u0020base\u0020exception\u0020class.",
             "url": "classes/Horde-Exception.html"
-        },                {
-            "fqsen": "\\Horde_Exception\u003A\u003AgetLogLevel\u0028\u0029",
-            "name": "getLogLevel",
-            "summary": "Get\u0020the\u0020log\u0020level.",
-            "url": "classes/Horde-Exception.html#method_getLogLevel"
-        },                {
-            "fqsen": "\\Horde_Exception\u003A\u003AsetLogLevel\u0028\u0029",
-            "name": "setLogLevel",
-            "summary": "Sets\u0020the\u0020log\u0020level.",
-            "url": "classes/Horde-Exception.html#method_setLogLevel"
-        },                {
-            "fqsen": "\\Horde_Exception\u003A\u003A\u0024details",
-            "name": "details",
-            "summary": "Error\u0020details\u0020that\u0020should\u0020not\u0020be\u0020part\u0020of\u0020the\u0020main\u0020exception\u0020message,\ne.g.\u0020any\u0020additional\u0020debugging\u0020information.",
-            "url": "classes/Horde-Exception.html#property_details"
-        },                {
-            "fqsen": "\\Horde_Exception\u003A\u003A\u0024logged",
-            "name": "logged",
-            "summary": "Has\u0020this\u0020exception\u0020been\u0020logged\u003F",
-            "url": "classes/Horde-Exception.html#property_logged"
-        },                {
-            "fqsen": "\\Horde_Exception\u003A\u003A\u0024_logLevel",
-            "name": "_logLevel",
-            "summary": "The\u0020log\u0020level\u0020to\u0020use.\u0020A\u0020Horde_Log\u0020constant.",
-            "url": "classes/Horde-Exception.html#property__logLevel"
         },                {
             "fqsen": "\\",
             "name": "\\",
