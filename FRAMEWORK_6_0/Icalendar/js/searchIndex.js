@@ -91,6 +91,11 @@ Search.appendIndex(
             "summary": "Sets\u0020the\u0020version\u0020of\u0020this\u0020component.",
             "url": "classes/Horde-Icalendar-Vcard.html#method_setVersion"
         },                {
+            "fqsen": "\\Horde_Icalendar_Vcard\u003A\u003AsetAttribute\u0028\u0029",
+            "name": "setAttribute",
+            "summary": "Sets\u0020the\u0020value\u0020of\u0020an\u0020attribute.",
+            "url": "classes/Horde-Icalendar-Vcard.html#method_setAttribute"
+        },                {
             "fqsen": "\\Horde_Icalendar_Vcard\u003A\u003AexportvCalendar\u0028\u0029",
             "name": "exportvCalendar",
             "summary": "Unlike\u0020vevent\u0020and\u0020vtodo,\u0020a\u0020vcard\u0020is\u0020normally\u0020not\u0020enclosed\u0020in\u0020an\niCalendar\u0020container.\u0020\u0028BEGIN..END\u0029",
