@@ -436,6 +436,11 @@ Search.appendIndex(
             "summary": "Name\u0020of\u0020the\u0020parent\u0020resource,\u0020if\u0020this\u0020is\u0020a\u0020RESTful\u0020route\u0020\u0026\u0020has\u0020a\u0020parent",
             "url": "classes/Horde-Routes-Route.html#property__parentResource"
         },                {
+            "fqsen": "\\Horde_Routes_Route\u003A\u003A\u0024stack",
+            "name": "stack",
+            "summary": "An\u0020environment\u0020of\u0020pre\u0020and\u0020post\u0020filters\u0020for\u0020the\u0020route",
+            "url": "classes/Horde-Routes-Route.html#property_stack"
+        },                {
             "fqsen": "\\Horde_Routes_Utils",
             "name": "Horde_Routes_Utils",
             "summary": "Utility\u0020functions\u0020for\u0020use\u0020in\u0020templates\u0020and\u0020controllers",
