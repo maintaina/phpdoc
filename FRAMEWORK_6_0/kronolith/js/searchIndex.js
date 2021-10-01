@@ -3231,6 +3231,16 @@ Search.appendIndex(
             "summary": "VFS\u0020handler",
             "url": "classes/Kronolith-Event.html#property__vfs"
         },                {
+            "fqsen": "\\Kronolith_Event\u003A\u003A\u0024otherAttributes",
+            "name": "otherAttributes",
+            "summary": "List\u0020of\u0020attributes\u0020imported\u0020from\u0020icalendar\u0020which\u0020do\u0020not\u0020map\u0020to\nnative\u0020Kronolith\u0020Event\u0020attributes",
+            "url": "classes/Kronolith-Event.html#property_otherAttributes"
+        },                {
+            "fqsen": "\\Kronolith_Event\u003A\u003A\u0024knownAttributes",
+            "name": "knownAttributes",
+            "summary": "List\u0020of\u0020vevent\u0020attributes\u0020kronolith\u0020does\u0020handle",
+            "url": "classes/Kronolith-Event.html#property_knownAttributes"
+        },                {
             "fqsen": "\\Kronolith_Exception",
             "name": "Kronolith_Exception",
             "summary": "Base\u0020exception\u0020class\u0020for\u0020Kronolith.",

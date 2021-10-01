@@ -590,6 +590,21 @@ backend or a form or other import method.</dd>
 </dt>
 <dd>VFS handler</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Kronolith-Event.html#property_knownAttributes">$knownAttributes</a>
+    <span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+<dd>List of vevent attributes kronolith does handle</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Kronolith-Event.html#property_otherAttributes">$otherAttributes</a>
+    <span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+<dd>List of attributes imported from icalendar which do not map to
+native Kronolith Event attributes</dd>
+
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Kronolith-Event.html#property__varRenderer">$_varRenderer</a>
     <span>
@@ -3179,6 +3194,79 @@ ull</span></code>
         class="
             phpdocumentor-element
             -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_knownAttributes">
+        $knownAttributes
+        <a href="classes/Kronolith-Event.html#property_knownAttributes" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">423</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">List of vevent attributes kronolith does handle</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$knownAttributes</span>
+     = <span class="phpdocumentor-signature__default-value">[&#039;ATTACH&#039;, &#039;ATTENDEE&#039;, &#039;CATEGORIES&#039;, &#039;CLASS&#039;, &#039;CREATED&#039;, &#039;DESCRIPTION&#039;, &#039;DTSTART&#039;, &#039;DTEND&#039;, &#039;DTSTAMP&#039;, &#039;EXDATE&#039;, &#039;GEO&#039;, &#039;LAST-MODIFIED&#039;, &#039;LOCATION&#039;, &#039;ORGANIZER&#039;, &#039;RRULE&#039;, &#039;STATUS&#039;, &#039;SUMMARY&#039;, &#039;UID&#039;, &#039;URL&#039;, &#039;TRANSP&#039;, &#039;X-FUNAMBOL-ALLDAY&#039;, &#039;X-HORDE-ATTENDEE&#039;]</span></code>
+
+        <section class="phpdocumentor-description"><p>If you add capabilities which match with vevent structures,
+add them here. All unlisted attributes will be saved to otherAttributes
+and it is up to the driver if they are serialized and restored</p>
+</section>
+
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_otherAttributes">
+        $otherAttributes
+        <a href="classes/Kronolith-Event.html#property_otherAttributes" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">412</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">List of attributes imported from icalendar which do not map to
+native Kronolith Event attributes</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$otherAttributes</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"><p>It depends on the backend driver to actually store and recover these</p>
+</section>
+
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
             -private
                                                         "
 >
@@ -3228,7 +3316,7 @@ ull</span></code>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">412</span>
+    <span class="phpdocumentor-element-found-in__line">457</span>
 
     </aside>
 
@@ -3284,7 +3372,7 @@ that this will represent.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">505</span>
+    <span class="phpdocumentor-element-found-in__line">550</span>
 
     </aside>
 
@@ -3333,7 +3421,7 @@ that this will represent.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">469</span>
+    <span class="phpdocumentor-element-found-in__line">514</span>
 
     </aside>
 
@@ -3389,7 +3477,7 @@ that this will represent.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3275</span>
+    <span class="phpdocumentor-element-found-in__line">3330</span>
 
     </aside>
 
@@ -3464,7 +3552,7 @@ email address.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1969</span>
+    <span class="phpdocumentor-element-found-in__line">2024</span>
 
     </aside>
 
@@ -3522,7 +3610,7 @@ email address.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4387</span>
+    <span class="phpdocumentor-element-found-in__line">4442</span>
 
     </aside>
 
@@ -3582,7 +3670,7 @@ Horde_Form_Type_file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4400</span>
+    <span class="phpdocumentor-element-found-in__line">4455</span>
 
     </aside>
 
@@ -3642,7 +3730,7 @@ contents in 'data'.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3316</span>
+    <span class="phpdocumentor-element-found-in__line">3371</span>
 
     </aside>
 
@@ -3698,7 +3786,7 @@ when saving the event.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3159</span>
+    <span class="phpdocumentor-element-found-in__line">3214</span>
 
     </aside>
 
@@ -3766,7 +3854,7 @@ exception.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4451</span>
+    <span class="phpdocumentor-element-found-in__line">4506</span>
 
     </aside>
 
@@ -3825,7 +3913,7 @@ exception.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4469</span>
+    <span class="phpdocumentor-element-found-in__line">4524</span>
 
     </aside>
 
@@ -3872,7 +3960,7 @@ exception.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1558</span>
+    <span class="phpdocumentor-element-found-in__line">1613</span>
 
     </aside>
 
@@ -3918,7 +4006,7 @@ completely.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3110</span>
+    <span class="phpdocumentor-element-found-in__line">3165</span>
 
     </aside>
 
@@ -3966,7 +4054,7 @@ link to delete this exception.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3136</span>
+    <span class="phpdocumentor-element-found-in__line">3191</span>
 
     </aside>
 
@@ -4002,7 +4090,7 @@ to delete them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3003</span>
+    <span class="phpdocumentor-element-found-in__line">3058</span>
 
     </aside>
 
@@ -4039,7 +4127,7 @@ to delete them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1654</span>
+    <span class="phpdocumentor-element-found-in__line">1709</span>
 
     </aside>
 
@@ -4096,7 +4184,7 @@ to delete them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">651</span>
+    <span class="phpdocumentor-element-found-in__line">696</span>
 
     </aside>
 
@@ -4140,7 +4228,7 @@ to delete them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2478</span>
+    <span class="phpdocumentor-element-found-in__line">2533</span>
 
     </aside>
 
@@ -4199,7 +4287,7 @@ to delete them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1076</span>
+    <span class="phpdocumentor-element-found-in__line">1124</span>
 
     </aside>
 
@@ -4256,7 +4344,7 @@ from.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4268</span>
+    <span class="phpdocumentor-element-found-in__line">4323</span>
 
     </aside>
 
@@ -4304,7 +4392,7 @@ from.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4122</span>
+    <span class="phpdocumentor-element-found-in__line">4177</span>
 
     </aside>
 
@@ -4390,7 +4478,7 @@ itself, etc.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3041</span>
+    <span class="phpdocumentor-element-found-in__line">3096</span>
 
     </aside>
 
@@ -4423,7 +4511,7 @@ itself, etc.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4107</span>
+    <span class="phpdocumentor-element-found-in__line">4162</span>
 
     </aside>
 
@@ -4473,7 +4561,7 @@ itself, etc.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4137</span>
+    <span class="phpdocumentor-element-found-in__line">4192</span>
 
     </aside>
 
@@ -4523,7 +4611,7 @@ itself, etc.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4147</span>
+    <span class="phpdocumentor-element-found-in__line">4202</span>
 
     </aside>
 
@@ -4599,7 +4687,7 @@ itself, etc.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3230</span>
+    <span class="phpdocumentor-element-found-in__line">3285</span>
 
     </aside>
 
@@ -4646,7 +4734,7 @@ itself, etc.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3091</span>
+    <span class="phpdocumentor-element-found-in__line">3146</span>
 
     </aside>
 
@@ -4716,7 +4804,7 @@ itself, etc.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3343</span>
+    <span class="phpdocumentor-element-found-in__line">3398</span>
 
     </aside>
 
@@ -4751,7 +4839,7 @@ itself, etc.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">571</span>
+    <span class="phpdocumentor-element-found-in__line">616</span>
 
     </aside>
 
@@ -4800,7 +4888,7 @@ itself, etc.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4327</span>
+    <span class="phpdocumentor-element-found-in__line">4382</span>
 
     </aside>
 
@@ -4834,7 +4922,7 @@ itself, etc.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4303</span>
+    <span class="phpdocumentor-element-found-in__line">4358</span>
 
     </aside>
 
@@ -4916,7 +5004,7 @@ itself, etc.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4280</span>
+    <span class="phpdocumentor-element-found-in__line">4335</span>
 
     </aside>
 
@@ -4950,7 +5038,7 @@ itself, etc.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4374</span>
+    <span class="phpdocumentor-element-found-in__line">4429</span>
 
     </aside>
 
@@ -4987,7 +5075,7 @@ different calendars.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4093</span>
+    <span class="phpdocumentor-element-found-in__line">4148</span>
 
     </aside>
 
@@ -5045,7 +5133,7 @@ different calendars.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3248</span>
+    <span class="phpdocumentor-element-found-in__line">3303</span>
 
     </aside>
 
@@ -5169,7 +5257,7 @@ any permissions to a resource&#039;s events.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3915</span>
+    <span class="phpdocumentor-element-found-in__line">3970</span>
 
     </aside>
 
@@ -5213,7 +5301,7 @@ any permissions to a resource&#039;s events.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3359</span>
+    <span class="phpdocumentor-element-found-in__line">3414</span>
 
     </aside>
 
@@ -5246,7 +5334,7 @@ any permissions to a resource&#039;s events.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3187</span>
+    <span class="phpdocumentor-element-found-in__line">3242</span>
 
     </aside>
 
@@ -5293,7 +5381,7 @@ any permissions to a resource&#039;s events.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4491</span>
+    <span class="phpdocumentor-element-found-in__line">4546</span>
 
     </aside>
 
@@ -5328,7 +5416,7 @@ any permissions to a resource&#039;s events.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">426</span>
+    <span class="phpdocumentor-element-found-in__line">471</span>
 
     </aside>
 
@@ -5361,7 +5449,7 @@ any permissions to a resource&#039;s events.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3405</span>
+    <span class="phpdocumentor-element-found-in__line">3460</span>
 
     </aside>
 
@@ -5408,7 +5496,7 @@ this is taken as the base event.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3681</span>
+    <span class="phpdocumentor-element-found-in__line">3736</span>
 
     </aside>
 
@@ -5468,7 +5556,7 @@ this is taken as the base event.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3079</span>
+    <span class="phpdocumentor-element-found-in__line">3134</span>
 
     </aside>
 
@@ -5503,7 +5591,7 @@ this is taken as the base event.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3331</span>
+    <span class="phpdocumentor-element-found-in__line">3386</span>
 
     </aside>
 
@@ -5597,7 +5685,7 @@ this is taken as the base event.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3354</span>
+    <span class="phpdocumentor-element-found-in__line">3409</span>
 
     </aside>
 
@@ -5656,7 +5744,7 @@ this is taken as the base event.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3025</span>
+    <span class="phpdocumentor-element-found-in__line">3080</span>
 
     </aside>
 
@@ -5700,7 +5788,7 @@ this is taken as the base event.
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3376</span>
+    <span class="phpdocumentor-element-found-in__line">3431</span>
 
     </aside>
 
@@ -5746,7 +5834,7 @@ if necessary.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2675</span>
+    <span class="phpdocumentor-element-found-in__line">2730</span>
 
     </aside>
 
@@ -5811,7 +5899,7 @@ if necessary.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2035</span>
+    <span class="phpdocumentor-element-found-in__line">2090</span>
 
     </aside>
 
@@ -5864,7 +5952,7 @@ DEFAULT: none (No truncation).</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2415</span>
+    <span class="phpdocumentor-element-found-in__line">2470</span>
 
     </aside>
 
@@ -5913,7 +6001,7 @@ DEFAULT: none (No truncation).</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">665</span>
+    <span class="phpdocumentor-element-found-in__line">710</span>
 
     </aside>
 
@@ -5971,7 +6059,7 @@ file? @since 4.3.0</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2851</span>
+    <span class="phpdocumentor-element-found-in__line">2906</span>
 
     </aside>
 
@@ -6074,7 +6162,7 @@ DEFAULT: false (Do not ensure history is loaded).</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event/Sql.php"><a href="files/event-sql.html"><abbr title="Event/Sql.php">Sql.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">193</span>
 
     </aside>
 
@@ -6121,7 +6209,7 @@ DEFAULT: false (Do not ensure history is loaded).</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4514</span>
+    <span class="phpdocumentor-element-found-in__line">4569</span>
 
     </aside>
 
@@ -6169,7 +6257,7 @@ associated with this object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4553</span>
+    <span class="phpdocumentor-element-found-in__line">4608</span>
 
     </aside>
 
@@ -6217,7 +6305,7 @@ backend associated with this object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4352</span>
+    <span class="phpdocumentor-element-found-in__line">4407</span>
 
     </aside>
 
@@ -6266,7 +6354,7 @@ backend associated with this object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2011</span>
+    <span class="phpdocumentor-element-found-in__line">2066</span>
 
     </aside>
 
@@ -6310,7 +6398,7 @@ backend associated with this object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4413</span>
+    <span class="phpdocumentor-element-found-in__line">4468</span>
 
     </aside>
 
@@ -6378,7 +6466,7 @@ backend associated with this object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4575</span>
+    <span class="phpdocumentor-element-found-in__line">4630</span>
 
     </aside>
 
@@ -6425,7 +6513,7 @@ backend associated with this object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4339</span>
+    <span class="phpdocumentor-element-found-in__line">4394</span>
 
     </aside>
 
@@ -6469,7 +6557,7 @@ backend associated with this object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2006</span>
+    <span class="phpdocumentor-element-found-in__line">2061</span>
 
     </aside>
 
@@ -6513,7 +6601,7 @@ backend associated with this object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1591</span>
+    <span class="phpdocumentor-element-found-in__line">1646</span>
 
     </aside>
 
@@ -6556,7 +6644,7 @@ backend associated with this object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3848</span>
+    <span class="phpdocumentor-element-found-in__line">3903</span>
 
     </aside>
 
@@ -6620,7 +6708,7 @@ of determining any resources that need to be removed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Event.php"><a href="files/event.html"><abbr title="Event.php">Event.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1500</span>
+    <span class="phpdocumentor-element-found-in__line">1555</span>
 
     </aside>
 
