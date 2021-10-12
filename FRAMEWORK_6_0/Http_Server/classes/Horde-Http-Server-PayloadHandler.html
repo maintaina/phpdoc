@@ -52,25 +52,33 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-        
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                                <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html"><abbr title="\Horde">Horde</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/horde-http.html"><abbr title="\Horde\Http">Http</abbr></a></li>
-                                    </ul>
-                        </section>
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-http.html">Http</a>
+                
+            </li>
+            </ul>
 
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Application.html"><abbr title="\Application">Application</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Controller.html"><abbr title="\Controller">Controller</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Horde.html"><abbr title="\Horde">Horde</abbr></a></h3>
-                        <ul class="phpdocumentor-list">
-                                    <li><a href="packages/Horde-Http.html"><abbr title="\Horde\Http">Http</abbr></a></li>
-                            </ul>
                         </section>
-    
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Controller.html">Controller</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="packages/Horde-Http.html">Http</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+            
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
@@ -107,6 +115,9 @@
             implements
                             <abbr title="\Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</abbr>                    </span>
     
+            <span class="phpdocumentor-element__extends">
+            Uses
+                            <a href="classes/Horde-Http-Server-DefaultHandlerTrait.html"><abbr title="\Horde\Http\Server\DefaultHandlerTrait">DefaultHandlerTrait</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
@@ -147,7 +158,35 @@ with the body stream and headers as needed.</p>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+                <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Http-Server-DefaultHandlerTrait.html#property_responseFactory">$responseFactory</a>
+    <span>
+                &nbsp;: <abbr title="\Psr\Http\Message\ResponseFactoryInterface">ResponseFactoryInterface</abbr>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Http-Server-DefaultHandlerTrait.html#property_streamFactory">$streamFactory</a>
+    <span>
+                &nbsp;: <abbr title="\Psr\Http\Message\StreamFactoryInterface">StreamFactoryInterface</abbr>            </span>
+</dt>
+<dd></dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Http-Server-DefaultHandlerTrait.html#method___construct">__construct()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Http-Server-DefaultHandlerTrait.html#method_handle">handle()</a>
+    <span>
+                        &nbsp;: <abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>    </span>
+</dt>
+<dd>Handle a request</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Horde-Http-Server-PayloadHandler.html#method_bodyContent">bodyContent()</a>
     <span>
                         &nbsp;: string    </span>
@@ -168,12 +207,188 @@ with the body stream and headers as needed.</p>
         
 
         
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Horde-Http-Server-PayloadHandler.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_responseFactory">
+        $responseFactory
+        <a href="classes/Horde-Http-Server-DefaultHandlerTrait.html#property_responseFactory" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DefaultHandlerTrait.php"><a href="files/defaulthandlertrait.html"><abbr title="DefaultHandlerTrait.php">DefaultHandlerTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">16</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\ResponseFactoryInterface">ResponseFactoryInterface</abbr></span>
+    <span class="phpdocumentor-signature__name">$responseFactory</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_streamFactory">
+        $streamFactory
+        <a href="classes/Horde-Http-Server-DefaultHandlerTrait.html#property_streamFactory" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DefaultHandlerTrait.php"><a href="files/defaulthandlertrait.html"><abbr title="DefaultHandlerTrait.php">DefaultHandlerTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">17</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\StreamFactoryInterface">StreamFactoryInterface</abbr></span>
+    <span class="phpdocumentor-signature__name">$streamFactory</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Horde-Http-Server-PayloadHandler.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Horde-Http-Server-DefaultHandlerTrait.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DefaultHandlerTrait.php"><a href="files/defaulthandlertrait.html"><abbr title="DefaultHandlerTrait.php">DefaultHandlerTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">19</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\ResponseFactoryInterface">ResponseFactoryInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$responseFactory</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\StreamFactoryInterface">StreamFactoryInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$streamFactory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$responseFactory</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\ResponseFactoryInterface">ResponseFactoryInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$streamFactory</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\StreamFactoryInterface">StreamFactoryInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_handle">
+        handle()
+        <a href="classes/Horde-Http-Server-DefaultHandlerTrait.html#method_handle" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DefaultHandlerTrait.php"><a href="files/defaulthandlertrait.html"><abbr title="DefaultHandlerTrait.php">DefaultHandlerTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Handle a request</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">handle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\RequestInterface">RequestInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span></code>
+
+        <section class="phpdocumentor-description"><p>Each middleware will either create a response or
+return control to the handler.</p>
+<p>If the middlewares created no response,
+the payload handler will.</p>
+<p>Finally the we will return a response ourselves.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$request</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\RequestInterface">RequestInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span>
+            &mdash;
+        
+    
+</article>
                     <article
         class="phpdocumentor-element
             -method
