@@ -11,10 +11,55 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Otp-Facade.html#method___construct"
         },                {
-            "fqsen": "\\Horde\\Otp\\Facade\u003A\u003AvalidateSecret\u0028\u0029",
-            "name": "validateSecret",
+            "fqsen": "\\Horde\\Otp\\Facade\u003A\u003AcheckHasOtpSetup\u0028\u0029",
+            "name": "checkHasOtpSetup",
+            "summary": "Check\u0020if\u0020a\u0020subject\u0020has\u0020opted\u0020in\u0020to\u0020OTP\u0020usage",
+            "url": "classes/Horde-Otp-Facade.html#method_checkHasOtpSetup"
+        },                {
+            "fqsen": "\\Horde\\Otp\\Facade\u003A\u003AcheckMustUseOtp\u0028\u0029",
+            "name": "checkMustUseOtp",
+            "summary": "",
+            "url": "classes/Horde-Otp-Facade.html#method_checkMustUseOtp"
+        },                {
+            "fqsen": "\\Horde\\Otp\\Facade\u003A\u003AresetOtpSetup\u0028\u0029",
+            "name": "resetOtpSetup",
+            "summary": "",
+            "url": "classes/Horde-Otp-Facade.html#method_resetOtpSetup"
+        },                {
+            "fqsen": "\\Horde\\Otp\\Facade\u003A\u003AvalidatePasscode\u0028\u0029",
+            "name": "validatePasscode",
             "summary": "Validate\u0020a\u0020user\u0020input",
-            "url": "classes/Horde-Otp-Facade.html#method_validateSecret"
+            "url": "classes/Horde-Otp-Facade.html#method_validatePasscode"
+        },                {
+            "fqsen": "\\Horde\\Otp\\FileStorage",
+            "name": "FileStorage",
+            "summary": "",
+            "url": "classes/Horde-Otp-FileStorage.html"
+        },                {
+            "fqsen": "\\Horde\\Otp\\FileStorage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Otp-FileStorage.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Otp\\FileStorage\u003A\u003AgetSetup\u0028\u0029",
+            "name": "getSetup",
+            "summary": "",
+            "url": "classes/Horde-Otp-FileStorage.html#method_getSetup"
+        },                {
+            "fqsen": "\\Horde\\Otp\\FileStorage\u003A\u003AsaveSetup\u0028\u0029",
+            "name": "saveSetup",
+            "summary": "",
+            "url": "classes/Horde-Otp-FileStorage.html#method_saveSetup"
+        },                {
+            "fqsen": "\\Horde\\Otp\\FileStorage\u003A\u003Afilename\u0028\u0029",
+            "name": "filename",
+            "summary": "Generate\u0020a\u0020filename\u0020in\u0020storageDir",
+            "url": "classes/Horde-Otp-FileStorage.html#method_filename"
+        },                {
+            "fqsen": "\\Horde\\Otp\\FileStorage\u003A\u003A\u0024storageDir",
+            "name": "storageDir",
+            "summary": "",
+            "url": "classes/Horde-Otp-FileStorage.html#property_storageDir"
         },                {
             "fqsen": "\\Horde\\Otp\\Hotp",
             "name": "Hotp",
@@ -25,6 +70,21 @@ Search.appendIndex(
             "name": "name",
             "summary": "A\u0020human\u0020readable\u0020name",
             "url": "classes/Horde-Otp-Hotp.html#method_name"
+        },                {
+            "fqsen": "\\Horde\\Otp\\Hotp\u003A\u003AjsonSerialize\u0028\u0029",
+            "name": "jsonSerialize",
+            "summary": "",
+            "url": "classes/Horde-Otp-Hotp.html#method_jsonSerialize"
+        },                {
+            "fqsen": "\\Horde\\Otp\\Hotp\u003A\u003AfromJson\u0028\u0029",
+            "name": "fromJson",
+            "summary": "Construct\u0020from\u0020a\u0020JSON\u0020string\u0020with\u0020parameters",
+            "url": "classes/Horde-Otp-Hotp.html#method_fromJson"
+        },                {
+            "fqsen": "\\Horde\\Otp\\Hotp\u003A\u003AfromParams\u0028\u0029",
+            "name": "fromParams",
+            "summary": "Construct\u0020from\u0020a\u0020plain\u0020object\u0020with\u0020parameters",
+            "url": "classes/Horde-Otp-Hotp.html#method_fromParams"
         },                {
             "fqsen": "\\Horde\\Otp\\Hotp\u003A\u003ASUPPORTED_ALGORITHMS",
             "name": "SUPPORTED_ALGORITHMS",
@@ -86,6 +146,16 @@ Search.appendIndex(
             "summary": "A\u0020human\u0020readable\u0020name",
             "url": "classes/Horde-Otp-OtpType.html#method_name"
         },                {
+            "fqsen": "\\Horde\\Otp\\OtpType\u003A\u003AfromJson\u0028\u0029",
+            "name": "fromJson",
+            "summary": "Construct\u0020from\u0020a\u0020JSON\u0020string\u0020with\u0020parameters",
+            "url": "classes/Horde-Otp-OtpType.html#method_fromJson"
+        },                {
+            "fqsen": "\\Horde\\Otp\\OtpType\u003A\u003AfromParams\u0028\u0029",
+            "name": "fromParams",
+            "summary": "Construct\u0020from\u0020a\u0020plain\u0020object\u0020with\u0020parameters",
+            "url": "classes/Horde-Otp-OtpType.html#method_fromParams"
+        },                {
             "fqsen": "\\Horde\\Otp\\SecretGenerator",
             "name": "SecretGenerator",
             "summary": "",
@@ -106,6 +176,36 @@ Search.appendIndex(
             "summary": "A\u0020human\u0020readable\u0020name",
             "url": "classes/Horde-Otp-StaticSecret.html#method_name"
         },                {
+            "fqsen": "\\Horde\\Otp\\StaticSecret\u003A\u003AjsonSerialize\u0028\u0029",
+            "name": "jsonSerialize",
+            "summary": "",
+            "url": "classes/Horde-Otp-StaticSecret.html#method_jsonSerialize"
+        },                {
+            "fqsen": "\\Horde\\Otp\\StaticSecret\u003A\u003AfromJson\u0028\u0029",
+            "name": "fromJson",
+            "summary": "Construct\u0020from\u0020a\u0020JSON\u0020string\u0020with\u0020parameters",
+            "url": "classes/Horde-Otp-StaticSecret.html#method_fromJson"
+        },                {
+            "fqsen": "\\Horde\\Otp\\StaticSecret\u003A\u003AfromParams\u0028\u0029",
+            "name": "fromParams",
+            "summary": "Construct\u0020from\u0020a\u0020plain\u0020object\u0020with\u0020parameters",
+            "url": "classes/Horde-Otp-StaticSecret.html#method_fromParams"
+        },                {
+            "fqsen": "\\Horde\\Otp\\Storage",
+            "name": "Storage",
+            "summary": "",
+            "url": "classes/Horde-Otp-Storage.html"
+        },                {
+            "fqsen": "\\Horde\\Otp\\Storage\u003A\u003AgetSetup\u0028\u0029",
+            "name": "getSetup",
+            "summary": "",
+            "url": "classes/Horde-Otp-Storage.html#method_getSetup"
+        },                {
+            "fqsen": "\\Horde\\Otp\\Storage\u003A\u003AsaveSetup\u0028\u0029",
+            "name": "saveSetup",
+            "summary": "",
+            "url": "classes/Horde-Otp-Storage.html#method_saveSetup"
+        },                {
             "fqsen": "\\Horde\\Otp\\Totp",
             "name": "Totp",
             "summary": "TOTP\u0020\u0028RFC\u00206238\u0029",
@@ -121,15 +221,20 @@ Search.appendIndex(
             "summary": "A\u0020human\u0020readable\u0020name",
             "url": "classes/Horde-Otp-Totp.html#method_name"
         },                {
-            "fqsen": "\\Horde\\Otp\\Totp\u003A\u003AjsonSerializable\u0028\u0029",
-            "name": "jsonSerializable",
+            "fqsen": "\\Horde\\Otp\\Totp\u003A\u003AjsonSerialize\u0028\u0029",
+            "name": "jsonSerialize",
             "summary": "",
-            "url": "classes/Horde-Otp-Totp.html#method_jsonSerializable"
+            "url": "classes/Horde-Otp-Totp.html#method_jsonSerialize"
         },                {
             "fqsen": "\\Horde\\Otp\\Totp\u003A\u003AfromJson\u0028\u0029",
             "name": "fromJson",
-            "summary": "",
+            "summary": "Construct\u0020from\u0020a\u0020JSON\u0020string\u0020with\u0020parameters",
             "url": "classes/Horde-Otp-Totp.html#method_fromJson"
+        },                {
+            "fqsen": "\\Horde\\Otp\\Totp\u003A\u003AfromParams\u0028\u0029",
+            "name": "fromParams",
+            "summary": "Construct\u0020from\u0020a\u0020plain\u0020object\u0020with\u0020parameters",
+            "url": "classes/Horde-Otp-Totp.html#method_fromParams"
         },                {
             "fqsen": "\\Horde\\Otp\\Totp\u003A\u003ASUPPORTED_ALGORITHMS",
             "name": "SUPPORTED_ALGORITHMS",

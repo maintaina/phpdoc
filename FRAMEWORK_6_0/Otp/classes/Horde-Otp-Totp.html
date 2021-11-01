@@ -110,7 +110,7 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Horde-Otp-OtpType.html"><abbr title="\Horde\Otp\OtpType">OtpType</abbr></a>,                             <abbr title="\Horde\Otp\JsonSerializable">JsonSerializable</abbr>                    </span>
+                            <a href="classes/Horde-Otp-OtpType.html"><abbr title="\Horde\Otp\OtpType">OtpType</abbr></a>                    </span>
     
             <span class="phpdocumentor-element__extends">
             Uses
@@ -140,8 +140,6 @@
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Otp-OtpType.html"><abbr title="\Horde\Otp\OtpType">OtpType</abbr></a></dt>
         <dd>Interface of an OTP Type Definition</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Horde\Otp\JsonSerializable">JsonSerializable</abbr></dt>
-        <dd></dd>
     
     
     </dl>
@@ -219,9 +217,16 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Otp-Totp.html#method_fromJson">fromJson()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: self    </span>
 </dt>
-<dd></dd>
+<dd>Construct from a JSON string with parameters</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Otp-Totp.html#method_fromParams">fromParams()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Construct from a plain object with parameters</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Otp-OtpCalculationTrait.html#method_generateHotp">generateHotp()</a>
@@ -231,7 +236,7 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Otp-Totp.html#method_jsonSerializable">jsonSerializable()</a>
+    <a href="classes/Horde-Otp-Totp.html#method_jsonSerialize">jsonSerialize()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
@@ -676,13 +681,13 @@
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Construct from a JSON string with parameters</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">fromJson</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$json</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">fromJson</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$json</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -690,15 +695,57 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">self</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromParams">
+        fromParams()
+        <a href="classes/Horde-Otp-Totp.html#method_fromParams" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Totp.php"><a href="files/totp.html"><abbr title="Totp.php">Totp.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">72</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Construct from a plain object with parameters</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">fromParams</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$params</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -769,9 +816,9 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_jsonSerializable">
-        jsonSerializable()
-        <a href="classes/Horde-Otp-Totp.html#method_jsonSerializable" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_jsonSerialize">
+        jsonSerialize()
+        <a href="classes/Horde-Otp-Totp.html#method_jsonSerialize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Totp.php"><a href="files/totp.html"><abbr title="Totp.php">Totp.php</abbr></a></abbr>
@@ -783,7 +830,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">jsonSerializable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">jsonSerialize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
