@@ -46,11 +46,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Otp-OtpCalculationTrait.html#method_padSecret"
         },                {
-            "fqsen": "\\Horde\\Otp\\OtpCalculationTrait\u003A\u003AgenerateRandomSecret\u0028\u0029",
-            "name": "generateRandomSecret",
-            "summary": "",
-            "url": "classes/Horde-Otp-OtpCalculationTrait.html#method_generateRandomSecret"
-        },                {
             "fqsen": "\\Horde\\Otp\\OtpCalculationTrait\u003A\u003AgenerateHotp\u0028\u0029",
             "name": "generateHotp",
             "summary": "",
@@ -91,6 +86,16 @@ Search.appendIndex(
             "summary": "A\u0020human\u0020readable\u0020name",
             "url": "classes/Horde-Otp-OtpType.html#method_name"
         },                {
+            "fqsen": "\\Horde\\Otp\\SecretGenerator",
+            "name": "SecretGenerator",
+            "summary": "",
+            "url": "classes/Horde-Otp-SecretGenerator.html"
+        },                {
+            "fqsen": "\\Horde\\Otp\\SecretGenerator\u003A\u003AgenerateRandomSecret\u0028\u0029",
+            "name": "generateRandomSecret",
+            "summary": "",
+            "url": "classes/Horde-Otp-SecretGenerator.html#method_generateRandomSecret"
+        },                {
             "fqsen": "\\Horde\\Otp\\StaticSecret",
             "name": "StaticSecret",
             "summary": "An\u0020OtpType\u0020implementing\u0020a\u0020static\u0020secret",
@@ -115,6 +120,16 @@ Search.appendIndex(
             "name": "name",
             "summary": "A\u0020human\u0020readable\u0020name",
             "url": "classes/Horde-Otp-Totp.html#method_name"
+        },                {
+            "fqsen": "\\Horde\\Otp\\Totp\u003A\u003AjsonSerializable\u0028\u0029",
+            "name": "jsonSerializable",
+            "summary": "",
+            "url": "classes/Horde-Otp-Totp.html#method_jsonSerializable"
+        },                {
+            "fqsen": "\\Horde\\Otp\\Totp\u003A\u003AfromJson\u0028\u0029",
+            "name": "fromJson",
+            "summary": "",
+            "url": "classes/Horde-Otp-Totp.html#method_fromJson"
         },                {
             "fqsen": "\\Horde\\Otp\\Totp\u003A\u003ASUPPORTED_ALGORITHMS",
             "name": "SUPPORTED_ALGORITHMS",
