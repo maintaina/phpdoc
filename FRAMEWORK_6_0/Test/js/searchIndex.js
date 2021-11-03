@@ -391,10 +391,10 @@ Search.appendIndex(
             "summary": "A\u0020test\u0020replacement\u0020for\u0020Horde_Registry_Loadconfig.",
             "url": "classes/Horde-Test-Stub-Registry-Loadconfig.html"
         },                {
-            "fqsen": "\\Horde\\Test\\Stub\\Registry\\Loadconfig\u003A\u003A__contruct\u0028\u0029",
-            "name": "__contruct",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\\Loadconfig\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
             "summary": "",
-            "url": "classes/Horde-Test-Stub-Registry-Loadconfig.html#method___contruct"
+            "url": "classes/Horde-Test-Stub-Registry-Loadconfig.html#method___construct"
         },                {
             "fqsen": "\\Horde\\Test\\Stub\\Registry\\Loadconfig\u003A\u003A\u0024app",
             "name": "app",
