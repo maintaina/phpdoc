@@ -52,18 +52,27 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-        
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-            </section>
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-test.html">Test</a>
+                
+            </li>
+            </ul>
 
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Test.html"><abbr title="\Test">Test</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Application.html"><abbr title="\Application">Application</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Core.html"><abbr title="\Core">Core</abbr></a></h3>
                         </section>
-    
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Test.html">Test</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Core.html">Core</a></h4>
+
+                        </section>
+            
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
@@ -79,15 +88,16 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Test.html">Test</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-test.html">Test</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Test_Log
+    Log
 
         <span class="phpdocumentor-element__extends">
-        extends <a href="classes/Horde-Test-Case.html"><abbr title="\Horde_Test_Case">Horde_Test_Case</abbr></a>
+        extends <a href="classes/Horde-Test-TestCase.html"><abbr title="\Horde\Test\TestCase">TestCase</abbr></a>
     </span>
     
             <div class="phpdocumentor-element__package">
@@ -101,15 +111,15 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Log.php"><a href="files/horde-test-log.html"><abbr title="Horde/Test/Log.php">Log.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Log.php"><a href="files/log.html"><abbr title="Log.php">Log.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">Provides utilities to test for log output.</p>
 
-    <section class="phpdocumentor-description"><p>Copyright 2011-2017 Horde LLC (http://www.horde.org/)</p>
+    <section class="phpdocumentor-description"><p>Copyright 2011-2021 Horde LLC (http://www.horde.org/)</p>
 <p>See the enclosed file LICENSE for license information (LGPL). If you
 did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </section>
@@ -168,7 +178,7 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                 <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Horde-Test-Log.html#property__logHandler">$_logHandler</a>
+    <a href="classes/Horde-Test-Log.html#property_logHandler">$logHandler</a>
     <span>
                 &nbsp;: <abbr title="\Horde_Log_Handler_Base">Horde_Log_Handler_Base</abbr>            </span>
 </dt>
@@ -177,26 +187,26 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Test-Log.html#method_assertLogContains">assertLogContains()</a>
     <span>
-                        &nbsp;: <abbr title="\Horde_Log_Logger">Horde_Log_Logger</abbr>    </span>
+                        &nbsp;: mixed    </span>
 </dt>
 <dd>Asserts that the log contains at least one message matching the provided string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Test-Log.html#method_assertLogCount">assertLogCount()</a>
     <span>
-                        &nbsp;: <abbr title="\Horde_Log_Logger">Horde_Log_Logger</abbr>    </span>
+                        &nbsp;: mixed    </span>
 </dt>
 <dd>Asserts that the log contains the given number of messages.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Test-Log.html#method_assertLogRegExp">assertLogRegExp()</a>
     <span>
-                        &nbsp;: <abbr title="\Horde_Log_Logger">Horde_Log_Logger</abbr>    </span>
+                        &nbsp;: mixed    </span>
 </dt>
 <dd>Asserts that the log contains at least one message matching the provided regular_expression.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Test-Case.html#method_getConfig">getConfig()</a>
+    <a href="classes/Horde-Test-TestCase.html#method_getConfig">getConfig()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
@@ -217,7 +227,7 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 <dd>Utility function to return the array of logged events.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Test-Case.html#method_getMockSkipConstructor">getMockSkipConstructor()</a>
+    <a href="classes/Horde-Test-TestCase.html#method_getMockSkipConstructor">getMockSkipConstructor()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
@@ -242,16 +252,16 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__logHandler">
-        $_logHandler
-        <a href="classes/Horde-Test-Log.html#property__logHandler" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_logHandler">
+        $logHandler
+        <a href="classes/Horde-Test-Log.html#property_logHandler" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Log.php"><a href="files/horde-test-log.html"><abbr title="Horde/Test/Log.php">Log.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Log.php"><a href="files/log.html"><abbr title="Log.php">Log.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -260,7 +270,7 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type"><abbr title="\Horde_Log_Handler_Base">Horde_Log_Handler_Base</abbr></span>
-    <span class="phpdocumentor-signature__name">$_logHandler</span>
+    <span class="phpdocumentor-signature__name">$logHandler</span>
     </code>
 
     
@@ -286,7 +296,7 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
         <a href="classes/Horde-Test-Log.html#method_assertLogContains" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Log.php"><a href="files/horde-test-log.html"><abbr title="Horde/Test/Log.php">Log.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Log.php"><a href="files/log.html"><abbr title="Log.php">Log.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">78</span>
 
@@ -296,7 +306,7 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">assertLogContains</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Log_Logger">Horde_Log_Logger</abbr></span></code>
+                <span class="phpdocumentor-signature__name">assertLogContains</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>You <em>MUST</em> fetch the logger via $this-&gt;getLogger() before using this
 method. This will store a reference to an internal mock log handler that
@@ -319,7 +329,7 @@ will later be used to analyze the log events.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Log_Logger">Horde_Log_Logger</abbr></span>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
         
     
@@ -335,9 +345,9 @@ will later be used to analyze the log events.</p>
         <a href="classes/Horde-Test-Log.html#method_assertLogCount" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Log.php"><a href="files/horde-test-log.html"><abbr title="Horde/Test/Log.php">Log.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Log.php"><a href="files/log.html"><abbr title="Log.php">Log.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -345,7 +355,7 @@ will later be used to analyze the log events.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">assertLogCount</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$count</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Log_Logger">Horde_Log_Logger</abbr></span></code>
+                <span class="phpdocumentor-signature__name">assertLogCount</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$count</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>You <em>MUST</em> fetch the logger via $this-&gt;getLogger() before using this
 method. This will store a reference to an internal mock log handler that
@@ -368,7 +378,7 @@ will later be used to analyze the log events.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Log_Logger">Horde_Log_Logger</abbr></span>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
         
     
@@ -384,9 +394,9 @@ will later be used to analyze the log events.</p>
         <a href="classes/Horde-Test-Log.html#method_assertLogRegExp" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Log.php"><a href="files/horde-test-log.html"><abbr title="Horde/Test/Log.php">Log.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Log.php"><a href="files/log.html"><abbr title="Log.php">Log.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -394,7 +404,7 @@ will later be used to analyze the log events.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">assertLogRegExp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$regular_expression</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Log_Logger">Horde_Log_Logger</abbr></span></code>
+                <span class="phpdocumentor-signature__name">assertLogRegExp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$regular_expression</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>You <em>MUST</em> fetch the logger via $this-&gt;getLogger() before using this
 method. This will store a reference to an internal mock log handler that
@@ -417,7 +427,7 @@ will later be used to analyze the log events.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Log_Logger">Horde_Log_Logger</abbr></span>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
         
     
@@ -430,12 +440,12 @@ will later be used to analyze the log events.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getConfig">
         getConfig()
-        <a href="classes/Horde-Test-Case.html#method_getConfig" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Test-TestCase.html#method_getConfig" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Case.php"><a href="files/horde-test-case.html"><abbr title="Horde/Test/Case.php">Case.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="TestCase.php"><a href="files/testcase.html"><abbr title="TestCase.php">TestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -506,9 +516,9 @@ null.</p>
         <a href="classes/Horde-Test-Log.html#method_getLogger" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Log.php"><a href="files/horde-test-log.html"><abbr title="Horde/Test/Log.php">Log.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Log.php"><a href="files/log.html"><abbr title="Log.php">Log.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -539,9 +549,9 @@ null.</p>
         <a href="classes/Horde-Test-Log.html#method_getLogOutput" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Log.php"><a href="files/horde-test-log.html"><abbr title="Horde/Test/Log.php">Log.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Log.php"><a href="files/log.html"><abbr title="Log.php">Log.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -569,12 +579,12 @@ null.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getMockSkipConstructor">
         getMockSkipConstructor()
-        <a href="classes/Horde-Test-Case.html#method_getMockSkipConstructor" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Test-TestCase.html#method_getMockSkipConstructor" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Case.php"><a href="files/horde-test-case.html"><abbr title="Horde/Test/Case.php">Case.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="TestCase.php"><a href="files/testcase.html"><abbr title="TestCase.php">TestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 

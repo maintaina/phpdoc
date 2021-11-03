@@ -52,18 +52,27 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-        
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-            </section>
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-test.html">Test</a>
+                
+            </li>
+            </ul>
 
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Test.html"><abbr title="\Test">Test</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Application.html"><abbr title="\Application">Application</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Core.html"><abbr title="\Core">Core</abbr></a></h3>
                         </section>
-    
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Test.html">Test</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Core.html">Core</a></h4>
+
+                        </section>
+            
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
@@ -79,12 +88,14 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Test.html">Test</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-test.html">Test</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-test-factory.html">Factory</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Test_Factory_Share
+    Share
 
     
             <div class="phpdocumentor-element__package">
@@ -98,15 +109,15 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Factory/Share.php"><a href="files/horde-test-factory-share.html"><abbr title="Horde/Test/Factory/Share.php">Share.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Factory/Share.php"><a href="files/factory-share.html"><abbr title="Factory/Share.php">Share.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">Generates test database connectors.</p>
 
-    <section class="phpdocumentor-description"><p>Copyright 2011-2017 Horde LLC (http://www.horde.org/)</p>
+    <section class="phpdocumentor-description"><p>Copyright 2011-2021 Horde LLC (http://www.horde.org/)</p>
 <p>See the enclosed file LICENSE for license information (LGPL). If you
 did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </section>
@@ -165,9 +176,9 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                 <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Horde-Test-Factory-Share.html#property__injector">$_injector</a>
+    <a href="classes/Horde-Test-Factory-Share.html#property_injector">$injector</a>
     <span>
-                &nbsp;: <abbr title="\Horde_Injector">Horde_Injector</abbr>            </span>
+                &nbsp;: <abbr title="\Horde\Injector\Injector">Injector</abbr>            </span>
 </dt>
 <dd>The injector.</dd>
 
@@ -181,14 +192,14 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Test-Factory-Share.html#method_create">create()</a>
     <span>
-                        &nbsp;: <abbr title="\Horde_Share_Sqlng">Horde_Share_Sqlng</abbr>    </span>
+                        &nbsp;: <abbr title="\Horde\Test\Factory\Horde_Share_Sqlng">Horde_Share_Sqlng</abbr>    </span>
 </dt>
 <dd>Create a SQL next generate share setup.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Test-Factory-Share.html#method_createKolab">createKolab()</a>
     <span>
-                        &nbsp;: <abbr title="\Horde_Share_Sqlng">Horde_Share_Sqlng</abbr>    </span>
+                        &nbsp;: <abbr title="\Horde\Test\Factory\Horde_Share_Sqlng">Horde_Share_Sqlng</abbr>    </span>
 </dt>
 <dd>Create a Kolab share setup.</dd>
 
@@ -218,16 +229,16 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__injector">
-        $_injector
-        <a href="classes/Horde-Test-Factory-Share.html#property__injector" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_injector">
+        $injector
+        <a href="classes/Horde-Test-Factory-Share.html#property_injector" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Factory/Share.php"><a href="files/horde-test-factory-share.html"><abbr title="Horde/Test/Factory/Share.php">Share.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Factory/Share.php"><a href="files/factory-share.html"><abbr title="Factory/Share.php">Share.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -235,8 +246,8 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Horde_Injector">Horde_Injector</abbr></span>
-    <span class="phpdocumentor-signature__name">$_injector</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Horde\Injector\Injector">Injector</abbr></span>
+    <span class="phpdocumentor-signature__name">$injector</span>
     </code>
 
     
@@ -262,9 +273,9 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
         <a href="classes/Horde-Test-Factory-Share.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Factory/Share.php"><a href="files/horde-test-factory-share.html"><abbr title="Horde/Test/Factory/Share.php">Share.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Factory/Share.php"><a href="files/factory-share.html"><abbr title="Factory/Share.php">Share.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -272,14 +283,14 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Injector">Horde_Injector</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$injector</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Injector\Injector">Injector</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$injector</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$injector</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Injector">Horde_Injector</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Injector\Injector">Injector</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The injector.</p>
@@ -307,9 +318,9 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
         <a href="classes/Horde-Test-Factory-Share.html#method_create" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Factory/Share.php"><a href="files/horde-test-factory-share.html"><abbr title="Horde/Test/Factory/Share.php">Share.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Factory/Share.php"><a href="files/factory-share.html"><abbr title="Factory/Share.php">Share.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -317,7 +328,7 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Share_Sqlng">Horde_Share_Sqlng</abbr></span></code>
+                <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Test\Factory\Horde_Share_Sqlng">Horde_Share_Sqlng</abbr></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -325,7 +336,7 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$params</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Additional options.</p>
 <pre class="prettyprint">
@@ -340,7 +351,7 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Share_Sqlng">Horde_Share_Sqlng</abbr></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Test\Factory\Horde_Share_Sqlng">Horde_Share_Sqlng</abbr></span>
             &mdash;
             <section class="phpdocumentor-description"><p>The share setup.</p>
 </section>
@@ -358,9 +369,9 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
         <a href="classes/Horde-Test-Factory-Share.html#method_createKolab" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Factory/Share.php"><a href="files/horde-test-factory-share.html"><abbr title="Horde/Test/Factory/Share.php">Share.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Factory/Share.php"><a href="files/factory-share.html"><abbr title="Factory/Share.php">Share.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -368,7 +379,7 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">createKolab</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Share_Sqlng">Horde_Share_Sqlng</abbr></span></code>
+                <span class="phpdocumentor-signature__name">createKolab</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Test\Factory\Horde_Share_Sqlng">Horde_Share_Sqlng</abbr></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -391,7 +402,7 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Share_Sqlng">Horde_Share_Sqlng</abbr></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Test\Factory\Horde_Share_Sqlng">Horde_Share_Sqlng</abbr></span>
             &mdash;
             <section class="phpdocumentor-description"><p>The share setup.</p>
 </section>
@@ -409,9 +420,9 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
         <a href="classes/Horde-Test-Factory-Share.html#method__createShares" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Factory/Share.php"><a href="files/horde-test-factory-share.html"><abbr title="Horde/Test/Factory/Share.php">Share.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Factory/Share.php"><a href="files/factory-share.html"><abbr title="Factory/Share.php">Share.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 

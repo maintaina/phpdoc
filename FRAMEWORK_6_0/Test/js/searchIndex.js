@@ -1,514 +1,544 @@
 Search.appendIndex(
     [
                 {
-            "fqsen": "\\Horde_Test_AllTests_TestRunner",
-            "name": "Horde_Test_AllTests_TestRunner",
+            "fqsen": "\\Horde\\Test\\AllTests\\TestRunner",
+            "name": "TestRunner",
             "summary": "TestRunner\u0020for\u0020Horde\u0020AllTests.php\u0020scripts.",
             "url": "classes/Horde-Test-AllTests-TestRunner.html"
         },                {
-            "fqsen": "\\Horde_Test_AllTests_TestRunner\u003A\u003AgetSuite\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\AllTests\\TestRunner\u003A\u003AgetSuite\u0028\u0029",
             "name": "getSuite",
             "summary": "Get\u0020the\u0020test\u0020suite.",
             "url": "classes/Horde-Test-AllTests-TestRunner.html#method_getSuite"
         },                {
-            "fqsen": "\\Horde_Test_AllTests_TestRunner\u003A\u003ArunFailed\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\AllTests\\TestRunner\u003A\u003ArunFailed\u0028\u0029",
             "name": "runFailed",
             "summary": "",
             "url": "classes/Horde-Test-AllTests-TestRunner.html#method_runFailed"
         },                {
-            "fqsen": "\\Horde_Test_AllTests",
-            "name": "Horde_Test_AllTests",
+            "fqsen": "\\Horde\\Test\\AllTests",
+            "name": "AllTests",
             "summary": "Horde\u0020base\u0020test\u0020suite",
             "url": "classes/Horde-Test-AllTests.html"
         },                {
-            "fqsen": "\\Horde_Test_AllTests\u003A\u003Ainit\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\AllTests\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Create\u0020a\u0020Horde_Test_AllTests\u0020object.",
+            "summary": "Create\u0020a\u0020Horde\\Test\\AllTests\u0020object.",
             "url": "classes/Horde-Test-AllTests.html#method_init"
         },                {
-            "fqsen": "\\Horde_Test_AllTests\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\AllTests\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Constructor.",
             "url": "classes/Horde-Test-AllTests.html#method___construct"
         },                {
-            "fqsen": "\\Horde_Test_AllTests\u003A\u003Arun\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\AllTests\u003A\u003Arun\u0028\u0029",
             "name": "run",
             "summary": "Main\u0020entry\u0020point\u0020for\u0020running\u0020the\u0020suite.",
             "url": "classes/Horde-Test-AllTests.html#method_run"
         },                {
-            "fqsen": "\\Horde_Test_AllTests\u003A\u003Asuite\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\AllTests\u003A\u003Asuite\u0028\u0029",
             "name": "suite",
             "summary": "Collect\u0020the\u0020unit\u0020tests\u0020of\u0020this\u0020directory\u0020into\u0020a\u0020new\u0020suite.",
             "url": "classes/Horde-Test-AllTests.html#method_suite"
         },                {
-            "fqsen": "\\Horde_Test_AllTests\u003A\u003Asetup\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\AllTests\u003A\u003Asetup\u0028\u0029",
             "name": "setup",
             "summary": "Basic\u0020test\u0020suite\u0020setup.\u0020This\u0020includes\u0020error\u0020checking\u0020and\u0020autoloading.",
             "url": "classes/Horde-Test-AllTests.html#method_setup"
         },                {
-            "fqsen": "\\Horde_Test_AllTests\u003A\u003A\u0024_dir",
-            "name": "_dir",
+            "fqsen": "\\Horde\\Test\\AllTests\u003A\u003A\u0024dir",
+            "name": "dir",
             "summary": "",
-            "url": "classes/Horde-Test-AllTests.html#property__dir"
+            "url": "classes/Horde-Test-AllTests.html#property_dir"
         },                {
-            "fqsen": "\\Horde_Test_AllTests\u003A\u003A\u0024_package",
-            "name": "_package",
+            "fqsen": "\\Horde\\Test\\AllTests\u003A\u003A\u0024package",
+            "name": "package",
             "summary": "",
-            "url": "classes/Horde-Test-AllTests.html#property__package"
+            "url": "classes/Horde-Test-AllTests.html#property_package"
         },                {
-            "fqsen": "\\Horde_Test_Autoload",
-            "name": "Horde_Test_Autoload",
+            "fqsen": "\\Horde\\Test\\Autoload",
+            "name": "Autoload",
             "summary": "Reduced\u0020Horde\u0020Autoloader\u0020for\u0020test\u0020suites.",
             "url": "classes/Horde-Test-Autoload.html"
         },                {
-            "fqsen": "\\Horde_Test_Autoload\u003A\u003Ainit\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Autoload\u003A\u003Ainit\u0028\u0029",
             "name": "init",
             "summary": "Base\u0020autoloader\u0020code\u0020for\u0020Horde\u0020PEAR\u0020packages.",
             "url": "classes/Horde-Test-Autoload.html#method_init"
         },                {
-            "fqsen": "\\Horde_Test_Autoload\u003A\u003AaddPrefix\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Autoload\u003A\u003AaddPrefix\u0028\u0029",
             "name": "addPrefix",
             "summary": "Add\u0020a\u0020prefix\u0020to\u0020the\u0020autoloader.",
             "url": "classes/Horde-Test-Autoload.html#method_addPrefix"
         },                {
-            "fqsen": "\\Horde_Test_Autoload\u003A\u003Aresolve\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Autoload\u003A\u003Aresolve\u0028\u0029",
             "name": "resolve",
             "summary": "Resolve\u0020classname\u0020to\u0020a\u0020filename.",
             "url": "classes/Horde-Test-Autoload.html#method_resolve"
         },                {
-            "fqsen": "\\Horde_Test_Autoload\u003A\u003A\u0024_mappings",
-            "name": "_mappings",
+            "fqsen": "\\Horde\\Test\\Autoload\u003A\u003A\u0024mappings",
+            "name": "mappings",
             "summary": "Prefix\u0020mappings.",
-            "url": "classes/Horde-Test-Autoload.html#property__mappings"
+            "url": "classes/Horde-Test-Autoload.html#property_mappings"
         },                {
-            "fqsen": "\\Horde_Test_Autoload\u003A\u003A\u0024_runonce",
-            "name": "_runonce",
+            "fqsen": "\\Horde\\Test\\Autoload\u003A\u003A\u0024runonce",
+            "name": "runonce",
             "summary": "Only\u0020run\u0020init\u0020code\u0020once.",
-            "url": "classes/Horde-Test-Autoload.html#property__runonce"
+            "url": "classes/Horde-Test-Autoload.html#property_runonce"
         },                {
-            "fqsen": "\\Horde_Test_Bootstrap",
-            "name": "Horde_Test_Bootstrap",
+            "fqsen": "\\Horde\\Test\\Bootstrap",
+            "name": "Bootstrap",
             "summary": "Bootstrap\u0020code\u0020for\u0020PHPUnit\u0020tests.",
             "url": "classes/Horde-Test-Bootstrap.html"
         },                {
-            "fqsen": "\\Horde_Test_Bootstrap\u003A\u003Abootstrap\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Bootstrap\u003A\u003Abootstrap\u0028\u0029",
             "name": "bootstrap",
             "summary": "Bootstrap\u0020code\u0020for\u0020Horde\u0020packages.",
             "url": "classes/Horde-Test-Bootstrap.html#method_bootstrap"
         },                {
-            "fqsen": "\\Horde_Test_Bootstrap\u003A\u003A\u0024_runonce",
-            "name": "_runonce",
+            "fqsen": "\\Horde\\Test\\Bootstrap\u003A\u003A\u0024runonce",
+            "name": "runonce",
             "summary": "Only\u0020run\u0020bootstrap\u0020code\u0020once.",
-            "url": "classes/Horde-Test-Bootstrap.html#property__runonce"
+            "url": "classes/Horde-Test-Bootstrap.html#property_runonce"
         },                {
-            "fqsen": "\\Horde_Test_Case",
-            "name": "Horde_Test_Case",
-            "summary": "Basic\u0020Horde\u0020test\u0020case\u0020helper.",
-            "url": "classes/Horde-Test-Case.html"
-        },                {
-            "fqsen": "\\Horde_Test_Case\u003A\u003AgetMockSkipConstructor\u0028\u0029",
-            "name": "getMockSkipConstructor",
-            "summary": "Useful\u0020shorthand\u0020if\u0020you\u0020are\u0020mocking\u0020a\u0020class\u0020with\u0020a\u0020private\u0020constructor",
-            "url": "classes/Horde-Test-Case.html#method_getMockSkipConstructor"
-        },                {
-            "fqsen": "\\Horde_Test_Case\u003A\u003AgetConfig\u0028\u0029",
-            "name": "getConfig",
-            "summary": "Helper\u0020method\u0020for\u0020loading\u0020test\u0020configuration\u0020from\u0020a\u0020file.",
-            "url": "classes/Horde-Test-Case.html#method_getConfig"
-        },                {
-            "fqsen": "\\Horde_Test_Exception",
-            "name": "Horde_Test_Exception",
+            "fqsen": "\\Horde\\Test\\Exception",
+            "name": "Exception",
             "summary": "The\u0020exception\u0020specific\u0020to\u0020this\u0020package.",
             "url": "classes/Horde-Test-Exception.html"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Alarm",
-            "name": "Horde_Test_Factory_Alarm",
+            "fqsen": "\\Horde\\Test\\Factory\\Alarm",
+            "name": "Alarm",
             "summary": "Generates\u0020an\u0020alarm\u0020setup\u0020for\u0020the\u0020test\u0020situation.",
             "url": "classes/Horde-Test-Factory-Alarm.html"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Alarm\u003A\u003Acreate\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Factory\\Alarm\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "Create\u0020a\u0020mock\u0020alarm\u0020system\u0020for\u0020testing.",
             "url": "classes/Horde-Test-Factory-Alarm.html#method_create"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Cache",
-            "name": "Horde_Test_Factory_Cache",
+            "fqsen": "\\Horde\\Test\\Factory\\Cache",
+            "name": "Cache",
             "summary": "Generates\u0020test\u0020cache.",
             "url": "classes/Horde-Test-Factory-Cache.html"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Cache\u003A\u003Acreate\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Factory\\Cache\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "Create\u0020a\u0020mock\u0020cache\u0020for\u0020testing.",
             "url": "classes/Horde-Test-Factory-Cache.html#method_create"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Db",
-            "name": "Horde_Test_Factory_Db",
+            "fqsen": "\\Horde\\Test\\Factory\\Db",
+            "name": "Db",
             "summary": "Generates\u0020test\u0020database\u0020connectors.",
             "url": "classes/Horde-Test-Factory-Db.html"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Db\u003A\u003Acreate\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Factory\\Db\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "Create\u0020a\u0020connector\u0020to\u0020an\u0020in\u002Dmemory\u0020sqlite\u0020DB.",
             "url": "classes/Horde-Test-Factory-Db.html#method_create"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Group",
-            "name": "Horde_Test_Factory_Group",
+            "fqsen": "\\Horde\\Test\\Factory\\Group",
+            "name": "Group",
             "summary": "Generates\u0020test\u0020group\u0020services.",
             "url": "classes/Horde-Test-Factory-Group.html"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Group\u003A\u003Acreate\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Factory\\Group\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "Create\u0020a\u0020mock\u0020group\u0020handler\u0020for\u0020testing.",
             "url": "classes/Horde-Test-Factory-Group.html#method_create"
         },                {
-            "fqsen": "\\Horde_Test_Factory_History",
-            "name": "Horde_Test_Factory_History",
+            "fqsen": "\\Horde\\Test\\Factory\\History",
+            "name": "History",
             "summary": "Generates\u0020the\u0020history\u0020service\u0020for\u0020testing\u0020purposes.",
             "url": "classes/Horde-Test-Factory-History.html"
         },                {
-            "fqsen": "\\Horde_Test_Factory_History\u003A\u003Acreate\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Factory\\History\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "Create\u0020a\u0020mock\u0020history\u0020service\u0020for\u0020testing.",
             "url": "classes/Horde-Test-Factory-History.html#method_create"
         },                {
-            "fqsen": "\\Horde_Test_Factory_KolabStorage",
-            "name": "Horde_Test_Factory_KolabStorage",
+            "fqsen": "\\Horde\\Test\\Factory\\KolabStorage",
+            "name": "KolabStorage",
             "summary": "Generates\u0020a\u0020Kolab\u0020storage\u0020handler.",
             "url": "classes/Horde-Test-Factory-KolabStorage.html"
         },                {
-            "fqsen": "\\Horde_Test_Factory_KolabStorage\u003A\u003Acreate\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Factory\\KolabStorage\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "Create\u0020a\u0020SQL\u0020next\u0020generate\u0020share\u0020setup.",
             "url": "classes/Horde-Test-Factory-KolabStorage.html#method_create"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Perms",
-            "name": "Horde_Test_Factory_Perms",
+            "fqsen": "\\Horde\\Test\\Factory\\Perms",
+            "name": "Perms",
             "summary": "Generates\u0020the\u0020test\u0020permission\u0020service.",
             "url": "classes/Horde-Test-Factory-Perms.html"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Perms\u003A\u003Acreate\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Factory\\Perms\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "Create\u0020a\u0020null\u0020permission\u0020service\u0020for\u0020testing.",
             "url": "classes/Horde-Test-Factory-Perms.html#method_create"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Prefs",
-            "name": "Horde_Test_Factory_Prefs",
+            "fqsen": "\\Horde\\Test\\Factory\\Prefs",
+            "name": "Prefs",
             "summary": "Generates\u0020preferences\u0020services\u0020for\u0020testing\u0020purposes.",
             "url": "classes/Horde-Test-Factory-Prefs.html"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Prefs\u003A\u003Acreate\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Factory\\Prefs\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "Create\u0020a\u0020null\u0020preferences\u0020service\u0020for\u0020testing.",
             "url": "classes/Horde-Test-Factory-Prefs.html#method_create"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Registry",
-            "name": "Horde_Test_Factory_Registry",
+            "fqsen": "\\Horde\\Test\\Factory\\Registry",
+            "name": "Registry",
             "summary": "Generates\u0020registry\u0020services\u0020for\u0020testing\u0020purposes.",
             "url": "classes/Horde-Test-Factory-Registry.html"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Registry\u003A\u003Acreate\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Factory\\Registry\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "Create\u0020a\u0020stub\u0020registry\u0020service\u0020for\u0020testing.",
             "url": "classes/Horde-Test-Factory-Registry.html#method_create"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Session",
-            "name": "Horde_Test_Factory_Session",
+            "fqsen": "\\Horde\\Test\\Factory\\Session",
+            "name": "Session",
             "summary": "Generates\u0020a\u0020dummy\u0020session.",
             "url": "classes/Horde-Test-Factory-Session.html"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Session\u003A\u003Acreate\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Factory\\Session\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "Create\u0020a\u0020mock\u0020session\u0020for\u0020testing.",
             "url": "classes/Horde-Test-Factory-Session.html#method_create"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Share",
-            "name": "Horde_Test_Factory_Share",
+            "fqsen": "\\Horde\\Test\\Factory\\Share",
+            "name": "Share",
             "summary": "Generates\u0020test\u0020database\u0020connectors.",
             "url": "classes/Horde-Test-Factory-Share.html"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Share\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Factory\\Share\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Constructor.",
             "url": "classes/Horde-Test-Factory-Share.html#method___construct"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Share\u003A\u003Acreate\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Factory\\Share\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "Create\u0020a\u0020SQL\u0020next\u0020generate\u0020share\u0020setup.",
             "url": "classes/Horde-Test-Factory-Share.html#method_create"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Share\u003A\u003AcreateKolab\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Factory\\Share\u003A\u003AcreateKolab\u0028\u0029",
             "name": "createKolab",
             "summary": "Create\u0020a\u0020Kolab\u0020share\u0020setup.",
             "url": "classes/Horde-Test-Factory-Share.html#method_createKolab"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Share\u003A\u003A_createShares\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Factory\\Share\u003A\u003A_createShares\u0028\u0029",
             "name": "_createShares",
             "summary": "Create\u0020the\u0020share\u0020handler.",
             "url": "classes/Horde-Test-Factory-Share.html#method__createShares"
         },                {
-            "fqsen": "\\Horde_Test_Factory_Share\u003A\u003A\u0024_injector",
-            "name": "_injector",
+            "fqsen": "\\Horde\\Test\\Factory\\Share\u003A\u003A\u0024injector",
+            "name": "injector",
             "summary": "The\u0020injector.",
-            "url": "classes/Horde-Test-Factory-Share.html#property__injector"
+            "url": "classes/Horde-Test-Factory-Share.html#property_injector"
         },                {
-            "fqsen": "\\Horde_Test_Functional",
-            "name": "Horde_Test_Functional",
+            "fqsen": "\\Horde\\Test\\FunctionalTest",
+            "name": "FunctionalTest",
             "summary": "Horde\u0020test\u0020case\u0020helper.",
-            "url": "classes/Horde-Test-Functional.html"
+            "url": "classes/Horde-Test-FunctionalTest.html"
         },                {
-            "fqsen": "\\Horde_Test_Functional\u003A\u003AassertDomEquals\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\FunctionalTest\u003A\u003AassertDomEquals\u0028\u0029",
             "name": "assertDomEquals",
             "summary": "Test\u0020two\u0020XML\u0020strings\u0020for\u0020equivalency\u0020\u0028e.g.,\u0020identical\u0020up\u0020to\u0020reordering\u0020of\nattributes\u0029.",
-            "url": "classes/Horde-Test-Functional.html#method_assertDomEquals"
+            "url": "classes/Horde-Test-FunctionalTest.html#method_assertDomEquals"
         },                {
-            "fqsen": "\\Horde_Test_Functional\u003A\u003AassertHtmlDomEquals\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\FunctionalTest\u003A\u003AassertHtmlDomEquals\u0028\u0029",
             "name": "assertHtmlDomEquals",
             "summary": "Test\u0020two\u0020HTML\u0020strings\u0020for\u0020equivalency\u0020\u0028e.g.,\u0020identical\u0020up\u0020to\u0020reordering\nof\u0020attributes\u0029.",
-            "url": "classes/Horde-Test-Functional.html#method_assertHtmlDomEquals"
+            "url": "classes/Horde-Test-FunctionalTest.html#method_assertHtmlDomEquals"
         },                {
-            "fqsen": "\\Horde_Test_Log",
-            "name": "Horde_Test_Log",
+            "fqsen": "\\Horde\\Test\\Log",
+            "name": "Log",
             "summary": "Provides\u0020utilities\u0020to\u0020test\u0020for\u0020log\u0020output.",
             "url": "classes/Horde-Test-Log.html"
         },                {
-            "fqsen": "\\Horde_Test_Log\u003A\u003AgetLogger\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Log\u003A\u003AgetLogger\u0028\u0029",
             "name": "getLogger",
             "summary": "Returns\u0020a\u0020log\u0020handler.",
             "url": "classes/Horde-Test-Log.html#method_getLogger"
         },                {
-            "fqsen": "\\Horde_Test_Log\u003A\u003AassertLogCount\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Log\u003A\u003AassertLogCount\u0028\u0029",
             "name": "assertLogCount",
             "summary": "Asserts\u0020that\u0020the\u0020log\u0020contains\u0020the\u0020given\u0020number\u0020of\u0020messages.",
             "url": "classes/Horde-Test-Log.html#method_assertLogCount"
         },                {
-            "fqsen": "\\Horde_Test_Log\u003A\u003AassertLogContains\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Log\u003A\u003AassertLogContains\u0028\u0029",
             "name": "assertLogContains",
             "summary": "Asserts\u0020that\u0020the\u0020log\u0020contains\u0020at\u0020least\u0020one\u0020message\u0020matching\u0020the\u0020provided\u0020string.",
             "url": "classes/Horde-Test-Log.html#method_assertLogContains"
         },                {
-            "fqsen": "\\Horde_Test_Log\u003A\u003AassertLogRegExp\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Log\u003A\u003AassertLogRegExp\u0028\u0029",
             "name": "assertLogRegExp",
             "summary": "Asserts\u0020that\u0020the\u0020log\u0020contains\u0020at\u0020least\u0020one\u0020message\u0020matching\u0020the\u0020provided\u0020regular_expression.",
             "url": "classes/Horde-Test-Log.html#method_assertLogRegExp"
         },                {
-            "fqsen": "\\Horde_Test_Log\u003A\u003AgetLogOutput\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Log\u003A\u003AgetLogOutput\u0028\u0029",
             "name": "getLogOutput",
             "summary": "Utility\u0020function\u0020to\u0020return\u0020the\u0020array\u0020of\u0020logged\u0020events.",
             "url": "classes/Horde-Test-Log.html#method_getLogOutput"
         },                {
-            "fqsen": "\\Horde_Test_Log\u003A\u003A\u0024_logHandler",
-            "name": "_logHandler",
+            "fqsen": "\\Horde\\Test\\Log\u003A\u003A\u0024logHandler",
+            "name": "logHandler",
             "summary": "The\u0020log\u0020handler.",
-            "url": "classes/Horde-Test-Log.html#property__logHandler"
+            "url": "classes/Horde-Test-Log.html#property_logHandler"
         },                {
-            "fqsen": "\\Horde_Test_Setup",
-            "name": "Horde_Test_Setup",
+            "fqsen": "\\Horde\\Test\\Setup",
+            "name": "Setup",
             "summary": "A\u0020test\u0020helper\u0020for\u0020generating\u0020complex\u0020test\u0020setups.",
             "url": "classes/Horde-Test-Setup.html"
         },                {
-            "fqsen": "\\Horde_Test_Setup\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Setup\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Constructor.",
             "url": "classes/Horde-Test-Setup.html#method___construct"
         },                {
-            "fqsen": "\\Horde_Test_Setup\u003A\u003Asetup\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Setup\u003A\u003Asetup\u0028\u0029",
             "name": "setup",
             "summary": "Add\u0020a\u0020new\u0020set\u0020of\u0020elements\u0020to\u0020the\u0020service\u0020container.",
             "url": "classes/Horde-Test-Setup.html#method_setup"
         },                {
-            "fqsen": "\\Horde_Test_Setup\u003A\u003Aadd\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Setup\u003A\u003Aadd\u0028\u0029",
             "name": "add",
             "summary": "Add\u0020a\u0020new\u0020element\u0020to\u0020the\u0020service\u0020container.",
             "url": "classes/Horde-Test-Setup.html#method_add"
         },                {
-            "fqsen": "\\Horde_Test_Setup\u003A\u003AmakeGlobal\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Setup\u003A\u003AmakeGlobal\u0028\u0029",
             "name": "makeGlobal",
             "summary": "Export\u0020elements\u0020from\u0020the\u0020injector\u0020into\u0020global\u0020scope.",
             "url": "classes/Horde-Test-Setup.html#method_makeGlobal"
         },                {
-            "fqsen": "\\Horde_Test_Setup\u003A\u003AgetError\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Setup\u003A\u003AgetError\u0028\u0029",
             "name": "getError",
             "summary": "Return\u0020any\u0020potential\u0020setup\u0020error.",
             "url": "classes/Horde-Test-Setup.html#method_getError"
         },                {
-            "fqsen": "\\Horde_Test_Setup\u003A\u003AgetInjector\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Setup\u003A\u003AgetInjector\u0028\u0029",
             "name": "getInjector",
             "summary": "Return\u0020the\u0020service\u0020container.",
             "url": "classes/Horde-Test-Setup.html#method_getInjector"
         },                {
-            "fqsen": "\\Horde_Test_Setup\u003A\u003A\u0024_injector",
-            "name": "_injector",
-            "summary": "The\u0020Horde_Injector\u0020instance\u0020which\u0020serves\u0020as\u0020our\u0020service\u0020container.",
-            "url": "classes/Horde-Test-Setup.html#property__injector"
+            "fqsen": "\\Horde\\Test\\Setup\u003A\u003A\u0024injector",
+            "name": "injector",
+            "summary": "The\u0020Injector\u0020instance\u0020which\u0020serves\u0020as\u0020our\u0020service\u0020container.",
+            "url": "classes/Horde-Test-Setup.html#property_injector"
         },                {
-            "fqsen": "\\Horde_Test_Setup\u003A\u003A\u0024_error",
-            "name": "_error",
+            "fqsen": "\\Horde\\Test\\Setup\u003A\u003A\u0024error",
+            "name": "error",
             "summary": "In\u0020case\u0020the\u0020setup\u0020turns\u0020out\u0020to\u0020be\u0020unfullfillable\u0020this\u0020should\u0020contain\u0020an\nappropriate\u0020message\u0020indicating\u0020the\u0020problem.",
-            "url": "classes/Horde-Test-Setup.html#property__error"
+            "url": "classes/Horde-Test-Setup.html#property_error"
         },                {
-            "fqsen": "\\Horde_Test_Setup\u003A\u003A\u0024_params",
-            "name": "_params",
+            "fqsen": "\\Horde\\Test\\Setup\u003A\u003A\u0024params",
+            "name": "params",
             "summary": "Global\u0020parameters\u0020that\u0020apply\u0020to\u0020several\u0020factories.",
-            "url": "classes/Horde-Test-Setup.html#property__params"
+            "url": "classes/Horde-Test-Setup.html#property_params"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Cli",
-            "name": "Horde_Test_Stub_Cli",
+            "fqsen": "\\Horde\\Test\\Stub\\Cli",
+            "name": "Cli",
             "summary": "A\u0020test\u0020helper\u0020for\u0020testing\u0020Horde_Cli\u0020based\u0020classes.",
             "url": "classes/Horde-Test-Stub-Cli.html"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Cli\u003A\u003Afatal\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Cli\u003A\u003Afatal\u0028\u0029",
             "name": "fatal",
             "summary": "Displays\u0020a\u0020fatal\u0020error\u0020message.",
             "url": "classes/Horde-Test-Stub-Cli.html#method_fatal"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Factory",
-            "name": "Horde_Test_Stub_Factory",
+            "fqsen": "\\Horde\\Test\\Stub\\Factory",
+            "name": "Factory",
             "summary": "A\u0020test\u0020helper\u0020replacing\u0020real\u0020factories.",
             "url": "classes/Horde-Test-Stub-Factory.html"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Factory\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Factory\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Constructor.",
             "url": "classes/Horde-Test-Stub-Factory.html#method___construct"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Factory\u003A\u003Acreate\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Factory\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "Create\u0020an\u0020instance.",
             "url": "classes/Horde-Test-Stub-Factory.html#method_create"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Factory\u003A\u003A\u0024_instance",
-            "name": "_instance",
+            "fqsen": "\\Horde\\Test\\Stub\\Factory\u003A\u003A\u0024instance",
+            "name": "instance",
             "summary": "The\u0020instance\u0020to\u0020be\u0020returned.",
-            "url": "classes/Horde-Test-Stub-Factory.html#property__instance"
+            "url": "classes/Horde-Test-Stub-Factory.html#property_instance"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Parser",
-            "name": "Horde_Test_Stub_Parser",
+            "fqsen": "\\Horde\\Test\\Stub\\Parser",
+            "name": "Parser",
             "summary": "A\u0020test\u0020helper\u0020for\u0020testing\u0020Horde_Argv\u0020based\u0020classes.",
             "url": "classes/Horde-Test-Stub-Parser.html"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Parser\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Parser\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
             "url": "classes/Horde-Test-Stub-Parser.html#method___construct"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Parser\u003A\u003AparserError\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Parser\u003A\u003AparserError\u0028\u0029",
             "name": "parserError",
             "summary": "Print\u0020a\u0020usage\u0020message\u0020incorporating\u0020\u0024msg\u0020to\u0020stderr\u0020and\u0020exit.",
             "url": "classes/Horde-Test-Stub-Parser.html#method_parserError"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Parser\u003A\u003AparserExit\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Parser\u003A\u003AparserExit\u0028\u0029",
             "name": "parserExit",
             "summary": "",
             "url": "classes/Horde-Test-Stub-Parser.html#method_parserExit"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry_Loadconfig",
-            "name": "Horde_Test_Stub_Registry_Loadconfig",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\\Loadconfig",
+            "name": "Loadconfig",
             "summary": "A\u0020test\u0020replacement\u0020for\u0020Horde_Registry_Loadconfig.",
             "url": "classes/Horde-Test-Stub-Registry-Loadconfig.html"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry_Loadconfig\u003A\u003A__contruct\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\\Loadconfig\u003A\u003A__contruct\u0028\u0029",
             "name": "__contruct",
             "summary": "",
             "url": "classes/Horde-Test-Stub-Registry-Loadconfig.html#method___contruct"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry_Loadconfig\u003A\u003A\u0024app",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\\Loadconfig\u003A\u003A\u0024app",
             "name": "app",
             "summary": "",
             "url": "classes/Horde-Test-Stub-Registry-Loadconfig.html#property_app"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry_Loadconfig\u003A\u003A\u0024conf_files",
-            "name": "conf_files",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\\Loadconfig\u003A\u003A\u0024confFile",
+            "name": "confFile",
             "summary": "",
-            "url": "classes/Horde-Test-Stub-Registry-Loadconfig.html#property_conf_files"
+            "url": "classes/Horde-Test-Stub-Registry-Loadconfig.html#property_confFile"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry_Loadconfig\u003A\u003A\u0024vars",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\\Loadconfig\u003A\u003A\u0024vars",
             "name": "vars",
             "summary": "",
             "url": "classes/Horde-Test-Stub-Registry-Loadconfig.html#property_vars"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry",
-            "name": "Horde_Test_Stub_Registry",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry",
+            "name": "Registry",
             "summary": "A\u0020test\u0020replacement\u0020for\u0020Horde_Registry.",
             "url": "classes/Horde-Test-Stub-Registry.html"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Constructor.",
             "url": "classes/Horde-Test-Stub-Registry.html#method___construct"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry\u003A\u003AconvertUsername\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\u003A\u003AconvertUsername\u0028\u0029",
             "name": "convertUsername",
             "summary": "Converts\u0020an\u0020authentication\u0020username\u0020to\u0020a\u0020unique\u0020Horde\u0020username.",
             "url": "classes/Horde-Test-Stub-Registry.html#method_convertUsername"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry\u003A\u003AgetAuth\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\u003A\u003AgetAuth\u0028\u0029",
             "name": "getAuth",
             "summary": "Returns\u0020the\u0020currently\u0020logged\u0020in\u0020user,\u0020if\u0020there\u0020is\u0020one.",
             "url": "classes/Horde-Test-Stub-Registry.html#method_getAuth"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry\u003A\u003AisAdmin\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\u003A\u003AisAdmin\u0028\u0029",
             "name": "isAdmin",
             "summary": "Is\u0020a\u0020user\u0020an\u0020administrator\u003F",
             "url": "classes/Horde-Test-Stub-Registry.html#method_isAdmin"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry\u003A\u003AremoteHost\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\u003A\u003AremoteHost\u0028\u0029",
             "name": "remoteHost",
             "summary": "Returns\u0020information\u0020about\u0020the\u0020remote\u0020host.",
             "url": "classes/Horde-Test-Stub-Registry.html#method_remoteHost"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry\u003A\u003AsetConfigFile\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\u003A\u003AsetConfigFile\u0028\u0029",
             "name": "setConfigFile",
             "summary": "Assigns\u0020a\u0020\u0028pre\u002Dconfigured\u0029\u0020Loadconfig\u0020object.",
             "url": "classes/Horde-Test-Stub-Registry.html#method_setConfigFile"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry\u003A\u003AloadConfigFile\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\u003A\u003AloadConfigFile\u0028\u0029",
             "name": "loadConfigFile",
             "summary": "Load\u0020a\u0020configuration\u0020file\u0020from\u0020a\u0020Horde\u0020application\u0027s\u0020config\u0020directory.",
             "url": "classes/Horde-Test-Stub-Registry.html#method_loadConfigFile"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry\u003A\u003Aget\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "Return\u0020the\u0020requested\u0020configuration\u0020parameter\u0020for\u0020the\u0020specified\napplication.\u0020If\u0020no\u0020application\u0020is\u0020specified,\u0020the\u0020value\u0020of\nthe\u0020current\u0020application\u0020is\u0020used.\u0020However,\u0020if\u0020the\u0020parameter\u0020is\u0020not\npresent\u0020for\u0020that\u0020application,\u0020the\u0020Horde\u002Dwide\u0020value\u0020is\u0020used\u0020instead.",
             "url": "classes/Horde-Test-Stub-Registry.html#method_get"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry\u003A\u003AgetApp\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\u003A\u003AgetApp\u0028\u0029",
             "name": "getApp",
             "summary": "Return\u0020the\u0020current\u0020application\u0020\u002D\u0020the\u0020app\u0020at\u0020the\u0020top\u0020of\u0020the\u0020application\nstack.",
             "url": "classes/Horde-Test-Stub-Registry.html#method_getApp"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry\u003A\u003AhasInterface\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\u003A\u003AhasInterface\u0028\u0029",
             "name": "hasInterface",
             "summary": "Determine\u0020if\u0020an\u0020interface\u0020is\u0020implemented\u0020by\u0020an\u0020active\u0020application.",
             "url": "classes/Horde-Test-Stub-Registry.html#method_hasInterface"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry\u003A\u003AlistAPIs\u0028\u0029",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\u003A\u003AlistAPIs\u0028\u0029",
             "name": "listAPIs",
             "summary": "Returns\u0020all\u0020available\u0020registry\u0020APIs.",
             "url": "classes/Horde-Test-Stub-Registry.html#method_listAPIs"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry\u003A\u003A\u0024hordeInit",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\u003A\u003A\u0024hordeInit",
             "name": "hordeInit",
             "summary": "A\u0020flag\u0020that\u0020is\u0020set\u0020once\u0020the\u0020basic\u0020horde\u0020application\u0020has\u0020been\nminimally\u0020configured.",
             "url": "classes/Horde-Test-Stub-Registry.html#property_hordeInit"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry\u003A\u003A\u0024_user",
-            "name": "_user",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\u003A\u003A\u0024user",
+            "name": "user",
             "summary": "The\u0020currrent\u0020user.",
-            "url": "classes/Horde-Test-Stub-Registry.html#property__user"
+            "url": "classes/Horde-Test-Stub-Registry.html#property_user"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry\u003A\u003A\u0024_app",
-            "name": "_app",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\u003A\u003A\u0024app",
+            "name": "app",
             "summary": "The\u0020current\u0020application.",
-            "url": "classes/Horde-Test-Stub-Registry.html#property__app"
+            "url": "classes/Horde-Test-Stub-Registry.html#property_app"
         },                {
-            "fqsen": "\\Horde_Test_Stub_Registry\u003A\u003A\u0024_configObjects",
-            "name": "_configObjects",
+            "fqsen": "\\Horde\\Test\\Stub\\Registry\u003A\u003A\u0024configObjects",
+            "name": "configObjects",
             "summary": "List\u0020of\u0020pre\u002Dconfigured\u0020configuration\u0020objects.",
-            "url": "classes/Horde-Test-Stub-Registry.html#property__configObjects"
+            "url": "classes/Horde-Test-Stub-Registry.html#property_configObjects"
+        },                {
+            "fqsen": "\\Horde\\Test\\TestCase",
+            "name": "TestCase",
+            "summary": "Basic\u0020Horde\u0020test\u0020case\u0020helper.",
+            "url": "classes/Horde-Test-TestCase.html"
+        },                {
+            "fqsen": "\\Horde\\Test\\TestCase\u003A\u003AgetMockSkipConstructor\u0028\u0029",
+            "name": "getMockSkipConstructor",
+            "summary": "Useful\u0020shorthand\u0020if\u0020you\u0020are\u0020mocking\u0020a\u0020class\u0020with\u0020a\u0020private\u0020constructor",
+            "url": "classes/Horde-Test-TestCase.html#method_getMockSkipConstructor"
+        },                {
+            "fqsen": "\\Horde\\Test\\TestCase\u003A\u003AgetConfig\u0028\u0029",
+            "name": "getConfig",
+            "summary": "Helper\u0020method\u0020for\u0020loading\u0020test\u0020configuration\u0020from\u0020a\u0020file.",
+            "url": "classes/Horde-Test-TestCase.html#method_getConfig"
         },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
+        },                {
+            "fqsen": "\\Horde\\Test\\AllTests",
+            "name": "AllTests",
+            "summary": "",
+            "url": "namespaces/horde-test-alltests.html"
+        },                {
+            "fqsen": "\\Horde\\Test",
+            "name": "Test",
+            "summary": "",
+            "url": "namespaces/horde-test.html"
+        },                {
+            "fqsen": "\\Horde",
+            "name": "Horde",
+            "summary": "",
+            "url": "namespaces/horde.html"
+        },                {
+            "fqsen": "\\Horde\\Test\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/horde-test-factory.html"
+        },                {
+            "fqsen": "\\Horde\\Test\\Stub",
+            "name": "Stub",
+            "summary": "",
+            "url": "namespaces/horde-test-stub.html"
+        },                {
+            "fqsen": "\\Horde\\Test\\Stub\\Registry",
+            "name": "Registry",
+            "summary": "",
+            "url": "namespaces/horde-test-stub-registry.html"
         }            ]
 );

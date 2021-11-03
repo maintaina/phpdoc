@@ -52,18 +52,27 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-        
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-            </section>
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-test.html">Test</a>
+                
+            </li>
+            </ul>
 
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Test.html"><abbr title="\Test">Test</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Application.html"><abbr title="\Application">Application</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Core.html"><abbr title="\Core">Core</abbr></a></h3>
                         </section>
-    
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Test.html">Test</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Core.html">Core</a></h4>
+
+                        </section>
+            
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
@@ -79,12 +88,14 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Test.html">Test</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-test.html">Test</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-test-stub.html">Stub</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Test_Stub_Parser
+    Parser
 
         <span class="phpdocumentor-element__extends">
         extends <abbr title="\Horde_Argv_Parser">Horde_Argv_Parser</abbr>
@@ -101,15 +112,15 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Stub/Parser.php"><a href="files/horde-test-stub-parser.html"><abbr title="Horde/Test/Stub/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Stub/Parser.php"><a href="files/stub-parser.html"><abbr title="Stub/Parser.php">Parser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">A test helper for testing Horde_Argv based classes.</p>
 
-    <section class="phpdocumentor-description"><p>Copyright 2010-2017 Horde LLC (http://www.horde.org/)</p>
+    <section class="phpdocumentor-description"><p>Copyright 2010-2021 Horde LLC (http://www.horde.org/)</p>
 <p>See the enclosed file LICENSE for license information (LGPL). If you
 did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </section>
@@ -212,16 +223,16 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
         <a href="classes/Horde-Test-Stub-Parser.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Stub/Parser.php"><a href="files/horde-test-stub-parser.html"><abbr title="Horde/Test/Stub/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Stub/Parser.php"><a href="files/stub-parser.html"><abbr title="Stub/Parser.php">Parser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$args</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$args</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -229,8 +240,8 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$args</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -256,9 +267,9 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
         <a href="classes/Horde-Test-Stub-Parser.html#method_parserError" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Stub/Parser.php"><a href="files/horde-test-stub-parser.html"><abbr title="Horde/Test/Stub/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Stub/Parser.php"><a href="files/stub-parser.html"><abbr title="Stub/Parser.php">Parser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -302,9 +313,9 @@ should either exit or raise an exception.</p>
         <a href="classes/Horde-Test-Stub-Parser.html#method_parserExit" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Stub/Parser.php"><a href="files/horde-test-stub-parser.html"><abbr title="Horde/Test/Stub/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Stub/Parser.php"><a href="files/stub-parser.html"><abbr title="Stub/Parser.php">Parser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 

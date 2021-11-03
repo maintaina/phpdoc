@@ -52,18 +52,27 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-        
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-            </section>
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-test.html">Test</a>
+                
+            </li>
+            </ul>
 
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Test.html"><abbr title="\Test">Test</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Application.html"><abbr title="\Application">Application</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Core.html"><abbr title="\Core">Core</abbr></a></h3>
                         </section>
-    
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Test.html">Test</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Core.html">Core</a></h4>
+
+                        </section>
+            
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
@@ -79,12 +88,13 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Test.html">Test</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-test.html">Test</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Test_Setup
+    Setup
 
     
             <div class="phpdocumentor-element__package">
@@ -98,15 +108,15 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Setup.php"><a href="files/horde-test-setup.html"><abbr title="Horde/Test/Setup.php">Setup.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Setup.php"><a href="files/setup.html"><abbr title="Setup.php">Setup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">A test helper for generating complex test setups.</p>
 
-    <section class="phpdocumentor-description"><p>Copyright 2011-2017 Horde LLC (http://www.horde.org/)</p>
+    <section class="phpdocumentor-description"><p>Copyright 2011-2021 Horde LLC (http://www.horde.org/)</p>
 <p>See the enclosed file LICENSE for license information (LGPL). If you
 did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </section>
@@ -165,7 +175,7 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                 <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Horde-Test-Setup.html#property__error">$_error</a>
+    <a href="classes/Horde-Test-Setup.html#property_error">$error</a>
     <span>
                 &nbsp;: string            </span>
 </dt>
@@ -173,14 +183,14 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 appropriate message indicating the problem.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Horde-Test-Setup.html#property__injector">$_injector</a>
+    <a href="classes/Horde-Test-Setup.html#property_injector">$injector</a>
     <span>
-                &nbsp;: <abbr title="\Horde_Injector">Horde_Injector</abbr>            </span>
+                &nbsp;: <abbr title="\Horde\Injector\Injector">Injector</abbr>            </span>
 </dt>
-<dd>The Horde_Injector instance which serves as our service container.</dd>
+<dd>The Injector instance which serves as our service container.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Horde-Test-Setup.html#property__params">$_params</a>
+    <a href="classes/Horde-Test-Setup.html#property_params">$params</a>
     <span>
                 &nbsp;: string            </span>
 </dt>
@@ -196,7 +206,7 @@ appropriate message indicating the problem.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Test-Setup.html#method_add">add()</a>
     <span>
-                        &nbsp;: null    </span>
+                        &nbsp;: void    </span>
 </dt>
 <dd>Add a new element to the service container.</dd>
 
@@ -210,14 +220,14 @@ appropriate message indicating the problem.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Test-Setup.html#method_getInjector">getInjector()</a>
     <span>
-                        &nbsp;: <abbr title="\Horde_Injector">Horde_Injector</abbr>    </span>
+                        &nbsp;: <abbr title="\Horde\Injector\Injector">Injector</abbr>    </span>
 </dt>
 <dd>Return the service container.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Test-Setup.html#method_makeGlobal">makeGlobal()</a>
     <span>
-                        &nbsp;: null    </span>
+                        &nbsp;: void    </span>
 </dt>
 <dd>Export elements from the injector into global scope.</dd>
 
@@ -247,16 +257,16 @@ appropriate message indicating the problem.</dd>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__error">
-        $_error
-        <a href="classes/Horde-Test-Setup.html#property__error" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_error">
+        $error
+        <a href="classes/Horde-Test-Setup.html#property_error" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Setup.php"><a href="files/horde-test-setup.html"><abbr title="Horde/Test/Setup.php">Setup.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Setup.php"><a href="files/setup.html"><abbr title="Setup.php">Setup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -266,7 +276,7 @@ appropriate message indicating the problem.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$_error</span>
+    <span class="phpdocumentor-signature__name">$error</span>
     </code>
 
     
@@ -281,25 +291,25 @@ appropriate message indicating the problem.</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__injector">
-        $_injector
-        <a href="classes/Horde-Test-Setup.html#property__injector" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_injector">
+        $injector
+        <a href="classes/Horde-Test-Setup.html#property_injector" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Setup.php"><a href="files/horde-test-setup.html"><abbr title="Horde/Test/Setup.php">Setup.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Setup.php"><a href="files/setup.html"><abbr title="Setup.php">Setup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The Horde_Injector instance which serves as our service container.</p>
+        <p class="phpdocumentor-summary">The Injector instance which serves as our service container.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Horde_Injector">Horde_Injector</abbr></span>
-    <span class="phpdocumentor-signature__name">$_injector</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Horde\Injector\Injector">Injector</abbr></span>
+    <span class="phpdocumentor-signature__name">$injector</span>
     </code>
 
     
@@ -314,16 +324,16 @@ appropriate message indicating the problem.</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__params">
-        $_params
-        <a href="classes/Horde-Test-Setup.html#property__params" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_params">
+        $params
+        <a href="classes/Horde-Test-Setup.html#property_params" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Setup.php"><a href="files/horde-test-setup.html"><abbr title="Horde/Test/Setup.php">Setup.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Setup.php"><a href="files/setup.html"><abbr title="Setup.php">Setup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -332,8 +342,8 @@ appropriate message indicating the problem.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$_params</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+    <span class="phpdocumentor-signature__name">$params</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -358,9 +368,9 @@ appropriate message indicating the problem.</p>
         <a href="classes/Horde-Test-Setup.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Setup.php"><a href="files/horde-test-setup.html"><abbr title="Horde/Test/Setup.php">Setup.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Setup.php"><a href="files/setup.html"><abbr title="Setup.php">Setup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -391,9 +401,9 @@ appropriate message indicating the problem.</p>
         <a href="classes/Horde-Test-Setup.html#method_add" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Setup.php"><a href="files/horde-test-setup.html"><abbr title="Horde/Test/Setup.php">Setup.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Setup.php"><a href="files/setup.html"><abbr title="Setup.php">Setup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
@@ -401,14 +411,14 @@ appropriate message indicating the problem.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$interface</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$factory</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null</span></code>
+                <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$interface</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$factory</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$interface</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
@@ -463,7 +473,7 @@ service.</p>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">null</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -479,9 +489,9 @@ service.</p>
         <a href="classes/Horde-Test-Setup.html#method_getError" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Setup.php"><a href="files/horde-test-setup.html"><abbr title="Horde/Test/Setup.php">Setup.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Setup.php"><a href="files/setup.html"><abbr title="Setup.php">Setup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">174</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -514,9 +524,9 @@ service.</p>
         <a href="classes/Horde-Test-Setup.html#method_getInjector" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Setup.php"><a href="files/horde-test-setup.html"><abbr title="Horde/Test/Setup.php">Setup.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Setup.php"><a href="files/setup.html"><abbr title="Setup.php">Setup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -524,14 +534,14 @@ service.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getInjector</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Injector">Horde_Injector</abbr></span></code>
+                <span class="phpdocumentor-signature__name">getInjector</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Injector\Injector">Injector</abbr></span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Injector">Horde_Injector</abbr></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Injector\Injector">Injector</abbr></span>
             &mdash;
             <section class="phpdocumentor-description"><p>The injector.</p>
 </section>
@@ -549,9 +559,9 @@ service.</p>
         <a href="classes/Horde-Test-Setup.html#method_makeGlobal" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Setup.php"><a href="files/horde-test-setup.html"><abbr title="Horde/Test/Setup.php">Setup.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Setup.php"><a href="files/setup.html"><abbr title="Setup.php">Setup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">159</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
@@ -559,7 +569,7 @@ service.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">makeGlobal</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$elements</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null</span></code>
+                <span class="phpdocumentor-signature__name">makeGlobal</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$elements</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -578,7 +588,7 @@ service.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">null</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -594,9 +604,9 @@ service.</p>
         <a href="classes/Horde-Test-Setup.html#method_setup" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Test/Setup.php"><a href="files/horde-test-setup.html"><abbr title="Horde/Test/Setup.php">Setup.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Setup.php"><a href="files/setup.html"><abbr title="Setup.php">Setup.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
