@@ -36,11 +36,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Composer-ConfigLinker.html#property_configDir"
         },                {
-            "fqsen": "\\Horde\\Composer\\ConfigLinker\u003A\u003A\u0024vendorDir",
-            "name": "vendorDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-ConfigLinker.html#property_vendorDir"
-        },                {
             "fqsen": "\\Horde\\Composer\\ConfigLinker\u003A\u003A\u0024webDir",
             "name": "webDir",
             "summary": "",
@@ -225,11 +220,6 @@ Search.appendIndex(
             "name": "apps",
             "summary": "List\u0020of\u0020apps",
             "url": "classes/Horde-Composer-HordeLocalFileWriter.html#property_apps"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeLocalFileWriter\u003A\u003A\u0024baseDir",
-            "name": "baseDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeLocalFileWriter.html#property_baseDir"
         },                {
             "fqsen": "\\Horde\\Composer\\HordeLocalFileWriter\u003A\u003A\u0024configDir",
             "name": "configDir",
