@@ -281,11 +281,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Composer-JsTreeLinker.html#property_filesystem"
         },                {
-            "fqsen": "\\Horde\\Composer\\JsTreeLinker\u003A\u003A\u0024baseDir",
-            "name": "baseDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-JsTreeLinker.html#property_baseDir"
-        },                {
             "fqsen": "\\Horde\\Composer\\JsTreeLinker\u003A\u003A\u0024vendorDir",
             "name": "vendorDir",
             "summary": "",
@@ -360,11 +355,6 @@ Search.appendIndex(
             "name": "handle",
             "summary": "",
             "url": "classes/Horde-Composer-PresetHandler.html#method_handle"
-        },                {
-            "fqsen": "\\Horde\\Composer\\PresetHandler\u003A\u003A\u0024rootDir",
-            "name": "rootDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-PresetHandler.html#property_rootDir"
         },                {
             "fqsen": "\\Horde\\Composer\\PresetHandler\u003A\u003A\u0024presetDir",
             "name": "presetDir",
