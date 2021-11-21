@@ -613,27 +613,27 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\Filter\\ConstraintFilter\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor",
+            "summary": "Constructor.",
             "url": "classes/Horde-Log-Filter-ConstraintFilter.html#method___construct"
         },                {
             "fqsen": "\\Horde\\Log\\Filter\\ConstraintFilter\u003A\u003AaddConstraint\u0028\u0029",
             "name": "addConstraint",
-            "summary": "Add\u0020a\u0020constraint\u0020to\u0020the\u0020filter",
+            "summary": "Add\u0020a\u0020constraint\u0020to\u0020the\u0020filter.",
             "url": "classes/Horde-Log-Filter-ConstraintFilter.html#method_addConstraint"
         },                {
             "fqsen": "\\Horde\\Log\\Filter\\ConstraintFilter\u003A\u003AaddRegex\u0028\u0029",
             "name": "addRegex",
-            "summary": "Add\u0020a\u0020regular\u0020expression\u0020to\u0020filter\u0020by",
+            "summary": "Add\u0020a\u0020regular\u0020expression\u0020to\u0020filter\u0020by.",
             "url": "classes/Horde-Log-Filter-ConstraintFilter.html#method_addRegex"
         },                {
             "fqsen": "\\Horde\\Log\\Filter\\ConstraintFilter\u003A\u003AaddRequiredField\u0028\u0029",
             "name": "addRequiredField",
-            "summary": "Add\u0020a\u0020required\u0020field\u0020to\u0020the\u0020filter",
+            "summary": "Add\u0020a\u0020required\u0020field\u0020to\u0020the\u0020filter.",
             "url": "classes/Horde-Log-Filter-ConstraintFilter.html#method_addRequiredField"
         },                {
             "fqsen": "\\Horde\\Log\\Filter\\ConstraintFilter\u003A\u003AaddRequiredFields\u0028\u0029",
             "name": "addRequiredFields",
-            "summary": "Adds\u0020all\u0020arguments\u0020passed\u0020as\u0020required\u0020fields",
+            "summary": "Adds\u0020all\u0020arguments\u0020passed\u0020as\u0020required\u0020fields.",
             "url": "classes/Horde-Log-Filter-ConstraintFilter.html#method_addRequiredFields"
         },                {
             "fqsen": "\\Horde\\Log\\Filter\\ConstraintFilter\u003A\u003Aaccept\u0028\u0029",
@@ -868,7 +868,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\BaseHandler\u003A\u003A\u0024formatters",
             "name": "formatters",
-            "summary": "Formatters\u0020for\u0020this\u0020handler",
+            "summary": "Formatters\u0020for\u0020this\u0020handler.",
             "url": "classes/Horde-Log-Handler-BaseHandler.html#property_formatters"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\CliHandler",
@@ -878,7 +878,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\CliHandler\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Class\u0020Constructor",
+            "summary": "Class\u0020Constructor.",
             "url": "classes/Horde-Log-Handler-CliHandler.html#method___construct"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\CliHandler\u003A\u003Awrite\u0028\u0029",
@@ -898,7 +898,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\FirebugHandler\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Class\u0020Constructor",
+            "summary": "Class\u0020Constructor.",
             "url": "classes/Horde-Log-Handler-FirebugHandler.html#method___construct"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\FirebugHandler\u003A\u003Awrite\u0028\u0029",
@@ -988,7 +988,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\StreamHandler\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Class\u0020Constructor",
+            "summary": "Class\u0020Constructor.",
             "url": "classes/Horde-Log-Handler-StreamHandler.html#method___construct"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\StreamHandler\u003A\u003A__wakeup\u0028\u0029",
@@ -1063,12 +1063,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\LogFilter\u003A\u003AACCEPT",
             "name": "ACCEPT",
-            "summary": "Accept\u0020a\u0020message",
+            "summary": "Accept\u0020a\u0020message.",
             "url": "classes/Horde-Log-LogFilter.html#constant_ACCEPT"
         },                {
             "fqsen": "\\Horde\\Log\\LogFilter\u003A\u003AIGNORE",
             "name": "IGNORE",
-            "summary": "Filter\u0020out\u0020a\u0020message",
+            "summary": "Filter\u0020out\u0020a\u0020message.",
             "url": "classes/Horde-Log-LogFilter.html#constant_IGNORE"
         },                {
             "fqsen": "\\Horde\\Log\\LogFormatter",
@@ -1178,7 +1178,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\LoggerInterface",
             "name": "LoggerInterface",
-            "summary": "Horde\u0027s\u0020Logger\u0020Interface\u0020includes\u0020PsrLoggerInterface\u0020but\u0020extends\u0020by\nhorde\u002Dspecific\u0020setup\u0020and\u0020manipulation\u0020methods",
+            "summary": "Horde\u0027s\u0020Logger\u0020Interface\u0020includes\u0020PsrLoggerInterface\u0020but\u0020extends\u0020by\nhorde\u002Dspecific\u0020setup\u0020and\u0020manipulation\u0020methods.",
             "url": "classes/Horde-Log-LoggerInterface.html"
         },                {
             "fqsen": "\\Horde\\Log\\LoggerInterface\u003A\u003AaddFilter\u0028\u0029",
@@ -1188,7 +1188,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\LogHandler",
             "name": "LogHandler",
-            "summary": "interface\u0020of\u0020a\u0020Log\u0020Handler",
+            "summary": "interface\u0020of\u0020a\u0020Log\u0020Handler.",
             "url": "classes/Horde-Log-LogHandler.html"
         },                {
             "fqsen": "\\Horde\\Log\\LogHandler\u003A\u003AaddFilter\u0028\u0029",
@@ -1213,7 +1213,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\LogLevel",
             "name": "LogLevel",
-            "summary": "Represents\u0020a\u0020single\u0020log\u0020level",
+            "summary": "Represents\u0020a\u0020single\u0020log\u0020level.",
             "url": "classes/Horde-Log-LogLevel.html"
         },                {
             "fqsen": "\\Horde\\Log\\LogLevel\u003A\u003A__construct\u0028\u0029",
@@ -1233,7 +1233,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\LogLevels",
             "name": "LogLevels",
-            "summary": "A\u0020list\u0020of\u0020log\u0020levels\u0020to\u0020be\u0020recognized",
+            "summary": "A\u0020list\u0020of\u0020log\u0020levels\u0020to\u0020be\u0020recognized.",
             "url": "classes/Horde-Log-LogLevels.html"
         },                {
             "fqsen": "\\Horde\\Log\\LogLevels\u003A\u003Aregister\u0028\u0029",
@@ -1248,47 +1248,47 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\LogLevels\u003A\u003AinitWithAliasLevels\u0028\u0029",
             "name": "initWithAliasLevels",
-            "summary": "Register\u0020the\u0020canonical\u0020log\u0020levels\u0020and\u0020their\u0020popular\u0020aliases",
+            "summary": "Register\u0020the\u0020canonical\u0020log\u0020levels\u0020and\u0020their\u0020popular\u0020aliases.",
             "url": "classes/Horde-Log-LogLevels.html#method_initWithAliasLevels"
         },                {
             "fqsen": "\\Horde\\Log\\LogLevels\u003A\u003AgetByCriticality\u0028\u0029",
             "name": "getByCriticality",
-            "summary": "Get\u0020a\u0020registered\u0020log\u0020level\u0020by\u0020criticality",
+            "summary": "Get\u0020a\u0020registered\u0020log\u0020level\u0020by\u0020criticality.",
             "url": "classes/Horde-Log-LogLevels.html#method_getByCriticality"
         },                {
             "fqsen": "\\Horde\\Log\\LogLevels\u003A\u003AgetByLevelName\u0028\u0029",
             "name": "getByLevelName",
-            "summary": "Get\u0020a\u0020registered\u0020log\u0020level\u0020by\u0020name\u0020or\u0020throw\u0020an\u0020exception",
+            "summary": "Get\u0020a\u0020registered\u0020log\u0020level\u0020by\u0020name\u0020or\u0020throw\u0020an\u0020exception.",
             "url": "classes/Horde-Log-LogLevels.html#method_getByLevelName"
         },                {
             "fqsen": "\\Horde\\Log\\LogLevels\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor",
+            "summary": "Constructor.",
             "url": "classes/Horde-Log-LogLevels.html#method___construct"
         },                {
             "fqsen": "\\Horde\\Log\\LogLevels\u003A\u003A\u0024levels",
             "name": "levels",
-            "summary": "The\u0020configured\u0020levels",
+            "summary": "The\u0020configured\u0020levels.",
             "url": "classes/Horde-Log-LogLevels.html#property_levels"
         },                {
             "fqsen": "\\Horde\\Log\\LogMessage",
             "name": "LogMessage",
-            "summary": "Represents\u0020a\u0020single\u0020log\u0020message",
+            "summary": "Represents\u0020a\u0020single\u0020log\u0020message.",
             "url": "classes/Horde-Log-LogMessage.html"
         },                {
             "fqsen": "\\Horde\\Log\\LogMessage\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor",
+            "summary": "Constructor.",
             "url": "classes/Horde-Log-LogMessage.html#method___construct"
         },                {
             "fqsen": "\\Horde\\Log\\LogMessage\u003A\u003AmergeContext\u0028\u0029",
             "name": "mergeContext",
-            "summary": "Merge\u0020an\u0020additional\u0020context\u0020with\u0020the\u0020current\u0020context",
+            "summary": "Merge\u0020an\u0020additional\u0020context\u0020with\u0020the\u0020current\u0020context.",
             "url": "classes/Horde-Log-LogMessage.html#method_mergeContext"
         },                {
             "fqsen": "\\Horde\\Log\\LogMessage\u003A\u003A\u0024context",
             "name": "context",
-            "summary": "Context\u0020may\u0020be\u0020a\u0020hash\u0020of\u0020anything,\u0020but\u0020only\u0020primitives\u0020and\u0020Stringables\u0020are\u0020expanded",
+            "summary": "Context\u0020may\u0020be\u0020a\u0020hash\u0020of\u0020anything,\u0020but\u0020only\u0020primitives\u0020and\u0020Stringables\u0020are\u0020expanded.",
             "url": "classes/Horde-Log-LogMessage.html#property_context"
         },                {
             "fqsen": "\\Horde\\Log\\LogMessage\u003A\u003A\u0024message",
@@ -1298,7 +1298,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\LogMessage\u003A\u003AformatMessage\u0028\u0029",
             "name": "formatMessage",
-            "summary": "Apply\u0020formatters\u0020to\u0020the\u0020message\u003B",
+            "summary": "Apply\u0020formatters\u0020to\u0020the\u0020message\u003B.",
             "url": "classes/Horde-Log-LogMessage.html#method_formatMessage"
         },                {
             "fqsen": "\\Horde\\Log\\LogMessage\u003A\u003A\u0024level",
