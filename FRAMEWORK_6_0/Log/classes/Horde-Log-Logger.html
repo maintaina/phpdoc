@@ -52,21 +52,39 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-        
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-            </section>
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-log.html">Log</a>
+                
+            </li>
+            </ul>
 
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Log.html"><abbr title="\Log">Log</abbr></a></h3>
-                        <ul class="phpdocumentor-list">
-                                    <li><a href="packages/Log-Filters.html"><abbr title="\Log\Filters">Filters</abbr></a></li>
-                                    <li><a href="packages/Log-Handlers.html"><abbr title="\Log\Handlers">Handlers</abbr></a></li>
-                                    <li><a href="packages/Log-Formatters.html"><abbr title="\Log\Formatters">Formatters</abbr></a></li>
-                            </ul>
                         </section>
-    
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Log.html">Log</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="packages/Log-Filters.html">Filters</a>
+                
+            </li>
+                    <li>
+                <a href="packages/Log-Handlers.html">Handlers</a>
+                
+            </li>
+                    <li>
+                <a href="packages/Log-Formatters.html">Formatters</a>
+                
+            </li>
+            </ul>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+
+                        </section>
+            
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
@@ -82,12 +100,13 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Log.html">Log</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-log.html">Log</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Log_Logger
+    Logger
 
     
             <div class="phpdocumentor-element__package">
@@ -99,14 +118,14 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Serializable">Serializable</abbr>                    </span>
+                            <a href="classes/Horde-Log-LoggerInterface.html"><abbr title="\Horde\Log\LoggerInterface">LoggerInterface</abbr></a>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -133,6 +152,15 @@
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
                                                  <section class="phpdocumentor-description"><p>Chuck Hagenbuch <a href="mailto:chuck@horde.org">chuck@horde.org</a></p>
+</section>
+
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>Ralf Lang <a href="mailto:lang@b1-systems.de">lang@b1-systems.de</a></p>
 </section>
 
                                     </dd>
@@ -165,8 +193,9 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Serializable">Serializable</abbr></dt>
-        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Log-LoggerInterface.html"><abbr title="\Horde\Log\LoggerInterface">LoggerInterface</abbr></a></dt>
+        <dd>Horde&#039;s Logger Interface includes PsrLoggerInterface but extends by
+horde-specific setup and manipulation methods</dd>
     
     
     </dl>
@@ -186,40 +215,28 @@
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Log-Logger.html#property__filters">$_filters</a>
+    <a href="classes/Horde-Log-Logger.html#property_filters">$filters</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: array&lt;string|int, <a href="classes/Horde-Log-LogFilter.html"><abbr title="\Horde\Log\LogFilter">LogFilter</abbr></a>&gt;            </span>
 </dt>
 <dd>Horde_Log_Filter objects.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Log-Logger.html#property__handlers">$_handlers</a>
+    <a href="classes/Horde-Log-Logger.html#property_handlers">$handlers</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: array&lt;string|int, <a href="classes/Horde-Log-LogHandler.html"><abbr title="\Horde\Log\LogHandler">LogHandler</abbr></a>&gt;            </span>
 </dt>
-<dd>Horde_Log_Handler_Base objects.</dd>
+<dd>Handler objects.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Log-Logger.html#property__levels">$_levels</a>
+    <a href="classes/Horde-Log-Logger.html#property_levels">$levels</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: <a href="classes/Horde-Log-LogLevels.html"><abbr title="\Horde\Log\LogLevels">LogLevels</abbr></a>            </span>
 </dt>
 <dd>Log levels where the keys are the level priorities and the values are
 the level names.</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Log-Logger.html#method___call">__call()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Undefined method handler allows a shortcut:
-&lt;pre&gt;
-$log-&gt;levelName(&#039;message&#039;);
-  instead of
-$log-&gt;log(&#039;message&#039;, Horde_Log_LEVELNAME);
-&lt;/pre&gt;</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Logger.html#method___construct">__construct()</a>
     <span>
                         &nbsp;: mixed    </span>
@@ -229,94 +246,74 @@ $log-&gt;log(&#039;message&#039;, Horde_Log_LEVELNAME);
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Logger.html#method_addFilter">addFilter()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: void    </span>
 </dt>
 <dd>Add a filter that will be applied before all log handlers.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Logger.html#method_addHandler">addHandler()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: void    </span>
 </dt>
 <dd>Add a handler.  A handler is responsible for taking a log
 message and writing it out to storage.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Log-Logger.html#method_addLevel">addLevel()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Add a custom log level</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Logger.html#method_alert">alert()</a>
     <span>
-                        &nbsp;: <a href=""><abbr title=""></abbr></a>    </span>
+                        &nbsp;: void    </span>
 </dt>
-<dd></dd>
+<dd>Action must be taken immediately.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Log-Logger.html#method_crit">crit()</a>
+    <a href="classes/Horde-Log-Logger.html#method_critical">critical()</a>
     <span>
-                        &nbsp;: <a href=""><abbr title=""></abbr></a>    </span>
+                        &nbsp;: void    </span>
 </dt>
-<dd></dd>
+<dd>Critical conditions.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Logger.html#method_debug">debug()</a>
     <span>
-                        &nbsp;: <a href=""><abbr title=""></abbr></a>    </span>
+                        &nbsp;: void    </span>
 </dt>
-<dd></dd>
+<dd>Detailed debug information.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Log-Logger.html#method_emerg">emerg()</a>
+    <a href="classes/Horde-Log-Logger.html#method_emergency">emergency()</a>
     <span>
-                        &nbsp;: <a href=""><abbr title=""></abbr></a>    </span>
+                        &nbsp;: void    </span>
 </dt>
-<dd></dd>
+<dd>System is unusable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Log-Logger.html#method_err">err()</a>
+    <a href="classes/Horde-Log-Logger.html#method_error">error()</a>
     <span>
-                        &nbsp;: <a href=""><abbr title=""></abbr></a>    </span>
+                        &nbsp;: void    </span>
 </dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Log-Logger.html#method_hasLevel">hasLevel()</a>
-    <span>
-                        &nbsp;: bool    </span>
-</dt>
-<dd>Does this logger have the level $name already?</dd>
+<dd>Runtime errors that do not require immediate action but should typically
+be logged and monitored.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Logger.html#method_info">info()</a>
     <span>
-                        &nbsp;: <a href=""><abbr title=""></abbr></a>    </span>
+                        &nbsp;: void    </span>
 </dt>
-<dd></dd>
+<dd>Interesting events.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Logger.html#method_log">log()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: void    </span>
 </dt>
-<dd>Log a message at a level</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Log-Logger.html#method_LOGLEVEL">LOGLEVEL()</a>
-    <span>
-                        &nbsp;: <a href=""><abbr title=""></abbr></a>    </span>
-</dt>
-<dd></dd>
+<dd>Logs with an arbitrary level.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Logger.html#method_notice">notice()</a>
     <span>
-                        &nbsp;: <a href=""><abbr title=""></abbr></a>    </span>
+                        &nbsp;: void    </span>
 </dt>
-<dd></dd>
+<dd>Normal but significant events.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Logger.html#method_serialize">serialize()</a>
@@ -328,23 +325,16 @@ message and writing it out to storage.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Logger.html#method_unserialize">unserialize()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: void    </span>
 </dt>
 <dd>Unserialize.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Log-Logger.html#method_warn">warn()</a>
+    <a href="classes/Horde-Log-Logger.html#method_warning">warning()</a>
     <span>
-                        &nbsp;: <a href=""><abbr title=""></abbr></a>    </span>
+                        &nbsp;: void    </span>
 </dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Log-Logger.html#method__init">_init()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Initialization tasks.</dd>
+<dd>Exceptional occurrences that are not errors.</dd>
 
         </dl>
 
@@ -363,9 +353,9 @@ message and writing it out to storage.</dd>
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -400,16 +390,16 @@ message and writing it out to storage.</dd>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__filters">
-        $_filters
-        <a href="classes/Horde-Log-Logger.html#property__filters" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_filters">
+        $filters
+        <a href="classes/Horde-Log-Logger.html#property_filters" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -417,8 +407,8 @@ message and writing it out to storage.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_filters</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/Horde-Log-LogFilter.html"><abbr title="\Horde\Log\LogFilter">LogFilter</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__name">$filters</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
     
@@ -433,25 +423,25 @@ message and writing it out to storage.</dd>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__handlers">
-        $_handlers
-        <a href="classes/Horde-Log-Logger.html#property__handlers" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_handlers">
+        $handlers
+        <a href="classes/Horde-Log-Logger.html#property_handlers" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Horde_Log_Handler_Base objects.</p>
+        <p class="phpdocumentor-summary">Handler objects.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_handlers</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/Horde-Log-LogHandler.html"><abbr title="\Horde\Log\LogHandler">LogHandler</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__name">$handlers</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
     
@@ -466,16 +456,16 @@ message and writing it out to storage.</dd>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__levels">
-        $_levels
-        <a href="classes/Horde-Log-Logger.html#property__levels" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_levels">
+        $levels
+        <a href="classes/Horde-Log-Logger.html#property_levels" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -484,9 +474,9 @@ the level names.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_levels</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Log-LogLevels.html"><abbr title="\Horde\Log\LogLevels">LogLevels</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$levels</span>
+    </code>
 
     
     
@@ -506,73 +496,14 @@ the level names.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method___call">
-        __call()
-        <a href="classes/Horde-Log-Logger.html#method___call" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">130</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Undefined method handler allows a shortcut:
-&lt;pre&gt;
-$log-&gt;levelName(&#039;message&#039;);
-  instead of
-$log-&gt;log(&#039;message&#039;, Horde_Log_LEVELNAME);
-&lt;/pre&gt;</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__call</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$method</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Log level name.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$params</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Message to log.</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/Horde-Log-Logger.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -580,17 +511,36 @@ $log-&gt;log(&#039;message&#039;, Horde_Log_LEVELNAME);
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-Handler-Base.html"><abbr title="\Horde_Log_Handler_Base">Horde_Log_Handler_Base</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handler</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/Horde-Log-LogHandler.html"><abbr title="\Horde\Log\LogHandler">LogHandler</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handlers</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-LogLevels.html"><abbr title="\Horde\Log\LogLevels">LogLevels</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$levels</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/Horde-Log-LogFilter.html"><abbr title="\Horde\Log\LogFilter">LogFilter</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filters</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$handler</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-Handler-Base.html"><abbr title="\Horde_Log_Handler_Base">Horde_Log_Handler_Base</abbr></a>|null</span>
+                <span class="phpdocumentor-signature__argument__name">$handlers</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/Horde-Log-LogHandler.html"><abbr title="\Horde\Log\LogHandler">LogHandler</abbr></a>&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The list of handlers.
+TODO: Is defaulting to the null handler any better than defaulting to no handler?</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$levels</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-LogLevels.html"><abbr title="\Horde\Log\LogLevels">LogLevels</abbr></a>|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Default handler.</p>
+                    <section class="phpdocumentor-description"><p>A list of log levels to operate on. Null initializes with the RFC loglevels</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$filters</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/Horde-Log-LogFilter.html"><abbr title="\Horde\Log\LogFilter">LogFilter</abbr></a>&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A list of global filters to apply before any log handler. Log handlers may have their own filters</p>
 </section>
 
             </dd>
@@ -615,9 +565,9 @@ $log-&gt;log(&#039;message&#039;, Horde_Log_LEVELNAME);
         <a href="classes/Horde-Log-Logger.html#method_addFilter" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">234</span>
+    <span class="phpdocumentor-element-found-in__line">313</span>
 
     </aside>
 
@@ -625,7 +575,7 @@ $log-&gt;log(&#039;message&#039;, Horde_Log_LEVELNAME);
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">addFilter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-Filter.html"><abbr title="\Horde_Log_Filter">Horde_Log_Filter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">addFilter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-LogFilter.html"><abbr title="\Horde\Log\LogFilter">LogFilter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"><p>Before a message will be received by any of the handlers, it
 must be accepted by all filters added with this method.</p>
@@ -635,7 +585,7 @@ must be accepted by all filters added with this method.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$filter</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-Filter.html"><abbr title="\Horde_Log_Filter">Horde_Log_Filter</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-LogFilter.html"><abbr title="\Horde\Log\LogFilter">LogFilter</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Filter to add.</p>
@@ -647,7 +597,7 @@ must be accepted by all filters added with this method.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -663,9 +613,9 @@ must be accepted by all filters added with this method.</p>
         <a href="classes/Horde-Log-Logger.html#method_addHandler" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">247</span>
+    <span class="phpdocumentor-element-found-in__line">324</span>
 
     </aside>
 
@@ -674,14 +624,14 @@ message and writing it out to storage.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">addHandler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-Handler-Base.html"><abbr title="\Horde_Log_Handler_Base">Horde_Log_Handler_Base</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">addHandler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-LogHandler.html"><abbr title="\Horde\Log\LogHandler">LogHandler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$handler</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-Handler-Base.html"><abbr title="\Horde_Log_Handler_Base">Horde_Log_Handler_Base</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-LogHandler.html"><abbr title="\Horde\Log\LogHandler">LogHandler</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Handler to add.</p>
@@ -693,61 +643,7 @@ message and writing it out to storage.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_addLevel">
-        addLevel()
-        <a href="classes/Horde-Log-Logger.html#method_addLevel" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">215</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Add a custom log level</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">addLevel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$level</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Name of level.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$level</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Numeric level.</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -763,25 +659,44 @@ message and writing it out to storage.</p>
         <a href="classes/Horde-Log-Logger.html#method_alert" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">0</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Action must be taken immediately.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">alert</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">alert</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>alert($event) Log an event at the ALERT log level</p>
+        <section class="phpdocumentor-description"><p>Example: Entire website down, database unavailable, etc. This should
+trigger the SMS alerts and wake you up.</p>
 </section>
 
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$message</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$context</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -792,30 +707,48 @@ message and writing it out to storage.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_crit">
-        crit()
-        <a href="classes/Horde-Log-Logger.html#method_crit" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_critical">
+        critical()
+        <a href="classes/Horde-Log-Logger.html#method_critical" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">0</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Critical conditions.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">crit</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">critical</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>crit($event) Log an event at the CRIT log level</p>
+        <section class="phpdocumentor-description"><p>Example: Application component unavailable, unexpected exception.</p>
 </section>
 
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$message</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$context</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -831,129 +764,137 @@ message and writing it out to storage.</p>
         <a href="classes/Horde-Log-Logger.html#method_debug" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">0</span>
+    <span class="phpdocumentor-element-found-in__line">248</span>
 
     </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">debug</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span></code>
-
-        <section class="phpdocumentor-description"><p>debug($event) Log an event at the DEBUG log level</p>
-</section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_emerg">
-        emerg()
-        <a href="classes/Horde-Log-Logger.html#method_emerg" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">0</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">emerg</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span></code>
-
-        <section class="phpdocumentor-description"><p>emerg($event) Log an event at the EMERG log level</p>
-</section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_err">
-        err()
-        <a href="classes/Horde-Log-Logger.html#method_err" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">0</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">err</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span></code>
-
-        <section class="phpdocumentor-description"><p>err($event) Log an event at the ERR log level</p>
-</section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_hasLevel">
-        hasLevel()
-        <a href="classes/Horde-Log-Logger.html#method_hasLevel" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">204</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Does this logger have the level $name already?</p>
+        <p class="phpdocumentor-summary">Detailed debug information.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">hasLevel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                <span class="phpdocumentor-signature__name">debug</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$name</span>
+                <span class="phpdocumentor-signature__argument__name">$message</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The level name to check for.</p>
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$context</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_emergency">
+        emergency()
+        <a href="classes/Horde-Log-Logger.html#method_emergency" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">146</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">System is unusable.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">emergency</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$message</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$context</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_error">
+        error()
+        <a href="classes/Horde-Log-Logger.html#method_error" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">191</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Runtime errors that do not require immediate action but should typically
+be logged and monitored.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">error</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$message</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The message to submit</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$context</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>An array of context</p>
 </section>
 
             </dd>
@@ -962,12 +903,9 @@ message and writing it out to storage.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
-            <section class="phpdocumentor-description"><p>Whether the logger already has the specific level
-name.</p>
-</section>
-
+        
     
 </article>
                     <article
@@ -981,25 +919,43 @@ name.</p>
         <a href="classes/Horde-Log-Logger.html#method_info" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">0</span>
+    <span class="phpdocumentor-element-found-in__line">235</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Interesting events.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">info</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">info</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>info($event) Log an event at the INFO log level</p>
+        <section class="phpdocumentor-description"><p>Example: User logs in, SQL logs.</p>
 </section>
 
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$message</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$context</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -1015,80 +971,64 @@ name.</p>
         <a href="classes/Horde-Log-Logger.html#method_log" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">263</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Log a message at a level</p>
+        <p class="phpdocumentor-summary">Logs with an arbitrary level.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">log</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$level</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">log</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|string|<a href="classes/Horde-Log-LogLevel.html"><abbr title="\Horde\Log\LogLevel">LogLevel</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$level</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$event</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                <span class="phpdocumentor-signature__argument__name">$level</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|string|<a href="classes/Horde-Log-LogLevel.html"><abbr title="\Horde\Log\LogLevel">LogLevel</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Message to log, either an array or a string.</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$level</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                <span class="phpdocumentor-signature__argument__name">$message</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a></span>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Log level of message, required if $message is a
-string.</p>
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$context</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>User code supplied additional info</p>
 </section>
 
             </dd>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Psr\Log\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_LOGLEVEL">
-        LOGLEVEL()
-        <a href="classes/Horde-Log-Logger.html#method_LOGLEVEL" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">0</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">LOGLEVEL</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span></code>
-
-        <section class="phpdocumentor-description"><p>LOGLEVEL($event) Log an event at LOGLEVEL, where LOGLEVEL has been added with addLevel() or already exists</p>
-</section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -1104,25 +1044,41 @@ string.</p>
         <a href="classes/Horde-Log-Logger.html#method_notice" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">0</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Normal but significant events.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">notice</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span></code>
-
-        <section class="phpdocumentor-description"><p>notice($event) Log an event at the NOTICE log level</p>
-</section>
+                <span class="phpdocumentor-signature__name">notice</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$message</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$context</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -1138,9 +1094,9 @@ string.</p>
         <a href="classes/Horde-Log-Logger.html#method_serialize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -1173,9 +1129,9 @@ string.</p>
         <a href="classes/Horde-Log-Logger.html#method_unserialize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -1183,7 +1139,7 @@ string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">unserialize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">unserialize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1209,14 +1165,14 @@ string.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Log-LogException.html"><abbr title="\Horde\Log\LogException">LogException</abbr></a></span>
                                                             
                                              
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -1227,63 +1183,49 @@ string.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_warn">
-        warn()
-        <a href="classes/Horde-Log-Logger.html#method_warn" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_warning">
+        warning()
+        <a href="classes/Horde-Log-Logger.html#method_warning" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Logger.php"><a href="files/logger.html"><abbr title="Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">0</span>
+    <span class="phpdocumentor-element-found-in__line">207</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Exceptional occurrences that are not errors.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">warn</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">warning</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>warn($event) Log an event at the WARN log level</p>
+        <section class="phpdocumentor-description"><p>Example: Use of deprecated APIs, poor use of an API, undesirable things
+that are not necessarily wrong.</p>
 </section>
 
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$message</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Stringable">Stringable</abbr>|<a href="classes/Horde-Log-LogMessage.html"><abbr title="\Horde\Log\LogMessage">LogMessage</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$context</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method__init">
-        _init()
-        <a href="classes/Horde-Log-Logger.html#method__init" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Log/Logger.php"><a href="files/horde-log-logger.html"><abbr title="Horde/Log/Logger.php">Logger.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">113</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Initialization tasks.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_init</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
