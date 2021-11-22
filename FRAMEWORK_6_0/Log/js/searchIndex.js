@@ -926,6 +926,51 @@ Search.appendIndex(
             "summary": "Mapping\u0020of\u0020log\u0020priorities\u0020to\u0020Firebug\u0020methods.",
             "url": "classes/Horde-Log-Handler-FirebugHandler.html#property_methods"
         },                {
+            "fqsen": "\\Horde\\Log\\Handler\\LoggerInterfaceHandler",
+            "name": "LoggerInterfaceHandler",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-LoggerInterfaceHandler.html"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\LoggerInterfaceHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Horde-Log-Handler-LoggerInterfaceHandler.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\LoggerInterfaceHandler\u003A\u003AaddFilter\u0028\u0029",
+            "name": "addFilter",
+            "summary": "Add\u0020a\u0020filter\u0020specific\u0020to\u0020this\u0020handler.",
+            "url": "classes/Horde-Log-Handler-LoggerInterfaceHandler.html#method_addFilter"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\LoggerInterfaceHandler\u003A\u003Alog\u0028\u0029",
+            "name": "log",
+            "summary": "Log\u0020a\u0020message\u0020to\u0020this\u0020handler.",
+            "url": "classes/Horde-Log-Handler-LoggerInterfaceHandler.html#method_log"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\LoggerInterfaceHandler\u003A\u003AsetOption\u0028\u0029",
+            "name": "setOption",
+            "summary": "Sets\u0020an\u0020option\u0020specific\u0020to\u0020the\u0020implementation\u0020of\u0020the\u0020log\u0020handler.",
+            "url": "classes/Horde-Log-Handler-LoggerInterfaceHandler.html#method_setOption"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\LoggerInterfaceHandler\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "Buffer\u0020a\u0020message\u0020to\u0020be\u0020stored\u0020in\u0020the\u0020storage.",
+            "url": "classes/Horde-Log-Handler-LoggerInterfaceHandler.html#method_write"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\LoggerInterfaceHandler\u003A\u003A\u0024logger",
+            "name": "logger",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-LoggerInterfaceHandler.html#property_logger"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\LoggerInterfaceHandler\u003A\u003A\u0024filters",
+            "name": "filters",
+            "summary": "List\u0020of\u0020filters\u0020relevant\u0020only\u0020to\u0020this\u0020handler.",
+            "url": "classes/Horde-Log-Handler-LoggerInterfaceHandler.html#property_filters"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\LoggerInterfaceHandler\u003A\u003A\u0024formatters",
+            "name": "formatters",
+            "summary": "Formatters\u0020for\u0020this\u0020handler.",
+            "url": "classes/Horde-Log-Handler-LoggerInterfaceHandler.html#property_formatters"
+        },                {
             "fqsen": "\\Horde\\Log\\Handler\\MockHandler",
             "name": "MockHandler",
             "summary": "",
@@ -1175,6 +1220,51 @@ Search.appendIndex(
             "name": "filters",
             "summary": "Horde_Log_Filter\u0020objects.",
             "url": "classes/Horde-Log-Logger.html#property_filters"
+        },                {
+            "fqsen": "\\Horde\\Log\\LoggerBuilder",
+            "name": "LoggerBuilder",
+            "summary": "Iteratively\u0020configure\u0020a\u0020logger",
+            "url": "classes/Horde-Log-LoggerBuilder.html"
+        },                {
+            "fqsen": "\\Horde\\Log\\LoggerBuilder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Log-LoggerBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Log\\LoggerBuilder\u003A\u003Areset\u0028\u0029",
+            "name": "reset",
+            "summary": "Create\u0020an\u0020all\u002Dnew\u0020logger\u0020instance\u0020without\u0020any\u0020handler\u0020or\u0020filter",
+            "url": "classes/Horde-Log-LoggerBuilder.html#method_reset"
+        },                {
+            "fqsen": "\\Horde\\Log\\LoggerBuilder\u003A\u003AwithLogLevel\u0028\u0029",
+            "name": "withLogLevel",
+            "summary": "Create\u0020a\u0020custom\u0020log\u0020level\u0020for\u0020the\u0020current\u0020logger",
+            "url": "classes/Horde-Log-LoggerBuilder.html#method_withLogLevel"
+        },                {
+            "fqsen": "\\Horde\\Log\\LoggerBuilder\u003A\u003AwithLogHandler\u0028\u0029",
+            "name": "withLogHandler",
+            "summary": "Add\u0020a\u0020log\u0020handler\u0020to\u0020a\u0020logger",
+            "url": "classes/Horde-Log-LoggerBuilder.html#method_withLogHandler"
+        },                {
+            "fqsen": "\\Horde\\Log\\LoggerBuilder\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "Return\u0020a\u0020logger",
+            "url": "classes/Horde-Log-LoggerBuilder.html#method_build"
+        },                {
+            "fqsen": "\\Horde\\Log\\LoggerBuilder\u003A\u003AwithGlobalFilter\u0028\u0029",
+            "name": "withGlobalFilter",
+            "summary": "Add\u0020a\u0020filter",
+            "url": "classes/Horde-Log-LoggerBuilder.html#method_withGlobalFilter"
+        },                {
+            "fqsen": "\\Horde\\Log\\LoggerBuilder\u003A\u003A\u0024loglevels",
+            "name": "loglevels",
+            "summary": "",
+            "url": "classes/Horde-Log-LoggerBuilder.html#property_loglevels"
+        },                {
+            "fqsen": "\\Horde\\Log\\LoggerBuilder\u003A\u003A\u0024logger",
+            "name": "logger",
+            "summary": "",
+            "url": "classes/Horde-Log-LoggerBuilder.html#property_logger"
         },                {
             "fqsen": "\\Horde\\Log\\LoggerInterface",
             "name": "LoggerInterface",
