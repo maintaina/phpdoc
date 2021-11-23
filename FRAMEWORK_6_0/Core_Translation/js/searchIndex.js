@@ -36,11 +36,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Core-Translation-ChangeLocale.html#property_config"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\ChangeLocale\u003A\u003A\u0024languages",
-            "name": "languages",
-            "summary": "",
-            "url": "classes/Horde-Core-Translation-ChangeLocale.html#property_languages"
-        },                {
             "fqsen": "\\Horde\\Core\\Translation\\GetLanguages",
             "name": "GetLanguages",
             "summary": "Returns\u0020locale\u0020json\u0020file\u0020for\u0020a\u0020specific\u0020language\u0020and\u0020namespace.",
@@ -70,11 +65,6 @@ Search.appendIndex(
             "name": "registry",
             "summary": "",
             "url": "classes/Horde-Core-Translation-GetLanguages.html#property_registry"
-        },                {
-            "fqsen": "\\Horde\\Core\\Translation\\GetLanguages\u003A\u003A\u0024languages",
-            "name": "languages",
-            "summary": "",
-            "url": "classes/Horde-Core-Translation-GetLanguages.html#property_languages"
         },                {
             "fqsen": "\\Horde\\Core\\Translation\\GetTranslationBase",
             "name": "GetTranslationBase",
