@@ -1,160 +1,150 @@
 Search.appendIndex(
     [
                 {
-            "fqsen": "\\JsonToPhpArrayWriter",
-            "name": "JsonToPhpArrayWriter",
-            "summary": "",
-            "url": "classes/JsonToPhpArrayWriter.html"
-        },                {
-            "fqsen": "\\JsonToPhpArrayWriter\u003A\u003Aconvert\u0028\u0029",
-            "name": "convert",
-            "summary": "",
-            "url": "classes/JsonToPhpArrayWriter.html#method_convert"
-        },                {
-            "fqsen": "\\JsonToPhpArrayWriter\u003A\u003AgetArrayStr\u0028\u0029",
-            "name": "getArrayStr",
-            "summary": "",
-            "url": "classes/JsonToPhpArrayWriter.html#method_getArrayStr"
-        },                {
-            "fqsen": "\\JsonToPhpArrayWriter\u003A\u003AgetHeader\u0028\u0029",
-            "name": "getHeader",
-            "summary": "",
-            "url": "classes/JsonToPhpArrayWriter.html#method_getHeader"
-        },                {
-            "fqsen": "\\JsonToPhpArrayWriter\u003A\u003AgetFooter\u0028\u0029",
-            "name": "getFooter",
-            "summary": "",
-            "url": "classes/JsonToPhpArrayWriter.html#method_getFooter"
-        },                {
-            "fqsen": "\\JsonToPhpArrayWriter\u003A\u003AINDENT_SPACES",
-            "name": "INDENT_SPACES",
-            "summary": "",
-            "url": "classes/JsonToPhpArrayWriter.html#constant_INDENT_SPACES"
-        },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\ChangeLocale",
+            "fqsen": "\\Horde\\Core\\Translation\\ChangeLocale",
             "name": "ChangeLocale",
-            "summary": "Returns\u0020locale\u0020json\u0020file\u0020for\u0020a\u0020specific\u0020language\u0020and\u0020namespace.",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-ChangeLocale.html"
+            "summary": "Changes\u0020the\u0020selected\u0020locale\u0020for\u0020the\u0020current\u0020session.",
+            "url": "classes/Horde-Core-Translation-ChangeLocale.html"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\ChangeLocale\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Horde\\Core\\Translation\\ChangeLocale\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-ChangeLocale.html#method___construct"
+            "url": "classes/Horde-Core-Translation-ChangeLocale.html#method___construct"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\ChangeLocale\u003A\u003Aprocess\u0028\u0029",
+            "fqsen": "\\Horde\\Core\\Translation\\ChangeLocale\u003A\u003Aprocess\u0028\u0029",
             "name": "process",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-ChangeLocale.html#method_process"
+            "url": "classes/Horde-Core-Translation-ChangeLocale.html#method_process"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\ChangeLocale\u003A\u003A\u0024responseFactory",
+            "fqsen": "\\Horde\\Core\\Translation\\ChangeLocale\u003A\u003A\u0024responseFactory",
             "name": "responseFactory",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-ChangeLocale.html#property_responseFactory"
+            "url": "classes/Horde-Core-Translation-ChangeLocale.html#property_responseFactory"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\ChangeLocale\u003A\u003A\u0024streamFactory",
+            "fqsen": "\\Horde\\Core\\Translation\\ChangeLocale\u003A\u003A\u0024streamFactory",
             "name": "streamFactory",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-ChangeLocale.html#property_streamFactory"
+            "url": "classes/Horde-Core-Translation-ChangeLocale.html#property_streamFactory"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\ChangeLocale\u003A\u003A\u0024registry",
+            "fqsen": "\\Horde\\Core\\Translation\\ChangeLocale\u003A\u003A\u0024registry",
             "name": "registry",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-ChangeLocale.html#property_registry"
+            "url": "classes/Horde-Core-Translation-ChangeLocale.html#property_registry"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\ChangeLocale\u003A\u003A\u0024config",
+            "fqsen": "\\Horde\\Core\\Translation\\ChangeLocale\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-ChangeLocale.html#property_config"
+            "url": "classes/Horde-Core-Translation-ChangeLocale.html#property_config"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\ChangeLocale\u003A\u003A\u0024languages",
+            "fqsen": "\\Horde\\Core\\Translation\\ChangeLocale\u003A\u003A\u0024languages",
             "name": "languages",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-ChangeLocale.html#property_languages"
+            "url": "classes/Horde-Core-Translation-ChangeLocale.html#property_languages"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\GetLanguages",
+            "fqsen": "\\Horde\\Core\\Translation\\GetLanguages",
             "name": "GetLanguages",
             "summary": "Returns\u0020locale\u0020json\u0020file\u0020for\u0020a\u0020specific\u0020language\u0020and\u0020namespace.",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-GetLanguages.html"
+            "url": "classes/Horde-Core-Translation-GetLanguages.html"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\GetLanguages\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Horde\\Core\\Translation\\GetLanguages\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-GetLanguages.html#method___construct"
+            "url": "classes/Horde-Core-Translation-GetLanguages.html#method___construct"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\GetLanguages\u003A\u003Aprocess\u0028\u0029",
+            "fqsen": "\\Horde\\Core\\Translation\\GetLanguages\u003A\u003Aprocess\u0028\u0029",
             "name": "process",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-GetLanguages.html#method_process"
+            "url": "classes/Horde-Core-Translation-GetLanguages.html#method_process"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\GetLanguages\u003A\u003A\u0024responseFactory",
+            "fqsen": "\\Horde\\Core\\Translation\\GetLanguages\u003A\u003A\u0024responseFactory",
             "name": "responseFactory",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-GetLanguages.html#property_responseFactory"
+            "url": "classes/Horde-Core-Translation-GetLanguages.html#property_responseFactory"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\GetLanguages\u003A\u003A\u0024streamFactory",
+            "fqsen": "\\Horde\\Core\\Translation\\GetLanguages\u003A\u003A\u0024streamFactory",
             "name": "streamFactory",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-GetLanguages.html#property_streamFactory"
+            "url": "classes/Horde-Core-Translation-GetLanguages.html#property_streamFactory"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\GetLanguages\u003A\u003A\u0024registry",
+            "fqsen": "\\Horde\\Core\\Translation\\GetLanguages\u003A\u003A\u0024registry",
             "name": "registry",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-GetLanguages.html#property_registry"
+            "url": "classes/Horde-Core-Translation-GetLanguages.html#property_registry"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\GetLanguages\u003A\u003A\u0024languages",
+            "fqsen": "\\Horde\\Core\\Translation\\GetLanguages\u003A\u003A\u0024languages",
             "name": "languages",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-GetLanguages.html#property_languages"
+            "url": "classes/Horde-Core-Translation-GetLanguages.html#property_languages"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\GetTranslationBase",
+            "fqsen": "\\Horde\\Core\\Translation\\GetTranslationBase",
             "name": "GetTranslationBase",
-            "summary": "Returns\u0020locale\u0020json\u0020file\u0020for\u0020a\u0020specific\u0020language\u0020and\u0020namespace.",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-GetTranslationBase.html"
+            "summary": "Base\u0020Class\u0020for\u0020returning\u0020\u0028nested\u0029\u0020array\u0020of\u0020translatable\u0020strings.",
+            "url": "classes/Horde-Core-Translation-GetTranslationBase.html"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\GetTranslationBase\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Horde\\Core\\Translation\\GetTranslationBase\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-GetTranslationBase.html#method___construct"
+            "url": "classes/Horde-Core-Translation-GetTranslationBase.html#method___construct"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\GetTranslationBase\u003A\u003AgetData\u0028\u0029",
+            "fqsen": "\\Horde\\Core\\Translation\\GetTranslationBase\u003A\u003AgetData\u0028\u0029",
             "name": "getData",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-GetTranslationBase.html#method_getData"
+            "url": "classes/Horde-Core-Translation-GetTranslationBase.html#method_getData"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\GetTranslationBase\u003A\u003Aprocess\u0028\u0029",
+            "fqsen": "\\Horde\\Core\\Translation\\GetTranslationBase\u003A\u003Aprocess\u0028\u0029",
             "name": "process",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-GetTranslationBase.html#method_process"
+            "url": "classes/Horde-Core-Translation-GetTranslationBase.html#method_process"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\GetTranslationBase\u003A\u003A\u0024responseFactory",
+            "fqsen": "\\Horde\\Core\\Translation\\GetTranslationBase\u003A\u003A\u0024responseFactory",
             "name": "responseFactory",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-GetTranslationBase.html#property_responseFactory"
+            "url": "classes/Horde-Core-Translation-GetTranslationBase.html#property_responseFactory"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\GetTranslationBase\u003A\u003A\u0024streamFactory",
+            "fqsen": "\\Horde\\Core\\Translation\\GetTranslationBase\u003A\u003A\u0024streamFactory",
             "name": "streamFactory",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-GetTranslationBase.html#property_streamFactory"
+            "url": "classes/Horde-Core-Translation-GetTranslationBase.html#property_streamFactory"
         },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api\\GetTranslationBase\u003A\u003A\u0024registry",
+            "fqsen": "\\Horde\\Core\\Translation\\GetTranslationBase\u003A\u003A\u0024registry",
             "name": "registry",
             "summary": "",
-            "url": "classes/Horde-Core-Translation-Middleware-Api-GetTranslationBase.html#property_registry"
+            "url": "classes/Horde-Core-Translation-GetTranslationBase.html#property_registry"
+        },                {
+            "fqsen": "\\Horde\\Core\\Translation\\JsonToPhpArrayWriter",
+            "name": "JsonToPhpArrayWriter",
+            "summary": "",
+            "url": "classes/Horde-Core-Translation-JsonToPhpArrayWriter.html"
+        },                {
+            "fqsen": "\\Horde\\Core\\Translation\\JsonToPhpArrayWriter\u003A\u003Aconvert\u0028\u0029",
+            "name": "convert",
+            "summary": "",
+            "url": "classes/Horde-Core-Translation-JsonToPhpArrayWriter.html#method_convert"
+        },                {
+            "fqsen": "\\Horde\\Core\\Translation\\JsonToPhpArrayWriter\u003A\u003AgetArrayStr\u0028\u0029",
+            "name": "getArrayStr",
+            "summary": "",
+            "url": "classes/Horde-Core-Translation-JsonToPhpArrayWriter.html#method_getArrayStr"
+        },                {
+            "fqsen": "\\Horde\\Core\\Translation\\JsonToPhpArrayWriter\u003A\u003AgetHeader\u0028\u0029",
+            "name": "getHeader",
+            "summary": "",
+            "url": "classes/Horde-Core-Translation-JsonToPhpArrayWriter.html#method_getHeader"
+        },                {
+            "fqsen": "\\Horde\\Core\\Translation\\JsonToPhpArrayWriter\u003A\u003AgetFooter\u0028\u0029",
+            "name": "getFooter",
+            "summary": "",
+            "url": "classes/Horde-Core-Translation-JsonToPhpArrayWriter.html#method_getFooter"
+        },                {
+            "fqsen": "\\Horde\\Core\\Translation\\JsonToPhpArrayWriter\u003A\u003AINDENT_SPACES",
+            "name": "INDENT_SPACES",
+            "summary": "",
+            "url": "classes/Horde-Core-Translation-JsonToPhpArrayWriter.html#constant_INDENT_SPACES"
         },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
-        },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware\\Api",
-            "name": "Api",
-            "summary": "",
-            "url": "namespaces/horde-core-translation-middleware-api.html"
-        },                {
-            "fqsen": "\\Horde\\Core\\Translation\\Middleware",
-            "name": "Middleware",
-            "summary": "",
-            "url": "namespaces/horde-core-translation-middleware.html"
         },                {
             "fqsen": "\\Horde\\Core\\Translation",
             "name": "Translation",
