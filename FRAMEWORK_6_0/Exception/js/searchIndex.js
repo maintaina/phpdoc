@@ -181,15 +181,15 @@ Search.appendIndex(
             "summary": "Horde_Exception_Translation\u0020is\u0020the\u0020translation\u0020wrapper\u0020class\u0020for\u0020Horde_Exception.",
             "url": "classes/Horde-Exception-Translation.html"
         },                {
-            "fqsen": "\\Horde\\Exception\\Translation\u003A\u003A\u0024_domain",
-            "name": "_domain",
+            "fqsen": "\\Horde\\Exception\\Translation\u003A\u003A\u0024domain",
+            "name": "domain",
             "summary": "The\u0020translation\u0020domain",
-            "url": "classes/Horde-Exception-Translation.html#property__domain"
+            "url": "classes/Horde-Exception-Translation.html#property_domain"
         },                {
-            "fqsen": "\\Horde\\Exception\\Translation\u003A\u003A\u0024_pearDirectory",
-            "name": "_pearDirectory",
+            "fqsen": "\\Horde\\Exception\\Translation\u003A\u003A\u0024pearDirectory",
+            "name": "pearDirectory",
             "summary": "The\u0020absolute\u0020PEAR\u0020path\u0020to\u0020the\u0020translations\u0020for\u0020the\u0020default\u0020gettext\u0020handler.",
-            "url": "classes/Horde-Exception-Translation.html#property__pearDirectory"
+            "url": "classes/Horde-Exception-Translation.html#property_pearDirectory"
         },                {
             "fqsen": "\\Horde\\Exception\\Wrapped",
             "name": "Wrapped",
