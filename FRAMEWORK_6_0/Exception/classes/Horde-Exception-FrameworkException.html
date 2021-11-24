@@ -88,37 +88,26 @@
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-exception.html">Exception</a></li>
     </ul>
 
-    <article class="phpdocumentor-element -class">
+    <article class="phpdocumentor-element -interface">
         <h2 class="phpdocumentor-content__title">
-    Wrapped
-
-        <span class="phpdocumentor-element__extends">
-        extends <a href="classes/Horde-Exception-HordeException.html"><abbr title="\Horde\Exception\HordeException">HordeException</abbr></a>
-    </span>
-    
-            <div class="phpdocumentor-element__package">
-            in package
+    FrameworkException
+                <div class="phpdocumentor-element__package">
+            in
             <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Exception.html">Exception</a></li>
+                                    <li><a href="packages/Exception.html">Exception</a></li>
                             </ul>
         </div>
-    
-    
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Wrapped.php"><a href="files/wrapped.html"><abbr title="Wrapped.php">Wrapped.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="FrameworkException.php"><a href="files/frameworkexception.html"><abbr title="FrameworkException.php">FrameworkException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Horde exception class that can wrap and set its details from PEAR_Error,
-Exception, and other objects with similar interfaces.</p>
+            <p class="phpdocumentor-summary">Horde extended exception interface.</p>
 
-    <section class="phpdocumentor-description"><p>Consider: PEAR_Error is ancient and any modern PHP supports the 3rd argument.</p>
-<p>Try using HordeException and pass previous exception as 3rd Argument.</p>
-</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -131,7 +120,7 @@ Exception, and other objects with similar interfaces.</p>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>Jan Schneider <a href="mailto:jan@horde.org">jan@horde.org</a></p>
+                                                 <section class="phpdocumentor-description"><p>Ralf Lang <a href="mailto:lang@b1-systems.de">lang@b1-systems.de</a></p>
 </section>
 
                                     </dd>
@@ -158,7 +147,7 @@ Exception, and other objects with similar interfaces.</p>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>http://www.horde.org/licenses/lgpl21 LGPL</p>
+                                                 <section class="phpdocumentor-description"><p>http://www.horde.org/licenses/lgpl21 LGPL-2.1</p>
 </section>
 
                                     </dd>
@@ -175,44 +164,15 @@ Exception, and other objects with similar interfaces.</p>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Horde-Exception-HordeException.html#property_details">$details</a>
-    <span>
-                &nbsp;: string            </span>
-</dt>
-<dd>Error details that should not be part of the main exception message,
-e.g. any additional debugging information.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Horde-Exception-HordeException.html#property_logged">$logged</a>
-    <span>
-                &nbsp;: bool            </span>
-</dt>
-<dd>Has this exception been logged?</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Exception-HordeException.html#property__logLevel">$_logLevel</a>
-    <span>
-                &nbsp;: int            </span>
-</dt>
-<dd>The log level to use. A Horde_Log constant.</dd>
-
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Exception-Wrapped.html#method___construct">__construct()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd>Exception constructor.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Exception-HordeException.html#method_getLogLevel">getLogLevel()</a>
+                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Exception-FrameworkException.html#method_getLogLevel">getLogLevel()</a>
     <span>
                         &nbsp;: int    </span>
 </dt>
 <dd>Get the log level.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Exception-HordeException.html#method_setLogLevel">setLogLevel()</a>
+    <a href="classes/Horde-Exception-FrameworkException.html#method_setLogLevel">setLogLevel()</a>
     <span>
                         &nbsp;: void    </span>
 </dt>
@@ -224,184 +184,11 @@ e.g. any additional debugging information.</dd>
 
         
 
-        
-    <section class="phpdocumentor-properties">
-        <h3 class="phpdocumentor-elements__header" id="properties">
-            Properties
-            <a href="classes/Horde-Exception-Wrapped.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_details">
-        $details
-        <a href="classes/Horde-Exception-HordeException.html#property_details" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="HordeException.php"><a href="files/hordeexception.html"><abbr title="HordeException.php">HordeException.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">35</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Error details that should not be part of the main exception message,
-e.g. any additional debugging information.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$details</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_logged">
-        $logged
-        <a href="classes/Horde-Exception-HordeException.html#property_logged" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="HordeException.php"><a href="files/hordeexception.html"><abbr title="HordeException.php">HordeException.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">42</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Has this exception been logged?</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$logged</span>
-     = <span class="phpdocumentor-signature__default-value">false</span></code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property__logLevel">
-        $_logLevel
-        <a href="classes/Horde-Exception-HordeException.html#property__logLevel" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="HordeException.php"><a href="files/hordeexception.html"><abbr title="HordeException.php">HordeException.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">49</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The log level to use. A Horde_Log constant.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">$_logLevel</span>
-     = <span class="phpdocumentor-signature__default-value">0</span></code>
-
-    
-    
-    
-
-</article>
-            </section>
-
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Exception-Wrapped.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Exception-FrameworkException.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/Horde-Exception-Wrapped.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Wrapped.php"><a href="files/wrapped.html"><abbr title="Wrapped.php">Wrapped.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">46</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Exception constructor.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Horde\Exception\Pear_Error">Pear_Error</abbr>|<abbr title="\Throwable">Throwable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$code</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Throwable">Throwable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$previous</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$message</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Horde\Exception\Pear_Error">Pear_Error</abbr>|<abbr title="\Throwable">Throwable</abbr></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The exception message,
-a PEAR_Error object, or an Exception object.
-The Exception case is deprecated</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$code</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>A numeric error code.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$previous</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Throwable">Throwable</abbr></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>A previous Throwable</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
                     <article
         class="phpdocumentor-element
             -method
@@ -410,12 +197,12 @@ The Exception case is deprecated</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getLogLevel">
         getLogLevel()
-        <a href="classes/Horde-Exception-HordeException.html#method_getLogLevel" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Exception-FrameworkException.html#method_getLogLevel" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="HordeException.php"><a href="files/hordeexception.html"><abbr title="HordeException.php">HordeException.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="FrameworkException.php"><a href="files/frameworkexception.html"><abbr title="FrameworkException.php">FrameworkException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -445,12 +232,12 @@ The Exception case is deprecated</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_setLogLevel">
         setLogLevel()
-        <a href="classes/Horde-Exception-HordeException.html#method_setLogLevel" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Exception-FrameworkException.html#method_setLogLevel" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="HordeException.php"><a href="files/hordeexception.html"><abbr title="HordeException.php">HordeException.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="FrameworkException.php"><a href="files/frameworkexception.html"><abbr title="FrameworkException.php">FrameworkException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -560,7 +347,7 @@ The Exception case is deprecated</p>
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Exception-Wrapped.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Exception-FrameworkException.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
