@@ -53,6 +53,17 @@
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-translation.html">Translation</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Translation.html">Translation</a></h4>
 
@@ -83,15 +94,16 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Translation.html">Translation</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-translation.html">Translation</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Translation_Autodetect
+    Autodetect
 
         <span class="phpdocumentor-element__extends">
-        extends <a href="classes/Horde-Translation.html"><abbr title="\Horde_Translation">Horde_Translation</abbr></a>
+        extends <a href="classes/Horde-Translation-AbstractTranslation.html"><abbr title="\Horde\Translation\AbstractTranslation">AbstractTranslation</abbr></a>
     </span>
     
             <div class="phpdocumentor-element__package">
@@ -105,9 +117,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Translation/Autodetect.php"><a href="files/horde-translation-autodetect.html"><abbr title="Horde/Translation/Autodetect.php">Autodetect.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Autodetect.php"><a href="files/autodetect.html"><abbr title="Autodetect.php">Autodetect.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -179,14 +191,14 @@ for the class implementing it.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                 <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Translation.html#property__directory">$_directory</a>
+    <a href="classes/Horde-Translation-AbstractTranslation.html#property_directory">$directory</a>
     <span>
                 &nbsp;: string            </span>
 </dt>
 <dd>The relative path to the translations for the default gettext handler.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Translation.html#property__domain">$_domain</a>
+    <a href="classes/Horde-Translation-AbstractTranslation.html#property_domain">$domain</a>
     <span>
                 &nbsp;: string            </span>
 </dt>
@@ -194,14 +206,14 @@ for the class implementing it.</p>
 handler.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Translation.html#property__handlers">$_handlers</a>
+    <a href="classes/Horde-Translation-AbstractTranslation.html#property_handlers">$handlers</a>
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>The handlers providing the actual translations.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Translation-Autodetect.html#property__pearDirectory">$_pearDirectory</a>
+    <a href="classes/Horde-Translation-Autodetect.html#property_pearDirectory">$pearDirectory</a>
     <span>
                 &nbsp;: string            </span>
 </dt>
@@ -210,19 +222,19 @@ handler.</dd>
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Translation-Autodetect.html#method_loadHandler">loadHandler()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: void    </span>
 </dt>
 <dd>Auto detects the locale directory location.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Translation.html#method_ngettext">ngettext()</a>
+    <a href="classes/Horde-Translation-AbstractTranslation.html#method_ngettext">ngettext()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
 <dd>Returns the plural translation of a message.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Translation.html#method_r">r()</a>
+    <a href="classes/Horde-Translation-AbstractTranslation.html#method_r">r()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
@@ -231,30 +243,30 @@ the horde translation utilities, but no translation is actually
 performed (raw gettext = r()).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Translation.html#method_setHandler">setHandler()</a>
+    <a href="classes/Horde-Translation-AbstractTranslation.html#method_setHandler">setHandler()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: void    </span>
 </dt>
-<dd>Assigns a translation handler object to $_handlers.</dd>
+<dd>Assigns a translation handler object to $handlers.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Translation.html#method_t">t()</a>
+    <a href="classes/Horde-Translation-AbstractTranslation.html#method_t">t()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
 <dd>Returns the translation of a message.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Translation-Autodetect.html#method__getSearchDirectories">_getSearchDirectories()</a>
+    <a href="classes/Horde-Translation-Autodetect.html#method_getSearchDirectories">getSearchDirectories()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: array&lt;string|int, string&gt;    </span>
 </dt>
 <dd>Get potential locations for the locale directory.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Translation-Autodetect.html#method__searchLocaleDirectory">_searchLocaleDirectory()</a>
+    <a href="classes/Horde-Translation-Autodetect.html#method_searchLocaleDirectory">searchLocaleDirectory()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: null|string    </span>
 </dt>
 <dd>Search for the locale directory for different installations methods (eg: PEAR, Composer).</dd>
 
@@ -277,16 +289,16 @@ performed (raw gettext = r()).</dd>
             -protected
             -static                                            "
 >
-    <h4 class="phpdocumentor-element__name" id="property__directory">
-        $_directory
-        <a href="classes/Horde-Translation.html#property__directory" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_directory">
+        $directory
+        <a href="classes/Horde-Translation-AbstractTranslation.html#property_directory" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Translation.php"><a href="files/horde-translation.html"><abbr title="Horde/Translation.php">Translation.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="AbstractTranslation.php"><a href="files/abstracttranslation.html"><abbr title="AbstractTranslation.php">AbstractTranslation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -295,7 +307,7 @@ performed (raw gettext = r()).</dd>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$_directory</span>
+    <span class="phpdocumentor-signature__name">$directory</span>
     </code>
 
     
@@ -310,16 +322,16 @@ performed (raw gettext = r()).</dd>
             -protected
             -static                                            "
 >
-    <h4 class="phpdocumentor-element__name" id="property__domain">
-        $_domain
-        <a href="classes/Horde-Translation.html#property__domain" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_domain">
+        $domain
+        <a href="classes/Horde-Translation-AbstractTranslation.html#property_domain" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Translation.php"><a href="files/horde-translation.html"><abbr title="Horde/Translation.php">Translation.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="AbstractTranslation.php"><a href="files/abstracttranslation.html"><abbr title="AbstractTranslation.php">AbstractTranslation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -329,7 +341,7 @@ handler.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$_domain</span>
+    <span class="phpdocumentor-signature__name">$domain</span>
     </code>
 
     
@@ -344,16 +356,16 @@ handler.</p>
             -protected
             -static                                            "
 >
-    <h4 class="phpdocumentor-element__name" id="property__handlers">
-        $_handlers
-        <a href="classes/Horde-Translation.html#property__handlers" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_handlers">
+        $handlers
+        <a href="classes/Horde-Translation-AbstractTranslation.html#property_handlers" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Translation.php"><a href="files/horde-translation.html"><abbr title="Horde/Translation.php">Translation.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="AbstractTranslation.php"><a href="files/abstracttranslation.html"><abbr title="AbstractTranslation.php">AbstractTranslation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -362,8 +374,8 @@ handler.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_handlers</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+    <span class="phpdocumentor-signature__name">$handlers</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -377,16 +389,16 @@ handler.</p>
             -protected
             -static                                            "
 >
-    <h4 class="phpdocumentor-element__name" id="property__pearDirectory">
-        $_pearDirectory
-        <a href="classes/Horde-Translation-Autodetect.html#property__pearDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_pearDirectory">
+        $pearDirectory
+        <a href="classes/Horde-Translation-Autodetect.html#property_pearDirectory" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Translation/Autodetect.php"><a href="files/horde-translation-autodetect.html"><abbr title="Horde/Translation/Autodetect.php">Autodetect.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Autodetect.php"><a href="files/autodetect.html"><abbr title="Autodetect.php">Autodetect.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -395,7 +407,7 @@ handler.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$_pearDirectory</span>
+    <span class="phpdocumentor-signature__name">$pearDirectory</span>
     </code>
 
         <section class="phpdocumentor-description"><p>This value is automatically set by PEAR Replace Tasks.</p>
@@ -423,9 +435,9 @@ handler.</p>
         <a href="classes/Horde-Translation-Autodetect.html#method_loadHandler" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Translation/Autodetect.php"><a href="files/horde-translation-autodetect.html"><abbr title="Horde/Translation/Autodetect.php">Autodetect.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Autodetect.php"><a href="files/autodetect.html"><abbr title="Autodetect.php">Autodetect.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -433,7 +445,7 @@ handler.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">loadHandler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handlerClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">loadHandler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handlerClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -444,7 +456,7 @@ handler.</p>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The name of a class implementing the
-Horde_Translation_Handler interface.</p>
+Handler interface.</p>
 </section>
 
             </dd>
@@ -453,7 +465,7 @@ Horde_Translation_Handler interface.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -466,12 +478,12 @@ Horde_Translation_Handler interface.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_ngettext">
         ngettext()
-        <a href="classes/Horde-Translation.html#method_ngettext" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Translation-AbstractTranslation.html#method_ngettext" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Translation.php"><a href="files/horde-translation.html"><abbr title="Horde/Translation.php">Translation.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="AbstractTranslation.php"><a href="files/abstracttranslation.html"><abbr title="AbstractTranslation.php">AbstractTranslation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -532,12 +544,12 @@ translation exists.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_r">
         r()
-        <a href="classes/Horde-Translation.html#method_r" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Translation-AbstractTranslation.html#method_r" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Translation.php"><a href="files/horde-translation.html"><abbr title="Horde/Translation.php">Translation.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="AbstractTranslation.php"><a href="files/abstracttranslation.html"><abbr title="AbstractTranslation.php">AbstractTranslation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -595,20 +607,20 @@ performed (raw gettext = r()).</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_setHandler">
         setHandler()
-        <a href="classes/Horde-Translation.html#method_setHandler" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Translation-AbstractTranslation.html#method_setHandler" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Translation.php"><a href="files/horde-translation.html"><abbr title="Horde/Translation.php">Translation.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="AbstractTranslation.php"><a href="files/abstracttranslation.html"><abbr title="AbstractTranslation.php">AbstractTranslation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Assigns a translation handler object to $_handlers.</p>
+        <p class="phpdocumentor-summary">Assigns a translation handler object to $handlers.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">setHandler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$domain</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Translation-Handler.html"><abbr title="\Horde_Translation_Handler">Horde_Translation_Handler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">setHandler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$domain</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Translation-Handler.html"><abbr title="\Horde\Translation\Handler">Handler</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"><p>Type hinting isn't used on purpose. You should extend a custom
 translation handler passed here from the Horde_Translation interface,
@@ -629,7 +641,7 @@ interface.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$handler</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Translation-Handler.html"><abbr title="\Horde_Translation_Handler">Horde_Translation_Handler</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Translation-Handler.html"><abbr title="\Horde\Translation\Handler">Handler</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>An object implementing the
@@ -643,7 +655,7 @@ interface.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -656,12 +668,12 @@ interface.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_t">
         t()
-        <a href="classes/Horde-Translation.html#method_t" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Translation-AbstractTranslation.html#method_t" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Translation.php"><a href="files/horde-translation.html"><abbr title="Horde/Translation.php">Translation.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="AbstractTranslation.php"><a href="files/abstracttranslation.html"><abbr title="AbstractTranslation.php">AbstractTranslation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -669,14 +681,14 @@ interface.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">t</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">t</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$message</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
@@ -701,14 +713,14 @@ translation exists.</p>
             -protected
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method__getSearchDirectories">
-        _getSearchDirectories()
-        <a href="classes/Horde-Translation-Autodetect.html#method__getSearchDirectories" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getSearchDirectories">
+        getSearchDirectories()
+        <a href="classes/Horde-Translation-Autodetect.html#method_getSearchDirectories" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Translation/Autodetect.php"><a href="files/horde-translation-autodetect.html"><abbr title="Horde/Translation/Autodetect.php">Autodetect.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Autodetect.php"><a href="files/autodetect.html"><abbr title="Autodetect.php">Autodetect.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -716,16 +728,18 @@ translation exists.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">_getSearchDirectories</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getSearchDirectories</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>List of directories</p>
+</section>
+
     
 </article>
                     <article
@@ -734,14 +748,14 @@ translation exists.</p>
             -protected
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method__searchLocaleDirectory">
-        _searchLocaleDirectory()
-        <a href="classes/Horde-Translation-Autodetect.html#method__searchLocaleDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_searchLocaleDirectory">
+        searchLocaleDirectory()
+        <a href="classes/Horde-Translation-Autodetect.html#method_searchLocaleDirectory" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Translation/Autodetect.php"><a href="files/horde-translation-autodetect.html"><abbr title="Horde/Translation/Autodetect.php">Autodetect.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Autodetect.php"><a href="files/autodetect.html"><abbr title="Autodetect.php">Autodetect.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -749,16 +763,18 @@ translation exists.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">_searchLocaleDirectory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">searchLocaleDirectory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|string</span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">null|string</span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>The directory if found, or null when no valid directory is found</p>
+</section>
+
     
 </article>
             </section>
