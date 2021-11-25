@@ -1,9 +1,64 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Horde\\EventDispatcher\\EventDispatcher",
+            "name": "EventDispatcher",
+            "summary": "The\u0020EventDispatcher\u0020class\u0020implements\u0020PSR\u002D14\u0020EventDispatcherInterface",
+            "url": "classes/Horde-EventDispatcher-EventDispatcher.html"
+        },                {
+            "fqsen": "\\Horde\\EventDispatcher\\EventDispatcher\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor",
+            "url": "classes/Horde-EventDispatcher-EventDispatcher.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\EventDispatcher\\EventDispatcher\u003A\u003Adispatch\u0028\u0029",
+            "name": "dispatch",
+            "summary": "Dispatch\u0020an\u0020event\u0020to\u0020all\u0020relevant\u0020listeners.",
+            "url": "classes/Horde-EventDispatcher-EventDispatcher.html#method_dispatch"
+        },                {
+            "fqsen": "\\Horde\\EventDispatcher\\EventDispatcher\u003A\u003A\u0024logger",
+            "name": "logger",
+            "summary": "The\u0020logger\u0020instance.\u0020We\u0020prefer\u0020the\u0020Null\u0020logger\u0020over\u0020null.",
+            "url": "classes/Horde-EventDispatcher-EventDispatcher.html#property_logger"
+        },                {
+            "fqsen": "\\Horde\\EventDispatcher\\EventDispatcher\u003A\u003A\u0024listenerProvider",
+            "name": "listenerProvider",
+            "summary": "",
+            "url": "classes/Horde-EventDispatcher-EventDispatcher.html#property_listenerProvider"
+        },                {
+            "fqsen": "\\Horde\\EventDispatcher\\SimpleListenerProvider",
+            "name": "SimpleListenerProvider",
+            "summary": "Simple\u0020ListenerProvider",
+            "url": "classes/Horde-EventDispatcher-SimpleListenerProvider.html"
+        },                {
+            "fqsen": "\\Horde\\EventDispatcher\\SimpleListenerProvider\u003A\u003AaddListener\u0028\u0029",
+            "name": "addListener",
+            "summary": "Add\u0020a\u0020listener\u0020to\u0020the\u0020stack\u0020of\u0020candidates",
+            "url": "classes/Horde-EventDispatcher-SimpleListenerProvider.html#method_addListener"
+        },                {
+            "fqsen": "\\Horde\\EventDispatcher\\SimpleListenerProvider\u003A\u003AgetListenersForEvent\u0028\u0029",
+            "name": "getListenersForEvent",
+            "summary": "Filter\u0020the\u0020list\u0020of\u0020relevant\u0020listeners\u0020for\u0020this\u0020event",
+            "url": "classes/Horde-EventDispatcher-SimpleListenerProvider.html#method_getListenersForEvent"
+        },                {
+            "fqsen": "\\Horde\\EventDispatcher\\SimpleListenerProvider\u003A\u003A\u0024listeners",
+            "name": "listeners",
+            "summary": "",
+            "url": "classes/Horde-EventDispatcher-SimpleListenerProvider.html#property_listeners"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
+        },                {
+            "fqsen": "\\Horde\\EventDispatcher",
+            "name": "EventDispatcher",
+            "summary": "",
+            "url": "namespaces/horde-eventdispatcher.html"
+        },                {
+            "fqsen": "\\Horde",
+            "name": "Horde",
+            "summary": "",
+            "url": "namespaces/horde.html"
         }            ]
 );
