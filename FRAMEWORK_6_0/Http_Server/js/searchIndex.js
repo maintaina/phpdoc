@@ -133,7 +133,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Http\\Server\\RampageRequestHandler\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Constructor",
             "url": "classes/Horde-Http-Server-RampageRequestHandler.html#method___construct"
         },                {
             "fqsen": "\\Horde\\Http\\Server\\RampageRequestHandler\u003A\u003AaddMiddleware\u0028\u0029",
@@ -193,7 +193,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Http\\Server\\RequestBuilder\u003A\u003AwithHeaders\u0028\u0029",
             "name": "withHeaders",
-            "summary": "",
+            "summary": "Add\u0020headers\u0020from\u0020list",
             "url": "classes/Horde-Http-Server-RequestBuilder.html#method_withHeaders"
         },                {
             "fqsen": "\\Horde\\Http\\Server\\RequestBuilder\u003A\u003Abuild\u0028\u0029",
