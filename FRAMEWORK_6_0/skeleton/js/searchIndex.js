@@ -236,10 +236,10 @@ Search.appendIndex(
             "summary": "Return\u0020an\u0020Skeleton\\Driver\u0020instance.",
             "url": "classes/Horde-Skeleton-Driver-DriverFactory.html#method_create"
         },                {
-            "fqsen": "\\Horde\\Skeleton\\Driver\\DriverFactory\u003A\u003A\u0024_instances",
-            "name": "_instances",
+            "fqsen": "\\Horde\\Skeleton\\Driver\\DriverFactory\u003A\u003A\u0024instances",
+            "name": "instances",
             "summary": "",
-            "url": "classes/Horde-Skeleton-Driver-DriverFactory.html#property__instances"
+            "url": "classes/Horde-Skeleton-Driver-DriverFactory.html#property_instances"
         },                {
             "fqsen": "\\Horde\\Skeleton\\Driver\\SqlDriver",
             "name": "SqlDriver",
