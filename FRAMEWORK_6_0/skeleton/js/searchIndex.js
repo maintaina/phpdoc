@@ -276,6 +276,76 @@ Search.appendIndex(
             "summary": "Base\u0020exception\u0020class\u0020for\u0020Skeleton.",
             "url": "classes/Horde-Skeleton-SkeletonException.html"
         },                {
+            "fqsen": "\\Horde\\Skeleton\\Ui\\ListItems",
+            "name": "ListItems",
+            "summary": "Controller\u0020class\u0020for\u0020List\u0020Items\u0020UI",
+            "url": "classes/Horde-Skeleton-Ui-ListItems.html"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Ui\\ListItems\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Horde-Skeleton-Ui-ListItems.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Ui\\ListItems\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "Process\u0020the\u0020incoming\u0020request.",
+            "url": "classes/Horde-Skeleton-Ui-ListItems.html#method_process"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Ui\\ListItems\u003A\u003AbuildResponseStream\u0028\u0029",
+            "name": "buildResponseStream",
+            "summary": "",
+            "url": "classes/Horde-Skeleton-Ui-ListItems.html#method_buildResponseStream"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Ui\\ListItems\u003A\u003AhandleNativeException\u0028\u0029",
+            "name": "handleNativeException",
+            "summary": "",
+            "url": "classes/Horde-Skeleton-Ui-ListItems.html#method_handleNativeException"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Ui\\ListItems\u003A\u003A\u0024responseFactory",
+            "name": "responseFactory",
+            "summary": "",
+            "url": "classes/Horde-Skeleton-Ui-ListItems.html#property_responseFactory"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Ui\\ListItems\u003A\u003A\u0024streamFactory",
+            "name": "streamFactory",
+            "summary": "",
+            "url": "classes/Horde-Skeleton-Ui-ListItems.html#property_streamFactory"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Ui\\ListItems\u003A\u003A\u0024injector",
+            "name": "injector",
+            "summary": "",
+            "url": "classes/Horde-Skeleton-Ui-ListItems.html#property_injector"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Ui\\ListItems\u003A\u003A\u0024session",
+            "name": "session",
+            "summary": "",
+            "url": "classes/Horde-Skeleton-Ui-ListItems.html#property_session"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Ui\\ListItems\u003A\u003A\u0024registry",
+            "name": "registry",
+            "summary": "",
+            "url": "classes/Horde-Skeleton-Ui-ListItems.html#property_registry"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Ui\\ListItems\u003A\u003A\u0024page_output",
+            "name": "page_output",
+            "summary": "",
+            "url": "classes/Horde-Skeleton-Ui-ListItems.html#property_page_output"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Ui\\ListItems\u003A\u003A\u0024view",
+            "name": "view",
+            "summary": "",
+            "url": "classes/Horde-Skeleton-Ui-ListItems.html#property_view"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Ui\\ListItems\u003A\u003A\u0024notification",
+            "name": "notification",
+            "summary": "",
+            "url": "classes/Horde-Skeleton-Ui-ListItems.html#property_notification"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Ui\\ListItems\u003A\u003A\u0024logger",
+            "name": "logger",
+            "summary": "",
+            "url": "classes/Horde-Skeleton-Ui-ListItems.html#property_logger"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -305,5 +375,10 @@ Search.appendIndex(
             "name": "Driver",
             "summary": "",
             "url": "namespaces/horde-skeleton-driver.html"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Ui",
+            "name": "Ui",
+            "summary": "",
+            "url": "namespaces/horde-skeleton-ui.html"
         }            ]
 );
