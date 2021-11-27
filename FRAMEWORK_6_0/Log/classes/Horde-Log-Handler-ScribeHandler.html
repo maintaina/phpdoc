@@ -122,6 +122,9 @@
         </div>
     
     
+            <span class="phpdocumentor-element__extends">
+            Uses
+                            <a href="classes/Horde-Log-Handler-SetOptionsTrait.html"><abbr title="\Horde\Log\Handler\SetOptionsTrait">SetOptionsTrait</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
@@ -209,14 +212,7 @@
     <span>
                 &nbsp;: array&lt;string|int, <a href="classes/Horde-Log-LogFormatter.html"><abbr title="\Horde\Log\LogFormatter">LogFormatter</abbr></a>&gt;            </span>
 </dt>
-<dd>Formatters for this handler.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Log-Handler-ScribeHandler.html#property_options">$options</a>
-    <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd>Options to be set by setOption().</dd>
+<dd>Formatters for this handler</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Log-Handler-ScribeHandler.html#property_scribe">$scribe</a>
@@ -224,6 +220,13 @@
                 &nbsp;: <abbr title="\Horde_Scribe_Client">Horde_Scribe_Client</abbr>            </span>
 </dt>
 <dd>Scribe client.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Horde-Log-Handler-ScribeHandler.html#property_options">$options</a>
+    <span>
+                &nbsp;: <a href="classes/Horde-Log-Handler-ScribeOptions.html"><abbr title="\Horde\Log\Handler\ScribeOptions">ScribeOptions</abbr></a>            </span>
+</dt>
+<dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Handler-ScribeHandler.html#method___construct">__construct()</a>
@@ -247,7 +250,7 @@
 <dd>Log a message to this handler.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Log-Handler-BaseHandler.html#method_setOption">setOption()</a>
+    <a href="classes/Horde-Log-Handler-SetOptionsTrait.html#method_setOption">setOption()</a>
     <span>
                         &nbsp;: bool    </span>
 </dt>
@@ -288,7 +291,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/BaseHandler.php"><a href="files/handler-basehandler.html"><abbr title="Handler/BaseHandler.php">BaseHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -321,50 +324,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/BaseHandler.php"><a href="files/handler-basehandler.html"><abbr title="Handler/BaseHandler.php">BaseHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Formatters for this handler.</p>
+        <p class="phpdocumentor-summary">Formatters for this handler</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/Horde-Log-LogFormatter.html"><abbr title="\Horde\Log\LogFormatter">LogFormatter</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$formatters</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_options">
-        $options
-        <a href="classes/Horde-Log-Handler-ScribeHandler.html#property_options" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Handler/ScribeHandler.php"><a href="files/handler-scribehandler.html"><abbr title="Handler/ScribeHandler.php">ScribeHandler.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">46</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Options to be set by setOption().</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$options</span>
-     = <span class="phpdocumentor-signature__default-value">[&#039;addNewline&#039; =&gt; false, &#039;category&#039; =&gt; &#039;default&#039;, &#039;ident&#039; =&gt; &#039;&#039;]</span></code>
 
     
     
@@ -387,7 +357,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/ScribeHandler.php"><a href="files/handler-scribehandler.html"><abbr title="Handler/ScribeHandler.php">ScribeHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -401,6 +371,40 @@
 
     
     
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_options">
+        $options
+        <a href="classes/Horde-Log-Handler-ScribeHandler.html#property_options" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Handler/ScribeHandler.php"><a href="files/handler-scribehandler.html"><abbr title="Handler/ScribeHandler.php">ScribeHandler.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">35</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Log-Handler-ScribeOptions.html"><abbr title="\Horde\Log\Handler\ScribeOptions">ScribeOptions</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$options</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -424,7 +428,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/ScribeHandler.php"><a href="files/handler-scribehandler.html"><abbr title="Handler/ScribeHandler.php">ScribeHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -432,7 +436,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Scribe_Client">Horde_Scribe_Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scribe</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/Horde-Log-LogFormatter.html"><abbr title="\Horde\Log\LogFormatter">LogFormatter</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$formatters</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Scribe_Client">Horde_Scribe_Client</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scribe</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/Horde-Log-LogFormatter.html"><abbr title="\Horde\Log\LogFormatter">LogFormatter</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$formatters</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-Handler-ScribeOptions.html"><abbr title="\Horde\Log\Handler\ScribeOptions">ScribeOptions</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -453,6 +457,14 @@
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Log formatter.</p>
 </section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$options</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-Handler-ScribeOptions.html"><abbr title="\Horde\Log\Handler\ScribeOptions">ScribeOptions</abbr></a></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
 
             </dd>
             </dl>
@@ -478,7 +490,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/BaseHandler.php"><a href="files/handler-basehandler.html"><abbr title="Handler/BaseHandler.php">BaseHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -525,7 +537,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/BaseHandler.php"><a href="files/handler-basehandler.html"><abbr title="Handler/BaseHandler.php">BaseHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -567,12 +579,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_setOption">
         setOption()
-        <a href="classes/Horde-Log-Handler-BaseHandler.html#method_setOption" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Log-Handler-SetOptionsTrait.html#method_setOption" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Handler/BaseHandler.php"><a href="files/handler-basehandler.html"><abbr title="Handler/BaseHandler.php">BaseHandler.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Handler/SetOptionsTrait.php"><a href="files/handler-setoptionstrait.html"><abbr title="Handler/SetOptionsTrait.php">SetOptionsTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -643,7 +655,7 @@ are handler-specific.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/ScribeHandler.php"><a href="files/handler-scribehandler.html"><abbr title="Handler/ScribeHandler.php">ScribeHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 

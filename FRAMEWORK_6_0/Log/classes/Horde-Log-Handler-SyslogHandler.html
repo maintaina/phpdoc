@@ -122,6 +122,9 @@
         </div>
     
     
+            <span class="phpdocumentor-element__extends">
+            Uses
+                            <a href="classes/Horde-Log-Handler-SetOptionsTrait.html"><abbr title="\Horde\Log\Handler\SetOptionsTrait">SetOptionsTrait</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
@@ -209,12 +212,12 @@
     <span>
                 &nbsp;: array&lt;string|int, <a href="classes/Horde-Log-LogFormatter.html"><abbr title="\Horde\Log\LogFormatter">LogFormatter</abbr></a>&gt;            </span>
 </dt>
-<dd>Formatters for this handler.</dd>
+<dd>Formatters for this handler</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Log-Handler-SyslogHandler.html#property_lastFacility">$lastFacility</a>
     <span>
-                &nbsp;: string            </span>
+                &nbsp;: int            </span>
 </dt>
 <dd>Last facility name set by a syslog-handler instance.</dd>
 
@@ -228,11 +231,18 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Log-Handler-SyslogHandler.html#property_options">$options</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: <a href="classes/Horde-Log-Handler-SyslogOptions.html"><abbr title="\Horde\Log\Handler\SyslogOptions">SyslogOptions</abbr></a>            </span>
 </dt>
 <dd>Options to be set by setOption().</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Log-Handler-SyslogHandler.html#method___construct">__construct()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Handler-BaseHandler.html#method_addFilter">addFilter()</a>
     <span>
                         &nbsp;: void    </span>
@@ -247,7 +257,7 @@
 <dd>Log a message to this handler.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Log-Handler-BaseHandler.html#method_setOption">setOption()</a>
+    <a href="classes/Horde-Log-Handler-SetOptionsTrait.html#method_setOption">setOption()</a>
     <span>
                         &nbsp;: bool    </span>
 </dt>
@@ -295,7 +305,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/BaseHandler.php"><a href="files/handler-basehandler.html"><abbr title="Handler/BaseHandler.php">BaseHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -328,11 +338,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/BaseHandler.php"><a href="files/handler-basehandler.html"><abbr title="Handler/BaseHandler.php">BaseHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Formatters for this handler.</p>
+        <p class="phpdocumentor-summary">Formatters for this handler</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
@@ -361,7 +371,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/SyslogHandler.php"><a href="files/handler-sysloghandler.html"><abbr title="Handler/SyslogHandler.php">SyslogHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -369,7 +379,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$lastFacility</span>
     </code>
 
@@ -394,7 +404,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/SyslogHandler.php"><a href="files/handler-sysloghandler.html"><abbr title="Handler/SyslogHandler.php">SyslogHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -427,7 +437,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/SyslogHandler.php"><a href="files/handler-sysloghandler.html"><abbr title="Handler/SyslogHandler.php">SyslogHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -435,9 +445,9 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Log-Handler-SyslogOptions.html"><abbr title="\Horde\Log\Handler\SyslogOptions">SyslogOptions</abbr></a></span>
     <span class="phpdocumentor-signature__name">$options</span>
-     = <span class="phpdocumentor-signature__default-value">[&#039;defaultPriority&#039; =&gt; LOG_ERR, &#039;facility&#039; =&gt; LOG_USER, &#039;ident&#039; =&gt; false, &#039;openlogOptions&#039; =&gt; false]</span></code>
+    </code>
 
         <section class="phpdocumentor-description"><p>Sets openlog and syslog options.</p>
 </section>
@@ -459,6 +469,66 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Horde-Log-Handler-SyslogHandler.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Handler/SyslogHandler.php"><a href="files/handler-sysloghandler.html"><abbr title="Handler/SyslogHandler.php">SyslogHandler.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">54</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-Handler-SyslogOptions.html"><abbr title="\Horde\Log\Handler\SyslogOptions">SyslogOptions</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$formatters</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filters</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$options</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Log-Handler-SyslogOptions.html"><abbr title="\Horde\Log\Handler\SyslogOptions">SyslogOptions</abbr></a></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$formatters</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$filters</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_addFilter">
         addFilter()
         <a href="classes/Horde-Log-Handler-BaseHandler.html#method_addFilter" class="headerlink"><i class="fas fa-link"></i></a>
@@ -466,7 +536,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/BaseHandler.php"><a href="files/handler-basehandler.html"><abbr title="Handler/BaseHandler.php">BaseHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -513,7 +583,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/BaseHandler.php"><a href="files/handler-basehandler.html"><abbr title="Handler/BaseHandler.php">BaseHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -555,12 +625,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_setOption">
         setOption()
-        <a href="classes/Horde-Log-Handler-BaseHandler.html#method_setOption" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Log-Handler-SetOptionsTrait.html#method_setOption" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Handler/BaseHandler.php"><a href="files/handler-basehandler.html"><abbr title="Handler/BaseHandler.php">BaseHandler.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Handler/SetOptionsTrait.php"><a href="files/handler-setoptionstrait.html"><abbr title="Handler/SetOptionsTrait.php">SetOptionsTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -631,7 +701,7 @@ are handler-specific.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/SyslogHandler.php"><a href="files/handler-sysloghandler.html"><abbr title="Handler/SyslogHandler.php">SyslogHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -692,7 +762,7 @@ are handler-specific.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Handler/SyslogHandler.php"><a href="files/handler-sysloghandler.html"><abbr title="Handler/SyslogHandler.php">SyslogHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 

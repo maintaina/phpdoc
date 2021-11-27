@@ -846,20 +846,10 @@ Search.appendIndex(
             "summary": "Log\u0020a\u0020message\u0020to\u0020this\u0020handler.",
             "url": "classes/Horde-Log-Handler-BaseHandler.html#method_log"
         },                {
-            "fqsen": "\\Horde\\Log\\Handler\\BaseHandler\u003A\u003AsetOption\u0028\u0029",
-            "name": "setOption",
-            "summary": "Sets\u0020an\u0020option\u0020specific\u0020to\u0020the\u0020implementation\u0020of\u0020the\u0020log\u0020handler.",
-            "url": "classes/Horde-Log-Handler-BaseHandler.html#method_setOption"
-        },                {
             "fqsen": "\\Horde\\Log\\Handler\\BaseHandler\u003A\u003Awrite\u0028\u0029",
             "name": "write",
             "summary": "Buffer\u0020a\u0020message\u0020to\u0020be\u0020stored\u0020in\u0020the\u0020storage.",
             "url": "classes/Horde-Log-Handler-BaseHandler.html#method_write"
-        },                {
-            "fqsen": "\\Horde\\Log\\Handler\\BaseHandler\u003A\u003A\u0024options",
-            "name": "options",
-            "summary": "Options.",
-            "url": "classes/Horde-Log-Handler-BaseHandler.html#property_options"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\BaseHandler\u003A\u003A\u0024filters",
             "name": "filters",
@@ -868,7 +858,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\BaseHandler\u003A\u003A\u0024formatters",
             "name": "formatters",
-            "summary": "Formatters\u0020for\u0020this\u0020handler.",
+            "summary": "Formatters\u0020for\u0020this\u0020handler",
             "url": "classes/Horde-Log-Handler-BaseHandler.html#property_formatters"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\CliHandler",
@@ -878,7 +868,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\CliHandler\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Class\u0020Constructor.",
+            "summary": "Class\u0020Constructor",
             "url": "classes/Horde-Log-Handler-CliHandler.html#method___construct"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\CliHandler\u003A\u003Awrite\u0028\u0029",
@@ -891,6 +881,11 @@ Search.appendIndex(
             "summary": "A\u0020CLI\u0020handler.",
             "url": "classes/Horde-Log-Handler-CliHandler.html#property_cli"
         },                {
+            "fqsen": "\\Horde\\Log\\Handler\\CliHandler\u003A\u003A\u0024options",
+            "name": "options",
+            "summary": "Options.",
+            "url": "classes/Horde-Log-Handler-CliHandler.html#property_options"
+        },                {
             "fqsen": "\\Horde\\Log\\Handler\\FirebugHandler",
             "name": "FirebugHandler",
             "summary": "",
@@ -898,7 +893,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\FirebugHandler\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Class\u0020Constructor.",
+            "summary": "Class\u0020Constructor",
             "url": "classes/Horde-Log-Handler-FirebugHandler.html#method___construct"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\FirebugHandler\u003A\u003Awrite\u0028\u0029",
@@ -913,7 +908,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\FirebugHandler\u003A\u003A\u0024options",
             "name": "options",
-            "summary": "Options\u0020to\u0020be\u0020set\u0020by\u0020setOption\u0028\u0029.",
+            "summary": "",
             "url": "classes/Horde-Log-Handler-FirebugHandler.html#property_options"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\FirebugHandler\u003A\u003A\u0024buffer",
@@ -925,6 +920,16 @@ Search.appendIndex(
             "name": "methods",
             "summary": "Mapping\u0020of\u0020log\u0020priorities\u0020to\u0020Firebug\u0020methods.",
             "url": "classes/Horde-Log-Handler-FirebugHandler.html#property_methods"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\FirebugOptions",
+            "name": "FirebugOptions",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-FirebugOptions.html"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\FirebugOptions\u003A\u003A\u0024buffering",
+            "name": "buffering",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-FirebugOptions.html#property_buffering"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\LoggerInterfaceHandler",
             "name": "LoggerInterfaceHandler",
@@ -976,6 +981,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Log-Handler-MockHandler.html"
         },                {
+            "fqsen": "\\Horde\\Log\\Handler\\MockHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-MockHandler.html#method___construct"
+        },                {
             "fqsen": "\\Horde\\Log\\Handler\\MockHandler\u003A\u003Awrite\u0028\u0029",
             "name": "write",
             "summary": "Write\u0020a\u0020message\u0020to\u0020the\u0020log.",
@@ -985,6 +995,11 @@ Search.appendIndex(
             "name": "shutdown",
             "summary": "Was\u0020shutdown\u0020called\u003F",
             "url": "classes/Horde-Log-Handler-MockHandler.html#property_shutdown"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\MockHandler\u003A\u003A\u0024options",
+            "name": "options",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-MockHandler.html#property_options"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\MockHandler\u003A\u003A\u0024events",
             "name": "events",
@@ -996,10 +1011,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Log-Handler-NullHandler.html"
         },                {
+            "fqsen": "\\Horde\\Log\\Handler\\NullHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-NullHandler.html#method___construct"
+        },                {
             "fqsen": "\\Horde\\Log\\Handler\\NullHandler\u003A\u003Awrite\u0028\u0029",
             "name": "write",
             "summary": "Write\u0020a\u0020message\u0020to\u0020the\u0020log\u0020buffer.",
             "url": "classes/Horde-Log-Handler-NullHandler.html#method_write"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\NullHandler\u003A\u003A\u0024options",
+            "name": "options",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-NullHandler.html#property_options"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\Options",
+            "name": "Options",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-Options.html"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\Options\u003A\u003A\u0024ident",
+            "name": "ident",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-Options.html#property_ident"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\ScribeHandler",
             "name": "ScribeHandler",
@@ -1016,15 +1051,40 @@ Search.appendIndex(
             "summary": "Write\u0020a\u0020message\u0020to\u0020the\u0020log.",
             "url": "classes/Horde-Log-Handler-ScribeHandler.html#method_write"
         },                {
+            "fqsen": "\\Horde\\Log\\Handler\\ScribeHandler\u003A\u003A\u0024options",
+            "name": "options",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-ScribeHandler.html#property_options"
+        },                {
             "fqsen": "\\Horde\\Log\\Handler\\ScribeHandler\u003A\u003A\u0024scribe",
             "name": "scribe",
             "summary": "Scribe\u0020client.",
             "url": "classes/Horde-Log-Handler-ScribeHandler.html#property_scribe"
         },                {
-            "fqsen": "\\Horde\\Log\\Handler\\ScribeHandler\u003A\u003A\u0024options",
-            "name": "options",
-            "summary": "Options\u0020to\u0020be\u0020set\u0020by\u0020setOption\u0028\u0029.",
-            "url": "classes/Horde-Log-Handler-ScribeHandler.html#property_options"
+            "fqsen": "\\Horde\\Log\\Handler\\ScribeOptions",
+            "name": "ScribeOptions",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-ScribeOptions.html"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\ScribeOptions\u003A\u003A\u0024addNewline",
+            "name": "addNewline",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-ScribeOptions.html#property_addNewline"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\ScribeOptions\u003A\u003A\u0024category",
+            "name": "category",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-ScribeOptions.html#property_category"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\SetOptionsTrait",
+            "name": "SetOptionsTrait",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-SetOptionsTrait.html"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\SetOptionsTrait\u003A\u003AsetOption\u0028\u0029",
+            "name": "setOption",
+            "summary": "Sets\u0020an\u0020option\u0020specific\u0020to\u0020the\u0020implementation\u0020of\u0020the\u0020log\u0020handler.",
+            "url": "classes/Horde-Log-Handler-SetOptionsTrait.html#method_setOption"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\StreamHandler",
             "name": "StreamHandler",
@@ -1033,7 +1093,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\StreamHandler\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Class\u0020Constructor.",
+            "summary": "Class\u0020Constructor",
             "url": "classes/Horde-Log-Handler-StreamHandler.html#method___construct"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\StreamHandler\u003A\u003A__wakeup\u0028\u0029",
@@ -1045,6 +1105,11 @@ Search.appendIndex(
             "name": "write",
             "summary": "Write\u0020a\u0020message\u0020to\u0020the\u0020log.",
             "url": "classes/Horde-Log-Handler-StreamHandler.html#method_write"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\StreamHandler\u003A\u003A\u0024options",
+            "name": "options",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-StreamHandler.html#property_options"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\StreamHandler\u003A\u003A\u0024stream",
             "name": "stream",
@@ -1065,6 +1130,11 @@ Search.appendIndex(
             "name": "SyslogHandler",
             "summary": "",
             "url": "classes/Horde-Log-Handler-SyslogHandler.html"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\SyslogHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-SyslogHandler.html#method___construct"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\SyslogHandler\u003A\u003Awrite\u0028\u0029",
             "name": "write",
@@ -1090,6 +1160,26 @@ Search.appendIndex(
             "name": "lastFacility",
             "summary": "Last\u0020facility\u0020name\u0020set\u0020by\u0020a\u0020syslog\u002Dhandler\u0020instance.",
             "url": "classes/Horde-Log-Handler-SyslogHandler.html#property_lastFacility"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\SyslogOptions",
+            "name": "SyslogOptions",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-SyslogOptions.html"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\SyslogOptions\u003A\u003A\u0024defaultPriority",
+            "name": "defaultPriority",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-SyslogOptions.html#property_defaultPriority"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\SyslogOptions\u003A\u003A\u0024facility",
+            "name": "facility",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-SyslogOptions.html#property_facility"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\SyslogOptions\u003A\u003A\u0024openLogOptions",
+            "name": "openLogOptions",
+            "summary": "",
+            "url": "classes/Horde-Log-Handler-SyslogOptions.html#property_openLogOptions"
         },                {
             "fqsen": "\\Horde\\Log\\LogException",
             "name": "LogException",
