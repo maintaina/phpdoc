@@ -16,6 +16,11 @@ Search.appendIndex(
             "summary": "Skeleton\u0020external\u0020API.",
             "url": "classes/Horde-Skeleton-Api.html"
         },                {
+            "fqsen": "\\Horde\\Skeleton\\Api\u003A\u003AgetFoo\u0028\u0029",
+            "name": "getFoo",
+            "summary": "Example\u0020API\u0020method.",
+            "url": "classes/Horde-Skeleton-Api.html#method_getFoo"
+        },                {
             "fqsen": "\\SKELETON_BASE",
             "name": "SKELETON_BASE",
             "summary": "",
@@ -80,116 +85,6 @@ Search.appendIndex(
             "name": "_content",
             "summary": "",
             "url": "classes/Horde-Skeleton-Block-Example.html#method__content"
-        },                {
-            "fqsen": "\\Skeleton_Driver_Sql",
-            "name": "Skeleton_Driver_Sql",
-            "summary": "Skeleton\u0020storage\u0020implementation\u0020for\u0020the\u0020Horde_Db\u0020database\u0020abstraction\u0020layer.",
-            "url": "classes/Skeleton-Driver-Sql.html"
-        },                {
-            "fqsen": "\\Skeleton_Driver_Sql\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructs\u0020a\u0020new\u0020SQL\u0020storage\u0020object.",
-            "url": "classes/Skeleton-Driver-Sql.html#method___construct"
-        },                {
-            "fqsen": "\\Skeleton_Driver_Sql\u003A\u003Aretrieve\u0028\u0029",
-            "name": "retrieve",
-            "summary": "Retrieves\u0020the\u0020foos\u0020from\u0020the\u0020database.",
-            "url": "classes/Skeleton-Driver-Sql.html#method_retrieve"
-        },                {
-            "fqsen": "\\Skeleton_Driver_Sql\u003A\u003Astore\u0028\u0029",
-            "name": "store",
-            "summary": "Stores\u0020a\u0020foo\u0020in\u0020the\u0020database.",
-            "url": "classes/Skeleton-Driver-Sql.html#method_store"
-        },                {
-            "fqsen": "\\Skeleton_Driver_Sql\u003A\u003A\u0024_db",
-            "name": "_db",
-            "summary": "Handle\u0020for\u0020the\u0020current\u0020database\u0020connection.",
-            "url": "classes/Skeleton-Driver-Sql.html#property__db"
-        },                {
-            "fqsen": "\\Skeleton_Driver_Sql\u003A\u003A\u0024_foo",
-            "name": "_foo",
-            "summary": "Storage\u0020variable.",
-            "url": "classes/Skeleton-Driver-Sql.html#property__foo"
-        },                {
-            "fqsen": "\\Skeleton_Driver",
-            "name": "Skeleton_Driver",
-            "summary": "Skeleton_Driver\u0020defines\u0020an\u0020API\u0020for\u0020implementing\u0020storage\u0020backends\u0020for\nSkeleton.",
-            "url": "classes/Skeleton-Driver.html"
-        },                {
-            "fqsen": "\\Skeleton_Driver\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructor.",
-            "url": "classes/Skeleton-Driver.html#method___construct"
-        },                {
-            "fqsen": "\\Skeleton_Driver\u003A\u003AlistFoos\u0028\u0029",
-            "name": "listFoos",
-            "summary": "Lists\u0020all\u0020foos.",
-            "url": "classes/Skeleton-Driver.html#method_listFoos"
-        },                {
-            "fqsen": "\\Skeleton_Driver\u003A\u003A\u0024_params",
-            "name": "_params",
-            "summary": "Hash\u0020containing\u0020connection\u0020parameters.",
-            "url": "classes/Skeleton-Driver.html#property__params"
-        },                {
-            "fqsen": "\\Skeleton_Driver\u003A\u003A\u0024_foos",
-            "name": "_foos",
-            "summary": "Array\u0020holding\u0020the\u0020current\u0020foo\u0020list.\u0020Each\u0020array\u0020entry\u0020is\u0020a\u0020hash\ndescribing\u0020a\u0020foo.\u0020The\u0020array\u0020is\u0020indexed\u0020by\u0020the\u0020IDs.",
-            "url": "classes/Skeleton-Driver.html#property__foos"
-        },                {
-            "fqsen": "\\Skeleton_Exception",
-            "name": "Skeleton_Exception",
-            "summary": "Base\u0020exception\u0020class\u0020for\u0020Skeleton.",
-            "url": "classes/Skeleton-Exception.html"
-        },                {
-            "fqsen": "\\Skeleton_Factory_Driver",
-            "name": "Skeleton_Factory_Driver",
-            "summary": "Skeleton_Driver\u0020factory.",
-            "url": "classes/Skeleton-Factory-Driver.html"
-        },                {
-            "fqsen": "\\Skeleton_Factory_Driver\u003A\u003Acreate\u0028\u0029",
-            "name": "create",
-            "summary": "Return\u0020an\u0020Skeleton_Driver\u0020instance.",
-            "url": "classes/Skeleton-Factory-Driver.html#method_create"
-        },                {
-            "fqsen": "\\Skeleton_Factory_Driver\u003A\u003A\u0024_instances",
-            "name": "_instances",
-            "summary": "",
-            "url": "classes/Skeleton-Factory-Driver.html#property__instances"
-        },                {
-            "fqsen": "\\Horde\\Skeleton\\Test",
-            "name": "Test",
-            "summary": "This\u0020class\u0020provides\u0020the\u0020application\u0020configuration\u0020for\u0020the\u0020test\u0020script.",
-            "url": "classes/Horde-Skeleton-Test.html"
-        },                {
-            "fqsen": "\\Horde\\Skeleton\\Test\u003A\u003AappTests\u0028\u0029",
-            "name": "appTests",
-            "summary": "Any\u0020application\u0020specific\u0020tests\u0020that\u0020need\u0020to\u0020be\u0020done.",
-            "url": "classes/Horde-Skeleton-Test.html#method_appTests"
-        },                {
-            "fqsen": "\\Horde\\Skeleton\\Test\u003A\u003A\u0024_moduleList",
-            "name": "_moduleList",
-            "summary": "The\u0020module\u0020list",
-            "url": "classes/Horde-Skeleton-Test.html#property__moduleList"
-        },                {
-            "fqsen": "\\Horde\\Skeleton\\Test\u003A\u003A\u0024_settingsList",
-            "name": "_settingsList",
-            "summary": "PHP\u0020settings\u0020list.",
-            "url": "classes/Horde-Skeleton-Test.html#property__settingsList"
-        },                {
-            "fqsen": "\\Horde\\Skeleton\\Test\u003A\u003A\u0024_pearList",
-            "name": "_pearList",
-            "summary": "PEAR\u0020modules\u0020list.",
-            "url": "classes/Horde-Skeleton-Test.html#property__pearList"
-        },                {
-            "fqsen": "\\Horde\\Skeleton\\Test\u003A\u003A\u0024_fileList",
-            "name": "_fileList",
-            "summary": "Required\u0020configuration\u0020files.",
-            "url": "classes/Horde-Skeleton-Test.html#property__fileList"
-        },                {
-            "fqsen": "\\Horde\\Skeleton\\Test\u003A\u003A\u0024_appList",
-            "name": "_appList",
-            "summary": "Inter\u002DHorde\u0020application\u0020dependencies.",
-            "url": "classes/Horde-Skeleton-Test.html#property__appList"
         },                {
             "fqsen": "\\Horde\\Skeleton\\Driver\\AbstractDriver",
             "name": "AbstractDriver",
@@ -275,6 +170,41 @@ Search.appendIndex(
             "name": "SkeletonException",
             "summary": "Base\u0020exception\u0020class\u0020for\u0020Skeleton.",
             "url": "classes/Horde-Skeleton-SkeletonException.html"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Test",
+            "name": "Test",
+            "summary": "This\u0020class\u0020provides\u0020the\u0020application\u0020configuration\u0020for\u0020the\u0020test\u0020script.",
+            "url": "classes/Horde-Skeleton-Test.html"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Test\u003A\u003AappTests\u0028\u0029",
+            "name": "appTests",
+            "summary": "Any\u0020application\u0020specific\u0020tests\u0020that\u0020need\u0020to\u0020be\u0020done.",
+            "url": "classes/Horde-Skeleton-Test.html#method_appTests"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Test\u003A\u003A\u0024_moduleList",
+            "name": "_moduleList",
+            "summary": "The\u0020module\u0020list",
+            "url": "classes/Horde-Skeleton-Test.html#property__moduleList"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Test\u003A\u003A\u0024_settingsList",
+            "name": "_settingsList",
+            "summary": "PHP\u0020settings\u0020list.",
+            "url": "classes/Horde-Skeleton-Test.html#property__settingsList"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Test\u003A\u003A\u0024_pearList",
+            "name": "_pearList",
+            "summary": "PEAR\u0020modules\u0020list.",
+            "url": "classes/Horde-Skeleton-Test.html#property__pearList"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Test\u003A\u003A\u0024_fileList",
+            "name": "_fileList",
+            "summary": "Required\u0020configuration\u0020files.",
+            "url": "classes/Horde-Skeleton-Test.html#property__fileList"
+        },                {
+            "fqsen": "\\Horde\\Skeleton\\Test\u003A\u003A\u0024_appList",
+            "name": "_appList",
+            "summary": "Inter\u002DHorde\u0020application\u0020dependencies.",
+            "url": "classes/Horde-Skeleton-Test.html#property__appList"
         },                {
             "fqsen": "\\Horde\\Skeleton\\Ui\\ListItems",
             "name": "ListItems",
