@@ -86,15 +86,14 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-injector.html">Injector</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Injector
+    Injector
 
-        <span class="phpdocumentor-element__extends">
-        extends <a href="classes/Horde-Injector-Injector.html"><abbr title="\Horde\Injector\Injector">Injector</abbr></a>
-    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -105,14 +104,14 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Horde-Injector-Scope.html"><abbr title="\Horde_Injector_Scope">Horde_Injector_Scope</abbr></a>                    </span>
+                            <a href="classes/Horde-Injector-Scope.html"><abbr title="\Horde\Injector\Scope">Scope</abbr></a>,                             <abbr title="\Psr\Container\ContainerInterface">ContainerInterface</abbr>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Injector.php"><a href="files/horde-injector.html"><abbr title="Horde/Injector.php">Injector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Injector.php"><a href="files/injector.html"><abbr title="Injector.php">Injector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -186,8 +185,10 @@ injection bindings.</p>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Injector-Scope.html"><abbr title="\Horde_Injector_Scope">Horde_Injector_Scope</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Injector-Scope.html"><abbr title="\Horde\Injector\Scope">Scope</abbr></a></dt>
         <dd>Interface for injector scopes</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Psr\Container\ContainerInterface">ContainerInterface</abbr></dt>
+        <dd></dd>
     
     
     </dl>
@@ -235,7 +236,7 @@ injection bindings.</p>
 <dd>Method overloader.  Handles $this-&gt;bind[BinderType] type calls.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Injector.html#method___construct">__construct()</a>
+    <a href="classes/Horde-Injector-Injector.html#method___construct">__construct()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
@@ -338,7 +339,7 @@ with bind.</dd>
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Horde-Injector.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Injector-Injector.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -474,7 +475,7 @@ with bind.</dd>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Injector.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Injector-Injector.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -540,12 +541,12 @@ with bind.</dd>
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Horde-Injector.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Injector-Injector.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Injector.php"><a href="files/horde-injector.html"><abbr title="Horde/Injector.php">Injector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Injector.php"><a href="files/injector.html"><abbr title="Injector.php">Injector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -553,7 +554,7 @@ with bind.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Injector-Scope.html"><abbr title="\Horde_Injector_Scope">Horde_Injector_Scope</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scope</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Injector-Scope.html"><abbr title="\Horde\Injector\Scope">Scope</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$injector</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>Every injector object has a parent scope.  For the very first
 Injector, you should pass it a TopLevel object.</p>
@@ -562,11 +563,12 @@ Injector, you should pass it a TopLevel object.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$scope</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Injector-Scope.html"><abbr title="\Horde_Injector_Scope">Horde_Injector_Scope</abbr></a></span>
+                <span class="phpdocumentor-signature__argument__name">$injector</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Injector-Scope.html"><abbr title="\Horde\Injector\Scope">Scope</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The parent scope.</p>
+</section>
 
             </dd>
             </dl>
@@ -1314,7 +1316,7 @@ method chaining.</p>
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Injector.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Injector-Injector.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

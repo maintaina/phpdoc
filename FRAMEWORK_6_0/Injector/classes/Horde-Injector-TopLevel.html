@@ -53,6 +53,17 @@
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-injector.html">Injector</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
 
@@ -75,16 +86,14 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Injector.html">Injector</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-injector.html">Injector</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Injector_TopLevel
+    TopLevel
 
-        <span class="phpdocumentor-element__extends">
-        extends <abbr title="\Horde\Injector\TopLevel">TopLevel</abbr>
-    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -95,20 +104,20 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Horde-Injector-Scope.html"><abbr title="\Horde_Injector_Scope">Horde_Injector_Scope</abbr></a>                    </span>
+                            <a href="classes/Horde-Injector-Scope.html"><abbr title="\Horde\Injector\Scope">Scope</abbr></a>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Injector/TopLevel.php"><a href="files/horde-injector-toplevel.html"><abbr title="Horde/Injector/TopLevel.php">TopLevel.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="TopLevel.php"><a href="files/toplevel.html"><abbr title="TopLevel.php">TopLevel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">Top level injector class for returning the default binding for an object</p>
 
-    <section class="phpdocumentor-description"><p>This class returns a Horde_Injector_Binder_Implementation with the
+    <section class="phpdocumentor-description"><p>This class returns a Horde\Injector\Binder\Implementation with the
 requested $interface mapped to itself.  This is the default case, and for
 concrete classes should work all the time so long as you constructor
 parameters are typed.</p>
@@ -176,13 +185,42 @@ parameters are typed.</p>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Injector-Scope.html"><abbr title="\Horde_Injector_Scope">Horde_Injector_Scope</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Injector-Scope.html"><abbr title="\Horde\Injector\Scope">Scope</abbr></a></dt>
         <dd>Interface for injector scopes</dd>
     
     
     </dl>
 
 
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Injector-TopLevel.html#method_get">get()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Returns instance of requested object if proper configuration has been
+provided.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Injector-TopLevel.html#method_getBinder">getBinder()</a>
+    <span>
+                        &nbsp;: <abbr title="\Horde\Injector\Binder\AnnotatedSetters">AnnotatedSetters</abbr>    </span>
+</dt>
+<dd>Get an Implementation Binder that maps the $interface to itself.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Injector-TopLevel.html#method_getInstance">getInstance()</a>
+    <span>
+                        &nbsp;: null    </span>
+</dt>
+<dd>Always return null.  Object doesn&#039;t keep instance references.</dd>
+
+        </dl>
 
 
 
@@ -190,7 +228,157 @@ parameters are typed.</p>
 
         
 
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Horde-Injector-TopLevel.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get">
+        get()
+        <a href="classes/Horde-Injector-TopLevel.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="TopLevel.php"><a href="files/toplevel.html"><abbr title="TopLevel.php">TopLevel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">69</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns instance of requested object if proper configuration has been
+provided.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$interface</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$interface</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Interface name of object which is being
+requested.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
         
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getBinder">
+        getBinder()
+        <a href="classes/Horde-Injector-TopLevel.html#method_getBinder" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="TopLevel.php"><a href="files/toplevel.html"><abbr title="TopLevel.php">TopLevel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get an Implementation Binder that maps the $interface to itself.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getBinder</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$interface</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Injector\Binder\AnnotatedSetters">AnnotatedSetters</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$interface</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The interface to retrieve binding information
+for.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Injector\Binder\AnnotatedSetters">AnnotatedSetters</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>A new binding object that maps the interface to itself.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getInstance">
+        getInstance()
+        <a href="classes/Horde-Injector-TopLevel.html#method_getInstance" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="TopLevel.php"><a href="files/toplevel.html"><abbr title="TopLevel.php">TopLevel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">64</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Always return null.  Object doesn&#039;t keep instance references.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getInstance</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$interface</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null</span></code>
+
+        <section class="phpdocumentor-description"><p>Method is necessary because this object is the default parent Injector.
+The child of this injector will ask it for instances in the case where
+no bindings are set on the child.  This should always return null.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$interface</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The interface in question.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">null</span>
+            &mdash;
+        
+    
+</article>
+            </section>
+
         
     <script type="text/javascript">
         function loadExternalCodeSnippets(line) {

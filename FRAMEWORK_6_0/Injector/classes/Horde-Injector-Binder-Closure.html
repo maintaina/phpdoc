@@ -53,6 +53,17 @@
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-injector.html">Injector</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
 
@@ -75,16 +86,15 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Injector.html">Injector</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-injector.html">Injector</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-injector-binder.html">Binder</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Injector_Binder_Closure
+    Closure
 
-        <span class="phpdocumentor-element__extends">
-        extends <abbr title="\Horde\Injector\Binder\Closure">Closure</abbr>
-    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -95,21 +105,21 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Horde-Injector-Binder.html"><abbr title="\Horde_Injector_Binder">Horde_Injector_Binder</abbr></a>                    </span>
+                            <a href="classes/Horde-Injector-Binder.html"><abbr title="\Horde\Injector\Binder">Binder</abbr></a>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Injector/Binder/Closure.php"><a href="files/horde-injector-binder-closure.html"><abbr title="Horde/Injector/Binder/Closure.php">Closure.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Binder/Closure.php"><a href="files/binder-closure.html"><abbr title="Binder/Closure.php">Closure.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">A binder object for binding an interface to a closure.</p>
 
     <section class="phpdocumentor-description"><p>An interface may be bound to a closure.  That closure must accept a
-Horde_Injector and return an object that satisfies the instance
+Horde\Injector and return an object that satisfies the instance
 requirement. For example:</p>
 <pre class="prettyprint">
 $injector->bindClosure('database', function($injector) { return new my_mysql(); });
@@ -187,21 +197,288 @@ $injector->bindClosure('database', function($injector) { return new my_mysql(); 
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Injector-Binder.html"><abbr title="\Horde_Injector_Binder">Horde_Injector_Binder</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Injector-Binder.html"><abbr title="\Horde\Injector\Binder">Binder</abbr></a></dt>
         <dd>Describes a binding class that is able to create concrete object instances.</dd>
     
     
     </dl>
 
 
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+                <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Horde-Injector-Binder-Closure.html#property_closure">$closure</a>
+    <span>
+                &nbsp;: <abbr title="\Closure">Closure</abbr>            </span>
+</dt>
+<dd></dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Injector-Binder-Closure.html#method___construct">__construct()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Create a new Closure instance.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Injector-Binder-Closure.html#method_create">create()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Create instance using a closure.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Injector-Binder-Closure.html#method_equals">equals()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Determine if one binder equals another binder</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Injector-Binder-Closure.html#method_getClosure">getClosure()</a>
+    <span>
+                        &nbsp;: callable    </span>
+</dt>
+<dd>Get the closure that this binder was bound to.</dd>
+
+        </dl>
 
 
 
         
 
         
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Horde-Injector-Binder-Closure.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_closure">
+        $closure
+        <a href="classes/Horde-Injector-Binder-Closure.html#property_closure" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Binder/Closure.php"><a href="files/binder-closure.html"><abbr title="Binder/Closure.php">Closure.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Closure">Closure</abbr></span>
+    <span class="phpdocumentor-signature__name">$closure</span>
+    </code>
+
+    
+    
+    
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Horde-Injector-Binder-Closure.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Horde-Injector-Binder-Closure.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Binder/Closure.php"><a href="files/binder-closure.html"><abbr title="Binder/Closure.php">Closure.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">50</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a new Closure instance.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Closure">Closure</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$closure</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$closure</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Closure">Closure</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The closure to use for creating objects.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
         
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_create">
+        create()
+        <a href="classes/Horde-Injector-Binder-Closure.html#method_create" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Binder/Closure.php"><a href="files/binder-closure.html"><abbr title="Binder/Closure.php">Closure.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">92</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create instance using a closure.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Injector-Injector.html"><abbr title="\Horde\Injector\Injector">Injector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$injector</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>If the closure depends on a Horde\Injector we want to limit its scope
+so it cannot change anything that effects any higher-level scope.  A
+closure should not have the responsibility of making a higher-level
+scope change.
+To enforce this we create a new child Horde\Injector\Injector.  When a
+Injector is requested from a Injector it will return
+itself. This means that the closure will only ever be able to work on
+the child Injector we give it now.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$injector</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Injector-Injector.html"><abbr title="\Horde\Injector\Injector">Injector</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Injector object.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The object or value created from the closure.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_equals">
+        equals()
+        <a href="classes/Horde-Injector-Binder-Closure.html#method_equals" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Binder/Closure.php"><a href="files/binder-closure.html"><abbr title="Binder/Closure.php">Closure.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Determine if one binder equals another binder</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">equals</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Injector-Binder.html"><abbr title="\Horde\Injector\Binder">Binder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$otherBinder</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$otherBinder</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Injector-Binder.html"><abbr title="\Horde\Injector\Binder">Binder</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Equality.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getClosure">
+        getClosure()
+        <a href="classes/Horde-Injector-Binder-Closure.html#method_getClosure" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Binder/Closure.php"><a href="files/binder-closure.html"><abbr title="Binder/Closure.php">Closure.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">71</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the closure that this binder was bound to.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getClosure</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">callable</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">callable</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The closure this binder is bound to.</p>
+</section>
+
+    
+</article>
+            </section>
+
         
     <script type="text/javascript">
         function loadExternalCodeSnippets(line) {
