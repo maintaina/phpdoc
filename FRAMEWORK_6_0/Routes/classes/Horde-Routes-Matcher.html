@@ -53,6 +53,17 @@
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-routes.html">Routes</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Routes.html">Routes</a></h4>
 
@@ -81,13 +92,13 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Horde.html">Horde</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Horde-Routes.html">Routes</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-routes.html">Routes</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Routes_Matcher
+    Matcher
 
     
             <div class="phpdocumentor-element__package">
@@ -102,9 +113,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Matcher.php"><a href="files/horde-routes-matcher.html"><abbr title="Horde/Routes/Matcher.php">Matcher.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Matcher.php"><a href="files/matcher.html"><abbr title="Matcher.php">Matcher.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -163,23 +174,23 @@ http://www.horde.org/licenses/lgpl21.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                 <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Routes-Matcher.html#property__mapper">$_mapper</a>
+    <a href="classes/Horde-Routes-Matcher.html#property_mapper">$mapper</a>
     <span>
-                &nbsp;: <a href="classes/Horde-Routes-Mapper.html"><abbr title="\Horde_Routes_Mapper">Horde_Routes_Mapper</abbr></a>            </span>
+                &nbsp;: <a href="classes/Horde-Routes-Mapper.html"><abbr title="\Horde\Routes\Mapper">Mapper</abbr></a>            </span>
 </dt>
 <dd>The routes mapper.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Routes-Matcher.html#property__match_dict">$_match_dict</a>
+    <a href="classes/Horde-Routes-Matcher.html#property_match_dict">$match_dict</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: array&lt;string|int, mixed&gt;|<abbr title="\Horde_Support_Array">Horde_Support_Array</abbr>            </span>
 </dt>
 <dd>The match dictionary.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Routes-Matcher.html#property__request">$_request</a>
+    <a href="classes/Horde-Routes-Matcher.html#property_request">$request</a>
     <span>
-                &nbsp;: <abbr title="\Horde_Controller_Request">Horde_Controller_Request</abbr>            </span>
+                &nbsp;: <abbr title="\Horde_Controller_Request">Horde_Controller_Request</abbr>|<abbr title="\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>            </span>
 </dt>
 <dd>The incoming request.</dd>
 
@@ -216,16 +227,16 @@ http://www.horde.org/licenses/lgpl21.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__mapper">
-        $_mapper
-        <a href="classes/Horde-Routes-Matcher.html#property__mapper" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_mapper">
+        $mapper
+        <a href="classes/Horde-Routes-Matcher.html#property_mapper" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Matcher.php"><a href="files/horde-routes-matcher.html"><abbr title="Horde/Routes/Matcher.php">Matcher.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Matcher.php"><a href="files/matcher.html"><abbr title="Matcher.php">Matcher.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -233,8 +244,8 @@ http://www.horde.org/licenses/lgpl21.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Routes-Mapper.html"><abbr title="\Horde_Routes_Mapper">Horde_Routes_Mapper</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$_mapper</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Routes-Mapper.html"><abbr title="\Horde\Routes\Mapper">Mapper</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$mapper</span>
     </code>
 
     
@@ -249,16 +260,16 @@ http://www.horde.org/licenses/lgpl21.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__match_dict">
-        $_match_dict
-        <a href="classes/Horde-Routes-Matcher.html#property__match_dict" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_match_dict">
+        $match_dict
+        <a href="classes/Horde-Routes-Matcher.html#property_match_dict" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Matcher.php"><a href="files/horde-routes-matcher.html"><abbr title="Horde/Routes/Matcher.php">Matcher.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Matcher.php"><a href="files/matcher.html"><abbr title="Matcher.php">Matcher.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -266,8 +277,8 @@ http://www.horde.org/licenses/lgpl21.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_match_dict</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;|<abbr title="\Horde_Support_Array">Horde_Support_Array</abbr></span>
+    <span class="phpdocumentor-signature__name">$match_dict</span>
     </code>
 
     
@@ -282,16 +293,16 @@ http://www.horde.org/licenses/lgpl21.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__request">
-        $_request
-        <a href="classes/Horde-Routes-Matcher.html#property__request" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_request">
+        $request
+        <a href="classes/Horde-Routes-Matcher.html#property_request" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Matcher.php"><a href="files/horde-routes-matcher.html"><abbr title="Horde/Routes/Matcher.php">Matcher.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Matcher.php"><a href="files/matcher.html"><abbr title="Matcher.php">Matcher.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -299,8 +310,8 @@ http://www.horde.org/licenses/lgpl21.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Horde_Controller_Request">Horde_Controller_Request</abbr></span>
-    <span class="phpdocumentor-signature__name">$_request</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Horde_Controller_Request">Horde_Controller_Request</abbr>|<abbr title="\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></span>
+    <span class="phpdocumentor-signature__name">$request</span>
     </code>
 
     
@@ -326,9 +337,9 @@ http://www.horde.org/licenses/lgpl21.</p>
         <a href="classes/Horde-Routes-Matcher.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Matcher.php"><a href="files/horde-routes-matcher.html"><abbr title="Horde/Routes/Matcher.php">Matcher.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Matcher.php"><a href="files/matcher.html"><abbr title="Matcher.php">Matcher.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -336,14 +347,14 @@ http://www.horde.org/licenses/lgpl21.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Routes-Mapper.html"><abbr title="\Horde_Routes_Mapper">Horde_Routes_Mapper</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mapper</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Routes-Mapper.html"><abbr title="\Horde\Routes\Mapper">Mapper</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mapper</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Controller_Request">Horde_Controller_Request</abbr>|<abbr title="\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$mapper</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Routes-Mapper.html"><abbr title="\Horde_Routes_Mapper">Horde_Routes_Mapper</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Routes-Mapper.html"><abbr title="\Horde\Routes\Mapper">Mapper</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The mapper</p>
@@ -352,7 +363,7 @@ http://www.horde.org/licenses/lgpl21.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$request</span>
-                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Controller_Request">Horde_Controller_Request</abbr>|<abbr title="\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>A request object that implements a ::getPath()
@@ -381,9 +392,9 @@ method similar to Horde_Controller_Request::</p>
         <a href="classes/Horde-Routes-Matcher.html#method_getMatchDict" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Matcher.php"><a href="files/horde-routes-matcher.html"><abbr title="Horde/Routes/Matcher.php">Matcher.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Matcher.php"><a href="files/matcher.html"><abbr title="Matcher.php">Matcher.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 

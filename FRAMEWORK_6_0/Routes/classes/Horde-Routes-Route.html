@@ -53,6 +53,17 @@
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-routes.html">Routes</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Routes.html">Routes</a></h4>
 
@@ -81,12 +92,13 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Routes.html">Routes</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-routes.html">Routes</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Routes_Route
+    Route
 
     
             <div class="phpdocumentor-element__package">
@@ -100,9 +112,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -134,7 +146,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Horde-Routes-Route.html#property_conditions">$conditions</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: array&lt;string|int, mixed&gt;|null            </span>
 </dt>
 <dd>Array of keyword args for special conditions (method, subDomain, function)</dd>
 
@@ -178,7 +190,7 @@
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd>Default keywords that don&#039;t exist in the path; can&#039;t be changed by an incomng URL.</dd>
+<dd>Default keywords that don&#039;t exist in the path; can&#039;t be changed by an incoming URL.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Horde-Routes-Route.html#property_maxKeys">$maxKeys</a>
@@ -251,13 +263,6 @@
 <dd>Name of the parent resource, if this is a RESTful route &amp; has a parent</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Routes-Route.html#property__prior">$_prior</a>
-    <span>
-                &nbsp;: string            </span>
-</dt>
-<dd>Last path part used by buildNextReg()</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Routes-Route.html#property__reqRegs">$_reqRegs</a>
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
@@ -272,18 +277,25 @@
 <dd>Reverse of $routeList</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Routes-Route.html#property__routeList">$_routeList</a>
-    <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd>Route path split by &#039;/&#039;</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Routes-Route.html#property__splitChars">$_splitChars</a>
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Characters that split the parts of a URL</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Routes-Route.html#property_prior">$prior</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd>Last path part used by buildNextReg()</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Routes-Route.html#property_routeList">$routeList</a>
+    <span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+<dd>Route path split by &#039;/&#039;</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Routes-Route.html#method___construct">__construct()</a>
@@ -302,7 +314,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Routes-Route.html#method_generate">generate()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: string|null    </span>
 </dt>
 <dd>Generate a URL from ourself given a set of keyword arguments</dd>
 
@@ -316,7 +328,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Routes-Route.html#method_match">match()</a>
     <span>
-                        &nbsp;: null|array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;|null    </span>
 </dt>
 <dd>Match a url to our regexp.</dd>
 
@@ -368,9 +380,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -401,9 +413,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -411,7 +423,7 @@ dynamic/wildcard keys</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;|null</span>
     <span class="phpdocumentor-signature__name">$conditions</span>
     </code>
 
@@ -434,9 +446,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -467,9 +479,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -479,7 +491,7 @@ dynamic/wildcard keys</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$defaults</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -500,9 +512,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -533,9 +545,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -566,9 +578,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -599,13 +611,13 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Default keywords that don&#039;t exist in the path; can&#039;t be changed by an incomng URL.</p>
+        <p class="phpdocumentor-summary">Default keywords that don&#039;t exist in the path; can&#039;t be changed by an incoming URL.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -632,9 +644,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -665,9 +677,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -698,9 +710,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -731,9 +743,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -764,9 +776,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -797,9 +809,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -830,9 +842,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -863,9 +875,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 
@@ -889,7 +901,7 @@ dynamic/wildcard keys</dd>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\resource()">resource()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Routes\resource()">resource()</abbr></span>
                                         
                                              
                                     </dd>
@@ -910,9 +922,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -936,7 +948,7 @@ dynamic/wildcard keys</dd>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\resource()">resource()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Routes\resource()">resource()</abbr></span>
                                         
                                              
                                     </dd>
@@ -957,9 +969,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">160</span>
 
     </aside>
 
@@ -983,44 +995,11 @@ dynamic/wildcard keys</dd>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\resource">resource</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Routes\resource">resource</abbr></span>
                                         
                                              
                                     </dd>
                         </dl>
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property__prior">
-        $_prior
-        <a href="classes/Horde-Routes-Route.html#property__prior" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">129</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Last path part used by buildNextReg()</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$_prior</span>
-    </code>
-
-    
-    
-    
 
 </article>
                     <article
@@ -1037,9 +1016,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">135</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -1070,9 +1049,9 @@ dynamic/wildcard keys</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -1096,25 +1075,25 @@ dynamic/wildcard keys</dd>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__routeList">
-        $_routeList
-        <a href="classes/Horde-Routes-Route.html#property__routeList" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property__splitChars">
+        $_splitChars
+        <a href="classes/Horde-Routes-Route.html#property__splitChars" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Route path split by &#039;/&#039;</p>
+        <p class="phpdocumentor-summary">Characters that split the parts of a URL</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_routeList</span>
+    <span class="phpdocumentor-signature__name">$_splitChars</span>
     </code>
 
     
@@ -1129,25 +1108,58 @@ dynamic/wildcard keys</dd>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__splitChars">
-        $_splitChars
-        <a href="classes/Horde-Routes-Route.html#property__splitChars" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_prior">
+        $prior
+        <a href="classes/Horde-Routes-Route.html#property_prior" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Characters that split the parts of a URL</p>
+        <p class="phpdocumentor-summary">Last path part used by buildNextReg()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$prior</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_routeList">
+        $routeList
+        <a href="classes/Horde-Routes-Route.html#property_routeList" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">115</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Route path split by &#039;/&#039;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_splitChars</span>
+    <span class="phpdocumentor-signature__name">$routeList</span>
     </code>
 
     
@@ -1173,9 +1185,9 @@ dynamic/wildcard keys</dd>
         <a href="classes/Horde-Routes-Route.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">183</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -1183,7 +1195,7 @@ dynamic/wildcard keys</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routePath</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kargs</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routePath</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kargs</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>The set of keyword args will be used as defaults.</p>
 <p>Usage:
@@ -1213,7 +1225,7 @@ method should be used to add routes.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$kargs</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -1239,9 +1251,9 @@ method should be used to add routes.</p>
         <a href="classes/Horde-Routes-Route.html#method_buildNextReg" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">456</span>
+    <span class="phpdocumentor-element-found-in__line">463</span>
 
     </aside>
 
@@ -1298,9 +1310,9 @@ ignored as they're only used internally by buildnextreg.</p>
         <a href="classes/Horde-Routes-Route.html#method_generate" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">714</span>
+    <span class="phpdocumentor-element-found-in__line">726</span>
 
     </aside>
 
@@ -1308,7 +1320,7 @@ ignored as they're only used internally by buildnextreg.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">generate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kargs</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">generate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kargs</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1327,9 +1339,11 @@ ignored as they're only used internally by buildnextreg.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>Null if generation failed, URL otherwise</p>
+</section>
+
     
 </article>
                     <article
@@ -1343,9 +1357,9 @@ ignored as they're only used internally by buildnextreg.</p>
         <a href="classes/Horde-Routes-Route.html#method_makeRegexp" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">430</span>
+    <span class="phpdocumentor-element-found-in__line">437</span>
 
     </aside>
 
@@ -1394,9 +1408,9 @@ utilized.</p>
         <a href="classes/Horde-Routes-Route.html#method_match" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">605</span>
+    <span class="phpdocumentor-element-found-in__line">613</span>
 
     </aside>
 
@@ -1404,7 +1418,7 @@ utilized.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">match</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kargs</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">match</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kargs</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span></code>
 
         <section class="phpdocumentor-description"><p>While the regexp might match, this operation isn't
 guaranteed as there's other factors that can cause a match to fail
@@ -1428,10 +1442,11 @@ out.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$kargs</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Keyword arguments</p>
+</section>
 
             </dd>
             </dl>
@@ -1439,7 +1454,7 @@ out.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">null|array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span>
             &mdash;
             <section class="phpdocumentor-description"><p>Array of match data if matched, Null otherwise</p>
 </section>
@@ -1457,9 +1472,9 @@ out.</p>
         <a href="classes/Horde-Routes-Route.html#method__defaults" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">364</span>
+    <span class="phpdocumentor-element-found-in__line">371</span>
 
     </aside>
 
@@ -1467,7 +1482,7 @@ out.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_defaults</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routeKeys</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$reservedKeys</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kargs</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">_defaults</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routeKeys</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$reservedKeys</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kargs</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
         <section class="phpdocumentor-description"><p>Puts together the array of defaults, turns non-null values to strings,
 and add in our action/id default if they use and do not specify it</p>
@@ -1478,10 +1493,11 @@ and add in our action/id default if they use and do not specify it</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$routeKeys</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>All the keys found in the route path</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1525,9 +1541,9 @@ and add in our action/id default if they use and do not specify it</p>
         <a href="classes/Horde-Routes-Route.html#method__minKeys" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">330</span>
+    <span class="phpdocumentor-element-found-in__line">336</span>
 
     </aside>
 
@@ -1575,9 +1591,9 @@ working route.</p>
         <a href="classes/Horde-Routes-Route.html#method__pathKeys" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Route.php"><a href="files/horde-routes-route.html"><abbr title="Horde/Routes/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Route.php"><a href="files/route.html"><abbr title="Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">272</span>
+    <span class="phpdocumentor-element-found-in__line">278</span>
 
     </aside>
 

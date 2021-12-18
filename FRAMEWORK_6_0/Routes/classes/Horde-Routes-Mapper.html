@@ -53,6 +53,17 @@
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-routes.html">Routes</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Routes.html">Routes</a></h4>
 
@@ -81,12 +92,13 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Routes.html">Routes</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-routes.html">Routes</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Routes_Mapper
+    Mapper
 
     
             <div class="phpdocumentor-element__package">
@@ -100,9 +112,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -271,16 +283,9 @@ minimum keys that each route needs.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Horde-Routes-Mapper.html#property_utils">$utils</a>
     <span>
-                &nbsp;: <a href="classes/Horde-Routes-Utils.html"><abbr title="\Horde_Routes_Utils">Horde_Routes_Utils</abbr></a>            </span>
+                &nbsp;: <a href="classes/Horde-Routes-Utils.html"><abbr title="\Horde\Routes\Utils">Utils</abbr></a>            </span>
 </dt>
 <dd>Utility functions like urlFor() and redirectTo() for this Mapper</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Routes-Mapper.html#property__createdGens">$_createdGens</a>
-    <span>
-                &nbsp;: bool            </span>
-</dt>
-<dd>Have generation hashes been created for all connected routes?</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Routes-Mapper.html#property__createdRegs">$_createdRegs</a>
@@ -288,13 +293,6 @@ minimum keys that each route needs.</dd>
                 &nbsp;: bool            </span>
 </dt>
 <dd>Have regular expressions been created for all connected routes?</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Routes-Mapper.html#property__gendict">$_gendict</a>
-    <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd>Generation hashes created for all connected routes</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Routes-Mapper.html#property__keysortTmp">$_keysortTmp</a>
@@ -309,6 +307,20 @@ minimum keys that each route needs.</dd>
                 &nbsp;: string            </span>
 </dt>
 <dd>Regular expression generated to match after the prefix</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Routes-Mapper.html#property_createdGens">$createdGens</a>
+    <span>
+                &nbsp;: bool            </span>
+</dt>
+<dd>Have generation hashes been created for all connected routes?</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Routes-Mapper.html#property_gendict">$gendict</a>
+    <span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+<dd>Generation hashes created for all connected routes</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Routes-Mapper.html#method___construct">__construct()</a>
@@ -342,7 +354,7 @@ Returns the URL text, or null if no URL could be generated.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Routes-Mapper.html#method_match">match()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;|null    </span>
 </dt>
 <dd>Match a URL against one of the routes contained.</dd>
 
@@ -356,7 +368,7 @@ Returns the URL text, or null if no URL could be generated.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Routes-Mapper.html#method_routematch">routematch()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;|null    </span>
 </dt>
 <dd>Match a URL against one of the routes contained.</dd>
 
@@ -377,7 +389,7 @@ Returns the URL text, or null if no URL could be generated.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Horde-Routes-Mapper.html#method__cmp">_cmp()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: int    </span>
 </dt>
 <dd>Equivalent of Python&#039;s cmp() function.</dd>
 
@@ -414,7 +426,7 @@ to order them ideally for matching.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Horde-Routes-Mapper.html#method__requirementsFor">_requirementsFor()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Returns a new dict to be used for all route creation as
 the route options.</dd>
@@ -460,9 +472,9 @@ from the dict during the swap.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -493,9 +505,9 @@ from the dict during the swap.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -505,7 +517,7 @@ from the dict during the swap.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$appendSlash</span>
-     = <span class="phpdocumentor-signature__default-value">alse</span></code>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
 
     
     
@@ -526,9 +538,9 @@ from the dict during the swap.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">146</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -559,9 +571,9 @@ from the dict during the swap.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">152</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -592,9 +604,9 @@ from the dict during the swap.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -625,9 +637,9 @@ from the dict during the swap.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -637,7 +649,7 @@ from the dict during the swap.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$debug</span>
-     = <span class="phpdocumentor-signature__default-value">alse</span></code>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
 
     
     
@@ -658,9 +670,9 @@ from the dict during the swap.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -691,9 +703,9 @@ from the dict during the swap.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -724,9 +736,9 @@ from the dict during the swap.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
@@ -757,9 +769,9 @@ from the dict during the swap.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -790,9 +802,9 @@ from the dict during the swap.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -802,7 +814,7 @@ from the dict during the swap.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$environ</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -823,9 +835,9 @@ from the dict during the swap.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -856,9 +868,9 @@ from the dict during the swap.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -868,7 +880,7 @@ from the dict during the swap.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$matchList</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -889,9 +901,9 @@ from the dict during the swap.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
@@ -902,7 +914,7 @@ keys that each route could utilize.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$maxKeys</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -923,9 +935,9 @@ keys that each route could utilize.</p>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -936,7 +948,7 @@ minimum keys that each route needs.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$minKeys</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -957,9 +969,9 @@ minimum keys that each route needs.</p>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -969,8 +981,7 @@ minimum keys that each route needs.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">null|string</span>
     <span class="phpdocumentor-signature__name">$prefix</span>
-     = <span class="phpdocumentor-signature__default-value">
-ull</span></code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -991,9 +1002,9 @@ ull</span></code>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -1003,7 +1014,7 @@ ull</span></code>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$routeNames</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -1024,9 +1035,9 @@ ull</span></code>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -1036,7 +1047,7 @@ ull</span></code>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$subDomains</span>
-     = <span class="phpdocumentor-signature__default-value">alse</span></code>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
 
     
     
@@ -1057,9 +1068,9 @@ ull</span></code>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -1069,7 +1080,7 @@ ull</span></code>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$subDomainsIgnore</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -1090,9 +1101,9 @@ ull</span></code>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -1102,7 +1113,7 @@ ull</span></code>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$urlCache</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -1123,9 +1134,9 @@ ull</span></code>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">145</span>
 
     </aside>
 
@@ -1133,42 +1144,9 @@ ull</span></code>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Routes-Utils.html"><abbr title="\Horde_Routes_Utils">Horde_Routes_Utils</abbr></a></span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Routes-Utils.html"><abbr title="\Horde\Routes\Utils">Utils</abbr></a></span>
     <span class="phpdocumentor-signature__name">$utils</span>
     </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property__createdGens">
-        $_createdGens
-        <a href="classes/Horde-Routes-Mapper.html#property__createdGens" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">164</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Have generation hashes been created for all connected routes?</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$_createdGens</span>
-     = <span class="phpdocumentor-signature__default-value">alse</span></code>
 
     
     
@@ -1189,9 +1167,9 @@ ull</span></code>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -1201,40 +1179,7 @@ ull</span></code>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$_createdRegs</span>
-     = <span class="phpdocumentor-signature__default-value">alse</span></code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property__gendict">
-        $_gendict
-        <a href="classes/Horde-Routes-Mapper.html#property__gendict" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">170</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Generation hashes created for all connected routes</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_gendict</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
 
     
     
@@ -1255,9 +1200,9 @@ ull</span></code>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">176</span>
+    <span class="phpdocumentor-element-found-in__line">181</span>
 
     </aside>
 
@@ -1288,9 +1233,9 @@ ull</span></code>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">182</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -1300,8 +1245,73 @@ ull</span></code>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$_regPrefix</span>
-     = <span class="phpdocumentor-signature__default-value">
-ull</span></code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_createdGens">
+        $createdGens
+        <a href="classes/Horde-Routes-Mapper.html#property_createdGens" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">169</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Have generation hashes been created for all connected routes?</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$createdGens</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_gendict">
+        $gendict
+        <a href="classes/Horde-Routes-Mapper.html#property_gendict" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">175</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generation hashes created for all connected routes</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$gendict</span>
+    </code>
 
     
     
@@ -1326,9 +1336,9 @@ ull</span></code>
         <a href="classes/Horde-Routes-Mapper.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">208</span>
+    <span class="phpdocumentor-element-found-in__line">213</span>
 
     </aside>
 
@@ -1336,7 +1346,7 @@ ull</span></code>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kargs</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kargs</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>Keyword arguments ($kargs):
 <code class="prettyprint">controllerScan</code> (callback)
@@ -1360,7 +1370,7 @@ When set to True, these will not be added to route connections.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$kargs</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -1386,9 +1396,9 @@ When set to True, these will not be added to route connections.</p>
         <a href="classes/Horde-Routes-Mapper.html#method_connect" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">250</span>
+    <span class="phpdocumentor-element-found-in__line">255</span>
 
     </aside>
 
@@ -1462,9 +1472,9 @@ array('controller' =&gt; 'blog', 'action' =&gt; 'view', 'section' =&gt; 'home'))
         <a href="classes/Horde-Routes-Mapper.html#method_createRegs" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">419</span>
+    <span class="phpdocumentor-element-found-in__line">424</span>
 
     </aside>
 
@@ -1507,9 +1517,9 @@ array('controller' =&gt; 'blog', 'action' =&gt; 'view', 'section' =&gt; 'home'))
         <a href="classes/Horde-Routes-Mapper.html#method_generate" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">559</span>
+    <span class="phpdocumentor-element-found-in__line">567</span>
 
     </aside>
 
@@ -1518,7 +1528,7 @@ Returns the URL text, or null if no URL could be generated.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">generate</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$first</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$second</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|string</span></code>
+                <span class="phpdocumentor-signature__name">generate</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$first</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$second</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|string</span></code>
 
         <section class="phpdocumentor-description"><p>Usage:
 $m-&gt;generate(array('controller' =&gt; 'content', 'action' =&gt; 'view', 'id' =&gt; 10));</p>
@@ -1528,18 +1538,20 @@ $m-&gt;generate(array('controller' =&gt; 'content', 'action' =&gt; 'view', 'id' 
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$first</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Optional explicit route list</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$second</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Keyword arguments (key/value pairs)</p>
+</section>
 
             </dd>
             </dl>
@@ -1565,9 +1577,9 @@ $m-&gt;generate(array('controller' =&gt; 'content', 'action' =&gt; 'view', 'id' 
         <a href="classes/Horde-Routes-Mapper.html#method_match" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">510</span>
+    <span class="phpdocumentor-element-found-in__line">516</span>
 
     </aside>
 
@@ -1575,7 +1587,7 @@ $m-&gt;generate(array('controller' =&gt; 'content', 'action' =&gt; 'view', 'id' 
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">match</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">match</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span></code>
 
         <section class="phpdocumentor-description"><p>It will return null if no valid match is found.</p>
 <p>Usage:
@@ -1598,9 +1610,11 @@ $resultdict = $m-&gt;match('/joe/sixpack');</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>Array if matched, otherwise null</p>
+</section>
+
     
 </article>
                     <article
@@ -1614,9 +1628,9 @@ $resultdict = $m-&gt;match('/joe/sixpack');</p>
         <a href="classes/Horde-Routes-Mapper.html#method_resource" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">833</span>
+    <span class="phpdocumentor-element-found-in__line">841</span>
 
     </aside>
 
@@ -1624,7 +1638,7 @@ $resultdict = $m-&gt;match('/joe/sixpack');</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">resource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$memberName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$collectionName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kargs</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">resource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$memberName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$collectionName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kargs</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"><p>The $memberName name should be the appropriate singular version of the
 resource given your locale and used with members of the collection.</p>
@@ -1785,7 +1799,7 @@ here allows us to keep parity with Rails and ActiveResource.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$kargs</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Keyword arguments (see above)</p>
 </section>
@@ -1812,9 +1826,9 @@ here allows us to keep parity with Rails and ActiveResource.</p>
         <a href="classes/Horde-Routes-Mapper.html#method_routematch" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">537</span>
+    <span class="phpdocumentor-element-found-in__line">544</span>
 
     </aside>
 
@@ -1822,7 +1836,7 @@ here allows us to keep parity with Rails and ActiveResource.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">routematch</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">routematch</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span></code>
 
         <section class="phpdocumentor-description"><p>It will return null if no valid match is found, otherwise
 a result dict (array) and a route object is returned.</p>
@@ -1846,9 +1860,11 @@ list($resultdict, $resultobj) = $m-&gt;match('/joe/sixpack');</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>Array if matched, otherwise null</p>
+</section>
+
     
 </article>
                     <article
@@ -1862,9 +1878,9 @@ list($resultdict, $resultobj) = $m-&gt;match('/joe/sixpack');</p>
         <a href="classes/Horde-Routes-Mapper.html#method_setCache" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">321</span>
+    <span class="phpdocumentor-element-found-in__line">326</span>
 
     </aside>
 
@@ -1907,9 +1923,9 @@ list($resultdict, $resultobj) = $m-&gt;match('/joe/sixpack');</p>
         <a href="classes/Horde-Routes-Mapper.html#method__arrayUnion" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1160</span>
+    <span class="phpdocumentor-element-found-in__line">1192</span>
 
     </aside>
 
@@ -1963,9 +1979,9 @@ list($resultdict, $resultobj) = $m-&gt;match('/joe/sixpack');</p>
         <a href="classes/Horde-Routes-Mapper.html#method__cmp" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1172</span>
+    <span class="phpdocumentor-element-found-in__line">1204</span>
 
     </aside>
 
@@ -1973,7 +1989,7 @@ list($resultdict, $resultobj) = $m-&gt;match('/joe/sixpack');</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_cmp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$a</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|<abbr title="\flot">flot</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$b</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">_cmp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$a</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$b</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1989,7 +2005,7 @@ list($resultdict, $resultobj) = $m-&gt;match('/joe/sixpack');</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$b</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int|<abbr title="\flot">flot</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|float</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Second item to compare</p>
@@ -2001,9 +2017,11 @@ list($resultdict, $resultobj) = $m-&gt;match('/joe/sixpack');</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">int</span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>Result of comparison</p>
+</section>
+
     
 </article>
                     <article
@@ -2017,9 +2035,9 @@ list($resultdict, $resultobj) = $m-&gt;match('/joe/sixpack');</p>
         <a href="classes/Horde-Routes-Mapper.html#method__createGens" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">331</span>
+    <span class="phpdocumentor-element-found-in__line">336</span>
 
     </aside>
 
@@ -2050,9 +2068,9 @@ list($resultdict, $resultobj) = $m-&gt;match('/joe/sixpack');</p>
         <a href="classes/Horde-Routes-Mapper.html#method__keycmp" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1113</span>
+    <span class="phpdocumentor-element-found-in__line">1145</span>
 
     </aside>
 
@@ -2061,14 +2079,14 @@ the instance variable $keysortTmp.  Used by _keysort().</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_keycmp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$a</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$b</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                <span class="phpdocumentor-signature__name">_keycmp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Routes-Route.html"><abbr title="\Horde\Routes\Route">Route</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$a</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Routes-Route.html"><abbr title="\Horde\Routes\Route">Route</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$b</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$a</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Routes-Route.html"><abbr title="\Horde\Routes\Route">Route</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>First dict (assoc. array)</p>
@@ -2077,7 +2095,7 @@ the instance variable $keysortTmp.  Used by _keysort().</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$b</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Routes-Route.html"><abbr title="\Horde\Routes\Route">Route</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Second dict</p>
@@ -2105,9 +2123,9 @@ the instance variable $keysortTmp.  Used by _keysort().</p>
         <a href="classes/Horde-Routes-Mapper.html#method__keysort" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1066</span>
+    <span class="phpdocumentor-element-found-in__line">1093</span>
 
     </aside>
 
@@ -2158,9 +2176,9 @@ comments in http://www.php.net/usort</p>
         <a href="classes/Horde-Routes-Mapper.html#method__match" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">452</span>
+    <span class="phpdocumentor-element-found-in__line">457</span>
 
     </aside>
 
@@ -2209,9 +2227,9 @@ otherwise it returns null.</p>
         <a href="classes/Horde-Routes-Mapper.html#method__requirementsFor" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1022</span>
+    <span class="phpdocumentor-element-found-in__line">1049</span>
 
     </aside>
 
@@ -2220,17 +2238,18 @@ the route options.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_requirementsFor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meth</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">_requirementsFor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$meth</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                <span class="phpdocumentor-signature__argument__name">$method</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Request method ('get', 'post', etc.) or 'any'</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2254,16 +2273,18 @@ the route options.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\resource()">resource()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Routes\resource()">resource()</abbr></span>
                                         
                                              
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>$options populated</p>
+</section>
+
     
 </article>
                     <article
@@ -2277,9 +2298,9 @@ the route options.</p>
         <a href="classes/Horde-Routes-Mapper.html#method__stripSlashes" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1189</span>
+    <span class="phpdocumentor-element-found-in__line">1221</span>
 
     </aside>
 
@@ -2324,9 +2345,9 @@ the route options.</p>
         <a href="classes/Horde-Routes-Mapper.html#method__swap" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Routes/Mapper.php"><a href="files/horde-routes-mapper.html"><abbr title="Horde/Routes/Mapper.php">Mapper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Mapper.php"><a href="files/mapper.html"><abbr title="Mapper.php">Mapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1039</span>
+    <span class="phpdocumentor-element-found-in__line">1066</span>
 
     </aside>
 
@@ -2370,7 +2391,7 @@ from the dict during the swap.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\resource()">resource()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Routes\resource()">resource()</abbr></span>
                                         
                                              
                                     </dd>
