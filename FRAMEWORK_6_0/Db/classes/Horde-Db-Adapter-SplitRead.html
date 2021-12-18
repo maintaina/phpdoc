@@ -53,6 +53,17 @@
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-db.html">Db</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Db.html">Db</a></h4>
     <ul class="phpdocumentor-list">
@@ -83,13 +94,14 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Db.html">Db</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Db-Adapter.html">Adapter</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-db.html">Db</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-db-adapter.html">Adapter</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Db_Adapter_SplitRead
+    SplitRead
 
     
             <div class="phpdocumentor-element__package">
@@ -102,18 +114,18 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr></a>                    </span>
+                            <a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">The Horde_Db_Adapter_SplitRead:: class wraps two individual adapters to
+            <p class="phpdocumentor-summary">SplitRead:: class wraps two individual adapters to
 provide support for split read/write database setups.</p>
 
 
@@ -182,7 +194,7 @@ provide support for split read/write database setups.</p>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>2008-2017 Horde LLC</p>
+                                                 <section class="phpdocumentor-description"><p>2008-2021 Horde LLC</p>
 </section>
 
                                     </dd>
@@ -215,8 +227,8 @@ provide support for split read/write database setups.</p>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr></a></dt>
-        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a></dt>
+        <dd>For compatibility reasons, we need to extend the Horde_Db_Adapter interface.</dd>
     
     
     </dl>
@@ -229,16 +241,23 @@ provide support for split read/write database setups.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                 <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Horde-Db-Adapter-SplitRead.html#property__read">$_read</a>
+    <a href="classes/Horde-Db-Adapter-SplitRead.html#property_lastQuery">$lastQuery</a>
     <span>
-                &nbsp;: <a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr></a>            </span>
+                &nbsp;: mixed            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Horde-Db-Adapter-SplitRead.html#property_read">$read</a>
+    <span>
+                &nbsp;: <a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a>            </span>
 </dt>
 <dd>The read adapter</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Horde-Db-Adapter-SplitRead.html#property__write">$_write</a>
+    <a href="classes/Horde-Db-Adapter-SplitRead.html#property_write">$write</a>
     <span>
-                &nbsp;: <a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr></a>            </span>
+                &nbsp;: <a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a>            </span>
 </dt>
 <dd>The write adapter</dd>
 
@@ -286,6 +305,20 @@ can always use downcase if needed.</dd>
 <dd>Begins the transaction (and turns off auto-committing).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Db-Adapter-SplitRead.html#method_cacheRead">cacheRead()</a>
+    <span>
+                        &nbsp;: string|false    </span>
+</dt>
+<dd>Reads values from the cache handler.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Db-Adapter-SplitRead.html#method_cacheWrite">cacheWrite()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Writes values to the cache handler.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter-SplitRead.html#method_commitDbTransaction">commitDbTransaction()</a>
     <span>
                         &nbsp;: mixed    </span>
@@ -319,6 +352,13 @@ can always use downcase if needed.</dd>
                         &nbsp;: <abbr title="\PDOStatement">PDOStatement</abbr>    </span>
 </dt>
 <dd>Executes the SQL statement in the context of this connection.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Db-Adapter-SplitRead.html#method_getLastQuery">getLastQuery()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter-SplitRead.html#method_insert">insert()</a>
@@ -483,16 +523,50 @@ for all adapters except sqlite.</dd>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__read">
-        $_read
-        <a href="classes/Horde-Db-Adapter-SplitRead.html#property__read" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_lastQuery">
+        $lastQuery
+        <a href="classes/Horde-Db-Adapter-SplitRead.html#property_lastQuery" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$lastQuery</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_read">
+        $read
+        <a href="classes/Horde-Db-Adapter-SplitRead.html#property_read" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -500,8 +574,8 @@ for all adapters except sqlite.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$_read</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$read</span>
     </code>
 
     
@@ -516,16 +590,16 @@ for all adapters except sqlite.</dd>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__write">
-        $_write
-        <a href="classes/Horde-Db-Adapter-SplitRead.html#property__write" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_write">
+        $write
+        <a href="classes/Horde-Db-Adapter-SplitRead.html#property_write" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -533,8 +607,8 @@ for all adapters except sqlite.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$_write</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$write</span>
     </code>
 
     
@@ -560,9 +634,9 @@ for all adapters except sqlite.</dd>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method___call" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -610,9 +684,9 @@ for all adapters except sqlite.</dd>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -620,21 +694,21 @@ for all adapters except sqlite.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$read</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$write</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$read</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$write</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$read</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$write</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -660,9 +734,9 @@ for all adapters except sqlite.</dd>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_adapterName" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -694,9 +768,9 @@ can always use downcase if needed.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_addLimitOffset" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">521</span>
+    <span class="phpdocumentor-element-found-in__line">535</span>
 
     </aside>
 
@@ -748,9 +822,9 @@ can always use downcase if needed.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_addLock" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">539</span>
+    <span class="phpdocumentor-element-found-in__line">555</span>
 
     </aside>
 
@@ -758,9 +832,10 @@ can always use downcase if needed.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">addLock</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$sql</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">addLock</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$sql</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>This method <em>modifies</em> the +sql+ parameter.</p>
+<p>TODO: BC Break refactor to return changed string</p>
 <h1>SELECT * FROM suppliers FOR UPDATE</h1>
 <p>add_lock! 'SELECT * FROM suppliers', :lock =&gt; true
 add_lock! 'SELECT * FROM suppliers', :lock =&gt; ' FOR UPDATE'</p>
@@ -780,7 +855,7 @@ add_lock! 'SELECT * FROM suppliers', :lock =&gt; ' FOR UPDATE'</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>TODO.</p>
 </section>
@@ -807,9 +882,9 @@ add_lock! 'SELECT * FROM suppliers', :lock =&gt; ' FOR UPDATE'</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_beginDbTransaction" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">485</span>
+    <span class="phpdocumentor-element-found-in__line">499</span>
 
     </aside>
 
@@ -835,14 +910,157 @@ add_lock! 'SELECT * FROM suppliers', :lock =&gt; ' FOR UPDATE'</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_cacheRead">
+        cacheRead()
+        <a href="classes/Horde-Db-Adapter-SplitRead.html#method_cacheRead" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">603</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Reads values from the cache handler.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">cacheRead</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|false</span></code>
+
+        <section class="phpdocumentor-description"><p>The key is automatically prefixed to avoid collisions when using
+different adapters or different configurations.</p>
+<p>Implementing this for the split adapter makes limited sense but it
+makes the relation between the Adapter interface and the Base adapter
+less of a hassle.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A cache key.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>Horde_Db 2.1.0</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string|false</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>A value.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_cacheWrite">
+        cacheWrite()
+        <a href="classes/Horde-Db-Adapter-SplitRead.html#method_cacheWrite" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">581</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Writes values to the cache handler.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">cacheWrite</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>The key is automatically prefixed to avoid collisions when using
+different adapters or different configurations.</p>
+<p>Implementing this for the split adapter makes limited sense but it
+makes the relation between the Adapter interface and the Base adapter
+less of a hassle.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A cache key.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A value.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>Horde_Db 2.1.0</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_commitDbTransaction">
         commitDbTransaction()
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_commitDbTransaction" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">495</span>
+    <span class="phpdocumentor-element-found-in__line">509</span>
 
     </aside>
 
@@ -873,9 +1091,9 @@ add_lock! 'SELECT * FROM suppliers', :lock =&gt; ' FOR UPDATE'</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_connect" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -921,9 +1139,9 @@ add_lock! 'SELECT * FROM suppliers', :lock =&gt; ' FOR UPDATE'</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_delete" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">459</span>
+    <span class="phpdocumentor-element-found-in__line">473</span>
 
     </aside>
 
@@ -977,7 +1195,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1002,9 +1220,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_disconnect" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
@@ -1035,9 +1253,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_execute" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">329</span>
+    <span class="phpdocumentor-element-found-in__line">337</span>
 
     </aside>
 
@@ -1091,7 +1309,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1109,14 +1327,47 @@ name.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getLastQuery">
+        getLastQuery()
+        <a href="classes/Horde-Db-Adapter-SplitRead.html#method_getLastQuery" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">561</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getLastQuery</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_insert">
         insert()
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_insert" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">357</span>
+    <span class="phpdocumentor-element-found-in__line">365</span>
 
     </aside>
 
@@ -1197,7 +1448,7 @@ query name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1222,9 +1473,9 @@ query name.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_insertBlob" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">387</span>
+    <span class="phpdocumentor-element-found-in__line">401</span>
 
     </aside>
 
@@ -1298,7 +1549,7 @@ manually.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1323,9 +1574,9 @@ manually.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_isActive" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
@@ -1356,9 +1607,9 @@ manually.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_prefetchPrimaryKey" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
@@ -1404,9 +1655,9 @@ is called before each insert to set the record&#039;s primary key.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_quoteString" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">186</span>
+    <span class="phpdocumentor-element-found-in__line">194</span>
 
     </aside>
 
@@ -1447,9 +1698,9 @@ is called before each insert to set the record&#039;s primary key.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_rawConnection" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">178</span>
 
     </aside>
 
@@ -1482,9 +1733,9 @@ lo_* methods.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_reconnect" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 
     </aside>
 
@@ -1515,9 +1766,9 @@ lo_* methods.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_rollbackDbTransaction" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">506</span>
+    <span class="phpdocumentor-element-found-in__line">520</span>
 
     </aside>
 
@@ -1549,9 +1800,9 @@ done if the transaction block raises an exception or returns false.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_select" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">209</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -1606,7 +1857,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1629,9 +1880,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_selectAll" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">229</span>
+    <span class="phpdocumentor-element-found-in__line">237</span>
 
     </aside>
 
@@ -1686,7 +1937,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1709,9 +1960,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_selectAssoc" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">310</span>
+    <span class="phpdocumentor-element-found-in__line">318</span>
 
     </aside>
 
@@ -1768,7 +2019,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1791,9 +2042,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_selectOne" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">249</span>
+    <span class="phpdocumentor-element-found-in__line">257</span>
 
     </aside>
 
@@ -1848,7 +2099,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1871,9 +2122,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_selectValue" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">268</span>
+    <span class="phpdocumentor-element-found-in__line">276</span>
 
     </aside>
 
@@ -1927,7 +2178,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1950,9 +2201,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_selectValues" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">288</span>
+    <span class="phpdocumentor-element-found-in__line">296</span>
 
     </aside>
 
@@ -2007,7 +2258,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -2030,9 +2281,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_supportsCountDistinct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -2064,9 +2315,9 @@ for all adapters except sqlite.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_supportsMigrations" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -2097,9 +2348,9 @@ for all adapters except sqlite.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_transactionStarted" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">476</span>
+    <span class="phpdocumentor-element-found-in__line">490</span>
 
     </aside>
 
@@ -2132,9 +2383,9 @@ for all adapters except sqlite.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_update" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">411</span>
+    <span class="phpdocumentor-element-found-in__line">425</span>
 
     </aside>
 
@@ -2188,7 +2439,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -2213,9 +2464,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter-SplitRead.html#method_updateBlob" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/SplitRead.php"><a href="files/horde-db-adapter-splitread.html"><abbr title="Horde/Db/Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/SplitRead.php"><a href="files/adapter-splitread.html"><abbr title="Adapter/SplitRead.php">SplitRead.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">435</span>
+    <span class="phpdocumentor-element-found-in__line">449</span>
 
     </aside>
 
@@ -2277,7 +2528,7 @@ must be provided as Horde_Db_Value_Binary objects.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>

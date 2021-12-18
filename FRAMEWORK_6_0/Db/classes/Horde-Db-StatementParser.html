@@ -53,6 +53,17 @@
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-db.html">Db</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Db.html">Db</a></h4>
     <ul class="phpdocumentor-list">
@@ -83,12 +94,13 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Db.html">Db</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-db.html">Db</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Db_StatementParser
+    StatementParser
 
     
             <div class="phpdocumentor-element__package">
@@ -105,9 +117,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/StatementParser.php"><a href="files/horde-db-statementparser.html"><abbr title="Horde/Db/StatementParser.php">StatementParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StatementParser.php"><a href="files/statementparser.html"><abbr title="StatementParser.php">StatementParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -152,7 +164,7 @@
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>2006-2017 Horde LLC</p>
+                                                 <section class="phpdocumentor-description"><p>2006-2021 Horde LLC</p>
 </section>
 
                                     </dd>
@@ -190,14 +202,21 @@
 
 <dl class="phpdocumentor-table-of-contents">
                 <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Db-StatementParser.html#property__count">$_count</a>
+    <a href="classes/Horde-Db-StatementParser.html#property_count">$count</a>
     <span>
                 &nbsp;: mixed            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Db-StatementParser.html#property__currentStatement">$_currentStatement</a>
+    <a href="classes/Horde-Db-StatementParser.html#property_currentStatement">$currentStatement</a>
+    <span>
+                &nbsp;: mixed            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Db-StatementParser.html#property_file">$file</a>
     <span>
                 &nbsp;: mixed            </span>
 </dt>
@@ -246,7 +265,7 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-StatementParser.html#method__getNextStatement">_getNextStatement()</a>
+    <a href="classes/Horde-Db-StatementParser.html#method_getNextStatement">getNextStatement()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
@@ -272,16 +291,16 @@ semicolons.</dd>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__count">
-        $_count
-        <a href="classes/Horde-Db-StatementParser.html#property__count" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_count">
+        $count
+        <a href="classes/Horde-Db-StatementParser.html#property_count" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/StatementParser.php"><a href="files/horde-db-statementparser.html"><abbr title="Horde/Db/StatementParser.php">StatementParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StatementParser.php"><a href="files/statementparser.html"><abbr title="StatementParser.php">StatementParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -289,7 +308,7 @@ semicolons.</dd>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$_count</span>
+    <span class="phpdocumentor-signature__name">$count</span>
      = <span class="phpdocumentor-signature__default-value">0</span></code>
 
         <section class="phpdocumentor-description"></section>
@@ -306,16 +325,16 @@ semicolons.</dd>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__currentStatement">
-        $_currentStatement
-        <a href="classes/Horde-Db-StatementParser.html#property__currentStatement" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_currentStatement">
+        $currentStatement
+        <a href="classes/Horde-Db-StatementParser.html#property_currentStatement" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/StatementParser.php"><a href="files/horde-db-statementparser.html"><abbr title="Horde/Db/StatementParser.php">StatementParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StatementParser.php"><a href="files/statementparser.html"><abbr title="StatementParser.php">StatementParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -323,7 +342,41 @@ semicolons.</dd>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$_currentStatement</span>
+    <span class="phpdocumentor-signature__name">$currentStatement</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_file">
+        $file
+        <a href="classes/Horde-Db-StatementParser.html#property_file" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="StatementParser.php"><a href="files/statementparser.html"><abbr title="StatementParser.php">StatementParser.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$file</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -351,9 +404,9 @@ semicolons.</dd>
         <a href="classes/Horde-Db-StatementParser.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/StatementParser.php"><a href="files/horde-db-statementparser.html"><abbr title="Horde/Db/StatementParser.php">StatementParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StatementParser.php"><a href="files/statementparser.html"><abbr title="StatementParser.php">StatementParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -395,9 +448,9 @@ semicolons.</dd>
         <a href="classes/Horde-Db-StatementParser.html#method_current" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/StatementParser.php"><a href="files/horde-db-statementparser.html"><abbr title="Horde/Db/StatementParser.php">StatementParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StatementParser.php"><a href="files/statementparser.html"><abbr title="StatementParser.php">StatementParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -428,9 +481,9 @@ semicolons.</dd>
         <a href="classes/Horde-Db-StatementParser.html#method_key" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/StatementParser.php"><a href="files/horde-db-statementparser.html"><abbr title="Horde/Db/StatementParser.php">StatementParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StatementParser.php"><a href="files/statementparser.html"><abbr title="StatementParser.php">StatementParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -461,9 +514,9 @@ semicolons.</dd>
         <a href="classes/Horde-Db-StatementParser.html#method_next" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/StatementParser.php"><a href="files/horde-db-statementparser.html"><abbr title="Horde/Db/StatementParser.php">StatementParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StatementParser.php"><a href="files/statementparser.html"><abbr title="StatementParser.php">StatementParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -494,9 +547,9 @@ semicolons.</dd>
         <a href="classes/Horde-Db-StatementParser.html#method_rewind" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/StatementParser.php"><a href="files/horde-db-statementparser.html"><abbr title="Horde/Db/StatementParser.php">StatementParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StatementParser.php"><a href="files/statementparser.html"><abbr title="StatementParser.php">StatementParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -527,9 +580,9 @@ semicolons.</dd>
         <a href="classes/Horde-Db-StatementParser.html#method_valid" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/StatementParser.php"><a href="files/horde-db-statementparser.html"><abbr title="Horde/Db/StatementParser.php">StatementParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StatementParser.php"><a href="files/statementparser.html"><abbr title="StatementParser.php">StatementParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -555,14 +608,14 @@ semicolons.</dd>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__getNextStatement">
-        _getNextStatement()
-        <a href="classes/Horde-Db-StatementParser.html#method__getNextStatement" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getNextStatement">
+        getNextStatement()
+        <a href="classes/Horde-Db-StatementParser.html#method_getNextStatement" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/StatementParser.php"><a href="files/horde-db-statementparser.html"><abbr title="Horde/Db/StatementParser.php">StatementParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StatementParser.php"><a href="files/statementparser.html"><abbr title="StatementParser.php">StatementParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -571,7 +624,7 @@ semicolons.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_getNextStatement</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">getNextStatement</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
     

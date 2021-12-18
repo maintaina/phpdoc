@@ -53,6 +53,17 @@
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-db.html">Db</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Db.html">Db</a></h4>
     <ul class="phpdocumentor-list">
@@ -83,13 +94,16 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Db.html">Db</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Db-Adapter.html">Adapter</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-db.html">Db</a></li>
     </ul>
 
     <article class="phpdocumentor-element -interface">
         <h2 class="phpdocumentor-content__title">
-    Horde_Db_Adapter
+    Adapter
+            <span class="phpdocumentor-element__extends">
+            extends
+                            <a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr></a>                    </span>
                 <div class="phpdocumentor-element__package">
             in
             <ul class="phpdocumentor-breadcrumbs">
@@ -100,13 +114,17 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">For compatibility reasons, we need to extend the Horde_Db_Adapter interface.</p>
+
+    <section class="phpdocumentor-description"><p>Otherwise, migrations based on Horde_Db_Migration_Base and migrations
+based on Horde\Db\Migration\Base could not coexist.</p>
+</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -164,7 +182,7 @@
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>2008-2017 Horde LLC</p>
+                                                 <section class="phpdocumentor-description"><p>2008-2021 Horde LLC</p>
 </section>
 
                                     </dd>
@@ -229,6 +247,20 @@ can always use downcase if needed.</dd>
 <dd>Begins the transaction (and turns off auto-committing).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Db-Adapter.html#method_cacheRead">cacheRead()</a>
+    <span>
+                        &nbsp;: string|false    </span>
+</dt>
+<dd>Reads values from the cache handler.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Db-Adapter.html#method_cacheWrite">cacheWrite()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Writes values to the cache handler.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter.html#method_commitDbTransaction">commitDbTransaction()</a>
     <span>
                         &nbsp;: mixed    </span>
@@ -262,6 +294,13 @@ can always use downcase if needed.</dd>
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Executes the SQL statement in the context of this connection.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Db-Adapter.html#method_getLastQuery">getLastQuery()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter.html#method_insert">insert()</a>
@@ -327,7 +366,7 @@ done if the transaction block raises an exception or returns false.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter.html#method_select">select()</a>
     <span>
-                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-Result.html"><abbr title="\Horde_Db_Adapter_Base_Result">Horde_Db_Adapter_Base_Result</abbr></a>    </span>
+                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-Result.html"><abbr title="\Horde\Db\Adapter\Base\Result">Result</abbr></a>    </span>
 </dt>
 <dd>Returns an array of records with the column names as keys, and
 column values as values.</dd>
@@ -430,9 +469,9 @@ abstract adapter always returns +false+.</dd>
         <a href="classes/Horde-Db-Adapter.html#method_adapterName" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -464,9 +503,9 @@ can always use downcase if needed.</p>
         <a href="classes/Horde-Db-Adapter.html#method_addLimitOffset" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">340</span>
+    <span class="phpdocumentor-element-found-in__line">353</span>
 
     </aside>
 
@@ -518,9 +557,9 @@ can always use downcase if needed.</p>
         <a href="classes/Horde-Db-Adapter.html#method_addLock" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">353</span>
+    <span class="phpdocumentor-element-found-in__line">366</span>
 
     </aside>
 
@@ -528,7 +567,7 @@ can always use downcase if needed.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">addLock</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$sql</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">addLock</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$sql</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>This method <em>modifies</em> the +sql+ parameter.</p>
 <h1>SELECT * FROM suppliers FOR UPDATE</h1>
@@ -550,7 +589,7 @@ add_lock! 'SELECT * FROM suppliers', :lock =&gt; ' FOR UPDATE'</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>TODO.</p>
 </section>
@@ -577,9 +616,9 @@ add_lock! 'SELECT * FROM suppliers', :lock =&gt; ' FOR UPDATE'</p>
         <a href="classes/Horde-Db-Adapter.html#method_beginDbTransaction" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">319</span>
+    <span class="phpdocumentor-element-found-in__line">332</span>
 
     </aside>
 
@@ -605,14 +644,151 @@ add_lock! 'SELECT * FROM suppliers', :lock =&gt; ' FOR UPDATE'</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_cacheRead">
+        cacheRead()
+        <a href="classes/Horde-Db-Adapter.html#method_cacheRead" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">395</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Reads values from the cache handler.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">cacheRead</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|false</span></code>
+
+        <section class="phpdocumentor-description"><p>The key is automatically prefixed to avoid collisions when using
+different adapters or different configurations.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A cache key.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>Horde_Db 2.1.0</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string|false</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>A value.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_cacheWrite">
+        cacheWrite()
+        <a href="classes/Horde-Db-Adapter.html#method_cacheWrite" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">381</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Writes values to the cache handler.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">cacheWrite</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>The key is automatically prefixed to avoid collisions when using
+different adapters or different configurations.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A cache key.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A value.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>Horde_Db 2.1.0</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_commitDbTransaction">
         commitDbTransaction()
         <a href="classes/Horde-Db-Adapter.html#method_commitDbTransaction" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">324</span>
+    <span class="phpdocumentor-element-found-in__line">337</span>
 
     </aside>
 
@@ -643,9 +819,9 @@ add_lock! 'SELECT * FROM suppliers', :lock =&gt; ' FOR UPDATE'</p>
         <a href="classes/Horde-Db-Adapter.html#method_connect" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -676,9 +852,9 @@ add_lock! 'SELECT * FROM suppliers', :lock =&gt; ' FOR UPDATE'</p>
         <a href="classes/Horde-Db-Adapter.html#method_delete" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">307</span>
+    <span class="phpdocumentor-element-found-in__line">320</span>
 
     </aside>
 
@@ -732,7 +908,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -757,9 +933,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter.html#method_disconnect" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -873,14 +1049,47 @@ name.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getLastQuery">
+        getLastQuery()
+        <a href="classes/Horde-Db-Adapter.html#method_getLastQuery" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">368</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getLastQuery</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_insert">
         insert()
         <a href="classes/Horde-Db-Adapter.html#method_insert" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">245</span>
+    <span class="phpdocumentor-element-found-in__line">252</span>
 
     </aside>
 
@@ -963,7 +1172,7 @@ manually.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -988,9 +1197,9 @@ manually.</p>
         <a href="classes/Horde-Db-Adapter.html#method_insertBlob" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">265</span>
+    <span class="phpdocumentor-element-found-in__line">278</span>
 
     </aside>
 
@@ -1064,7 +1273,7 @@ manually.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1089,9 +1298,9 @@ manually.</p>
         <a href="classes/Horde-Db-Adapter.html#method_isActive" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -1122,9 +1331,9 @@ manually.</p>
         <a href="classes/Horde-Db-Adapter.html#method_prefetchPrimaryKey" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -1170,9 +1379,9 @@ is called before each insert to set the record&#039;s primary key.</p>
         <a href="classes/Horde-Db-Adapter.html#method_quoteString" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -1213,9 +1422,9 @@ is called before each insert to set the record&#039;s primary key.</p>
         <a href="classes/Horde-Db-Adapter.html#method_rawConnection" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 
     </aside>
 
@@ -1248,9 +1457,9 @@ lo_* methods.</p>
         <a href="classes/Horde-Db-Adapter.html#method_reconnect" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -1281,9 +1490,9 @@ lo_* methods.</p>
         <a href="classes/Horde-Db-Adapter.html#method_rollbackDbTransaction" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">330</span>
+    <span class="phpdocumentor-element-found-in__line">343</span>
 
     </aside>
 
@@ -1315,9 +1524,9 @@ done if the transaction block raises an exception or returns false.</p>
         <a href="classes/Horde-Db-Adapter.html#method_select" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 
@@ -1326,7 +1535,7 @@ column values as values.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">select</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sql</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arg1</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arg2</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Result.html"><abbr title="\Horde_Db_Adapter_Base_Result">Horde_Db_Adapter_Base_Result</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">select</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sql</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arg1</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arg2</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Result.html"><abbr title="\Horde\Db\Adapter\Base\Result">Result</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1372,14 +1581,14 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Result.html"><abbr title="\Horde_Db_Adapter_Base_Result">Horde_Db_Adapter_Base_Result</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Result.html"><abbr title="\Horde\Db\Adapter\Base\Result">Result</abbr></a></span>
             &mdash;
         
     
@@ -1395,9 +1604,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter.html#method_selectAll" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 
     </aside>
 
@@ -1452,7 +1661,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1475,9 +1684,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter.html#method_selectAssoc" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">210</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -1534,7 +1743,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1557,9 +1766,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter.html#method_selectOne" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
@@ -1614,7 +1823,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1637,9 +1846,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter.html#method_selectValue" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">178</span>
+    <span class="phpdocumentor-element-found-in__line">185</span>
 
     </aside>
 
@@ -1693,7 +1902,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1716,9 +1925,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter.html#method_selectValues" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">193</span>
+    <span class="phpdocumentor-element-found-in__line">200</span>
 
     </aside>
 
@@ -1773,7 +1982,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1796,9 +2005,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter.html#method_supportsCountDistinct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -1830,9 +2039,9 @@ for all adapters except sqlite.</p>
         <a href="classes/Horde-Db-Adapter.html#method_supportsMigrations" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -1864,9 +2073,9 @@ abstract adapter always returns +false+.</p>
         <a href="classes/Horde-Db-Adapter.html#method_transactionStarted" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">314</span>
+    <span class="phpdocumentor-element-found-in__line">327</span>
 
     </aside>
 
@@ -1899,9 +2108,9 @@ abstract adapter always returns +false+.</p>
         <a href="classes/Horde-Db-Adapter.html#method_update" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">279</span>
+    <span class="phpdocumentor-element-found-in__line">292</span>
 
     </aside>
 
@@ -1955,7 +2164,7 @@ name.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1980,9 +2189,9 @@ name.</p>
         <a href="classes/Horde-Db-Adapter.html#method_updateBlob" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter.php"><a href="files/horde-db-adapter.html"><abbr title="Horde/Db/Adapter.php">Adapter.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter.php"><a href="files/adapter.html"><abbr title="Adapter.php">Adapter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">293</span>
+    <span class="phpdocumentor-element-found-in__line">306</span>
 
     </aside>
 
@@ -2044,7 +2253,7 @@ must be provided as Horde_Db_Value_Binary objects.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>

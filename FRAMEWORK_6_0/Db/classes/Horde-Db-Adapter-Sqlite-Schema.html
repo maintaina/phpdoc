@@ -53,6 +53,17 @@
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-db.html">Db</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Db.html">Db</a></h4>
     <ul class="phpdocumentor-list">
@@ -83,16 +94,18 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Db.html">Db</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Db-Adapter.html">Adapter</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-db.html">Db</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-db-adapter.html">Adapter</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-db-adapter-sqlite.html">Sqlite</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Db_Adapter_Sqlite_Schema
+    Schema
 
         <span class="phpdocumentor-element__extends">
-        extends <a href="classes/Horde-Db-Adapter-Base-Schema.html"><abbr title="\Horde_Db_Adapter_Base_Schema">Horde_Db_Adapter_Base_Schema</abbr></a>
+        extends <a href="classes/Horde-Db-Adapter-Base-Schema.html"><abbr title="\Horde\Db\Adapter\Base\Schema">Schema</abbr></a>
     </span>
     
             <div class="phpdocumentor-element__package">
@@ -107,9 +120,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -182,7 +195,7 @@ dialects and quoting.</p>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>2008-2017 Horde LLC</p>
+                                                 <section class="phpdocumentor-description"><p>2008-2021 Horde LLC</p>
 </section>
 
                                     </dd>
@@ -218,14 +231,14 @@ dialects and quoting.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                 <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Db-Adapter-Base-Schema.html#property__adapter">$_adapter</a>
+    <a href="classes/Horde-Db-Adapter-Base-Schema.html#property_adapter">$adapter</a>
     <span>
-                &nbsp;: <a href="classes/Horde-Db-Adapter-Base.html"><abbr title="\Horde_Db_Adapter_Base">Horde_Db_Adapter_Base</abbr></a>            </span>
+                &nbsp;: <a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a>            </span>
 </dt>
-<dd>A Horde_Db_Adapter instance.</dd>
+<dd>A Horde\Db\Adapter instance.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Db-Adapter-Base-Schema.html#property__adapterMethods">$_adapterMethods</a>
+    <a href="classes/Horde-Db-Adapter-Base-Schema.html#property_adapterMethods">$adapterMethods</a>
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
@@ -248,9 +261,9 @@ dialects and quoting.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter-Base-Schema.html#method___get">__get()</a>
     <span>
-                        &nbsp;: object    </span>
+                        &nbsp;: object|null    </span>
 </dt>
-<dd>Delegates access to $_cache and $_logger to the adapter object.</dd>
+<dd>Delegates access to $cache and $logger to the adapter object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_addColumn">addColumn()</a>
@@ -295,6 +308,13 @@ dialects and quoting.</p>
 <dd>Returns an expression using the specified operator.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_cacheWrite">cacheWrite()</a>
+    <span>
+                        &nbsp;: <a href=""><abbr title=""></abbr></a>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_changeColumn">changeColumn()</a>
     <span>
                         &nbsp;: mixed    </span>
@@ -311,7 +331,7 @@ dialects and quoting.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_column">column()</a>
     <span>
-                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-Column.html"><abbr title="\Horde_Db_Adapter_Base_Column">Horde_Db_Adapter_Base_Column</abbr></a>    </span>
+                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-Column.html"><abbr title="\Horde\Db\Adapter\Base\Column">Column</abbr></a>    </span>
 </dt>
 <dd>Returns a table column.</dd>
 
@@ -332,7 +352,7 @@ dialects and quoting.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_createTable">createTable()</a>
     <span>
-                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde_Db_Adapter_Base_TableDefinition">Horde_Db_Adapter_Base_TableDefinition</abbr></a>    </span>
+                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde\Db\Adapter\Base\TableDefinition">TableDefinition</abbr></a>    </span>
 </dt>
 <dd>Creates a new table.</dd>
 
@@ -395,35 +415,35 @@ dialects and quoting.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_makeColumn">makeColumn()</a>
     <span>
-                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-Column.html"><abbr title="\Horde_Db_Adapter_Base_Column">Horde_Db_Adapter_Base_Column</abbr></a>    </span>
+                        &nbsp;: <a href="classes/Horde-Db-Adapter-Sqlite-Column.html"><abbr title="\Horde\Db\Adapter\Sqlite\Column">Column</abbr></a>    </span>
 </dt>
 <dd>Factory for Column objects.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_makeColumnDefinition">makeColumnDefinition()</a>
     <span>
-                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-ColumnDefinition.html"><abbr title="\Horde_Db_Adapter_Base_ColumnDefinition">Horde_Db_Adapter_Base_ColumnDefinition</abbr></a>    </span>
+                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-ColumnDefinition.html"><abbr title="\Horde\Db\Adapter\Base\ColumnDefinition">ColumnDefinition</abbr></a>    </span>
 </dt>
 <dd>Factory for ColumnDefinition objects.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_makeIndex">makeIndex()</a>
     <span>
-                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-Index.html"><abbr title="\Horde_Db_Adapter_Base_Index">Horde_Db_Adapter_Base_Index</abbr></a>    </span>
+                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-Index.html"><abbr title="\Horde\Db\Adapter\Base\Index">Index</abbr></a>    </span>
 </dt>
 <dd>Factory for Index objects.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_makeTable">makeTable()</a>
     <span>
-                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-Table.html"><abbr title="\Horde_Db_Adapter_Base_Table">Horde_Db_Adapter_Base_Table</abbr></a>    </span>
+                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-Table.html"><abbr title="\Horde\Db\Adapter\Base\Table">Table</abbr></a>    </span>
 </dt>
 <dd>Factory for Table objects.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_makeTableDefinition">makeTableDefinition()</a>
     <span>
-                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde_Db_Adapter_Base_TableDefinition">Horde_Db_Adapter_Base_TableDefinition</abbr></a>    </span>
+                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde\Db\Adapter\Base\TableDefinition">TableDefinition</abbr></a>    </span>
 </dt>
 <dd>Factory for TableDefinition objects.</dd>
 
@@ -445,7 +465,7 @@ database types.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_primaryKey">primaryKey()</a>
     <span>
-                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-Index.html"><abbr title="\Horde_Db_Adapter_Base_Index">Horde_Db_Adapter_Base_Index</abbr></a>    </span>
+                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-Index.html"><abbr title="\Horde\Db\Adapter\Base\Index">Index</abbr></a>    </span>
 </dt>
 <dd>Returns a table&#039;s primary key.</dd>
 
@@ -553,14 +573,14 @@ characters.</dd>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
-<dd>Setter for a Horde_Db_Adapter instance.</dd>
+<dd>Setter for a Horde\Db\Adapter instance.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_table">table()</a>
     <span>
-                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-Table.html"><abbr title="\Horde_Db_Adapter_Base_Table">Horde_Db_Adapter_Base_Table</abbr></a>    </span>
+                        &nbsp;: <a href="classes/Horde-Db-Adapter-Base-Table.html"><abbr title="\Horde\Db\Adapter\Base\Table">Table</abbr></a>    </span>
 </dt>
-<dd>Returns a Horde_Db_Adapter_Base_Table object for a table.</dd>
+<dd>Returns a Horde\Db\Adapter\Base\Table object for a table.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_tableAliasFor">tableAliasFor()</a>
@@ -591,49 +611,49 @@ characters.</dd>
 <dd>Generates the SQL definition for a column type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method__alterTable">_alterTable()</a>
+    <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_alterTable">alterTable()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Alters a table.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Adapter-Base-Schema.html#method__clearTableCache">_clearTableCache()</a>
+    <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_clearTableCache">clearTableCache()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Clears the cache for tables when altering them.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method__copyTable">_copyTable()</a>
+    <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_copyTable">copyTable()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Copies a table.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method__copyTableContents">_copyTableContents()</a>
+    <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_copyTableContents">copyTableContents()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Copies the content of one table to another.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method__copyTableIndexes">_copyTableIndexes()</a>
+    <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_copyTableIndexes">copyTableIndexes()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Copies indexes from one table to another.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method__defaultPrimaryKeyType">_defaultPrimaryKeyType()</a>
+    <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_defaultPrimaryKeyType">defaultPrimaryKeyType()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
 <dd>Returns a column type definition to be use for primary keys.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Adapter-Base-Schema.html#method__escapePrepare">_escapePrepare()</a>
+    <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_escapePrepare">escapePrepare()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
@@ -641,7 +661,7 @@ characters.</dd>
 prepare/execute methods.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method__moveTable">_moveTable()</a>
+    <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_moveTable">moveTable()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
@@ -666,27 +686,26 @@ prepare/execute methods.</dd>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__adapter">
-        $_adapter
-        <a href="classes/Horde-Db-Adapter-Base-Schema.html#property__adapter" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_adapter">
+        $adapter
+        <a href="classes/Horde-Db-Adapter-Base-Schema.html#property_adapter" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">A Horde_Db_Adapter instance.</p>
+        <p class="phpdocumentor-summary">A Horde\Db\Adapter instance.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Db-Adapter-Base.html"><abbr title="\Horde_Db_Adapter_Base">Horde_Db_Adapter_Base</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$_adapter</span>
-     = <span class="phpdocumentor-signature__default-value">
-ull</span></code>
+        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$adapter</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -700,16 +719,16 @@ ull</span></code>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__adapterMethods">
-        $_adapterMethods
-        <a href="classes/Horde-Db-Adapter-Base-Schema.html#property__adapterMethods" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_adapterMethods">
+        $adapterMethods
+        <a href="classes/Horde-Db-Adapter-Base-Schema.html#property_adapterMethods" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -718,8 +737,8 @@ ull</span></code>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_adapterMethods</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+    <span class="phpdocumentor-signature__name">$adapterMethods</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
         <section class="phpdocumentor-description"><p>Method names are in the keys.</p>
 </section>
@@ -746,9 +765,9 @@ ull</span></code>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method___call" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">168</span>
+    <span class="phpdocumentor-element-found-in__line">201</span>
 
     </aside>
 
@@ -818,9 +837,9 @@ ull</span></code>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -828,14 +847,14 @@ ull</span></code>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter-Base.html"><abbr title="\Horde_Db_Adapter_Base">Horde_Db_Adapter_Base</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$adapter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$adapter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$adapter</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter-Base.html"><abbr title="\Horde_Db_Adapter_Base">Horde_Db_Adapter_Base</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>A Horde_Db_Adapter instance.</p>
@@ -863,17 +882,17 @@ ull</span></code>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method___get" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">185</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Delegates access to $_cache and $_logger to the adapter object.</p>
+        <p class="phpdocumentor-summary">Delegates access to $cache and $logger to the adapter object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object</span></code>
+                <span class="phpdocumentor-signature__name">__get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|null</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -883,7 +902,7 @@ ull</span></code>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Property name. Only '_cache' and '_logger' are
+                    <section class="phpdocumentor-description"><p>Property name. Only 'cache' and 'logger' are
 supported.</p>
 </section>
 
@@ -893,7 +912,7 @@ supported.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object</span>
+    <span class="phpdocumentor-signature__response_type">object|null</span>
             &mdash;
             <section class="phpdocumentor-description"><p>The request property object.</p>
 </section>
@@ -911,9 +930,9 @@ supported.</p>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_addColumn" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">244</span>
 
     </aside>
 
@@ -921,7 +940,7 @@ supported.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">addColumn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">addColumn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -956,7 +975,7 @@ supported.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Column options. See
 Horde_Db_Adapter_Base_TableDefinition#column()
@@ -985,9 +1004,9 @@ for details.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_addColumnOptions" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">949</span>
+    <span class="phpdocumentor-element-found-in__line">1005</span>
 
     </aside>
 
@@ -1049,9 +1068,9 @@ an autoincrement column. Driver depedendent.</li>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_addIndex" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">761</span>
+    <span class="phpdocumentor-element-found-in__line">809</span>
 
     </aside>
 
@@ -1059,7 +1078,7 @@ an autoincrement column. Driver depedendent.</li>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">addIndex</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">addIndex</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"><p>The index will be named after the table and the first column names,
 unless you pass 'name' as an option.</p>
@@ -1123,7 +1142,7 @@ CREATE UNIQUE INDEX by_branch_party ON accounts(branch_id, party_id)
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Index options:</p>
 <ul>
@@ -1157,9 +1176,9 @@ index?</li>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_addOrderByForAssocLimiting" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">993</span>
+    <span class="phpdocumentor-element-found-in__line">1049</span>
 
     </aside>
 
@@ -1216,9 +1235,9 @@ index?</li>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_addPrimaryKey" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">388</span>
+    <span class="phpdocumentor-element-found-in__line">394</span>
 
     </aside>
 
@@ -1260,7 +1279,7 @@ index?</li>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1283,9 +1302,9 @@ index?</li>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_buildClause" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1052</span>
+    <span class="phpdocumentor-element-found-in__line">1110</span>
 
     </aside>
 
@@ -1293,7 +1312,7 @@ index?</li>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">buildClause</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lhs</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$op</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rhs</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bind</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">buildClause</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lhs</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$op</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rhs</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bind</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|array&lt;string|int, mixed&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1338,7 +1357,7 @@ of values suitable for binding as an array.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$params</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Any additional parameters for the operator.</p>
 </section>
@@ -1363,14 +1382,65 @@ query and a list of values if $bind is true.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_cacheWrite">
+        cacheWrite()
+        <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_cacheWrite" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">cacheWrite</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href=""><abbr title=""></abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_changeColumn">
         changeColumn()
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_changeColumn" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">289</span>
+    <span class="phpdocumentor-element-found-in__line">295</span>
 
     </aside>
 
@@ -1378,7 +1448,7 @@ query and a list of values if $bind is true.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">changeColumn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">changeColumn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1413,7 +1483,7 @@ query and a list of values if $bind is true.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Column options. See
 Horde_Db_Adapter_Base_TableDefinition#column()
@@ -1442,9 +1512,9 @@ for details.</p>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_changeColumnDefault" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">351</span>
+    <span class="phpdocumentor-element-found-in__line">357</span>
 
     </aside>
 
@@ -1508,9 +1578,9 @@ need to execute the apppropriate SQL statement yourself.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_column" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">436</span>
+    <span class="phpdocumentor-element-found-in__line">470</span>
 
     </aside>
 
@@ -1518,7 +1588,7 @@ need to execute the apppropriate SQL statement yourself.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">column</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Column.html"><abbr title="\Horde_Db_Adapter_Base_Column">Horde_Db_Adapter_Base_Column</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">column</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Column.html"><abbr title="\Horde\Db\Adapter\Base\Column">Column</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1562,7 +1632,7 @@ need to execute the apppropriate SQL statement yourself.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                                  <section class="phpdocumentor-description"><p>if column not found.</p>
 </section>
@@ -1571,7 +1641,7 @@ need to execute the apppropriate SQL statement yourself.</p>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Column.html"><abbr title="\Horde_Db_Adapter_Base_Column">Horde_Db_Adapter_Base_Column</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Column.html"><abbr title="\Horde\Db\Adapter\Base\Column">Column</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"><p>A column object.</p>
 </section>
@@ -1589,9 +1659,9 @@ need to execute the apppropriate SQL statement yourself.</p>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_columns" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">194</span>
+    <span class="phpdocumentor-element-found-in__line">200</span>
 
     </aside>
 
@@ -1645,9 +1715,9 @@ need to execute the apppropriate SQL statement yourself.</p>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_createDatabase" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">439</span>
+    <span class="phpdocumentor-element-found-in__line">445</span>
 
     </aside>
 
@@ -1655,7 +1725,7 @@ need to execute the apppropriate SQL statement yourself.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">createDatabase</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">createDatabase</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1672,7 +1742,7 @@ need to execute the apppropriate SQL statement yourself.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Database options.</p>
 </section>
@@ -1699,9 +1769,9 @@ need to execute the apppropriate SQL statement yourself.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_createTable" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">513</span>
+    <span class="phpdocumentor-element-found-in__line">547</span>
 
     </aside>
 
@@ -1709,7 +1779,7 @@ need to execute the apppropriate SQL statement yourself.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">createTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde_Db_Adapter_Base_TableDefinition">Horde_Db_Adapter_Base_TableDefinition</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">createTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde\Db\Adapter\Base\TableDefinition">TableDefinition</abbr></a></span></code>
 
         <section class="phpdocumentor-description"><p>The $options hash can include the following keys:</p>
 <ul>
@@ -1781,7 +1851,7 @@ how to create columns.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>A list of table options, see the method
 description.</p>
@@ -1793,7 +1863,7 @@ description.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde_Db_Adapter_Base_TableDefinition">Horde_Db_Adapter_Base_TableDefinition</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde\Db\Adapter\Base\TableDefinition">TableDefinition</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"><p>The definition of the
 created table.</p>
@@ -1812,9 +1882,9 @@ created table.</p>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_currentDatabase" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">465</span>
+    <span class="phpdocumentor-element-found-in__line">471</span>
 
     </aside>
 
@@ -1847,9 +1917,9 @@ created table.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_distinct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">979</span>
+    <span class="phpdocumentor-element-found-in__line">1035</span>
 
     </aside>
 
@@ -1907,9 +1977,9 @@ $connection->distinct('posts.id', 'posts.created_at DESC')
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_dropDatabase" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">449</span>
+    <span class="phpdocumentor-element-found-in__line">455</span>
 
     </aside>
 
@@ -1952,9 +2022,9 @@ $connection->distinct('posts.id', 'posts.created_at DESC')
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_dropTable" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">590</span>
+    <span class="phpdocumentor-element-found-in__line">626</span>
 
     </aside>
 
@@ -1997,9 +2067,9 @@ $connection->distinct('posts.id', 'posts.created_at DESC')
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_endTable" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">552</span>
+    <span class="phpdocumentor-element-found-in__line">586</span>
 
     </aside>
 
@@ -2007,14 +2077,14 @@ $connection->distinct('posts.id', 'posts.created_at DESC')
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">endTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde_Db_Adapter_Base_TableDefinition">Horde_Db_Adapter_Base_TableDefinition</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">endTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde\Db\Adapter\Base\TableDefinition">TableDefinition</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde_Db_Adapter_Base_TableDefinition">Horde_Db_Adapter_Base_TableDefinition</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde\Db\Adapter\Base\TableDefinition">TableDefinition</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>A table name or object.</p>
@@ -2024,7 +2094,7 @@ $connection->distinct('posts.id', 'posts.created_at DESC')
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>A list of options. See createTable().</p>
 </section>
@@ -2051,9 +2121,9 @@ $connection->distinct('posts.id', 'posts.created_at DESC')
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_indexes" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -2107,9 +2177,9 @@ $connection->distinct('posts.id', 'posts.created_at DESC')
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_indexName" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">836</span>
+    <span class="phpdocumentor-element-found-in__line">888</span>
 
     </aside>
 
@@ -2117,7 +2187,7 @@ $connection->distinct('posts.id', 'posts.created_at DESC')
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">indexName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">indexName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2134,7 +2204,7 @@ $connection->distinct('posts.id', 'posts.created_at DESC')
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Either a column name or index options:</p>
 <ul>
@@ -2166,9 +2236,9 @@ back to if no column names specified.</li>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_interval" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1009</span>
+    <span class="phpdocumentor-element-found-in__line">1065</span>
 
     </aside>
 
@@ -2238,9 +2308,9 @@ as a backend so you should avoid using it. Use &quot;modifyDate()&quot; instead.
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_makeColumn" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -2248,7 +2318,7 @@ as a backend so you should avoid using it. Use &quot;modifyDate()&quot; instead.
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">makeColumn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sqlType</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$null</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Column.html"><abbr title="\Horde_Db_Adapter_Base_Column">Horde_Db_Adapter_Base_Column</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">makeColumn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sqlType</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$null</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Sqlite-Column.html"><abbr title="\Horde\Db\Adapter\Sqlite\Column">Column</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2299,7 +2369,7 @@ or &quot;unsigned =&gt; true&quot; in &quot;int(10) UNSIGNED&quot;.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Column.html"><abbr title="\Horde_Db_Adapter_Base_Column">Horde_Db_Adapter_Base_Column</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Sqlite-Column.html"><abbr title="\Horde\Db\Adapter\Sqlite\Column">Column</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"><p>A column object.</p>
 </section>
@@ -2317,9 +2387,9 @@ or &quot;unsigned =&gt; true&quot; in &quot;int(10) UNSIGNED&quot;.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_makeColumnDefinition" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
@@ -2327,7 +2397,7 @@ or &quot;unsigned =&gt; true&quot; in &quot;int(10) UNSIGNED&quot;.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">makeColumnDefinition</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$base</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$precision</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scale</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unsigned</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$null</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$autoincrement</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-ColumnDefinition.html"><abbr title="\Horde_Db_Adapter_Base_ColumnDefinition">Horde_Db_Adapter_Base_ColumnDefinition</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">makeColumnDefinition</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$base</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$precision</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scale</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unsigned</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$null</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$autoincrement</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-ColumnDefinition.html"><abbr title="\Horde\Db\Adapter\Base\ColumnDefinition">ColumnDefinition</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2417,7 +2487,7 @@ or &quot;unsigned =&gt; true&quot; in &quot;int(10) UNSIGNED&quot;.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-ColumnDefinition.html"><abbr title="\Horde_Db_Adapter_Base_ColumnDefinition">Horde_Db_Adapter_Base_ColumnDefinition</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-ColumnDefinition.html"><abbr title="\Horde\Db\Adapter\Base\ColumnDefinition">ColumnDefinition</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"><p>A column definition
 object.</p>
@@ -2436,9 +2506,9 @@ object.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_makeIndex" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
@@ -2446,7 +2516,7 @@ object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">makeIndex</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$primary</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unique</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Index.html"><abbr title="\Horde_Db_Adapter_Base_Index">Horde_Db_Adapter_Base_Index</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">makeIndex</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$primary</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unique</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Index.html"><abbr title="\Horde\Db\Adapter\Base\Index">Index</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2501,7 +2571,7 @@ object.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Index.html"><abbr title="\Horde_Db_Adapter_Base_Index">Horde_Db_Adapter_Base_Index</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Index.html"><abbr title="\Horde\Db\Adapter\Base\Index">Index</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"><p>An index object.</p>
 </section>
@@ -2519,9 +2589,9 @@ object.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_makeTable" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
@@ -2529,7 +2599,7 @@ object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">makeTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$primaryKey</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$indexes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Table.html"><abbr title="\Horde_Db_Adapter_Base_Table">Horde_Db_Adapter_Base_Table</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">makeTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$primaryKey</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$indexes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Table.html"><abbr title="\Horde\Db\Adapter\Base\Table">Table</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2571,7 +2641,7 @@ object.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Table.html"><abbr title="\Horde_Db_Adapter_Base_Table">Horde_Db_Adapter_Base_Table</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Table.html"><abbr title="\Horde\Db\Adapter\Base\Table">Table</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"><p>A table object.</p>
 </section>
@@ -2589,9 +2659,9 @@ object.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_makeTableDefinition" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
@@ -2599,7 +2669,7 @@ object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">makeTableDefinition</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$base</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde_Db_Adapter_Base_TableDefinition">Horde_Db_Adapter_Base_TableDefinition</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">makeTableDefinition</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$base</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde\Db\Adapter\Base\TableDefinition">TableDefinition</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2623,7 +2693,7 @@ object.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -2633,7 +2703,7 @@ object.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde_Db_Adapter_Base_TableDefinition">Horde_Db_Adapter_Base_TableDefinition</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-TableDefinition.html"><abbr title="\Horde\Db\Adapter\Base\TableDefinition">TableDefinition</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"><p>A table definition object.</p>
 </section>
@@ -2651,9 +2721,9 @@ object.</p>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_modifyDate" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">483</span>
+    <span class="phpdocumentor-element-found-in__line">491</span>
 
     </aside>
 
@@ -2728,9 +2798,9 @@ MONTH, YEAR).</p>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_nativeDatabaseTypes" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -2756,7 +2826,7 @@ data types.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\TableDefinition::column()">TableDefinition::column()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Db\Adapter\Sqlite\TableDefinition::column()">TableDefinition::column()</abbr></span>
                                         
                                              
                                     </dd>
@@ -2781,9 +2851,9 @@ data types.</p>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_primaryKey" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -2791,7 +2861,7 @@ data types.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">primaryKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Index.html"><abbr title="\Horde_Db_Adapter_Base_Index">Horde_Db_Adapter_Base_Index</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">primaryKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Index.html"><abbr title="\Horde\Db\Adapter\Base\Index">Index</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2819,7 +2889,7 @@ data types.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Index.html"><abbr title="\Horde_Db_Adapter_Base_Index">Horde_Db_Adapter_Base_Index</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Index.html"><abbr title="\Horde\Db\Adapter\Base\Index">Index</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"><p>The primary key index object.</p>
 </section>
@@ -2837,9 +2907,9 @@ data types.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_quote" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">246</span>
 
     </aside>
 
@@ -2899,9 +2969,9 @@ implementing quotedId().</p>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_quoteBinary" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -2945,9 +3015,9 @@ implementing quotedId().</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_quoteColumnName" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">267</span>
+    <span class="phpdocumentor-element-found-in__line">301</span>
 
     </aside>
 
@@ -2992,9 +3062,9 @@ implementing quotedId().</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_quoteDate" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">313</span>
+    <span class="phpdocumentor-element-found-in__line">347</span>
 
     </aside>
 
@@ -3038,9 +3108,9 @@ implementing quotedId().</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_quoteFalse" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">301</span>
+    <span class="phpdocumentor-element-found-in__line">335</span>
 
     </aside>
 
@@ -3073,9 +3143,9 @@ implementing quotedId().</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_quoteString" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">255</span>
+    <span class="phpdocumentor-element-found-in__line">289</span>
 
     </aside>
 
@@ -3121,9 +3191,9 @@ characters.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_quoteTableName" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">281</span>
+    <span class="phpdocumentor-element-found-in__line">315</span>
 
     </aside>
 
@@ -3170,9 +3240,9 @@ characters.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_quoteTrue" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">291</span>
+    <span class="phpdocumentor-element-found-in__line">325</span>
 
     </aside>
 
@@ -3205,9 +3275,9 @@ characters.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_recreateDatabase" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">856</span>
+    <span class="phpdocumentor-element-found-in__line">908</span>
 
     </aside>
 
@@ -3250,9 +3320,9 @@ characters.</p>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_removeColumn" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">266</span>
+    <span class="phpdocumentor-element-found-in__line">272</span>
 
     </aside>
 
@@ -3304,9 +3374,9 @@ characters.</p>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_removeIndex" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">424</span>
+    <span class="phpdocumentor-element-found-in__line">430</span>
 
     </aside>
 
@@ -3364,9 +3434,9 @@ characters.</p>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_removePrimaryKey" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">405</span>
+    <span class="phpdocumentor-element-found-in__line">411</span>
 
     </aside>
 
@@ -3400,7 +3470,7 @@ characters.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Exception.html"><abbr title="\Horde_Db_Exception">Horde_Db_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-DbException.html"><abbr title="\Horde\Db\DbException">DbException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -3423,9 +3493,9 @@ characters.</p>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_renameColumn" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">371</span>
+    <span class="phpdocumentor-element-found-in__line">377</span>
 
     </aside>
 
@@ -3486,9 +3556,9 @@ characters.</p>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_renameTable" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">219</span>
+    <span class="phpdocumentor-element-found-in__line">225</span>
 
     </aside>
 
@@ -3540,27 +3610,29 @@ characters.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_setAdapter" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Setter for a Horde_Db_Adapter instance.</p>
+        <p class="phpdocumentor-summary">Setter for a Horde\Db\Adapter instance.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setAdapter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$adapter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">setAdapter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$adapter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>This is mostly for the __wakeup call, maybe we should rethink this</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$adapter</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>A Horde_Db_Adapter instance.</p>
+                    <section class="phpdocumentor-description"><p>A Horde\Db\Adapter instance.</p>
 </section>
 
             </dd>
@@ -3585,17 +3657,17 @@ characters.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_table" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">385</span>
+    <span class="phpdocumentor-element-found-in__line">419</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Returns a Horde_Db_Adapter_Base_Table object for a table.</p>
+        <p class="phpdocumentor-summary">Returns a Horde\Db\Adapter\Base\Table object for a table.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">table</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Table.html"><abbr title="\Horde_Db_Adapter_Base_Table">Horde_Db_Adapter_Base_Table</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">table</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Table.html"><abbr title="\Horde\Db\Adapter\Base\Table">Table</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3623,7 +3695,7 @@ characters.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Table.html"><abbr title="\Horde_Db_Adapter_Base_Table">Horde_Db_Adapter_Base_Table</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Adapter-Base-Table.html"><abbr title="\Horde\Db\Adapter\Base\Table">Table</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"><p>A table object.</p>
 </section>
@@ -3641,9 +3713,9 @@ characters.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_tableAliasFor" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">364</span>
+    <span class="phpdocumentor-element-found-in__line">398</span>
 
     </aside>
 
@@ -3688,9 +3760,9 @@ characters.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_tableAliasLength" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">352</span>
+    <span class="phpdocumentor-element-found-in__line">386</span>
 
     </aside>
 
@@ -3723,9 +3795,9 @@ characters.</p>
         <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_tables" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -3758,9 +3830,9 @@ characters.</p>
         <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_typeToSql" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">897</span>
+    <span class="phpdocumentor-element-found-in__line">949</span>
 
     </aside>
 
@@ -3838,14 +3910,14 @@ internally supported types, $type is returned unchanged.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__alterTable">
-        _alterTable()
-        <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method__alterTable" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_alterTable">
+        alterTable()
+        <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_alterTable" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">549</span>
+    <span class="phpdocumentor-element-found-in__line">557</span>
 
     </aside>
 
@@ -3853,7 +3925,7 @@ internally supported types, $type is returned unchanged.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_alterTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\function">function</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">alterTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Db\Adapter\Sqlite\function">function</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>This is done by creating a temporary copy, applying changes and callback
 methods, and copying the table back.</p>
@@ -3873,7 +3945,7 @@ methods, and copying the table back.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Any options to apply when creating the
 temporary table. Supports a 'rename' key for
@@ -3884,7 +3956,7 @@ options in createTable().</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$callback</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\function">function</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Db\Adapter\Sqlite\function">function</abbr></span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>A callback function that can manipulate the
@@ -3909,14 +3981,14 @@ available in $definition. See _copyTable().</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__clearTableCache">
-        _clearTableCache()
-        <a href="classes/Horde-Db-Adapter-Base-Schema.html#method__clearTableCache" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_clearTableCache">
+        clearTableCache()
+        <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_clearTableCache" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1147</span>
+    <span class="phpdocumentor-element-found-in__line">1218</span>
 
     </aside>
 
@@ -3924,7 +3996,7 @@ available in $definition. See _copyTable().</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_clearTableCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">clearTableCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3954,14 +4026,14 @@ available in $definition. See _copyTable().</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__copyTable">
-        _copyTable()
-        <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method__copyTable" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_copyTable">
+        copyTable()
+        <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_copyTable" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">603</span>
+    <span class="phpdocumentor-element-found-in__line">611</span>
 
     </aside>
 
@@ -3969,7 +4041,7 @@ available in $definition. See _copyTable().</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_copyTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\function">function</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">copyTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Db\Adapter\Sqlite\function">function</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>Also applies changes and callback methods before creating the new table.</p>
 </section>
@@ -3997,7 +4069,7 @@ available in $definition. See _copyTable().</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Any options to apply when creating the
 temporary table. Supports a 'rename' key for
@@ -4008,7 +4080,7 @@ options in createTable().</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$callback</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\function">function</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Db\Adapter\Sqlite\function">function</abbr></span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>A callback function that can manipulate the
@@ -4033,14 +4105,14 @@ available in $definition.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__copyTableContents">
-        _copyTableContents()
-        <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method__copyTableContents" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_copyTableContents">
+        copyTableContents()
+        <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_copyTableContents" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">723</span>
+    <span class="phpdocumentor-element-found-in__line">731</span>
 
     </aside>
 
@@ -4048,7 +4120,7 @@ available in $definition.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_copyTableContents</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rename</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">copyTableContents</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rename</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -4083,7 +4155,7 @@ available in $definition.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$rename</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>A hash of columns to rename during the copy, with
 original names as keys and the new names as
@@ -4107,14 +4179,14 @@ values.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__copyTableIndexes">
-        _copyTableIndexes()
-        <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method__copyTableIndexes" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_copyTableIndexes">
+        copyTableIndexes()
+        <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_copyTableIndexes" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">677</span>
+    <span class="phpdocumentor-element-found-in__line">685</span>
 
     </aside>
 
@@ -4122,7 +4194,7 @@ values.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_copyTableIndexes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rename</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">copyTableIndexes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rename</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -4148,7 +4220,7 @@ values.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$rename</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>A hash of columns to rename during the copy, with
 original names as keys and the new names as values.</p>
@@ -4171,14 +4243,14 @@ original names as keys and the new names as values.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__defaultPrimaryKeyType">
-        _defaultPrimaryKeyType()
-        <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method__defaultPrimaryKeyType" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_defaultPrimaryKeyType">
+        defaultPrimaryKeyType()
+        <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_defaultPrimaryKeyType" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">525</span>
+    <span class="phpdocumentor-element-found-in__line">533</span>
 
     </aside>
 
@@ -4186,7 +4258,7 @@ original names as keys and the new names as values.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_defaultPrimaryKeyType</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">defaultPrimaryKeyType</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
     
@@ -4206,14 +4278,14 @@ original names as keys and the new names as values.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__escapePrepare">
-        _escapePrepare()
-        <a href="classes/Horde-Db-Adapter-Base-Schema.html#method__escapePrepare" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_escapePrepare">
+        escapePrepare()
+        <a href="classes/Horde-Db-Adapter-Base-Schema.html#method_escapePrepare" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Base/Schema.php"><a href="files/horde-db-adapter-base-schema.html"><abbr title="Horde/Db/Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Base/Schema.php"><a href="files/adapter-base-schema.html"><abbr title="Adapter/Base/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1132</span>
+    <span class="phpdocumentor-element-found-in__line">1203</span>
 
     </aside>
 
@@ -4222,7 +4294,7 @@ prepare/execute methods.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_escapePrepare</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">escapePrepare</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -4254,14 +4326,14 @@ prepare/execute methods.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__moveTable">
-        _moveTable()
-        <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method__moveTable" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_moveTable">
+        moveTable()
+        <a href="classes/Horde-Db-Adapter-Sqlite-Schema.html#method_moveTable" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Adapter/Sqlite/Schema.php"><a href="files/horde-db-adapter-sqlite-schema.html"><abbr title="Horde/Db/Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Adapter/Sqlite/Schema.php"><a href="files/adapter-sqlite-schema.html"><abbr title="Adapter/Sqlite/Schema.php">Schema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">581</span>
+    <span class="phpdocumentor-element-found-in__line">589</span>
 
     </aside>
 
@@ -4269,7 +4341,7 @@ prepare/execute methods.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_moveTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\function">function</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">moveTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Db\Adapter\Sqlite\function">function</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>This is done by creating a temporary copy, applying changes and callback
 methods, and dropping the original table.</p>
@@ -4298,7 +4370,7 @@ methods, and dropping the original table.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Any options to apply when creating the
 temporary table. Supports a 'rename' key for
@@ -4309,7 +4381,7 @@ options in createTable().</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$callback</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\function">function</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Db\Adapter\Sqlite\function">function</abbr></span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>A callback function that can manipulate the

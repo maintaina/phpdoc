@@ -53,6 +53,17 @@
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-db.html">Db</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Db.html">Db</a></h4>
     <ul class="phpdocumentor-list">
@@ -83,13 +94,14 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Db.html">Db</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Db-Migration.html">Migration</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-db.html">Db</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-db-migration.html">Migration</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Db_Migration_Migrator
+    Migrator
 
     
             <div class="phpdocumentor-element__package">
@@ -104,9 +116,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -168,7 +180,7 @@
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>2006-2017 Horde LLC</p>
+                                                 <section class="phpdocumentor-description"><p>2006-2021 Horde LLC</p>
 </section>
 
                                     </dd>
@@ -204,28 +216,49 @@
 
 <dl class="phpdocumentor-table-of-contents">
                 <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#property__direction">$_direction</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#property_connection">$connection</a>
+    <span>
+                &nbsp;: <a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Db-Migration-Migrator.html#property_direction">$direction</a>
     <span>
                 &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#property__migrationsPath">$_migrationsPath</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#property_inflector">$inflector</a>
+    <span>
+                &nbsp;: mixed            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Db-Migration-Migrator.html#property_logger">$logger</a>
+    <span>
+                &nbsp;: <abbr title="\Horde_Log_Logger">Horde_Log_Logger</abbr>|null            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Db-Migration-Migrator.html#property_migrationsPath">$migrationsPath</a>
     <span>
                 &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#property__schemaTableName">$_schemaTableName</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#property_schemaTableName">$schemaTableName</a>
     <span>
                 &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#property__targetVersion">$_targetVersion</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#property_targetVersion">$targetVersion</a>
     <span>
                 &nbsp;: int            </span>
 </dt>
@@ -295,84 +328,84 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#method__assertUniqueMigrationVersion">_assertUniqueMigrationVersion()</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#method_assertUniqueMigrationVersion">assertUniqueMigrationVersion()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#method__doMigrate">_doMigrate()</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#method_doMigrate">doMigrate()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Performs the migration.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#method__getMigrationClass">_getMigrationClass()</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#method_getMigrationClass">getMigrationClass()</a>
     <span>
-                        &nbsp;: <a href="classes/Horde-Db-Migration-Base.html"><abbr title="\Horde_Db_Migration_Base">Horde_Db_Migration_Base</abbr></a>    </span>
+                        &nbsp;: <a href="classes/Horde-Db-Migration-Base.html"><abbr title="\Horde\Db\Migration\Base">Base</abbr></a>    </span>
 </dt>
 <dd>Actually returns object, and not class.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#method__getMigrationClasses">_getMigrationClasses()</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#method_getMigrationClasses">getMigrationClasses()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#method__getMigrationFiles">_getMigrationFiles()</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#method_getMigrationFiles">getMigrationFiles()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Returns the list of migration files.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#method__getMigrationVersionAndName">_getMigrationVersionAndName()</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#method_getMigrationVersionAndName">getMigrationVersionAndName()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#method__hasReachedTargetVersion">_hasReachedTargetVersion()</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#method_hasReachedTargetVersion">hasReachedTargetVersion()</a>
     <span>
                         &nbsp;: bool    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#method__initializeSchemaInformation">_initializeSchemaInformation()</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#method_initializeSchemaInformation">initializeSchemaInformation()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#method__isDown">_isDown()</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#method_isDown">isDown()</a>
     <span>
                         &nbsp;: bool    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#method__isIrrelevantMigration">_isIrrelevantMigration()</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#method_isIrrelevantMigration">isIrrelevantMigration()</a>
     <span>
                         &nbsp;: bool    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#method__isUp">_isUp()</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#method_isUp">isUp()</a>
     <span>
                         &nbsp;: bool    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Db-Migration-Migrator.html#method__setSchemaVersion">_setSchemaVersion()</a>
+    <a href="classes/Horde-Db-Migration-Migrator.html#method_setSchemaVersion">setSchemaVersion()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
@@ -397,16 +430,50 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__direction">
-        $_direction
-        <a href="classes/Horde-Db-Migration-Migrator.html#property__direction" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_connection">
+        $connection
+        <a href="classes/Horde-Db-Migration-Migrator.html#property_connection" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$connection</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_direction">
+        $direction
+        <a href="classes/Horde-Db-Migration-Migrator.html#property_direction" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -414,9 +481,8 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$_direction</span>
-     = <span class="phpdocumentor-signature__default-value">
-ull</span></code>
+    <span class="phpdocumentor-signature__name">$direction</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -430,26 +496,59 @@ ull</span></code>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__migrationsPath">
-        $_migrationsPath
-        <a href="classes/Horde-Db-Migration-Migrator.html#property__migrationsPath" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_inflector">
+        $inflector
+        <a href="classes/Horde-Db-Migration-Migrator.html#property_inflector" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$_migrationsPath</span>
-     = <span class="phpdocumentor-signature__default-value">
-ull</span></code>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$inflector</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_logger">
+        $logger
+        <a href="classes/Horde-Db-Migration-Migrator.html#property_logger" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">67</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Horde_Log_Logger">Horde_Log_Logger</abbr>|null</span>
+    <span class="phpdocumentor-signature__name">$logger</span>
+    </code>
 
     
     
@@ -463,16 +562,16 @@ ull</span></code>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__schemaTableName">
-        $_schemaTableName
-        <a href="classes/Horde-Db-Migration-Migrator.html#property__schemaTableName" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_migrationsPath">
+        $migrationsPath
+        <a href="classes/Horde-Db-Migration-Migrator.html#property_migrationsPath" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -480,7 +579,39 @@ ull</span></code>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$_schemaTableName</span>
+    <span class="phpdocumentor-signature__name">$migrationsPath</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_schemaTableName">
+        $schemaTableName
+        <a href="classes/Horde-Db-Migration-Migrator.html#property_schemaTableName" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">62</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$schemaTableName</span>
      = <span class="phpdocumentor-signature__default-value">&#039;schema_info&#039;</span></code>
 
     
@@ -495,16 +626,16 @@ ull</span></code>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__targetVersion">
-        $_targetVersion
-        <a href="classes/Horde-Db-Migration-Migrator.html#property__targetVersion" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_targetVersion">
+        $targetVersion
+        <a href="classes/Horde-Db-Migration-Migrator.html#property_targetVersion" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -512,9 +643,8 @@ ull</span></code>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">$_targetVersion</span>
-     = <span class="phpdocumentor-signature__default-value">
-ull</span></code>
+    <span class="phpdocumentor-signature__name">$targetVersion</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -539,9 +669,9 @@ ull</span></code>
         <a href="classes/Horde-Db-Migration-Migrator.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -549,14 +679,14 @@ ull</span></code>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connection</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Log_Logger">Horde_Log_Logger</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logger</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connection</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Log_Logger">Horde_Log_Logger</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logger</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$connection</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Db-Adapter.html"><abbr title="\Horde\Db\Adapter">Adapter</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>A DB connection object.</p>
@@ -575,7 +705,7 @@ ull</span></code>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Additional options for the migrator:</p>
 <ul>
@@ -599,7 +729,7 @@ the schema version.</li>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Migration-Exception.html"><abbr title="\Horde_Db_Migration_Exception">Horde_Db_Migration_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Migration-MigrationException.html"><abbr title="\Horde\Db\Migration\MigrationException">MigrationException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -622,9 +752,9 @@ the schema version.</li>
         <a href="classes/Horde-Db-Migration-Migrator.html#method_down" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -664,9 +794,9 @@ the schema version.</li>
         <a href="classes/Horde-Db-Migration-Migrator.html#method_getCurrentVersion" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -696,9 +826,9 @@ the schema version.</li>
         <a href="classes/Horde-Db-Migration-Migrator.html#method_getTargetVersion" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">135</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -728,9 +858,9 @@ the schema version.</li>
         <a href="classes/Horde-Db-Migration-Migrator.html#method_migrate" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -770,9 +900,9 @@ the schema version.</li>
         <a href="classes/Horde-Db-Migration-Migrator.html#method_setInflector" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 
     </aside>
 
@@ -812,9 +942,9 @@ the schema version.</li>
         <a href="classes/Horde-Db-Migration-Migrator.html#method_setLogger" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">180</span>
 
     </aside>
 
@@ -854,9 +984,9 @@ the schema version.</li>
         <a href="classes/Horde-Db-Migration-Migrator.html#method_setMigrationsPath" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
@@ -898,9 +1028,9 @@ the schema version.</li>
         <a href="classes/Horde-Db-Migration-Migrator.html#method_up" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -935,21 +1065,21 @@ the schema version.</li>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__assertUniqueMigrationVersion">
-        _assertUniqueMigrationVersion()
-        <a href="classes/Horde-Db-Migration-Migrator.html#method__assertUniqueMigrationVersion" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_assertUniqueMigrationVersion">
+        assertUniqueMigrationVersion()
+        <a href="classes/Horde-Db-Migration-Migrator.html#method_assertUniqueMigrationVersion" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">239</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_assertUniqueMigrationVersion</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$migrations</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">assertUniqueMigrationVersion</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$migrations</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -980,7 +1110,7 @@ the schema version.</li>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Migration-Exception.html"><abbr title="\Horde_Db_Migration_Exception">Horde_Db_Migration_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Db-Migration-MigrationException.html"><abbr title="\Horde\Db\Migration\MigrationException">MigrationException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -998,14 +1128,14 @@ the schema version.</li>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__doMigrate">
-        _doMigrate()
-        <a href="classes/Horde-Db-Migration-Migrator.html#method__doMigrate" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_doMigrate">
+        doMigrate()
+        <a href="classes/Horde-Db-Migration-Migrator.html#method_doMigrate" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">177</span>
+    <span class="phpdocumentor-element-found-in__line">196</span>
 
     </aside>
 
@@ -1013,7 +1143,7 @@ the schema version.</li>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_doMigrate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">doMigrate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
     
@@ -1031,14 +1161,14 @@ the schema version.</li>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__getMigrationClass">
-        _getMigrationClass()
-        <a href="classes/Horde-Db-Migration-Migrator.html#method__getMigrationClass" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getMigrationClass">
+        getMigrationClass()
+        <a href="classes/Horde-Db-Migration-Migrator.html#method_getMigrationClass" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">258</span>
+    <span class="phpdocumentor-element-found-in__line">277</span>
 
     </aside>
 
@@ -1046,7 +1176,7 @@ the schema version.</li>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_getMigrationClass</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$migrationName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Migration-Base.html"><abbr title="\Horde_Db_Migration_Base">Horde_Db_Migration_Base</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">getMigrationClass</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$migrationName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Migration-Base.html"><abbr title="\Horde\Db\Migration\Base">Base</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1070,7 +1200,7 @@ the schema version.</li>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Migration-Base.html"><abbr title="\Horde_Db_Migration_Base">Horde_Db_Migration_Base</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Db-Migration-Base.html"><abbr title="\Horde\Db\Migration\Base">Base</abbr></a></span>
             &mdash;
         
     
@@ -1081,21 +1211,21 @@ the schema version.</li>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__getMigrationClasses">
-        _getMigrationClasses()
-        <a href="classes/Horde-Db-Migration-Migrator.html#method__getMigrationClasses" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getMigrationClasses">
+        getMigrationClasses()
+        <a href="classes/Horde-Db-Migration-Migrator.html#method_getMigrationClasses" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">216</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_getMigrationClasses</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getMigrationClasses</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
     
@@ -1113,14 +1243,14 @@ the schema version.</li>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__getMigrationFiles">
-        _getMigrationFiles()
-        <a href="classes/Horde-Db-Migration-Migrator.html#method__getMigrationFiles" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getMigrationFiles">
+        getMigrationFiles()
+        <a href="classes/Horde-Db-Migration-Migrator.html#method_getMigrationFiles" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">251</span>
 
     </aside>
 
@@ -1128,7 +1258,7 @@ the schema version.</li>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_getMigrationFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getMigrationFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
     
@@ -1146,21 +1276,21 @@ the schema version.</li>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__getMigrationVersionAndName">
-        _getMigrationVersionAndName()
-        <a href="classes/Horde-Db-Migration-Migrator.html#method__getMigrationVersionAndName" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getMigrationVersionAndName">
+        getMigrationVersionAndName()
+        <a href="classes/Horde-Db-Migration-Migrator.html#method_getMigrationVersionAndName" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">272</span>
+    <span class="phpdocumentor-element-found-in__line">291</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_getMigrationVersionAndName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$migrationFile</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getMigrationVersionAndName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$migrationFile</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1190,21 +1320,21 @@ the schema version.</li>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__hasReachedTargetVersion">
-        _hasReachedTargetVersion()
-        <a href="classes/Horde-Db-Migration-Migrator.html#method__hasReachedTargetVersion" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_hasReachedTargetVersion">
+        hasReachedTargetVersion()
+        <a href="classes/Horde-Db-Migration-Migrator.html#method_hasReachedTargetVersion" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">325</span>
+    <span class="phpdocumentor-element-found-in__line">344</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_hasReachedTargetVersion</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                <span class="phpdocumentor-signature__name">hasReachedTargetVersion</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1233,21 +1363,21 @@ the schema version.</li>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__initializeSchemaInformation">
-        _initializeSchemaInformation()
-        <a href="classes/Horde-Db-Migration-Migrator.html#method__initializeSchemaInformation" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_initializeSchemaInformation">
+        initializeSchemaInformation()
+        <a href="classes/Horde-Db-Migration-Migrator.html#method_initializeSchemaInformation" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">281</span>
+    <span class="phpdocumentor-element-found-in__line">300</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_initializeSchemaInformation</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">initializeSchemaInformation</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
     
@@ -1278,21 +1408,21 @@ the schema version.</li>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__isDown">
-        _isDown()
-        <a href="classes/Horde-Db-Migration-Migrator.html#method__isDown" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_isDown">
+        isDown()
+        <a href="classes/Horde-Db-Migration-Migrator.html#method_isDown" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">317</span>
+    <span class="phpdocumentor-element-found-in__line">336</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_isDown</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                <span class="phpdocumentor-signature__name">isDown</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
     
@@ -1310,21 +1440,21 @@ the schema version.</li>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__isIrrelevantMigration">
-        _isIrrelevantMigration()
-        <a href="classes/Horde-Db-Migration-Migrator.html#method__isIrrelevantMigration" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_isIrrelevantMigration">
+        isIrrelevantMigration()
+        <a href="classes/Horde-Db-Migration-Migrator.html#method_isIrrelevantMigration" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">340</span>
+    <span class="phpdocumentor-element-found-in__line">359</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_isIrrelevantMigration</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                <span class="phpdocumentor-signature__name">isIrrelevantMigration</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1352,21 +1482,21 @@ the schema version.</li>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__isUp">
-        _isUp()
-        <a href="classes/Horde-Db-Migration-Migrator.html#method__isUp" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_isUp">
+        isUp()
+        <a href="classes/Horde-Db-Migration-Migrator.html#method_isUp" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">309</span>
+    <span class="phpdocumentor-element-found-in__line">328</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_isUp</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                <span class="phpdocumentor-signature__name">isUp</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
     
@@ -1384,21 +1514,21 @@ the schema version.</li>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__setSchemaVersion">
-        _setSchemaVersion()
-        <a href="classes/Horde-Db-Migration-Migrator.html#method__setSchemaVersion" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setSchemaVersion">
+        setSchemaVersion()
+        <a href="classes/Horde-Db-Migration-Migrator.html#method_setSchemaVersion" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Db/Migration/Migrator.php"><a href="files/horde-db-migration-migrator.html"><abbr title="Horde/Db/Migration/Migrator.php">Migrator.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Migration/Migrator.php"><a href="files/migration-migrator.html"><abbr title="Migration/Migrator.php">Migrator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">295</span>
+    <span class="phpdocumentor-element-found-in__line">314</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_setSchemaVersion</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">setSchemaVersion</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
