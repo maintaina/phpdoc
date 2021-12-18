@@ -84,11 +84,14 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-controller.html">Controller</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-controller-request.html">Request</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Controller_Request_Http
+    Psr7Wrapper
 
     
             <div class="phpdocumentor-element__package">
@@ -105,13 +108,14 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Request/Psr7Wrapper.php"><a href="files/request-psr7wrapper.html"><abbr title="Request/Psr7Wrapper.php">Psr7Wrapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">Wrap a PSR-7 Request inside a H5 request</p>
+
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -124,7 +128,7 @@
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>James Pepin <a href="mailto:james@bluestatedigital.com">james@bluestatedigital.com</a></p>
+                                                 <section class="phpdocumentor-description"><p>Ralf Lang <a href="mailto:lang@b1-systems.de">lang@b1-systems.de</a></p>
 </section>
 
                                     </dd>
@@ -142,7 +146,7 @@
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>2008-2017 Horde LLC</p>
+                                                 <section class="phpdocumentor-description"><p>2008-2021 Horde LLC</p>
 </section>
 
                                     </dd>
@@ -179,124 +183,89 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Controller-Request-Http.html#property__headers">$_headers</a>
+                <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#property_request">$request</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: <abbr title="\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>            </span>
 </dt>
-<dd>All the headers</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Controller-Request-Http.html#property__path">$_path</a>
-    <span>
-                &nbsp;: string            </span>
-</dt>
-<dd>Request path</dd>
+<dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Controller-Request-Http.html#method_getCookieVars">getCookieVars()</a>
+    <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method___construct">__construct()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Controller-Request-Http.html#method_getFileVars">getFileVars()</a>
+    <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getCookieVars">getCookieVars()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Controller-Request-Http.html#method_getGetVars">getGetVars()</a>
+    <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getFileVars">getFileVars()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Controller-Request-Http.html#method_getHeader">getHeader()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Gets the value of header.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Controller-Request-Http.html#method_getHeaderNames">getHeaderNames()</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>Gets all the header names.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Controller-Request-Http.html#method_getHeaders">getHeaders()</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>Gets all the headers.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Controller-Request-Http.html#method_getMethod">getMethod()</a>
+    <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getGetVars">getGetVars()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Controller-Request-Http.html#method_getPath">getPath()</a>
+    <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getMethod">getMethod()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Controller-Request-Http.html#method_getPostVars">getPostVars()</a>
+    <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getPath">getPath()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Controller-Request-Http.html#method_getRequestBody">getRequestBody()</a>
+    <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getPostVars">getPostVars()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getRequestBody">getRequestBody()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd>The request body if it is not form-encoded</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Controller-Request-Http.html#method_getRequestVars">getRequestVars()</a>
+    <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getRequestVars">getRequestVars()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Mimic $_REQUEST by merging get, post and cookies</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getServerVars">getServerVars()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Controller-Request-Http.html#method_getServerVars">getServerVars()</a>
+    <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getSessionId">getSessionId()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Controller-Request-Http.html#method_getSessionId">getSessionId()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Controller-Request-Http.html#method_setPath">setPath()</a>
-    <span>
-                        &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Horde-Controller-Request-Http.html#method__getAllHeaders">_getAllHeaders()</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>Returns all HTTP_* headers.</dd>
 
         </dl>
 
@@ -308,72 +277,39 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Horde-Controller-Request-Http.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
             phpdocumentor-element
             -property
-            -protected
+            -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__headers">
-        $_headers
-        <a href="classes/Horde-Controller-Request-Http.html#property__headers" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_request">
+        $request
+        <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#property_request" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">35</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">All the headers</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_headers</span>
-     = <span class="phpdocumentor-signature__default-value">
-ull</span></code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property__path">
-        $_path
-        <a href="classes/Horde-Controller-Request-Http.html#property__path" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Request/Psr7Wrapper.php"><a href="files/request-psr7wrapper.html"><abbr title="Request/Psr7Wrapper.php">Psr7Wrapper.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Request path</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$_path</span>
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></span>
+    <span class="phpdocumentor-signature__name">$request</span>
     </code>
 
-    
-    
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -382,8 +318,52 @@ ull</span></code>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Controller-Request-Http.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Request/Psr7Wrapper.php"><a href="files/request-psr7wrapper.html"><abbr title="Request/Psr7Wrapper.php">Psr7Wrapper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$request</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
                     <article
         class="phpdocumentor-element
             -method
@@ -392,12 +372,12 @@ ull</span></code>
 >
     <h4 class="phpdocumentor-element__name" id="method_getCookieVars">
         getCookieVars()
-        <a href="classes/Horde-Controller-Request-Http.html#method_getCookieVars" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getCookieVars" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Request/Psr7Wrapper.php"><a href="files/request-psr7wrapper.html"><abbr title="Request/Psr7Wrapper.php">Psr7Wrapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -424,12 +404,12 @@ ull</span></code>
 >
     <h4 class="phpdocumentor-element__name" id="method_getFileVars">
         getFileVars()
-        <a href="classes/Horde-Controller-Request-Http.html#method_getFileVars" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getFileVars" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Request/Psr7Wrapper.php"><a href="files/request-psr7wrapper.html"><abbr title="Request/Psr7Wrapper.php">Psr7Wrapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -456,12 +436,12 @@ ull</span></code>
 >
     <h4 class="phpdocumentor-element__name" id="method_getGetVars">
         getGetVars()
-        <a href="classes/Horde-Controller-Request-Http.html#method_getGetVars" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getGetVars" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Request/Psr7Wrapper.php"><a href="files/request-psr7wrapper.html"><abbr title="Request/Psr7Wrapper.php">Psr7Wrapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -486,139 +466,14 @@ ull</span></code>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getHeader">
-        getHeader()
-        <a href="classes/Horde-Controller-Request-Http.html#method_getHeader" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">110</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Gets the value of header.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getHeader</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"><p>Returns the value of the specified request header.</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>the name of the header</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>the value of the specified header</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getHeaderNames">
-        getHeaderNames()
-        <a href="classes/Horde-Controller-Request-Http.html#method_getHeaderNames" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">130</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Gets all the header names.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getHeaderNames</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-        <section class="phpdocumentor-description"><p>Returns an array of all the header names this request
-contains.</p>
-</section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>all the available headers as strings</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getHeaders">
-        getHeaders()
-        <a href="classes/Horde-Controller-Request-Http.html#method_getHeaders" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">146</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Gets all the headers.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getHeaders</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-        <section class="phpdocumentor-description"><p>Returns an associative array of all the header names and values of this
-request.</p>
-</section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>containing all the headers</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_getMethod">
         getMethod()
-        <a href="classes/Horde-Controller-Request-Http.html#method_getMethod" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getMethod" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Request/Psr7Wrapper.php"><a href="files/request-psr7wrapper.html"><abbr title="Request/Psr7Wrapper.php">Psr7Wrapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -645,12 +500,12 @@ request.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getPath">
         getPath()
-        <a href="classes/Horde-Controller-Request-Http.html#method_getPath" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getPath" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Request/Psr7Wrapper.php"><a href="files/request-psr7wrapper.html"><abbr title="Request/Psr7Wrapper.php">Psr7Wrapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -677,12 +532,12 @@ request.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getPostVars">
         getPostVars()
-        <a href="classes/Horde-Controller-Request-Http.html#method_getPostVars" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getPostVars" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Request/Psr7Wrapper.php"><a href="files/request-psr7wrapper.html"><abbr title="Request/Psr7Wrapper.php">Psr7Wrapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -709,12 +564,12 @@ request.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getRequestBody">
         getRequestBody()
-        <a href="classes/Horde-Controller-Request-Http.html#method_getRequestBody" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getRequestBody" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Request/Psr7Wrapper.php"><a href="files/request-psr7wrapper.html"><abbr title="Request/Psr7Wrapper.php">Psr7Wrapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -757,16 +612,17 @@ request.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getRequestVars">
         getRequestVars()
-        <a href="classes/Horde-Controller-Request-Http.html#method_getRequestVars" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getRequestVars" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Request/Psr7Wrapper.php"><a href="files/request-psr7wrapper.html"><abbr title="Request/Psr7Wrapper.php">Psr7Wrapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Mimic $_REQUEST by merging get, post and cookies</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getRequestVars</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
@@ -789,12 +645,12 @@ request.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getServerVars">
         getServerVars()
-        <a href="classes/Horde-Controller-Request-Http.html#method_getServerVars" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getServerVars" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Request/Psr7Wrapper.php"><a href="files/request-psr7wrapper.html"><abbr title="Request/Psr7Wrapper.php">Psr7Wrapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -821,12 +677,12 @@ request.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getSessionId">
         getSessionId()
-        <a href="classes/Horde-Controller-Request-Http.html#method_getSessionId" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#method_getSessionId" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Request/Psr7Wrapper.php"><a href="files/request-psr7wrapper.html"><abbr title="Request/Psr7Wrapper.php">Psr7Wrapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -843,88 +699,6 @@ request.</p>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
         
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setPath">
-        setPath()
-        <a href="classes/Horde-Controller-Request-Http.html#method_setPath" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">37</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$path</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method__getAllHeaders">
-        _getAllHeaders()
-        <a href="classes/Horde-Controller-Request-Http.html#method__getAllHeaders" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Controller/Request/Http.php"><a href="files/horde-controller-request-http.html"><abbr title="Horde/Controller/Request/Http.php">Http.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">162</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Returns all HTTP_* headers.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">_getAllHeaders</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-        <section class="phpdocumentor-description"><p>Returns all the HTTP_* headers. Works both if PHP is an apache
-module and if it's running as a CGI.</p>
-</section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>the headers' names and values</p>
-</section>
-
     
 </article>
             </section>
@@ -1005,7 +779,7 @@ module and if it's running as a CGI.</p>
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Controller-Request-Http.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Controller-Request-Psr7Wrapper.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
