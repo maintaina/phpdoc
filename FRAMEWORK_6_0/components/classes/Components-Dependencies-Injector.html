@@ -52,16 +52,25 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-        
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-            </section>
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-components.html">Components</a>
+                
+            </li>
+            </ul>
 
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Application.html"><abbr title="\Application">Application</abbr></a></h3>
                         </section>
-    
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Components.html">Components</a></h4>
+
+                        </section>
+            
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
@@ -77,7 +86,6 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
@@ -85,7 +93,7 @@
     Components_Dependencies_Injector
 
         <span class="phpdocumentor-element__extends">
-        extends <abbr title="\Horde\Components\Dependencies\Injector">Injector</abbr>
+        extends <a href="classes/Horde-Components-Dependencies-Injector.html"><abbr title="\Horde\Components\Dependencies\Injector">Injector</abbr></a>
     </span>
     
             <div class="phpdocumentor-element__package">
@@ -105,24 +113,1314 @@
 
     </aside>
 
+            <p class="phpdocumentor-summary">The Components_Dependencies_Injector:: class provides the
+Components dependencies based on the Horde injector.</p>
+
+    <section class="phpdocumentor-description"><p>Copyright 2010-2020 Horde LLC (http://www.horde.org/)</p>
+<p>See the enclosed file LICENSE for license information (LGPL). If you
+did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
+</section>
+
+
+
+
+
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+                <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#property__usePager">$_usePager</a>
+    <span>
+                &nbsp;: bool            </span>
+</dt>
+<dd>Use a pager for \Horde_Cli?</dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method___construct">__construct()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Constructor.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_createCli">createCli()</a>
+    <span>
+                        &nbsp;: <abbr title="\Horde_Cli">Horde_Cli</abbr>    </span>
+</dt>
+<dd>Create the CLI handler.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_createOutput">createOutput()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Output.html"><abbr title="\Horde\Components\Output">Output</abbr></a>    </span>
+</dt>
+<dd>Create the Components\Output handler.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getComponentFactory">getComponentFactory()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Component-Factory.html"><abbr title="\Horde\Components\Component\Factory">Factory</abbr></a>    </span>
+</dt>
+<dd>Returns a component instance factory.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getModules">getModules()</a>
+    <span>
+                        &nbsp;: <abbr title="\Horde_Cli_Modular">Horde_Cli_Modular</abbr>    </span>
+</dt>
+<dd>Return the list of modules.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getOutput">getOutput()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Output.html"><abbr title="\Horde\Components\Output">Output</abbr></a>    </span>
+</dt>
+<dd>Returns the output handler.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getParser">getParser()</a>
+    <span>
+                        &nbsp;: <abbr title="\Horde_Argv_Parser">Horde_Argv_Parser</abbr>    </span>
+</dt>
+<dd>Return the CLI parser.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getReleaseTasks">getReleaseTasks()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Release-Tasks.html"><abbr title="\Horde\Components\Release\Tasks">Tasks</abbr></a>    </span>
+</dt>
+<dd>Returns the release tasks handler.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRemote">getRemote()</a>
+    <span>
+                        &nbsp;: <abbr title="\Horde_Pear_Remote">Horde_Pear_Remote</abbr>    </span>
+</dt>
+<dd>Returns the handler for remote PEAR servers.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerChange">getRunnerChange()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Runner-Change.html"><abbr title="\Horde\Components\Runner\Change">Change</abbr></a>    </span>
+</dt>
+<dd>Returns the change log handler for a package.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerCiPrebuild">getRunnerCiPrebuild()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Runner-CiPrebuild.html"><abbr title="\Horde\Components\Runner\CiPrebuild">CiPrebuild</abbr></a>    </span>
+</dt>
+<dd>Returns the continuous integration pre-build handler.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerCiSetup">getRunnerCiSetup()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Runner-CiSetup.html"><abbr title="\Horde\Components\Runner\CiSetup">CiSetup</abbr></a>    </span>
+</dt>
+<dd>Returns the continuous integration setup handler.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerComposer">getRunnerComposer()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Runner-Composer.html"><abbr title="\Horde\Components\Runner\Composer">Composer</abbr></a>    </span>
+</dt>
+<dd>Returns the composer handler for a package.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerDependencies">getRunnerDependencies()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Runner-Dependencies.html"><abbr title="\Horde\Components\Runner\Dependencies">Dependencies</abbr></a>    </span>
+</dt>
+<dd>Returns the dependency list handler for a package.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerDistribute">getRunnerDistribute()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Runner-Distribute.html"><abbr title="\Horde\Components\Runner\Distribute">Distribute</abbr></a>    </span>
+</dt>
+<dd>Returns the distribution handler for a package.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerFetchdocs">getRunnerFetchdocs()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Runner-Fetchdocs.html"><abbr title="\Horde\Components\Runner\Fetchdocs">Fetchdocs</abbr></a>    </span>
+</dt>
+<dd>Returns the documentation fetch handler for a package.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerGit">getRunnerGit()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Runner-Git.html"><abbr title="\Horde\Components\Runner\Git">Git</abbr></a>    </span>
+</dt>
+<dd>Returns the dependency list handler for a package.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerInit">getRunnerInit()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Runner-Init.html"><abbr title="\Horde\Components\Runner\Init">Init</abbr></a>    </span>
+</dt>
+<dd>Returns the init handler for a package.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerInstaller">getRunnerInstaller()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Runner-Installer.html"><abbr title="\Horde\Components\Runner\Installer">Installer</abbr></a>    </span>
+</dt>
+<dd>Returns the installer for a package.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerQc">getRunnerQc()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Runner-Qc.html"><abbr title="\Horde\Components\Runner\Qc">Qc</abbr></a>    </span>
+</dt>
+<dd>Returns the qc handler for a package.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerRelease">getRunnerRelease()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Runner-Release.html"><abbr title="\Horde\Components\Runner\Release">Release</abbr></a>    </span>
+</dt>
+<dd>Returns the release handler for a package.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerSnapshot">getRunnerSnapshot()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Runner-Snapshot.html"><abbr title="\Horde\Components\Runner\Snapshot">Snapshot</abbr></a>    </span>
+</dt>
+<dd>Returns the snapshot packaging handler for a package.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerUpdate">getRunnerUpdate()</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Runner-Update.html"><abbr title="\Horde\Components\Runner\Update">Update</abbr></a>    </span>
+</dt>
+<dd>Returns the package XML handler for a package.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerWebdocs">getRunnerWebdocs()</a>
+    <span>
+                        &nbsp;: <abbr title="\Horde\Components\Dependencies\RunnerWebdocs">RunnerWebdocs</abbr>    </span>
+</dt>
+<dd>Returns the website documentation handler for a package.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_initConfig">initConfig()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Initial configuration setup.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_setModules">setModules()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Set the list of modules.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_setParser">setParser()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Set the CLI parser.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Components-Dependencies-Injector.html#method_useCliPager">useCliPager()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Enables a pager for \Horde_Cli objects.</dd>
+
+        </dl>
+
+
+
         
-    <section class="phpdocumentor-description"></section>
-
-
-
-
-
-
-
-
-
-
 
         
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Components-Dependencies-Injector.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property__usePager">
+        $_usePager
+        <a href="classes/Horde-Components-Dependencies-Injector.html#property__usePager" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
-        
+    </aside>
 
+        <p class="phpdocumentor-summary">Use a pager for \Horde_Cli?</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$_usePager</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+    
+    
+    
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Components-Dependencies-Injector.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">65</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Constructor.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Dependencies-Injector.html"><abbr title="\Horde\Components\Dependencies\Injector">Injector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentInjector</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parentInjector</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Dependencies-Injector.html"><abbr title="\Horde\Components\Dependencies\Injector">Injector</abbr></a></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A parent injector, if any</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
         
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_createCli">
+        createCli()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_createCli" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">337</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create the CLI handler.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">createCli</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Cli">Horde_Cli</abbr></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Cli">Horde_Cli</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The CLI handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_createOutput">
+        createOutput()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_createOutput" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">349</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create the Components\Output handler.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">createOutput</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Dependencies-Injector.html"><abbr title="\Horde\Components\Dependencies\Injector">Injector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$injector</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Output.html"><abbr title="\Horde\Components\Output">Output</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$injector</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Dependencies-Injector.html"><abbr title="\Horde\Components\Dependencies\Injector">Injector</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The injector to use</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Output.html"><abbr title="\Horde\Components\Output">Output</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The output handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getComponentFactory">
+        getComponentFactory()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getComponentFactory" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">307</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns a component instance factory.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getComponentFactory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Component-Factory.html"><abbr title="\Horde\Components\Component\Factory">Factory</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Component-Factory.html"><abbr title="\Horde\Components\Component\Factory">Factory</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The component factory.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getModules">
+        getModules()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getModules" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">106</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return the list of modules.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getModules</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Cli_Modular">Horde_Cli_Modular</abbr></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Cli_Modular">Horde_Cli_Modular</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The list of modules.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getOutput">
+        getOutput()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getOutput" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">297</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the output handler.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getOutput</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Output.html"><abbr title="\Horde\Components\Output">Output</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Output.html"><abbr title="\Horde\Components\Output">Output</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The output handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getParser">
+        getParser()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getParser" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">128</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return the CLI parser.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getParser</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Argv_Parser">Horde_Argv_Parser</abbr></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Argv_Parser">Horde_Argv_Parser</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The parser.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getReleaseTasks">
+        getReleaseTasks()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getReleaseTasks" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">287</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the release tasks handler.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getReleaseTasks</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Release-Tasks.html"><abbr title="\Horde\Components\Release\Tasks">Tasks</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Release-Tasks.html"><abbr title="\Horde\Components\Release\Tasks">Tasks</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The release tasks handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRemote">
+        getRemote()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRemote" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">317</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the handler for remote PEAR servers.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRemote</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Pear_Remote">Horde_Pear_Remote</abbr></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Pear_Remote">Horde_Pear_Remote</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRunnerChange">
+        getRunnerChange()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerChange" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">218</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the change log handler for a package.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRunnerChange</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Change.html"><abbr title="\Horde\Components\Runner\Change">Change</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Change.html"><abbr title="\Horde\Components\Runner\Change">Change</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The change log handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRunnerCiPrebuild">
+        getRunnerCiPrebuild()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerCiPrebuild" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">148</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the continuous integration pre-build handler.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRunnerCiPrebuild</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-CiPrebuild.html"><abbr title="\Horde\Components\Runner\CiPrebuild">CiPrebuild</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-CiPrebuild.html"><abbr title="\Horde\Components\Runner\CiPrebuild">CiPrebuild</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The CI pre-build handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRunnerCiSetup">
+        getRunnerCiSetup()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerCiSetup" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">138</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the continuous integration setup handler.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRunnerCiSetup</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-CiSetup.html"><abbr title="\Horde\Components\Runner\CiSetup">CiSetup</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-CiSetup.html"><abbr title="\Horde\Components\Runner\CiSetup">CiSetup</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The CI setup handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRunnerComposer">
+        getRunnerComposer()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerComposer" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">188</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the composer handler for a package.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRunnerComposer</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Composer.html"><abbr title="\Horde\Components\Runner\Composer">Composer</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Composer.html"><abbr title="\Horde\Components\Runner\Composer">Composer</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The composer handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRunnerDependencies">
+        getRunnerDependencies()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerDependencies" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">238</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the dependency list handler for a package.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRunnerDependencies</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Dependencies.html"><abbr title="\Horde\Components\Runner\Dependencies">Dependencies</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Dependencies.html"><abbr title="\Horde\Components\Runner\Dependencies">Dependencies</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The dependency handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRunnerDistribute">
+        getRunnerDistribute()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerDistribute" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">158</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the distribution handler for a package.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRunnerDistribute</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Distribute.html"><abbr title="\Horde\Components\Runner\Distribute">Distribute</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Distribute.html"><abbr title="\Horde\Components\Runner\Distribute">Distribute</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The distribution handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRunnerFetchdocs">
+        getRunnerFetchdocs()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerFetchdocs" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">178</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the documentation fetch handler for a package.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRunnerFetchdocs</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Fetchdocs.html"><abbr title="\Horde\Components\Runner\Fetchdocs">Fetchdocs</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Fetchdocs.html"><abbr title="\Horde\Components\Runner\Fetchdocs">Fetchdocs</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The fetch handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRunnerGit">
+        getRunnerGit()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerGit" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">247</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the dependency list handler for a package.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRunnerGit</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Git.html"><abbr title="\Horde\Components\Runner\Git">Git</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Git.html"><abbr title="\Horde\Components\Runner\Git">Git</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The Git Handler</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRunnerInit">
+        getRunnerInit()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerInit" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">257</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the init handler for a package.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRunnerInit</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Init.html"><abbr title="\Horde\Components\Runner\Init">Init</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Init.html"><abbr title="\Horde\Components\Runner\Init">Init</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The fetch handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRunnerInstaller">
+        getRunnerInstaller()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerInstaller" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">267</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the installer for a package.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRunnerInstaller</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Installer.html"><abbr title="\Horde\Components\Runner\Installer">Installer</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Installer.html"><abbr title="\Horde\Components\Runner\Installer">Installer</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The installer.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRunnerQc">
+        getRunnerQc()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerQc" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">208</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the qc handler for a package.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRunnerQc</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Qc.html"><abbr title="\Horde\Components\Runner\Qc">Qc</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Qc.html"><abbr title="\Horde\Components\Runner\Qc">Qc</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The qc handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRunnerRelease">
+        getRunnerRelease()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerRelease" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">198</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the release handler for a package.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRunnerRelease</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Release.html"><abbr title="\Horde\Components\Runner\Release">Release</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Release.html"><abbr title="\Horde\Components\Runner\Release">Release</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The release handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRunnerSnapshot">
+        getRunnerSnapshot()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerSnapshot" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">228</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the snapshot packaging handler for a package.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRunnerSnapshot</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Snapshot.html"><abbr title="\Horde\Components\Runner\Snapshot">Snapshot</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Snapshot.html"><abbr title="\Horde\Components\Runner\Snapshot">Snapshot</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The snapshot handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRunnerUpdate">
+        getRunnerUpdate()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerUpdate" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">277</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the package XML handler for a package.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRunnerUpdate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Update.html"><abbr title="\Horde\Components\Runner\Update">Update</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Components-Runner-Update.html"><abbr title="\Horde\Components\Runner\Update">Update</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The package XML handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRunnerWebdocs">
+        getRunnerWebdocs()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_getRunnerWebdocs" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">168</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the website documentation handler for a package.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRunnerWebdocs</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Components\Dependencies\RunnerWebdocs">RunnerWebdocs</abbr></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Components\Dependencies\RunnerWebdocs">RunnerWebdocs</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The documentation handler.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_initConfig">
+        initConfig()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_initConfig" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">84</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Initial configuration setup.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">initConfig</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Config.html"><abbr title="\Horde\Components\Config">Config</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Config.html"><abbr title="\Horde\Components\Config">Config</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The configuration.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setModules">
+        setModules()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_setModules" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">96</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Set the list of modules.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">setModules</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Cli_Modular">Horde_Cli_Modular</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$modules</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$modules</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Cli_Modular">Horde_Cli_Modular</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The list of modules.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setParser">
+        setParser()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_setParser" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">118</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Set the CLI parser.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">setParser</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Argv_Parser">Horde_Argv_Parser</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parser</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parser</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Argv_Parser">Horde_Argv_Parser</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The parser.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_useCliPager">
+        useCliPager()
+        <a href="classes/Horde-Components-Dependencies-Injector.html#method_useCliPager" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Dependencies/Injector.php"><a href="files/dependencies-injector.html"><abbr title="Dependencies/Injector.php">Injector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">327</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Enables a pager for \Horde_Cli objects.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">useCliPager</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+            </section>
+
         
     <script type="text/javascript">
         function loadExternalCodeSnippets(line) {
