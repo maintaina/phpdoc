@@ -626,9 +626,64 @@ Search.appendIndex(
             "summary": "Whether\u0020entry\u0020is\u0020vcalendar\u00201.0,\u0020vcard\u00202.1\u0020or\u0020vnote\u00201.1.",
             "url": "classes/Horde-Icalendar.html#property__oldFormat"
         },                {
+            "fqsen": "\\Horde\\Icalendar\\Component",
+            "name": "Component",
+            "summary": "",
+            "url": "classes/Horde-Icalendar-Component.html"
+        },                {
+            "fqsen": "\\Horde\\Icalendar\\Reader",
+            "name": "Reader",
+            "summary": "Read\u0020a\u0020vcalendar\u0020or\u0020vcard\u0020from\u0020file",
+            "url": "classes/Horde-Icalendar-Reader.html"
+        },                {
+            "fqsen": "\\Horde\\Icalendar\\Reader\u003A\u003AreadStream\u0028\u0029",
+            "name": "readStream",
+            "summary": "",
+            "url": "classes/Horde-Icalendar-Reader.html#method_readStream"
+        },                {
+            "fqsen": "\\Horde\\Icalendar\\Reader\u003A\u003AreadFile\u0028\u0029",
+            "name": "readFile",
+            "summary": "",
+            "url": "classes/Horde-Icalendar-Reader.html#method_readFile"
+        },                {
+            "fqsen": "\\Horde\\Icalendar\\RootComponent",
+            "name": "RootComponent",
+            "summary": "",
+            "url": "classes/Horde-Icalendar-RootComponent.html"
+        },                {
+            "fqsen": "\\Horde\\Icalendar\\Vcalendar",
+            "name": "Vcalendar",
+            "summary": "",
+            "url": "classes/Horde-Icalendar-Vcalendar.html"
+        },                {
+            "fqsen": "\\Horde\\Icalendar\\Vcard",
+            "name": "Vcard",
+            "summary": "",
+            "url": "classes/Horde-Icalendar-Vcard.html"
+        },                {
+            "fqsen": "\\Horde\\Icalendar\\Vevent",
+            "name": "Vevent",
+            "summary": "",
+            "url": "classes/Horde-Icalendar-Vevent.html"
+        },                {
+            "fqsen": "\\Horde\\Icalendar\\Vtodo",
+            "name": "Vtodo",
+            "summary": "",
+            "url": "classes/Horde-Icalendar-Vtodo.html"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
+        },                {
+            "fqsen": "\\Horde\\Icalendar",
+            "name": "Icalendar",
+            "summary": "",
+            "url": "namespaces/horde-icalendar.html"
+        },                {
+            "fqsen": "\\Horde",
+            "name": "Horde",
+            "summary": "",
+            "url": "namespaces/horde.html"
         }            ]
 );
