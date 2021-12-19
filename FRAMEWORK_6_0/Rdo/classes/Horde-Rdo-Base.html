@@ -52,17 +52,27 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-        
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-            </section>
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-rdo.html">Rdo</a>
+                
+            </li>
+            </ul>
 
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Rdo.html"><abbr title="\Rdo">Rdo</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Test.html"><abbr title="\Test">Test</abbr></a></h3>
                         </section>
-    
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Rdo.html">Rdo</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Test.html">Test</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+
+                        </section>
+            
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
@@ -78,12 +88,13 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Rdo.html">Rdo</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-rdo.html">Rdo</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Rdo_Base
+    Base
 
     
             <div class="phpdocumentor-element__package">
@@ -95,18 +106,19 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\IteratorAggregate">IteratorAggregate</abbr>,                             <abbr title="\ArrayAccess">ArrayAccess</abbr>                    </span>
+                            <a href="classes/Horde-Rdo-Entity.html"><abbr title="\Horde\Rdo\Entity">Entity</abbr></a>,                             <abbr title="\IteratorAggregate">IteratorAggregate</abbr>,                             <abbr title="\ArrayAccess">ArrayAccess</abbr>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Horde_Rdo_Base abstract class (Rampage Data Objects). Entity
+            <p class="phpdocumentor-summary">Straight port of Horde_Rdo_Base from traditional Rdo
+Horde\Rdo\Base abstract class (Rampage Data Objects). Entity
 classes extend this baseline.</p>
 
 
@@ -136,6 +148,8 @@ classes extend this baseline.</p>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Rdo-Entity.html"><abbr title="\Horde\Rdo\Entity">Entity</abbr></a></dt>
+        <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\IteratorAggregate">IteratorAggregate</abbr></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\ArrayAccess">ArrayAccess</abbr></dt>
@@ -161,9 +175,9 @@ classes extend this baseline.</p>
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Rdo-Base.html#property__mapper">$_mapper</a>
     <span>
-                &nbsp;: <a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde_Rdo_Mapper">Horde_Rdo_Mapper</abbr></a>            </span>
+                &nbsp;: <a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde\Rdo\Mapper">Mapper</abbr></a>            </span>
 </dt>
-<dd>The Horde_Rdo_Mapper instance associated with this Rdo object. The
+<dd>The Mapper instance associated with this Rdo object. The
 Mapper takes care of all backend access.</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -182,7 +196,7 @@ don&#039;t clone.</dd>
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Constructor. Can be called directly by a programmer, or is
-called in Horde_Rdo_Mapper::map(). Takes an associative array
+called in Mapper::map(). Takes an associative array
 of initial object values.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -235,7 +249,7 @@ field. Relationships cannot be unset in this way.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Rdo-Base.html#method_getIterator">getIterator()</a>
     <span>
-                        &nbsp;: <a href="classes/Horde-Rdo-Iterator.html"><abbr title="\Horde_Rdo_Iterator">Horde_Rdo_Iterator</abbr></a>    </span>
+                        &nbsp;: <abbr title="\Horde\Rdo\Iterator">Iterator</abbr>    </span>
 </dt>
 <dd>Implement the IteratorAggregate interface. Looping over an Rdo
 object goes through each property of the object in turn.</dd>
@@ -243,7 +257,7 @@ object goes through each property of the object in turn.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Rdo-Base.html#method_getMapper">getMapper()</a>
     <span>
-                        &nbsp;: <a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde_Rdo_Mapper">Horde_Rdo_Mapper</abbr></a>    </span>
+                        &nbsp;: <a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde\Rdo\Mapper">Mapper</abbr></a>    </span>
 </dt>
 <dd>Get a Mapper instance that can be used to manage this
 object. The Mapper instance can come from a few places:</dd>
@@ -311,7 +325,7 @@ relationships in the mapper.</dd>
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Associate this Rdo object with the Mapper instance that will
-manage it. Called automatically by Horde_Rdo_Mapper:map().</dd>
+manage it. Called automatically by Mapper:map().</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Rdo-Base.html#method_toArray">toArray()</a>
@@ -354,9 +368,9 @@ from this object.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -387,18 +401,18 @@ from this object.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The Horde_Rdo_Mapper instance associated with this Rdo object. The
+        <p class="phpdocumentor-summary">The Mapper instance associated with this Rdo object. The
 Mapper takes care of all backend access.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde_Rdo_Mapper">Horde_Rdo_Mapper</abbr></a></span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde\Rdo\Mapper">Mapper</abbr></a></span>
     <span class="phpdocumentor-signature__name">$_mapper</span>
     </code>
 
@@ -414,7 +428,7 @@ Mapper takes care of all backend access.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde_Rdo_Mapper">Horde_Rdo_Mapper</abbr></a></span>
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde\Rdo\Mapper">Mapper</abbr></a></span>
                                         
                                              
                                     </dd>
@@ -439,9 +453,9 @@ Mapper takes care of all backend access.</p>
         <a href="classes/Horde-Rdo-Base.html#method___clone" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -475,14 +489,14 @@ don&#039;t clone.</p>
         <a href="classes/Horde-Rdo-Base.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Constructor. Can be called directly by a programmer, or is
-called in Horde_Rdo_Mapper::map(). Takes an associative array
+called in Mapper::map(). Takes an associative array
 of initial object values.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -513,7 +527,7 @@ of initial object values.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Horde-Rdo-Mapper.html#method_map"><abbr title="\Horde_Rdo_Mapper::map()">Horde_Rdo_Mapper::map()</abbr></a></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Rdo\Mapper::map()">Mapper::map()</abbr></span>
                                         
                                              
                                     </dd>
@@ -536,9 +550,9 @@ of initial object values.</p>
         <a href="classes/Horde-Rdo-Base.html#method___get" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -586,9 +600,9 @@ doesn&#039;t need to be fetched again.</p>
         <a href="classes/Horde-Rdo-Base.html#method___isset" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">203</span>
+    <span class="phpdocumentor-element-found-in__line">208</span>
 
     </aside>
 
@@ -632,9 +646,9 @@ relationship presence.</p>
         <a href="classes/Horde-Rdo-Base.html#method___set" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">173</span>
+    <span class="phpdocumentor-element-found-in__line">178</span>
 
     </aside>
 
@@ -686,9 +700,9 @@ relationship presence.</p>
         <a href="classes/Horde-Rdo-Base.html#method___unset" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">229</span>
+    <span class="phpdocumentor-element-found-in__line">234</span>
 
     </aside>
 
@@ -732,9 +746,9 @@ field. Relationships cannot be unset in this way.</p>
         <a href="classes/Horde-Rdo-Base.html#method_addRelation" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">332</span>
+    <span class="phpdocumentor-element-found-in__line">337</span>
 
     </aside>
 
@@ -742,7 +756,7 @@ field. Relationships cannot be unset in this way.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">addRelation</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$relationship</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Base.html"><abbr title="\Horde_Rdo_Base">Horde_Rdo_Base</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$peer</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">addRelation</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$relationship</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Base.html"><abbr title="\Horde\Rdo\Base">Base</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$peer</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><ul>
 <li>For one-to-one relations, simply updates the relation field.</li>
@@ -766,7 +780,7 @@ field. Relationships cannot be unset in this way.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$peer</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Base.html"><abbr title="\Horde_Rdo_Base">Horde_Rdo_Base</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Base.html"><abbr title="\Horde\Rdo\Base">Base</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The object to add the relation.</p>
@@ -785,7 +799,7 @@ field. Relationships cannot be unset in this way.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Rdo-Exception.html"><abbr title="\Horde_Rdo_Exception">Horde_Rdo_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Rdo-RdoException.html"><abbr title="\Horde\Rdo\RdoException">RdoException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -808,9 +822,9 @@ field. Relationships cannot be unset in this way.</p>
         <a href="classes/Horde-Rdo-Base.html#method_delete" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">424</span>
+    <span class="phpdocumentor-element-found-in__line">429</span>
 
     </aside>
 
@@ -843,9 +857,9 @@ field. Relationships cannot be unset in this way.</p>
         <a href="classes/Horde-Rdo-Base.html#method_getIterator" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">264</span>
+    <span class="phpdocumentor-element-found-in__line">269</span>
 
     </aside>
 
@@ -854,14 +868,14 @@ object goes through each property of the object in turn.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getIterator</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Rdo-Iterator.html"><abbr title="\Horde_Rdo_Iterator">Horde_Rdo_Iterator</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">getIterator</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Rdo\Iterator">Iterator</abbr></span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Rdo-Iterator.html"><abbr title="\Horde_Rdo_Iterator">Horde_Rdo_Iterator</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Rdo\Iterator">Iterator</abbr></span>
             &mdash;
             <section class="phpdocumentor-description"><p>The Iterator instance.</p>
 </section>
@@ -879,9 +893,9 @@ object goes through each property of the object in turn.</p>
         <a href="classes/Horde-Rdo-Base.html#method_getMapper" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">290</span>
+    <span class="phpdocumentor-element-found-in__line">295</span>
 
     </aside>
 
@@ -890,7 +904,7 @@ object. The Mapper instance can come from a few places:</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getMapper</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde_Rdo_Mapper">Horde_Rdo_Mapper</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">getMapper</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde\Rdo\Mapper">Mapper</abbr></a></span></code>
 
         <section class="phpdocumentor-description"><ul>
 <li>
@@ -898,7 +912,7 @@ object. The Mapper instance can come from a few places:</p>
 automatically.</p>
 </li>
 <li>
-<p>Any Rdo instance created with Horde_Rdo_Mapper::map() will have a
+<p>Any Rdo instance created with Mapper::map() will have a
 $mapper object set automatically.</p>
 </li>
 <li>
@@ -910,7 +924,7 @@ mapper object.</p>
 mapper object.</p>
 </li>
 </ul>
-<p>A Horde_Rdo_Exception will be thrown if none of these
+<p>A RdoException will be thrown if none of these
 conditions are met.</p>
 </section>
 
@@ -918,7 +932,7 @@ conditions are met.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde_Rdo_Mapper">Horde_Rdo_Mapper</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde\Rdo\Mapper">Mapper</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"><p>The Mapper instance managing this object.</p>
 </section>
@@ -936,9 +950,9 @@ conditions are met.</p>
         <a href="classes/Horde-Rdo-Base.html#method_hasRelation" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">349</span>
+    <span class="phpdocumentor-element-found-in__line">354</span>
 
     </aside>
 
@@ -947,7 +961,7 @@ relationships in the mapper.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">hasRelation</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$relationship</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Base.html"><abbr title="\Horde_Rdo_Base">Horde_Rdo_Base</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$peer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                <span class="phpdocumentor-signature__name">hasRelation</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$relationship</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Base.html"><abbr title="\Horde\Rdo\Base">Base</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$peer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -963,7 +977,7 @@ relationships in the mapper.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$peer</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Base.html"><abbr title="\Horde_Rdo_Base">Horde_Rdo_Base</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Base.html"><abbr title="\Horde\Rdo\Base">Base</abbr></a></span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The object to check for the relation.
@@ -984,7 +998,7 @@ for this relation.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Rdo-Exception.html"><abbr title="\Horde_Rdo_Exception">Horde_Rdo_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Rdo-RdoException.html"><abbr title="\Horde\Rdo\RdoException">RdoException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1009,9 +1023,9 @@ for this relation.</p>
         <a href="classes/Horde-Rdo-Base.html#method_offsetExists" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">218</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -1044,7 +1058,7 @@ for this relation.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\__isset()">__isset()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Rdo\__isset()">__isset()</abbr></span>
                                         
                                              
                                     </dd>
@@ -1067,9 +1081,9 @@ for this relation.</p>
         <a href="classes/Horde-Rdo-Base.html#method_offsetGet" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 
     </aside>
 
@@ -1102,7 +1116,7 @@ for this relation.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\__get()">__get()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Rdo\__get()">__get()</abbr></span>
                                         
                                              
                                     </dd>
@@ -1125,9 +1139,9 @@ for this relation.</p>
         <a href="classes/Horde-Rdo-Base.html#method_offsetSet" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">192</span>
+    <span class="phpdocumentor-element-found-in__line">197</span>
 
     </aside>
 
@@ -1168,7 +1182,7 @@ for this relation.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\__set()">__set()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Rdo\__set()">__set()</abbr></span>
                                         
                                              
                                     </dd>
@@ -1191,9 +1205,9 @@ for this relation.</p>
         <a href="classes/Horde-Rdo-Base.html#method_offsetUnset" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">241</span>
+    <span class="phpdocumentor-element-found-in__line">246</span>
 
     </aside>
 
@@ -1226,7 +1240,7 @@ for this relation.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\__unset()">__unset()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Rdo\__unset()">__unset()</abbr></span>
                                         
                                              
                                     </dd>
@@ -1249,9 +1263,9 @@ for this relation.</p>
         <a href="classes/Horde-Rdo-Base.html#method_removeRelation" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">404</span>
+    <span class="phpdocumentor-element-found-in__line">409</span>
 
     </aside>
 
@@ -1259,7 +1273,7 @@ for this relation.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">removeRelation</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$relationship</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Base.html"><abbr title="\Horde_Rdo_Base">Horde_Rdo_Base</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$peer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                <span class="phpdocumentor-signature__name">removeRelation</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$relationship</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Base.html"><abbr title="\Horde\Rdo\Base">Base</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$peer</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
         <section class="phpdocumentor-description"><ul>
 <li>For one-to-one and one-to-many relations, simply sets the relation
@@ -1284,7 +1298,7 @@ the relation to a given peer object.</li>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$peer</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Base.html"><abbr title="\Horde_Rdo_Base">Horde_Rdo_Base</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Base.html"><abbr title="\Horde\Rdo\Base">Base</abbr></a></span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The object to remove from the relation</p>
@@ -1303,7 +1317,7 @@ the relation to a given peer object.</li>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Rdo-Exception.html"><abbr title="\Horde_Rdo_Exception">Horde_Rdo_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Rdo-RdoException.html"><abbr title="\Horde\Rdo\RdoException">RdoException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1328,9 +1342,9 @@ the relation to a given peer object.</li>
         <a href="classes/Horde-Rdo-Base.html#method_save" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">414</span>
+    <span class="phpdocumentor-element-found-in__line">419</span>
 
     </aside>
 
@@ -1363,9 +1377,9 @@ the relation to a given peer object.</li>
         <a href="classes/Horde-Rdo-Base.html#method_setFields" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">253</span>
+    <span class="phpdocumentor-element-found-in__line">258</span>
 
     </aside>
 
@@ -1399,7 +1413,7 @@ the relation to a given peer object.</li>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Horde-Rdo-Mapper.html#method_map"><abbr title="\Horde_Rdo_Mapper::map()">Horde_Rdo_Mapper::map()</abbr></a></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Rdo\Mapper::map()">Mapper::map()</abbr></span>
                                         
                                              
                                     </dd>
@@ -1422,25 +1436,25 @@ the relation to a given peer object.</li>
         <a href="classes/Horde-Rdo-Base.html#method_setMapper" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">312</span>
+    <span class="phpdocumentor-element-found-in__line">317</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Associate this Rdo object with the Mapper instance that will
-manage it. Called automatically by Horde_Rdo_Mapper:map().</p>
+manage it. Called automatically by Mapper:map().</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setMapper</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde_Rdo_Mapper">Horde_Rdo_Mapper</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mapper</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">setMapper</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde\Rdo\Mapper">Mapper</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mapper</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$mapper</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde_Rdo_Mapper">Horde_Rdo_Mapper</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde\Rdo\Mapper">Mapper</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The Mapper to manage this Rdo object.</p>
@@ -1459,7 +1473,7 @@ manage it. Called automatically by Horde_Rdo_Mapper:map().</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Horde-Rdo-Mapper.html#method_map"><abbr title="\Horde_Rdo_Mapper::map()">Horde_Rdo_Mapper::map()</abbr></a></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Rdo\Mapper::map()">Mapper::map()</abbr></span>
                                         
                                              
                                     </dd>
@@ -1482,9 +1496,9 @@ manage it. Called automatically by Horde_Rdo_Mapper:map().</p>
         <a href="classes/Horde-Rdo-Base.html#method_toArray" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">463</span>
+    <span class="phpdocumentor-element-found-in__line">468</span>
 
     </aside>
 
@@ -1557,9 +1571,9 @@ lazyFields/lazyRelationships.</p>
         <a href="classes/Horde-Rdo-Base.html#method__fillPlaceholders" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Base.php"><a href="files/horde-rdo-base.html"><abbr title="Horde/Rdo/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Base.php"><a href="files/base.html"><abbr title="Base.php">Base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">437</span>
+    <span class="phpdocumentor-element-found-in__line">442</span>
 
     </aside>
 

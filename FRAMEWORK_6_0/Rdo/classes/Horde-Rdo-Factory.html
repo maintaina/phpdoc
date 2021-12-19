@@ -52,17 +52,27 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-        
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-            </section>
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-rdo.html">Rdo</a>
+                
+            </li>
+            </ul>
 
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Rdo.html"><abbr title="\Rdo">Rdo</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Test.html"><abbr title="\Test">Test</abbr></a></h3>
                         </section>
-    
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Rdo.html">Rdo</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Test.html">Test</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+
+                        </section>
+            
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
@@ -78,12 +88,13 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Rdo.html">Rdo</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-rdo.html">Rdo</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Rdo_Factory
+    Factory
 
     
             <div class="phpdocumentor-element__package">
@@ -97,13 +108,13 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Factory.php"><a href="files/horde-rdo-factory.html"><abbr title="Horde/Rdo/Factory.php">Factory.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Factory.php"><a href="files/factory.html"><abbr title="Factory.php">Factory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">The Horde_Rdo_Factory is a caching root object for Horde_Rdo_Mapper instances
+            <p class="phpdocumentor-summary">The Factory is a caching root object for Mapper instances
 This should itself be injected into applications by an injector</p>
 
 
@@ -140,19 +151,19 @@ This should itself be injected into applications by an injector</p>
     <span>
                 &nbsp;: <abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr>            </span>
 </dt>
-<dd>The database connection to pass to the Horde_Rdo_Mapper classes</dd>
+<dd>The database connection to pass to the Mapper classes</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Rdo-Factory.html#property__mappers">$_mappers</a>
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd>The list of already loaded Horde_Rdo_Mapper classes</dd>
+<dd>The list of already loaded Mapper classes</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Rdo-Factory.html#method___construct">__construct()</a>
     <span>
-                        &nbsp;: <a href="classes/Horde-Rdo-Factory.html"><abbr title="\Horde_Rdo_Factory">Horde_Rdo_Factory</abbr></a>    </span>
+                        &nbsp;: <a href="classes/Horde-Rdo-Factory.html"><abbr title="\Horde\Rdo\Factory">Factory</abbr></a>    </span>
 </dt>
 <dd>Constructor.</dd>
 
@@ -166,7 +177,7 @@ This should itself be injected into applications by an injector</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Rdo-Factory.html#method_create">create()</a>
     <span>
-                        &nbsp;: <a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde_Rdo_Mapper">Horde_Rdo_Mapper</abbr></a>    </span>
+                        &nbsp;: <a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde\Rdo\Mapper">Mapper</abbr></a>    </span>
 </dt>
 <dd>Return the mapper instance.</dd>
 
@@ -196,13 +207,13 @@ This should itself be injected into applications by an injector</p>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Factory.php"><a href="files/horde-rdo-factory.html"><abbr title="Horde/Rdo/Factory.php">Factory.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Factory.php"><a href="files/factory.html"><abbr title="Factory.php">Factory.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The database connection to pass to the Horde_Rdo_Mapper classes</p>
+        <p class="phpdocumentor-summary">The database connection to pass to the Mapper classes</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
@@ -229,13 +240,13 @@ This should itself be injected into applications by an injector</p>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Factory.php"><a href="files/horde-rdo-factory.html"><abbr title="Horde/Rdo/Factory.php">Factory.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Factory.php"><a href="files/factory.html"><abbr title="Factory.php">Factory.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The list of already loaded Horde_Rdo_Mapper classes</p>
+        <p class="phpdocumentor-summary">The list of already loaded Mapper classes</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
@@ -266,7 +277,7 @@ This should itself be injected into applications by an injector</p>
         <a href="classes/Horde-Rdo-Factory.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Factory.php"><a href="files/horde-rdo-factory.html"><abbr title="Horde/Rdo/Factory.php">Factory.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Factory.php"><a href="files/factory.html"><abbr title="Factory.php">Factory.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">42</span>
 
@@ -276,7 +287,7 @@ This should itself be injected into applications by an injector</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$adapter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Rdo-Factory.html"><abbr title="\Horde_Rdo_Factory">Horde_Rdo_Factory</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$adapter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Rdo-Factory.html"><abbr title="\Horde\Rdo\Factory">Factory</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -295,9 +306,9 @@ This should itself be injected into applications by an injector</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Rdo-Factory.html"><abbr title="\Horde_Rdo_Factory">Horde_Rdo_Factory</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Rdo-Factory.html"><abbr title="\Horde\Rdo\Factory">Factory</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"><p>The Horde_Rdo_Factory</p>
+            <section class="phpdocumentor-description"><p>The Factory</p>
 </section>
 
     
@@ -313,7 +324,7 @@ This should itself be injected into applications by an injector</p>
         <a href="classes/Horde-Rdo-Factory.html#method_count" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Factory.php"><a href="files/horde-rdo-factory.html"><abbr title="Horde/Rdo/Factory.php">Factory.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Factory.php"><a href="files/factory.html"><abbr title="Factory.php">Factory.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">52</span>
 
@@ -348,7 +359,7 @@ This should itself be injected into applications by an injector</p>
         <a href="classes/Horde-Rdo-Factory.html#method_create" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Rdo/Factory.php"><a href="files/horde-rdo-factory.html"><abbr title="Horde/Rdo/Factory.php">Factory.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Factory.php"><a href="files/factory.html"><abbr title="Factory.php">Factory.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">66</span>
 
@@ -358,7 +369,7 @@ This should itself be injected into applications by an injector</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$adapter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde_Rdo_Mapper">Horde_Rdo_Mapper</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Db_Adapter">Horde_Db_Adapter</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$adapter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde\Rdo\Mapper">Mapper</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -393,16 +404,16 @@ This should itself be injected into applications by an injector</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Rdo-Exception.html"><abbr title="\Horde_Rdo_Exception">Horde_Rdo_Exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Horde-Rdo-RdoException.html"><abbr title="\Horde\Rdo\RdoException">RdoException</abbr></a></span>
                                                             
                                              
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde_Rdo_Mapper">Horde_Rdo_Mapper</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Rdo-Mapper.html"><abbr title="\Horde\Rdo\Mapper">Mapper</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"><p>The Horde_Rdo_Mapper descendant instance.</p>
+            <section class="phpdocumentor-description"><p>The Mapper descendant instance.</p>
 </section>
 
     

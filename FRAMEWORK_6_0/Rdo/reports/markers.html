@@ -53,17 +53,27 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-        
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-            </section>
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-rdo.html">Rdo</a>
+                
+            </li>
+            </ul>
 
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Rdo.html"><abbr title="\Rdo">Rdo</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Test.html"><abbr title="\Test">Test</abbr></a></h3>
                         </section>
-    
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Rdo.html">Rdo</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Test.html">Test</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+
+                        </section>
+            
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
@@ -88,318 +98,15 @@
                     <h3>Table of Contents</h3>
             <table class="phpdocumentor-table_of_contents">
                                                             <tr>
-                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Rdo/Base.php">Horde/Rdo/Base.php</a></td>
-                            <td class="phpdocumentor-cell">21</td>
-                        </tr>
-                                                                                <tr>
-                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Rdo/Factory.php">Horde/Rdo/Factory.php</a></td>
-                            <td class="phpdocumentor-cell">1</td>
-                        </tr>
-                                                                                <tr>
-                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Rdo/List.php">Horde/Rdo/List.php</a></td>
-                            <td class="phpdocumentor-cell">6</td>
-                        </tr>
-                                                                                <tr>
-                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Rdo/Mapper.php">Horde/Rdo/Mapper.php</a></td>
-                            <td class="phpdocumentor-cell">19</td>
-                        </tr>
-                                                                                <tr>
                             <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Rdo/Query.php">Horde/Rdo/Query.php</a></td>
-                            <td class="phpdocumentor-cell">10</td>
+                            <td class="phpdocumentor-cell">2</td>
                         </tr>
                                                                                 <tr>
-                            <td class="phpdocumentor-cell"><a href="reports/markers.html#Horde/Rdo.php">Horde/Rdo.php</a></td>
-                            <td class="phpdocumentor-cell">3</td>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#BaseQuery.php">BaseQuery.php</a></td>
+                            <td class="phpdocumentor-cell">2</td>
                         </tr>
                                                 </table>
         
-                    <a id="Horde/Rdo/Base.php"></a>
-            <h3><abbr title="Horde/Rdo/Base.php">Base.php</abbr></h3>
-            <table>
-                <thead>
-                <tr>
-                    <th class="phpdocumentor-heading">Type</th>
-                    <th class="phpdocumentor-heading">Line</th>
-                    <th class="phpdocumentor-heading">Description</th>
-                </tr>
-                </thead>
-                <tbody>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">54</td>
-                        <td class="phpdocumentor-cell">@TODO Support composite primary keys</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">57</td>
-                        <td class="phpdocumentor-cell">@TODO What about associated objects?</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">72</td>
-                        <td class="phpdocumentor-cell">Honor any explicit getters.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">74</td>
-                        <td class="phpdocumentor-cell">If an Rdo_Base subclass has a __call() method, is_callable</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">75</td>
-                        <td class="phpdocumentor-cell">returns true on every method name, so use method_exists</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">76</td>
-                        <td class="phpdocumentor-cell">instead.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">87</td>
-                        <td class="phpdocumentor-cell">Look for lazy fields first, then relationships.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">89</td>
-                        <td class="phpdocumentor-cell">@TODO Support composite primary keys</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">102</td>
-                        <td class="phpdocumentor-cell">Try to find the Mapper class for the object the</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">103</td>
-                        <td class="phpdocumentor-cell">relationship is with, and fail if we can&#039;t.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">108</td>
-                        <td class="phpdocumentor-cell">@TODO - should be getting this instance from somewhere</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">109</td>
-                        <td class="phpdocumentor-cell">else external, and not passing the adapter along</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">110</td>
-                        <td class="phpdocumentor-cell">automatically.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">120</td>
-                        <td class="phpdocumentor-cell">Based on the kind of relationship, fetch the appropriate</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">121</td>
-                        <td class="phpdocumentor-cell">objects and fill the cache.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">175</td>
-                        <td class="phpdocumentor-cell">Honor any explicit setters.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">177</td>
-                        <td class="phpdocumentor-cell">If an Rdo_Base subclass has a __call() method, is_callable</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">178</td>
-                        <td class="phpdocumentor-cell">returns true on every method name, so use method_exists</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">179</td>
-                        <td class="phpdocumentor-cell">instead.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">231</td>
-                        <td class="phpdocumentor-cell">@TODO Should unsetting a MANY_TO_MANY relationship remove</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">232</td>
-                        <td class="phpdocumentor-cell">the relationship?</td>
-                    </tr>
-                                </tbody>
-            </table>
-                    <a id="Horde/Rdo/Factory.php"></a>
-            <h3><abbr title="Horde/Rdo/Factory.php">Factory.php</abbr></h3>
-            <table>
-                <thead>
-                <tr>
-                    <th class="phpdocumentor-heading">Type</th>
-                    <th class="phpdocumentor-heading">Line</th>
-                    <th class="phpdocumentor-heading">Description</th>
-                </tr>
-                </thead>
-                <tbody>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">10</td>
-                        <td class="phpdocumentor-cell">www.horde.org/licenses/lgpl21 LGPL</td>
-                    </tr>
-                                </tbody>
-            </table>
-                    <a id="Horde/Rdo/List.php"></a>
-            <h3><abbr title="Horde/Rdo/List.php">List.php</abbr></h3>
-            <table>
-                <thead>
-                <tr>
-                    <th class="phpdocumentor-heading">Type</th>
-                    <th class="phpdocumentor-heading">Line</th>
-                    <th class="phpdocumentor-heading">Description</th>
-                </tr>
-                </thead>
-                <tbody>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">83</td>
-                        <td class="phpdocumentor-cell">Make sure we have a Mapper object, which can be passed</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">84</td>
-                        <td class="phpdocumentor-cell">implicitly by being set on the Query.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">92</td>
-                        <td class="phpdocumentor-cell">Convert the query into a SQL statement and an array of</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">93</td>
-                        <td class="phpdocumentor-cell">bind parameters.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">96</td>
-                        <td class="phpdocumentor-cell">Straight SQL query, empty bind parameters array.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">100</td>
-                        <td class="phpdocumentor-cell">$query is already an array with SQL and bind parameters.</td>
-                    </tr>
-                                </tbody>
-            </table>
-                    <a id="Horde/Rdo/Mapper.php"></a>
-            <h3><abbr title="Horde/Rdo/Mapper.php">Mapper.php</abbr></h3>
-            <table>
-                <thead>
-                <tr>
-                    <th class="phpdocumentor-heading">Type</th>
-                    <th class="phpdocumentor-heading">Line</th>
-                    <th class="phpdocumentor-heading">Description</th>
-                </tr>
-                </thead>
-                <tbody>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">190</td>
-                        <td class="phpdocumentor-cell">Guess a classname if one isn&#039;t explicitly set.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">242</td>
-                        <td class="phpdocumentor-cell">@TODO - should be getting this instance from somewhere</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">243</td>
-                        <td class="phpdocumentor-cell">else external, and not passing the adapter along</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">244</td>
-                        <td class="phpdocumentor-cell">automatically.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">251</td>
-                        <td class="phpdocumentor-cell">@TODO Throw an exception?</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">256</td>
-                        <td class="phpdocumentor-cell">Don&#039;t check the table only. If there was a match for LEFT</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">257</td>
-                        <td class="phpdocumentor-cell">JOINs, there may be a &quot;empty&quot; result</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">346</td>
-                        <td class="phpdocumentor-cell">If configured to record creation and update times, set them</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">347</td>
-                        <td class="phpdocumentor-cell">here. We set updated_at to the initial creation time so it&#039;s</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">348</td>
-                        <td class="phpdocumentor-cell">always set.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">355</td>
-                        <td class="phpdocumentor-cell">Filter out any extra fields.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">398</td>
-                        <td class="phpdocumentor-cell">Object doesn&#039;t exist yet; create it instead.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">407</td>
-                        <td class="phpdocumentor-cell">If configured to record update time, set it here.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">412</td>
-                        <td class="phpdocumentor-cell">Filter out any extra fields.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">416</td>
-                        <td class="phpdocumentor-cell">Nothing to change.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">498</td>
-                        <td class="phpdocumentor-cell">Numerically indexed arrays are assumed to be an array of</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">499</td>
-                        <td class="phpdocumentor-cell">primary keys.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">512</td>
-                        <td class="phpdocumentor-cell">Build a full Query object.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">671</td>
-                        <td class="phpdocumentor-cell">Build a full Query object, and limit it to one result.</td>
-                    </tr>
-                                </tbody>
-            </table>
                     <a id="Horde/Rdo/Query.php"></a>
             <h3><abbr title="Horde/Rdo/Query.php">Query.php</abbr></h3>
             <table>
@@ -412,46 +119,6 @@
                 </thead>
                 <tbody>
                                     <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">135</td>
-                        <td class="phpdocumentor-cell">Fetch all non-lazy-loaded fields for the mapper.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">138</td>
-                        <td class="phpdocumentor-cell">Add all non-lazy relationships.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">141</td>
-                        <td class="phpdocumentor-cell">@TODO - should be getting this instance from somewhere</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">142</td>
-                        <td class="phpdocumentor-cell">else external, and not passing the adapter along</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">143</td>
-                        <td class="phpdocumentor-cell">automatically.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">152</td>
-                        <td class="phpdocumentor-cell">Add the fields for this relationship to the query.</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">175</td>
-                        <td class="phpdocumentor-cell">@TODO</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">356</td>
-                        <td class="phpdocumentor-cell">Add in any default sort values, if none are already set.</td>
-                    </tr>
-                                    <tr>
                         <td class="phpdocumentor-cell">TODO</td>
                         <td class="phpdocumentor-cell">86</td>
                         <td class="phpdocumentor-cell">Make $mapper non-optional in H6</td>
@@ -463,8 +130,8 @@
                     </tr>
                                 </tbody>
             </table>
-                    <a id="Horde/Rdo.php"></a>
-            <h3><abbr title="Horde/Rdo.php">Rdo.php</abbr></h3>
+                    <a id="BaseQuery.php"></a>
+            <h3><abbr title="BaseQuery.php">BaseQuery.php</abbr></h3>
             <table>
                 <thead>
                 <tr>
@@ -475,19 +142,14 @@
                 </thead>
                 <tbody>
                                     <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">3</td>
-                        <td class="phpdocumentor-cell">www.horde.org/)</td>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">86</td>
+                        <td class="phpdocumentor-cell">Make $mapper non-optional in H6</td>
                     </tr>
                                     <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">6</td>
-                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd BSD</td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"></td>
-                        <td class="phpdocumentor-cell">13</td>
-                        <td class="phpdocumentor-cell">www.horde.org/licenses/bsd BSD</td>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">117</td>
+                        <td class="phpdocumentor-cell">Make $mapper non-optional in H6</td>
                     </tr>
                                 </tbody>
             </table>
