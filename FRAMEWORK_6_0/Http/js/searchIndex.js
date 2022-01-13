@@ -1361,6 +1361,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Http-Stream.html#property_writable"
         },                {
+            "fqsen": "\\Horde\\Http\\Stream\u003A\u003A\u0024size",
+            "name": "size",
+            "summary": "",
+            "url": "classes/Horde-Http-Stream.html#property_size"
+        },                {
             "fqsen": "\\Horde\\Http\\StreamFactory",
             "name": "StreamFactory",
             "summary": "PSR\u002D17\u0020StreamFactory\u0020implementation\u0020to\u0020create\u0020PSR\u002D7\u0020Stream\u0020objects",
