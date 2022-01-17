@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Documentation</title>
+            <title>Documentation</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
     <link rel="icon" href="images/favicon.ico"/>
@@ -54,10 +55,12 @@
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/horde.html" class="">Horde</a>
+</h4>
     <ul class="phpdocumentor-list">
                     <li>
-                <a href="namespaces/horde-log.html">Log</a>
+                <a href="namespaces/horde-log.html" class="">Log</a>
                 
             </li>
             </ul>
@@ -65,23 +68,27 @@
                         </section>
                 <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Log.html">Log</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Log.html" class="">Log</a>
+</h4>
     <ul class="phpdocumentor-list">
                     <li>
-                <a href="packages/Log-Filters.html">Filters</a>
+                <a href="packages/Log-Filters.html" class="">Filters</a>
                 
             </li>
                     <li>
-                <a href="packages/Log-Handlers.html">Handlers</a>
+                <a href="packages/Log-Handlers.html" class="">Handlers</a>
                 
             </li>
                     <li>
-                <a href="packages/Log-Formatters.html">Formatters</a>
+                <a href="packages/Log-Formatters.html" class="">Formatters</a>
                 
             </li>
             </ul>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
 
                         </section>
             
@@ -181,13 +188,14 @@
 
 
 <h3 id="interfaces_class_traits">
-    Interfaces, Classes and Traits
+    Interfaces, Classes, Traits and Enums
     <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Log-LogHandler.html"><abbr title="\Horde\Log\LogHandler">LogHandler</abbr></a></dt>
         <dd>interface of a Log Handler.</dd>
+    
     
     
     </dl>
@@ -199,59 +207,59 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Log-Handler-LoggerInterfaceHandler.html#property_filters">$filters</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>List of filters relevant only to this handler.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Log-Handler-LoggerInterfaceHandler.html#property_formatters">$formatters</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Formatters for this handler.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Horde-Log-Handler-LoggerInterfaceHandler.html#property_logger">$logger</a>
     <span>
-                &nbsp;: <abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>            </span>
+                        &nbsp;: <abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>            </span>
 </dt>
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Handler-LoggerInterfaceHandler.html#method___construct">__construct()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Handler-LoggerInterfaceHandler.html#method_addFilter">addFilter()</a>
     <span>
-                        &nbsp;: void    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Add a filter specific to this handler.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Handler-LoggerInterfaceHandler.html#method_log">log()</a>
     <span>
-                        &nbsp;: void    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Log a message to this handler.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Handler-LoggerInterfaceHandler.html#method_setOption">setOption()</a>
     <span>
-                        &nbsp;: bool    </span>
+                                &nbsp;: bool    </span>
 </dt>
 <dd>Sets an option specific to the implementation of the log handler.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Log-Handler-LoggerInterfaceHandler.html#method_write">write()</a>
     <span>
-                        &nbsp;: bool    </span>
+                                &nbsp;: bool    </span>
 </dt>
 <dd>Buffer a message to be stored in the storage.</dd>
 

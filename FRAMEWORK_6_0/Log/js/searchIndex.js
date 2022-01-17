@@ -991,6 +991,11 @@ Search.appendIndex(
             "summary": "Write\u0020a\u0020message\u0020to\u0020the\u0020log.",
             "url": "classes/Horde-Log-Handler-MockHandler.html#method_write"
         },                {
+            "fqsen": "\\Horde\\Log\\Handler\\MockHandler\u003A\u003Alog\u0028\u0029",
+            "name": "log",
+            "summary": "Log\u0020a\u0020message\u0020to\u0020this\u0020handler.",
+            "url": "classes/Horde-Log-Handler-MockHandler.html#method_log"
+        },                {
             "fqsen": "\\Horde\\Log\\Handler\\MockHandler\u003A\u003A\u0024shutdown",
             "name": "shutdown",
             "summary": "Was\u0020shutdown\u0020called\u003F",
@@ -1000,6 +1005,11 @@ Search.appendIndex(
             "name": "options",
             "summary": "",
             "url": "classes/Horde-Log-Handler-MockHandler.html#property_options"
+        },                {
+            "fqsen": "\\Horde\\Log\\Handler\\MockHandler\u003A\u003A\u0024check",
+            "name": "check",
+            "summary": "Check\u0020variables\u0020used\u0020for\u0020testing",
+            "url": "classes/Horde-Log-Handler-MockHandler.html#property_check"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\MockHandler\u003A\u003A\u0024events",
             "name": "events",
