@@ -10456,6 +10456,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Core-Middleware-RedirectToLogin.html#method_process"
         },                {
+            "fqsen": "\\Horde\\Core\\Middleware\\RedirectToLogin\u003A\u003A\u0024conf",
+            "name": "conf",
+            "summary": "",
+            "url": "classes/Horde-Core-Middleware-RedirectToLogin.html#property_conf"
+        },                {
             "fqsen": "\\Horde\\Core\\Middleware\\RedirectToLogin\u003A\u003A\u0024registry",
             "name": "registry",
             "summary": "",
