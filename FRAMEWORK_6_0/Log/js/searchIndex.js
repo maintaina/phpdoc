@@ -1143,7 +1143,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\SyslogHandler\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Class\u0020Constructor",
             "url": "classes/Horde-Log-Handler-SyslogHandler.html#method___construct"
         },                {
             "fqsen": "\\Horde\\Log\\Handler\\SyslogHandler\u003A\u003Awrite\u0028\u0029",
