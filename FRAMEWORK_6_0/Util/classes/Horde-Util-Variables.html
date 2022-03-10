@@ -93,11 +93,13 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-util.html">Util</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Variables
+    Variables
 
     
             <div class="phpdocumentor-element__package">
@@ -114,9 +116,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -134,9 +136,9 @@
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>$_expected and $_vars are used inconsistently. $_expected is used in
+                                                 <section class="phpdocumentor-description"><p>$expected and $vars are used inconsistently. $expected is used in
 exists(), but not in getExists(). And both are expected to be of the same
-format, while Horde_Form submits $_expected as a flat list and $_vars as a
+format, while Horde_Form submits $expected as a flat list and $vars as a
 multi-dimensional array, if the the form elements are or array type (like
 object[] in Turba).</p>
 </section>
@@ -235,105 +237,105 @@ object[] in Turba).</p>
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Variables.html#property__expected">$_expected</a>
+    <a href="classes/Horde-Util-Variables.html#property_expected">$expected</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>The list of expected variables.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Variables.html#property__sanitized">$_sanitized</a>
+    <a href="classes/Horde-Util-Variables.html#property_sanitized">$sanitized</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
 <dd>Has the input been sanitized?</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Variables.html#property__vars">$_vars</a>
+    <a href="classes/Horde-Util-Variables.html#property_vars">$vars</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Array of form variables.</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method___construct">__construct()</a>
+    <a href="classes/Horde-Util-Variables.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method___get">__get()</a>
+    <a href="classes/Horde-Util-Variables.html#method___get">__get()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Returns the value of a given form variable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method___isset">__isset()</a>
+    <a href="classes/Horde-Util-Variables.html#method___isset">__isset()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>isset() implementation.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method___set">__set()</a>
+    <a href="classes/Horde-Util-Variables.html#method___set">__set()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Sets the value of a given form variable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method___unset">__unset()</a>
+    <a href="classes/Horde-Util-Variables.html#method___unset">__unset()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Deletes a given form variable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_add">add()</a>
+    <a href="classes/Horde-Util-Variables.html#method_add">add()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Set $varname to $value ONLY if it&#039;s not already present.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_count">count()</a>
+    <a href="classes/Horde-Util-Variables.html#method_count">count()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_exists">exists()</a>
+    <a href="classes/Horde-Util-Variables.html#method_exists">exists()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: bool    </span>
 </dt>
 <dd>Alias of isset().</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_filter">filter()</a>
+    <a href="classes/Horde-Util-Variables.html#method_filter">filter()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Filters a form value so that it can be used in HTML output.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_get">get()</a>
+    <a href="classes/Horde-Util-Variables.html#method_get">get()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Returns the value of a given form variable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_getDefaultVariables">getDefaultVariables()</a>
+    <a href="classes/Horde-Util-Variables.html#method_getDefaultVariables">getDefaultVariables()</a>
     <span>
-                                &nbsp;: <a href="classes/Horde-Variables.html"><abbr title="\Horde_Variables">Horde_Variables</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Horde-Util-Variables.html"><abbr title="\Horde\Util\Variables">Variables</abbr></a>    </span>
 </dt>
 <dd>Returns a Horde_Variables object populated with the form input.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_getExists">getExists()</a>
+    <a href="classes/Horde-Util-Variables.html#method_getExists">getExists()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -341,70 +343,70 @@ object[] in Turba).</p>
 whether the value exists in the form data.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_getIterator">getIterator()</a>
+    <a href="classes/Horde-Util-Variables.html#method_getIterator">getIterator()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_merge">merge()</a>
+    <a href="classes/Horde-Util-Variables.html#method_merge">merge()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Merges a list of variables into the current form variable list.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_offsetExists">offsetExists()</a>
+    <a href="classes/Horde-Util-Variables.html#method_offsetExists">offsetExists()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Implements isset() for ArrayAccess interface.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_offsetGet">offsetGet()</a>
+    <a href="classes/Horde-Util-Variables.html#method_offsetGet">offsetGet()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Implements getter for ArrayAccess interface.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_offsetSet">offsetSet()</a>
+    <a href="classes/Horde-Util-Variables.html#method_offsetSet">offsetSet()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Implements setter for ArrayAccess interface.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_offsetUnset">offsetUnset()</a>
+    <a href="classes/Horde-Util-Variables.html#method_offsetUnset">offsetUnset()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Implements unset() for ArrayAccess interface.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_remove">remove()</a>
+    <a href="classes/Horde-Util-Variables.html#method_remove">remove()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Deletes a given form variable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_sanitize">sanitize()</a>
+    <a href="classes/Horde-Util-Variables.html#method_sanitize">sanitize()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Sanitize the form input.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Variables.html#method_set">set()</a>
+    <a href="classes/Horde-Util-Variables.html#method_set">set()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Sets the value of a given form variable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Variables.html#method__getExists">_getExists()</a>
+    <a href="classes/Horde-Util-Variables.html#method__getExists">_getExists()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
@@ -421,7 +423,7 @@ whether or not the variable was set in $array.</dd>
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Horde-Variables.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Util-Variables.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -430,16 +432,16 @@ whether or not the variable was set in $array.</dd>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__expected">
-        $_expected
-        <a href="classes/Horde-Variables.html#property__expected" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_expected">
+        $expected
+        <a href="classes/Horde-Util-Variables.html#property_expected" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -448,8 +450,8 @@ whether or not the variable was set in $array.</dd>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_expected</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+    <span class="phpdocumentor-signature__name">$expected</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -463,16 +465,16 @@ whether or not the variable was set in $array.</dd>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__sanitized">
-        $_sanitized
-        <a href="classes/Horde-Variables.html#property__sanitized" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_sanitized">
+        $sanitized
+        <a href="classes/Horde-Util-Variables.html#property_sanitized" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -481,8 +483,8 @@ whether or not the variable was set in $array.</dd>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$_sanitized</span>
-     = <span class="phpdocumentor-signature__default-value">\false</span></code>
+    <span class="phpdocumentor-signature__name">$sanitized</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
 
     
     
@@ -496,16 +498,16 @@ whether or not the variable was set in $array.</dd>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__vars">
-        $_vars
-        <a href="classes/Horde-Variables.html#property__vars" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_vars">
+        $vars
+        <a href="classes/Horde-Util-Variables.html#property_vars" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -514,7 +516,7 @@ whether or not the variable was set in $array.</dd>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_vars</span>
+    <span class="phpdocumentor-signature__name">$vars</span>
     </code>
 
     
@@ -527,7 +529,7 @@ whether or not the variable was set in $array.</dd>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Variables.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Util-Variables.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -537,12 +539,12 @@ whether or not the variable was set in $array.</dd>
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Horde-Variables.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -550,7 +552,7 @@ whether or not the variable was set in $array.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vars</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sanitize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vars</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sanitize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -558,7 +560,7 @@ whether or not the variable was set in $array.</dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$vars</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The list of form variables (if null, defaults
 to PHP's $_REQUEST value). If '_formvars'
@@ -569,7 +571,7 @@ contains the list of allowed form variables.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$sanitize</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                  = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Sanitize the input variables?</p>
@@ -594,12 +596,12 @@ contains the list of allowed form variables.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method___get">
         __get()
-        <a href="classes/Horde-Variables.html#method___get" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method___get" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -641,12 +643,12 @@ contains the list of allowed form variables.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method___isset">
         __isset()
-        <a href="classes/Horde-Variables.html#method___isset" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method___isset" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -688,12 +690,12 @@ contains the list of allowed form variables.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method___set">
         __set()
-        <a href="classes/Horde-Variables.html#method___set" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method___set" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
@@ -742,12 +744,12 @@ contains the list of allowed form variables.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method___unset">
         __unset()
-        <a href="classes/Horde-Variables.html#method___unset" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method___unset" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">260</span>
+    <span class="phpdocumentor-element-found-in__line">266</span>
 
     </aside>
 
@@ -787,12 +789,12 @@ contains the list of allowed form variables.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_add">
         add()
-        <a href="classes/Horde-Variables.html#method_add" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_add" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">312</span>
+    <span class="phpdocumentor-element-found-in__line">318</span>
 
     </aside>
 
@@ -843,12 +845,12 @@ contains the list of allowed form variables.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_count">
         count()
-        <a href="classes/Horde-Variables.html#method_count" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_count" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">391</span>
+    <span class="phpdocumentor-element-found-in__line">396</span>
 
     </aside>
 
@@ -875,12 +877,12 @@ contains the list of allowed form variables.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_exists">
         exists()
-        <a href="classes/Horde-Variables.html#method_exists" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_exists" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -888,14 +890,14 @@ contains the list of allowed form variables.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">exists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">exists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$varname</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
@@ -913,14 +915,14 @@ contains the list of allowed form variables.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\__isset()">__isset()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Util\__isset()">__isset()</abbr></span>
                                         
                                              
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     
@@ -933,12 +935,12 @@ contains the list of allowed form variables.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_filter">
         filter()
-        <a href="classes/Horde-Variables.html#method_filter" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_filter" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">329</span>
+    <span class="phpdocumentor-element-found-in__line">335</span>
 
     </aside>
 
@@ -980,12 +982,12 @@ contains the list of allowed form variables.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_get">
         get()
-        <a href="classes/Horde-Variables.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 
     </aside>
 
@@ -993,7 +995,7 @@ contains the list of allowed form variables.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1009,7 +1011,7 @@ contains the list of allowed form variables.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$default</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The default form variable value.</p>
@@ -1036,12 +1038,12 @@ contains the list of allowed form variables.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getDefaultVariables">
         getDefaultVariables()
-        <a href="classes/Horde-Variables.html#method_getDefaultVariables" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_getDefaultVariables" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -1049,14 +1051,14 @@ contains the list of allowed form variables.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getDefaultVariables</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sanitize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Variables.html"><abbr title="\Horde_Variables">Horde_Variables</abbr></a></span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getDefaultVariables</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sanitize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Util-Variables.html"><abbr title="\Horde\Util\Variables">Variables</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$sanitize</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                  = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Sanitize the input variables?</p>
@@ -1068,7 +1070,7 @@ contains the list of allowed form variables.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Variables.html"><abbr title="\Horde_Variables">Horde_Variables</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Util-Variables.html"><abbr title="\Horde\Util\Variables">Variables</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"><p>Variables object.</p>
 </section>
@@ -1083,12 +1085,12 @@ contains the list of allowed form variables.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getExists">
         getExists()
-        <a href="classes/Horde-Variables.html#method_getExists" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_getExists" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">190</span>
+    <span class="phpdocumentor-element-found-in__line">196</span>
 
     </aside>
 
@@ -1141,12 +1143,12 @@ whether $varname existed in form data.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getIterator">
         getIterator()
-        <a href="classes/Horde-Variables.html#method_getIterator" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_getIterator" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">398</span>
+    <span class="phpdocumentor-element-found-in__line">403</span>
 
     </aside>
 
@@ -1174,12 +1176,12 @@ whether $varname existed in form data.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_merge">
         merge()
-        <a href="classes/Horde-Variables.html#method_merge" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_merge" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">297</span>
+    <span class="phpdocumentor-element-found-in__line">303</span>
 
     </aside>
 
@@ -1187,14 +1189,14 @@ whether $varname existed in form data.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">merge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vars</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">merge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|iteratable&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vars</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$vars</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|iteratable&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Form variables.</p>
@@ -1219,12 +1221,12 @@ whether $varname existed in form data.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_offsetExists">
         offsetExists()
-        <a href="classes/Horde-Variables.html#method_offsetExists" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_offsetExists" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -1257,7 +1259,7 @@ whether $varname existed in form data.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\__isset()">__isset()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Util\__isset()">__isset()</abbr></span>
                                         
                                              
                                     </dd>
@@ -1277,12 +1279,12 @@ whether $varname existed in form data.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_offsetGet">
         offsetGet()
-        <a href="classes/Horde-Variables.html#method_offsetGet" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_offsetGet" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">175</span>
+    <span class="phpdocumentor-element-found-in__line">181</span>
 
     </aside>
 
@@ -1315,7 +1317,7 @@ whether $varname existed in form data.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\__get()">__get()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Util\__get()">__get()</abbr></span>
                                         
                                              
                                     </dd>
@@ -1335,12 +1337,12 @@ whether $varname existed in form data.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_offsetSet">
         offsetSet()
-        <a href="classes/Horde-Variables.html#method_offsetSet" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_offsetSet" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">240</span>
+    <span class="phpdocumentor-element-found-in__line">246</span>
 
     </aside>
 
@@ -1381,7 +1383,7 @@ whether $varname existed in form data.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\__set()">__set()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Util\__set()">__set()</abbr></span>
                                         
                                              
                                     </dd>
@@ -1401,12 +1403,12 @@ whether $varname existed in form data.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_offsetUnset">
         offsetUnset()
-        <a href="classes/Horde-Variables.html#method_offsetUnset" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_offsetUnset" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">287</span>
+    <span class="phpdocumentor-element-found-in__line">293</span>
 
     </aside>
 
@@ -1439,7 +1441,7 @@ whether $varname existed in form data.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\__unset()">__unset()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Util\__unset()">__unset()</abbr></span>
                                         
                                              
                                     </dd>
@@ -1459,12 +1461,12 @@ whether $varname existed in form data.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_remove">
         remove()
-        <a href="classes/Horde-Variables.html#method_remove" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_remove" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">250</span>
+    <span class="phpdocumentor-element-found-in__line">256</span>
 
     </aside>
 
@@ -1497,7 +1499,7 @@ whether $varname existed in form data.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\__unset()">__unset()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Util\__unset()">__unset()</abbr></span>
                                         
                                              
                                     </dd>
@@ -1517,12 +1519,12 @@ whether $varname existed in form data.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_sanitize">
         sanitize()
-        <a href="classes/Horde-Variables.html#method_sanitize" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_sanitize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -1550,12 +1552,12 @@ whether $varname existed in form data.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_set">
         set()
-        <a href="classes/Horde-Variables.html#method_set" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method_set" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">201</span>
+    <span class="phpdocumentor-element-found-in__line">207</span>
 
     </aside>
 
@@ -1596,7 +1598,7 @@ whether $varname existed in form data.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\__set()">__set()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Horde\Util\__set()">__set()</abbr></span>
                                         
                                              
                                     </dd>
@@ -1616,12 +1618,12 @@ whether $varname existed in form data.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__getExists">
         _getExists()
-        <a href="classes/Horde-Variables.html#method__getExists" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Variables.html#method__getExists" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Variables.php"><a href="files/horde-variables.html"><abbr title="Horde/Variables.php">Variables.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Variables.php"><a href="files/variables.html"><abbr title="Variables.php">Variables.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">356</span>
+    <span class="phpdocumentor-element-found-in__line">362</span>
 
     </aside>
 
@@ -1641,7 +1643,7 @@ whether or not the variable was set in $array.</p>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The array to search in (usually either
-$this-&gt;_vars or $this-&gt;_expected).</p>
+$this-&gt;vars or $this-&gt;expected).</p>
 </section>
 
             </dd>
@@ -1671,7 +1673,7 @@ $this-&gt;_vars or $this-&gt;_expected).</p>
     <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
             <section class="phpdocumentor-description"><p>Whether or not the variable was set (or, if we've
-checked $this-&gt;_expected, should have been set).</p>
+checked $this-&gt;expected, should have been set).</p>
 </section>
 
     
@@ -1754,7 +1756,7 @@ checked $this-&gt;_expected, should have been set).</p>
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Variables.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Util-Variables.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

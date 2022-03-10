@@ -93,11 +93,13 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-util.html">Util</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Array_Sort_Helper
+    StringTransliterate
 
     
             <div class="phpdocumentor-element__package">
@@ -111,18 +113,14 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Array/Sort/Helper.php"><a href="files/horde-array-sort-helper.html"><abbr title="Horde/Array/Sort/Helper.php">Helper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StringTransliterate.php"><a href="files/stringtransliterate.html"><abbr title="StringTransliterate.php">StringTransliterate.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Helper class for sorting arrays on arbitrary criteria for usort/uasort.</p>
+            <p class="phpdocumentor-summary">Provides utility methods used to transliterate a string.</p>
 
-    <section class="phpdocumentor-description"><p>Copyright 2003-2017 Horde LLC (http://www.horde.org/)</p>
-<p>See the enclosed file LICENSE for license information (LGPL). If you
-did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
-</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -135,7 +133,7 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>Marko Djukic <a href="mailto:marko@oblo.com">marko@oblo.com</a></p>
+                                                 <section class="phpdocumentor-description"><p>Michael Slusarz <a href="mailto:slusarz@horde.org">slusarz@horde.org</a></p>
 </section>
 
                                     </dd>
@@ -145,15 +143,6 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
                                                  <section class="phpdocumentor-description"><p>Jan Schneider <a href="mailto:jan@horde.org">jan@horde.org</a></p>
-</section>
-
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">author</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Michael Slusarz <a href="mailto:slusarz@horde.org">slusarz@horde.org</a></p>
 </section>
 
                                     </dd>
@@ -167,6 +156,15 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
                                     </dd>
                                                 <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">copyright</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>2014-2017 Horde LLC</p>
+</section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">license</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
@@ -174,6 +172,14 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
                                                  <section class="phpdocumentor-description"><p>http://www.horde.org/licenses/lgpl21 LGPL 2.1</p>
 </section>
 
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.4.0</span>
+                                                                                
+                                             
                                     </dd>
                         </dl>
 
@@ -188,41 +194,48 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Horde-Array-Sort-Helper.html#property_key">$key</a>
+                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Util-StringTransliterate.html#property_map">$map</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd>The array key to sort by.</dd>
+<dd>Transliterate mapping cache.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Util-StringTransliterate.html#property_transliterator">$transliterator</a>
+    <span>
+                        &nbsp;: <abbr title="\Transliterator">Transliterator</abbr>            </span>
+</dt>
+<dd>Transliterator instance.</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Array-Sort-Helper.html#method_compare">compare()</a>
+    <a href="classes/Horde-Util-StringTransliterate.html#method_toAscii">toAscii()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Transliterates an UTF-8 string to ASCII, replacing non-English
+characters to their English equivalents.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Horde-Util-StringTransliterate.html#method__fallbackToAscii">_fallbackToAscii()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Transliterate using a built-in ASCII mapping.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Horde-Util-StringTransliterate.html#method__iconvToAscii">_iconvToAscii()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd>Compare two associative arrays by the array key defined in self::$key.</dd>
+<dd>Transliterate using the iconv extension.</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Array-Sort-Helper.html#method_compareKeys">compareKeys()</a>
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Horde-Util-StringTransliterate.html#method__intlToAscii">_intlToAscii()</a>
     <span>
-                                &nbsp;: <abbr title="\TODO">TODO</abbr>    </span>
+                                &nbsp;: mixed    </span>
 </dt>
-<dd>Compare array keys case insensitively for uksort.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Array-Sort-Helper.html#method_reverseCompare">reverseCompare()</a>
-    <span>
-                                &nbsp;: <abbr title="\TODO">TODO</abbr>    </span>
-</dt>
-<dd>Compare, in reverse order, two associative arrays by the array key
-defined in self::$key.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Array-Sort-Helper.html#method_reverseCompareKeys">reverseCompareKeys()</a>
-    <span>
-                                &nbsp;: <abbr title="\TODO">TODO</abbr>    </span>
-</dt>
-<dd>Compare, in reverse order, array keys case insensitively for uksort.</dd>
+<dd>Transliterate using the Transliterator package.</dd>
 
         </dl>
 
@@ -234,34 +247,67 @@ defined in self::$key.</dd>
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Horde-Array-Sort-Helper.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Util-StringTransliterate.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
             phpdocumentor-element
             -property
-            -public
-                                                        "
+            -protected
+            -static                                            "
 >
-    <h4 class="phpdocumentor-element__name" id="property_key">
-        $key
-        <a href="classes/Horde-Array-Sort-Helper.html#property_key" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_map">
+        $map
+        <a href="classes/Horde-Util-StringTransliterate.html#property_map" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Array/Sort/Helper.php"><a href="files/horde-array-sort-helper.html"><abbr title="Horde/Array/Sort/Helper.php">Helper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StringTransliterate.php"><a href="files/stringtransliterate.html"><abbr title="StringTransliterate.php">StringTransliterate.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The array key to sort by.</p>
+        <p class="phpdocumentor-summary">Transliterate mapping cache.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$key</span>
+    <span class="phpdocumentor-signature__visibility">protected</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$map</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_transliterator">
+        $transliterator
+        <a href="classes/Horde-Util-StringTransliterate.html#property_transliterator" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="StringTransliterate.php"><a href="files/stringtransliterate.html"><abbr title="StringTransliterate.php">StringTransliterate.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Transliterator instance.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type"><abbr title="\Transliterator">Transliterator</abbr></span>
+    <span class="phpdocumentor-signature__name">$transliterator</span>
     </code>
 
     
@@ -274,47 +320,141 @@ defined in self::$key.</dd>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Array-Sort-Helper.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Util-StringTransliterate.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_compare">
-        compare()
-        <a href="classes/Horde-Array-Sort-Helper.html#method_compare" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_toAscii">
+        toAscii()
+        <a href="classes/Horde-Util-StringTransliterate.html#method_toAscii" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Array/Sort/Helper.php"><a href="files/horde-array-sort-helper.html"><abbr title="Horde/Array/Sort/Helper.php">Helper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StringTransliterate.php"><a href="files/stringtransliterate.html"><abbr title="StringTransliterate.php">StringTransliterate.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Compare two associative arrays by the array key defined in self::$key.</p>
+        <p class="phpdocumentor-summary">Transliterates an UTF-8 string to ASCII, replacing non-English
+characters to their English equivalents.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">compare</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$a</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$b</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">toAscii</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"><p>Note: there is no guarantee that the output string will be ASCII-only,
+since any non-ASCII character not in the transliteration list will
+be ignored.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$str</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Input string (UTF-8).</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Transliterated string (UTF-8).</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method__fallbackToAscii">
+        _fallbackToAscii()
+        <a href="classes/Horde-Util-StringTransliterate.html#method__fallbackToAscii" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="StringTransliterate.php"><a href="files/stringtransliterate.html"><abbr title="StringTransliterate.php">StringTransliterate.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">119</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Transliterate using a built-in ASCII mapping.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">_fallbackToAscii</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$a</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                <span class="phpdocumentor-signature__argument__name">$str</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>Input string (UTF-8).</p>
+</section>
+
             </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Transliterated string (UTF-8).</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method__iconvToAscii">
+        _iconvToAscii()
+        <a href="classes/Horde-Util-StringTransliterate.html#method__iconvToAscii" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="StringTransliterate.php"><a href="files/stringtransliterate.html"><abbr title="StringTransliterate.php">StringTransliterate.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">104</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Transliterate using the iconv extension.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">_iconvToAscii</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$b</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                <span class="phpdocumentor-signature__argument__name">$str</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>Input string (UTF-8).</p>
+</section>
+
             </dd>
             </dl>
 
@@ -323,50 +463,43 @@ defined in self::$key.</dd>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>Transliterated string (UTF-8), or false on error.</p>
+</section>
+
     
 </article>
                     <article
         class="phpdocumentor-element
             -method
-            -public
-                                                        "
+            -protected
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_compareKeys">
-        compareKeys()
-        <a href="classes/Horde-Array-Sort-Helper.html#method_compareKeys" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method__intlToAscii">
+        _intlToAscii()
+        <a href="classes/Horde-Util-StringTransliterate.html#method__intlToAscii" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Array/Sort/Helper.php"><a href="files/horde-array-sort-helper.html"><abbr title="Horde/Array/Sort/Helper.php">Helper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StringTransliterate.php"><a href="files/stringtransliterate.html"><abbr title="StringTransliterate.php">StringTransliterate.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Compare array keys case insensitively for uksort.</p>
+        <p class="phpdocumentor-summary">Transliterate using the Transliterator package.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">compareKeys</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">scalar&nbsp;</span><span class="phpdocumentor-signature__argument__name">$a</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">scalar&nbsp;</span><span class="phpdocumentor-signature__argument__name">$b</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span></code>
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">_intlToAscii</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$a</span>
-                : <span class="phpdocumentor-signature__argument__return-type">scalar</span>
+                <span class="phpdocumentor-signature__argument__name">$str</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>TODO</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$b</span>
-                : <span class="phpdocumentor-signature__argument__return-type">scalar</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>TODO</p>
+                    <section class="phpdocumentor-description"><p>Input string (UTF-8).</p>
 </section>
 
             </dd>
@@ -375,118 +508,11 @@ defined in self::$key.</dd>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_reverseCompare">
-        reverseCompare()
-        <a href="classes/Horde-Array-Sort-Helper.html#method_reverseCompare" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Array/Sort/Helper.php"><a href="files/horde-array-sort-helper.html"><abbr title="Horde/Array/Sort/Helper.php">Helper.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">46</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Compare, in reverse order, two associative arrays by the array key
-defined in self::$key.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">reverseCompare</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">scalar&nbsp;</span><span class="phpdocumentor-signature__argument__name">$a</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">scalar&nbsp;</span><span class="phpdocumentor-signature__argument__name">$b</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$a</span>
-                : <span class="phpdocumentor-signature__argument__return-type">scalar</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>TODO</p>
+            <section class="phpdocumentor-description"><p>Transliterated string (UTF-8), or false on error.</p>
 </section>
 
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$b</span>
-                : <span class="phpdocumentor-signature__argument__return-type">scalar</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>TODO</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_reverseCompareKeys">
-        reverseCompareKeys()
-        <a href="classes/Horde-Array-Sort-Helper.html#method_reverseCompareKeys" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Array/Sort/Helper.php"><a href="files/horde-array-sort-helper.html"><abbr title="Horde/Array/Sort/Helper.php">Helper.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">72</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Compare, in reverse order, array keys case insensitively for uksort.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">reverseCompareKeys</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">scalar&nbsp;</span><span class="phpdocumentor-signature__argument__name">$a</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">scalar&nbsp;</span><span class="phpdocumentor-signature__argument__name">$b</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$a</span>
-                : <span class="phpdocumentor-signature__argument__return-type">scalar</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>TODO</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$b</span>
-                : <span class="phpdocumentor-signature__argument__return-type">scalar</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>TODO</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\TODO">TODO</abbr></span>
-            &mdash;
-        
     
 </article>
             </section>
@@ -567,7 +593,7 @@ defined in self::$key.</p>
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Array-Sort-Helper.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Util-StringTransliterate.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

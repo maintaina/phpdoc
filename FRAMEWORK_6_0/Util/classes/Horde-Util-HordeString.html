@@ -93,11 +93,13 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-util.html">Util</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_String
+    HordeString
 
     
             <div class="phpdocumentor-element__package">
@@ -111,9 +113,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -181,21 +183,21 @@ Horde_String_Locale for locale-safe methods.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-String.html#property__lowers">$_lowers</a>
+    <a href="classes/Horde-Util-HordeString.html#property_lowers">$lowers</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>lower() cache.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-String.html#property__uppers">$_uppers</a>
+    <a href="classes/Horde-Util-HordeString.html#property_uppers">$uppers</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>upper() cache.</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_abbreviate">abbreviate()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_abbreviate">abbreviate()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -203,21 +205,28 @@ Horde_String_Locale for locale-safe methods.</p>
 excessively long string replaced by &#039;...&#039;.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_common">common()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_common">common()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Returns the common leading part of two strings.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_convertCharset">convertCharset()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_convertCharset">convertCharset()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Converts a string from one charset to another.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_ipos">ipos()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_convertToUtf8">convertToUtf8()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Try to convert a string to UTF-8.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Util-HordeString.html#method_ipos">ipos()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
@@ -225,7 +234,7 @@ excessively long string replaced by &#039;...&#039;.</dd>
 of $needle in the $haystack string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_isAlpha">isAlpha()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_isAlpha">isAlpha()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
@@ -233,7 +242,7 @@ of $needle in the $haystack string.</dd>
 character.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_isLower">isLower()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_isLower">isLower()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
@@ -241,7 +250,7 @@ character.</dd>
 the current locale.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_isUpper">isUpper()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_isUpper">isUpper()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
@@ -249,28 +258,28 @@ the current locale.</dd>
 in the current locale.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_length">length()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_length">length()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 <dd>Returns the character (not byte) length of a string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_lower">lower()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_lower">lower()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Makes a string lowercase.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_pad">pad()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_pad">pad()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Returns a string padded to a certain length with another string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_pos">pos()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_pos">pos()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
@@ -278,14 +287,14 @@ in the current locale.</dd>
 in the $haystack string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_regexMatch">regexMatch()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_regexMatch">regexMatch()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Performs a multibyte safe regex match search on the text provided.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_ripos">ripos()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_ripos">ripos()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
@@ -293,7 +302,7 @@ in the $haystack string.</dd>
 $needle in the $haystack string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_rpos">rpos()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_rpos">rpos()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
@@ -301,28 +310,28 @@ $needle in the $haystack string.</dd>
 in the $haystack string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_substr">substr()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_substr">substr()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Returns part of a string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_trimUtf8Bom">trimUtf8Bom()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_trimUtf8Bom">trimUtf8Bom()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Strip UTF-8 byte order mark (BOM) from string data.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_truncate">truncate()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_truncate">truncate()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Return a truncated string, suitable for notifications.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_ucfirst">ucfirst()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_ucfirst">ucfirst()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -330,7 +339,7 @@ in the $haystack string.</dd>
 alphabetic.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_ucwords">ucwords()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_ucwords">ucwords()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -338,49 +347,49 @@ alphabetic.</dd>
 alphabetic.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_upper">upper()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_upper">upper()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Makes a string uppercase.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_validUtf8">validUtf8()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_validUtf8">validUtf8()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Check to see if a string is valid UTF-8.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_wordwrap">wordwrap()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_wordwrap">wordwrap()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Wraps the text of a message.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-String.html#method_wrap">wrap()</a>
+    <a href="classes/Horde-Util-HordeString.html#method_wrap">wrap()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Wraps the text of a message.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-String.html#method__convertCharset">_convertCharset()</a>
+    <a href="classes/Horde-Util-HordeString.html#method__convertCharset">_convertCharset()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Internal function used to do charset conversion.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-String.html#method__mbstringCharset">_mbstringCharset()</a>
+    <a href="classes/Horde-Util-HordeString.html#method__mbstringCharset">_mbstringCharset()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Workaround charsets that don&#039;t work with mbstring functions.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-String.html#method__pos">_pos()</a>
+    <a href="classes/Horde-Util-HordeString.html#method__pos">_pos()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
@@ -396,7 +405,7 @@ alphabetic.</dd>
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Horde-String.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Util-HordeString.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -405,16 +414,16 @@ alphabetic.</dd>
             -protected
             -static                                            "
 >
-    <h4 class="phpdocumentor-element__name" id="property__lowers">
-        $_lowers
-        <a href="classes/Horde-String.html#property__lowers" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_lowers">
+        $lowers
+        <a href="classes/Horde-Util-HordeString.html#property_lowers" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -423,8 +432,8 @@ alphabetic.</dd>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_lowers</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+    <span class="phpdocumentor-signature__name">$lowers</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -438,16 +447,16 @@ alphabetic.</dd>
             -protected
             -static                                            "
 >
-    <h4 class="phpdocumentor-element__name" id="property__uppers">
-        $_uppers
-        <a href="classes/Horde-String.html#property__uppers" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_uppers">
+        $uppers
+        <a href="classes/Horde-Util-HordeString.html#property_uppers" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -456,8 +465,8 @@ alphabetic.</dd>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_uppers</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+    <span class="phpdocumentor-signature__name">$uppers</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -469,7 +478,7 @@ alphabetic.</dd>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-String.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Util-HordeString.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -479,12 +488,12 @@ alphabetic.</dd>
 >
     <h4 class="phpdocumentor-element__name" id="method_abbreviate">
         abbreviate()
-        <a href="classes/Horde-String.html#method_abbreviate" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_abbreviate" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">721</span>
+    <span class="phpdocumentor-element-found-in__line">762</span>
 
     </aside>
 
@@ -536,12 +545,12 @@ excessively long string replaced by &#039;...&#039;.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_common">
         common()
-        <a href="classes/Horde-String.html#method_common" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_common" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">736</span>
+    <span class="phpdocumentor-element-found-in__line">777</span>
 
     </aside>
 
@@ -592,12 +601,12 @@ excessively long string replaced by &#039;...&#039;.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_convertCharset">
         convertCharset()
-        <a href="classes/Horde-String.html#method_convertCharset" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_convertCharset" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -670,14 +679,99 @@ recursively.</p>
             -public
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_ipos">
-        ipos()
-        <a href="classes/Horde-String.html#method_ipos" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_convertToUtf8">
+        convertToUtf8()
+        <a href="classes/Horde-Util-HordeString.html#method_convertToUtf8" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">425</span>
+    <span class="phpdocumentor-element-found-in__line">969</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Try to convert a string to UTF-8.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">convertToUtf8</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"><p>Returns null if source charset could not be detected or conversion failed</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The string to convert</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>If the source encoding can not be detected</p>
+</section>
+
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>If the iconv extension is not installed</p>
+</section>
+
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>If the conversion via iconv fails</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The string in UTF-8</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_ipos">
+        ipos()
+        <a href="classes/Horde-Util-HordeString.html#method_ipos" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">441</span>
 
     </aside>
 
@@ -761,12 +855,12 @@ of $needle in the $haystack string.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_isAlpha">
         isAlpha()
-        <a href="classes/Horde-String.html#method_isAlpha" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_isAlpha" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">755</span>
+    <span class="phpdocumentor-element-found-in__line">796</span>
 
     </aside>
 
@@ -818,12 +912,12 @@ character.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_isLower">
         isLower()
-        <a href="classes/Horde-String.html#method_isLower" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_isLower" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">784</span>
+    <span class="phpdocumentor-element-found-in__line">825</span>
 
     </aside>
 
@@ -875,12 +969,12 @@ the current locale.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_isUpper">
         isUpper()
-        <a href="classes/Horde-String.html#method_isUpper" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_isUpper" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">799</span>
+    <span class="phpdocumentor-element-found-in__line">840</span>
 
     </aside>
 
@@ -932,12 +1026,12 @@ in the current locale.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_length">
         length()
-        <a href="classes/Horde-String.html#method_length" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_length" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">371</span>
+    <span class="phpdocumentor-element-found-in__line">385</span>
 
     </aside>
 
@@ -989,12 +1083,12 @@ length.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_lower">
         lower()
-        <a href="classes/Horde-String.html#method_lower" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_lower" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">180</span>
+    <span class="phpdocumentor-element-found-in__line">190</span>
 
     </aside>
 
@@ -1056,12 +1150,12 @@ converting.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_pad">
         pad()
-        <a href="classes/Horde-String.html#method_pad" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_pad" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">533</span>
+    <span class="phpdocumentor-element-found-in__line">560</span>
 
     </aside>
 
@@ -1069,7 +1163,7 @@ converting.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">pad</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$length</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pad</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039; &#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\const">const</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">STR_PAD_RIGHT</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$charset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;UTF-8&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">pad</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$length</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pad</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039; &#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">STR_PAD_RIGHT</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$charset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;UTF-8&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"><p>This method behaves exactly like str_pad() but is multibyte safe.</p>
 </section>
@@ -1106,7 +1200,7 @@ be in the same charset like the input string.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\const">const</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
                  = <span class="phpdocumentor-signature__argument__default-value">STR_PAD_RIGHT</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The padding type. One of STR_PAD_LEFT,
@@ -1144,12 +1238,12 @@ strings.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_pos">
         pos()
-        <a href="classes/Horde-String.html#method_pos" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_pos" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">405</span>
+    <span class="phpdocumentor-element-found-in__line">419</span>
 
     </aside>
 
@@ -1219,12 +1313,12 @@ in the $haystack string.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_regexMatch">
         regexMatch()
-        <a href="classes/Horde-String.html#method_regexMatch" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_regexMatch" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">815</span>
+    <span class="phpdocumentor-element-found-in__line">856</span>
 
     </aside>
 
@@ -1285,12 +1379,12 @@ regex delimiters (e.g. '/' or '|').</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_ripos">
         ripos()
-        <a href="classes/Horde-String.html#method_ripos" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_ripos" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">463</span>
+    <span class="phpdocumentor-element-found-in__line">483</span>
 
     </aside>
 
@@ -1374,12 +1468,12 @@ $needle in the $haystack string.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_rpos">
         rpos()
-        <a href="classes/Horde-String.html#method_rpos" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_rpos" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">443</span>
+    <span class="phpdocumentor-element-found-in__line">461</span>
 
     </aside>
 
@@ -1449,12 +1543,12 @@ in the $haystack string.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_substr">
         substr()
-        <a href="classes/Horde-String.html#method_substr" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_substr" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">303</span>
+    <span class="phpdocumentor-element-found-in__line">313</span>
 
     </aside>
 
@@ -1525,12 +1619,12 @@ charset.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_trimUtf8Bom">
         trimUtf8Bom()
-        <a href="classes/Horde-String.html#method_trimUtf8Bom" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_trimUtf8Bom" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">910</span>
+    <span class="phpdocumentor-element-found-in__line">951</span>
 
     </aside>
 
@@ -1572,12 +1666,12 @@ charset.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_truncate">
         truncate()
-        <a href="classes/Horde-String.html#method_truncate" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_truncate" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">705</span>
+    <span class="phpdocumentor-element-found-in__line">746</span>
 
     </aside>
 
@@ -1628,12 +1722,12 @@ charset.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_ucfirst">
         ucfirst()
-        <a href="classes/Horde-String.html#method_ucfirst" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_ucfirst" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">252</span>
+    <span class="phpdocumentor-element-found-in__line">262</span>
 
     </aside>
 
@@ -1695,12 +1789,12 @@ given charset, locale independent else.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_ucwords">
         ucwords()
-        <a href="classes/Horde-String.html#method_ucwords" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_ucwords" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">282</span>
+    <span class="phpdocumentor-element-found-in__line">292</span>
 
     </aside>
 
@@ -1709,7 +1803,7 @@ alphabetic.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">ucwords</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$locale</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$charset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">ucwords</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$locale</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$charset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"><p>Sentences are splitted into words at whitestrings.</p>
 </section>
@@ -1737,7 +1831,7 @@ given charset, locale independent else.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$charset</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The charset to use, defaults to current charset.</p>
@@ -1764,12 +1858,12 @@ given charset, locale independent else.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_upper">
         upper()
-        <a href="classes/Horde-String.html#method_upper" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_upper" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">216</span>
+    <span class="phpdocumentor-element-found-in__line">226</span>
 
     </aside>
 
@@ -1831,12 +1925,12 @@ converting. If not provided the current charset.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_validUtf8">
         validUtf8()
-        <a href="classes/Horde-String.html#method_validUtf8" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_validUtf8" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">843</span>
+    <span class="phpdocumentor-element-found-in__line">884</span>
 
     </aside>
 
@@ -1878,12 +1972,12 @@ converting. If not provided the current charset.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_wordwrap">
         wordwrap()
-        <a href="classes/Horde-String.html#method_wordwrap" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_wordwrap" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">589</span>
+    <span class="phpdocumentor-element-found-in__line">621</span>
 
     </aside>
 
@@ -1968,12 +2062,12 @@ have to be specified too.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_wrap">
         wrap()
-        <a href="classes/Horde-String.html#method_wrap" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method_wrap" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">673</span>
+    <span class="phpdocumentor-element-found-in__line">710</span>
 
     </aside>
 
@@ -2047,12 +2141,12 @@ the string.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__convertCharset">
         _convertCharset()
-        <a href="classes/Horde-String.html#method__convertCharset" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method__convertCharset" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -2112,12 +2206,12 @@ the string.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__mbstringCharset">
         _mbstringCharset()
-        <a href="classes/Horde-String.html#method__mbstringCharset" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method__mbstringCharset" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">891</span>
+    <span class="phpdocumentor-element-found-in__line">932</span>
 
     </aside>
 
@@ -2159,12 +2253,12 @@ the string.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__pos">
         _pos()
-        <a href="classes/Horde-String.html#method__pos" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#method__pos" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/String.php"><a href="files/horde-string.html"><abbr title="Horde/String.php">String.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="HordeString.php"><a href="files/hordestring.html"><abbr title="HordeString.php">HordeString.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">482</span>
+    <span class="phpdocumentor-element-found-in__line">504</span>
 
     </aside>
 
@@ -2312,7 +2406,7 @@ the string.</p>
 </section>
             </div>
         </div>
-        <a href="classes/Horde-String.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Util-HordeString.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

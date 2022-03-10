@@ -93,11 +93,13 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-util.html">Util</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Util
+    Util
 
     
             <div class="phpdocumentor-element__package">
@@ -111,9 +113,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -180,77 +182,77 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Horde-Util.html#property_patterns">$patterns</a>
+    <a href="classes/Horde-Util-Util.html#property_patterns">$patterns</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>A list of random patterns to use for overwriting purposes.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Util.html#property__cache">$_cache</a>
+    <a href="classes/Horde-Util-Util.html#property_cache">$cache</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Cache for extensionExists().</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Util.html#property__magicquotes">$_magicquotes</a>
+    <a href="classes/Horde-Util-Util.html#property_magicquotes">$magicquotes</a>
     <span>
-                        &nbsp;: bool            </span>
+                        &nbsp;: bool|null            </span>
 </dt>
 <dd>Are magic quotes in use?</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Util.html#property__shutdowndata">$_shutdowndata</a>
+    <a href="classes/Horde-Util-Util.html#property_shutdowndata">$shutdowndata</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Data used to determine shutdown deletion.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Util.html#property__shutdownreg">$_shutdownreg</a>
+    <a href="classes/Horde-Util-Util.html#property_shutdownreg">$shutdownreg</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
 <dd>Has the shutdown method been registered?</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_createTempDir">createTempDir()</a>
+    <a href="classes/Horde-Util-Util.html#method_createTempDir">createTempDir()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: string|false    </span>
 </dt>
 <dd>Creates a temporary directory in the system&#039;s temporary directory.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_deleteAtShutdown">deleteAtShutdown()</a>
+    <a href="classes/Horde-Util-Util.html#method_deleteAtShutdown">deleteAtShutdown()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Removes given elements at request shutdown.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_dispelMagicQuotes">dispelMagicQuotes()</a>
+    <a href="classes/Horde-Util-Util.html#method_dispelMagicQuotes">dispelMagicQuotes()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>If magic_quotes_gpc is in use, run stripslashes() on $var.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_extensionExists">extensionExists()</a>
+    <a href="classes/Horde-Util-Util.html#method_extensionExists">extensionExists()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Caches the result of extension_loaded() calls.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_formInput">formInput()</a>
+    <a href="classes/Horde-Util-Util.html#method_formInput">formInput()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Returns a hidden form input containing the session name and id.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_getFormData">getFormData()</a>
+    <a href="classes/Horde-Util-Util.html#method_getFormData">getFormData()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -260,7 +262,7 @@ POST data, the value from the POST data will be returned and the GET
 value will be ignored.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_getGet">getGet()</a>
+    <a href="classes/Horde-Util-Util.html#method_getGet">getGet()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -268,14 +270,14 @@ value will be ignored.</dd>
 necessary. This function will NOT return a POST variable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_getPathInfo">getPathInfo()</a>
+    <a href="classes/Horde-Util-Util.html#method_getPathInfo">getPathInfo()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Utility function to obtain PATH_INFO information.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_getPost">getPost()</a>
+    <a href="classes/Horde-Util-Util.html#method_getPost">getPost()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -283,24 +285,24 @@ necessary. This function will NOT return a POST variable.</dd>
 necessary. This function will NOT return a GET variable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_getTempFile">getTempFile()</a>
+    <a href="classes/Horde-Util-Util.html#method_getTempFile">getTempFile()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: string|false    </span>
 </dt>
 <dd>Creates a temporary filename for the lifetime of the script, and
 (optionally) registers it to be deleted at request shutdown.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_getTempFileWithExtension">getTempFileWithExtension()</a>
+    <a href="classes/Horde-Util-Util.html#method_getTempFileWithExtension">getTempFileWithExtension()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: string|false    </span>
 </dt>
 <dd>Creates a temporary filename with a specific extension for the lifetime
 of the script, and (optionally) registers it to be deleted at request
 shutdown.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_loadExtension">loadExtension()</a>
+    <a href="classes/Horde-Util-Util.html#method_loadExtension">loadExtension()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
@@ -308,7 +310,7 @@ shutdown.</dd>
 systems.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_nonInputVar">nonInputVar()</a>
+    <a href="classes/Horde-Util-Util.html#method_nonInputVar">nonInputVar()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -317,14 +319,14 @@ POST, or cookie input. The value being checked MUST be in the global
 scope.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_pformInput">pformInput()</a>
+    <a href="classes/Horde-Util-Util.html#method_pformInput">pformInput()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Prints a hidden form input containing the session name and id.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_realPath">realPath()</a>
+    <a href="classes/Horde-Util-Util.html#method_realPath">realPath()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -332,14 +334,14 @@ scope.</dd>
 realpath() except the directory need not exist on the local server.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Util.html#method_shutdown">shutdown()</a>
+    <a href="classes/Horde-Util-Util.html#method_shutdown">shutdown()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Deletes registered files at request shutdown.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Util.html#method__secureDelete">_secureDelete()</a>
+    <a href="classes/Horde-Util-Util.html#method__secureDelete">_secureDelete()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -356,7 +358,7 @@ string.</dd>
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Horde-Util.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Util-Util.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -367,14 +369,14 @@ string.</dd>
 >
     <h4 class="phpdocumentor-element__name" id="property_patterns">
         $patterns
-        <a href="classes/Horde-Util.html#property_patterns" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#property_patterns" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -384,7 +386,7 @@ string.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$patterns</span>
-     = <span class="phpdocumentor-signature__default-value">array(&quot;U&quot;, &quot;\xaa&quot;, &quot;\x92I\$&quot;, &quot;I\$\x92&quot;, &quot;\$\x92I&quot;, &quot;\x00&quot;, &quot;\x11&quot;, &quot;\&quot;&quot;, &quot;3&quot;, &quot;D&quot;, &quot;U&quot;, &quot;f&quot;, &quot;w&quot;, &quot;\x88&quot;, &quot;\x99&quot;, &quot;\xaa&quot;, &quot;\xbb&quot;, &quot;\xcc&quot;, &quot;\xdd&quot;, &quot;\xee&quot;, &quot;\xff&quot;, &quot;\x92I\$&quot;, &quot;I\$\x92&quot;, &quot;\$\x92I&quot;, &quot;m\xb6\xdb&quot;, &quot;\xb6\xdbm&quot;, &quot;\xdbm\xb6&quot;)</span></code>
+     = <span class="phpdocumentor-signature__default-value">[&quot;U&quot;, &quot;\xaa&quot;, &quot;\x92I\$&quot;, &quot;I\$\x92&quot;, &quot;\$\x92I&quot;, &quot;\x00&quot;, &quot;\x11&quot;, &quot;\&quot;&quot;, &quot;3&quot;, &quot;D&quot;, &quot;U&quot;, &quot;f&quot;, &quot;w&quot;, &quot;\x88&quot;, &quot;\x99&quot;, &quot;\xaa&quot;, &quot;\xbb&quot;, &quot;\xcc&quot;, &quot;\xdd&quot;, &quot;\xee&quot;, &quot;\xff&quot;, &quot;\x92I\$&quot;, &quot;I\$\x92&quot;, &quot;\$\x92I&quot;, &quot;m\xb6\xdb&quot;, &quot;\xb6\xdbm&quot;, &quot;\xdbm\xb6&quot;]</span></code>
 
         <section class="phpdocumentor-description"><p>See http://www.cs.auckland.ac.nz/~pgut001/pubs/secure_del.html.
 We save the random overwrites for efficiency reasons.</p>
@@ -401,16 +403,16 @@ We save the random overwrites for efficiency reasons.</p>
             -protected
             -static                                            "
 >
-    <h4 class="phpdocumentor-element__name" id="property__cache">
-        $_cache
-        <a href="classes/Horde-Util.html#property__cache" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_cache">
+        $cache
+        <a href="classes/Horde-Util-Util.html#property_cache" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -419,8 +421,8 @@ We save the random overwrites for efficiency reasons.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_cache</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+    <span class="phpdocumentor-signature__name">$cache</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -434,16 +436,16 @@ We save the random overwrites for efficiency reasons.</p>
             -protected
             -static                                            "
 >
-    <h4 class="phpdocumentor-element__name" id="property__magicquotes">
-        $_magicquotes
-        <a href="classes/Horde-Util.html#property__magicquotes" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_magicquotes">
+        $magicquotes
+        <a href="classes/Horde-Util-Util.html#property_magicquotes" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -451,9 +453,9 @@ We save the random overwrites for efficiency reasons.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$_magicquotes</span>
-     = <span class="phpdocumentor-signature__default-value">\null</span></code>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">bool|null</span>
+    <span class="phpdocumentor-signature__name">$magicquotes</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -467,16 +469,16 @@ We save the random overwrites for efficiency reasons.</p>
             -protected
             -static                                            "
 >
-    <h4 class="phpdocumentor-element__name" id="property__shutdowndata">
-        $_shutdowndata
-        <a href="classes/Horde-Util.html#property__shutdowndata" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_shutdowndata">
+        $shutdowndata
+        <a href="classes/Horde-Util-Util.html#property_shutdowndata" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -485,8 +487,8 @@ We save the random overwrites for efficiency reasons.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_shutdowndata</span>
-     = <span class="phpdocumentor-signature__default-value">array(&#039;paths&#039; =&gt; array(), &#039;secure&#039; =&gt; array())</span></code>
+    <span class="phpdocumentor-signature__name">$shutdowndata</span>
+     = <span class="phpdocumentor-signature__default-value">[&#039;paths&#039; =&gt; [], &#039;secure&#039; =&gt; []]</span></code>
 
     
     
@@ -500,16 +502,16 @@ We save the random overwrites for efficiency reasons.</p>
             -protected
             -static                                            "
 >
-    <h4 class="phpdocumentor-element__name" id="property__shutdownreg">
-        $_shutdownreg
-        <a href="classes/Horde-Util.html#property__shutdownreg" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_shutdownreg">
+        $shutdownreg
+        <a href="classes/Horde-Util-Util.html#property_shutdownreg" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -518,8 +520,8 @@ We save the random overwrites for efficiency reasons.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$_shutdownreg</span>
-     = <span class="phpdocumentor-signature__default-value">\false</span></code>
+    <span class="phpdocumentor-signature__name">$shutdownreg</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
 
     
     
@@ -531,7 +533,7 @@ We save the random overwrites for efficiency reasons.</p>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Util.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Util-Util.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -541,12 +543,12 @@ We save the random overwrites for efficiency reasons.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_createTempDir">
         createTempDir()
-        <a href="classes/Horde-Util.html#method_createTempDir" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_createTempDir" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">294</span>
+    <span class="phpdocumentor-element-found-in__line">306</span>
 
     </aside>
 
@@ -554,7 +556,7 @@ We save the random overwrites for efficiency reasons.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">createTempDir</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$delete</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$temp_dir</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">createTempDir</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$delete</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$temp_dir</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|false</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -584,7 +586,7 @@ where the temporary directory will be created.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type">string|false</span>
             &mdash;
             <section class="phpdocumentor-description"><p>The pathname to the new temporary directory.
 Returns false if directory not created.</p>
@@ -600,12 +602,12 @@ Returns false if directory not created.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_deleteAtShutdown">
         deleteAtShutdown()
-        <a href="classes/Horde-Util.html#method_deleteAtShutdown" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_deleteAtShutdown" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">388</span>
+    <span class="phpdocumentor-element-found-in__line">400</span>
 
     </aside>
 
@@ -677,12 +679,12 @@ the file?</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_dispelMagicQuotes">
         dispelMagicQuotes()
-        <a href="classes/Horde-Util.html#method_dispelMagicQuotes" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_dispelMagicQuotes" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -724,12 +726,12 @@ the file?</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_extensionExists">
         extensionExists()
-        <a href="classes/Horde-Util.html#method_extensionExists" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_extensionExists" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">483</span>
+    <span class="phpdocumentor-element-found-in__line">498</span>
 
     </aside>
 
@@ -771,12 +773,12 @@ the file?</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_formInput">
         formInput()
-        <a href="classes/Horde-Util.html#method_formInput" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_formInput" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -784,7 +786,7 @@ the file?</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">formInput</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$append_session</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">formInput</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$append_session</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -792,7 +794,7 @@ the file?</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$append_session</span>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>0 = only if needed, 1 = always.</p>
 </section>
@@ -818,12 +820,12 @@ the file?</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getFormData">
         getFormData()
-        <a href="classes/Horde-Util.html#method_getFormData" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_getFormData" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -878,12 +880,12 @@ there.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getGet">
         getGet()
-        <a href="classes/Horde-Util.html#method_getGet" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_getGet" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -936,12 +938,12 @@ there.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getPathInfo">
         getPathInfo()
-        <a href="classes/Horde-Util.html#method_getPathInfo" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_getPathInfo" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">546</span>
+    <span class="phpdocumentor-element-found-in__line">561</span>
 
     </aside>
 
@@ -971,12 +973,12 @@ there.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getPost">
         getPost()
-        <a href="classes/Horde-Util.html#method_getPost" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_getPost" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">175</span>
+    <span class="phpdocumentor-element-found-in__line">180</span>
 
     </aside>
 
@@ -1029,12 +1031,12 @@ there.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getTempFile">
         getTempFile()
-        <a href="classes/Horde-Util.html#method_getTempFile" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_getTempFile" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">196</span>
+    <span class="phpdocumentor-element-found-in__line">201</span>
 
     </aside>
 
@@ -1043,7 +1045,7 @@ there.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getTempFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$delete</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dir</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$secure</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getTempFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$delete</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dir</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$secure</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|false</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1091,7 +1093,7 @@ the file by overwriting it with random data?</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type">string|false</span>
             &mdash;
             <section class="phpdocumentor-description"><p>Returns the full path-name to the temporary file.
 Returns false if a temp file could not be created.</p>
@@ -1107,12 +1109,12 @@ Returns false if a temp file could not be created.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getTempFileWithExtension">
         getTempFileWithExtension()
-        <a href="classes/Horde-Util.html#method_getTempFileWithExtension" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_getTempFileWithExtension" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">233</span>
+    <span class="phpdocumentor-element-found-in__line">242</span>
 
     </aside>
 
@@ -1122,7 +1124,7 @@ shutdown.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getTempFileWithExtension</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$extension</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;.tmp&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$delete</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dir</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$secure</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getTempFileWithExtension</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$extension</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;.tmp&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$delete</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dir</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$secure</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|false</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1179,7 +1181,7 @@ the file by overwriting it with random data?</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type">string|false</span>
             &mdash;
             <section class="phpdocumentor-description"><p>Returns the full path-name to the temporary file.
 Returns false if a temporary file could not be created.</p>
@@ -1195,12 +1197,12 @@ Returns false if a temporary file could not be created.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_loadExtension">
         loadExtension()
-        <a href="classes/Horde-Util.html#method_loadExtension" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_loadExtension" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">502</span>
+    <span class="phpdocumentor-element-found-in__line">517</span>
 
     </aside>
 
@@ -1245,12 +1247,12 @@ OR was loaded dynamically.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_nonInputVar">
         nonInputVar()
-        <a href="classes/Horde-Util.html#method_nonInputVar" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_nonInputVar" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -1305,12 +1307,12 @@ the variable value otherwise.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_pformInput">
         pformInput()
-        <a href="classes/Horde-Util.html#method_pformInput" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_pformInput" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -1318,7 +1320,7 @@ the variable value otherwise.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">pformInput</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$append_session</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">pformInput</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$append_session</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1326,7 +1328,7 @@ the variable value otherwise.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$append_session</span>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>0 = only if needed, 1 = always.</p>
 </section>
@@ -1337,7 +1339,7 @@ the variable value otherwise.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -1350,12 +1352,12 @@ the variable value otherwise.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_realPath">
         realPath()
-        <a href="classes/Horde-Util.html#method_realPath" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_realPath" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">332</span>
+    <span class="phpdocumentor-element-found-in__line">344</span>
 
     </aside>
 
@@ -1401,12 +1403,12 @@ realpath() except the directory need not exist on the local server.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_shutdown">
         shutdown()
-        <a href="classes/Horde-Util.html#method_shutdown" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method_shutdown" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">418</span>
+    <span class="phpdocumentor-element-found-in__line">433</span>
 
     </aside>
 
@@ -1440,12 +1442,12 @@ Copyright 2002-2003 Braverock Ventures</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__secureDelete">
         _secureDelete()
-        <a href="classes/Horde-Util.html#method__secureDelete" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Util-Util.html#method__secureDelete" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Util.php"><a href="files/horde-util.html"><abbr title="Horde/Util.php">Util.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Util.php"><a href="files/util.html"><abbr title="Util.php">Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">460</span>
+    <span class="phpdocumentor-element-found-in__line">475</span>
 
     </aside>
 
@@ -1556,7 +1558,7 @@ string.</p>
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Util.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Util-Util.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
