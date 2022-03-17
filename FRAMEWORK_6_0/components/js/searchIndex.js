@@ -3781,26 +3781,6 @@ Search.appendIndex(
             "summary": "Prints\u0020a\u0020result\u0020set\u0020from\u0020Detector\u003A\u003AcopyPasteDetection\u0028\u0029.",
             "url": "classes/Horde-Components-Qc-Task-Cpd.html#method__printResult"
         },                {
-            "fqsen": "\\Horde\\Components\\Qc\\Task\\Cs",
-            "name": "Cs",
-            "summary": "Components_Qc_Task_Cs\u003A\u003A\u0020runs\u0020a\u0020code\u0020style\u0020check\u0020on\u0020the\u0020component.",
-            "url": "classes/Horde-Components-Qc-Task-Cs.html"
-        },                {
-            "fqsen": "\\Horde\\Components\\Qc\\Task\\Cs\u003A\u003AgetName\u0028\u0029",
-            "name": "getName",
-            "summary": "Get\u0020the\u0020name\u0020of\u0020this\u0020task.",
-            "url": "classes/Horde-Components-Qc-Task-Cs.html#method_getName"
-        },                {
-            "fqsen": "\\Horde\\Components\\Qc\\Task\\Cs\u003A\u003Avalidate\u0028\u0029",
-            "name": "validate",
-            "summary": "Validate\u0020the\u0020preconditions\u0020required\u0020for\u0020this\u0020release\u0020task.",
-            "url": "classes/Horde-Components-Qc-Task-Cs.html#method_validate"
-        },                {
-            "fqsen": "\\Horde\\Components\\Qc\\Task\\Cs\u003A\u003Arun\u0028\u0029",
-            "name": "run",
-            "summary": "Run\u0020the\u0020task.",
-            "url": "classes/Horde-Components-Qc-Task-Cs.html#method_run"
-        },                {
             "fqsen": "\\Horde\\Components\\Qc\\Task\\Dcd",
             "name": "Dcd",
             "summary": "PHP\u0020dead\u0020code\u0020detection.",
