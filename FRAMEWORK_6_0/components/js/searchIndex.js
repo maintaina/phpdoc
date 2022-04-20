@@ -1926,6 +1926,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Components-Helper-Composer.html#method__setRepositories"
         },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Composer\u003A\u003A_setConfig\u0028\u0029",
+            "name": "_setConfig",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Composer.html#method__setConfig"
+        },                {
             "fqsen": "\\Horde\\Components\\Helper\\Composer\u003A\u003A\u0024_repositories",
             "name": "_repositories",
             "summary": "",
