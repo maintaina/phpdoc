@@ -201,6 +201,11 @@ Search.appendIndex(
             "summary": "Construct\u0020a\u0020new\u0020Horde_Form_Renderer\u003A\u003A.",
             "url": "classes/Horde-Form-Renderer.html#method_Horde_Form_Renderer"
         },                {
+            "fqsen": "\\Horde_Form_Renderer\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Form-Renderer.html#method___construct"
+        },                {
             "fqsen": "\\Horde_Form_Renderer\u003A\u003AshowHeader\u0028\u0029",
             "name": "showHeader",
             "summary": "",
@@ -443,7 +448,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_tableset\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029\u0020\u002D\u0020Parameter\u0020list\u0020may\u0020vary\u0020on\u0020overloading",
+            "summary": "function\u0020init\u0028\u0024values,\u0020\u0024header\u0029",
             "url": "classes/Horde-Form-Type-tableset.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_tableset\u003A\u003AisValid\u0028\u0029",
@@ -818,7 +823,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_longtext\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "The\u0020initialisation\u0020function\u0020for\u0020the\u0020text\u0020variable\u0020type.",
+            "summary": "Initialize\u0020a\u0020Longtext\u0020field\u0020type",
             "url": "classes/Horde-Form-Type-longtext.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_longtext\u003A\u003AgetRows\u0028\u0029",
@@ -863,7 +868,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_countedtext\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "The\u0020initialisation\u0020function\u0020for\u0020the\u0020text\u0020variable\u0020type.",
+            "summary": "Init\u0020a\u0020longtext\u0020field",
             "url": "classes/Horde-Form-Type-countedtext.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_countedtext\u003A\u003AisValid\u0028\u0029",
@@ -923,7 +928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_pgp\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "The\u0020initialisation\u0020function\u0020for\u0020the\u0020text\u0020variable\u0020type.",
+            "summary": "Init\u0020a\u0020PGP\u0020field",
             "url": "classes/Horde-Form-Type-pgp.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_pgp\u003A\u003AgetPGPParams\u0028\u0029",
@@ -953,7 +958,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_smime\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "The\u0020initialisation\u0020function\u0020for\u0020the\u0020text\u0020variable\u0020type.",
+            "summary": "Init\u0020a\u0020S\/MIME\u0020field",
             "url": "classes/Horde-Form-Type-smime.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_smime\u003A\u003AgetSMIMEParams\u0028\u0029",
@@ -978,7 +983,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_country\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029",
+            "summary": "Init\u0020a\u0020Country\u0020field",
             "url": "classes/Horde-Form-Type-country.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_country\u003A\u003Aabout\u0028\u0029",
@@ -1013,12 +1018,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_image\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029\u0020\u002D\u0020Parameter\u0020list\u0020may\u0020vary\u0020on\u0020overloading",
+            "summary": "Init\u0020a\u0020Country\u0020field",
             "url": "classes/Horde-Form-Type-image.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_image\u003A\u003AonSubmit\u0028\u0029",
             "name": "onSubmit",
-            "summary": "",
+            "summary": "function\u0020onSubmit\u0028\u0026\u0024var,\u0020\u0026\u0024vars\u0029",
             "url": "classes/Horde-Form-Type-image.html#method_onSubmit"
         },                {
             "fqsen": "\\Horde_Form_Type_image\u003A\u003AisValid\u0028\u0029",
@@ -1118,7 +1123,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_link\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029\u0020\u002D\u0020Parameter\u0020list\u0020may\u0020vary\u0020on\u0020overloading",
+            "summary": "Init\u0020a\u0020Link\u0020field",
             "url": "classes/Horde-Form-Type-link.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_link\u003A\u003AisValid\u0028\u0029",
@@ -1143,7 +1148,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_email\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029\u0020\u002D\u0020Parameter\u0020list\u0020may\u0020vary\u0020on\u0020overloading",
+            "summary": "Init\u0020an\u0020\u0022email\u0022\u0020field",
             "url": "classes/Horde-Form-Type-email.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_email\u003A\u003AisValid\u0028\u0029",
@@ -1393,12 +1398,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_mlenum\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029\u0020\u002D\u0020Parameter\u0020list\u0020may\u0020vary\u0020on\u0020overloading",
+            "summary": "Initialize\u0020an\u0020mlenum\u0020field",
             "url": "classes/Horde-Form-Type-mlenum.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_mlenum\u003A\u003AonSubmit\u0028\u0029",
             "name": "onSubmit",
-            "summary": "",
+            "summary": "function\u0020onSubmit\u0028\u0026\u0024var,\u0020\u0026\u0024vars\u0029",
             "url": "classes/Horde-Form-Type-mlenum.html#method_onSubmit"
         },                {
             "fqsen": "\\Horde_Form_Type_mlenum\u003A\u003AisValid\u0028\u0029",
@@ -1493,7 +1498,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_set\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029\u0020\u002D\u0020Parameter\u0020list\u0020may\u0020vary\u0020on\u0020overloading",
+            "summary": "Initialize\u0020a\u0020Set\u0020form\u0020type",
             "url": "classes/Horde-Form-Type-set.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_set\u003A\u003AisValid\u0028\u0029",
@@ -1528,7 +1533,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_date\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029\u0020\u002D\u0020Parameter\u0020list\u0020may\u0020vary\u0020on\u0020overloading",
+            "summary": "Initialize\u0020a\u0020Set\u0020form\u0020type",
             "url": "classes/Horde-Form-Type-date.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_date\u003A\u003AisValid\u0028\u0029",
@@ -1578,7 +1583,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_hourminutesecond\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029\u0020\u002D\u0020Parameter\u0020list\u0020may\u0020vary\u0020on\u0020overloading",
+            "summary": "Initialize\u0020a\u0020Set\u0020form\u0020type",
             "url": "classes/Horde-Form-Type-hourminutesecond.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_hourminutesecond\u003A\u003AisValid\u0028\u0029",
@@ -1623,7 +1628,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_monthyear\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029\u0020\u002D\u0020Parameter\u0020list\u0020may\u0020vary\u0020on\u0020overloading",
+            "summary": "Initialize\u0020a\u0020Month\/Year\u0020form\u0020type",
             "url": "classes/Horde-Form-Type-monthyear.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_monthyear\u003A\u003AisValid\u0028\u0029",
@@ -1878,7 +1883,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_sorter\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029\u0020\u002D\u0020Parameter\u0020list\u0020may\u0020vary\u0020on\u0020overloading",
+            "summary": "function\u0020init\u0028\u0024values,\u0020\u0024size\u0020\u003D\u00208,\u0020\u0024header\u0020\u003D\u0020\u0027\u0027\u0029",
             "url": "classes/Horde-Form-Type-sorter.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_sorter\u003A\u003AisValid\u0028\u0029",
@@ -1943,7 +1948,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_selectfiles\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029\u0020\u002D\u0020Parameter\u0020list\u0020may\u0020vary\u0020on\u0020overloading",
+            "summary": "Initialize\u0020a\u0020file\u0020selection\u0020type",
             "url": "classes/Horde-Form-Type-selectfiles.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_selectfiles\u003A\u003AisValid\u0028\u0029",
@@ -1988,7 +1993,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_assign\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029\u0020\u002D\u0020Parameter\u0020list\u0020may\u0020vary\u0020on\u0020overloading",
+            "summary": "Initialize\u0020an\u0020assignment\u0020field",
             "url": "classes/Horde-Form-Type-assign.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_assign\u003A\u003AisValid\u0028\u0029",
@@ -1998,7 +2003,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_assign\u003A\u003AgetValues\u0028\u0029",
             "name": "getValues",
-            "summary": "",
+            "summary": "function\u0020getValues\u0028\u0024side\u0029",
             "url": "classes/Horde-Form-Type-assign.html#method_getValues"
         },                {
             "fqsen": "\\Horde_Form_Type_assign\u003A\u003AsetValues\u0028\u0029",
@@ -2113,7 +2118,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_dblookup\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029",
+            "summary": "Initialize\u0020an\u0020dblookup\u0020field",
             "url": "classes/Horde-Form-Type-dblookup.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_dblookup\u003A\u003Aabout\u0028\u0029",
@@ -2128,7 +2133,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_figlet\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029\u0020\u002D\u0020Parameter\u0020list\u0020may\u0020vary\u0020on\u0020overloading",
+            "summary": "Initialize\u0020a\u0020Figlet\u0020form\u0020type",
             "url": "classes/Horde-Form-Type-figlet.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_figlet\u003A\u003AisValid\u0028\u0029",
@@ -2198,7 +2203,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form_Type_invalid\u003A\u003Ainit\u0028\u0029",
             "name": "init",
-            "summary": "Initialize\u0020\u0028kind\u0020of\u0020constructor\u0029\u0020\u002D\u0020Parameter\u0020list\u0020may\u0020vary\u0020on\u0020overloading",
+            "summary": "Initialize\u0020an\u0020Invalid\u0020Message\u0020form\u0020type",
             "url": "classes/Horde-Form-Type-invalid.html#method_init"
         },                {
             "fqsen": "\\Horde_Form_Type_invalid\u003A\u003AisValid\u0028\u0029",
@@ -2220,6 +2225,11 @@ Search.appendIndex(
             "name": "Horde_Form_Variable",
             "summary": "Variable\u0020constructor.",
             "url": "classes/Horde-Form-Variable.html#method_Horde_Form_Variable"
+        },                {
+            "fqsen": "\\Horde_Form_Variable\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Form-Variable.html#method___construct"
         },                {
             "fqsen": "\\Horde_Form_Variable\u003A\u003AsetFormOb\u0028\u0029",
             "name": "setFormOb",
@@ -2503,7 +2513,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Form\u003A\u003AgetType\u0028\u0029",
             "name": "getType",
-            "summary": "",
+            "summary": "Initialize\u0020a\u0020Horde_Form_Type\u0020object\u0020from\u0020a\u0020type\u0020id",
             "url": "classes/Horde-Form.html#method_getType"
         },                {
             "fqsen": "\\Horde_Form\u003A\u003AsetSection\u0028\u0029",
