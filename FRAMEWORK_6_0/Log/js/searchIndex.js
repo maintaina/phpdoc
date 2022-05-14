@@ -468,13 +468,23 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Log_Logger\u003A\u003Aserialize\u0028\u0029",
             "name": "serialize",
-            "summary": "Serialize.",
+            "summary": "Serialize,\u0020Pre\u0020PHP\u00208",
             "url": "classes/Horde-Log-Logger.html#method_serialize"
+        },                {
+            "fqsen": "\\Horde_Log_Logger\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "Serialize,\u0020PHP\u00208\u002B",
+            "url": "classes/Horde-Log-Logger.html#method___serialize"
         },                {
             "fqsen": "\\Horde_Log_Logger\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
-            "summary": "Unserialize.",
+            "summary": "Unserialize,\u0020pre\u0020PHP\u00208",
             "url": "classes/Horde-Log-Logger.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde_Log_Logger\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "Unserialize,\u0020PHP\u00208\u002B",
+            "url": "classes/Horde-Log-Logger.html#method___unserialize"
         },                {
             "fqsen": "\\Horde_Log_Logger\u003A\u003A_init\u0028\u0029",
             "name": "_init",
