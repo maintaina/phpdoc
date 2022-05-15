@@ -131,6 +131,11 @@ Search.appendIndex(
             "summary": "The\u0020Horde_Form_Action\u0020class\u0020provides\u0020an\u0020API\u0020for\u0020adding\u0020actions\u0020to\nHorde_Form\u0020variables.",
             "url": "classes/Horde-Form-Action.html"
         },                {
+            "fqsen": "\\Horde_Form_Action\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Form-Action.html#method___construct"
+        },                {
             "fqsen": "\\Horde_Form_Action\u003A\u003AHorde_Form_Action\u0028\u0029",
             "name": "Horde_Form_Action",
             "summary": "",
