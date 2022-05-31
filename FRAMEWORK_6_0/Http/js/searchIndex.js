@@ -941,6 +941,11 @@ Search.appendIndex(
             "summary": "Return\u0020an\u0020instance\u0020with\u0020the\u0020provided\u0020value\u0020replacing\u0020the\u0020specified\u0020header.",
             "url": "classes/Horde-Http-MessageImplementation.html#method_withHeader"
         },                {
+            "fqsen": "\\Horde\\Http\\MessageImplementation\u003A\u003AcheckHeaderForInvalidAsciiChars\u0028\u0029",
+            "name": "checkHeaderForInvalidAsciiChars",
+            "summary": "Adding\u0020checks\u0020following\u0020these\u0020errata\u003A\u0020https\u003A\/\/github.com\/php\u002Dfig\/fig\u002Dstandards\/pull\/1274\/files",
+            "url": "classes/Horde-Http-MessageImplementation.html#method_checkHeaderForInvalidAsciiChars"
+        },                {
             "fqsen": "\\Horde\\Http\\MessageImplementation\u003A\u003AstoreHeader\u0028\u0029",
             "name": "storeHeader",
             "summary": "Store\u0020or\u0020replace\u0020a\u0020header",
