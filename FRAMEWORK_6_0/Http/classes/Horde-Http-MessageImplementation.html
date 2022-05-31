@@ -158,13 +158,6 @@ a trait</p>
 <dd>Stream content of the message</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Http-MessageImplementation.html#method_checkHeaderForInvalidAsciiChars">checkHeaderForInvalidAsciiChars()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>Adding checks following these errata: https://github.com/php-fig/fig-standards/pull/1274/files</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Http-MessageImplementation.html#method_getBody">getBody()</a>
     <span>
                                 &nbsp;: <abbr title="\Psr\Http\Message\StreamInterface">StreamInterface</abbr>    </span>
@@ -240,6 +233,13 @@ a trait</p>
                                 &nbsp;: static    </span>
 </dt>
 <dd>Return an instance with the specified HTTP protocol version.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Horde-Http-MessageImplementation.html#method_checkHeaderForInvalidAsciiChars">checkHeaderForInvalidAsciiChars()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>Adding checks following these errata: https://github.com/php-fig/fig-standards/pull/1274/files</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Horde-Http-MessageImplementation.html#method_getHeaderName">getHeaderName()</a>
@@ -424,101 +424,6 @@ so it can be retrieved later by a case-insensitive version of it.</dd>
             Methods
             <a href="classes/Horde-Http-MessageImplementation.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkHeaderForInvalidAsciiChars">
-        checkHeaderForInvalidAsciiChars()
-        <a href="classes/Horde-Http-MessageImplementation.html#method_checkHeaderForInvalidAsciiChars" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="MessageImplementation.php"><a href="files/messageimplementation.html"><abbr title="MessageImplementation.php">MessageImplementation.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">246</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Adding checks following these errata: https://github.com/php-fig/fig-standards/pull/1274/files</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">checkHeaderForInvalidAsciiChars</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-        <section class="phpdocumentor-description"><p>A minimally viable validator should reject header names containing the
-following characters:</p>
-<ul>
-<li>NUL (0x00)</li>
-<li>
-<code class="prettyprint">\r</code> (0x0D)</li>
-<li>
-<code class="prettyprint">\n</code> (0x0A)</li>
-<li>Any character less than or equal to 0x20.</li>
-</ul>
-<p>Concerning Header values the following characters should lead to a rejection:</p>
-<ul>
-<li>
-<ul>
-<li>NUL (0x00)</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>
-<code class="prettyprint">\r</code> (0x0D)</li>
-<li>
-<code class="prettyprint">\n</code> (0x0A)</li>
-</ul>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>the headers name.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>the headers value(s).</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                                 <section class="phpdocumentor-description"><p>When the body is not valid.</p>
-</section>
-
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
                     <article
         class="phpdocumentor-element
             -method
@@ -1122,6 +1027,101 @@ new protocol version.</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">static</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_checkHeaderForInvalidAsciiChars">
+        checkHeaderForInvalidAsciiChars()
+        <a href="classes/Horde-Http-MessageImplementation.html#method_checkHeaderForInvalidAsciiChars" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="MessageImplementation.php"><a href="files/messageimplementation.html"><abbr title="MessageImplementation.php">MessageImplementation.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">246</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Adding checks following these errata: https://github.com/php-fig/fig-standards/pull/1274/files</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">checkHeaderForInvalidAsciiChars</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>A minimally viable validator should reject header names containing the
+following characters:</p>
+<ul>
+<li>NUL (0x00)</li>
+<li>
+<code class="prettyprint">\r</code> (0x0D)</li>
+<li>
+<code class="prettyprint">\n</code> (0x0A)</li>
+<li>Any character less than or equal to 0x20.</li>
+</ul>
+<p>Concerning Header values the following characters should lead to a rejection:</p>
+<ul>
+<li>
+<ul>
+<li>NUL (0x00)</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<code class="prettyprint">\r</code> (0x0D)</li>
+<li>
+<code class="prettyprint">\n</code> (0x0A)</li>
+</ul>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>the headers name.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>the headers value(s).</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>When the body is not valid.</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
         
     
