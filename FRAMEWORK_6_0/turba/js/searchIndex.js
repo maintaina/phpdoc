@@ -1868,8 +1868,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Turba_Factory_Driver\u003A\u003Acreate\u0028\u0029",
             "name": "create",
-            "summary": "Return\u0020the\u0020Turba_Driver\u003A\u003A\u0020instance.",
+            "summary": "",
             "url": "classes/Turba-Factory-Driver.html#method_create"
+        },                {
+            "fqsen": "\\Turba_Factory_Driver\u003A\u003AcreateTrusted\u0028\u0029",
+            "name": "createTrusted",
+            "summary": "Return\u0020the\u0020Turba_Driver\u003A\u003A\u0020instance.",
+            "url": "classes/Turba-Factory-Driver.html#method_createTrusted"
         },                {
             "fqsen": "\\Turba_Factory_Driver\u003A\u003A\u0024_instances",
             "name": "_instances",
