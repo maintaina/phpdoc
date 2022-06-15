@@ -761,6 +761,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Controller-Response-Psr7Adapter.html#method_createPsr7Response"
         },                {
+            "fqsen": "\\Horde\\Controller\\Response\\Psr7Adapter\u003A\u003AgetStatusFromHeader\u0028\u0029",
+            "name": "getStatusFromHeader",
+            "summary": "",
+            "url": "classes/Horde-Controller-Response-Psr7Adapter.html#method_getStatusFromHeader"
+        },                {
             "fqsen": "\\Horde\\Controller\\Response\\Psr7Adapter\u003A\u003A\u0024responseFactory",
             "name": "responseFactory",
             "summary": "",
