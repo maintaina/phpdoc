@@ -2466,6 +2466,16 @@ Search.appendIndex(
             "summary": "Increments\u0020the\u0020last\u0020part\u0020of\u0020a\u0020version\u0020number\u0020by\u0020one.",
             "url": "classes/Horde-Components-Helper-Version.html#method_nextPearVersion"
         },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AnextMinorVersion\u0028\u0029",
+            "name": "nextMinorVersion",
+            "summary": "Increments\u0020the\u0020minor\u0020version\u0020number\u0020by\u0020one.",
+            "url": "classes/Horde-Components-Helper-Version.html#method_nextMinorVersion"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AnextVersionByPart\u0028\u0029",
+            "name": "nextVersionByPart",
+            "summary": "Increments\u0020a\u0020version\u0020part\u0020number\u0020by\u0020one.",
+            "url": "classes/Horde-Components-Helper-Version.html#method_nextVersionByPart"
+        },                {
             "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AcomposerToPear\u0028\u0029",
             "name": "composerToPear",
             "summary": "Converts\u0020\u0028a\u0020limited\u0020set\u0020of\u0029\u0020Composer\u0020version\u0020constraints\u0020to\u0020PEAR\u0020version\nconstraints.",
