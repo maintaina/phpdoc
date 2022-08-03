@@ -46,105 +46,20 @@ Search.appendIndex(
             "summary": "Installer\u0020implementation\u0020for\u0020horde\u0020apps\u0020and\u0020themes",
             "url": "classes/Horde-Composer-HordeInstaller.html"
         },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003AsetupDirs\u0028\u0029",
-            "name": "setupDirs",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstaller.html#method_setupDirs"
+            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003Areconfigure\u0028\u0029",
+            "name": "reconfigure",
+            "summary": "Handle\u0020horde\u002Dspecific\u0020postinstall\u0020tasks",
+            "url": "classes/Horde-Composer-HordeInstaller.html#method_reconfigure"
         },                {
             "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003AgetInstallPath\u0028\u0029",
             "name": "getInstallPath",
             "summary": "\u007B\u0040inheritDoc\u007D",
             "url": "classes/Horde-Composer-HordeInstaller.html#method_getInstallPath"
         },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003Apostinstall\u0028\u0029",
-            "name": "postinstall",
-            "summary": "Handle\u0020horde\u002Dspecific\u0020postinstall\u0020tasks",
-            "url": "classes/Horde-Composer-HordeInstaller.html#method_postinstall"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003AlinkVarConfig\u0028\u0029",
-            "name": "linkVarConfig",
-            "summary": "Symlink\u0020contents\u0020of\u0020var\/config",
-            "url": "classes/Horde-Composer-HordeInstaller.html#method_linkVarConfig"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003AlinkJavaScript\u0028\u0029",
-            "name": "linkJavaScript",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstaller.html#method_linkJavaScript"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003A_legacyWorkaround\u0028\u0029",
-            "name": "_legacyWorkaround",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstaller.html#method__legacyWorkaround"
-        },                {
             "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003Asupports\u0028\u0029",
             "name": "supports",
             "summary": "\u007B\u0040inheritDoc\u007D",
             "url": "classes/Horde-Composer-HordeInstaller.html#method_supports"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003A\u0024projectRoot",
-            "name": "projectRoot",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstaller.html#property_projectRoot"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003A\u0024configDir",
-            "name": "configDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstaller.html#property_configDir"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003A\u0024appConfigDir",
-            "name": "appConfigDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstaller.html#property_appConfigDir"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003A\u0024hordeConfigDir",
-            "name": "hordeConfigDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstaller.html#property_hordeConfigDir"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003A\u0024webDir",
-            "name": "webDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstaller.html#property_webDir"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003A\u0024presetDir",
-            "name": "presetDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstaller.html#property_presetDir"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003A\u0024jsDir",
-            "name": "jsDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstaller.html#property_jsDir"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003A\u0024hordeWebDir",
-            "name": "hordeWebDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstaller.html#property_hordeWebDir"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003A\u0024configRegistryDir",
-            "name": "configRegistryDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstaller.html#property_configRegistryDir"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003A\u0024packageDir",
-            "name": "packageDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstaller.html#property_packageDir"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003A\u0024packageDocRegistryDir",
-            "name": "packageDocRegistryDir",
-            "summary": "A\u0020location\u0020to\u0020look\u0020for\u0020package\u002Dsupplied\u0020registry\u0020snippets\nThis\u0020is\u0020useful\u0020for\u0020custom\u0020apps",
-            "url": "classes/Horde-Composer-HordeInstaller.html#property_packageDocRegistryDir"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003A\u0024packageName",
-            "name": "packageName",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstaller.html#property_packageName"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstaller\u003A\u003A\u0024vendorName",
-            "name": "vendorName",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstaller.html#property_vendorName"
         },                {
             "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin",
             "name": "HordeInstallerPlugin",
@@ -168,18 +83,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003AgetSubscribedEvents\u0028\u0029",
             "name": "getSubscribedEvents",
-            "summary": "Exposre\u0020which\u0020events\u0020are\u0020handled\u0020by\u0020which\u0020handler",
+            "summary": "Expose\u0020which\u0020events\u0020are\u0020handled\u0020by\u0020which\u0020handler",
             "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_getSubscribedEvents"
         },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003ApostInstallHandler\u0028\u0029",
-            "name": "postInstallHandler",
-            "summary": "Handler\u0020for\u0020post\u002Dpackage\u002Dinstall",
-            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_postInstallHandler"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003ApostUpdateHandler\u0028\u0029",
-            "name": "postUpdateHandler",
-            "summary": "Handler\u0020for\u0020post\u002Dpackage\u002Dupdate",
-            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_postUpdateHandler"
+            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003AreconfigureHandler\u0028\u0029",
+            "name": "reconfigureHandler",
+            "summary": "Trigger\u0020reconfigure\u0020command\u0020only\u0020once\u0020per\u0020action",
+            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_reconfigureHandler"
         },                {
             "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003AgetCapabilities\u0028\u0029",
             "name": "getCapabilities",
@@ -255,6 +165,81 @@ Search.appendIndex(
             "name": "execute",
             "summary": "",
             "url": "classes/Horde-Composer-HordeReconfigureCommand.html#method_execute"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow",
+            "name": "HordeReconfigureFlow",
+            "summary": "",
+            "url": "classes/Horde-Composer-HordeReconfigureFlow.html"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Composer-HordeReconfigureFlow.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "Run\u0020the\u0020reconfigure\u0020flow",
+            "url": "classes/Horde-Composer-HordeReconfigureFlow.html#method_run"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow\u003A\u003A\u0024io",
+            "name": "io",
+            "summary": "",
+            "url": "classes/Horde-Composer-HordeReconfigureFlow.html#property_io"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow\u003A\u003A\u0024composer",
+            "name": "composer",
+            "summary": "",
+            "url": "classes/Horde-Composer-HordeReconfigureFlow.html#property_composer"
+        },                {
+            "fqsen": "\\Horde\\Composer\\IOAdapter\\ComposerIoAdapter",
+            "name": "ComposerIoAdapter",
+            "summary": "",
+            "url": "classes/Horde-Composer-IOAdapter-ComposerIoAdapter.html"
+        },                {
+            "fqsen": "\\Horde\\Composer\\IOAdapter\\ComposerIoAdapter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Composer-IOAdapter-ComposerIoAdapter.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Composer\\IOAdapter\\ComposerIoAdapter\u003A\u003Awriteln\u0028\u0029",
+            "name": "writeln",
+            "summary": "",
+            "url": "classes/Horde-Composer-IOAdapter-ComposerIoAdapter.html#method_writeln"
+        },                {
+            "fqsen": "\\Horde\\Composer\\IOAdapter\\ComposerIoAdapter\u003A\u003A\u0024io",
+            "name": "io",
+            "summary": "",
+            "url": "classes/Horde-Composer-IOAdapter-ComposerIoAdapter.html#property_io"
+        },                {
+            "fqsen": "\\Horde\\Composer\\IOAdapter\\FlowIoInterface",
+            "name": "FlowIoInterface",
+            "summary": "",
+            "url": "classes/Horde-Composer-IOAdapter-FlowIoInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Composer\\IOAdapter\\FlowIoInterface\u003A\u003Awriteln\u0028\u0029",
+            "name": "writeln",
+            "summary": "",
+            "url": "classes/Horde-Composer-IOAdapter-FlowIoInterface.html#method_writeln"
+        },                {
+            "fqsen": "\\Horde\\Composer\\IOAdapter\\SymphonyOutputAdapter",
+            "name": "SymphonyOutputAdapter",
+            "summary": "",
+            "url": "classes/Horde-Composer-IOAdapter-SymphonyOutputAdapter.html"
+        },                {
+            "fqsen": "\\Horde\\Composer\\IOAdapter\\SymphonyOutputAdapter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Composer-IOAdapter-SymphonyOutputAdapter.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Composer\\IOAdapter\\SymphonyOutputAdapter\u003A\u003Awriteln\u0028\u0029",
+            "name": "writeln",
+            "summary": "",
+            "url": "classes/Horde-Composer-IOAdapter-SymphonyOutputAdapter.html#method_writeln"
+        },                {
+            "fqsen": "\\Horde\\Composer\\IOAdapter\\SymphonyOutputAdapter\u003A\u003A\u0024output",
+            "name": "output",
+            "summary": "",
+            "url": "classes/Horde-Composer-IOAdapter-SymphonyOutputAdapter.html#property_output"
         },                {
             "fqsen": "\\Horde\\Composer\\JsTreeLinker",
             "name": "JsTreeLinker",
@@ -480,5 +465,10 @@ Search.appendIndex(
             "name": "Horde",
             "summary": "",
             "url": "namespaces/horde.html"
+        },                {
+            "fqsen": "\\Horde\\Composer\\IOAdapter",
+            "name": "IOAdapter",
+            "summary": "",
+            "url": "namespaces/horde-composer-ioadapter.html"
         }            ]
 );
