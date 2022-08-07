@@ -61,46 +61,6 @@ Search.appendIndex(
             "summary": "\u007B\u0040inheritDoc\u007D",
             "url": "classes/Horde-Composer-HordeInstaller.html#method_supports"
         },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin",
-            "name": "HordeInstallerPlugin",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstallerPlugin.html"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003Aactivate\u0028\u0029",
-            "name": "activate",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_activate"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003Adeactivate\u0028\u0029",
-            "name": "deactivate",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_deactivate"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003Auninstall\u0028\u0029",
-            "name": "uninstall",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_uninstall"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003AgetSubscribedEvents\u0028\u0029",
-            "name": "getSubscribedEvents",
-            "summary": "Expose\u0020which\u0020events\u0020are\u0020handled\u0020by\u0020which\u0020handler",
-            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_getSubscribedEvents"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003AreconfigureHandler\u0028\u0029",
-            "name": "reconfigureHandler",
-            "summary": "Trigger\u0020reconfigure\u0020command\u0020only\u0020once\u0020per\u0020action",
-            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_reconfigureHandler"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003AgetCapabilities\u0028\u0029",
-            "name": "getCapabilities",
-            "summary": "Expose\u0020capabilities",
-            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_getCapabilities"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003A\u0024installer",
-            "name": "installer",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#property_installer"
-        },                {
             "fqsen": "\\Horde\\Composer\\HordeLocalFileWriter",
             "name": "HordeLocalFileWriter",
             "summary": "",
