@@ -61,6 +61,46 @@ Search.appendIndex(
             "summary": "\u007B\u0040inheritDoc\u007D",
             "url": "classes/Horde-Composer-HordeInstaller.html#method_supports"
         },                {
+            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin",
+            "name": "HordeInstallerPlugin",
+            "summary": "",
+            "url": "classes/Horde-Composer-HordeInstallerPlugin.html"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003Aactivate\u0028\u0029",
+            "name": "activate",
+            "summary": "",
+            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_activate"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003Adeactivate\u0028\u0029",
+            "name": "deactivate",
+            "summary": "",
+            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_deactivate"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003Auninstall\u0028\u0029",
+            "name": "uninstall",
+            "summary": "",
+            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_uninstall"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003AgetSubscribedEvents\u0028\u0029",
+            "name": "getSubscribedEvents",
+            "summary": "Expose\u0020which\u0020events\u0020are\u0020handled\u0020by\u0020which\u0020handler",
+            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_getSubscribedEvents"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003AreconfigureHandler\u0028\u0029",
+            "name": "reconfigureHandler",
+            "summary": "Trigger\u0020reconfigure\u0020command\u0020only\u0020once\u0020per\u0020action",
+            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_reconfigureHandler"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003AgetCapabilities\u0028\u0029",
+            "name": "getCapabilities",
+            "summary": "Expose\u0020capabilities",
+            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#method_getCapabilities"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeInstallerPlugin\u003A\u003A\u0024installer",
+            "name": "installer",
+            "summary": "",
+            "url": "classes/Horde-Composer-HordeInstallerPlugin.html#property_installer"
+        },                {
             "fqsen": "\\Horde\\Composer\\HordeLocalFileWriter",
             "name": "HordeLocalFileWriter",
             "summary": "",
@@ -315,6 +355,51 @@ Search.appendIndex(
             "name": "filesystem",
             "summary": "",
             "url": "classes/Horde-Composer-PresetHandler.html#property_filesystem"
+        },                {
+            "fqsen": "\\Horde\\Composer\\RegistrySnippetFileWriter",
+            "name": "RegistrySnippetFileWriter",
+            "summary": "",
+            "url": "classes/Horde-Composer-RegistrySnippetFileWriter.html"
+        },                {
+            "fqsen": "\\Horde\\Composer\\RegistrySnippetFileWriter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Undocumented\u0020function",
+            "url": "classes/Horde-Composer-RegistrySnippetFileWriter.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Composer\\RegistrySnippetFileWriter\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "",
+            "url": "classes/Horde-Composer-RegistrySnippetFileWriter.html#method_run"
+        },                {
+            "fqsen": "\\Horde\\Composer\\RegistrySnippetFileWriter\u003A\u003A\u0024apps",
+            "name": "apps",
+            "summary": "List\u0020of\u0020apps",
+            "url": "classes/Horde-Composer-RegistrySnippetFileWriter.html#property_apps"
+        },                {
+            "fqsen": "\\Horde\\Composer\\RegistrySnippetFileWriter\u003A\u003A\u0024configDir",
+            "name": "configDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-RegistrySnippetFileWriter.html#property_configDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\RegistrySnippetFileWriter\u003A\u003A\u0024configRegistryDir",
+            "name": "configRegistryDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-RegistrySnippetFileWriter.html#property_configRegistryDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\RegistrySnippetFileWriter\u003A\u003A\u0024vendorDir",
+            "name": "vendorDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-RegistrySnippetFileWriter.html#property_vendorDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\RegistrySnippetFileWriter\u003A\u003A\u0024webDir",
+            "name": "webDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-RegistrySnippetFileWriter.html#property_webDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\RegistrySnippetFileWriter\u003A\u003A\u0024filesystem",
+            "name": "filesystem",
+            "summary": "",
+            "url": "classes/Horde-Composer-RegistrySnippetFileWriter.html#property_filesystem"
         },                {
             "fqsen": "\\Horde\\Composer\\ThemesCatalog",
             "name": "ThemesCatalog",
