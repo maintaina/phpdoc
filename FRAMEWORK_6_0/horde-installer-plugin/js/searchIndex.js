@@ -386,11 +386,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Composer-RegistrySnippetFileWriter.html#property_configRegistryDir"
         },                {
-            "fqsen": "\\Horde\\Composer\\RegistrySnippetFileWriter\u003A\u003A\u0024vendorDir",
-            "name": "vendorDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-RegistrySnippetFileWriter.html#property_vendorDir"
-        },                {
             "fqsen": "\\Horde\\Composer\\RegistrySnippetFileWriter\u003A\u003A\u0024webDir",
             "name": "webDir",
             "summary": "",
