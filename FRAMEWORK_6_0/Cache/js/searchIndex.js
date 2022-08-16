@@ -96,10 +96,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Cache-Storage-Base.html#method_serialize"
         },                {
+            "fqsen": "\\Horde_Cache_Storage_Base\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Cache-Storage-Base.html#method___serialize"
+        },                {
             "fqsen": "\\Horde_Cache_Storage_Base\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/Horde-Cache-Storage-Base.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde_Cache_Storage_Base\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Cache-Storage-Base.html#method___unserialize"
         },                {
             "fqsen": "\\Horde_Cache_Storage_Base\u003A\u003A\u0024_logger",
             "name": "_logger",
@@ -845,6 +855,16 @@ Search.appendIndex(
             "name": "unserialize",
             "summary": "",
             "url": "classes/Horde-Cache-BaseStorage.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde\\Cache\\BaseStorage\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Cache-BaseStorage.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde\\Cache\\BaseStorage\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Cache-BaseStorage.html#method___unserialize"
         },                {
             "fqsen": "\\Horde\\Cache\\BaseStorage\u003A\u003A\u0024logger",
             "name": "logger",
