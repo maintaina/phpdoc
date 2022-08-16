@@ -1606,6 +1606,16 @@ Search.appendIndex(
             "summary": "Serialization.",
             "url": "classes/Horde-Mime-Part.html#method_serialize"
         },                {
+            "fqsen": "\\Horde_Mime_Part\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Mime-Part.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Mime_Part\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Mime-Part.html#method___unserialize"
+        },                {
             "fqsen": "\\Horde_Mime_Part\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "Unserialization.",
