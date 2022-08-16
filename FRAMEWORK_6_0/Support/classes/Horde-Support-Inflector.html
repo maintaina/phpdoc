@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Documentation</title>
+            <title>Documentation</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
     <link rel="icon" href="images/favicon.ico"/>
@@ -53,10 +54,27 @@
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
-            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/horde.html" class="">Horde</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-support.html" class="">Support</a>
+                
+            </li>
+            </ul>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Support.html">Support</a></h4>
+                        </section>
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Support.html" class="">Support</a>
+</h4>
 
                         </section>
             
@@ -75,12 +93,13 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/Support.html">Support</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-support.html">Support</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Support_Inflector
+    Inflector
 
     
             <div class="phpdocumentor-element__package">
@@ -94,9 +113,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -150,52 +169,59 @@ Horde_Date_Parser/Horde_Support_Numerizer</p>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Support-Inflector.html#property__cache">$_cache</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Inflection cache</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Support-Inflector.html#property__pluralizationRules">$_pluralizationRules</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Rules for pluralizing English nouns.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Support-Inflector.html#property__singularizationRules">$_singularizationRules</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Rules for singularizing English nouns.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Support-Inflector.html#property__uncountables">$_uncountables</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>An array of words with the same singular and plural spellings.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Support-Inflector.html#property__uncountables_keys">$_uncountables_keys</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+<dd>Flipped map of uncountables</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method___construct">__construct()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_camelize">camelize()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Camel-cases a word.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_classify">classify()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Creates a class name from a table name like Rails does for table names
 to models.</dd>
@@ -203,42 +229,42 @@ to models.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_clearCache">clearCache()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Clears the inflection cache.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_dasherize">dasherize()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Replaces underscores with dashes in the string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_demodulize">demodulize()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Removes the module part from the expression in the string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_foreignKey">foreignKey()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Creates a foreign key name from a class name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_getCache">getCache()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Retuns a cached inflection.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_humanize">humanize()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Capitalizes the first word and turns underscores into spaces and strips
 _id.</dd>
@@ -246,7 +272,7 @@ _id.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_ordinalize">ordinalize()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Turns a number into an ordinal string used to denote the position in an
 ordered sequence such as 1st, 2nd, 3rd, 4th.</dd>
@@ -254,35 +280,35 @@ ordered sequence such as 1st, 2nd, 3rd, 4th.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_pluralize">pluralize()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Singular English word to pluralize.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_setCache">setCache()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Caches an inflection.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_singularize">singularize()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Plural English word to singularize.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_tableize">tableize()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Creates the name of a table like Rails does for models to table names.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_titleize">titleize()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Capitalizes all the words and replaces some characters in the string to
 create a nicer looking title.</dd>
@@ -290,14 +316,14 @@ create a nicer looking title.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_uncountable">uncountable()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Adds an uncountable word.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Support-Inflector.html#method_underscore">underscore()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>The reverse of camelize().</dd>
 
@@ -327,9 +353,9 @@ create a nicer looking title.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -339,7 +365,7 @@ create a nicer looking title.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$_cache</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -360,9 +386,9 @@ create a nicer looking title.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -372,7 +398,7 @@ create a nicer looking title.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$_pluralizationRules</span>
-     = <span class="phpdocumentor-signature__default-value">array(&#039;/move$/i&#039; =&gt; &#039;moves&#039;, &#039;/sex$/i&#039; =&gt; &#039;sexes&#039;, &#039;/child$/i&#039; =&gt; &#039;children&#039;, &#039;/man$/i&#039; =&gt; &#039;men&#039;, &#039;/foot$/i&#039; =&gt; &#039;feet&#039;, &#039;/person$/i&#039; =&gt; &#039;people&#039;, &#039;/(quiz)$/i&#039; =&gt; &#039;$1zes&#039;, &#039;/^(ox)$/i&#039; =&gt; &#039;$1en&#039;, &#039;/(m|l)ouse$/i&#039; =&gt; &#039;$1ice&#039;, &#039;/(matr|vert|ind)ix|ex$/i&#039; =&gt; &#039;$1ices&#039;, &#039;/(x|ch|ss|sh)$/i&#039; =&gt; &#039;$1es&#039;, &#039;/([^aeiouy]|qu)ies$/i&#039; =&gt; &#039;$1y&#039;, &#039;/([^aeiouy]|qu)y$/i&#039; =&gt; &#039;$1ies&#039;, &#039;/(?:([^f])fe|([lr])f)$/i&#039; =&gt; &#039;$1$2ves&#039;, &#039;/sis$/i&#039; =&gt; &#039;ses&#039;, &#039;/([ti])um$/i&#039; =&gt; &#039;$1a&#039;, &#039;/(buffal|tomat)o$/i&#039; =&gt; &#039;$1oes&#039;, &#039;/(bu)s$/i&#039; =&gt; &#039;$1ses&#039;, &#039;/(alias|status)$/i&#039; =&gt; &#039;$1es&#039;, &#039;/(octop|vir)us$/i&#039; =&gt; &#039;$1i&#039;, &#039;/(ax|test)is$/i&#039; =&gt; &#039;$1es&#039;, &#039;/s$/i&#039; =&gt; &#039;s&#039;, &#039;/$/&#039; =&gt; &#039;s&#039;)</span></code>
+     = <span class="phpdocumentor-signature__default-value">[&#039;/move$/i&#039; =&gt; &#039;moves&#039;, &#039;/sex$/i&#039; =&gt; &#039;sexes&#039;, &#039;/child$/i&#039; =&gt; &#039;children&#039;, &#039;/man$/i&#039; =&gt; &#039;men&#039;, &#039;/foot$/i&#039; =&gt; &#039;feet&#039;, &#039;/person$/i&#039; =&gt; &#039;people&#039;, &#039;/(quiz)$/i&#039; =&gt; &#039;$1zes&#039;, &#039;/^(ox)$/i&#039; =&gt; &#039;$1en&#039;, &#039;/(m|l)ouse$/i&#039; =&gt; &#039;$1ice&#039;, &#039;/(matr|vert|ind)ix|ex$/i&#039; =&gt; &#039;$1ices&#039;, &#039;/(x|ch|ss|sh)$/i&#039; =&gt; &#039;$1es&#039;, &#039;/([^aeiouy]|qu)ies$/i&#039; =&gt; &#039;$1y&#039;, &#039;/([^aeiouy]|qu)y$/i&#039; =&gt; &#039;$1ies&#039;, &#039;/(?:([^f])fe|([lr])f)$/i&#039; =&gt; &#039;$1$2ves&#039;, &#039;/sis$/i&#039; =&gt; &#039;ses&#039;, &#039;/([ti])um$/i&#039; =&gt; &#039;$1a&#039;, &#039;/(buffal|tomat)o$/i&#039; =&gt; &#039;$1oes&#039;, &#039;/(bu)s$/i&#039; =&gt; &#039;$1ses&#039;, &#039;/(alias|status)$/i&#039; =&gt; &#039;$1es&#039;, &#039;/(octop|vir)us$/i&#039; =&gt; &#039;$1i&#039;, &#039;/(ax|test)is$/i&#039; =&gt; &#039;$1es&#039;, &#039;/s$/i&#039; =&gt; &#039;s&#039;, &#039;/$/&#039; =&gt; &#039;s&#039;]</span></code>
 
     
     
@@ -393,9 +419,9 @@ create a nicer looking title.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -405,7 +431,7 @@ create a nicer looking title.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$_singularizationRules</span>
-     = <span class="phpdocumentor-signature__default-value">array(&#039;/cookies$/i&#039; =&gt; &#039;cookie&#039;, &#039;/moves$/i&#039; =&gt; &#039;move&#039;, &#039;/sexes$/i&#039; =&gt; &#039;sex&#039;, &#039;/children$/i&#039; =&gt; &#039;child&#039;, &#039;/men$/i&#039; =&gt; &#039;man&#039;, &#039;/feet$/i&#039; =&gt; &#039;foot&#039;, &#039;/people$/i&#039; =&gt; &#039;person&#039;, &#039;/databases$/i&#039; =&gt; &#039;database&#039;, &#039;/(quiz)zes$/i&#039; =&gt; &#039;\1&#039;, &#039;/(matr)ices$/i&#039; =&gt; &#039;\1ix&#039;, &#039;/(vert|ind)ices$/i&#039; =&gt; &#039;\1ex&#039;, &#039;/^(ox)en/i&#039; =&gt; &#039;\1&#039;, &#039;/(alias|status)es$/i&#039; =&gt; &#039;\1&#039;, &#039;/([octop|vir])i$/i&#039; =&gt; &#039;\1us&#039;, &#039;/(cris|ax|test)es$/i&#039; =&gt; &#039;\1is&#039;, &#039;/(shoe)s$/i&#039; =&gt; &#039;\1&#039;, &#039;/(o)es$/i&#039; =&gt; &#039;\1&#039;, &#039;/(bus)es$/i&#039; =&gt; &#039;\1&#039;, &#039;/([m|l])ice$/i&#039; =&gt; &#039;\1ouse&#039;, &#039;/(x|ch|ss|sh)es$/i&#039; =&gt; &#039;\1&#039;, &#039;/(m)ovies$/i&#039; =&gt; &#039;\1ovie&#039;, &#039;/(s)eries$/i&#039; =&gt; &#039;\1eries&#039;, &#039;/([^aeiouy]|qu)ies$/i&#039; =&gt; &#039;\1y&#039;, &#039;/([lr])ves$/i&#039; =&gt; &#039;\1f&#039;, &#039;/(tive)s$/i&#039; =&gt; &#039;\1&#039;, &#039;/(hive)s$/i&#039; =&gt; &#039;\1&#039;, &#039;/([^f])ves$/i&#039; =&gt; &#039;\1fe&#039;, &#039;/(^analy)ses$/i&#039; =&gt; &#039;\1sis&#039;, &#039;/((a)naly|(b)a|(d)iagno|(p)arenthe|(p)rogno|(s)ynop|(t)he)ses$/i&#039; =&gt; &#039;\1\2sis&#039;, &#039;/([ti])a$/i&#039; =&gt; &#039;\1um&#039;, &#039;/(n)ews$/i&#039; =&gt; &#039;\1ews&#039;, &#039;/(.*)s$/i&#039; =&gt; &#039;\1&#039;)</span></code>
+     = <span class="phpdocumentor-signature__default-value">[&#039;/cookies$/i&#039; =&gt; &#039;cookie&#039;, &#039;/moves$/i&#039; =&gt; &#039;move&#039;, &#039;/sexes$/i&#039; =&gt; &#039;sex&#039;, &#039;/children$/i&#039; =&gt; &#039;child&#039;, &#039;/men$/i&#039; =&gt; &#039;man&#039;, &#039;/feet$/i&#039; =&gt; &#039;foot&#039;, &#039;/people$/i&#039; =&gt; &#039;person&#039;, &#039;/databases$/i&#039; =&gt; &#039;database&#039;, &#039;/(quiz)zes$/i&#039; =&gt; &#039;\\1&#039;, &#039;/(matr)ices$/i&#039; =&gt; &#039;\\1ix&#039;, &#039;/(vert|ind)ices$/i&#039; =&gt; &#039;\\1ex&#039;, &#039;/^(ox)en/i&#039; =&gt; &#039;\\1&#039;, &#039;/(alias|status)es$/i&#039; =&gt; &#039;\\1&#039;, &#039;/([octop|vir])i$/i&#039; =&gt; &#039;\\1us&#039;, &#039;/(cris|ax|test)es$/i&#039; =&gt; &#039;\\1is&#039;, &#039;/(shoe)s$/i&#039; =&gt; &#039;\\1&#039;, &#039;/(o)es$/i&#039; =&gt; &#039;\\1&#039;, &#039;/(bus)es$/i&#039; =&gt; &#039;\\1&#039;, &#039;/([m|l])ice$/i&#039; =&gt; &#039;\\1ouse&#039;, &#039;/(x|ch|ss|sh)es$/i&#039; =&gt; &#039;\\1&#039;, &#039;/(m)ovies$/i&#039; =&gt; &#039;\\1ovie&#039;, &#039;/(s)eries$/i&#039; =&gt; &#039;\\1eries&#039;, &#039;/([^aeiouy]|qu)ies$/i&#039; =&gt; &#039;\\1y&#039;, &#039;/([lr])ves$/i&#039; =&gt; &#039;\\1f&#039;, &#039;/(tive)s$/i&#039; =&gt; &#039;\\1&#039;, &#039;/(hive)s$/i&#039; =&gt; &#039;\\1&#039;, &#039;/([^f])ves$/i&#039; =&gt; &#039;\\1fe&#039;, &#039;/(^analy)ses$/i&#039; =&gt; &#039;\\1sis&#039;, &#039;/((a)naly|(b)a|(d)iagno|(p)arenthe|(p)rogno|(s)ynop|(t)he)ses$/i&#039; =&gt; &#039;\\1\\2sis&#039;, &#039;/([ti])a$/i&#039; =&gt; &#039;\\1um&#039;, &#039;/(n)ews$/i&#039; =&gt; &#039;\\1ews&#039;, &#039;/(.*)s$/i&#039; =&gt; &#039;\\1&#039;]</span></code>
 
     
     
@@ -426,9 +452,9 @@ create a nicer looking title.</dd>
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -438,7 +464,40 @@ create a nicer looking title.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$_uncountables</span>
-     = <span class="phpdocumentor-signature__default-value">array(&#039;aircraft&#039;, &#039;cannon&#039;, &#039;deer&#039;, &#039;equipment&#039;, &#039;fish&#039;, &#039;information&#039;, &#039;money&#039;, &#039;moose&#039;, &#039;rice&#039;, &#039;series&#039;, &#039;sheep&#039;, &#039;species&#039;, &#039;swine&#039;)</span></code>
+     = <span class="phpdocumentor-signature__default-value">[&#039;aircraft&#039;, &#039;cannon&#039;, &#039;deer&#039;, &#039;equipment&#039;, &#039;fish&#039;, &#039;information&#039;, &#039;money&#039;, &#039;moose&#039;, &#039;rice&#039;, &#039;series&#039;, &#039;sheep&#039;, &#039;species&#039;, &#039;swine&#039;]</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property__uncountables_keys">
+        $_uncountables_keys
+        <a href="classes/Horde-Support-Inflector.html#property__uncountables_keys" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">110</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Flipped map of uncountables</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$_uncountables_keys</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -463,9 +522,9 @@ create a nicer looking title.</dd>
         <a href="classes/Horde-Support-Inflector.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -473,7 +532,7 @@ create a nicer looking title.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>Stores a map of the uncountable words for quicker checks.</p>
 </section>
@@ -498,9 +557,9 @@ create a nicer looking title.</dd>
         <a href="classes/Horde-Support-Inflector.html#method_camelize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">207</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
@@ -508,7 +567,7 @@ create a nicer looking title.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">camelize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$word</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$firstLetter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;upper&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">camelize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$word</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$firstLetter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;upper&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -570,9 +629,9 @@ letter of each slash-separated section.</p>
         <a href="classes/Horde-Support-Inflector.html#method_classify" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">361</span>
+    <span class="phpdocumentor-element-found-in__line">372</span>
 
     </aside>
 
@@ -581,7 +640,7 @@ to models.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">classify</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">classify</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>Examples:</p>
 <ol>
@@ -621,9 +680,9 @@ to models.</p>
         <a href="classes/Horde-Support-Inflector.html#method_clearCache" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">407</span>
+    <span class="phpdocumentor-element-found-in__line">418</span>
 
     </aside>
 
@@ -631,7 +690,7 @@ to models.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">clearCache</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">clearCache</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
     
@@ -654,9 +713,9 @@ to models.</p>
         <a href="classes/Horde-Support-Inflector.html#method_dasherize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">285</span>
+    <span class="phpdocumentor-element-found-in__line">296</span>
 
     </aside>
 
@@ -664,7 +723,7 @@ to models.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">dasherize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$underscoredWord</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">dasherize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$underscoredWord</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>Example:</p>
 <ol>
@@ -703,9 +762,9 @@ to models.</p>
         <a href="classes/Horde-Support-Inflector.html#method_demodulize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">326</span>
+    <span class="phpdocumentor-element-found-in__line">337</span>
 
     </aside>
 
@@ -713,7 +772,7 @@ to models.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">demodulize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$classNameInModule</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">demodulize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$classNameInModule</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>Examples:</p>
 <ol>
@@ -753,9 +812,9 @@ to models.</p>
         <a href="classes/Horde-Support-Inflector.html#method_foreignKey" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">384</span>
+    <span class="phpdocumentor-element-found-in__line">395</span>
 
     </aside>
 
@@ -763,7 +822,7 @@ to models.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">foreignKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$className</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$separateClassNameAndIdWithUnderscore</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">foreignKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$className</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$separateClassNameAndIdWithUnderscore</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>$separateClassNameAndIdWithUnderscore sets whether the method should put
 '_' between the name and 'id'.</p>
@@ -814,9 +873,9 @@ to models.</p>
         <a href="classes/Horde-Support-Inflector.html#method_getCache" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">417</span>
+    <span class="phpdocumentor-element-found-in__line">428</span>
 
     </aside>
 
@@ -824,7 +883,7 @@ to models.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$word</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rule</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$word</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rule</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -868,9 +927,9 @@ to models.</p>
         <a href="classes/Horde-Support-Inflector.html#method_humanize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">305</span>
+    <span class="phpdocumentor-element-found-in__line">316</span>
 
     </aside>
 
@@ -879,7 +938,7 @@ _id.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">humanize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lowerCaseAndUnderscoredWord</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">humanize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lowerCaseAndUnderscoredWord</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>Like titleize(), this is meant for creating pretty output.</p>
 <p>Examples:</p>
@@ -920,9 +979,9 @@ _id.</p>
         <a href="classes/Horde-Support-Inflector.html#method_ordinalize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">399</span>
+    <span class="phpdocumentor-element-found-in__line">410</span>
 
     </aside>
 
@@ -931,7 +990,7 @@ ordered sequence such as 1st, 2nd, 3rd, 4th.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">ordinalize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">ordinalize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>Examples:</p>
 <ol>
@@ -973,9 +1032,9 @@ ordered sequence such as 1st, 2nd, 3rd, 4th.</p>
         <a href="classes/Horde-Support-Inflector.html#method_pluralize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">160</span>
 
     </aside>
 
@@ -983,7 +1042,7 @@ ordered sequence such as 1st, 2nd, 3rd, 4th.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">pluralize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$word</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">pluralize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$word</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1020,9 +1079,9 @@ ordered sequence such as 1st, 2nd, 3rd, 4th.</p>
         <a href="classes/Horde-Support-Inflector.html#method_setCache" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">432</span>
+    <span class="phpdocumentor-element-found-in__line">442</span>
 
     </aside>
 
@@ -1030,7 +1089,7 @@ ordered sequence such as 1st, 2nd, 3rd, 4th.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$word</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rule</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">setCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$word</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rule</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1085,9 +1144,9 @@ ordered sequence such as 1st, 2nd, 3rd, 4th.</p>
         <a href="classes/Horde-Support-Inflector.html#method_singularize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">176</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -1095,7 +1154,7 @@ ordered sequence such as 1st, 2nd, 3rd, 4th.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">singularize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$word</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">singularize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$word</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1132,9 +1191,9 @@ ordered sequence such as 1st, 2nd, 3rd, 4th.</p>
         <a href="classes/Horde-Support-Inflector.html#method_tableize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">342</span>
+    <span class="phpdocumentor-element-found-in__line">353</span>
 
     </aside>
 
@@ -1142,7 +1201,7 @@ ordered sequence such as 1st, 2nd, 3rd, 4th.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">tableize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$className</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">tableize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$className</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>This method uses the pluralize() method on the last word in the string.</p>
 <p>Examples:</p>
@@ -1184,9 +1243,9 @@ ordered sequence such as 1st, 2nd, 3rd, 4th.</p>
         <a href="classes/Horde-Support-Inflector.html#method_titleize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">253</span>
+    <span class="phpdocumentor-element-found-in__line">264</span>
 
     </aside>
 
@@ -1195,7 +1254,7 @@ create a nicer looking title.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">titleize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$word</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">titleize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$word</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>Titleize is meant for creating pretty output.</p>
 <p>See:</p>
@@ -1241,9 +1300,9 @@ create a nicer looking title.</p>
         <a href="classes/Horde-Support-Inflector.html#method_uncountable" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 
@@ -1251,7 +1310,7 @@ create a nicer looking title.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">uncountable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$word</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">uncountable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$word</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1286,9 +1345,9 @@ create a nicer looking title.</p>
         <a href="classes/Horde-Support-Inflector.html#method_underscore" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Support/Inflector.php"><a href="files/horde-support-inflector.html"><abbr title="Horde/Support/Inflector.php">Inflector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Inflector.php"><a href="files/inflector.html"><abbr title="Inflector.php">Inflector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">269</span>
+    <span class="phpdocumentor-element-found-in__line">280</span>
 
     </aside>
 
@@ -1296,7 +1355,7 @@ create a nicer looking title.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">underscore</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$camelCasedWord</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">underscore</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$camelCasedWord</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>Makes an underscored form from the expression in the string.</p>
 <p>Examples:</p>
