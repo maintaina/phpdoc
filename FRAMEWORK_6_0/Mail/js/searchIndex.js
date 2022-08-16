@@ -356,10 +356,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Mail-Rfc822-List.html#method_serialize"
         },                {
+            "fqsen": "\\Horde_Mail_Rfc822_List\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Mail-Rfc822-List.html#method___serialize"
+        },                {
             "fqsen": "\\Horde_Mail_Rfc822_List\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/Horde-Mail-Rfc822-List.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde_Mail_Rfc822_List\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Mail-Rfc822-List.html#method___unserialize"
         },                {
             "fqsen": "\\Horde_Mail_Rfc822_List\u003A\u003AHIDE_GROUPS",
             "name": "HIDE_GROUPS",
