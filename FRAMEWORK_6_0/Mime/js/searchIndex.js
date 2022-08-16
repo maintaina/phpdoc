@@ -368,12 +368,22 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Mime_Headers_ContentParam\u003A\u003Aserialize\u0028\u0029",
             "name": "serialize",
-            "summary": "",
+            "summary": "Serialize\u0020\u0028until\u0020PHP\u00207.3\u0029",
             "url": "classes/Horde-Mime-Headers-ContentParam.html#method_serialize"
+        },                {
+            "fqsen": "\\Horde_Mime_Headers_ContentParam\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "Serialize\u0020\u0028PHP\u00207.4\u002B\u0029",
+            "url": "classes/Horde-Mime-Headers-ContentParam.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Mime_Headers_ContentParam\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "Unserialize\u0020\u0028PHP\u00207.4\u002B\u0029",
+            "url": "classes/Horde-Mime-Headers-ContentParam.html#method___unserialize"
         },                {
             "fqsen": "\\Horde_Mime_Headers_ContentParam\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
-            "summary": "",
+            "summary": "Unserialize\u0020\u0028until\u0020PHP\u00207.3\u0029",
             "url": "classes/Horde-Mime-Headers-ContentParam.html#method_unserialize"
         },                {
             "fqsen": "\\Horde_Mime_Headers_ContentParam\u003A\u003A\u0024_params",
@@ -680,156 +690,6 @@ Search.appendIndex(
             "name": "getHandles",
             "summary": "Return\u0020list\u0020of\u0020explicit\u0020header\u0020names\u0020handled\u0020by\u0020this\u0020driver.",
             "url": "classes/Horde-Mime-Headers-UserAgent.html#method_getHandles"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers",
-            "name": "Horde_Mime_Headers",
-            "summary": "This\u0020class\u0020represents\u0020the\u0020collection\u0020of\u0020header\u0020values\u0020for\u0020a\u0020single\u0020mail\nmessage\u0020part.",
-            "url": "classes/Horde-Mime-Headers.html"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructor.",
-            "url": "classes/Horde-Mime-Headers.html#method___construct"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003A__clone\u0028\u0029",
-            "name": "__clone",
-            "summary": "",
-            "url": "classes/Horde-Mime-Headers.html#method___clone"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
-            "summary": "Returns\u0020the\u0020headers\u0020in\u0020array\u0020format.",
-            "url": "classes/Horde-Mime-Headers.html#method_toArray"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AtoString\u0028\u0029",
-            "name": "toString",
-            "summary": "Returns\u0020all\u0020headers\u0020concatenated\u0020into\u0020a\u0020single\u0020string.",
-            "url": "classes/Horde-Mime-Headers.html#method_toString"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AaddHeader\u0028\u0029",
-            "name": "addHeader",
-            "summary": "Add\/append\/replace\u0020a\u0020header.",
-            "url": "classes/Horde-Mime-Headers.html#method_addHeader"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AaddHeaderOb\u0028\u0029",
-            "name": "addHeaderOb",
-            "summary": "Add\u0020a\u0020Horde_Mime_Headers_Element\u0020object\u0020to\u0020the\u0020current\u0020header\u0020list.",
-            "url": "classes/Horde-Mime-Headers.html#method_addHeaderOb"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003A_getHeaderClassName\u0028\u0029",
-            "name": "_getHeaderClassName",
-            "summary": "Return\u0020the\u0020header\u0020class\u0020to\u0020use\u0020for\u0020a\u0020header\u0020name.",
-            "url": "classes/Horde-Mime-Headers.html#method__getHeaderClassName"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AgetHeader\u0028\u0029",
-            "name": "getHeader",
-            "summary": "Get\u0020a\u0020header\u0020from\u0020the\u0020header\u0020array.",
-            "url": "classes/Horde-Mime-Headers.html#method_getHeader"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AremoveHeader\u0028\u0029",
-            "name": "removeHeader",
-            "summary": "Remove\u0020a\u0020header\u0020from\u0020the\u0020header\u0020array.",
-            "url": "classes/Horde-Mime-Headers.html#method_removeHeader"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AparseHeaders\u0028\u0029",
-            "name": "parseHeaders",
-            "summary": "Builds\u0020a\u0020Horde_Mime_Headers\u0020object\u0020from\u0020header\u0020text.",
-            "url": "classes/Horde-Mime-Headers.html#method_parseHeaders"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003Aserialize\u0028\u0029",
-            "name": "serialize",
-            "summary": "Serialization.",
-            "url": "classes/Horde-Mime-Headers.html#method_serialize"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003Aunserialize\u0028\u0029",
-            "name": "unserialize",
-            "summary": "Unserialization.",
-            "url": "classes/Horde-Mime-Headers.html#method_unserialize"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AoffsetExists\u0028\u0029",
-            "name": "offsetExists",
-            "summary": "Does\u0020header\u0020exist\u003F",
-            "url": "classes/Horde-Mime-Headers.html#method_offsetExists"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AoffsetGet\u0028\u0029",
-            "name": "offsetGet",
-            "summary": "Return\u0020header\u0020element\u0020object.",
-            "url": "classes/Horde-Mime-Headers.html#method_offsetGet"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AoffsetSet\u0028\u0029",
-            "name": "offsetSet",
-            "summary": "Store\u0020a\u0020header\u0020element\u0020object.",
-            "url": "classes/Horde-Mime-Headers.html#method_offsetSet"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AoffsetUnset\u0028\u0029",
-            "name": "offsetUnset",
-            "summary": "Remove\u0020a\u0020header\u0020element\u0020object.",
-            "url": "classes/Horde-Mime-Headers.html#method_offsetUnset"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AgetIterator\u0028\u0029",
-            "name": "getIterator",
-            "summary": "",
-            "url": "classes/Horde-Mime-Headers.html#method_getIterator"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003A__call\u0028\u0029",
-            "name": "__call",
-            "summary": "Handle\u0020deprecated\u0020methods.",
-            "url": "classes/Horde-Mime-Headers.html#method___call"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003A__callStatic\u0028\u0029",
-            "name": "__callStatic",
-            "summary": "Handle\u0020deprecated\u0020static\u0020methods.",
-            "url": "classes/Horde-Mime-Headers.html#method___callStatic"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AsetEOL\u0028\u0029",
-            "name": "setEOL",
-            "summary": "",
-            "url": "classes/Horde-Mime-Headers.html#method_setEOL"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AgetEOL\u0028\u0029",
-            "name": "getEOL",
-            "summary": "",
-            "url": "classes/Horde-Mime-Headers.html#method_getEOL"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AVERSION",
-            "name": "VERSION",
-            "summary": "",
-            "url": "classes/Horde-Mime-Headers.html#constant_VERSION"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AVALUE_STRING",
-            "name": "VALUE_STRING",
-            "summary": "",
-            "url": "classes/Horde-Mime-Headers.html#constant_VALUE_STRING"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AVALUE_BASE",
-            "name": "VALUE_BASE",
-            "summary": "",
-            "url": "classes/Horde-Mime-Headers.html#constant_VALUE_BASE"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003AVALUE_PARAMS",
-            "name": "VALUE_PARAMS",
-            "summary": "",
-            "url": "classes/Horde-Mime-Headers.html#constant_VALUE_PARAMS"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003A\u0024defaultCharset",
-            "name": "defaultCharset",
-            "summary": "The\u0020default\u0020charset\u0020to\u0020use\u0020when\u0020parsing\u0020text\u0020parts\u0020with\u0020no\u0020charset\ninformation.",
-            "url": "classes/Horde-Mime-Headers.html#property_defaultCharset"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003A\u0024_handlers",
-            "name": "_handlers",
-            "summary": "Cached\u0020handler\u0020information\u0020for\u0020Header\u0020Element\u0020objects.",
-            "url": "classes/Horde-Mime-Headers.html#property__handlers"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003A\u0024_headers",
-            "name": "_headers",
-            "summary": "The\u0020internal\u0020headers\u0020array.",
-            "url": "classes/Horde-Mime-Headers.html#property__headers"
-        },                {
-            "fqsen": "\\Horde_Mime_Headers\u003A\u003A\u0024_eol",
-            "name": "_eol",
-            "summary": "",
-            "url": "classes/Horde-Mime-Headers.html#property__eol"
         },                {
             "fqsen": "\\Horde_Mime_Id",
             "name": "Horde_Mime_Id",
