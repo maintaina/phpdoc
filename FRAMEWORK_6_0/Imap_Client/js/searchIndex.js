@@ -201,6 +201,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Imap-Client-Base.html#method_unserialize"
         },                {
+            "fqsen": "\\Horde_Imap_Client_Base\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Base.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Base\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Base.html#method___unserialize"
+        },                {
             "fqsen": "\\Horde_Imap_Client_Base\u003A\u003A__get\u0028\u0029",
             "name": "__get",
             "summary": "",
@@ -946,6 +956,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Imap-Client-Cache-Backend-Cache.html#method_serialize"
         },                {
+            "fqsen": "\\Horde_Imap_Client_Cache_Backend_Cache\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Cache-Backend-Cache.html#method___serialize"
+        },                {
             "fqsen": "\\Horde_Imap_Client_Cache_Backend_Cache\u003A\u003AVERSION",
             "name": "VERSION",
             "summary": "Cache\u0020structure\u0020version.",
@@ -1456,6 +1471,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Imap-Client-Cache-Backend.html#method_unserialize"
         },                {
+            "fqsen": "\\Horde_Imap_Client_Cache_Backend\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Cache-Backend.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Cache_Backend\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Cache-Backend.html#method___unserialize"
+        },                {
             "fqsen": "\\Horde_Imap_Client_Cache_Backend\u003A\u003A\u0024_params",
             "name": "_params",
             "summary": "Configuration\u0020paramters.",
@@ -1586,6 +1611,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Imap-Client-Data-Acl.html#method_unserialize"
         },                {
+            "fqsen": "\\Horde_Imap_Client_Data_Acl\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-Acl.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Data_Acl\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-Acl.html#method___unserialize"
+        },                {
             "fqsen": "\\Horde_Imap_Client_Data_Acl\u003A\u003A\u0024_rights",
             "name": "_rights",
             "summary": "ACL\u0020rights.",
@@ -1695,6 +1730,16 @@ Search.appendIndex(
             "name": "unserialize",
             "summary": "",
             "url": "classes/Horde-Imap-Client-Data-AclRights.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Data_AclRights\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-AclRights.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Data_AclRights\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-AclRights.html#method___unserialize"
         },                {
             "fqsen": "\\Horde_Imap_Client_Data_AclRights\u003A\u003A\u0024_optional",
             "name": "_optional",
@@ -1836,6 +1881,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Imap-Client-Data-Capability.html#method_unserialize"
         },                {
+            "fqsen": "\\Horde_Imap_Client_Data_Capability\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-Capability.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Data_Capability\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-Capability.html#method___unserialize"
+        },                {
             "fqsen": "\\Horde_Imap_Client_Data_Capability\u003A\u003A\u0024_data",
             "name": "_data",
             "summary": "Capability\u0020data.",
@@ -1885,6 +1940,16 @@ Search.appendIndex(
             "name": "unserialize",
             "summary": "",
             "url": "classes/Horde-Imap-Client-Data-Envelope.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Data_Envelope\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-Envelope.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Data_Envelope\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-Envelope.html#method___unserialize"
         },                {
             "fqsen": "\\Horde_Imap_Client_Data_Envelope\u003A\u003AVERSION",
             "name": "VERSION",
@@ -2591,6 +2656,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Imap-Client-Data-Namespace.html#method_unserialize"
         },                {
+            "fqsen": "\\Horde_Imap_Client_Data_Namespace\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-Namespace.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Data_Namespace\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-Namespace.html#method___unserialize"
+        },                {
             "fqsen": "\\Horde_Imap_Client_Data_Namespace\u003A\u003ANS_PERSONAL",
             "name": "NS_PERSONAL",
             "summary": "",
@@ -2635,6 +2710,16 @@ Search.appendIndex(
             "name": "unserialize",
             "summary": "",
             "url": "classes/Horde-Imap-Client-Data-SearchCharset-Utf8.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Data_SearchCharset_Utf8\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-SearchCharset-Utf8.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Data_SearchCharset_Utf8\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-SearchCharset-Utf8.html#method___unserialize"
         },                {
             "fqsen": "\\Horde_Imap_Client_Data_SearchCharset_Utf8\u003A\u003A\u0024_charsets",
             "name": "_charsets",
@@ -2690,6 +2775,16 @@ Search.appendIndex(
             "name": "unserialize",
             "summary": "",
             "url": "classes/Horde-Imap-Client-Data-SearchCharset.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Data_SearchCharset\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-SearchCharset.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Data_SearchCharset\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-SearchCharset.html#method___unserialize"
         },                {
             "fqsen": "\\Horde_Imap_Client_Data_SearchCharset\u003A\u003A\u0024_baseob",
             "name": "_baseob",
@@ -2825,6 +2920,16 @@ Search.appendIndex(
             "name": "unserialize",
             "summary": "",
             "url": "classes/Horde-Imap-Client-Data-Thread.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Data_Thread\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-Thread.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Data_Thread\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Data-Thread.html#method___unserialize"
         },                {
             "fqsen": "\\Horde_Imap_Client_Data_Thread\u003A\u003A_getAllIndices\u0028\u0029",
             "name": "_getAllIndices",
@@ -3456,6 +3561,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Imap-Client-Ids-Map.html#method_unserialize"
         },                {
+            "fqsen": "\\Horde_Imap_Client_Ids_Map\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Ids-Map.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Ids_Map\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Ids-Map.html#method___unserialize"
+        },                {
             "fqsen": "\\Horde_Imap_Client_Ids_Map\u003A\u003A\u0024_ids",
             "name": "_ids",
             "summary": "Sequence\u0020\u002D\u003E\u0020UID\u0020mapping.",
@@ -3595,6 +3710,16 @@ Search.appendIndex(
             "name": "unserialize",
             "summary": "",
             "url": "classes/Horde-Imap-Client-Ids.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Ids\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Ids.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Ids\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Ids.html#method___unserialize"
         },                {
             "fqsen": "\\Horde_Imap_Client_Ids\u003A\u003AALL",
             "name": "ALL",
@@ -3991,6 +4116,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Imap-Client-Mailbox.html#method_unserialize"
         },                {
+            "fqsen": "\\Horde_Imap_Client_Mailbox\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Mailbox.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Mailbox\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Mailbox.html#method___unserialize"
+        },                {
             "fqsen": "\\Horde_Imap_Client_Mailbox\u003A\u003A\u0024_utf7imap",
             "name": "_utf7imap",
             "summary": "UTF7\u002DIMAP\u0020representation\u0020of\u0020mailbox.",
@@ -4185,6 +4320,16 @@ Search.appendIndex(
             "name": "unserialize",
             "summary": "Unserialization.",
             "url": "classes/Horde-Imap-Client-Search-Query.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Search_Query\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Search-Query.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Search_Query\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Search-Query.html#method___unserialize"
         },                {
             "fqsen": "\\Horde_Imap_Client_Search_Query\u003A\u003AVERSION",
             "name": "VERSION",
@@ -5046,6 +5191,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Imap-Client-Url-Base.html#method_unserialize"
         },                {
+            "fqsen": "\\Horde_Imap_Client_Url_Base\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Url-Base.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Url_Base\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Url-Base.html#method___unserialize"
+        },                {
             "fqsen": "\\Horde_Imap_Client_Url_Base\u003A\u003A\u0024_auth",
             "name": "_auth",
             "summary": "The\u0020authentication\u0020method\u0020to\u0020use.",
@@ -5195,6 +5350,16 @@ Search.appendIndex(
             "name": "unserialize",
             "summary": "",
             "url": "classes/Horde-Imap-Client-Url.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Url\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Url.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Imap_Client_Url\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Imap-Client-Url.html#method___unserialize"
         },                {
             "fqsen": "\\Horde_Imap_Client_Url\u003A\u003A\u0024auth",
             "name": "auth",
