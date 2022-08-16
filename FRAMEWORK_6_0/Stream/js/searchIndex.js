@@ -151,6 +151,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Stream-TempString.html#method_unserialize"
         },                {
+            "fqsen": "\\Horde_Stream_TempString\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Stream-TempString.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Stream_TempString\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Stream-TempString.html#method___unserialize"
+        },                {
             "fqsen": "\\Horde_Stream_TempString\u003A\u003A\u0024_string",
             "name": "_string",
             "summary": "String\u0020stream\u0020object.",
@@ -275,6 +285,16 @@ Search.appendIndex(
             "name": "unserialize",
             "summary": "",
             "url": "classes/Horde-Stream.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde_Stream\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Stream.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Stream\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Stream.html#method___unserialize"
         },                {
             "fqsen": "\\Horde_Stream\u003A\u003A\u0024stream",
             "name": "stream",
