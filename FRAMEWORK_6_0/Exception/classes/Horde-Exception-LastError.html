@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Documentation</title>
+            <title>Documentation</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
     <link rel="icon" href="images/favicon.ico"/>
@@ -54,10 +55,12 @@
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/horde.html">Horde</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/horde.html" class="">Horde</a>
+</h4>
     <ul class="phpdocumentor-list">
                     <li>
-                <a href="namespaces/horde-exception.html">Exception</a>
+                <a href="namespaces/horde-exception.html" class="">Exception</a>
                 
             </li>
             </ul>
@@ -65,7 +68,13 @@
                         </section>
                 <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Exception.html">Exception</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Exception.html" class="">Exception</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
 
                         </section>
             
@@ -109,13 +118,17 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="LastError.php"><a href="files/lasterror.html"><abbr title="LastError.php">LastError.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">Horde exception class that accepts output of error_get_last() as $code and
 mask itself as that error.</p>
 
+    <section class="phpdocumentor-description"><p>This class is strictly for straight conversion of legacy code, maintaining a similar
+type hierarchy as the unnamespaced exceptions.</p>
+<p>An alternative implementation using a more well-defined static method should NOT use a custom constructor.</p>
+</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -172,10 +185,10 @@ mask itself as that error.</p>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                <dt class="phpdocumentor-table-of-contents__entry -property -public">
+                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Horde-Exception-HordeException.html#property_details">$details</a>
     <span>
-                &nbsp;: string            </span>
+                        &nbsp;: string            </span>
 </dt>
 <dd>Error details that should not be part of the main exception message,
 e.g. any additional debugging information.</dd>
@@ -183,35 +196,77 @@ e.g. any additional debugging information.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Horde-Exception-HordeException.html#property_logged">$logged</a>
     <span>
-                &nbsp;: bool            </span>
+                        &nbsp;: bool            </span>
 </dt>
 <dd>Has this exception been logged?</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Exception-HordeException.html#property__logLevel">$_logLevel</a>
+    <a href="classes/Horde-Exception-LogTrait.html#property__logLevel">$_logLevel</a>
     <span>
-                &nbsp;: int            </span>
+                        &nbsp;: int            </span>
 </dt>
 <dd>The log level to use. A Horde_Log constant.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Exception-DetailsTrait.html#property_extraDetails">$extraDetails</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Horde-Exception-LogTrait.html#property_isLogged">$isLogged</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+<dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Exception-LastError.html#method___construct">__construct()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Exception constructor</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Exception-HordeException.html#method_getLogLevel">getLogLevel()</a>
+    <a href="classes/Horde-Exception-DetailsTrait.html#method_getDetails">getDetails()</a>
     <span>
-                        &nbsp;: int    </span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Get additional details separated from the exception&#039;s message</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Exception-LogTrait.html#method_getLogLevel">getLogLevel()</a>
+    <span>
+                                &nbsp;: int    </span>
 </dt>
 <dd>Get the log level.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Exception-HordeException.html#method_setLogLevel">setLogLevel()</a>
+    <a href="classes/Horde-Exception-LogTrait.html#method_isLogged">isLogged()</a>
     <span>
-                        &nbsp;: void    </span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Check if this exception has been logged.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Exception-LogTrait.html#method_markAsLogged">markAsLogged()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Mark this exception as already logged. This cannot be undone.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Exception-DetailsTrait.html#method_setDetails">setDetails()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Set additional details separated from the exception&#039;s message</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Exception-LogTrait.html#method_setLogLevel">setLogLevel()</a>
+    <span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Sets the log level.</dd>
 
@@ -232,7 +287,7 @@ e.g. any additional debugging information.</dd>
             phpdocumentor-element
             -property
             -public
-                                                        "
+                        -deprecated                                "
 >
     <h4 class="phpdocumentor-element__name" id="property_details">
         $details
@@ -243,14 +298,14 @@ e.g. any additional debugging information.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="HordeException.php"><a href="files/hordeexception.html"><abbr title="HordeException.php">HordeException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Error details that should not be part of the main exception message,
 e.g. any additional debugging information.</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$details</span>
@@ -259,6 +314,22 @@ e.g. any additional debugging information.</p>
     
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">3.0.0</span>
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>use setDetails() and getDetails() instead.</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
 </article>
                     <article
@@ -266,7 +337,7 @@ e.g. any additional debugging information.</p>
             phpdocumentor-element
             -property
             -public
-                                                        "
+                        -deprecated                                "
 >
     <h4 class="phpdocumentor-element__name" id="property_logged">
         $logged
@@ -277,13 +348,13 @@ e.g. any additional debugging information.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="HordeException.php"><a href="files/hordeexception.html"><abbr title="HordeException.php">HordeException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Has this exception been logged?</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$logged</span>
@@ -292,6 +363,22 @@ e.g. any additional debugging information.</p>
     
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">3.0.0</span>
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>Use isLogged() and markAsLogged() instead.</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
 </article>
                     <article
@@ -303,14 +390,14 @@ e.g. any additional debugging information.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property__logLevel">
         $_logLevel
-        <a href="classes/Horde-Exception-HordeException.html#property__logLevel" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Exception-LogTrait.html#property__logLevel" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="HordeException.php"><a href="files/hordeexception.html"><abbr title="HordeException.php">HordeException.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="LogTrait.php"><a href="files/logtrait.html"><abbr title="LogTrait.php">LogTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -321,6 +408,74 @@ e.g. any additional debugging information.</p>
         <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$_logLevel</span>
      = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+        <section class="phpdocumentor-description"><p>Name and protected status for legacy reasons. Should rather be private.</p>
+</section>
+
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_extraDetails">
+        $extraDetails
+        <a href="classes/Horde-Exception-DetailsTrait.html#property_extraDetails" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DetailsTrait.php"><a href="files/detailstrait.html"><abbr title="DetailsTrait.php">DetailsTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">9</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$extraDetails</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_isLogged">
+        $isLogged
+        <a href="classes/Horde-Exception-LogTrait.html#property_isLogged" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="LogTrait.php"><a href="files/logtrait.html"><abbr title="LogTrait.php">LogTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">12</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$isLogged</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
 
     
     
@@ -347,7 +502,7 @@ e.g. any additional debugging information.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="LastError.php"><a href="files/lasterror.html"><abbr title="LastError.php">LastError.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -355,7 +510,7 @@ e.g. any additional debugging information.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$code_or_lasterror</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Exception">Exception</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$code_or_lasterror</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>If $lasterror is passed the return value of error_get_last() (or a
 matching format), the exception will be rewritten to have its file and
@@ -367,7 +522,7 @@ will be appended to $message.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$message</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\Exception">Exception</abbr>|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The exception message, a PEAR_Error
@@ -380,9 +535,7 @@ object, or an Exception object.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Either a numeric error code, or
-an array from error_get_last().</p>
-</section>
+                    <section class="phpdocumentor-description"></section>
 
             </dd>
             </dl>
@@ -401,14 +554,47 @@ an array from error_get_last().</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getLogLevel">
-        getLogLevel()
-        <a href="classes/Horde-Exception-HordeException.html#method_getLogLevel" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getDetails">
+        getDetails()
+        <a href="classes/Horde-Exception-DetailsTrait.html#method_getDetails" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="HordeException.php"><a href="files/hordeexception.html"><abbr title="HordeException.php">HordeException.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="DetailsTrait.php"><a href="files/detailstrait.html"><abbr title="DetailsTrait.php">DetailsTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get additional details separated from the exception&#039;s message</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getDetails</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                -final        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getLogLevel">
+        getLogLevel()
+        <a href="classes/Horde-Exception-LogTrait.html#method_getLogLevel" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="LogTrait.php"><a href="files/logtrait.html"><abbr title="LogTrait.php">LogTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -416,7 +602,7 @@ an array from error_get_last().</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getLogLevel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+        <span class="phpdocumentor-signature__final">final</span>            <span class="phpdocumentor-signature__name">getLogLevel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     
     
@@ -434,16 +620,126 @@ an array from error_get_last().</p>
         class="phpdocumentor-element
             -method
             -public
+                                                -final        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isLogged">
+        isLogged()
+        <a href="classes/Horde-Exception-LogTrait.html#method_isLogged" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="LogTrait.php"><a href="files/logtrait.html"><abbr title="LogTrait.php">LogTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Check if this exception has been logged.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__final">final</span>            <span class="phpdocumentor-signature__name">isLogged</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                -final        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_markAsLogged">
+        markAsLogged()
+        <a href="classes/Horde-Exception-LogTrait.html#method_markAsLogged" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="LogTrait.php"><a href="files/logtrait.html"><abbr title="LogTrait.php">LogTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">54</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Mark this exception as already logged. This cannot be undone.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__final">final</span>            <span class="phpdocumentor-signature__name">markAsLogged</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setDetails">
+        setDetails()
+        <a href="classes/Horde-Exception-DetailsTrait.html#method_setDetails" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DetailsTrait.php"><a href="files/detailstrait.html"><abbr title="DetailsTrait.php">DetailsTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">25</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Set additional details separated from the exception&#039;s message</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setDetails</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$details</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$details</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                -final        "
 >
     <h4 class="phpdocumentor-element__name" id="method_setLogLevel">
         setLogLevel()
-        <a href="classes/Horde-Exception-HordeException.html#method_setLogLevel" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Exception-LogTrait.html#method_setLogLevel" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="HordeException.php"><a href="files/hordeexception.html"><abbr title="HordeException.php">HordeException.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="LogTrait.php"><a href="files/logtrait.html"><abbr title="LogTrait.php">LogTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -451,14 +747,14 @@ an array from error_get_last().</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setLogLevel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$level</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+        <span class="phpdocumentor-signature__final">final</span>            <span class="phpdocumentor-signature__name">setLogLevel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$level</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$level</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The log level.</p>

@@ -76,35 +76,30 @@ Search.appendIndex(
             "summary": "Horde\u0020base\u0020exception\u0020class.",
             "url": "classes/Horde-Exception.html"
         },                {
-            "fqsen": "\\Horde\\Exception\\FrameworkException",
-            "name": "FrameworkException",
-            "summary": "Horde\u0020extended\u0020exception\u0020interface.",
-            "url": "classes/Horde-Exception-FrameworkException.html"
+            "fqsen": "\\Horde\\Exception\\DetailsTrait",
+            "name": "DetailsTrait",
+            "summary": "",
+            "url": "classes/Horde-Exception-DetailsTrait.html"
         },                {
-            "fqsen": "\\Horde\\Exception\\FrameworkException\u003A\u003AgetLogLevel\u0028\u0029",
-            "name": "getLogLevel",
-            "summary": "Get\u0020the\u0020log\u0020level.",
-            "url": "classes/Horde-Exception-FrameworkException.html#method_getLogLevel"
+            "fqsen": "\\Horde\\Exception\\DetailsTrait\u003A\u003AgetDetails\u0028\u0029",
+            "name": "getDetails",
+            "summary": "Get\u0020additional\u0020details\u0020separated\u0020from\u0020the\u0020exception\u0027s\u0020message",
+            "url": "classes/Horde-Exception-DetailsTrait.html#method_getDetails"
         },                {
-            "fqsen": "\\Horde\\Exception\\FrameworkException\u003A\u003AsetLogLevel\u0028\u0029",
-            "name": "setLogLevel",
-            "summary": "Sets\u0020the\u0020log\u0020level.",
-            "url": "classes/Horde-Exception-FrameworkException.html#method_setLogLevel"
+            "fqsen": "\\Horde\\Exception\\DetailsTrait\u003A\u003AsetDetails\u0028\u0029",
+            "name": "setDetails",
+            "summary": "Set\u0020additional\u0020details\u0020separated\u0020from\u0020the\u0020exception\u0027s\u0020message",
+            "url": "classes/Horde-Exception-DetailsTrait.html#method_setDetails"
+        },                {
+            "fqsen": "\\Horde\\Exception\\DetailsTrait\u003A\u003A\u0024extraDetails",
+            "name": "extraDetails",
+            "summary": "",
+            "url": "classes/Horde-Exception-DetailsTrait.html#property_extraDetails"
         },                {
             "fqsen": "\\Horde\\Exception\\HordeException",
             "name": "HordeException",
             "summary": "Horde\u0020base\u0020exception\u0020class.",
             "url": "classes/Horde-Exception-HordeException.html"
-        },                {
-            "fqsen": "\\Horde\\Exception\\HordeException\u003A\u003AgetLogLevel\u0028\u0029",
-            "name": "getLogLevel",
-            "summary": "Get\u0020the\u0020log\u0020level.",
-            "url": "classes/Horde-Exception-HordeException.html#method_getLogLevel"
-        },                {
-            "fqsen": "\\Horde\\Exception\\HordeException\u003A\u003AsetLogLevel\u0028\u0029",
-            "name": "setLogLevel",
-            "summary": "Sets\u0020the\u0020log\u0020level.",
-            "url": "classes/Horde-Exception-HordeException.html#method_setLogLevel"
         },                {
             "fqsen": "\\Horde\\Exception\\HordeException\u003A\u003A\u0024details",
             "name": "details",
@@ -116,10 +111,20 @@ Search.appendIndex(
             "summary": "Has\u0020this\u0020exception\u0020been\u0020logged\u003F",
             "url": "classes/Horde-Exception-HordeException.html#property_logged"
         },                {
-            "fqsen": "\\Horde\\Exception\\HordeException\u003A\u003A\u0024_logLevel",
-            "name": "_logLevel",
-            "summary": "The\u0020log\u0020level\u0020to\u0020use.\u0020A\u0020Horde_Log\u0020constant.",
-            "url": "classes/Horde-Exception-HordeException.html#property__logLevel"
+            "fqsen": "\\Horde\\Exception\\HordeThrowable",
+            "name": "HordeThrowable",
+            "summary": "The\u0020root\u0020interface\u0020from\u0020which\u0020all\u0020Horde\u0020Exceptions\u0020must\u0020descend",
+            "url": "classes/Horde-Exception-HordeThrowable.html"
+        },                {
+            "fqsen": "\\Horde\\Exception\\HordeThrowable\u003A\u003AgetDetails\u0028\u0029",
+            "name": "getDetails",
+            "summary": "Get\u0020additional\u0020details\u0020separated\u0020from\u0020the\u0020exception\u0027s\u0020message",
+            "url": "classes/Horde-Exception-HordeThrowable.html#method_getDetails"
+        },                {
+            "fqsen": "\\Horde\\Exception\\HordeThrowable\u003A\u003AsetDetails\u0028\u0029",
+            "name": "setDetails",
+            "summary": "Set\u0020additional\u0020details\u0020separated\u0020from\u0020the\u0020exception\u0027s\u0020message",
+            "url": "classes/Horde-Exception-HordeThrowable.html#method_setDetails"
         },                {
             "fqsen": "\\Horde\\Exception\\LastError",
             "name": "LastError",
@@ -130,6 +135,61 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Exception\u0020constructor",
             "url": "classes/Horde-Exception-LastError.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Exception\\LogThrowable",
+            "name": "LogThrowable",
+            "summary": "Horde\u0020extended\u0020exception\u0020interface.",
+            "url": "classes/Horde-Exception-LogThrowable.html"
+        },                {
+            "fqsen": "\\Horde\\Exception\\LogThrowable\u003A\u003AgetLogLevel\u0028\u0029",
+            "name": "getLogLevel",
+            "summary": "Get\u0020the\u0020log\u0020level.",
+            "url": "classes/Horde-Exception-LogThrowable.html#method_getLogLevel"
+        },                {
+            "fqsen": "\\Horde\\Exception\\LogThrowable\u003A\u003AsetLogLevel\u0028\u0029",
+            "name": "setLogLevel",
+            "summary": "Sets\u0020the\u0020log\u0020level.",
+            "url": "classes/Horde-Exception-LogThrowable.html#method_setLogLevel"
+        },                {
+            "fqsen": "\\Horde\\Exception\\LogThrowable\u003A\u003AmarkAsLogged\u0028\u0029",
+            "name": "markAsLogged",
+            "summary": "Mark\u0020this\u0020exception\u0020as\u0020already\u0020logged.\u0020This\u0020cannot\u0020be\u0020undone.",
+            "url": "classes/Horde-Exception-LogThrowable.html#method_markAsLogged"
+        },                {
+            "fqsen": "\\Horde\\Exception\\LogThrowable\u003A\u003AisLogged\u0028\u0029",
+            "name": "isLogged",
+            "summary": "Check\u0020if\u0020this\u0020exception\u0020has\u0020been\u0020logged.",
+            "url": "classes/Horde-Exception-LogThrowable.html#method_isLogged"
+        },                {
+            "fqsen": "\\Horde\\Exception\\LogTrait",
+            "name": "LogTrait",
+            "summary": "",
+            "url": "classes/Horde-Exception-LogTrait.html"
+        },                {
+            "fqsen": "\\Horde\\Exception\\LogTrait\u003A\u003AgetLogLevel\u0028\u0029",
+            "name": "getLogLevel",
+            "summary": "Get\u0020the\u0020log\u0020level.",
+            "url": "classes/Horde-Exception-LogTrait.html#method_getLogLevel"
+        },                {
+            "fqsen": "\\Horde\\Exception\\LogTrait\u003A\u003AsetLogLevel\u0028\u0029",
+            "name": "setLogLevel",
+            "summary": "Sets\u0020the\u0020log\u0020level.",
+            "url": "classes/Horde-Exception-LogTrait.html#method_setLogLevel"
+        },                {
+            "fqsen": "\\Horde\\Exception\\LogTrait\u003A\u003AmarkAsLogged\u0028\u0029",
+            "name": "markAsLogged",
+            "summary": "Mark\u0020this\u0020exception\u0020as\u0020already\u0020logged.\u0020This\u0020cannot\u0020be\u0020undone.",
+            "url": "classes/Horde-Exception-LogTrait.html#method_markAsLogged"
+        },                {
+            "fqsen": "\\Horde\\Exception\\LogTrait\u003A\u003A\u0024isLogged",
+            "name": "isLogged",
+            "summary": "",
+            "url": "classes/Horde-Exception-LogTrait.html#property_isLogged"
+        },                {
+            "fqsen": "\\Horde\\Exception\\LogTrait\u003A\u003A\u0024_logLevel",
+            "name": "_logLevel",
+            "summary": "The\u0020log\u0020level\u0020to\u0020use.\u0020A\u0020Horde_Log\u0020constant.",
+            "url": "classes/Horde-Exception-LogTrait.html#property__logLevel"
         },                {
             "fqsen": "\\Horde\\Exception\\NotFound",
             "name": "NotFound",
@@ -175,6 +235,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Constructor.",
             "url": "classes/Horde-Exception-PermissionDenied.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Exception\\PermissionDeniedThrowable",
+            "name": "PermissionDeniedThrowable",
+            "summary": "The\u0020root\u0020interface\u0020from\u0020which\u0020all\u0020Horde\u0020Exceptions\u0020must\u0020descend",
+            "url": "classes/Horde-Exception-PermissionDeniedThrowable.html"
         },                {
             "fqsen": "\\Horde\\Exception\\Translation",
             "name": "Translation",
