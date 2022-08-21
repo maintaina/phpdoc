@@ -93,25 +93,29 @@
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-registry.html">Registry</a></li>
     </ul>
 
-    <article class="phpdocumentor-element -interface">
+    <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Registry
-                <div class="phpdocumentor-element__package">
-            in
+    RegistryFactory
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
             <ul class="phpdocumentor-breadcrumbs">
-                                    <li><a href="packages/Application.html">Application</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
                             </ul>
         </div>
+    
+    
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Registry.php"><a href="files/registry.html"><abbr title="Registry.php">Registry.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="RegistryFactory.php"><a href="files/registryfactory.html"><abbr title="RegistryFactory.php">RegistryFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Registry public interface</p>
+            <p class="phpdocumentor-summary">Assemble a Registry</p>
 
 
 
@@ -128,25 +132,18 @@
 
 <dl class="phpdocumentor-table-of-contents">
                         <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Registry-Registry.html#method_getContainer">getContainer()</a>
+    <a href="classes/Horde-Registry-RegistryFactory.html#method_autodetect">autodetect()</a>
     <span>
-                                &nbsp;: <abbr title="\Horde\Injector\Injector">Injector</abbr>|<abbr title="\Psr\Container\ContainerInterface">ContainerInterface</abbr>    </span>
+                                &nbsp;: <a href="classes/Horde-Registry-Registry.html"><abbr title="\Horde\Registry\Registry">Registry</abbr></a>    </span>
 </dt>
-<dd>Expose the DI Container instance internally used</dd>
+<dd>Automatically find out the right implementation</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Registry-Registry.html#method_hasApplication">hasApplication()</a>
+    <a href="classes/Horde-Registry-RegistryFactory.html#method_createComposerBackedRegistry">createComposerBackedRegistry()</a>
     <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: <a href="classes/Horde-Registry-ComposerBackedRegistry.html"><abbr title="\Horde\Registry\ComposerBackedRegistry">ComposerBackedRegistry</abbr></a>    </span>
 </dt>
-<dd>Check if an application is present.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Registry-Registry.html#method_listApplications">listApplications()</a>
-    <span>
-                                &nbsp;: iteratable&lt;string|int, string&gt;    </span>
-</dt>
-<dd>List the available applications disregarding their readiness</dd>
+<dd></dd>
 
         </dl>
 
@@ -154,40 +151,56 @@
 
         
 
+        
+
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Registry-Registry.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Registry-RegistryFactory.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getContainer">
-        getContainer()
-        <a href="classes/Horde-Registry-Registry.html#method_getContainer" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_autodetect">
+        autodetect()
+        <a href="classes/Horde-Registry-RegistryFactory.html#method_autodetect" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Registry.php"><a href="files/registry.html"><abbr title="Registry.php">Registry.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="RegistryFactory.php"><a href="files/registryfactory.html"><abbr title="RegistryFactory.php">RegistryFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Expose the DI Container instance internally used</p>
+        <p class="phpdocumentor-summary">Automatically find out the right implementation</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getContainer</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Injector\Injector">Injector</abbr>|<abbr title="\Psr\Container\ContainerInterface">ContainerInterface</abbr></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">autodetect</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Registry-Registry.html"><abbr title="\Horde\Registry\Registry">Registry</abbr></a></span></code>
 
     
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Injector\Injector">Injector</abbr>|<abbr title="\Psr\Container\ContainerInterface">ContainerInterface</abbr></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Registry-Registry.html"><abbr title="\Horde\Registry\Registry">Registry</abbr></a></span>
             &mdash;
         
     
@@ -196,32 +209,32 @@
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_hasApplication">
-        hasApplication()
-        <a href="classes/Horde-Registry-Registry.html#method_hasApplication" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_createComposerBackedRegistry">
+        createComposerBackedRegistry()
+        <a href="classes/Horde-Registry-RegistryFactory.html#method_createComposerBackedRegistry" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Registry.php"><a href="files/registry.html"><abbr title="Registry.php">Registry.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="RegistryFactory.php"><a href="files/registryfactory.html"><abbr title="RegistryFactory.php">RegistryFactory.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Check if an application is present.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasApplication</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$application</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">createComposerBackedRegistry</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Container\ContainerInterface">ContainerInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$container</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Registry-ComposerBackedRegistry.html"><abbr title="\Horde\Registry\ComposerBackedRegistry">ComposerBackedRegistry</abbr></a></span></code>
 
-    
+        <section class="phpdocumentor-description"></section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$application</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
+                <span class="phpdocumentor-signature__argument__name">$container</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Container\ContainerInterface">ContainerInterface</abbr>|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -231,44 +244,9 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Registry-ComposerBackedRegistry.html"><abbr title="\Horde\Registry\ComposerBackedRegistry">ComposerBackedRegistry</abbr></a></span>
             &mdash;
         
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_listApplications">
-        listApplications()
-        <a href="classes/Horde-Registry-Registry.html#method_listApplications" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Registry.php"><a href="files/registry.html"><abbr title="Registry.php">Registry.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">27</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">List the available applications disregarding their readiness</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">listApplications</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">iteratable&lt;string|int, string&gt;</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">iteratable&lt;string|int, string&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The identifier strings used in the DI container</p>
-</section>
-
     
 </article>
             </section>
@@ -349,7 +327,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Registry-Registry.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Registry-RegistryFactory.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

@@ -91,27 +91,35 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-registry.html">Registry</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-registry-config.html">Config</a></li>
     </ul>
 
-    <article class="phpdocumentor-element -interface">
+    <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Registry
-                <div class="phpdocumentor-element__package">
-            in
+    ApplicationList
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
             <ul class="phpdocumentor-breadcrumbs">
-                                    <li><a href="packages/Application.html">Application</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
                             </ul>
         </div>
+    
+            <span class="phpdocumentor-element__implements">
+            implements
+                            <a href="classes/Horde-Registry-Config-ConfigListInterface.html"><abbr title="\Horde\Registry\Config\ConfigListInterface">ConfigListInterface</abbr></a>,                             <abbr title="\IteratorAggregate">IteratorAggregate</abbr>                    </span>
+    
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Registry.php"><a href="files/registry.html"><abbr title="Registry.php">Registry.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Config/ApplicationList.php"><a href="files/config-applicationlist.html"><abbr title="Config/ApplicationList.php">ApplicationList.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Registry public interface</p>
+            <p class="phpdocumentor-summary">Represents one installed application</p>
 
 
 
@@ -119,6 +127,20 @@
 
 
 
+<h3 id="interfaces_class_traits">
+    Interfaces, Classes, Traits and Enums
+    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Registry-Config-ConfigListInterface.html"><abbr title="\Horde\Registry\Config\ConfigListInterface">ConfigListInterface</abbr></a></dt>
+        <dd>Registry public interface</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\IteratorAggregate">IteratorAggregate</abbr></dt>
+        <dd></dd>
+    
+    
+    
+    </dl>
 
 
 <h3 id="toc">
@@ -127,26 +149,26 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                        <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Registry-Registry.html#method_getContainer">getContainer()</a>
+                    <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Horde-Registry-Config-ApplicationList.html#property_applications">$applications</a>
     <span>
-                                &nbsp;: <abbr title="\Horde\Injector\Injector">Injector</abbr>|<abbr title="\Psr\Container\ContainerInterface">ContainerInterface</abbr>    </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd>Expose the DI Container instance internally used</dd>
+<dd></dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Registry-Config-ApplicationList.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Registry-Registry.html#method_hasApplication">hasApplication()</a>
+    <a href="classes/Horde-Registry-Config-ApplicationList.html#method_getIterator">getIterator()</a>
     <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: <abbr title="\Iterator">Iterator</abbr>    </span>
 </dt>
-<dd>Check if an application is present.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Registry-Registry.html#method_listApplications">listApplications()</a>
-    <span>
-                                &nbsp;: iteratable&lt;string|int, string&gt;    </span>
-</dt>
-<dd>List the available applications disregarding their readiness</dd>
+<dd></dd>
 
         </dl>
 
@@ -154,10 +176,52 @@
 
         
 
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Horde-Registry-Config-ApplicationList.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_applications">
+        $applications
+        <a href="classes/Horde-Registry-Config-ApplicationList.html#property_applications" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Config/ApplicationList.php"><a href="files/config-applicationlist.html"><abbr title="Config/ApplicationList.php">ApplicationList.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">20</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$applications</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
+
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Registry-Registry.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Registry-Config-ApplicationList.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -165,62 +229,29 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getContainer">
-        getContainer()
-        <a href="classes/Horde-Registry-Registry.html#method_getContainer" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Horde-Registry-Config-ApplicationList.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Registry.php"><a href="files/registry.html"><abbr title="Registry.php">Registry.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Config/ApplicationList.php"><a href="files/config-applicationlist.html"><abbr title="Config/ApplicationList.php">ApplicationList.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Expose the DI Container instance internally used</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getContainer</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Injector\Injector">Injector</abbr>|<abbr title="\Psr\Container\ContainerInterface">ContainerInterface</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Registry-Config-PresentApplication.html"><abbr title="\Horde\Registry\Config\PresentApplication">PresentApplication</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$applications</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
-    
+        <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde\Injector\Injector">Injector</abbr>|<abbr title="\Psr\Container\ContainerInterface">ContainerInterface</abbr></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_hasApplication">
-        hasApplication()
-        <a href="classes/Horde-Registry-Registry.html#method_hasApplication" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Registry.php"><a href="files/registry.html"><abbr title="Registry.php">Registry.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">34</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Check if an application is present.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasApplication</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$application</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$application</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__name">$applications</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Registry-Config-PresentApplication.html"><abbr title="\Horde\Registry\Config\PresentApplication">PresentApplication</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
@@ -231,7 +262,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
         
     
@@ -242,33 +273,31 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_listApplications">
-        listApplications()
-        <a href="classes/Horde-Registry-Registry.html#method_listApplications" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getIterator">
+        getIterator()
+        <a href="classes/Horde-Registry-Config-ApplicationList.html#method_getIterator" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Registry.php"><a href="files/registry.html"><abbr title="Registry.php">Registry.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Config/ApplicationList.php"><a href="files/config-applicationlist.html"><abbr title="Config/ApplicationList.php">ApplicationList.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">List the available applications disregarding their readiness</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">listApplications</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">iteratable&lt;string|int, string&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getIterator</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Iterator">Iterator</abbr></span></code>
 
-    
+        <section class="phpdocumentor-description"></section>
+
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">iteratable&lt;string|int, string&gt;</span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Iterator">Iterator</abbr></span>
             &mdash;
-            <section class="phpdocumentor-description"><p>The identifier strings used in the DI container</p>
-</section>
-
+        
     
 </article>
             </section>
@@ -349,7 +378,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Registry-Registry.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Registry-Config-ApplicationList.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

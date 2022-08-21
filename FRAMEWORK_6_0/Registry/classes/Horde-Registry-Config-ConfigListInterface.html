@@ -60,7 +60,7 @@
 </h4>
     <ul class="phpdocumentor-list">
                     <li>
-                <a href="namespaces/horde-registry.html" class="-active">Registry</a>
+                <a href="namespaces/horde-registry.html" class="">Registry</a>
                 
             </li>
             </ul>
@@ -90,45 +90,111 @@
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-registry.html">Registry</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-registry-config.html">Config</a></li>
     </ul>
 
-    <article class="phpdocumentor-element -namespace">
-        <h2 class="phpdocumentor-content__title">Registry</h2>
+    <article class="phpdocumentor-element -interface">
+        <h2 class="phpdocumentor-content__title">
+    ConfigListInterface
+            <span class="phpdocumentor-element__extends">
+            extends
+                            <a href="classes/Horde-Registry-Config-ConfigItemInterface.html"><abbr title="\Horde\Registry\Config\ConfigItemInterface">ConfigItemInterface</abbr></a>,                             <abbr title="\Traversable">Traversable</abbr>                    </span>
+                <div class="phpdocumentor-element__package">
+            in
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li><a href="packages/Application.html">Application</a></li>
+                            </ul>
+        </div>
+    </h2>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Config/ConfigListInterface.php"><a href="files/config-configlistinterface.html"><abbr title="Config/ConfigListInterface.php">ConfigListInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">19</span>
+
+    </aside>
+
+            <p class="phpdocumentor-summary">Registry public interface</p>
+
+    <section class="phpdocumentor-description"><p>TODO: Serializable</p>
+</section>
+
+
+
+
+
+
+
+
+
+
 
         
-<h3 id="namespaces">
-    Namespaces
-    <a href="#namespaces" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/horde-registry-config.html"><abbr title="\Horde\Registry\Config">Config</abbr></a></dt>
-    </dl>
-
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Registry-Registry.html"><abbr title="\Horde\Registry\Registry">Registry</abbr></a></dt>
-        <dd>Registry public interface</dd>
-    
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Registry-CacheableRuntimeRegistry.html"><abbr title="\Horde\Registry\CacheableRuntimeRegistry">CacheableRuntimeRegistry</abbr></a></dt>
-        <dd>Composer backed registry intended for the discovery phase or live development.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Registry-ComposerBackedRegistry.html"><abbr title="\Horde\Registry\ComposerBackedRegistry">ComposerBackedRegistry</abbr></a></dt>
-        <dd>Composer backed registry intended for the discovery phase or live development.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Registry-RegistryFactory.html"><abbr title="\Horde\Registry\RegistryFactory">RegistryFactory</abbr></a></dt>
-        <dd>Assemble a Registry</dd>
-    
-    
-    </dl>
-
-
 
         
-
         
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
+
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
@@ -143,7 +209,7 @@
 </section>
             </div>
         </div>
-        <a href="namespaces/horde-registry.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Registry-Config-ConfigListInterface.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

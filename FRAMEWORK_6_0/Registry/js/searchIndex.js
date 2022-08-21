@@ -1,10 +1,150 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Horde\\Registry\\CacheableRuntimeRegistry",
+            "name": "CacheableRuntimeRegistry",
+            "summary": "Composer\u0020backed\u0020registry\u0020intended\u0020for\u0020the\u0020discovery\u0020phase\u0020or\u0020live\u0020development.",
+            "url": "classes/Horde-Registry-CacheableRuntimeRegistry.html"
+        },                {
+            "fqsen": "\\Horde\\Registry\\CacheableRuntimeRegistry\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Registry-CacheableRuntimeRegistry.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Registry\\CacheableRuntimeRegistry\u003A\u003AgetContainer\u0028\u0029",
+            "name": "getContainer",
+            "summary": "Expose\u0020the\u0020DI\u0020Container\u0020instance\u0020internally\u0020used",
+            "url": "classes/Horde-Registry-CacheableRuntimeRegistry.html#method_getContainer"
+        },                {
+            "fqsen": "\\Horde\\Registry\\CacheableRuntimeRegistry\u003A\u003AlistApplications\u0028\u0029",
+            "name": "listApplications",
+            "summary": "List\u0020the\u0020available\u0020applications\u0020disregarding\u0020their\u0020readiness",
+            "url": "classes/Horde-Registry-CacheableRuntimeRegistry.html#method_listApplications"
+        },                {
+            "fqsen": "\\Horde\\Registry\\CacheableRuntimeRegistry\u003A\u003AhasApplication\u0028\u0029",
+            "name": "hasApplication",
+            "summary": "Check\u0020if\u0020an\u0020application\u0020is\u0020present.",
+            "url": "classes/Horde-Registry-CacheableRuntimeRegistry.html#method_hasApplication"
+        },                {
+            "fqsen": "\\Horde\\Registry\\CacheableRuntimeRegistry\u003A\u003A\u0024container",
+            "name": "container",
+            "summary": "",
+            "url": "classes/Horde-Registry-CacheableRuntimeRegistry.html#property_container"
+        },                {
+            "fqsen": "\\Horde\\Registry\\CacheableRuntimeRegistry\u003A\u003A\u0024cache",
+            "name": "cache",
+            "summary": "",
+            "url": "classes/Horde-Registry-CacheableRuntimeRegistry.html#property_cache"
+        },                {
+            "fqsen": "\\Horde\\Registry\\CacheableRuntimeRegistry\u003A\u003A\u0024cacheKey",
+            "name": "cacheKey",
+            "summary": "",
+            "url": "classes/Horde-Registry-CacheableRuntimeRegistry.html#property_cacheKey"
+        },                {
+            "fqsen": "\\Horde\\Registry\\ComposerBackedRegistry",
+            "name": "ComposerBackedRegistry",
+            "summary": "Composer\u0020backed\u0020registry\u0020intended\u0020for\u0020the\u0020discovery\u0020phase\u0020or\u0020live\u0020development.",
+            "url": "classes/Horde-Registry-ComposerBackedRegistry.html"
+        },                {
+            "fqsen": "\\Horde\\Registry\\ComposerBackedRegistry\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Registry-ComposerBackedRegistry.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Registry\\ComposerBackedRegistry\u003A\u003AgetContainer\u0028\u0029",
+            "name": "getContainer",
+            "summary": "Expose\u0020the\u0020DI\u0020Container\u0020instance\u0020internally\u0020used",
+            "url": "classes/Horde-Registry-ComposerBackedRegistry.html#method_getContainer"
+        },                {
+            "fqsen": "\\Horde\\Registry\\ComposerBackedRegistry\u003A\u003AlistApplications\u0028\u0029",
+            "name": "listApplications",
+            "summary": "List\u0020the\u0020available\u0020applications\u0020disregarding\u0020their\u0020readiness",
+            "url": "classes/Horde-Registry-ComposerBackedRegistry.html#method_listApplications"
+        },                {
+            "fqsen": "\\Horde\\Registry\\ComposerBackedRegistry\u003A\u003AhasApplication\u0028\u0029",
+            "name": "hasApplication",
+            "summary": "Check\u0020if\u0020an\u0020application\u0020is\u0020present.",
+            "url": "classes/Horde-Registry-ComposerBackedRegistry.html#method_hasApplication"
+        },                {
+            "fqsen": "\\Horde\\Registry\\ComposerBackedRegistry\u003A\u003A\u0024container",
+            "name": "container",
+            "summary": "",
+            "url": "classes/Horde-Registry-ComposerBackedRegistry.html#property_container"
+        },                {
+            "fqsen": "\\Horde\\Registry\\Config\\ApplicationList",
+            "name": "ApplicationList",
+            "summary": "Represents\u0020one\u0020installed\u0020application",
+            "url": "classes/Horde-Registry-Config-ApplicationList.html"
+        },                {
+            "fqsen": "\\Horde\\Registry\\Config\\ApplicationList\u003A\u003AgetIterator\u0028\u0029",
+            "name": "getIterator",
+            "summary": "",
+            "url": "classes/Horde-Registry-Config-ApplicationList.html#method_getIterator"
+        },                {
+            "fqsen": "\\Horde\\Registry\\Config\\ApplicationList\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Registry-Config-ApplicationList.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Registry\\Config\\ApplicationList\u003A\u003A\u0024applications",
+            "name": "applications",
+            "summary": "",
+            "url": "classes/Horde-Registry-Config-ApplicationList.html#property_applications"
+        },                {
+            "fqsen": "\\Horde\\Registry\\Config\\ConfigItemInterface",
+            "name": "ConfigItemInterface",
+            "summary": "Registry\u0020public\u0020interface",
+            "url": "classes/Horde-Registry-Config-ConfigItemInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Registry\\Config\\ConfigListInterface",
+            "name": "ConfigListInterface",
+            "summary": "Registry\u0020public\u0020interface",
+            "url": "classes/Horde-Registry-Config-ConfigListInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Registry\\Config\\PresentApplication",
+            "name": "PresentApplication",
+            "summary": "Represents\u0020one\u0020present\u0020application",
+            "url": "classes/Horde-Registry-Config-PresentApplication.html"
+        },                {
+            "fqsen": "\\Horde\\Registry\\Config\\PresentApplication\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Registry-Config-PresentApplication.html#method___construct"
+        },                {
             "fqsen": "\\Horde\\Registry\\Registry",
             "name": "Registry",
-            "summary": "The\u0020Registry",
+            "summary": "Registry\u0020public\u0020interface",
             "url": "classes/Horde-Registry-Registry.html"
+        },                {
+            "fqsen": "\\Horde\\Registry\\Registry\u003A\u003AgetContainer\u0028\u0029",
+            "name": "getContainer",
+            "summary": "Expose\u0020the\u0020DI\u0020Container\u0020instance\u0020internally\u0020used",
+            "url": "classes/Horde-Registry-Registry.html#method_getContainer"
+        },                {
+            "fqsen": "\\Horde\\Registry\\Registry\u003A\u003AlistApplications\u0028\u0029",
+            "name": "listApplications",
+            "summary": "List\u0020the\u0020available\u0020applications\u0020disregarding\u0020their\u0020readiness",
+            "url": "classes/Horde-Registry-Registry.html#method_listApplications"
+        },                {
+            "fqsen": "\\Horde\\Registry\\Registry\u003A\u003AhasApplication\u0028\u0029",
+            "name": "hasApplication",
+            "summary": "Check\u0020if\u0020an\u0020application\u0020is\u0020present.",
+            "url": "classes/Horde-Registry-Registry.html#method_hasApplication"
+        },                {
+            "fqsen": "\\Horde\\Registry\\RegistryFactory",
+            "name": "RegistryFactory",
+            "summary": "Assemble\u0020a\u0020Registry",
+            "url": "classes/Horde-Registry-RegistryFactory.html"
+        },                {
+            "fqsen": "\\Horde\\Registry\\RegistryFactory\u003A\u003Aautodetect\u0028\u0029",
+            "name": "autodetect",
+            "summary": "Automatically\u0020find\u0020out\u0020the\u0020right\u0020implementation",
+            "url": "classes/Horde-Registry-RegistryFactory.html#method_autodetect"
+        },                {
+            "fqsen": "\\Horde\\Registry\\RegistryFactory\u003A\u003AcreateComposerBackedRegistry\u0028\u0029",
+            "name": "createComposerBackedRegistry",
+            "summary": "",
+            "url": "classes/Horde-Registry-RegistryFactory.html#method_createComposerBackedRegistry"
         },                {
             "fqsen": "\\",
             "name": "\\",
@@ -20,5 +160,10 @@ Search.appendIndex(
             "name": "Horde",
             "summary": "",
             "url": "namespaces/horde.html"
+        },                {
+            "fqsen": "\\Horde\\Registry\\Config",
+            "name": "Config",
+            "summary": "",
+            "url": "namespaces/horde-registry-config.html"
         }            ]
 );
