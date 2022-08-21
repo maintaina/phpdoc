@@ -95,7 +95,7 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    ConfigLinker
+    ApplicationLinker
 
     
             <div class="phpdocumentor-element__package">
@@ -109,9 +109,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ConfigLinker.php"><a href="files/configlinker.html"><abbr title="ConfigLinker.php">ConfigLinker.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="ApplicationLinker.php"><a href="files/applicationlinker.html"><abbr title="ApplicationLinker.php">ApplicationLinker.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
@@ -132,39 +132,46 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Horde-Composer-ConfigLinker.html#property_baseDir">$baseDir</a>
+    <a href="classes/Horde-Composer-ApplicationLinker.html#property_appPackages">$appPackages</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+<dd>List of packages considered as apps</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Horde-Composer-ApplicationLinker.html#property_baseDir">$baseDir</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Horde-Composer-ConfigLinker.html#property_configDir">$configDir</a>
+    <a href="classes/Horde-Composer-ApplicationLinker.html#property_filesystem">$filesystem</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: <abbr title="\Composer\Util\Filesystem">Filesystem</abbr>            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Horde-Composer-ConfigLinker.html#property_vendorDir">$vendorDir</a>
+    <a href="classes/Horde-Composer-ApplicationLinker.html#property_mode">$mode</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Composer-ConfigLinker.html#method___construct">__construct()</a>
+    <a href="classes/Horde-Composer-ApplicationLinker.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Composer-ConfigLinker.html#method_run">run()</a>
+    <a href="classes/Horde-Composer-ApplicationLinker.html#method_run">run()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Symlink contents of var/config</dd>
+<dd>Symlink contents of applications to web dir</dd>
 
         </dl>
 
@@ -176,8 +183,41 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Horde-Composer-ConfigLinker.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Composer-ApplicationLinker.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_appPackages">
+        $appPackages
+        <a href="classes/Horde-Composer-ApplicationLinker.html#property_appPackages" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="ApplicationLinker.php"><a href="files/applicationlinker.html"><abbr title="ApplicationLinker.php">ApplicationLinker.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">23</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">List of packages considered as apps</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$appPackages</span>
+    </code>
+
+    
+    
+    
+
+</article>
                     <article
         class="
             phpdocumentor-element
@@ -187,14 +227,14 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_baseDir">
         $baseDir
-        <a href="classes/Horde-Composer-ConfigLinker.html#property_baseDir" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Composer-ApplicationLinker.html#property_baseDir" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ConfigLinker.php"><a href="files/configlinker.html"><abbr title="ConfigLinker.php">ConfigLinker.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="ApplicationLinker.php"><a href="files/applicationlinker.html"><abbr title="ApplicationLinker.php">ApplicationLinker.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
@@ -219,24 +259,24 @@
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_configDir">
-        $configDir
-        <a href="classes/Horde-Composer-ConfigLinker.html#property_configDir" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_filesystem">
+        $filesystem
+        <a href="classes/Horde-Composer-ApplicationLinker.html#property_filesystem" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ConfigLinker.php"><a href="files/configlinker.html"><abbr title="ConfigLinker.php">ConfigLinker.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="ApplicationLinker.php"><a href="files/applicationlinker.html"><abbr title="ApplicationLinker.php">ApplicationLinker.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$configDir</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Composer\Util\Filesystem">Filesystem</abbr></span>
+    <span class="phpdocumentor-signature__name">$filesystem</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -253,16 +293,16 @@
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_vendorDir">
-        $vendorDir
-        <a href="classes/Horde-Composer-ConfigLinker.html#property_vendorDir" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_mode">
+        $mode
+        <a href="classes/Horde-Composer-ApplicationLinker.html#property_mode" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ConfigLinker.php"><a href="files/configlinker.html"><abbr title="ConfigLinker.php">ConfigLinker.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="ApplicationLinker.php"><a href="files/applicationlinker.html"><abbr title="ApplicationLinker.php">ApplicationLinker.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -270,7 +310,7 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$vendorDir</span>
+    <span class="phpdocumentor-signature__name">$mode</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -285,7 +325,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Composer-ConfigLinker.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Composer-ApplicationLinker.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -295,28 +335,52 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Horde-Composer-ConfigLinker.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Composer-ApplicationLinker.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ConfigLinker.php"><a href="files/configlinker.html"><abbr title="ConfigLinker.php">ConfigLinker.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="ApplicationLinker.php"><a href="files/applicationlinker.html"><abbr title="ApplicationLinker.php">ApplicationLinker.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baseDir</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Composer\Util\Filesystem">Filesystem</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$appPackages</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baseDir</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;symlink&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$filesystem</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Composer\Util\Filesystem">Filesystem</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$appPackages</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$baseDir</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$mode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;symlink&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -339,16 +403,16 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_run">
         run()
-        <a href="classes/Horde-Composer-ConfigLinker.html#method_run" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Composer-ApplicationLinker.html#method_run" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ConfigLinker.php"><a href="files/configlinker.html"><abbr title="ConfigLinker.php">ConfigLinker.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="ApplicationLinker.php"><a href="files/applicationlinker.html"><abbr title="ApplicationLinker.php">ApplicationLinker.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Symlink contents of var/config</p>
+        <p class="phpdocumentor-summary">Symlink contents of applications to web dir</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -445,7 +509,7 @@ multiple times in installations with many apps</p>
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Composer-ConfigLinker.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Composer-ApplicationLinker.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

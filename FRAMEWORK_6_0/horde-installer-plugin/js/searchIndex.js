@@ -1,6 +1,41 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Horde\\Composer\\ApplicationLinker",
+            "name": "ApplicationLinker",
+            "summary": "",
+            "url": "classes/Horde-Composer-ApplicationLinker.html"
+        },                {
+            "fqsen": "\\Horde\\Composer\\ApplicationLinker\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Composer-ApplicationLinker.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Composer\\ApplicationLinker\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "Symlink\u0020contents\u0020of\u0020applications\u0020to\u0020web\u0020dir",
+            "url": "classes/Horde-Composer-ApplicationLinker.html#method_run"
+        },                {
+            "fqsen": "\\Horde\\Composer\\ApplicationLinker\u003A\u003A\u0024baseDir",
+            "name": "baseDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-ApplicationLinker.html#property_baseDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\ApplicationLinker\u003A\u003A\u0024mode",
+            "name": "mode",
+            "summary": "",
+            "url": "classes/Horde-Composer-ApplicationLinker.html#property_mode"
+        },                {
+            "fqsen": "\\Horde\\Composer\\ApplicationLinker\u003A\u003A\u0024filesystem",
+            "name": "filesystem",
+            "summary": "",
+            "url": "classes/Horde-Composer-ApplicationLinker.html#property_filesystem"
+        },                {
+            "fqsen": "\\Horde\\Composer\\ApplicationLinker\u003A\u003A\u0024appPackages",
+            "name": "appPackages",
+            "summary": "List\u0020of\u0020packages\u0020considered\u0020as\u0020apps",
+            "url": "classes/Horde-Composer-ApplicationLinker.html#property_appPackages"
+        },                {
             "fqsen": "\\Horde\\Composer\\CommandProvider",
             "name": "CommandProvider",
             "summary": "",
@@ -36,10 +71,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Composer-ConfigLinker.html#property_configDir"
         },                {
-            "fqsen": "\\Horde\\Composer\\ConfigLinker\u003A\u003A\u0024webDir",
-            "name": "webDir",
+            "fqsen": "\\Horde\\Composer\\ConfigLinker\u003A\u003A\u0024vendorDir",
+            "name": "vendorDir",
             "summary": "",
-            "url": "classes/Horde-Composer-ConfigLinker.html#property_webDir"
+            "url": "classes/Horde-Composer-ConfigLinker.html#property_vendorDir"
         },                {
             "fqsen": "\\Horde\\Composer\\HordeInstaller",
             "name": "HordeInstaller",
