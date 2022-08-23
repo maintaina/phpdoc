@@ -76,14 +76,69 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Filesystem-Directory.html#method___construct"
         },                {
+            "fqsen": "\\Horde\\Filesystem\\Directory\u003A\u003Atouch\u0028\u0029",
+            "name": "touch",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-Directory.html#method_touch"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\DirectoryCreateIfMissingTrait",
+            "name": "DirectoryCreateIfMissingTrait",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-DirectoryCreateIfMissingTrait.html"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\DirectoryCreateIfMissingTrait\u003A\u003AcreateIfMissing\u0028\u0029",
+            "name": "createIfMissing",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-DirectoryCreateIfMissingTrait.html#method_createIfMissing"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\DirectoryCreateIfMissingTrait\u003A\u003AcreateSubDir\u0028\u0029",
+            "name": "createSubDir",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-DirectoryCreateIfMissingTrait.html#method_createSubDir"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\DirectoryDeleteTrait",
+            "name": "DirectoryDeleteTrait",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-DirectoryDeleteTrait.html"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\DirectoryDeleteTrait\u003A\u003AdeleteIfEmpty\u0028\u0029",
+            "name": "deleteIfEmpty",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-DirectoryDeleteTrait.html#method_deleteIfEmpty"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\DirectoryDeleteTrait\u003A\u003AdeleteRecursively\u0028\u0029",
+            "name": "deleteRecursively",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-DirectoryDeleteTrait.html#method_deleteRecursively"
+        },                {
             "fqsen": "\\Horde\\Filesystem\\DirectoryInterface",
             "name": "DirectoryInterface",
-            "summary": "Directories,\u0020Files,\u0020Device\u0020entries\u0020etc\u0020are\u0020nodes",
+            "summary": "A\u0020unixoid\u0020filesystem\u0020directory",
             "url": "classes/Horde-Filesystem-DirectoryInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\DirectoryInterface\u003A\u003AcreateIfMissing\u0028\u0029",
+            "name": "createIfMissing",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-DirectoryInterface.html#method_createIfMissing"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\DirectoryInterface\u003A\u003AdeleteIfEmpty\u0028\u0029",
+            "name": "deleteIfEmpty",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-DirectoryInterface.html#method_deleteIfEmpty"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\DirectoryInterface\u003A\u003AdeleteRecursively\u0028\u0029",
+            "name": "deleteRecursively",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-DirectoryInterface.html#method_deleteRecursively"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\DirectoryInterface\u003A\u003AcreateSubDir\u0028\u0029",
+            "name": "createSubDir",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-DirectoryInterface.html#method_createSubDir"
         },                {
             "fqsen": "\\Horde\\Filesystem\\File",
             "name": "File",
-            "summary": "Directories,\u0020Files,\u0020Device\u0020entries\u0020etc\u0020are\u0020nodes",
+            "summary": "An\u0020OO\u0020interface\u0020to\u0020a\u0020file",
             "url": "classes/Horde-Filesystem-File.html"
         },                {
             "fqsen": "\\Horde\\Filesystem\\File\u003A\u003A__construct\u0028\u0029",
@@ -91,15 +146,145 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Filesystem-File.html#method___construct"
         },                {
+            "fqsen": "\\Horde\\Filesystem\\File\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-File.html#method_delete"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\File\u003A\u003Atouch\u0028\u0029",
+            "name": "touch",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-File.html#method_touch"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\File\u003A\u003AensureFileExist\u0028\u0029",
+            "name": "ensureFileExist",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-File.html#method_ensureFileExist"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\File\u003A\u003A\u0024file",
+            "name": "file",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-File.html#property_file"
+        },                {
             "fqsen": "\\Horde\\Filesystem\\FileInterface",
             "name": "FileInterface",
             "summary": "Directories,\u0020Files,\u0020Device\u0020entries\u0020etc\u0020are\u0020nodes",
             "url": "classes/Horde-Filesystem-FileInterface.html"
         },                {
+            "fqsen": "\\Horde\\Filesystem\\FileInterface\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-FileInterface.html#method_delete"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\FileInterface\u003A\u003AensureFileExist\u0028\u0029",
+            "name": "ensureFileExist",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-FileInterface.html#method_ensureFileExist"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\FileInterface\u003A\u003Atouch\u0028\u0029",
+            "name": "touch",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-FileInterface.html#method_touch"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\GetRelativePathTrait",
+            "name": "GetRelativePathTrait",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-GetRelativePathTrait.html"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\GetRelativePathTrait\u003A\u003AgetPathRelativeTo\u0028\u0029",
+            "name": "getPathRelativeTo",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-GetRelativePathTrait.html#method_getPathRelativeTo"
+        },                {
             "fqsen": "\\Horde\\Filesystem\\NodeInterface",
             "name": "NodeInterface",
             "summary": "Directories,\u0020Files,\u0020Device\u0020entries\u0020etc\u0020are\u0020nodes",
             "url": "classes/Horde-Filesystem-NodeInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeInterface\u003A\u003AgetAbsolutePath\u0028\u0029",
+            "name": "getAbsolutePath",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeInterface.html#method_getAbsolutePath"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeInterface\u003A\u003AgetPathRelativeTo\u0028\u0029",
+            "name": "getPathRelativeTo",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeInterface.html#method_getPathRelativeTo"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeInterface\u003A\u003Aexists\u0028\u0029",
+            "name": "exists",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeInterface.html#method_exists"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeInterface\u003A\u003AisReadable\u0028\u0029",
+            "name": "isReadable",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeInterface.html#method_isReadable"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeInterface\u003A\u003AisWriteable\u0028\u0029",
+            "name": "isWriteable",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeInterface.html#method_isWriteable"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeInterface\u003A\u003AisExecutable\u0028\u0029",
+            "name": "isExecutable",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeInterface.html#method_isExecutable"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeInterface\u003A\u003AisLink\u0028\u0029",
+            "name": "isLink",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeInterface.html#method_isLink"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeInterface\u003A\u003Atouch\u0028\u0029",
+            "name": "touch",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeInterface.html#method_touch"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeInterface\u003A\u003AcreateSymlinkAs\u0028\u0029",
+            "name": "createSymlinkAs",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeInterface.html#method_createSymlinkAs"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeTrait",
+            "name": "NodeTrait",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeTrait.html"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeTrait\u003A\u003AisExecutable\u0028\u0029",
+            "name": "isExecutable",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeTrait.html#method_isExecutable"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeTrait\u003A\u003AisReadable\u0028\u0029",
+            "name": "isReadable",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeTrait.html#method_isReadable"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeTrait\u003A\u003AisWriteable\u0028\u0029",
+            "name": "isWriteable",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeTrait.html#method_isWriteable"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeTrait\u003A\u003AisLink\u0028\u0029",
+            "name": "isLink",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeTrait.html#method_isLink"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeTrait\u003A\u003Aexists\u0028\u0029",
+            "name": "exists",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeTrait.html#method_exists"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeTrait\u003A\u003AgetAbsolutePath\u0028\u0029",
+            "name": "getAbsolutePath",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeTrait.html#method_getAbsolutePath"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeTrait\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-NodeTrait.html#property_path"
         },                {
             "fqsen": "\\Horde\\Filesystem\\Path",
             "name": "Path",
@@ -200,6 +385,16 @@ Search.appendIndex(
             "name": "normalize",
             "summary": "",
             "url": "classes/Horde-Filesystem-RelativePathInterface.html#method_normalize"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\SymlinkTrait",
+            "name": "SymlinkTrait",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-SymlinkTrait.html"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\SymlinkTrait\u003A\u003AcreateSymlinkAs\u0028\u0029",
+            "name": "createSymlinkAs",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-SymlinkTrait.html#method_createSymlinkAs"
         },                {
             "fqsen": "\\",
             "name": "\\",
