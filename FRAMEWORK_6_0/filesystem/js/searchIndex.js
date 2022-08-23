@@ -66,6 +66,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Filesystem-AbsolutePathInterface.html#method_normalize"
         },                {
+            "fqsen": "\\Horde\\Filesystem\\Directory",
+            "name": "Directory",
+            "summary": "Directories,\u0020Files,\u0020Device\u0020entries\u0020etc\u0020are\u0020nodes",
+            "url": "classes/Horde-Filesystem-Directory.html"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\Directory\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-Directory.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\DirectoryInterface",
+            "name": "DirectoryInterface",
+            "summary": "Directories,\u0020Files,\u0020Device\u0020entries\u0020etc\u0020are\u0020nodes",
+            "url": "classes/Horde-Filesystem-DirectoryInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\File",
+            "name": "File",
+            "summary": "Directories,\u0020Files,\u0020Device\u0020entries\u0020etc\u0020are\u0020nodes",
+            "url": "classes/Horde-Filesystem-File.html"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\File\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Filesystem-File.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\FileInterface",
+            "name": "FileInterface",
+            "summary": "Directories,\u0020Files,\u0020Device\u0020entries\u0020etc\u0020are\u0020nodes",
+            "url": "classes/Horde-Filesystem-FileInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Filesystem\\NodeInterface",
+            "name": "NodeInterface",
+            "summary": "Directories,\u0020Files,\u0020Device\u0020entries\u0020etc\u0020are\u0020nodes",
+            "url": "classes/Horde-Filesystem-NodeInterface.html"
+        },                {
             "fqsen": "\\Horde\\Filesystem\\Path",
             "name": "Path",
             "summary": "The\u0020inevitable\u0020reusable\u0020static\u0020helper",

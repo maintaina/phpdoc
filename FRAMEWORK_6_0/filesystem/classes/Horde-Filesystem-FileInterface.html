@@ -88,40 +88,112 @@
 </aside>
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    
-    <h2 class="phpdocumentor-content__title">Files</h2>
-                            <h3>A</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/absolutepath.html"><abbr title="AbsolutePath.php">AbsolutePath.php</abbr></a></li>
-                    <li><a href="files/absolutepathfromcurrentdirtrait.html"><abbr title="AbsolutePathFromCurrentDirTrait.php">AbsolutePathFromCurrentDirTrait.php</abbr></a></li>
-                    <li><a href="files/absolutepathinterface.html"><abbr title="AbsolutePathInterface.php">AbsolutePathInterface.php</abbr></a></li>
-                </ul>
-                                                                            <h3>D</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/directory.html"><abbr title="Directory.php">Directory.php</abbr></a></li>
-                    <li><a href="files/directoryinterface.html"><abbr title="DirectoryInterface.php">DirectoryInterface.php</abbr></a></li>
-                </ul>
-                                                        <h3>F</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/file.html"><abbr title="File.php">File.php</abbr></a></li>
-                    <li><a href="files/fileinterface.html"><abbr title="FileInterface.php">FileInterface.php</abbr></a></li>
-                </ul>
-                                                                                                                                                                                <h3>N</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/nodeinterface.html"><abbr title="NodeInterface.php">NodeInterface.php</abbr></a></li>
-                </ul>
-                                                        <h3>P</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/path.html"><abbr title="Path.php">Path.php</abbr></a></li>
-                    <li><a href="files/pathfactory.html"><abbr title="PathFactory.php">PathFactory.php</abbr></a></li>
-                    <li><a href="files/pathinterface.html"><abbr title="PathInterface.php">PathInterface.php</abbr></a></li>
-                </ul>
-                                                        <h3>R</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/relativepath.html"><abbr title="RelativePath.php">RelativePath.php</abbr></a></li>
-                    <li><a href="files/relativepathinterface.html"><abbr title="RelativePathInterface.php">RelativePathInterface.php</abbr></a></li>
-                </ul>
-                                                                                                                                                                                            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-filesystem.html">Filesystem</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -interface">
+        <h2 class="phpdocumentor-content__title">
+    FileInterface
+            <span class="phpdocumentor-element__extends">
+            extends
+                            <a href="classes/Horde-Filesystem-NodeInterface.html"><abbr title="\Horde\Filesystem\NodeInterface">NodeInterface</abbr></a>                    </span>
+                <div class="phpdocumentor-element__package">
+            in
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li><a href="packages/Application.html">Application</a></li>
+                            </ul>
+        </div>
+    </h2>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="FileInterface.php"><a href="files/fileinterface.html"><abbr title="FileInterface.php">FileInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">10</span>
+
+    </aside>
+
+            <p class="phpdocumentor-summary">Directories, Files, Device entries etc are nodes</p>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
+
+    </article>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -134,7 +206,7 @@
 </section>
             </div>
         </div>
-        <a href="indices/files.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Filesystem-FileInterface.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
