@@ -461,20 +461,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Hordectl-HordectlModuleTrait.html#property__parser"
         },                {
-            "fqsen": "\\Horde\\HordeCtl\\HordeInstallationFinder",
+            "fqsen": "\\Horde\\Hordectl\\HordeInstallationFinder",
             "name": "HordeInstallationFinder",
             "summary": "Horde\u0020Installation\u0020finder",
-            "url": "classes/Horde-HordeCtl-HordeInstallationFinder.html"
+            "url": "classes/Horde-Hordectl-HordeInstallationFinder.html"
         },                {
-            "fqsen": "\\Horde\\HordeCtl\\HordeInstallationFinder\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Horde\\Hordectl\\HordeInstallationFinder\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Horde-HordeCtl-HordeInstallationFinder.html#method___construct"
+            "url": "classes/Horde-Hordectl-HordeInstallationFinder.html#method___construct"
         },                {
-            "fqsen": "\\Horde\\HordeCtl\\HordeInstallationFinder\u003A\u003Afind\u0028\u0029",
+            "fqsen": "\\Horde\\Hordectl\\HordeInstallationFinder\u003A\u003Afind\u0028\u0029",
             "name": "find",
             "summary": "Find\u0020a\u0020horde\u0020installation",
-            "url": "classes/Horde-HordeCtl-HordeInstallationFinder.html#method_find"
+            "url": "classes/Horde-Hordectl-HordeInstallationFinder.html#method_find"
         },                {
             "fqsen": "\\Horde\\Hordectl\\Repository\\Group",
             "name": "Group",
@@ -670,11 +670,6 @@ Search.appendIndex(
             "name": "Configuration",
             "summary": "",
             "url": "namespaces/horde-hordectl-configuration.html"
-        },                {
-            "fqsen": "\\Horde\\HordeCtl",
-            "name": "HordeCtl",
-            "summary": "",
-            "url": "namespaces/horde-hordectl.html"
         },                {
             "fqsen": "\\Horde\\Hordectl\\Repository",
             "name": "Repository",
