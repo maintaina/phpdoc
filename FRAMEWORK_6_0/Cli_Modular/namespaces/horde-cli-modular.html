@@ -99,156 +99,57 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-cli.html">Cli</a></li>
     </ul>
 
-    <article class="phpdocumentor-element -class">
-        <h2 class="phpdocumentor-content__title">
-    Horde_Cli_Modular_Exception
+    <article class="phpdocumentor-element -namespace">
+        <h2 class="phpdocumentor-content__title">Modular</h2>
 
-        <span class="phpdocumentor-element__extends">
-        extends <abbr title="\Horde_Exception_Wrapped">Horde_Exception_Wrapped</abbr>
-    </span>
+        
+
+<h3 id="interfaces_class_traits">
+    Interfaces, Classes, Traits and Enums
+    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Cli-Modular-CliModuleInterface.html"><abbr title="\Horde\Cli\Modular\CliModuleInterface">CliModuleInterface</abbr></a></dt>
+        <dd>Describes a single CLI module</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Cli-Modular-CliModuleProviderInterface.html"><abbr title="\Horde\Cli\Modular\CliModuleProviderInterface">CliModuleProviderInterface</abbr></a></dt>
+        <dd>Module providers maintain the set of modules the compose a CLI</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Cli-Modular-CliModuleUsageInterface.html"><abbr title="\Horde\Cli\Modular\CliModuleUsageInterface">CliModuleUsageInterface</abbr></a></dt>
+        <dd>Usage tbd</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Cli-Modular-ConfigurableCliModuleProviderInterface.html"><abbr title="\Horde\Cli\Modular\ConfigurableCliModuleProviderInterface">ConfigurableCliModuleProviderInterface</abbr></a></dt>
+        <dd>Extends the module provider interface with methods to add or remove modules.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Cli-Modular-InputInterface.html"><abbr title="\Horde\Cli\Modular\InputInterface">InputInterface</abbr></a></dt>
+        <dd>The interface for CLI Modular to handle user input</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Cli-Modular-ModularCliInterface.html"><abbr title="\Horde\Cli\Modular\ModularCliInterface">ModularCliInterface</abbr></a></dt>
+        <dd>Interface of a modular CLI</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Cli-Modular-OutputInterface.html"><abbr title="\Horde\Cli\Modular\OutputInterface">OutputInterface</abbr></a></dt>
+        <dd>The interface for CLI Modular to output data</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Cli-Modular-ParserInterface.html"><abbr title="\Horde\Cli\Modular\ParserInterface">ParserInterface</abbr></a></dt>
+        <dd>The interface for CLI Modular to handle argument and option parsing</dd>
     
-            <div class="phpdocumentor-element__package">
-            in package
-            <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Cli.html">Cli</a></li>
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Cli-Modular.html">Modular</a></li>
-                            </ul>
-        </div>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Cli-Modular-DefaultCliFactory.html"><abbr title="\Horde\Cli\Modular\DefaultCliFactory">DefaultCliFactory</abbr></a></dt>
+        <dd>A factory to assemble from default building blocks.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Cli-Modular-DefaultInput.html"><abbr title="\Horde\Cli\Modular\DefaultInput">DefaultInput</abbr></a></dt>
+        <dd>An adapter that wraps Horde_Cli for the InputInterface.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Cli-Modular-DefaultOutput.html"><abbr title="\Horde\Cli\Modular\DefaultOutput">DefaultOutput</abbr></a></dt>
+        <dd>An adapter that wraps Horde_Cli for the OutputInterface.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Cli-Modular-DefaultParser.html"><abbr title="\Horde\Cli\Modular\DefaultParser">DefaultParser</abbr></a></dt>
+        <dd>An adapter that wraps Horde_Argv_Parser.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-Cli-Modular-ModularCli.html"><abbr title="\Horde\Cli\Modular\ModularCli">ModularCli</abbr></a></dt>
+        <dd>Aggregate modular CLI.</dd>
     
     
-    </h2>
-
-        <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Cli/Modular/Exception.php"><a href="files/horde-cli-modular-exception.html"><abbr title="Horde/Cli/Modular/Exception.php">Exception.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">23</span>
-
-    </aside>
-
-            <p class="phpdocumentor-summary">This provides the standard exception class for this package.</p>
-
-
-
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">author</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Gunnar Wrobel <a href="mailto:wrobel@pardus.de">wrobel@pardus.de</a></p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">category</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Horde</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">copyright</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>2011-2017 Horde LLC</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">license</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>http://www.horde.org/licenses/lgpl21 LGPL 2.1</p>
-</section>
-
-                                    </dd>
-                        </dl>
-
-
-
-
-
-
+    </dl>
 
 
 
         
 
         
-
-        
-        
-    <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
-
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
-
-                pre.textContent = '';
-
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
-
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
-
-                        if (xhr.status < 400 && xhr.responseText) {
-                            code.textContent = xhr.responseText;
-
-                            Prism.highlightElement(code);
-                        }
-                        else if (xhr.status >= 400) {
-                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
-                        }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
-                    }
-                };
-
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
-                    });
-                });
-            });
-        });
-    </script>
-
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
@@ -263,7 +164,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Cli-Modular-Exception.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="namespaces/horde-cli-modular.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

@@ -191,9 +191,89 @@ Search.appendIndex(
             "summary": "Module\u0020provider.",
             "url": "classes/Horde-Cli-Modular.html#property__provider"
         },                {
+            "fqsen": "\\Horde\\Cli\\Modular\\CliModuleInterface",
+            "name": "CliModuleInterface",
+            "summary": "Describes\u0020a\u0020single\u0020CLI\u0020module",
+            "url": "classes/Horde-Cli-Modular-CliModuleInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Modular\\CliModuleProviderInterface",
+            "name": "CliModuleProviderInterface",
+            "summary": "Module\u0020providers\u0020maintain\u0020the\u0020set\u0020of\u0020modules\u0020the\u0020compose\u0020a\u0020CLI",
+            "url": "classes/Horde-Cli-Modular-CliModuleProviderInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Modular\\CliModuleUsageInterface",
+            "name": "CliModuleUsageInterface",
+            "summary": "Usage\u0020tbd",
+            "url": "classes/Horde-Cli-Modular-CliModuleUsageInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Modular\\ConfigurableCliModuleProviderInterface",
+            "name": "ConfigurableCliModuleProviderInterface",
+            "summary": "Extends\u0020the\u0020module\u0020provider\u0020interface\u0020with\u0020methods\u0020to\u0020add\u0020or\u0020remove\u0020modules.",
+            "url": "classes/Horde-Cli-Modular-ConfigurableCliModuleProviderInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Modular\\DefaultCliFactory",
+            "name": "DefaultCliFactory",
+            "summary": "A\u0020factory\u0020to\u0020assemble\u0020from\u0020default\u0020building\u0020blocks.",
+            "url": "classes/Horde-Cli-Modular-DefaultCliFactory.html"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Modular\\DefaultInput",
+            "name": "DefaultInput",
+            "summary": "An\u0020adapter\u0020that\u0020wraps\u0020Horde_Cli\u0020for\u0020the\u0020InputInterface.",
+            "url": "classes/Horde-Cli-Modular-DefaultInput.html"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Modular\\DefaultOutput",
+            "name": "DefaultOutput",
+            "summary": "An\u0020adapter\u0020that\u0020wraps\u0020Horde_Cli\u0020for\u0020the\u0020OutputInterface.",
+            "url": "classes/Horde-Cli-Modular-DefaultOutput.html"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Modular\\DefaultParser",
+            "name": "DefaultParser",
+            "summary": "An\u0020adapter\u0020that\u0020wraps\u0020Horde_Argv_Parser.",
+            "url": "classes/Horde-Cli-Modular-DefaultParser.html"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Modular\\InputInterface",
+            "name": "InputInterface",
+            "summary": "The\u0020interface\u0020for\u0020CLI\u0020Modular\u0020to\u0020handle\u0020user\u0020input",
+            "url": "classes/Horde-Cli-Modular-InputInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Modular\\ModularCli",
+            "name": "ModularCli",
+            "summary": "Aggregate\u0020modular\u0020CLI.",
+            "url": "classes/Horde-Cli-Modular-ModularCli.html"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Modular\\ModularCliInterface",
+            "name": "ModularCliInterface",
+            "summary": "Interface\u0020of\u0020a\u0020modular\u0020CLI",
+            "url": "classes/Horde-Cli-Modular-ModularCliInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Modular\\OutputInterface",
+            "name": "OutputInterface",
+            "summary": "The\u0020interface\u0020for\u0020CLI\u0020Modular\u0020to\u0020output\u0020data",
+            "url": "classes/Horde-Cli-Modular-OutputInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Modular\\ParserInterface",
+            "name": "ParserInterface",
+            "summary": "The\u0020interface\u0020for\u0020CLI\u0020Modular\u0020to\u0020handle\u0020argument\u0020and\u0020option\u0020parsing",
+            "url": "classes/Horde-Cli-Modular-ParserInterface.html"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Modular",
+            "name": "Modular",
+            "summary": "",
+            "url": "namespaces/horde-cli-modular.html"
+        },                {
+            "fqsen": "\\Horde\\Cli",
+            "name": "Cli",
+            "summary": "",
+            "url": "namespaces/horde-cli.html"
+        },                {
+            "fqsen": "\\Horde",
+            "name": "Horde",
+            "summary": "",
+            "url": "namespaces/horde.html"
         }            ]
 );
