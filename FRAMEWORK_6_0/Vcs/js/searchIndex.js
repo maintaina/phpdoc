@@ -1391,10 +1391,50 @@ Search.appendIndex(
             "summary": "Public\u0020facade\u0020to\u0020programmatically\u0020use\u0020git",
             "url": "classes/Horde-Vcs-Git-GitClient.html"
         },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClient\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-GitClient.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClient\u003A\u003AselectLocalRepository\u0028\u0029",
+            "name": "selectLocalRepository",
+            "summary": "Configure\u0020a\u0020local\u0020repository\u0020to\u0020use\u0020in\u0020further\u0020commands",
+            "url": "classes/Horde-Vcs-Git-GitClient.html#method_selectLocalRepository"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClient\u003A\u003AcloneRemoteRepository\u0028\u0029",
+            "name": "cloneRemoteRepository",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-GitClient.html#method_cloneRemoteRepository"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClient\u003A\u003A\u0024gitBinary",
+            "name": "gitBinary",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-GitClient.html#property_gitBinary"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClient\u003A\u003A\u0024localRepository",
+            "name": "localRepository",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-GitClient.html#property_localRepository"
+        },                {
             "fqsen": "\\Horde\\Vcs\\Git\\GitClientFactory",
             "name": "GitClientFactory",
             "summary": "Assemble\u0020a\u0020git\u0020client\u0020from\u0020necessary\u0020parts",
             "url": "classes/Horde-Vcs-Git-GitClientFactory.html"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClientFactory\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Horde-Vcs-Git-GitClientFactory.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClientFactory\u003A\u003AcreateClient\u0028\u0029",
+            "name": "createClient",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-GitClientFactory.html#method_createClient"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClientFactory\u003A\u003A\u0024gitBinary",
+            "name": "gitBinary",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-GitClientFactory.html#property_gitBinary"
         },                {
             "fqsen": "\\Horde\\Vcs\\Git\\GitClientInterface",
             "name": "GitClientInterface",
