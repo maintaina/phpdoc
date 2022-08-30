@@ -95,13 +95,12 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-vcs.html">Vcs</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-vcs-git.html">Git</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-vcs-git-tool.html">Tool</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-vcs-tool.html">Tool</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    GitBinaryFinder
+    ExecutionResult
 
     
             <div class="phpdocumentor-element__package">
@@ -111,18 +110,23 @@
                             </ul>
         </div>
     
+            <span class="phpdocumentor-element__implements">
+            implements
+                            <abbr title="\Stringable">Stringable</abbr>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Git/Tool/GitBinaryFinder.php"><a href="files/git-tool-gitbinaryfinder.html"><abbr title="Git/Tool/GitBinaryFinder.php">GitBinaryFinder.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Tool/ExecutionResult.php"><a href="files/tool-executionresult.html"><abbr title="Tool/ExecutionResult.php">ExecutionResult.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Assemble a git client from necessary parts</p>
+            <p class="phpdocumentor-summary">The results of an executed command</p>
 
+    <section class="phpdocumentor-description"><p>TODO: Figure where we can put this for reuse without creating an ever-growing blob</p>
+</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -153,6 +157,18 @@
 
 
 
+<h3 id="interfaces_class_traits">
+    Interfaces, Classes, Traits and Enums
+    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Stringable">Stringable</abbr></dt>
+        <dd></dd>
+    
+    
+    
+    </dl>
 
 
 <h3 id="toc">
@@ -162,23 +178,51 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Horde-Vcs-Git-Tool-GitBinaryFinder.html#property_defaultLocations">$defaultLocations</a>
+    <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#property_code">$code</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#property_output">$output</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd>Default locations to look for the git client</dd>
+<dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Vcs-Git-Tool-GitBinaryFinder.html#method___invoke">__invoke()</a>
+    <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#method___toString">__toString()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Run the finder</dd>
+<dd>The execution&#039;s output as a string</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Vcs-Git-Tool-GitBinaryFinder.html#method_find">find()</a>
+    <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#method_getOutputArray">getOutputArray()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, string&gt;    </span>
+</dt>
+<dd>The execution&#039;s output as potentially empty array of strings</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#method_getOutputString">getOutputString()</a>
     <span>
                                 &nbsp;: string    </span>
+</dt>
+<dd>The execution&#039;s output as a string</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#method_getReturnCode">getReturnCode()</a>
+    <span>
+                                &nbsp;: int    </span>
 </dt>
 <dd></dd>
 
@@ -192,7 +236,7 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Horde-Vcs-Git-Tool-GitBinaryFinder.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -201,29 +245,64 @@
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_defaultLocations">
-        $defaultLocations
-        <a href="classes/Horde-Vcs-Git-Tool-GitBinaryFinder.html#property_defaultLocations" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_code">
+        $code
+        <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#property_code" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Git/Tool/GitBinaryFinder.php"><a href="files/git-tool-gitbinaryfinder.html"><abbr title="Git/Tool/GitBinaryFinder.php">GitBinaryFinder.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Tool/ExecutionResult.php"><a href="files/tool-executionresult.html"><abbr title="Tool/ExecutionResult.php">ExecutionResult.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Default locations to look for the git client</p>
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$code</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
 
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_output">
+        $output
+        <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#property_output" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Tool/ExecutionResult.php"><a href="files/tool-executionresult.html"><abbr title="Tool/ExecutionResult.php">ExecutionResult.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">27</span>
+
+    </aside>
+
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$defaultLocations</span>
-     = <span class="phpdocumentor-signature__default-value">[&#039;/usr/bin/git&#039;, &#039;/bin/git&#039;, &#039;/usr/local/bin/git&#039;]</span></code>
+    <span class="phpdocumentor-signature__name">$output</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
-    
-    
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -232,7 +311,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Vcs-Git-Tool-GitBinaryFinder.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -240,22 +319,74 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method___invoke">
-        __invoke()
-        <a href="classes/Horde-Vcs-Git-Tool-GitBinaryFinder.html#method___invoke" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Git/Tool/GitBinaryFinder.php"><a href="files/git-tool-gitbinaryfinder.html"><abbr title="Git/Tool/GitBinaryFinder.php">GitBinaryFinder.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Tool/ExecutionResult.php"><a href="files/tool-executionresult.html"><abbr title="Tool/ExecutionResult.php">ExecutionResult.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Run the finder</p>
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$output</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$code</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$output</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$code</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___toString">
+        __toString()
+        <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#method___toString" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Tool/ExecutionResult.php"><a href="files/tool-executionresult.html"><abbr title="Tool/ExecutionResult.php">ExecutionResult.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The execution&#039;s output as a string</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__invoke</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">__toString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
     
@@ -273,21 +404,87 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_find">
-        find()
-        <a href="classes/Horde-Vcs-Git-Tool-GitBinaryFinder.html#method_find" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getOutputArray">
+        getOutputArray()
+        <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#method_getOutputArray" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Git/Tool/GitBinaryFinder.php"><a href="files/git-tool-gitbinaryfinder.html"><abbr title="Git/Tool/GitBinaryFinder.php">GitBinaryFinder.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Tool/ExecutionResult.php"><a href="files/tool-executionresult.html"><abbr title="Tool/ExecutionResult.php">ExecutionResult.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The execution&#039;s output as potentially empty array of strings</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getOutputArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getOutputString">
+        getOutputString()
+        <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#method_getOutputString" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Tool/ExecutionResult.php"><a href="files/tool-executionresult.html"><abbr title="Tool/ExecutionResult.php">ExecutionResult.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The execution&#039;s output as a string</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getOutputString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getReturnCode">
+        getReturnCode()
+        <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#method_getReturnCode" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Tool/ExecutionResult.php"><a href="files/tool-executionresult.html"><abbr title="Tool/ExecutionResult.php">ExecutionResult.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">find</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getReturnCode</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -295,7 +492,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type">int</span>
             &mdash;
         
     
@@ -378,7 +575,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Vcs-Git-Tool-GitBinaryFinder.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Vcs-Tool-ExecutionResult.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

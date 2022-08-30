@@ -1416,55 +1416,65 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Vcs-Git-Tool-GitBinaryFinder.html#method_find"
         },                {
-            "fqsen": "\\Horde\\Vcs\\Git\\Tool\\GitBinaryFinder\u003A\u003ArunWhich\u0028\u0029",
-            "name": "runWhich",
-            "summary": "",
-            "url": "classes/Horde-Vcs-Git-Tool-GitBinaryFinder.html#method_runWhich"
-        },                {
             "fqsen": "\\Horde\\Vcs\\Git\\Tool\\GitBinaryFinder\u003A\u003A\u0024defaultLocations",
             "name": "defaultLocations",
             "summary": "Default\u0020locations\u0020to\u0020look\u0020for\u0020the\u0020git\u0020client",
             "url": "classes/Horde-Vcs-Git-Tool-GitBinaryFinder.html#property_defaultLocations"
         },                {
-            "fqsen": "\\Horde\\Vcs\\Tools\\ExecutionResult",
+            "fqsen": "\\Horde\\Vcs\\Tool\\ExecutionResult",
             "name": "ExecutionResult",
             "summary": "The\u0020results\u0020of\u0020an\u0020executed\u0020command",
-            "url": "classes/Horde-Vcs-Tools-ExecutionResult.html"
+            "url": "classes/Horde-Vcs-Tool-ExecutionResult.html"
         },                {
-            "fqsen": "\\Horde\\Vcs\\Tools\\ExecutionResult\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Horde\\Vcs\\Tool\\ExecutionResult\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Horde-Vcs-Tools-ExecutionResult.html#method___construct"
+            "url": "classes/Horde-Vcs-Tool-ExecutionResult.html#method___construct"
         },                {
-            "fqsen": "\\Horde\\Vcs\\Tools\\ExecutionResult\u003A\u003A\u0024output",
+            "fqsen": "\\Horde\\Vcs\\Tool\\ExecutionResult\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "The\u0020execution\u0027s\u0020output\u0020as\u0020a\u0020string",
+            "url": "classes/Horde-Vcs-Tool-ExecutionResult.html#method___toString"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Tool\\ExecutionResult\u003A\u003AgetOutputString\u0028\u0029",
+            "name": "getOutputString",
+            "summary": "The\u0020execution\u0027s\u0020output\u0020as\u0020a\u0020string",
+            "url": "classes/Horde-Vcs-Tool-ExecutionResult.html#method_getOutputString"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Tool\\ExecutionResult\u003A\u003AgetOutputArray\u0028\u0029",
+            "name": "getOutputArray",
+            "summary": "The\u0020execution\u0027s\u0020output\u0020as\u0020potentially\u0020empty\u0020array\u0020of\u0020strings",
+            "url": "classes/Horde-Vcs-Tool-ExecutionResult.html#method_getOutputArray"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Tool\\ExecutionResult\u003A\u003AgetReturnCode\u0028\u0029",
+            "name": "getReturnCode",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Tool-ExecutionResult.html#method_getReturnCode"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Tool\\ExecutionResult\u003A\u003A\u0024output",
             "name": "output",
             "summary": "",
-            "url": "classes/Horde-Vcs-Tools-ExecutionResult.html#property_output"
+            "url": "classes/Horde-Vcs-Tool-ExecutionResult.html#property_output"
         },                {
-            "fqsen": "\\Horde\\Vcs\\Tools\\ExecutionResult\u003A\u003A\u0024code",
+            "fqsen": "\\Horde\\Vcs\\Tool\\ExecutionResult\u003A\u003A\u0024code",
             "name": "code",
             "summary": "",
-            "url": "classes/Horde-Vcs-Tools-ExecutionResult.html#property_code"
+            "url": "classes/Horde-Vcs-Tool-ExecutionResult.html#property_code"
         },                {
-            "fqsen": "\\Horde\\Vcs\\Tools\\ShellExecutor",
-            "name": "ShellExecutor",
+            "fqsen": "\\Horde\\Vcs\\Tool\\Executor",
+            "name": "Executor",
             "summary": "Run\u0020a\u0020command\u0020in\u0020shell\u0020context",
-            "url": "classes/Horde-Vcs-Tools-ShellExecutor.html"
+            "url": "classes/Horde-Vcs-Tool-Executor.html"
         },                {
-            "fqsen": "\\Horde\\Vcs\\Tools\\ShellExecutor\u003A\u003A__invoke\u0028\u0029",
+            "fqsen": "\\Horde\\Vcs\\Tool\\Executor\u003A\u003A__invoke\u0028\u0029",
             "name": "__invoke",
             "summary": "Run\u0020the\u0020command",
-            "url": "classes/Horde-Vcs-Tools-ShellExecutor.html#method___invoke"
+            "url": "classes/Horde-Vcs-Tool-Executor.html#method___invoke"
         },                {
             "fqsen": "\\Horde\\Vcs\\Tools\\ToolNotFoundException",
             "name": "ToolNotFoundException",
             "summary": "Run\u0020a\u0020command\u0020in\u0020shell\u0020context",
             "url": "classes/Horde-Vcs-Tools-ToolNotFoundException.html"
-        },                {
-            "fqsen": "\\Horde\\Vcs\\Tools\\ToolNotFoundException\u003A\u003A__invoke\u0028\u0029",
-            "name": "__invoke",
-            "summary": "Run\u0020the\u0020command",
-            "url": "classes/Horde-Vcs-Tools-ToolNotFoundException.html#method___invoke"
         },                {
             "fqsen": "\\",
             "name": "\\",
@@ -1490,6 +1500,11 @@ Search.appendIndex(
             "name": "Tool",
             "summary": "",
             "url": "namespaces/horde-vcs-git-tool.html"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Tool",
+            "name": "Tool",
+            "summary": "",
+            "url": "namespaces/horde-vcs-tool.html"
         },                {
             "fqsen": "\\Horde\\Vcs\\Tools",
             "name": "Tools",
