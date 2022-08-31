@@ -119,7 +119,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Git/GitClient.php"><a href="files/git-gitclient.html"><abbr title="Git/GitClient.php">GitClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -176,16 +176,16 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Horde-Vcs-Git-GitClient.html#property_gitBinary">$gitBinary</a>
+    <a href="classes/Horde-Vcs-Git-GitClient.html#property_config">$config</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: <a href="classes/Horde-Vcs-Git-GitClientConfig.html"><abbr title="\Horde\Vcs\Git\GitClientConfig">GitClientConfig</abbr></a>            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Horde-Vcs-Git-GitClient.html#property_localRepository">$localRepository</a>
+    <a href="classes/Horde-Vcs-Git-GitClient.html#property_logger">$logger</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: <abbr title="\Horde\Log\LoggerInterface">LoggerInterface</abbr>            </span>
 </dt>
 <dd></dd>
 
@@ -194,7 +194,7 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
+<dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Vcs-Git-GitClient.html#method_cloneRemoteRepository">cloneRemoteRepository()</a>
@@ -229,24 +229,24 @@
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_gitBinary">
-        $gitBinary
-        <a href="classes/Horde-Vcs-Git-GitClient.html#property_gitBinary" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_config">
+        $config
+        <a href="classes/Horde-Vcs-Git-GitClient.html#property_config" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Git/GitClient.php"><a href="files/git-gitclient.html"><abbr title="Git/GitClient.php">GitClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$gitBinary</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Vcs-Git-GitClientConfig.html"><abbr title="\Horde\Vcs\Git\GitClientConfig">GitClientConfig</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$config</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -263,25 +263,25 @@
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_localRepository">
-        $localRepository
-        <a href="classes/Horde-Vcs-Git-GitClient.html#property_localRepository" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_logger">
+        $logger
+        <a href="classes/Horde-Vcs-Git-GitClient.html#property_logger" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Git/GitClient.php"><a href="files/git-gitclient.html"><abbr title="Git/GitClient.php">GitClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$localRepository</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+        <span class="phpdocumentor-signature__type"><abbr title="\Horde\Log\LoggerInterface">LoggerInterface</abbr></span>
+    <span class="phpdocumentor-signature__name">$logger</span>
+     = <span class="phpdocumentor-signature__default-value">new NullLogger()</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -310,33 +310,35 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Git/GitClient.php"><a href="files/git-gitclient.html"><abbr title="Git/GitClient.php">GitClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Constructor.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$gitBinary</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$localRepository</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Vcs-Git-GitClientConfig.html"><abbr title="\Horde\Vcs\Git\GitClientConfig">GitClientConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Log\LoggerInterface">LoggerInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logger</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new NullLogger()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$gitBinary</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Vcs-Git-GitClientConfig.html"><abbr title="\Horde\Vcs\Git\GitClientConfig">GitClientConfig</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Settings for the client</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$localRepository</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+                <span class="phpdocumentor-signature__argument__name">$logger</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Log\LoggerInterface">LoggerInterface</abbr></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">new NullLogger()</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>PSR-3 Logger, defaults to null logger</p>
+</section>
 
             </dd>
             </dl>
@@ -362,7 +364,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Git/GitClient.php"><a href="files/git-gitclient.html"><abbr title="Git/GitClient.php">GitClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -406,7 +408,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Git/GitClient.php"><a href="files/git-gitclient.html"><abbr title="Git/GitClient.php">GitClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 

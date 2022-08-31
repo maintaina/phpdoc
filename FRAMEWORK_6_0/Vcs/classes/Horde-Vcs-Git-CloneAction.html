@@ -95,12 +95,12 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-vcs.html">Vcs</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-vcs-tool.html">Tool</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-vcs-git.html">Git</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Executor
+    CloneAction
 
     
             <div class="phpdocumentor-element__package">
@@ -114,42 +114,16 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Tool/Executor.php"><a href="files/tool-executor.html"><abbr title="Tool/Executor.php">Executor.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Git/Action/CloneAction.php"><a href="files/git-action-cloneaction.html"><abbr title="Git/Action/CloneAction.php">CloneAction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Run a command in shell context</p>
-
-    <section class="phpdocumentor-description"><p>TODO: Figure where we can put this for reuse without creating an ever-growing blob</p>
-</section>
+        
+    <section class="phpdocumentor-description"></section>
 
 
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">author</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Ralf Lang <a href="mailto:ralf.lang@ralf-lang.de">ralf.lang@ralf-lang.de</a></p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">copyright</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>2008-2022 Horde LLC</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
 
 
@@ -163,25 +137,32 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Horde-Vcs-Tool-Executor.html#property_logger">$logger</a>
+    <a href="classes/Horde-Vcs-Git-CloneAction.html#property_logger">$logger</a>
     <span>
-                        &nbsp;: <abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>            </span>
+                        &nbsp;: <abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>|null            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Horde-Vcs-Git-CloneAction.html#property_pretend">$pretend</a>
+    <span>
+                        &nbsp;: bool            </span>
 </dt>
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Vcs-Tool-Executor.html#method___construct">__construct()</a>
+    <a href="classes/Horde-Vcs-Git-CloneAction.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Vcs-Tool-Executor.html#method___invoke">__invoke()</a>
+    <a href="classes/Horde-Vcs-Git-CloneAction.html#method_clone">clone()</a>
     <span>
                                 &nbsp;: <a href="classes/Horde-Vcs-Tool-ExecutionResult.html"><abbr title="\Horde\Vcs\Tool\ExecutionResult">ExecutionResult</abbr></a>    </span>
 </dt>
-<dd>Run the command</dd>
+<dd>Clone a remote repo (primitive)</dd>
 
         </dl>
 
@@ -193,7 +174,7 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Horde-Vcs-Tool-Executor.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Vcs-Git-CloneAction.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -204,23 +185,57 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_logger">
         $logger
-        <a href="classes/Horde-Vcs-Tool-Executor.html#property_logger" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Vcs-Git-CloneAction.html#property_logger" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Tool/Executor.php"><a href="files/tool-executor.html"><abbr title="Tool/Executor.php">Executor.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Git/Action/CloneAction.php"><a href="files/git-action-cloneaction.html"><abbr title="Git/Action/CloneAction.php">CloneAction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr></span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>|null</span>
     <span class="phpdocumentor-signature__name">$logger</span>
-     = <span class="phpdocumentor-signature__default-value">new NullLogger()</span></code>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_pretend">
+        $pretend
+        <a href="classes/Horde-Vcs-Git-CloneAction.html#property_pretend" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Git/Action/CloneAction.php"><a href="files/git-action-cloneaction.html"><abbr title="Git/Action/CloneAction.php">CloneAction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">22</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$pretend</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -234,7 +249,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Vcs-Tool-Executor.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Vcs-Git-CloneAction.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -244,19 +259,19 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Horde-Vcs-Tool-Executor.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Vcs-Git-CloneAction.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Tool/Executor.php"><a href="files/tool-executor.html"><abbr title="Tool/Executor.php">Executor.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Git/Action/CloneAction.php"><a href="files/git-action-cloneaction.html"><abbr title="Git/Action/CloneAction.php">CloneAction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logger</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new NullLogger()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logger</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pretend</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -264,8 +279,16 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$logger</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">new NullLogger()</span>            </dt>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pretend</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -286,41 +309,51 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method___invoke">
-        __invoke()
-        <a href="classes/Horde-Vcs-Tool-Executor.html#method___invoke" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_clone">
+        clone()
+        <a href="classes/Horde-Vcs-Git-CloneAction.html#method_clone" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Tool/Executor.php"><a href="files/tool-executor.html"><abbr title="Tool/Executor.php">Executor.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Git/Action/CloneAction.php"><a href="files/git-action-cloneaction.html"><abbr title="Git/Action/CloneAction.php">CloneAction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Run the command</p>
+        <p class="phpdocumentor-summary">Clone a remote repo (primitive)</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__invoke</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">non-empty-string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cmd</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$throwOnNonZero</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Vcs-Tool-ExecutionResult.html"><abbr title="\Horde\Vcs\Tool\ExecutionResult">ExecutionResult</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">clone</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$localDir</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$branch</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Vcs-Tool-ExecutionResult.html"><abbr title="\Horde\Vcs\Tool\ExecutionResult">ExecutionResult</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$cmd</span>
-                : <span class="phpdocumentor-signature__argument__return-type">non-empty-string</span>
+                <span class="phpdocumentor-signature__argument__name">$uri</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The complete command to run including all parameters</p>
+                    <section class="phpdocumentor-description"><p>The remote repo to clone</p>
 </section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$throwOnNonZero</span>
+                <span class="phpdocumentor-signature__argument__name">$localDir</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The local target dir</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$branch</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Optional: Checkout a specific branch</p>
+</section>
 
             </dd>
             </dl>
@@ -411,7 +444,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Vcs-Tool-Executor.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Vcs-Git-CloneAction.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

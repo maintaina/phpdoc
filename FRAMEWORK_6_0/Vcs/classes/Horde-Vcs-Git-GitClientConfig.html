@@ -95,12 +95,12 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-vcs.html">Vcs</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-vcs-tool.html">Tool</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-vcs-git.html">Git</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Executor
+    GitClientConfig
 
     
             <div class="phpdocumentor-element__package">
@@ -114,16 +114,14 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Tool/Executor.php"><a href="files/tool-executor.html"><abbr title="Tool/Executor.php">Executor.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Git/GitClientConfig.php"><a href="files/git-gitclientconfig.html"><abbr title="Git/GitClientConfig.php">GitClientConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Run a command in shell context</p>
+            <p class="phpdocumentor-summary">Holds settings for the git client but not dependencies</p>
 
-    <section class="phpdocumentor-description"><p>TODO: Figure where we can put this for reuse without creating an ever-growing blob</p>
-</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -162,28 +160,21 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Horde-Vcs-Tool-Executor.html#property_logger">$logger</a>
+                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Horde-Vcs-Git-GitClientConfig.html#property_currentRepoPath">$currentRepoPath</a>
     <span>
-                        &nbsp;: <abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>            </span>
+                        &nbsp;: string|null            </span>
 </dt>
 <dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Vcs-Tool-Executor.html#method___construct">__construct()</a>
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Horde-Vcs-Git-GitClientConfig.html#property_gitBinPath">$gitBinPath</a>
     <span>
-                                &nbsp;: mixed    </span>
+                        &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Vcs-Tool-Executor.html#method___invoke">__invoke()</a>
-    <span>
-                                &nbsp;: <a href="classes/Horde-Vcs-Tool-ExecutionResult.html"><abbr title="\Horde\Vcs\Tool\ExecutionResult">ExecutionResult</abbr></a>    </span>
-</dt>
-<dd>Run the command</dd>
-
-        </dl>
+            </dl>
 
 
 
@@ -193,34 +184,68 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Horde-Vcs-Tool-Executor.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Vcs-Git-GitClientConfig.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
             phpdocumentor-element
             -property
-            -private
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_logger">
-        $logger
-        <a href="classes/Horde-Vcs-Tool-Executor.html#property_logger" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_currentRepoPath">
+        $currentRepoPath
+        <a href="classes/Horde-Vcs-Git-GitClientConfig.html#property_currentRepoPath" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Tool/Executor.php"><a href="files/tool-executor.html"><abbr title="Tool/Executor.php">Executor.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Git/GitClientConfig.php"><a href="files/git-gitclientconfig.html"><abbr title="Git/GitClientConfig.php">GitClientConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr></span>
-    <span class="phpdocumentor-signature__name">$logger</span>
-     = <span class="phpdocumentor-signature__default-value">new NullLogger()</span></code>
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$currentRepoPath</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_gitBinPath">
+        $gitBinPath
+        <a href="classes/Horde-Vcs-Git-GitClientConfig.html#property_gitBinPath" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Git/GitClientConfig.php"><a href="files/git-gitclientconfig.html"><abbr title="Git/GitClientConfig.php">GitClientConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">23</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$gitBinPath</span>
+    </code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -231,110 +256,7 @@
 </article>
             </section>
 
-            <section class="phpdocumentor-methods">
-        <h3 class="phpdocumentor-elements__header" id="methods">
-            Methods
-            <a href="classes/Horde-Vcs-Tool-Executor.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/Horde-Vcs-Tool-Executor.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Tool/Executor.php"><a href="files/tool-executor.html"><abbr title="Tool/Executor.php">Executor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">28</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logger</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">new NullLogger()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$logger</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">new NullLogger()</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
         
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___invoke">
-        __invoke()
-        <a href="classes/Horde-Vcs-Tool-Executor.html#method___invoke" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Tool/Executor.php"><a href="files/tool-executor.html"><abbr title="Tool/Executor.php">Executor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">40</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Run the command</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__invoke</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">non-empty-string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cmd</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$throwOnNonZero</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Vcs-Tool-ExecutionResult.html"><abbr title="\Horde\Vcs\Tool\ExecutionResult">ExecutionResult</abbr></a></span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$cmd</span>
-                : <span class="phpdocumentor-signature__argument__return-type">non-empty-string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The complete command to run including all parameters</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$throwOnNonZero</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Vcs-Tool-ExecutionResult.html"><abbr title="\Horde\Vcs\Tool\ExecutionResult">ExecutionResult</abbr></a></span>
-            &mdash;
-        
-    
-</article>
-            </section>
-
         
     <script type="text/javascript">
         function loadExternalCodeSnippets(line) {
@@ -411,7 +333,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Vcs-Tool-Executor.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Vcs-Git-GitClientConfig.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

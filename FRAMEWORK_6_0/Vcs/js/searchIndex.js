@@ -1386,6 +1386,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Vcs.html#constant_SORT_DESCENDING"
         },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\CloneAction",
+            "name": "CloneAction",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-CloneAction.html"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\CloneAction\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-CloneAction.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\CloneAction\u003A\u003Aclone\u0028\u0029",
+            "name": "clone",
+            "summary": "Clone\u0020a\u0020remote\u0020repo\u0020\u0028primitive\u0029",
+            "url": "classes/Horde-Vcs-Git-CloneAction.html#method_clone"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\CloneAction\u003A\u003A\u0024logger",
+            "name": "logger",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-CloneAction.html#property_logger"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\CloneAction\u003A\u003A\u0024pretend",
+            "name": "pretend",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-CloneAction.html#property_pretend"
+        },                {
             "fqsen": "\\Horde\\Vcs\\Git\\GitClient",
             "name": "GitClient",
             "summary": "Public\u0020facade\u0020to\u0020programmatically\u0020use\u0020git",
@@ -1393,7 +1418,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Vcs\\Git\\GitClient\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Constructor.",
             "url": "classes/Horde-Vcs-Git-GitClient.html#method___construct"
         },                {
             "fqsen": "\\Horde\\Vcs\\Git\\GitClient\u003A\u003AselectLocalRepository\u0028\u0029",
@@ -1406,15 +1431,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Vcs-Git-GitClient.html#method_cloneRemoteRepository"
         },                {
-            "fqsen": "\\Horde\\Vcs\\Git\\GitClient\u003A\u003A\u0024gitBinary",
-            "name": "gitBinary",
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClient\u003A\u003A\u0024config",
+            "name": "config",
             "summary": "",
-            "url": "classes/Horde-Vcs-Git-GitClient.html#property_gitBinary"
+            "url": "classes/Horde-Vcs-Git-GitClient.html#property_config"
         },                {
-            "fqsen": "\\Horde\\Vcs\\Git\\GitClient\u003A\u003A\u0024localRepository",
-            "name": "localRepository",
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClient\u003A\u003A\u0024logger",
+            "name": "logger",
             "summary": "",
-            "url": "classes/Horde-Vcs-Git-GitClient.html#property_localRepository"
+            "url": "classes/Horde-Vcs-Git-GitClient.html#property_logger"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClientConfig",
+            "name": "GitClientConfig",
+            "summary": "Holds\u0020settings\u0020for\u0020the\u0020git\u0020client\u0020but\u0020not\u0020dependencies",
+            "url": "classes/Horde-Vcs-Git-GitClientConfig.html"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClientConfig\u003A\u003A\u0024gitBinPath",
+            "name": "gitBinPath",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-GitClientConfig.html#property_gitBinPath"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClientConfig\u003A\u003A\u0024currentRepoPath",
+            "name": "currentRepoPath",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-GitClientConfig.html#property_currentRepoPath"
         },                {
             "fqsen": "\\Horde\\Vcs\\Git\\GitClientFactory",
             "name": "GitClientFactory",
@@ -1426,15 +1466,35 @@ Search.appendIndex(
             "summary": "Constructor.",
             "url": "classes/Horde-Vcs-Git-GitClientFactory.html#method___construct"
         },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClientFactory\u003A\u003AcreateClientConfig\u0028\u0029",
+            "name": "createClientConfig",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-GitClientFactory.html#method_createClientConfig"
+        },                {
             "fqsen": "\\Horde\\Vcs\\Git\\GitClientFactory\u003A\u003AcreateClient\u0028\u0029",
             "name": "createClient",
             "summary": "",
             "url": "classes/Horde-Vcs-Git-GitClientFactory.html#method_createClient"
         },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClientFactory\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-GitClientFactory.html#property_config"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClientFactory\u003A\u003A\u0024logger",
+            "name": "logger",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-GitClientFactory.html#property_logger"
+        },                {
             "fqsen": "\\Horde\\Vcs\\Git\\GitClientFactory\u003A\u003A\u0024gitBinary",
             "name": "gitBinary",
             "summary": "",
             "url": "classes/Horde-Vcs-Git-GitClientFactory.html#property_gitBinary"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Git\\GitClientFactory\u003A\u003A\u0024repoPath",
+            "name": "repoPath",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Git-GitClientFactory.html#property_repoPath"
         },                {
             "fqsen": "\\Horde\\Vcs\\Git\\GitClientInterface",
             "name": "GitClientInterface",
@@ -1488,7 +1548,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Vcs\\Tool\\ExecutionResult\u003A\u003AgetReturnCode\u0028\u0029",
             "name": "getReturnCode",
-            "summary": "",
+            "summary": "The\u0020return\u0020code\u0020of\u0020an\u0020execution\u0020or\u0020null",
             "url": "classes/Horde-Vcs-Tool-ExecutionResult.html#method_getReturnCode"
         },                {
             "fqsen": "\\Horde\\Vcs\\Tool\\ExecutionResult\u003A\u003A\u0024output",
@@ -1501,15 +1561,60 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Vcs-Tool-ExecutionResult.html#property_code"
         },                {
+            "fqsen": "\\Horde\\Vcs\\Tool\\ExecutionResultInterface",
+            "name": "ExecutionResultInterface",
+            "summary": "The\u0020results\u0020of\u0020an\u0020executed\u0020command",
+            "url": "classes/Horde-Vcs-Tool-ExecutionResultInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Tool\\ExecutionResultInterface\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "The\u0020execution\u0027s\u0020output\u0020as\u0020a\u0020string\u0020\u002D\u0020Stringable\u0020interface",
+            "url": "classes/Horde-Vcs-Tool-ExecutionResultInterface.html#method___toString"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Tool\\ExecutionResultInterface\u003A\u003AgetOutputString\u0028\u0029",
+            "name": "getOutputString",
+            "summary": "The\u0020execution\u0027s\u0020output\u0020as\u0020a\u0020string",
+            "url": "classes/Horde-Vcs-Tool-ExecutionResultInterface.html#method_getOutputString"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Tool\\ExecutionResultInterface\u003A\u003AgetOutputArray\u0028\u0029",
+            "name": "getOutputArray",
+            "summary": "The\u0020execution\u0027s\u0020output\u0020as\u0020potentially\u0020empty\u0020array\u0020of\u0020strings",
+            "url": "classes/Horde-Vcs-Tool-ExecutionResultInterface.html#method_getOutputArray"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Tool\\ExecutionResultInterface\u003A\u003AgetReturnCode\u0028\u0029",
+            "name": "getReturnCode",
+            "summary": "The\u0020return\u0020code\u0020of\u0020an\u0020execution\u0020or\u0020null",
+            "url": "classes/Horde-Vcs-Tool-ExecutionResultInterface.html#method_getReturnCode"
+        },                {
             "fqsen": "\\Horde\\Vcs\\Tool\\Executor",
             "name": "Executor",
             "summary": "Run\u0020a\u0020command\u0020in\u0020shell\u0020context",
             "url": "classes/Horde-Vcs-Tool-Executor.html"
         },                {
+            "fqsen": "\\Horde\\Vcs\\Tool\\Executor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Tool-Executor.html#method___construct"
+        },                {
             "fqsen": "\\Horde\\Vcs\\Tool\\Executor\u003A\u003A__invoke\u0028\u0029",
             "name": "__invoke",
             "summary": "Run\u0020the\u0020command",
             "url": "classes/Horde-Vcs-Tool-Executor.html#method___invoke"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Tool\\Executor\u003A\u003A\u0024logger",
+            "name": "logger",
+            "summary": "",
+            "url": "classes/Horde-Vcs-Tool-Executor.html#property_logger"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Tool\\ExecutorInterface",
+            "name": "ExecutorInterface",
+            "summary": "Run\u0020a\u0020command\u0020in\u0020shell\u0020context",
+            "url": "classes/Horde-Vcs-Tool-ExecutorInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Vcs\\Tool\\ExecutorInterface\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "Run\u0020the\u0020command",
+            "url": "classes/Horde-Vcs-Tool-ExecutorInterface.html#method___invoke"
         },                {
             "fqsen": "\\Horde\\Vcs\\Tools\\ToolNotFoundException",
             "name": "ToolNotFoundException",
