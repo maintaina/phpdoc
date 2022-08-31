@@ -2236,6 +2236,61 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Components-Helper-Git.html#property_cwd"
         },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Installer",
+            "name": "Installer",
+            "summary": "Components_Helper_Installer\u003A\u003A\u0020provides\u0020an\u0020installation\u0020helper.",
+            "url": "classes/Horde-Components-Helper-Installer.html"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Installer\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Horde-Components-Helper-Installer.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Installer\u003A\u003AinstallTree\u0028\u0029",
+            "name": "installTree",
+            "summary": "Install\u0020a\u0020component\u0020with\u0020its\u0020dependencies\u0020into\u0020the\u0020environment.",
+            "url": "classes/Horde-Components-Helper-Installer.html#method_installTree"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Installer\u003A\u003A_installDependencies\u0028\u0029",
+            "name": "_installDependencies",
+            "summary": "Install\u0020the\u0020dependencies\u0020of\u0020a\u0020component.",
+            "url": "classes/Horde-Components-Helper-Installer.html#method__installDependencies"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Installer\u003A\u003A_installComponent\u0028\u0029",
+            "name": "_installComponent",
+            "summary": "Ensure\u0020that\u0020the\u0020component\u0020is\u0020available\u0020within\u0020the\u0020installation\nenvironment.",
+            "url": "classes/Horde-Components-Helper-Installer.html#method__installComponent"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Installer\u003A\u003A_getPerComponentOptions\u0028\u0029",
+            "name": "_getPerComponentOptions",
+            "summary": "Identify\u0020the\u0020per\u0020component\u0020options.",
+            "url": "classes/Horde-Components-Helper-Installer.html#method__getPerComponentOptions"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Installer\u003A\u003A_deletePrevious\u0028\u0029",
+            "name": "_deletePrevious",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Installer.html#method__deletePrevious"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Installer\u003A\u003A\u0024_environment",
+            "name": "_environment",
+            "summary": "The\u0020environment\u0020the\u0020helper\u0020installs\u0020into.",
+            "url": "classes/Horde-Components-Helper-Installer.html#property__environment"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Installer\u003A\u003A\u0024_output",
+            "name": "_output",
+            "summary": "The\u0020output\u0020handler.",
+            "url": "classes/Horde-Components-Helper-Installer.html#property__output"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Installer\u003A\u003A\u0024_installed_components",
+            "name": "_installed_components",
+            "summary": "The\u0020list\u0020of\u0020components\u0020already\u0020installed.",
+            "url": "classes/Horde-Components-Helper-Installer.html#property__installed_components"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Installer\u003A\u003A\u0024_per_component_options",
+            "name": "_per_component_options",
+            "summary": "Per\u0020component\u0020options.",
+            "url": "classes/Horde-Components-Helper-Installer.html#property__per_component_options"
+        },                {
             "fqsen": "\\Horde\\Components\\Helper\\Root",
             "name": "Root",
             "summary": "Components_Helper_Root\u003A\u003A\u0020handles\u0020the\u0020root\u0020position\u0020for\u0020a\u0020tree\u0020of\u0020dependencies\nand\u0020takes\u0020the\u0020Horde\u0020component\u0020layout\u0020into\u0020account.",
