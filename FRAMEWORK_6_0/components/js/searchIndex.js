@@ -288,12 +288,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Component\\Base\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
+            "summary": "",
             "url": "classes/Horde-Components-Component-Base.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Component\\Base\u003A\u003A\u0024_factory",
             "name": "_factory",
-            "summary": "The\u0020factory\u0020for\u0020additional\u0020helpers.",
+            "summary": "",
             "url": "classes/Horde-Components-Component-Base.html#property__factory"
         },                {
             "fqsen": "\\Horde\\Components\\Component\\Dependency",
@@ -393,12 +393,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Component\\Dependency\u003A\u003A\u0024_dependency",
             "name": "_dependency",
-            "summary": "Original\u0020dependency\u0020information.",
+            "summary": "",
             "url": "classes/Horde-Components-Component-Dependency.html#property__dependency"
         },                {
             "fqsen": "\\Horde\\Components\\Component\\Dependency\u003A\u003A\u0024_factory",
             "name": "_factory",
-            "summary": "The\u0020factory\u0020for\u0020the\u0020component\u0020representation\u0020of\u0020a\u0020dependency.",
+            "summary": "",
             "url": "classes/Horde-Components-Component-Dependency.html#property__factory"
         },                {
             "fqsen": "\\Horde\\Components\\Component\\DependencyList",
@@ -451,6 +451,11 @@ Search.appendIndex(
             "summary": "Implementation\u0020of\u0020the\u0020Iterator\u0020valid\u0028\u0029\u0020method.\u0020Indicates\u0020if\u0020the\u0020current\u0020element\u0020is\u0020a\u0020valid\u0020element.",
             "url": "classes/Horde-Components-Component-DependencyList.html#method_valid"
         },                {
+            "fqsen": "\\Horde\\Components\\Component\\DependencyList\u003A\u003A\u0024_dependencies",
+            "name": "_dependencies",
+            "summary": "The\u0020dependency\u0020list.",
+            "url": "classes/Horde-Components-Component-DependencyList.html#property__dependencies"
+        },                {
             "fqsen": "\\Horde\\Components\\Component\\DependencyList\u003A\u003A\u0024_component",
             "name": "_component",
             "summary": "The\u0020component.",
@@ -460,11 +465,6 @@ Search.appendIndex(
             "name": "_factory",
             "summary": "Factory\u0020helper.",
             "url": "classes/Horde-Components-Component-DependencyList.html#property__factory"
-        },                {
-            "fqsen": "\\Horde\\Components\\Component\\DependencyList\u003A\u003A\u0024_dependencies",
-            "name": "_dependencies",
-            "summary": "The\u0020dependency\u0020list.",
-            "url": "classes/Horde-Components-Component-DependencyList.html#property__dependencies"
         },                {
             "fqsen": "\\Horde\\Components\\Component\\Factory",
             "name": "Factory",
@@ -566,26 +566,6 @@ Search.appendIndex(
             "summary": "Creates\u0020a\u0020new\u0020content\u0020listing\u0020for\u0020a\u0020theme.",
             "url": "classes/Horde-Components-Component-Factory.html#method_createThemeContentList"
         },                {
-            "fqsen": "\\Horde\\Components\\Component\\Factory\u003A\u003A\u0024_config",
-            "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
-            "url": "classes/Horde-Components-Component-Factory.html#property__config"
-        },                {
-            "fqsen": "\\Horde\\Components\\Component\\Factory\u003A\u003A\u0024_factory",
-            "name": "_factory",
-            "summary": "The\u0020factory\u0020for\u0020PEAR\u0020handlers.",
-            "url": "classes/Horde-Components-Component-Factory.html#property__factory"
-        },                {
-            "fqsen": "\\Horde\\Components\\Component\\Factory\u003A\u003A\u0024_client",
-            "name": "_client",
-            "summary": "The\u0020HTTP\u0020client\u0020for\u0020remote\u0020access.",
-            "url": "classes/Horde-Components-Component-Factory.html#property__client"
-        },                {
-            "fqsen": "\\Horde\\Components\\Component\\Factory\u003A\u003A\u0024_output",
-            "name": "_output",
-            "summary": "The\u0020output\u0020handler.",
-            "url": "classes/Horde-Components-Component-Factory.html#property__output"
-        },                {
             "fqsen": "\\Horde\\Components\\Component\\Factory\u003A\u003A\u0024_first_source",
             "name": "_first_source",
             "summary": "The\u0020first\u0020source\u0020component\u0020generated",
@@ -601,9 +581,29 @@ Search.appendIndex(
             "summary": "The\u0020resolver\u0020instance.",
             "url": "classes/Horde-Components-Component-Factory.html#property__resolver"
         },                {
+            "fqsen": "\\Horde\\Components\\Component\\Factory\u003A\u003A\u0024_config",
+            "name": "_config",
+            "summary": "",
+            "url": "classes/Horde-Components-Component-Factory.html#property__config"
+        },                {
+            "fqsen": "\\Horde\\Components\\Component\\Factory\u003A\u003A\u0024_factory",
+            "name": "_factory",
+            "summary": "",
+            "url": "classes/Horde-Components-Component-Factory.html#property__factory"
+        },                {
+            "fqsen": "\\Horde\\Components\\Component\\Factory\u003A\u003A\u0024_client",
+            "name": "_client",
+            "summary": "",
+            "url": "classes/Horde-Components-Component-Factory.html#property__client"
+        },                {
+            "fqsen": "\\Horde\\Components\\Component\\Factory\u003A\u003A\u0024_output",
+            "name": "_output",
+            "summary": "",
+            "url": "classes/Horde-Components-Component-Factory.html#property__output"
+        },                {
             "fqsen": "\\Horde\\Components\\Component\\Factory\u003A\u003A\u0024_notes",
             "name": "_notes",
-            "summary": "The\u0020release\u0020notes\u0020handler.",
+            "summary": "",
             "url": "classes/Horde-Components-Component-Factory.html#property__notes"
         },                {
             "fqsen": "\\Horde\\Components\\Component\\Identify",
@@ -653,18 +653,28 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Component\\Identify\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020active\u0020configuration.",
+            "summary": "",
             "url": "classes/Horde-Components-Component-Identify.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Component\\Identify\u003A\u003A\u0024_actions",
             "name": "_actions",
-            "summary": "The\u0020list\u0020of\u0020available\u0020actions",
+            "summary": "",
             "url": "classes/Horde-Components-Component-Identify.html#property__actions"
         },                {
             "fqsen": "\\Horde\\Components\\Component\\Identify\u003A\u003A\u0024_dependencies",
             "name": "_dependencies",
-            "summary": "The\u0020dependency\u0020handler.",
+            "summary": "",
             "url": "classes/Horde-Components-Component-Identify.html#property__dependencies"
+        },                {
+            "fqsen": "\\Horde\\Components\\Component\\Matcher",
+            "name": "Matcher",
+            "summary": "Match\u0020an\u0020expression\u0020against\u0020a\u0020component.",
+            "url": "classes/Horde-Components-Component-Matcher.html"
+        },                {
+            "fqsen": "\\Horde\\Components\\Component\\Matcher\u003A\u003Amatches\u0028\u0029",
+            "name": "matches",
+            "summary": "Does\u0020the\u0020component\u0020match\u0020the\u0020given\u0020selector\u003F",
+            "url": "classes/Horde-Components-Component-Matcher.html#method_matches"
         },                {
             "fqsen": "\\Horde\\Components\\Component\\Remote",
             "name": "Remote",
@@ -726,26 +736,6 @@ Search.appendIndex(
             "summary": "Return\u0020a\u0020PEAR\u0020package\u0020representation\u0020for\u0020the\u0020component.",
             "url": "classes/Horde-Components-Component-Remote.html#method_getPackageXml"
         },                {
-            "fqsen": "\\Horde\\Components\\Component\\Remote\u003A\u003A\u0024_remote",
-            "name": "_remote",
-            "summary": "The\u0020remote\u0020handler.",
-            "url": "classes/Horde-Components-Component-Remote.html#property__remote"
-        },                {
-            "fqsen": "\\Horde\\Components\\Component\\Remote\u003A\u003A\u0024_name",
-            "name": "_name",
-            "summary": "Component\u0020name.",
-            "url": "classes/Horde-Components-Component-Remote.html#property__name"
-        },                {
-            "fqsen": "\\Horde\\Components\\Component\\Remote\u003A\u003A\u0024_channel",
-            "name": "_channel",
-            "summary": "Component\u0020channel.",
-            "url": "classes/Horde-Components-Component-Remote.html#property__channel"
-        },                {
-            "fqsen": "\\Horde\\Components\\Component\\Remote\u003A\u003A\u0024_stability",
-            "name": "_stability",
-            "summary": "Component\u0020stability.",
-            "url": "classes/Horde-Components-Component-Remote.html#property__stability"
-        },                {
             "fqsen": "\\Horde\\Components\\Component\\Remote\u003A\u003A\u0024_version",
             "name": "_version",
             "summary": "Component\u0020version.",
@@ -756,15 +746,35 @@ Search.appendIndex(
             "summary": "Download\u0020location\u0020for\u0020the\u0020component.",
             "url": "classes/Horde-Components-Component-Remote.html#property__uri"
         },                {
-            "fqsen": "\\Horde\\Components\\Component\\Remote\u003A\u003A\u0024_client",
-            "name": "_client",
-            "summary": "The\u0020HTTP\u0020client\u0020for\u0020remote\u0020access.",
-            "url": "classes/Horde-Components-Component-Remote.html#property__client"
-        },                {
             "fqsen": "\\Horde\\Components\\Component\\Remote\u003A\u003A\u0024_package",
             "name": "_package",
             "summary": "The\u0020package\u0020file\u0020representing\u0020the\u0020component.",
             "url": "classes/Horde-Components-Component-Remote.html#property__package"
+        },                {
+            "fqsen": "\\Horde\\Components\\Component\\Remote\u003A\u003A\u0024_name",
+            "name": "_name",
+            "summary": "",
+            "url": "classes/Horde-Components-Component-Remote.html#property__name"
+        },                {
+            "fqsen": "\\Horde\\Components\\Component\\Remote\u003A\u003A\u0024_stability",
+            "name": "_stability",
+            "summary": "",
+            "url": "classes/Horde-Components-Component-Remote.html#property__stability"
+        },                {
+            "fqsen": "\\Horde\\Components\\Component\\Remote\u003A\u003A\u0024_channel",
+            "name": "_channel",
+            "summary": "",
+            "url": "classes/Horde-Components-Component-Remote.html#property__channel"
+        },                {
+            "fqsen": "\\Horde\\Components\\Component\\Remote\u003A\u003A\u0024_remote",
+            "name": "_remote",
+            "summary": "",
+            "url": "classes/Horde-Components-Component-Remote.html#property__remote"
+        },                {
+            "fqsen": "\\Horde\\Components\\Component\\Remote\u003A\u003A\u0024_client",
+            "name": "_client",
+            "summary": "",
+            "url": "classes/Horde-Components-Component-Remote.html#property__client"
         },                {
             "fqsen": "\\Horde\\Components\\Component\\Resolver",
             "name": "Resolver",
@@ -801,20 +811,20 @@ Search.appendIndex(
             "summary": "Identify\u0020a\u0020dependency\u0020that\u0020is\u0020available\u0020via\u0020a\u0020downloaded\u0020\u002A.tgz\u0020archive.",
             "url": "classes/Horde-Components-Component-Resolver.html#method__identifyMatchingLocalPackage"
         },                {
-            "fqsen": "\\Horde\\Components\\Component\\Resolver\u003A\u003A\u0024_factory",
-            "name": "_factory",
-            "summary": "The\u0020factory\u0020for\u0020the\u0020component\u0020representation\u0020of\u0020a\u0020dependency.",
-            "url": "classes/Horde-Components-Component-Resolver.html#property__factory"
-        },                {
-            "fqsen": "\\Horde\\Components\\Component\\Resolver\u003A\u003A\u0024_root",
-            "name": "_root",
-            "summary": "The\u0020repository\u0020root.",
-            "url": "classes/Horde-Components-Component-Resolver.html#property__root"
-        },                {
             "fqsen": "\\Horde\\Components\\Component\\Resolver\u003A\u003A\u0024_remotes",
             "name": "_remotes",
             "summary": "The\u0020list\u0020of\u0020remotes\u0020already\u0020generated.",
             "url": "classes/Horde-Components-Component-Resolver.html#property__remotes"
+        },                {
+            "fqsen": "\\Horde\\Components\\Component\\Resolver\u003A\u003A\u0024_root",
+            "name": "_root",
+            "summary": "",
+            "url": "classes/Horde-Components-Component-Resolver.html#property__root"
+        },                {
+            "fqsen": "\\Horde\\Components\\Component\\Resolver\u003A\u003A\u0024_factory",
+            "name": "_factory",
+            "summary": "",
+            "url": "classes/Horde-Components-Component-Resolver.html#property__factory"
         },                {
             "fqsen": "\\Horde\\Components\\Component\\Task\\Dependencies",
             "name": "Dependencies",
@@ -1063,7 +1073,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Config\\Application\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020generic\u0020configuration\u0020handler.",
+            "summary": "",
             "url": "classes/Horde-Components-Config-Application.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Config\\Base",
@@ -1793,7 +1803,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\ChangeLog\u003A\u003A\u0024_component",
             "name": "_component",
-            "summary": "The\u0020component\u0020object.",
+            "summary": "",
             "url": "classes/Horde-Components-Helper-ChangeLog.html#property__component"
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Commit",
@@ -1843,7 +1853,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Commit\u003A\u003A\u0024_options",
             "name": "_options",
-            "summary": "Applicaiton\u0020options.",
+            "summary": "",
             "url": "classes/Horde-Components-Helper-Commit.html#property__options"
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Composer",
@@ -2006,11 +2016,6 @@ Search.appendIndex(
             "summary": "Produces\u0020an\u0020amount\u0020of\u0020whitespace\u0020depending\u0020on\u0020the\u0020specified\u0020level.",
             "url": "classes/Horde-Components-Helper-Dependencies.html#method__listLevel"
         },                {
-            "fqsen": "\\Horde\\Components\\Helper\\Dependencies\u003A\u003A\u0024_output",
-            "name": "_output",
-            "summary": "The\u0020output\u0020handler.",
-            "url": "classes/Horde-Components-Helper-Dependencies.html#property__output"
-        },                {
             "fqsen": "\\Horde\\Components\\Helper\\Dependencies\u003A\u003A\u0024_displayed_dependencies",
             "name": "_displayed_dependencies",
             "summary": "The\u0020list\u0020of\u0020dependencies\u0020already\u0020displayed.",
@@ -2020,6 +2025,11 @@ Search.appendIndex(
             "name": "_short_list",
             "summary": "The\u0020list\u0020of\u0020elements\u0020in\u0020case\u0020we\u0020are\u0020producing\u0020condensed\u0020output.",
             "url": "classes/Horde-Components-Helper-Dependencies.html#property__short_list"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Dependencies\u003A\u003A\u0024_output",
+            "name": "_output",
+            "summary": "The\u0020output\u0020handler.",
+            "url": "classes/Horde-Components-Helper-Dependencies.html#property__output"
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\DocsOrigin",
             "name": "DocsOrigin",
@@ -2056,15 +2066,15 @@ Search.appendIndex(
             "summary": "Path\u0020to\u0020the\u0020DOCS_ORIGIN\u0020file.",
             "url": "classes/Horde-Components-Helper-DocsOrigin.html#property__docs_origin"
         },                {
-            "fqsen": "\\Horde\\Components\\Helper\\DocsOrigin\u003A\u003A\u0024_client",
-            "name": "_client",
-            "summary": "The\u0020HTTP\u0020client\u0020for\u0020remote\u0020access.",
-            "url": "classes/Horde-Components-Helper-DocsOrigin.html#property__client"
-        },                {
             "fqsen": "\\Horde\\Components\\Helper\\DocsOrigin\u003A\u003A\u0024_documents",
             "name": "_documents",
             "summary": "The\u0020list\u0020of\u0020remote\u0020documents.\u0020Keys\u0020represent\u0020the\u0020local\u0020target\u0020positions,\nthe\u0020values\u0020indicate\u0020the\u0020remote\u0020location.",
             "url": "classes/Horde-Components-Helper-DocsOrigin.html#property__documents"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\DocsOrigin\u003A\u003A\u0024_client",
+            "name": "_client",
+            "summary": "The\u0020HTTP\u0020client\u0020for\u0020remote\u0020access.",
+            "url": "classes/Horde-Components-Helper-DocsOrigin.html#property__client"
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Git",
             "name": "Git",
@@ -2291,25 +2301,25 @@ Search.appendIndex(
             "summary": "Root\u0020path\u0020of\u0020the\u0020Horde\u0020repository.",
             "url": "classes/Horde-Components-Helper-Root.html#property__root_path"
         },                {
-            "fqsen": "\\Horde\\Components\\Helper\\Root\u003A\u003A\u0024_path",
-            "name": "_path",
-            "summary": "Path\u0020used\u0020to\u0020determine\u0020the\u0020root\u0020of\u0020the\u0020Horde\u0020repository.",
-            "url": "classes/Horde-Components-Helper-Root.html#property__path"
-        },                {
-            "fqsen": "\\Horde\\Components\\Helper\\Root\u003A\u003A\u0024_component",
-            "name": "_component",
-            "summary": "Component\u0020used\u0020to\u0020determine\u0020the\u0020root\u0020of\u0020the\u0020Horde\u0020repository.",
-            "url": "classes/Horde-Components-Helper-Root.html#property__component"
-        },                {
-            "fqsen": "\\Horde\\Components\\Helper\\Root\u003A\u003A\u0024_options",
-            "name": "_options",
-            "summary": "Options\u0020used\u0020to\u0020determine\u0020the\u0020root\u0020of\u0020the\u0020Horde\u0020repository.",
-            "url": "classes/Horde-Components-Helper-Root.html#property__options"
-        },                {
             "fqsen": "\\Horde\\Components\\Helper\\Root\u003A\u003A\u0024_errors",
             "name": "_errors",
             "summary": "Errors\u0020that\u0020occured\u0020while\u0020trying\u0020to\u0020determine\u0020the\u0020root\u0020path.",
             "url": "classes/Horde-Components-Helper-Root.html#property__errors"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Root\u003A\u003A\u0024_options",
+            "name": "_options",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Root.html#property__options"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Root\u003A\u003A\u0024_component",
+            "name": "_component",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Root.html#property__component"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Root\u003A\u003A\u0024_path",
+            "name": "_path",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Root.html#property__path"
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Template",
             "name": "Template",
@@ -2328,12 +2338,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Template\u003A\u003A\u0024_source",
             "name": "_source",
-            "summary": "Source\u0020template.",
+            "summary": "",
             "url": "classes/Horde-Components-Helper-Template.html#property__source"
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Template\u003A\u003A\u0024_target",
             "name": "_target",
-            "summary": "Target\u0020file.",
+            "summary": "",
             "url": "classes/Horde-Components-Helper-Template.html#property__target"
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Templates\\Directory",
@@ -2358,7 +2368,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Templates\\Directory\u003A\u003A\u0024_target",
             "name": "_target",
-            "summary": "The\u0020target\u0020location.",
+            "summary": "",
             "url": "classes/Horde-Components-Helper-Templates-Directory.html#property__target"
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Templates\\RecursiveDirectory",
@@ -2383,7 +2393,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Templates\\RecursiveDirectory\u003A\u003A\u0024_target",
             "name": "_target",
-            "summary": "The\u0020target\u0020location.",
+            "summary": "",
             "url": "classes/Horde-Components-Helper-Templates-RecursiveDirectory.html#property__target"
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Templates\\Single",
@@ -2553,7 +2563,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Module\\Base\u003A\u003A\u0024_dependencies",
             "name": "_dependencies",
-            "summary": "The\u0020dependency\u0020provider.",
+            "summary": "",
             "url": "classes/Horde-Components-Module-Base.html#property__dependencies"
         },                {
             "fqsen": "\\Horde\\Components\\Module\\Change",
@@ -3371,11 +3381,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Components-Output.html#method_isQuiet"
         },                {
-            "fqsen": "\\Horde\\Components\\Output\u003A\u003A\u0024_cli",
-            "name": "_cli",
-            "summary": "The\u0020CLI\u0020handler.",
-            "url": "classes/Horde-Components-Output.html#property__cli"
-        },                {
             "fqsen": "\\Horde\\Components\\Output\u003A\u003A\u0024_verbose",
             "name": "_verbose",
             "summary": "Did\u0020the\u0020user\u0020request\u0020verbose\u0020output\u003F",
@@ -3390,6 +3395,11 @@ Search.appendIndex(
             "name": "_nocolor",
             "summary": "Did\u0020the\u0020user\u0020request\u0020to\u0020avoid\u0020colored\u0020output\u003F",
             "url": "classes/Horde-Components-Output.html#property__nocolor"
+        },                {
+            "fqsen": "\\Horde\\Components\\Output\u003A\u003A\u0024_cli",
+            "name": "_cli",
+            "summary": "",
+            "url": "classes/Horde-Components-Output.html#property__cli"
         },                {
             "fqsen": "\\Horde\\Components\\Pear\\Environment",
             "name": "Environment",
@@ -3466,11 +3476,6 @@ Search.appendIndex(
             "summary": "Add\u0020a\u0020component\u0020to\u0020the\u0020environment.",
             "url": "classes/Horde-Components-Pear-Environment.html#method_addComponent"
         },                {
-            "fqsen": "\\Horde\\Components\\Pear\\Environment\u003A\u003A\u0024_output",
-            "name": "_output",
-            "summary": "The\u0020output\u0020handler.",
-            "url": "classes/Horde-Components-Pear-Environment.html#property__output"
-        },                {
             "fqsen": "\\Horde\\Components\\Pear\\Environment\u003A\u003A\u0024_factory",
             "name": "_factory",
             "summary": "The\u0020factory\u0020for\u0020PEAR\u0020class\u0020instances.",
@@ -3495,6 +3500,11 @@ Search.appendIndex(
             "name": "_source_directory",
             "summary": "The\u0020directory\u0020that\u0020contains\u0020package\u0020sources.",
             "url": "classes/Horde-Components-Pear-Environment.html#property__source_directory"
+        },                {
+            "fqsen": "\\Horde\\Components\\Pear\\Environment\u003A\u003A\u0024_output",
+            "name": "_output",
+            "summary": "",
+            "url": "classes/Horde-Components-Pear-Environment.html#property__output"
         },                {
             "fqsen": "\\Horde\\Components\\Pear\\Factory",
             "name": "Factory",
@@ -3666,11 +3676,6 @@ Search.appendIndex(
             "summary": "Return\u0020the\u0020dependencies\u0020for\u0020the\u0020package.",
             "url": "classes/Horde-Components-Pear-Package.html#method_getDependencies"
         },                {
-            "fqsen": "\\Horde\\Components\\Pear\\Package\u003A\u003A\u0024_output",
-            "name": "_output",
-            "summary": "The\u0020output\u0020handler.",
-            "url": "classes/Horde-Components-Pear-Package.html#property__output"
-        },                {
             "fqsen": "\\Horde\\Components\\Pear\\Package\u003A\u003A\u0024_environment",
             "name": "_environment",
             "summary": "The\u0020PEAR\u0020environment\u0020for\u0020the\u0020package.",
@@ -3695,6 +3700,11 @@ Search.appendIndex(
             "name": "_package_file",
             "summary": "The\u0020package\u0020representation.",
             "url": "classes/Horde-Components-Pear-Package.html#property__package_file"
+        },                {
+            "fqsen": "\\Horde\\Components\\Pear\\Package\u003A\u003A\u0024_output",
+            "name": "_output",
+            "summary": "The\u0020output\u0020handler.",
+            "url": "classes/Horde-Components-Pear-Package.html#property__output"
         },                {
             "fqsen": "\\Horde\\Components\\Qc\\Task\\Base",
             "name": "Base",
@@ -3746,21 +3756,6 @@ Search.appendIndex(
             "summary": "Run\u0020the\u0020task.",
             "url": "classes/Horde-Components-Qc-Task-Base.html#method_run"
         },                {
-            "fqsen": "\\Horde\\Components\\Qc\\Task\\Base\u003A\u003A\u0024_config",
-            "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
-            "url": "classes/Horde-Components-Qc-Task-Base.html#property__config"
-        },                {
-            "fqsen": "\\Horde\\Components\\Qc\\Task\\Base\u003A\u003A\u0024_tasks",
-            "name": "_tasks",
-            "summary": "The\u0020tasks\u0020handler.",
-            "url": "classes/Horde-Components-Qc-Task-Base.html#property__tasks"
-        },                {
-            "fqsen": "\\Horde\\Components\\Qc\\Task\\Base\u003A\u003A\u0024_output",
-            "name": "_output",
-            "summary": "The\u0020task\u0020output.",
-            "url": "classes/Horde-Components-Qc-Task-Base.html#property__output"
-        },                {
             "fqsen": "\\Horde\\Components\\Qc\\Task\\Base\u003A\u003A\u0024_component",
             "name": "_component",
             "summary": "The\u0020component\u0020that\u0020should\u0020be\u0020checked",
@@ -3770,6 +3765,21 @@ Search.appendIndex(
             "name": "_name",
             "summary": "The\u0020task\u0020name.",
             "url": "classes/Horde-Components-Qc-Task-Base.html#property__name"
+        },                {
+            "fqsen": "\\Horde\\Components\\Qc\\Task\\Base\u003A\u003A\u0024_config",
+            "name": "_config",
+            "summary": "",
+            "url": "classes/Horde-Components-Qc-Task-Base.html#property__config"
+        },                {
+            "fqsen": "\\Horde\\Components\\Qc\\Task\\Base\u003A\u003A\u0024_tasks",
+            "name": "_tasks",
+            "summary": "",
+            "url": "classes/Horde-Components-Qc-Task-Base.html#property__tasks"
+        },                {
+            "fqsen": "\\Horde\\Components\\Qc\\Task\\Base\u003A\u003A\u0024_output",
+            "name": "_output",
+            "summary": "",
+            "url": "classes/Horde-Components-Qc-Task-Base.html#property__output"
         },                {
             "fqsen": "\\Horde\\Components\\Qc\\Task\\Cpd",
             "name": "Cpd",
@@ -3956,11 +3966,6 @@ Search.appendIndex(
             "summary": "Run\u0020a\u0020sequence\u0020of\u0020qc\u0020tasks.",
             "url": "classes/Horde-Components-Qc-Tasks.html#method_run"
         },                {
-            "fqsen": "\\Horde\\Components\\Qc\\Tasks\u003A\u003A\u0024_dependencies",
-            "name": "_dependencies",
-            "summary": "Provides\u0020the\u0020tasks.",
-            "url": "classes/Horde-Components-Qc-Tasks.html#property__dependencies"
-        },                {
             "fqsen": "\\Horde\\Components\\Qc\\Tasks\u003A\u003A\u0024_options",
             "name": "_options",
             "summary": "The\u0020options\u0020for\u0020the\u0020current\u0020qc\u0020run.",
@@ -3970,6 +3975,11 @@ Search.appendIndex(
             "name": "_sequence",
             "summary": "The\u0020sequence\u0020for\u0020the\u0020current\u0020qc\u0020run.",
             "url": "classes/Horde-Components-Qc-Tasks.html#property__sequence"
+        },                {
+            "fqsen": "\\Horde\\Components\\Qc\\Tasks\u003A\u003A\u0024_dependencies",
+            "name": "_dependencies",
+            "summary": "",
+            "url": "classes/Horde-Components-Qc-Tasks.html#property__dependencies"
         },                {
             "fqsen": "\\Horde\\Components\\Release\\Notes",
             "name": "Notes",
@@ -4033,7 +4043,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Release\\Notes\u003A\u003A\u0024_output",
             "name": "_output",
-            "summary": "The\u0020task\u0020output.",
+            "summary": "",
             "url": "classes/Horde-Components-Release-Notes.html#property__output"
         },                {
             "fqsen": "\\Horde\\Components\\Release\\Task\\Announce",
@@ -4116,21 +4126,6 @@ Search.appendIndex(
             "summary": "Run\u0020the\u0020task.",
             "url": "classes/Horde-Components-Release-Task-Base.html#method_run"
         },                {
-            "fqsen": "\\Horde\\Components\\Release\\Task\\Base\u003A\u003A\u0024_tasks",
-            "name": "_tasks",
-            "summary": "The\u0020tasks\u0020handler.",
-            "url": "classes/Horde-Components-Release-Task-Base.html#property__tasks"
-        },                {
-            "fqsen": "\\Horde\\Components\\Release\\Task\\Base\u003A\u003A\u0024_notes",
-            "name": "_notes",
-            "summary": "The\u0020release\u0020notes\u0020handler.",
-            "url": "classes/Horde-Components-Release-Task-Base.html#property__notes"
-        },                {
-            "fqsen": "\\Horde\\Components\\Release\\Task\\Base\u003A\u003A\u0024_output",
-            "name": "_output",
-            "summary": "The\u0020task\u0020output.",
-            "url": "classes/Horde-Components-Release-Task-Base.html#property__output"
-        },                {
             "fqsen": "\\Horde\\Components\\Release\\Task\\Base\u003A\u003A\u0024_component",
             "name": "_component",
             "summary": "The\u0020component\u0020that\u0020should\u0020be\u0020released",
@@ -4140,6 +4135,21 @@ Search.appendIndex(
             "name": "_name",
             "summary": "The\u0020task\u0020name.",
             "url": "classes/Horde-Components-Release-Task-Base.html#property__name"
+        },                {
+            "fqsen": "\\Horde\\Components\\Release\\Task\\Base\u003A\u003A\u0024_tasks",
+            "name": "_tasks",
+            "summary": "",
+            "url": "classes/Horde-Components-Release-Task-Base.html#property__tasks"
+        },                {
+            "fqsen": "\\Horde\\Components\\Release\\Task\\Base\u003A\u003A\u0024_notes",
+            "name": "_notes",
+            "summary": "",
+            "url": "classes/Horde-Components-Release-Task-Base.html#property__notes"
+        },                {
+            "fqsen": "\\Horde\\Components\\Release\\Task\\Base\u003A\u003A\u0024_output",
+            "name": "_output",
+            "summary": "",
+            "url": "classes/Horde-Components-Release-Task-Base.html#property__output"
         },                {
             "fqsen": "\\Horde\\Components\\Release\\Task\\Bugs",
             "name": "Bugs",
@@ -4531,11 +4541,6 @@ Search.appendIndex(
             "summary": "Is\u0020the\u0020specified\u0020task\u0020active\u0020for\u0020the\u0020current\u0020run\u003F",
             "url": "classes/Horde-Components-Release-Tasks.html#method_isTaskActive"
         },                {
-            "fqsen": "\\Horde\\Components\\Release\\Tasks\u003A\u003A\u0024_dependencies",
-            "name": "_dependencies",
-            "summary": "Provides\u0020the\u0020tasks.",
-            "url": "classes/Horde-Components-Release-Tasks.html#property__dependencies"
-        },                {
             "fqsen": "\\Horde\\Components\\Release\\Tasks\u003A\u003A\u0024_options",
             "name": "_options",
             "summary": "The\u0020options\u0020for\u0020the\u0020current\u0020release\u0020run.",
@@ -4545,6 +4550,11 @@ Search.appendIndex(
             "name": "_sequence",
             "summary": "The\u0020sequence\u0020for\u0020the\u0020current\u0020release\u0020run.",
             "url": "classes/Horde-Components-Release-Tasks.html#property__sequence"
+        },                {
+            "fqsen": "\\Horde\\Components\\Release\\Tasks\u003A\u003A\u0024_dependencies",
+            "name": "_dependencies",
+            "summary": "",
+            "url": "classes/Horde-Components-Release-Tasks.html#property__dependencies"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Change",
             "name": "Change",
@@ -4563,7 +4573,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Change\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Change.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Change\u003A\u003A\u0024_output",
@@ -4588,17 +4598,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\CiPrebuild\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-CiPrebuild.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\CiPrebuild\u003A\u003A\u0024_config_application",
             "name": "_config_application",
-            "summary": "The\u0020application\u0020configuration.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-CiPrebuild.html#property__config_application"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\CiPrebuild\u003A\u003A\u0024_factory",
             "name": "_factory",
-            "summary": "The\u0020factory\u0020for\u0020PEAR\u0020handlers.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-CiPrebuild.html#property__factory"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\CiSetup",
@@ -4618,17 +4628,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\CiSetup\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-CiSetup.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\CiSetup\u003A\u003A\u0024_config_application",
             "name": "_config_application",
-            "summary": "The\u0020application\u0020configuration.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-CiSetup.html#property__config_application"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\CiSetup\u003A\u003A\u0024_factory",
             "name": "_factory",
-            "summary": "The\u0020factory\u0020for\u0020PEAR\u0020handlers.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-CiSetup.html#property__factory"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Composer",
@@ -4648,12 +4658,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Composer\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Composer.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Composer\u003A\u003A\u0024_output",
             "name": "_output",
-            "summary": "The\u0020composer\u0020helper.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Composer.html#property__output"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Dependencies",
@@ -4673,12 +4683,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Dependencies\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Dependencies.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Dependencies\u003A\u003A\u0024_dependencies",
             "name": "_dependencies",
-            "summary": "The\u0020list\u0020helper.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Dependencies.html#property__dependencies"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Distribute",
@@ -4698,12 +4708,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Distribute\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Distribute.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Distribute\u003A\u003A\u0024_config_application",
             "name": "_config_application",
-            "summary": "The\u0020application\u0020configuration.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Distribute.html#property__config_application"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Distribute\u003A\u003A\u0024_output",
@@ -4728,17 +4738,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Fetchdocs\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Fetchdocs.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Fetchdocs\u003A\u003A\u0024_output",
             "name": "_output",
-            "summary": "The\u0020output\u0020handler.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Fetchdocs.html#property__output"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Fetchdocs\u003A\u003A\u0024_client",
             "name": "_client",
-            "summary": "A\u0020HTTP\u0020client",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Fetchdocs.html#property__client"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Git",
@@ -4756,20 +4766,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Components-Runner-Git.html#method_run"
         },                {
-            "fqsen": "\\Horde\\Components\\Runner\\Git\u003A\u003A\u0024config",
-            "name": "config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
-            "url": "classes/Horde-Components-Runner-Git.html#property_config"
-        },                {
-            "fqsen": "\\Horde\\Components\\Runner\\Git\u003A\u003A\u0024output",
-            "name": "output",
-            "summary": "The\u0020output\u0020handler.",
-            "url": "classes/Horde-Components-Runner-Git.html#property_output"
-        },                {
             "fqsen": "\\Horde\\Components\\Runner\\Git\u003A\u003A\u0024gitRepoBase",
             "name": "gitRepoBase",
             "summary": "The\u0020repo\u0020base\u0020url.",
             "url": "classes/Horde-Components-Runner-Git.html#property_gitRepoBase"
+        },                {
+            "fqsen": "\\Horde\\Components\\Runner\\Git\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/Horde-Components-Runner-Git.html#property_config"
+        },                {
+            "fqsen": "\\Horde\\Components\\Runner\\Git\u003A\u003A\u0024output",
+            "name": "output",
+            "summary": "",
+            "url": "classes/Horde-Components-Runner-Git.html#property_output"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Init",
             "name": "Init",
@@ -4788,7 +4798,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Init\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Init.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Init\u003A\u003A\u0024_output",
@@ -4813,17 +4823,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Installer\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Installer.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Installer\u003A\u003A\u0024_installer",
             "name": "_installer",
-            "summary": "The\u0020list\u0020helper.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Installer.html#property__installer"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Installer\u003A\u003A\u0024_factory",
             "name": "_factory",
-            "summary": "The\u0020factory\u0020for\u0020PEAR\u0020dependencies.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Installer.html#property__factory"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Installer\u003A\u003A\u0024_output",
@@ -4853,7 +4863,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Qc\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Qc.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Qc\u003A\u003A\u0024_output",
@@ -4888,7 +4898,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Release\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Release.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Release\u003A\u003A\u0024_output",
@@ -4896,15 +4906,15 @@ Search.appendIndex(
             "summary": "The\u0020output\u0020handler.",
             "url": "classes/Horde-Components-Runner-Release.html#property__output"
         },                {
-            "fqsen": "\\Horde\\Components\\Runner\\Release\u003A\u003A\u0024_qc",
-            "name": "_qc",
-            "summary": "The\u0020QC\u0020tasks\u0020handler.",
-            "url": "classes/Horde-Components-Runner-Release.html#property__qc"
-        },                {
             "fqsen": "\\Horde\\Components\\Runner\\Release\u003A\u003A\u0024_release",
             "name": "_release",
             "summary": "The\u0020release\u0020tasks\u0020handler.",
             "url": "classes/Horde-Components-Runner-Release.html#property__release"
+        },                {
+            "fqsen": "\\Horde\\Components\\Runner\\Release\u003A\u003A\u0024_qc",
+            "name": "_qc",
+            "summary": "The\u0020QC\u0020tasks\u0020handler.",
+            "url": "classes/Horde-Components-Runner-Release.html#property__qc"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Snapshot",
             "name": "Snapshot",
@@ -4923,12 +4933,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Snapshot\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Snapshot.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Snapshot\u003A\u003A\u0024_factory",
             "name": "_factory",
-            "summary": "The\u0020factory\u0020for\u0020PEAR\u0020dependencies.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Snapshot.html#property__factory"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Snapshot\u003A\u003A\u0024_output",
@@ -4953,7 +4963,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Update\u003A\u003A\u0024_config",
             "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Update.html#property__config"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Update\u003A\u003A\u0024_output",
@@ -4976,19 +4986,19 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Components-Runner-Webdocs.html#method_run"
         },                {
-            "fqsen": "\\Horde\\Components\\Runner\\Webdocs\u003A\u003A\u0024_config",
-            "name": "_config",
-            "summary": "The\u0020configuration\u0020for\u0020the\u0020current\u0020job.",
-            "url": "classes/Horde-Components-Runner-Webdocs.html#property__config"
-        },                {
             "fqsen": "\\Horde\\Components\\Runner\\Webdocs\u003A\u003A\u0024_config_application",
             "name": "_config_application",
             "summary": "The\u0020application\u0020configuration.",
             "url": "classes/Horde-Components-Runner-Webdocs.html#property__config_application"
         },                {
+            "fqsen": "\\Horde\\Components\\Runner\\Webdocs\u003A\u003A\u0024_config",
+            "name": "_config",
+            "summary": "",
+            "url": "classes/Horde-Components-Runner-Webdocs.html#property__config"
+        },                {
             "fqsen": "\\Horde\\Components\\Runner\\Webdocs\u003A\u003A\u0024_website_helper",
             "name": "_website_helper",
-            "summary": "The\u0020website\u0020helper.",
+            "summary": "",
             "url": "classes/Horde-Components-Runner-Webdocs.html#property__website_helper"
         },                {
             "fqsen": "\\Horde\\Components\\Wrapper\\ApplicationPhp",
