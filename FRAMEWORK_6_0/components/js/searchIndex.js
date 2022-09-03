@@ -2491,6 +2491,81 @@ Search.appendIndex(
             "summary": "Converts\u0020between\u0020different\u0020version\u0020schemes.",
             "url": "classes/Horde-Components-Helper-Version.html"
         },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003Achange\u0028\u0029",
+            "name": "change",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#method_change"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003A\u0024changed",
+            "name": "changed",
+            "summary": "Flip\u0020to\u0020true\u0020if\u0020anything\u0020was\u0020changed\u0020from\u0020the\u0020original\u0020string",
+            "url": "classes/Horde-Components-Helper-Version.html#property_changed"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AnormalizeComposerVersion\u0028\u0029",
+            "name": "normalizeComposerVersion",
+            "summary": "Reconstruct\u0020a\u0020normalized\u0020string\u0020representation\u0020from\u0020parts.",
+            "url": "classes/Horde-Components-Helper-Version.html#method_normalizeComposerVersion"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AgetMajor\u0028\u0029",
+            "name": "getMajor",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#method_getMajor"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AgetMinor\u0028\u0029",
+            "name": "getMinor",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#method_getMinor"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AgetPatch\u0028\u0029",
+            "name": "getPatch",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#method_getPatch"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AgetSubPatch\u0028\u0029",
+            "name": "getSubPatch",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#method_getSubPatch"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AgetStability\u0028\u0029",
+            "name": "getStability",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#method_getStability"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AgetStabilityVersion\u0028\u0029",
+            "name": "getStabilityVersion",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#method_getStabilityVersion"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AgetBuildInfo\u0028\u0029",
+            "name": "getBuildInfo",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#method_getBuildInfo"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AgetOther\u0028\u0029",
+            "name": "getOther",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#method_getOther"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AgetPrefix\u0028\u0029",
+            "name": "getPrefix",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#method_getPrefix"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AgetOriginal\u0028\u0029",
+            "name": "getOriginal",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#method_getOriginal"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AfromComposerString\u0028\u0029",
+            "name": "fromComposerString",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#method_fromComposerString"
+        },                {
             "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AvalidatePear\u0028\u0029",
             "name": "validatePear",
             "summary": "Validates\u0020and\u0020normalizes\u0020a\u0020version\u0020to\u0020be\u0020a\u0020valid\u0020PEAR\u0020version.",
@@ -2545,6 +2620,56 @@ Search.appendIndex(
             "name": "composerToPear",
             "summary": "Converts\u0020\u0028a\u0020limited\u0020set\u0020of\u0029\u0020Composer\u0020version\u0020constraints\u0020to\u0020PEAR\u0020version\nconstraints.",
             "url": "classes/Horde-Components-Helper-Version.html#method_composerToPear"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003A\u0024original",
+            "name": "original",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#property_original"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003A\u0024prefix",
+            "name": "prefix",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#property_prefix"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003A\u0024major",
+            "name": "major",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#property_major"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003A\u0024minor",
+            "name": "minor",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#property_minor"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003A\u0024patch",
+            "name": "patch",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#property_patch"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003A\u0024subpatch",
+            "name": "subpatch",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#property_subpatch"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003A\u0024stability",
+            "name": "stability",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#property_stability"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003A\u0024stabilityVersion",
+            "name": "stabilityVersion",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#property_stabilityVersion"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003A\u0024buildInfo",
+            "name": "buildInfo",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#property_buildInfo"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003A\u0024other",
+            "name": "other",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#property_other"
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Website",
             "name": "Website",
