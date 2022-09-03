@@ -3211,6 +3211,56 @@ Search.appendIndex(
             "summary": "Determine\u0020if\u0020this\u0020module\u0020should\u0020act.\u0020Run\u0020all\u0020required\u0020actions\u0020if\u0020it\u0020has\nbeen\u0020instructed\u0020to\u0020do\u0020so.",
             "url": "classes/Horde-Components-Module-Installer.html#method_handle"
         },                {
+            "fqsen": "\\Horde\\Components\\Module\\Pipeline",
+            "name": "Pipeline",
+            "summary": "Components_Module_Base\u003A\u003A\u0020provides\u0020core\u0020functionality\u0020for\u0020the\ndifferent\u0020modules.",
+            "url": "classes/Horde-Components-Module-Pipeline.html"
+        },                {
+            "fqsen": "\\Horde\\Components\\Module\\Pipeline\u003A\u003AgetOptionGroupTitle\u0028\u0029",
+            "name": "getOptionGroupTitle",
+            "summary": "",
+            "url": "classes/Horde-Components-Module-Pipeline.html#method_getOptionGroupTitle"
+        },                {
+            "fqsen": "\\Horde\\Components\\Module\\Pipeline\u003A\u003AgetOptionGroupDescription\u0028\u0029",
+            "name": "getOptionGroupDescription",
+            "summary": "",
+            "url": "classes/Horde-Components-Module-Pipeline.html#method_getOptionGroupDescription"
+        },                {
+            "fqsen": "\\Horde\\Components\\Module\\Pipeline\u003A\u003AgetOptionGroupOptions\u0028\u0029",
+            "name": "getOptionGroupOptions",
+            "summary": "",
+            "url": "classes/Horde-Components-Module-Pipeline.html#method_getOptionGroupOptions"
+        },                {
+            "fqsen": "\\Horde\\Components\\Module\\Pipeline\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "Get\u0020the\u0020usage\u0020title\u0020for\u0020this\u0020module.",
+            "url": "classes/Horde-Components-Module-Pipeline.html#method_getTitle"
+        },                {
+            "fqsen": "\\Horde\\Components\\Module\\Pipeline\u003A\u003AgetUsage\u0028\u0029",
+            "name": "getUsage",
+            "summary": "Get\u0020the\u0020usage\u0020description\u0020for\u0020this\u0020module.",
+            "url": "classes/Horde-Components-Module-Pipeline.html#method_getUsage"
+        },                {
+            "fqsen": "\\Horde\\Components\\Module\\Pipeline\u003A\u003AgetActions\u0028\u0029",
+            "name": "getActions",
+            "summary": "Return\u0020the\u0020action\u0020arguments\u0020supported\u0020by\u0020this\u0020module.",
+            "url": "classes/Horde-Components-Module-Pipeline.html#method_getActions"
+        },                {
+            "fqsen": "\\Horde\\Components\\Module\\Pipeline\u003A\u003AgetHelp\u0028\u0029",
+            "name": "getHelp",
+            "summary": "Return\u0020the\u0020help\u0020text\u0020for\u0020the\u0020specified\u0020action.",
+            "url": "classes/Horde-Components-Module-Pipeline.html#method_getHelp"
+        },                {
+            "fqsen": "\\Horde\\Components\\Module\\Pipeline\u003A\u003AgetContextOptionHelp\u0028\u0029",
+            "name": "getContextOptionHelp",
+            "summary": "Return\u0020the\u0020options\u0020that\u0020should\u0020be\u0020explained\u0020in\u0020the\u0020context\u0020help.",
+            "url": "classes/Horde-Components-Module-Pipeline.html#method_getContextOptionHelp"
+        },                {
+            "fqsen": "\\Horde\\Components\\Module\\Pipeline\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "Determine\u0020if\u0020this\u0020module\u0020should\u0020act.\u0020Run\u0020all\u0020required\u0020actions\u0020if\u0020it\u0020has\nbeen\u0020instructed\u0020to\u0020do\u0020so.",
+            "url": "classes/Horde-Components-Module-Pipeline.html#method_handle"
+        },                {
             "fqsen": "\\Horde\\Components\\Module\\Qc",
             "name": "Qc",
             "summary": "Components_Module_Qc\u003A\u003A\u0020checks\u0020the\u0020component\u0020for\u0020quality.",
@@ -3520,6 +3570,11 @@ Search.appendIndex(
             "name": "info",
             "summary": "",
             "url": "classes/Horde-Components-Output.html#method_info"
+        },                {
+            "fqsen": "\\Horde\\Components\\Output\u003A\u003Aerror\u0028\u0029",
+            "name": "error",
+            "summary": "",
+            "url": "classes/Horde-Components-Output.html#method_error"
         },                {
             "fqsen": "\\Horde\\Components\\Output\u003A\u003Afail\u0028\u0029",
             "name": "fail",
@@ -4646,6 +4701,16 @@ Search.appendIndex(
             "summary": "Run\u0020the\u0020task.",
             "url": "classes/Horde-Components-Release-Task-Timestamp.html#method_run"
         },                {
+            "fqsen": "\\Horde\\Components\\Release\\Task\\Transpile",
+            "name": "Transpile",
+            "summary": "Components_Release_Task_Base\u003A\u003A\u0020provides\u0020core\u0020functionality\u0020for\u0020release\u0020tasks.",
+            "url": "classes/Horde-Components-Release-Task-Transpile.html"
+        },                {
+            "fqsen": "\\Horde\\Components\\Release\\Task\\Transpile\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "Run\u0020the\u0020task.",
+            "url": "classes/Horde-Components-Release-Task-Transpile.html#method_run"
+        },                {
             "fqsen": "\\Horde\\Components\\Release\\Task\\Unit",
             "name": "Unit",
             "summary": "Components_Release_Task_Unit\u003A\u003A\u0020Run\u0020Quality\u0020Checks\u0020and\u0020Unit\u0020Tests",
@@ -5020,6 +5085,31 @@ Search.appendIndex(
             "name": "_output",
             "summary": "The\u0020output\u0020handler.",
             "url": "classes/Horde-Components-Runner-Installer.html#property__output"
+        },                {
+            "fqsen": "\\Horde\\Components\\Runner\\Pipeline",
+            "name": "Pipeline",
+            "summary": "Horde\\Components\\Runner\\Pipeline\u003A\u003A\u0020Run\u0020clean\u0020room\u0020pipelines",
+            "url": "classes/Horde-Components-Runner-Pipeline.html"
+        },                {
+            "fqsen": "\\Horde\\Components\\Runner\\Pipeline\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Horde-Components-Runner-Pipeline.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Components\\Runner\\Pipeline\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "",
+            "url": "classes/Horde-Components-Runner-Pipeline.html#method_run"
+        },                {
+            "fqsen": "\\Horde\\Components\\Runner\\Pipeline\u003A\u003A\u0024_config",
+            "name": "_config",
+            "summary": "",
+            "url": "classes/Horde-Components-Runner-Pipeline.html#property__config"
+        },                {
+            "fqsen": "\\Horde\\Components\\Runner\\Pipeline\u003A\u003A\u0024output",
+            "name": "output",
+            "summary": "The\u0020output\u0020handler.",
+            "url": "classes/Horde-Components-Runner-Pipeline.html#property_output"
         },                {
             "fqsen": "\\Horde\\Components\\Runner\\Qc",
             "name": "Qc",
