@@ -1861,6 +1861,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Components-Helper-Composer.html"
         },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Composer\u003A\u003AdetectComposerBin\u0028\u0029",
+            "name": "detectComposerBin",
+            "summary": "Check\u0020some\u0020well\u0020known\u0020locations,\u0020fallback\u0020to\u0020which",
+            "url": "classes/Horde-Components-Helper-Composer.html#method_detectComposerBin"
+        },                {
             "fqsen": "\\Horde\\Components\\Helper\\Composer\u003A\u003AsetDependency\u0028\u0029",
             "name": "setDependency",
             "summary": "Make\u0020composer\u0020add\u0020a\u0020dependency,\u0020dev\u0020dependency\u0020or\u0020suggestion",
@@ -2195,6 +2200,11 @@ Search.appendIndex(
             "name": "pull",
             "summary": "",
             "url": "classes/Horde-Components-Helper-Git.html#method_pull"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Git\u003A\u003AcheckoutIsClean\u0028\u0029",
+            "name": "checkoutIsClean",
+            "summary": "Ensure\u0020the\u0020git\u0020checkout\u0020in\u0020a\u0020dir\u0020does\u0020not\u0020contain\u0020uncommitted\u0020changes",
+            "url": "classes/Horde-Components-Helper-Git.html#method_checkoutIsClean"
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Git\u003A\u003Apush\u0028\u0029",
             "name": "push",
@@ -4740,6 +4750,11 @@ Search.appendIndex(
             "name": "composer",
             "summary": "",
             "url": "classes/Horde-Components-Release-Task-Transpile.html#property_composer"
+        },                {
+            "fqsen": "\\Horde\\Components\\Release\\Task\\Transpile\u003A\u003A\u0024configApplication",
+            "name": "configApplication",
+            "summary": "",
+            "url": "classes/Horde-Components-Release-Task-Transpile.html#property_configApplication"
         },                {
             "fqsen": "\\Horde\\Components\\Release\\Task\\Unit",
             "name": "Unit",
