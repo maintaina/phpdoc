@@ -2141,6 +2141,11 @@ Search.appendIndex(
             "summary": "Get\u0020currently\u0020checked\u0020out\u0020branch",
             "url": "classes/Horde-Components-Helper-Git.html#method_getCurrentBranch"
         },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Git\u003A\u003AdeleteLocalBranch\u0028\u0029",
+            "name": "deleteLocalBranch",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Git.html#method_deleteLocalBranch"
+        },                {
             "fqsen": "\\Horde\\Components\\Helper\\Git\u003A\u003Arebase\u0028\u0029",
             "name": "rebase",
             "summary": "Rebase\u0020branch\u0020on\u0020a\u0020local\u0020or\u0020remote\u0020source",
