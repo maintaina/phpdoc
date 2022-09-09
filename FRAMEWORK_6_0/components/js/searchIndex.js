@@ -1956,6 +1956,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Components-Helper-Composer.html#method__setConfig"
         },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Composer\u003A\u003Apretend\u0028\u0029",
+            "name": "pretend",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Composer.html#method_pretend"
+        },                {
             "fqsen": "\\Horde\\Components\\Helper\\Composer\u003A\u003A\u0024_repositories",
             "name": "_repositories",
             "summary": "",
@@ -4405,6 +4410,11 @@ Search.appendIndex(
             "name": "run",
             "summary": "Run\u0020the\u0020task.",
             "url": "classes/Horde-Components-Release-Task-Base.html#method_run"
+        },                {
+            "fqsen": "\\Horde\\Components\\Release\\Task\\Base\u003A\u003Apretend\u0028\u0029",
+            "name": "pretend",
+            "summary": "",
+            "url": "classes/Horde-Components-Release-Task-Base.html#method_pretend"
         },                {
             "fqsen": "\\Horde\\Components\\Release\\Task\\Base\u003A\u003A\u0024_component",
             "name": "_component",
