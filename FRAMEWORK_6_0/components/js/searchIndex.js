@@ -2156,6 +2156,16 @@ Search.appendIndex(
             "summary": "Check\u0020if\u0020a\u0020local\u0020branch\u0020exists",
             "url": "classes/Horde-Components-Helper-Git.html#method_localBranchExists"
         },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Git\u003A\u003AlocalTagExists\u0028\u0029",
+            "name": "localTagExists",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Git.html#method_localTagExists"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Git\u003A\u003AgetLocalTags\u0028\u0029",
+            "name": "getLocalTags",
+            "summary": "List\u0020the\u0020local\u0020git\u0020tags\u0020in\u0020the\u0020repository",
+            "url": "classes/Horde-Components-Helper-Git.html#method_getLocalTags"
+        },                {
             "fqsen": "\\Horde\\Components\\Helper\\Git\u003A\u003AcheckoutBranch\u0028\u0029",
             "name": "checkoutBranch",
             "summary": "Checkout\u0020a\u0020local\u0020branch\u0020\u0028primitive\u0029",
@@ -2225,6 +2235,11 @@ Search.appendIndex(
             "name": "tag",
             "summary": "Tag\u0020the\u0020component.",
             "url": "classes/Horde-Components-Helper-Git.html#method_tag"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Git\u003A\u003AgetCurrentRefName\u0028\u0029",
+            "name": "getCurrentRefName",
+            "summary": "Check\u0020the\u0020git\u0020repo\u0027s\u0020current\u0020position\u0020for\u0020a\u0020branch\u0020name,\u0020tag\u0020name\u0020or\u0020bare\u0020position.",
+            "url": "classes/Horde-Components-Helper-Git.html#method_getCurrentRefName"
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Git\u003A\u003Asystem\u0028\u0029",
             "name": "system",
@@ -2550,6 +2565,11 @@ Search.appendIndex(
             "name": "getSubPatch",
             "summary": "",
             "url": "classes/Horde-Components-Helper-Version.html#method_getSubPatch"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AsetSubPatch\u0028\u0029",
+            "name": "setSubPatch",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Version.html#method_setSubPatch"
         },                {
             "fqsen": "\\Horde\\Components\\Helper\\Version\u003A\u003AgetStability\u0028\u0029",
             "name": "getStability",
