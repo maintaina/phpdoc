@@ -120,15 +120,21 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Release/Task/Transpile.php"><a href="files/release-task-transpile.html"><abbr title="Release/Task/Transpile.php">Transpile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Components_Release_Task_Base:: provides core functionality for release tasks.</p>
+            <p class="phpdocumentor-summary">Transpile a module to a specific version</p>
 
-    <section class="phpdocumentor-description"><p>Copyright 2011-2020 Horde LLC (http://www.horde.org/)</p>
-<p>See the enclosed file LICENSE for license information (LGPL). If you
-did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
+    <section class="phpdocumentor-description"><p>The task assumes that the module is already cloned.
+This can be a developer checkout or a clone to a clean room.
+The checkout must be fully committed or stashed.
+The pipeline around this task has to ensure this.</p>
+<p>The task needs a parameter to guide which version to transpile down to.</p>
+<p>The task needs a parameter to guide on which tag or branch to base the work on.
+By default it will assume to work on the checked-out state.</p>
+<p>The task will switch to a working branch - by default transpiler-ephemeral
+The task will install the transpiler and the dev dependencies via composer.</p>
 </section>
 
 
@@ -186,8 +192,22 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </dt>
 <dd></dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Components-Release-Task-Transpile.html#property_composer">$composer</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Release-Task-Composer.html"><abbr title="\Horde\Components\Release\Task\Composer">Composer</abbr></a>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Components-Release-Task-Transpile.html#property_git">$git</a>
+    <span>
+                        &nbsp;: <a href="classes/Horde-Components-Helper-Git.html"><abbr title="\Horde\Components\Helper\Git">Git</abbr></a>            </span>
+</dt>
+<dd></dd>
+
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Components-Release-Task-Base.html#method___construct">__construct()</a>
+    <a href="classes/Horde-Components-Release-Task-Transpile.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -223,7 +243,7 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 succeeded.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Components-Release-Task-Base.html#method_preValidate">preValidate()</a>
+    <a href="classes/Horde-Components-Release-Task-Transpile.html#method_preValidate">preValidate()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
@@ -534,6 +554,74 @@ succeeded.</dd>
     
 
 </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_composer">
+        $composer
+        <a href="classes/Horde-Components-Release-Task-Transpile.html#property_composer" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Release/Task/Transpile.php"><a href="files/release-task-transpile.html"><abbr title="Release/Task/Transpile.php">Transpile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">32</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Components-Release-Task-Composer.html"><abbr title="\Horde\Components\Release\Task\Composer">Composer</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$composer</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_git">
+        $git
+        <a href="classes/Horde-Components-Release-Task-Transpile.html#property_git" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Release/Task/Transpile.php"><a href="files/release-task-transpile.html"><abbr title="Release/Task/Transpile.php">Transpile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Horde-Components-Helper-Git.html"><abbr title="\Horde\Components\Helper\Git">Git</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$git</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
             </section>
 
             <section class="phpdocumentor-methods">
@@ -549,12 +637,12 @@ succeeded.</dd>
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Horde-Components-Release-Task-Base.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Components-Release-Task-Transpile.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Release/Task/Base.php"><a href="files/release-task-base.html"><abbr title="Release/Task/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Release/Task/Transpile.php"><a href="files/release-task-transpile.html"><abbr title="Release/Task/Transpile.php">Transpile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -562,14 +650,14 @@ succeeded.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Release-Tasks.html"><abbr title="\Horde\Components\Release\Tasks">Tasks</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$_tasks</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Release-Notes.html"><abbr title="\Horde\Components\Release\Notes">Notes</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$_notes</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Output.html"><abbr title="\Horde\Components\Output">Output</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$_output</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Components\Release\Task\ReleaseTasks">ReleaseTasks</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$_tasks</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Components\Release\Task\ReleaseNotes">ReleaseNotes</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$_notes</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Components\Release\Task\Output">Output</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$_output</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Helper-Git.html"><abbr title="\Horde\Components\Helper\Git">Git</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$git</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Release-Task-Composer.html"><abbr title="\Horde\Components\Release\Task\Composer">Composer</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$composer</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$_tasks</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Release-Tasks.html"><abbr title="\Horde\Components\Release\Tasks">Tasks</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Components\Release\Task\ReleaseTasks">ReleaseTasks</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The task handler.</p>
@@ -578,7 +666,7 @@ succeeded.</dd>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$_notes</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Release-Notes.html"><abbr title="\Horde\Components\Release\Notes">Notes</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Components\Release\Task\ReleaseNotes">ReleaseNotes</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The release notes.</p>
@@ -587,11 +675,27 @@ succeeded.</dd>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$_output</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Output.html"><abbr title="\Horde\Components\Output">Output</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde\Components\Release\Task\Output">Output</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Accepts output.</p>
 </section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$git</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Helper-Git.html"><abbr title="\Horde\Components\Helper\Git">Git</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$composer</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-Components-Release-Task-Composer.html"><abbr title="\Horde\Components\Release\Task\Composer">Composer</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
 
             </dd>
             </dl>
@@ -790,12 +894,12 @@ error messages otherwise.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_preValidate">
         preValidate()
-        <a href="classes/Horde-Components-Release-Task-Base.html#method_preValidate" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Components-Release-Task-Transpile.html#method_preValidate" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Release/Task/Base.php"><a href="files/release-task-base.html"><abbr title="Release/Task/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Release/Task/Transpile.php"><a href="files/release-task-transpile.html"><abbr title="Release/Task/Transpile.php">Transpile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -843,7 +947,7 @@ error messages otherwise.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Release/Task/Transpile.php"><a href="files/release-task-transpile.html"><abbr title="Release/Task/Transpile.php">Transpile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 

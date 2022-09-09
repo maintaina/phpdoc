@@ -1861,6 +1861,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Components-Helper-Composer.html"
         },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Composer\u003A\u003AsetDependency\u0028\u0029",
+            "name": "setDependency",
+            "summary": "Make\u0020composer\u0020add\u0020a\u0020dependency,\u0020dev\u0020dependency\u0020or\u0020suggestion",
+            "url": "classes/Horde-Components-Helper-Composer.html#method_setDependency"
+        },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Composer\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "Update\u0020the\u0020lock\u0020file\u0020and\u0020install\u0020dependencies",
+            "url": "classes/Horde-Components-Helper-Composer.html#method_update"
+        },                {
             "fqsen": "\\Horde\\Components\\Helper\\Composer\u003A\u003AgenerateComposerJson\u0028\u0029",
             "name": "generateComposerJson",
             "summary": "Updates\u0020the\u0020composer.json\u0020file.",
@@ -4703,13 +4713,33 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Components\\Release\\Task\\Transpile",
             "name": "Transpile",
-            "summary": "Components_Release_Task_Base\u003A\u003A\u0020provides\u0020core\u0020functionality\u0020for\u0020release\u0020tasks.",
+            "summary": "Transpile\u0020a\u0020module\u0020to\u0020a\u0020specific\u0020version",
             "url": "classes/Horde-Components-Release-Task-Transpile.html"
+        },                {
+            "fqsen": "\\Horde\\Components\\Release\\Task\\Transpile\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Horde-Components-Release-Task-Transpile.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Components\\Release\\Task\\Transpile\u003A\u003ApreValidate\u0028\u0029",
+            "name": "preValidate",
+            "summary": "Validate\u0020the\u0020preconditions\u0020required\u0020for\u0020this\u0020release\u0020task.",
+            "url": "classes/Horde-Components-Release-Task-Transpile.html#method_preValidate"
         },                {
             "fqsen": "\\Horde\\Components\\Release\\Task\\Transpile\u003A\u003Arun\u0028\u0029",
             "name": "run",
             "summary": "Run\u0020the\u0020task.",
             "url": "classes/Horde-Components-Release-Task-Transpile.html#method_run"
+        },                {
+            "fqsen": "\\Horde\\Components\\Release\\Task\\Transpile\u003A\u003A\u0024git",
+            "name": "git",
+            "summary": "",
+            "url": "classes/Horde-Components-Release-Task-Transpile.html#property_git"
+        },                {
+            "fqsen": "\\Horde\\Components\\Release\\Task\\Transpile\u003A\u003A\u0024composer",
+            "name": "composer",
+            "summary": "",
+            "url": "classes/Horde-Components-Release-Task-Transpile.html#property_composer"
         },                {
             "fqsen": "\\Horde\\Components\\Release\\Task\\Unit",
             "name": "Unit",
@@ -5270,6 +5300,41 @@ Search.appendIndex(
             "name": "_website_helper",
             "summary": "",
             "url": "classes/Horde-Components-Runner-Webdocs.html#property__website_helper"
+        },                {
+            "fqsen": "\\Horde\\Components\\TaskInterface",
+            "name": "TaskInterface",
+            "summary": "Common\u0020interface\u0020for\u0020tasks\u0020used\u0020in\u0020Release,\u0020Qc\u0020and\u0020Pipeline",
+            "url": "classes/Horde-Components-TaskInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Components\\TaskInterface\u003A\u003AsetComponent\u0028\u0029",
+            "name": "setComponent",
+            "summary": "Change\u0020the\u0020component\u0020this\u0020task\u0020should\u0020act\u0020upon.",
+            "url": "classes/Horde-Components-TaskInterface.html#method_setComponent"
+        },                {
+            "fqsen": "\\Horde\\Components\\TaskInterface\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "Get\u0020the\u0020name\u0020of\u0020this\u0020task.",
+            "url": "classes/Horde-Components-TaskInterface.html#method_getName"
+        },                {
+            "fqsen": "\\Horde\\Components\\TaskInterface\u003A\u003Askip\u0028\u0029",
+            "name": "skip",
+            "summary": "Can\u0020the\u0020task\u0020be\u0020skipped\u003F",
+            "url": "classes/Horde-Components-TaskInterface.html#method_skip"
+        },                {
+            "fqsen": "\\Horde\\Components\\TaskInterface\u003A\u003ApreValidate\u0028\u0029",
+            "name": "preValidate",
+            "summary": "Validate\u0020the\u0020preconditions\u0020required\u0020for\u0020this\u0020release\u0020task.",
+            "url": "classes/Horde-Components-TaskInterface.html#method_preValidate"
+        },                {
+            "fqsen": "\\Horde\\Components\\TaskInterface\u003A\u003ApostValidate\u0028\u0029",
+            "name": "postValidate",
+            "summary": "Validate\u0020the\u0020postconditions\u0020required\u0020for\u0020this\u0020release\u0020task\u0020to\u0020have\nsucceeded.",
+            "url": "classes/Horde-Components-TaskInterface.html#method_postValidate"
+        },                {
+            "fqsen": "\\Horde\\Components\\TaskInterface\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "Run\u0020the\u0020task.",
+            "url": "classes/Horde-Components-TaskInterface.html#method_run"
         },                {
             "fqsen": "\\Horde\\Components\\Wrapper\\ApplicationPhp",
             "name": "ApplicationPhp",
