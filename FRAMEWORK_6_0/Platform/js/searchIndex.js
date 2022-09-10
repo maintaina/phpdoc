@@ -1,6 +1,36 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Horde\\Platform\\Environment",
+            "name": "Environment",
+            "summary": "",
+            "url": "classes/Horde-Platform-Environment.html"
+        },                {
+            "fqsen": "\\Horde\\Platform\\Environment\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Platform-Environment.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Platform\\Environment\u003A\u003AgetIterator\u0028\u0029",
+            "name": "getIterator",
+            "summary": "",
+            "url": "classes/Horde-Platform-Environment.html#method_getIterator"
+        },                {
+            "fqsen": "\\Horde\\Platform\\Environment\u003A\u003Aexists\u0028\u0029",
+            "name": "exists",
+            "summary": "",
+            "url": "classes/Horde-Platform-Environment.html#method_exists"
+        },                {
+            "fqsen": "\\Horde\\Platform\\Environment\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Horde-Platform-Environment.html#method_get"
+        },                {
+            "fqsen": "\\Horde\\Platform\\Environment\u003A\u003AgetOrEmptyString\u0028\u0029",
+            "name": "getOrEmptyString",
+            "summary": "",
+            "url": "classes/Horde-Platform-Environment.html#method_getOrEmptyString"
+        },                {
             "fqsen": "\\Horde\\Platform\\ExecutionResult",
             "name": "ExecutionResult",
             "summary": "The\u0020results\u0020of\u0020an\u0020executed\u0020command",
@@ -76,10 +106,30 @@ Search.appendIndex(
             "summary": "Run\u0020the\u0020command",
             "url": "classes/Horde-Platform-ExecutorInterface.html#method___invoke"
         },                {
+            "fqsen": "\\Horde\\Platform\\OperatingSystem",
+            "name": "OperatingSystem",
+            "summary": "",
+            "url": "classes/Horde-Platform-OperatingSystem.html"
+        },                {
+            "fqsen": "\\Horde\\Platform\\OperatingSystem\u003A\u003AgetFamily\u0028\u0029",
+            "name": "getFamily",
+            "summary": "",
+            "url": "classes/Horde-Platform-OperatingSystem.html#method_getFamily"
+        },                {
+            "fqsen": "\\Horde\\Platform\\OperatingSystemInterface",
+            "name": "OperatingSystemInterface",
+            "summary": "",
+            "url": "classes/Horde-Platform-OperatingSystemInterface.html"
+        },                {
             "fqsen": "\\Horde\\Platform\\PlatformDetector",
             "name": "PlatformDetector",
             "summary": "",
             "url": "classes/Horde-Platform-PlatformDetector.html"
+        },                {
+            "fqsen": "\\Horde\\Platform\\PlatformDetector\u003A\u003AdetectOperatingSystem\u0028\u0029",
+            "name": "detectOperatingSystem",
+            "summary": "",
+            "url": "classes/Horde-Platform-PlatformDetector.html#method_detectOperatingSystem"
         },                {
             "fqsen": "\\Horde\\Platform\\PlatformDetectorInterface",
             "name": "PlatformDetectorInterface",
@@ -105,6 +155,86 @@ Search.appendIndex(
             "name": "logger",
             "summary": "",
             "url": "classes/Horde-Platform-SimpleExecutor.html#property_logger"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand",
+            "name": "UnixCommand",
+            "summary": "Fluent\u0020interface\u0020for\u0020building\u0020and\u0020running\u0020a\u0020command",
+            "url": "classes/Horde-Platform-UnixCommand.html"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Platform-UnixCommand.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand\u003A\u003AwithExecutable\u0028\u0029",
+            "name": "withExecutable",
+            "summary": "",
+            "url": "classes/Horde-Platform-UnixCommand.html#method_withExecutable"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand\u003A\u003AwithArgument\u0028\u0029",
+            "name": "withArgument",
+            "summary": "Add\u0020an\u0020argument",
+            "url": "classes/Horde-Platform-UnixCommand.html#method_withArgument"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand\u003A\u003AwithEnvironmentVariable\u0028\u0029",
+            "name": "withEnvironmentVariable",
+            "summary": "",
+            "url": "classes/Horde-Platform-UnixCommand.html#method_withEnvironmentVariable"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand\u003A\u003AwithOption\u0028\u0029",
+            "name": "withOption",
+            "summary": "Append\u0020an\u0020option\u0020to\u0020the\u0020command",
+            "url": "classes/Horde-Platform-UnixCommand.html#method_withOption"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand\u003A\u003AwithOptionIfValue\u0028\u0029",
+            "name": "withOptionIfValue",
+            "summary": "Append\u0020an\u0020option\u0020to\u0020the\u0020command\u0020if\u0020a\u0020value\u0020is\u0020given",
+            "url": "classes/Horde-Platform-UnixCommand.html#method_withOptionIfValue"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "Render\u0020the\u0020command\u0020as\u0020a\u0020string",
+            "url": "classes/Horde-Platform-UnixCommand.html#method___toString"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Horde-Platform-UnixCommand.html#method_fromArray"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "Run\u0020the\u0020command\u0020to\u0020catch\u0020output\u0020and\u0020return\u0020code",
+            "url": "classes/Horde-Platform-UnixCommand.html#method_execute"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Horde-Platform-UnixCommand.html#method___invoke"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand\u003A\u003A\u0024stack",
+            "name": "stack",
+            "summary": "",
+            "url": "classes/Horde-Platform-UnixCommand.html#property_stack"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand\u003A\u003A\u0024extraEnvironment",
+            "name": "extraEnvironment",
+            "summary": "",
+            "url": "classes/Horde-Platform-UnixCommand.html#property_extraEnvironment"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand\u003A\u003A\u0024executable",
+            "name": "executable",
+            "summary": "",
+            "url": "classes/Horde-Platform-UnixCommand.html#property_executable"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand\u003A\u003A\u0024env",
+            "name": "env",
+            "summary": "",
+            "url": "classes/Horde-Platform-UnixCommand.html#property_env"
+        },                {
+            "fqsen": "\\Horde\\Platform\\UnixCommand\u003A\u003A\u0024logger",
+            "name": "logger",
+            "summary": "",
+            "url": "classes/Horde-Platform-UnixCommand.html#property_logger"
         },                {
             "fqsen": "\\",
             "name": "\\",
