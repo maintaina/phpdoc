@@ -76,6 +76,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Composer-ConfigLinker.html#property_vendorDir"
         },                {
+            "fqsen": "\\Horde\\Composer\\ConfigLinker\u003A\u003A\u0024mode",
+            "name": "mode",
+            "summary": "",
+            "url": "classes/Horde-Composer-ConfigLinker.html#property_mode"
+        },                {
             "fqsen": "\\Horde\\Composer\\HordeInstaller",
             "name": "HordeInstaller",
             "summary": "Installer\u0020implementation\u0020for\u0020horde\u0020apps\u0020and\u0020themes",
@@ -225,6 +230,11 @@ Search.appendIndex(
             "name": "composer",
             "summary": "",
             "url": "classes/Horde-Composer-HordeReconfigureFlow.html#property_composer"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow\u003A\u003A\u0024mode",
+            "name": "mode",
+            "summary": "Modes\u003A\u0020symlink,\u0020copy",
+            "url": "classes/Horde-Composer-HordeReconfigureFlow.html#property_mode"
         },                {
             "fqsen": "\\Horde\\Composer\\HordeYmlFormat\\Authors",
             "name": "Authors",
@@ -711,6 +721,11 @@ Search.appendIndex(
             "summary": "List\u0020of\u0020libraries",
             "url": "classes/Horde-Composer-JsTreeLinker.html#property_libs"
         },                {
+            "fqsen": "\\Horde\\Composer\\JsTreeLinker\u003A\u003A\u0024mode",
+            "name": "mode",
+            "summary": "",
+            "url": "classes/Horde-Composer-JsTreeLinker.html#property_mode"
+        },                {
             "fqsen": "\\Horde\\Composer\\PackageDocRegistrySnippetHandler",
             "name": "PackageDocRegistrySnippetHandler",
             "summary": "Look\u0020for\u0020registry\u0020snippets\u0020in\u0020all\u0020app\u0027s\u0020doc\/registry.d\u0020folder",
@@ -910,6 +925,11 @@ Search.appendIndex(
             "name": "themesDir",
             "summary": "",
             "url": "classes/Horde-Composer-ThemesHandler.html#property_themesDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\ThemesHandler\u003A\u003A\u0024mode",
+            "name": "mode",
+            "summary": "",
+            "url": "classes/Horde-Composer-ThemesHandler.html#property_mode"
         },                {
             "fqsen": "\\",
             "name": "\\",
