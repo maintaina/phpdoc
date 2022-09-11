@@ -311,7 +311,7 @@ injection bindings.</p>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd>Has the interface for the specified object/interface been created yet?</dd>
+<dd>PSR-11 conforming availability check</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Injector-Injector.html#method_hasInstance">hasInstance()</a>
@@ -1040,17 +1040,20 @@ necessarily a new one.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Injector.php"><a href="files/injector.html"><abbr title="Injector.php">Injector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">313</span>
+    <span class="phpdocumentor-element-found-in__line">316</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Has the interface for the specified object/interface been created yet?</p>
+        <p class="phpdocumentor-summary">PSR-11 conforming availability check</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">has</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$interface</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"><p>PSR-11 ContainerInterface version</p>
+        <section class="phpdocumentor-description"><p>Returns true if the container can return an entry for the given identifier.
+Returns false otherwise.</p>
+<p><code class="prettyprint">has($id)</code> returning true does not mean that <code class="prettyprint">get($id)</code> will not throw an exception.
+It does however mean that <code class="prettyprint">get($id)</code> will not throw a <code class="prettyprint">NotFoundExceptionInterface</code>.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1060,8 +1063,7 @@ necessarily a new one.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The interface name or object class.</p>
-</section>
+                    <section class="phpdocumentor-description"></section>
 
             </dd>
             </dl>
@@ -1071,9 +1073,7 @@ necessarily a new one.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
-            <section class="phpdocumentor-description"><p>True if the instance already has been created.</p>
-</section>
-
+        
     
 </article>
                     <article
@@ -1089,7 +1089,7 @@ necessarily a new one.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Injector.php"><a href="files/injector.html"><abbr title="Injector.php">Injector.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">327</span>
+    <span class="phpdocumentor-element-found-in__line">332</span>
 
     </aside>
 
@@ -1099,7 +1099,8 @@ necessarily a new one.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">hasInstance</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$interface</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"><p>Horde 5 compatible call. Refactor to has()</p>
+        <section class="phpdocumentor-description"><p>Horde 5 compatible call.
+This is not the same as the PSR-11 has() call as it returns false on items that can be created.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>

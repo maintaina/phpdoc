@@ -263,7 +263,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Injector\\Injector\u003A\u003Ahas\u0028\u0029",
             "name": "has",
-            "summary": "Has\u0020the\u0020interface\u0020for\u0020the\u0020specified\u0020object\/interface\u0020been\u0020created\u0020yet\u003F",
+            "summary": "PSR\u002D11\u0020conforming\u0020availability\u0020check",
             "url": "classes/Horde-Injector-Injector.html#method_has"
         },                {
             "fqsen": "\\Horde\\Injector\\Injector\u003A\u003AhasInstance\u0028\u0029",
