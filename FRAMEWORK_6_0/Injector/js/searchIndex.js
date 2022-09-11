@@ -291,6 +291,16 @@ Search.appendIndex(
             "summary": "Reflection\u0020cache.",
             "url": "classes/Horde-Injector-Injector.html#property_reflection"
         },                {
+            "fqsen": "\\Horde\\Injector\\Injector\u003A\u003A\u0024hasCache",
+            "name": "hasCache",
+            "summary": "Cache\u0020any\u0020hits\u0020for\u0020speeding\u0020up\u0020has\u0028\u0029\u003B",
+            "url": "classes/Horde-Injector-Injector.html#property_hasCache"
+        },                {
+            "fqsen": "\\Horde\\Injector\\Injector\u003A\u003A\u0024hasNotCache",
+            "name": "hasNotCache",
+            "summary": "Cache\u0020misses",
+            "url": "classes/Horde-Injector-Injector.html#property_hasNotCache"
+        },                {
             "fqsen": "\\Horde\\Injector\\NotFoundException",
             "name": "NotFoundException",
             "summary": "Injector\u0020NotFoundException\u0020class\u0020as\u0020suggested\u0020by\u0020PSR\u002D11.",
@@ -316,6 +326,11 @@ Search.appendIndex(
             "summary": "Returns\u0020instance\u0020of\u0020requested\u0020object\u0020if\u0020proper\u0020configuration\u0020has\u0020been\nprovided.",
             "url": "classes/Horde-Injector-Scope.html#method_get"
         },                {
+            "fqsen": "\\Horde\\Injector\\Scope\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "",
+            "url": "classes/Horde-Injector-Scope.html#method_has"
+        },                {
             "fqsen": "\\Horde\\Injector\\TopLevel",
             "name": "TopLevel",
             "summary": "Top\u0020level\u0020injector\u0020class\u0020for\u0020returning\u0020the\u0020default\u0020binding\u0020for\u0020an\u0020object",
@@ -335,6 +350,11 @@ Search.appendIndex(
             "name": "get",
             "summary": "Returns\u0020instance\u0020of\u0020requested\u0020object\u0020if\u0020proper\u0020configuration\u0020has\u0020been\nprovided.",
             "url": "classes/Horde-Injector-TopLevel.html#method_get"
+        },                {
+            "fqsen": "\\Horde\\Injector\\TopLevel\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "Stub\u0020of\u0020has\u0028\u0029",
+            "url": "classes/Horde-Injector-TopLevel.html#method_has"
         },                {
             "fqsen": "\\",
             "name": "\\",
