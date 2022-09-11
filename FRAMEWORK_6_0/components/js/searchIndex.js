@@ -1871,6 +1871,11 @@ Search.appendIndex(
             "summary": "Make\u0020composer\u0020add\u0020a\u0020dependency,\u0020dev\u0020dependency\u0020or\u0020suggestion",
             "url": "classes/Horde-Components-Helper-Composer.html#method_setDependency"
         },                {
+            "fqsen": "\\Horde\\Components\\Helper\\Composer\u003A\u003AsetMinimumStability\u0028\u0029",
+            "name": "setMinimumStability",
+            "summary": "",
+            "url": "classes/Horde-Components-Helper-Composer.html#method_setMinimumStability"
+        },                {
             "fqsen": "\\Horde\\Components\\Helper\\Composer\u003A\u003Aupdate\u0028\u0029",
             "name": "update",
             "summary": "Update\u0020the\u0020lock\u0020file\u0020and\u0020install\u0020dependencies",
