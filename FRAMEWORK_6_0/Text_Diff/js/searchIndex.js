@@ -31,6 +31,51 @@ Search.appendIndex(
             "summary": "Adjusts\u0020inserts\/deletes\u0020of\u0020identical\u0020lines\u0020to\u0020join\u0020changes\u0020as\u0020much\u0020as\npossible.",
             "url": "classes/Horde-Text-Diff-Engine-Native.html#method__shiftBoundaries"
         },                {
+            "fqsen": "\\Horde_Text_Diff_Engine_Native\u003A\u003A\u0024xchanged",
+            "name": "xchanged",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_xchanged"
+        },                {
+            "fqsen": "\\Horde_Text_Diff_Engine_Native\u003A\u003A\u0024ychanged",
+            "name": "ychanged",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_ychanged"
+        },                {
+            "fqsen": "\\Horde_Text_Diff_Engine_Native\u003A\u003A\u0024xv",
+            "name": "xv",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_xv"
+        },                {
+            "fqsen": "\\Horde_Text_Diff_Engine_Native\u003A\u003A\u0024yv",
+            "name": "yv",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_yv"
+        },                {
+            "fqsen": "\\Horde_Text_Diff_Engine_Native\u003A\u003A\u0024xind",
+            "name": "xind",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_xind"
+        },                {
+            "fqsen": "\\Horde_Text_Diff_Engine_Native\u003A\u003A\u0024yind",
+            "name": "yind",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_yind"
+        },                {
+            "fqsen": "\\Horde_Text_Diff_Engine_Native\u003A\u003A\u0024seq",
+            "name": "seq",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_seq"
+        },                {
+            "fqsen": "\\Horde_Text_Diff_Engine_Native\u003A\u003A\u0024in_seq",
+            "name": "in_seq",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_in_seq"
+        },                {
+            "fqsen": "\\Horde_Text_Diff_Engine_Native\u003A\u003A\u0024lcs",
+            "name": "lcs",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_lcs"
+        },                {
             "fqsen": "\\Horde_Text_Diff_Engine_Shell",
             "name": "Horde_Text_Diff_Engine_Shell",
             "summary": "Class\u0020used\u0020internally\u0020by\u0020Diff\u0020to\u0020actually\u0020compute\u0020the\u0020diffs.",
@@ -526,6 +571,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html#method__append"
         },                {
+            "fqsen": "\\Horde_Text_Diff_ThreeWay_BlockBuilder\u003A\u003A\u0024orig",
+            "name": "orig",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html#property_orig"
+        },                {
+            "fqsen": "\\Horde_Text_Diff_ThreeWay_BlockBuilder\u003A\u003A\u0024final1",
+            "name": "final1",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html#property_final1"
+        },                {
+            "fqsen": "\\Horde_Text_Diff_ThreeWay_BlockBuilder\u003A\u003A\u0024final2",
+            "name": "final2",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html#property_final2"
+        },                {
             "fqsen": "\\Horde_Text_Diff_ThreeWay_Op_Base",
             "name": "Horde_Text_Diff_ThreeWay_Op_Base",
             "summary": "Copyright\u00202007\u002D2017\u0020Horde\u0020LLC\u0020\u0028http\u003A\/\/www.horde.org\/\u0029",
@@ -536,6 +596,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method___construct"
         },                {
+            "fqsen": "\\Horde_Text_Diff_ThreeWay_Op_Base\u003A\u003AgetFinal1\u0028\u0029",
+            "name": "getFinal1",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method_getFinal1"
+        },                {
+            "fqsen": "\\Horde_Text_Diff_ThreeWay_Op_Base\u003A\u003AgetFinal2\u0028\u0029",
+            "name": "getFinal2",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method_getFinal2"
+        },                {
             "fqsen": "\\Horde_Text_Diff_ThreeWay_Op_Base\u003A\u003Amerged\u0028\u0029",
             "name": "merged",
             "summary": "",
@@ -545,6 +615,26 @@ Search.appendIndex(
             "name": "isConflict",
             "summary": "",
             "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method_isConflict"
+        },                {
+            "fqsen": "\\Horde_Text_Diff_ThreeWay_Op_Base\u003A\u003A\u0024orig",
+            "name": "orig",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property_orig"
+        },                {
+            "fqsen": "\\Horde_Text_Diff_ThreeWay_Op_Base\u003A\u003A\u0024final1",
+            "name": "final1",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property_final1"
+        },                {
+            "fqsen": "\\Horde_Text_Diff_ThreeWay_Op_Base\u003A\u003A\u0024final2",
+            "name": "final2",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property_final2"
+        },                {
+            "fqsen": "\\Horde_Text_Diff_ThreeWay_Op_Base\u003A\u003A\u0024_merged",
+            "name": "_merged",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property__merged"
         },                {
             "fqsen": "\\Horde_Text_Diff_ThreeWay_Op_Copy",
             "name": "Horde_Text_Diff_ThreeWay_Op_Copy",
