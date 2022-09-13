@@ -99,11 +99,14 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-text.html">Text</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-text-diff.html">Diff</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Text_Diff_ThreeWay_Op_Base
+    BaseOperation
 
     
             <div class="phpdocumentor-element__package">
@@ -114,19 +117,25 @@
                             </ul>
         </div>
     
+            <span class="phpdocumentor-element__implements">
+            implements
+                            <a href="classes/Horde-Text-Diff-OperationInterface.html"><abbr title="\Horde\Text\Diff\OperationInterface">OperationInterface</abbr></a>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Diff/ThreeWay/Op/Base.php"><a href="files/horde-text-diff-threeway-op-base.html"><abbr title="Horde/Text/Diff/ThreeWay/Op/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="BaseOperation.php"><a href="files/baseoperation.html"><abbr title="BaseOperation.php">BaseOperation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Copyright 2007-2017 Horde LLC (http://www.horde.org/)</p>
+            <p class="phpdocumentor-summary">The original PHP version of this code was written by Geoffrey T. Dairiki
+&lt;dairiki@dairiki.org&gt;, and is used/adapted with his permission.</p>
 
-    <section class="phpdocumentor-description"><p>See the enclosed file LICENSE for license information (LGPL). If you did
+    <section class="phpdocumentor-description"><p>Copyright 2004 Geoffrey T. Dairiki <a href="mailto:dairiki@dairiki.org">dairiki@dairiki.org</a>
+Copyright 2004-2017 Horde LLC (http://www.horde.org/)</p>
+<p>See the enclosed file LICENSE for license information (LGPL). If you did
 not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </section>
 
@@ -150,6 +159,19 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
 
 
+<h3 id="interfaces_class_traits">
+    Interfaces, Classes, Traits and Enums
+    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Text-Diff-OperationInterface.html"><abbr title="\Horde\Text\Diff\OperationInterface">OperationInterface</abbr></a></dt>
+        <dd>The original PHP version of this code was written by Geoffrey T. Dairiki
+&lt;dairiki@dairiki.org&gt;, and is used/adapted with his permission.</dd>
+    
+    
+    
+    </dl>
 
 
 <h3 id="toc">
@@ -158,66 +180,52 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property__merged">$_merged</a>
+                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Horde-Text-Diff-BaseOperation.html#property_final">$final</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: mixed            </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property_final1">$final1</a>
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Horde-Text-Diff-BaseOperation.html#property_orig">$orig</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: mixed            </span>
 </dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property_final2">$final2</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property_orig">$orig</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd></dd>
+<dd>These will turn non-public at some point</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method___construct">__construct()</a>
+    <a href="classes/Horde-Text-Diff-BaseOperation.html#method_getFinal">getFinal()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method_getFinal1">getFinal1()</a>
+    <a href="classes/Horde-Text-Diff-BaseOperation.html#method_getOrig">getOrig()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method_getFinal2">getFinal2()</a>
+    <a href="classes/Horde-Text-Diff-BaseOperation.html#method_nfinal">nfinal()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: int    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method_isConflict">isConflict()</a>
+    <a href="classes/Horde-Text-Diff-BaseOperation.html#method_norig">norig()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: int    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method_merged">merged()</a>
+    <a href="classes/Horde-Text-Diff-BaseOperation.html#method_reverse">reverse()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: <a href="classes/Horde-Text-Diff-OperationInterface.html"><abbr title="\Horde\Text\Diff\OperationInterface">OperationInterface</abbr></a>    </span>
 </dt>
 <dd></dd>
 
@@ -231,37 +239,39 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Text-Diff-BaseOperation.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
             phpdocumentor-element
             -property
-            -protected
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__merged">
-        $_merged
-        <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property__merged" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_final">
+        $final
+        <a href="classes/Horde-Text-Diff-BaseOperation.html#property_final" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Diff/ThreeWay/Op/Base.php"><a href="files/horde-text-diff-threeway-op-base.html"><abbr title="Horde/Text/Diff/ThreeWay/Op/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="BaseOperation.php"><a href="files/baseoperation.html"><abbr title="BaseOperation.php">BaseOperation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$_merged</span>
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$final</span>
     </code>
 
-    
-    
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -269,90 +279,27 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
         class="
             phpdocumentor-element
             -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_final1">
-        $final1
-        <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property_final1" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Diff/ThreeWay/Op/Base.php"><a href="files/horde-text-diff-threeway-op-base.html"><abbr title="Horde/Text/Diff/ThreeWay/Op/Base.php">Base.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">21</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$final1</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_final2">
-        $final2
-        <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property_final2" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Diff/ThreeWay/Op/Base.php"><a href="files/horde-text-diff-threeway-op-base.html"><abbr title="Horde/Text/Diff/ThreeWay/Op/Base.php">Base.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">26</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$final2</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="property_orig">
         $orig
-        <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property_orig" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-BaseOperation.html#property_orig" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Diff/ThreeWay/Op/Base.php"><a href="files/horde-text-diff-threeway-op-base.html"><abbr title="Horde/Text/Diff/ThreeWay/Op/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="BaseOperation.php"><a href="files/baseoperation.html"><abbr title="BaseOperation.php">BaseOperation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">These will turn non-public at some point</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$orig</span>
     </code>
 
@@ -366,7 +313,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Text-Diff-BaseOperation.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -374,81 +321,21 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getFinal">
+        getFinal()
+        <a href="classes/Horde-Text-Diff-BaseOperation.html#method_getFinal" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Diff/ThreeWay/Op/Base.php"><a href="files/horde-text-diff-threeway-op-base.html"><abbr title="Horde/Text/Diff/ThreeWay/Op/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="BaseOperation.php"><a href="files/baseoperation.html"><abbr title="BaseOperation.php">BaseOperation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$orig</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$final1</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$final2</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$orig</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$final1</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$final2</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getFinal1">
-        getFinal1()
-        <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method_getFinal1" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Diff/ThreeWay/Op/Base.php"><a href="files/horde-text-diff-threeway-op-base.html"><abbr title="Horde/Text/Diff/ThreeWay/Op/Base.php">Base.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">40</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getFinal1</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">getFinal</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -467,21 +354,21 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getFinal2">
-        getFinal2()
-        <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method_getFinal2" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getOrig">
+        getOrig()
+        <a href="classes/Horde-Text-Diff-BaseOperation.html#method_getOrig" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Diff/ThreeWay/Op/Base.php"><a href="files/horde-text-diff-threeway-op-base.html"><abbr title="Horde/Text/Diff/ThreeWay/Op/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="BaseOperation.php"><a href="files/baseoperation.html"><abbr title="BaseOperation.php">BaseOperation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getFinal2</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">getOrig</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -500,21 +387,21 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_isConflict">
-        isConflict()
-        <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method_isConflict" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_nfinal">
+        nfinal()
+        <a href="classes/Horde-Text-Diff-BaseOperation.html#method_nfinal" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Diff/ThreeWay/Op/Base.php"><a href="files/horde-text-diff-threeway-op-base.html"><abbr title="Horde/Text/Diff/ThreeWay/Op/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="BaseOperation.php"><a href="files/baseoperation.html"><abbr title="BaseOperation.php">BaseOperation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isConflict</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">nfinal</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -522,7 +409,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">int</span>
             &mdash;
         
     
@@ -533,21 +420,21 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_merged">
-        merged()
-        <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method_merged" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_norig">
+        norig()
+        <a href="classes/Horde-Text-Diff-BaseOperation.html#method_norig" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Diff/ThreeWay/Op/Base.php"><a href="files/horde-text-diff-threeway-op-base.html"><abbr title="Horde/Text/Diff/ThreeWay/Op/Base.php">Base.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="BaseOperation.php"><a href="files/baseoperation.html"><abbr title="BaseOperation.php">BaseOperation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">merged</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">norig</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -555,7 +442,40 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                        -abstract                                "
+>
+    <h4 class="phpdocumentor-element__name" id="method_reverse">
+        reverse()
+        <a href="classes/Horde-Text-Diff-BaseOperation.html#method_reverse" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="BaseOperation.php"><a href="files/baseoperation.html"><abbr title="BaseOperation.php">BaseOperation.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__abstract">abstract</span>                <span class="phpdocumentor-signature__name">reverse</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Text-Diff-OperationInterface.html"><abbr title="\Horde\Text\Diff\OperationInterface">OperationInterface</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Text-Diff-OperationInterface.html"><abbr title="\Horde\Text\Diff\OperationInterface">OperationInterface</abbr></a></span>
             &mdash;
         
     
@@ -638,7 +558,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Text-Diff-ThreeWay-Op-Base.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Text-Diff-BaseOperation.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

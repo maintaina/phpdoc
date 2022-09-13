@@ -99,36 +99,35 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-text.html">Text</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-text-diff.html">Diff</a></li>
     </ul>
 
-    <article class="phpdocumentor-element -class">
+    <article class="phpdocumentor-element -interface">
         <h2 class="phpdocumentor-content__title">
-    Horde_Text_Diff_Engine_Xdiff
-
-    
-            <div class="phpdocumentor-element__package">
-            in package
+    OperationInterface
+                <div class="phpdocumentor-element__package">
+            in
             <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Text.html">Text</a></li>
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Text-Diff.html">Diff</a></li>
+                                    <li><a href="packages/Text.html">Text</a></li>
+                                    <li><a href="packages/Text-Diff.html">Diff</a></li>
                             </ul>
         </div>
-    
-    
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Diff/Engine/Xdiff.php"><a href="files/horde-text-diff-engine-xdiff.html"><abbr title="Horde/Text/Diff/Engine/Xdiff.php">Xdiff.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="OperationInterface.php"><a href="files/operationinterface.html"><abbr title="OperationInterface.php">OperationInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Class used internally by Diff to actually compute the diffs.</p>
+            <p class="phpdocumentor-summary">The original PHP version of this code was written by Geoffrey T. Dairiki
+&lt;dairiki@dairiki.org&gt;, and is used/adapted with his permission.</p>
 
-    <section class="phpdocumentor-description"><p>This class uses the xdiff PECL package (http://pecl.php.net/package/xdiff)
-to compute the differences between the two input arrays.</p>
-<p>Copyright 2004-2017 Horde LLC (http://www.horde.org/)</p>
+    <section class="phpdocumentor-description"><p>Copyright 2004 Geoffrey T. Dairiki <a href="mailto:dairiki@dairiki.org">dairiki@dairiki.org</a>
+Copyright 2004-2017 Horde LLC (http://www.horde.org/)</p>
 <p>See the enclosed file LICENSE for license information (LGPL). If you did
 not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </section>
@@ -144,7 +143,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>Jon Parise <a href="mailto:jon@horde.org">jon@horde.org</a></p>
+                                                 <section class="phpdocumentor-description"><p>Geoffrey T. Dairiki <a href="mailto:dairiki@dairiki.org">dairiki@dairiki.org</a></p>
 </section>
 
                                     </dd>
@@ -162,9 +161,23 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                         <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Text-Diff-Engine-Xdiff.html#method_diff">diff()</a>
+    <a href="classes/Horde-Text-Diff-OperationInterface.html#method_nfinal">nfinal()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: int    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Text-Diff-OperationInterface.html#method_norig">norig()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Text-Diff-OperationInterface.html#method_reverse">reverse()</a>
+    <span>
+                                &nbsp;: <a href="classes/Horde-Text-Diff-OperationInterface.html"><abbr title="\Horde\Text\Diff\OperationInterface">OperationInterface</abbr></a>    </span>
 </dt>
 <dd></dd>
 
@@ -174,12 +187,10 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
         
 
-        
-
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Text-Diff-Engine-Xdiff.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Text-Diff-OperationInterface.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -187,47 +198,95 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_diff">
-        diff()
-        <a href="classes/Horde-Text-Diff-Engine-Xdiff.html#method_diff" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_nfinal">
+        nfinal()
+        <a href="classes/Horde-Text-Diff-OperationInterface.html#method_nfinal" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Diff/Engine/Xdiff.php"><a href="files/horde-text-diff-engine-xdiff.html"><abbr title="Horde/Text/Diff/Engine/Xdiff.php">Xdiff.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="OperationInterface.php"><a href="files/operationinterface.html"><abbr title="OperationInterface.php">OperationInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">diff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from_lines</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to_lines</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">nfinal</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
 
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$from_lines</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$to_lines</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_norig">
+        norig()
+        <a href="classes/Horde-Text-Diff-OperationInterface.html#method_norig" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="OperationInterface.php"><a href="files/operationinterface.html"><abbr title="OperationInterface.php">OperationInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">24</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">norig</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_reverse">
+        reverse()
+        <a href="classes/Horde-Text-Diff-OperationInterface.html#method_reverse" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="OperationInterface.php"><a href="files/operationinterface.html"><abbr title="OperationInterface.php">OperationInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">22</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">reverse</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Text-Diff-OperationInterface.html"><abbr title="\Horde\Text\Diff\OperationInterface">OperationInterface</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Text-Diff-OperationInterface.html"><abbr title="\Horde\Text\Diff\OperationInterface">OperationInterface</abbr></a></span>
             &mdash;
         
     
@@ -310,7 +369,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Text-Diff-Engine-Xdiff.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Text-Diff-OperationInterface.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

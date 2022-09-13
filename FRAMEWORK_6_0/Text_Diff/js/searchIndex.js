@@ -751,6 +751,156 @@ Search.appendIndex(
             "summary": "Array\u0020of\u0020changes.",
             "url": "classes/Horde-Text-Diff.html#property__edits"
         },                {
+            "fqsen": "\\Horde\\Text\\Diff\\AddOperation",
+            "name": "AddOperation",
+            "summary": "The\u0020original\u0020PHP\u0020version\u0020of\u0020this\u0020code\u0020was\u0020written\u0020by\u0020Geoffrey\u0020T.\u0020Dairiki\n\u003Cdairiki\u0040dairiki.org\u003E,\u0020and\u0020is\u0020used\/adapted\u0020with\u0020his\u0020permission.",
+            "url": "classes/Horde-Text-Diff-AddOperation.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\AddOperation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor",
+            "url": "classes/Horde-Text-Diff-AddOperation.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\AddOperation\u003A\u003Areverse\u0028\u0029",
+            "name": "reverse",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-AddOperation.html#method_reverse"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\BaseOperation",
+            "name": "BaseOperation",
+            "summary": "The\u0020original\u0020PHP\u0020version\u0020of\u0020this\u0020code\u0020was\u0020written\u0020by\u0020Geoffrey\u0020T.\u0020Dairiki\n\u003Cdairiki\u0040dairiki.org\u003E,\u0020and\u0020is\u0020used\/adapted\u0020with\u0020his\u0020permission.",
+            "url": "classes/Horde-Text-Diff-BaseOperation.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\BaseOperation\u003A\u003Areverse\u0028\u0029",
+            "name": "reverse",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-BaseOperation.html#method_reverse"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\BaseOperation\u003A\u003Anorig\u0028\u0029",
+            "name": "norig",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-BaseOperation.html#method_norig"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\BaseOperation\u003A\u003AgetOrig\u0028\u0029",
+            "name": "getOrig",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-BaseOperation.html#method_getOrig"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\BaseOperation\u003A\u003AgetFinal\u0028\u0029",
+            "name": "getFinal",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-BaseOperation.html#method_getFinal"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\BaseOperation\u003A\u003Anfinal\u0028\u0029",
+            "name": "nfinal",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-BaseOperation.html#method_nfinal"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\BaseOperation\u003A\u003A\u0024orig",
+            "name": "orig",
+            "summary": "These\u0020will\u0020turn\u0020non\u002Dpublic\u0020at\u0020some\u0020point",
+            "url": "classes/Horde-Text-Diff-BaseOperation.html#property_orig"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\BaseOperation\u003A\u003A\u0024final",
+            "name": "final",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-BaseOperation.html#property_final"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ChangeOperation",
+            "name": "ChangeOperation",
+            "summary": "The\u0020original\u0020PHP\u0020version\u0020of\u0020this\u0020code\u0020was\u0020written\u0020by\u0020Geoffrey\u0020T.\u0020Dairiki\n\u003Cdairiki\u0040dairiki.org\u003E,\u0020and\u0020is\u0020used\/adapted\u0020with\u0020his\u0020permission.",
+            "url": "classes/Horde-Text-Diff-ChangeOperation.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ChangeOperation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ChangeOperation.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ChangeOperation\u003A\u003Areverse\u0028\u0029",
+            "name": "reverse",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ChangeOperation.html#method_reverse"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ContextRenderer",
+            "name": "ContextRenderer",
+            "summary": "\u0022Context\u0022\u0020diff\u0020renderer.",
+            "url": "classes/Horde-Text-Diff-ContextRenderer.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ContextRenderer\u003A\u003A_blockHeader\u0028\u0029",
+            "name": "_blockHeader",
+            "summary": "Render\u0020a\u0020Diff\u0020Block\u0020Header",
+            "url": "classes/Horde-Text-Diff-ContextRenderer.html#method__blockHeader"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ContextRenderer\u003A\u003A_endBlock\u0028\u0029",
+            "name": "_endBlock",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ContextRenderer.html#method__endBlock"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ContextRenderer\u003A\u003A_context\u0028\u0029",
+            "name": "_context",
+            "summary": "Glues\u0020array\u0020of\u0020context\u0020lines\u0020to\u0020a\u0020space\u002Dprefixed\u0020string",
+            "url": "classes/Horde-Text-Diff-ContextRenderer.html#method__context"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ContextRenderer\u003A\u003A_added\u0028\u0029",
+            "name": "_added",
+            "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
+            "url": "classes/Horde-Text-Diff-ContextRenderer.html#method__added"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ContextRenderer\u003A\u003A_deleted\u0028\u0029",
+            "name": "_deleted",
+            "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
+            "url": "classes/Horde-Text-Diff-ContextRenderer.html#method__deleted"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ContextRenderer\u003A\u003A_changed\u0028\u0029",
+            "name": "_changed",
+            "summary": "Produces\u0020a\u0020comparison\u0020string\u0020out\u0020of\u0020arrays\u0020of\u0020deleted\u0020and\u0020added\u0020lines",
+            "url": "classes/Horde-Text-Diff-ContextRenderer.html#method__changed"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ContextRenderer\u003A\u003A\u0024_leading_context_lines",
+            "name": "_leading_context_lines",
+            "summary": "Number\u0020of\u0020leading\u0020context\u0020\u0022lines\u0022\u0020to\u0020preserve.",
+            "url": "classes/Horde-Text-Diff-ContextRenderer.html#property__leading_context_lines"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ContextRenderer\u003A\u003A\u0024_trailing_context_lines",
+            "name": "_trailing_context_lines",
+            "summary": "Number\u0020of\u0020trailing\u0020context\u0020\u0022lines\u0022\u0020to\u0020preserve.",
+            "url": "classes/Horde-Text-Diff-ContextRenderer.html#property__trailing_context_lines"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ContextRenderer\u003A\u003A\u0024_second_block",
+            "name": "_second_block",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ContextRenderer.html#property__second_block"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\CopyOperation",
+            "name": "CopyOperation",
+            "summary": "The\u0020original\u0020PHP\u0020version\u0020of\u0020this\u0020code\u0020was\u0020written\u0020by\u0020Geoffrey\u0020T.\u0020Dairiki\n\u003Cdairiki\u0040dairiki.org\u003E,\u0020and\u0020is\u0020used\/adapted\u0020with\u0020his\u0020permission.",
+            "url": "classes/Horde-Text-Diff-CopyOperation.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\CopyOperation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-CopyOperation.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\CopyOperation\u003A\u003Areverse\u0028\u0029",
+            "name": "reverse",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-CopyOperation.html#method_reverse"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\DeleteOperation",
+            "name": "DeleteOperation",
+            "summary": "The\u0020original\u0020PHP\u0020version\u0020of\u0020this\u0020code\u0020was\u0020written\u0020by\u0020Geoffrey\u0020T.\u0020Dairiki\n\u003Cdairiki\u0040dairiki.org\u003E,\u0020and\u0020is\u0020used\/adapted\u0020with\u0020his\u0020permission.",
+            "url": "classes/Horde-Text-Diff-DeleteOperation.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\DeleteOperation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-DeleteOperation.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\DeleteOperation\u003A\u003Areverse\u0028\u0029",
+            "name": "reverse",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-DeleteOperation.html#method_reverse"
+        },                {
             "fqsen": "\\Horde\\Text\\Diff\\Diff",
             "name": "Diff",
             "summary": "General\u0020API\u0020for\u0020generating\u0020and\u0020formatting\u0020diffs\u0020\u002D\u0020the\u0020differences\u0020between\ntwo\u0020sequences\u0020of\u0020strings.",
@@ -811,450 +961,210 @@ Search.appendIndex(
             "summary": "Checks\u0020a\u0020diff\u0020for\u0020validity.",
             "url": "classes/Horde-Text-Diff-Diff.html#method__check"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003A\u0024_edits",
-            "name": "_edits",
+            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003A\u0024edits",
+            "name": "edits",
             "summary": "Array\u0020of\u0020changes.",
-            "url": "classes/Horde-Text-Diff-Diff.html#property__edits"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Native",
-            "name": "Native",
-            "summary": "Class\u0020used\u0020internally\u0020by\u0020Horde_Text_Diff\u0020to\u0020actually\u0020compute\u0020the\u0020diffs.",
-            "url": "classes/Horde-Text-Diff-Engine-Native.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Native\u003A\u003Adiff\u0028\u0029",
-            "name": "diff",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Engine-Native.html#method_diff"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Native\u003A\u003A_diag\u0028\u0029",
-            "name": "_diag",
-            "summary": "Divides\u0020the\u0020Largest\u0020Common\u0020Subsequence\u0020\u0028LCS\u0029\u0020of\u0020the\u0020sequences\u0020\u0028XOFF,\nXLIM\u0029\u0020and\u0020\u0028YOFF,\u0020YLIM\u0029\u0020into\u0020NCHUNKS\u0020approximately\u0020equally\u0020sized\nsegments.",
-            "url": "classes/Horde-Text-Diff-Engine-Native.html#method__diag"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Native\u003A\u003A_lcsPos\u0028\u0029",
-            "name": "_lcsPos",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Engine-Native.html#method__lcsPos"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Native\u003A\u003A_compareseq\u0028\u0029",
-            "name": "_compareseq",
-            "summary": "Finds\u0020LCS\u0020of\u0020two\u0020sequences.",
-            "url": "classes/Horde-Text-Diff-Engine-Native.html#method__compareseq"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Native\u003A\u003A_shiftBoundaries\u0028\u0029",
-            "name": "_shiftBoundaries",
-            "summary": "Adjusts\u0020inserts\/deletes\u0020of\u0020identical\u0020lines\u0020to\u0020join\u0020changes\u0020as\u0020much\u0020as\npossible.",
-            "url": "classes/Horde-Text-Diff-Engine-Native.html#method__shiftBoundaries"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Native\u003A\u003A\u0024xchanged",
-            "name": "xchanged",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_xchanged"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Native\u003A\u003A\u0024ychanged",
-            "name": "ychanged",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_ychanged"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Native\u003A\u003A\u0024xv",
-            "name": "xv",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_xv"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Native\u003A\u003A\u0024yv",
-            "name": "yv",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_yv"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Native\u003A\u003A\u0024xind",
-            "name": "xind",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_xind"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Native\u003A\u003A\u0024yind",
-            "name": "yind",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_yind"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Native\u003A\u003A\u0024seq",
-            "name": "seq",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_seq"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Native\u003A\u003A\u0024in_seq",
-            "name": "in_seq",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_in_seq"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Native\u003A\u003A\u0024lcs",
-            "name": "lcs",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Engine-Native.html#property_lcs"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Shell",
-            "name": "Shell",
-            "summary": "Class\u0020used\u0020internally\u0020by\u0020Diff\u0020to\u0020actually\u0020compute\u0020the\u0020diffs.",
-            "url": "classes/Horde-Text-Diff-Engine-Shell.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Shell\u003A\u003Adiff\u0028\u0029",
-            "name": "diff",
-            "summary": "Returns\u0020the\u0020array\u0020of\u0020differences.",
-            "url": "classes/Horde-Text-Diff-Engine-Shell.html#method_diff"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Shell\u003A\u003A_getLines\u0028\u0029",
-            "name": "_getLines",
-            "summary": "Get\u0020lines\u0020from\u0020either\u0020the\u0020old\u0020or\u0020new\u0020text",
-            "url": "classes/Horde-Text-Diff-Engine-Shell.html#method__getLines"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Shell\u003A\u003A\u0024_diffCommand",
-            "name": "_diffCommand",
-            "summary": "Path\u0020to\u0020the\u0020diff\u0020executable",
-            "url": "classes/Horde-Text-Diff-Engine-Shell.html#property__diffCommand"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\StringEngine",
-            "name": "StringEngine",
-            "summary": "Parses\u0020unified\u0020or\u0020context\u0020diffs\u0020output\u0020from\u0020eg.\u0020the\u0020diff\u0020utility.",
-            "url": "classes/Horde-Text-Diff-Engine-StringEngine.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\StringEngine\u003A\u003Adiff\u0028\u0029",
-            "name": "diff",
-            "summary": "Parses\u0020a\u0020unified\u0020or\u0020context\u0020diff.",
-            "url": "classes/Horde-Text-Diff-Engine-StringEngine.html#method_diff"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\StringEngine\u003A\u003AparseUnifiedDiff\u0028\u0029",
-            "name": "parseUnifiedDiff",
-            "summary": "Parses\u0020an\u0020array\u0020containing\u0020the\u0020unified\u0020diff.",
-            "url": "classes/Horde-Text-Diff-Engine-StringEngine.html#method_parseUnifiedDiff"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\StringEngine\u003A\u003AparseContextDiff\u0028\u0029",
-            "name": "parseContextDiff",
-            "summary": "Parses\u0020an\u0020array\u0020containing\u0020the\u0020context\u0020diff.",
-            "url": "classes/Horde-Text-Diff-Engine-StringEngine.html#method_parseContextDiff"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Xdiff",
-            "name": "Xdiff",
-            "summary": "Class\u0020used\u0020internally\u0020by\u0020Diff\u0020to\u0020actually\u0020compute\u0020the\u0020diffs.",
-            "url": "classes/Horde-Text-Diff-Engine-Xdiff.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine\\Xdiff\u003A\u003Adiff\u0028\u0029",
-            "name": "diff",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Engine-Xdiff.html#method_diff"
+            "url": "classes/Horde-Text-Diff-Diff.html#property_edits"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\Exception",
             "name": "Exception",
             "summary": "Exception\u0020handler\u0020for\u0020the\u0020Text_Diff\u0020package.",
             "url": "classes/Horde-Text-Diff-Exception.html"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Mapped",
-            "name": "Mapped",
-            "summary": "This\u0020can\u0020be\u0020used\u0020to\u0020compute\u0020things\u0020like\u0020case\u002Dinsensitve\u0020diffs,\u0020or\u0020diffs\nwhich\u0020ignore\u0020changes\u0020in\u0020white\u002Dspace.",
-            "url": "classes/Horde-Text-Diff-Mapped.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Mapped\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Computes\u0020a\u0020diff\u0020between\u0020sequences\u0020of\u0020strings.",
-            "url": "classes/Horde-Text-Diff-Mapped.html#method___construct"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Add",
-            "name": "Add",
-            "summary": "The\u0020original\u0020PHP\u0020version\u0020of\u0020this\u0020code\u0020was\u0020written\u0020by\u0020Geoffrey\u0020T.\u0020Dairiki\n\u003Cdairiki\u0040dairiki.org\u003E,\u0020and\u0020is\u0020used\/adapted\u0020with\u0020his\u0020permission.",
-            "url": "classes/Horde-Text-Diff-Op-Add.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Add\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Op-Add.html#method___construct"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Add\u003A\u003Areverse\u0028\u0029",
-            "name": "reverse",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Op-Add.html#method_reverse"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Base",
-            "name": "Base",
-            "summary": "The\u0020original\u0020PHP\u0020version\u0020of\u0020this\u0020code\u0020was\u0020written\u0020by\u0020Geoffrey\u0020T.\u0020Dairiki\n\u003Cdairiki\u0040dairiki.org\u003E,\u0020and\u0020is\u0020used\/adapted\u0020with\u0020his\u0020permission.",
-            "url": "classes/Horde-Text-Diff-Op-Base.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Base\u003A\u003Areverse\u0028\u0029",
-            "name": "reverse",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Op-Base.html#method_reverse"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Base\u003A\u003Anorig\u0028\u0029",
-            "name": "norig",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Op-Base.html#method_norig"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Base\u003A\u003Anfinal\u0028\u0029",
-            "name": "nfinal",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Op-Base.html#method_nfinal"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Base\u003A\u003A\u0024orig",
-            "name": "orig",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Op-Base.html#property_orig"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Base\u003A\u003A\u0024final",
-            "name": "final",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Op-Base.html#property_final"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Change",
-            "name": "Change",
-            "summary": "The\u0020original\u0020PHP\u0020version\u0020of\u0020this\u0020code\u0020was\u0020written\u0020by\u0020Geoffrey\u0020T.\u0020Dairiki\n\u003Cdairiki\u0040dairiki.org\u003E,\u0020and\u0020is\u0020used\/adapted\u0020with\u0020his\u0020permission.",
-            "url": "classes/Horde-Text-Diff-Op-Change.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Change\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Op-Change.html#method___construct"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Change\u003A\u003Areverse\u0028\u0029",
-            "name": "reverse",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Op-Change.html#method_reverse"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Copy",
-            "name": "Copy",
-            "summary": "The\u0020original\u0020PHP\u0020version\u0020of\u0020this\u0020code\u0020was\u0020written\u0020by\u0020Geoffrey\u0020T.\u0020Dairiki\n\u003Cdairiki\u0040dairiki.org\u003E,\u0020and\u0020is\u0020used\/adapted\u0020with\u0020his\u0020permission.",
-            "url": "classes/Horde-Text-Diff-Op-Copy.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Copy\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Op-Copy.html#method___construct"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Copy\u003A\u003Areverse\u0028\u0029",
-            "name": "reverse",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Op-Copy.html#method_reverse"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Delete",
-            "name": "Delete",
-            "summary": "The\u0020original\u0020PHP\u0020version\u0020of\u0020this\u0020code\u0020was\u0020written\u0020by\u0020Geoffrey\u0020T.\u0020Dairiki\n\u003Cdairiki\u0040dairiki.org\u003E,\u0020and\u0020is\u0020used\/adapted\u0020with\u0020his\u0020permission.",
-            "url": "classes/Horde-Text-Diff-Op-Delete.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Delete\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Op-Delete.html#method___construct"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op\\Delete\u003A\u003Areverse\u0028\u0029",
-            "name": "reverse",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Op-Delete.html#method_reverse"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Context",
-            "name": "Context",
-            "summary": "\u0022Context\u0022\u0020diff\u0020renderer.",
-            "url": "classes/Horde-Text-Diff-Renderer-Context.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Context\u003A\u003A_blockHeader\u0028\u0029",
-            "name": "_blockHeader",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Context.html#method__blockHeader"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Context\u003A\u003A_endBlock\u0028\u0029",
-            "name": "_endBlock",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Context.html#method__endBlock"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Context\u003A\u003A_context\u0028\u0029",
-            "name": "_context",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Context.html#method__context"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Context\u003A\u003A_added\u0028\u0029",
-            "name": "_added",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Context.html#method__added"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Context\u003A\u003A_deleted\u0028\u0029",
-            "name": "_deleted",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Context.html#method__deleted"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Context\u003A\u003A_changed\u0028\u0029",
-            "name": "_changed",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Context.html#method__changed"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Context\u003A\u003A\u0024_leading_context_lines",
-            "name": "_leading_context_lines",
-            "summary": "Number\u0020of\u0020leading\u0020context\u0020\u0022lines\u0022\u0020to\u0020preserve.",
-            "url": "classes/Horde-Text-Diff-Renderer-Context.html#property__leading_context_lines"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Context\u003A\u003A\u0024_trailing_context_lines",
-            "name": "_trailing_context_lines",
-            "summary": "Number\u0020of\u0020trailing\u0020context\u0020\u0022lines\u0022\u0020to\u0020preserve.",
-            "url": "classes/Horde-Text-Diff-Renderer-Context.html#property__trailing_context_lines"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Context\u003A\u003A\u0024_second_block",
-            "name": "_second_block",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Context.html#property__second_block"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline",
-            "name": "Inline",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer",
+            "name": "InlineRenderer",
             "summary": "\u0022Inline\u0022\u0020diff\u0020renderer.",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html"
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A_blockHeader\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_blockHeader\u0028\u0029",
             "name": "_blockHeader",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#method__blockHeader"
+            "summary": "Render\u0020a\u0020Diff\u0020Block\u0020Header",
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__blockHeader"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A_startBlock\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_startBlock\u0028\u0029",
             "name": "_startBlock",
             "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#method__startBlock"
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__startBlock"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A_lines\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_lines\u0028\u0029",
             "name": "_lines",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#method__lines"
+            "summary": "Glue\u0020an\u0020array\u0020of\u0020lines\u0020to\u0020a\u0020string\u0020with\u0020prefixed\u0020lines",
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__lines"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A_added\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_added\u0028\u0029",
             "name": "_added",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#method__added"
+            "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__added"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A_deleted\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_deleted\u0028\u0029",
             "name": "_deleted",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#method__deleted"
+            "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__deleted"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A_changed\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_changed\u0028\u0029",
             "name": "_changed",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#method__changed"
+            "summary": "Produces\u0020a\u0020comparison\u0020string\u0020out\u0020of\u0020arrays\u0020of\u0020deleted\u0020and\u0020added\u0020lines",
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__changed"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A_splitOnWords\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_splitOnWords\u0028\u0029",
             "name": "_splitOnWords",
             "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#method__splitOnWords"
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__splitOnWords"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A_encode\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_encode\u0028\u0029",
             "name": "_encode",
             "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#method__encode"
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__encode"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A\u0024_leading_context_lines",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_leading_context_lines",
             "name": "_leading_context_lines",
             "summary": "Number\u0020of\u0020leading\u0020context\u0020\u0022lines\u0022\u0020to\u0020preserve.",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#property__leading_context_lines"
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__leading_context_lines"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A\u0024_trailing_context_lines",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_trailing_context_lines",
             "name": "_trailing_context_lines",
             "summary": "Number\u0020of\u0020trailing\u0020context\u0020\u0022lines\u0022\u0020to\u0020preserve.",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#property__trailing_context_lines"
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__trailing_context_lines"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A\u0024_ins_prefix",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_ins_prefix",
             "name": "_ins_prefix",
             "summary": "Prefix\u0020for\u0020inserted\u0020text.",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#property__ins_prefix"
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__ins_prefix"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A\u0024_ins_suffix",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_ins_suffix",
             "name": "_ins_suffix",
             "summary": "Suffix\u0020for\u0020inserted\u0020text.",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#property__ins_suffix"
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__ins_suffix"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A\u0024_del_prefix",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_del_prefix",
             "name": "_del_prefix",
             "summary": "Prefix\u0020for\u0020deleted\u0020text.",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#property__del_prefix"
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__del_prefix"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A\u0024_del_suffix",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_del_suffix",
             "name": "_del_suffix",
             "summary": "Suffix\u0020for\u0020deleted\u0020text.",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#property__del_suffix"
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__del_suffix"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A\u0024_block_header",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_block_header",
             "name": "_block_header",
             "summary": "Header\u0020for\u0020each\u0020change\u0020block.",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#property__block_header"
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__block_header"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A\u0024_split_characters",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_split_characters",
             "name": "_split_characters",
             "summary": "Whether\u0020to\u0020split\u0020down\u0020to\u0020character\u002Dlevel.",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#property__split_characters"
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__split_characters"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Inline\u003A\u003A\u0024_split_level",
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_split_level",
             "name": "_split_level",
             "summary": "What\u0020are\u0020we\u0020currently\u0020splitting\u0020on\u003F\u0020Used\u0020to\u0020recurse\u0020to\u0020show\u0020word\u002Dlevel\nor\u0020character\u002Dlevel\u0020changes.",
-            "url": "classes/Horde-Text-Diff-Renderer-Inline.html#property__split_level"
+            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__split_level"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Unified\\Colored",
-            "name": "Colored",
-            "summary": "\u0022Unified\u0022\u0020diff\u0020renderer\u0020with\u0020output\u0020coloring.",
-            "url": "classes/Horde-Text-Diff-Renderer-Unified-Colored.html"
+            "fqsen": "\\Horde\\Text\\Diff\\MappedDiff",
+            "name": "MappedDiff",
+            "summary": "This\u0020can\u0020be\u0020used\u0020to\u0020compute\u0020things\u0020like\u0020case\u002Dinsensitve\u0020diffs,\u0020or\u0020diffs\nwhich\u0020ignore\u0020changes\u0020in\u0020white\u002Dspace.",
+            "url": "classes/Horde-Text-Diff-MappedDiff.html"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Unified\\Colored\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\MappedDiff\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
-            "url": "classes/Horde-Text-Diff-Renderer-Unified-Colored.html#method___construct"
+            "summary": "Computes\u0020a\u0020diff\u0020between\u0020sequences\u0020of\u0020strings.",
+            "url": "classes/Horde-Text-Diff-MappedDiff.html#method___construct"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Unified\\Colored\u003A\u003A_blockHeader\u0028\u0029",
-            "name": "_blockHeader",
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine",
+            "name": "NativeEngine",
+            "summary": "Class\u0020used\u0020internally\u0020by\u0020Horde_Text_Diff\u0020to\u0020actually\u0020compute\u0020the\u0020diffs.",
+            "url": "classes/Horde-Text-Diff-NativeEngine.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003Adiff\u0028\u0029",
+            "name": "diff",
             "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Unified-Colored.html#method__blockHeader"
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#method_diff"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Unified\\Colored\u003A\u003A_added\u0028\u0029",
-            "name": "_added",
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A_diag\u0028\u0029",
+            "name": "_diag",
+            "summary": "Divides\u0020the\u0020Largest\u0020Common\u0020Subsequence\u0020\u0028LCS\u0029\u0020of\u0020the\u0020sequences\u0020\u0028XOFF,\nXLIM\u0029\u0020and\u0020\u0028YOFF,\u0020YLIM\u0029\u0020into\u0020NCHUNKS\u0020approximately\u0020equally\u0020sized\nsegments.",
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#method__diag"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A_lcsPos\u0028\u0029",
+            "name": "_lcsPos",
             "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Unified-Colored.html#method__added"
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#method__lcsPos"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Unified\\Colored\u003A\u003A_deleted\u0028\u0029",
-            "name": "_deleted",
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A_compareseq\u0028\u0029",
+            "name": "_compareseq",
+            "summary": "Finds\u0020LCS\u0020of\u0020two\u0020sequences.",
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#method__compareseq"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A_shiftBoundaries\u0028\u0029",
+            "name": "_shiftBoundaries",
+            "summary": "Adjusts\u0020inserts\/deletes\u0020of\u0020identical\u0020lines\u0020to\u0020join\u0020changes\u0020as\u0020much\u0020as\npossible.",
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#method__shiftBoundaries"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A\u0024xchanged",
+            "name": "xchanged",
             "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Unified-Colored.html#method__deleted"
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#property_xchanged"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Unified\\Colored\u003A\u003A\u0024_cli",
-            "name": "_cli",
-            "summary": "CLI\u0020handler.",
-            "url": "classes/Horde-Text-Diff-Renderer-Unified-Colored.html#property__cli"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Unified",
-            "name": "Unified",
-            "summary": "\u0022Unified\u0022\u0020diff\u0020renderer.",
-            "url": "classes/Horde-Text-Diff-Renderer-Unified.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Unified\u003A\u003A_blockHeader\u0028\u0029",
-            "name": "_blockHeader",
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A\u0024ychanged",
+            "name": "ychanged",
             "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Unified.html#method__blockHeader"
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#property_ychanged"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Unified\u003A\u003A_context\u0028\u0029",
-            "name": "_context",
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A\u0024xv",
+            "name": "xv",
             "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Unified.html#method__context"
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#property_xv"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Unified\u003A\u003A_added\u0028\u0029",
-            "name": "_added",
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A\u0024yv",
+            "name": "yv",
             "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Unified.html#method__added"
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#property_yv"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Unified\u003A\u003A_deleted\u0028\u0029",
-            "name": "_deleted",
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A\u0024xind",
+            "name": "xind",
             "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Unified.html#method__deleted"
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#property_xind"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Unified\u003A\u003A_changed\u0028\u0029",
-            "name": "_changed",
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A\u0024yind",
+            "name": "yind",
             "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-Unified.html#method__changed"
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#property_yind"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Unified\u003A\u003A\u0024_leading_context_lines",
-            "name": "_leading_context_lines",
-            "summary": "Number\u0020of\u0020leading\u0020context\u0020\u0022lines\u0022\u0020to\u0020preserve.",
-            "url": "classes/Horde-Text-Diff-Renderer-Unified.html#property__leading_context_lines"
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A\u0024seq",
+            "name": "seq",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#property_seq"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Unified\u003A\u003A\u0024_trailing_context_lines",
-            "name": "_trailing_context_lines",
-            "summary": "Number\u0020of\u0020trailing\u0020context\u0020\u0022lines\u0022\u0020to\u0020preserve.",
-            "url": "classes/Horde-Text-Diff-Renderer-Unified.html#property__trailing_context_lines"
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A\u0024in_seq",
+            "name": "in_seq",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#property_in_seq"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A\u0024lcs",
+            "name": "lcs",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#property_lcs"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\OperationInterface",
+            "name": "OperationInterface",
+            "summary": "The\u0020original\u0020PHP\u0020version\u0020of\u0020this\u0020code\u0020was\u0020written\u0020by\u0020Geoffrey\u0020T.\u0020Dairiki\n\u003Cdairiki\u0040dairiki.org\u003E,\u0020and\u0020is\u0020used\/adapted\u0020with\u0020his\u0020permission.",
+            "url": "classes/Horde-Text-Diff-OperationInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\OperationInterface\u003A\u003Areverse\u0028\u0029",
+            "name": "reverse",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-OperationInterface.html#method_reverse"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\OperationInterface\u003A\u003Anorig\u0028\u0029",
+            "name": "norig",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-OperationInterface.html#method_norig"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\OperationInterface\u003A\u003Anfinal\u0028\u0029",
+            "name": "nfinal",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-OperationInterface.html#method_nfinal"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\Renderer",
             "name": "Renderer",
@@ -1278,7 +1188,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\Renderer\u003A\u003A_block\u0028\u0029",
             "name": "_block",
-            "summary": "",
+            "summary": "Render\u0020a\u0020diff\u0020block",
             "url": "classes/Horde-Text-Diff-Renderer.html#method__block"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\Renderer\u003A\u003A_startDiff\u0028\u0029",
@@ -1293,7 +1203,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\Renderer\u003A\u003A_blockHeader\u0028\u0029",
             "name": "_blockHeader",
-            "summary": "",
+            "summary": "Render\u0020a\u0020Diff\u0020Block\u0020Header",
             "url": "classes/Horde-Text-Diff-Renderer.html#method__blockHeader"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\Renderer\u003A\u003A_startBlock\u0028\u0029",
@@ -1308,27 +1218,27 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\Renderer\u003A\u003A_lines\u0028\u0029",
             "name": "_lines",
-            "summary": "",
+            "summary": "Glue\u0020an\u0020array\u0020of\u0020lines\u0020to\u0020a\u0020string\u0020with\u0020prefixed\u0020lines",
             "url": "classes/Horde-Text-Diff-Renderer.html#method__lines"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\Renderer\u003A\u003A_context\u0028\u0029",
             "name": "_context",
-            "summary": "",
+            "summary": "Glues\u0020array\u0020of\u0020context\u0020lines\u0020to\u0020a\u0020space\u002Dprefixed\u0020string",
             "url": "classes/Horde-Text-Diff-Renderer.html#method__context"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\Renderer\u003A\u003A_added\u0028\u0029",
             "name": "_added",
-            "summary": "",
+            "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
             "url": "classes/Horde-Text-Diff-Renderer.html#method__added"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\Renderer\u003A\u003A_deleted\u0028\u0029",
             "name": "_deleted",
-            "summary": "",
+            "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
             "url": "classes/Horde-Text-Diff-Renderer.html#method__deleted"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\Renderer\u003A\u003A_changed\u0028\u0029",
             "name": "_changed",
-            "summary": "",
+            "summary": "Produces\u0020a\u0020comparison\u0020string\u0020out\u0020of\u0020arrays\u0020of\u0020deleted\u0020and\u0020added\u0020lines",
             "url": "classes/Horde-Text-Diff-Renderer.html#method__changed"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\Renderer\u003A\u003A\u0024_leading_context_lines",
@@ -1341,135 +1251,45 @@ Search.appendIndex(
             "summary": "Number\u0020of\u0020trailing\u0020context\u0020\u0022lines\u0022\u0020to\u0020preserve.",
             "url": "classes/Horde-Text-Diff-Renderer.html#property__trailing_context_lines"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\BlockBuilder",
-            "name": "BlockBuilder",
-            "summary": "Copyright\u00202007\u002D2017\u0020Horde\u0020LLC\u0020\u0028http\u003A\/\/www.horde.org\/\u0029",
-            "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html"
+            "fqsen": "\\Horde\\Text\\Diff\\ShellEngine",
+            "name": "ShellEngine",
+            "summary": "Class\u0020used\u0020internally\u0020by\u0020Diff\u0020to\u0020actually\u0020compute\u0020the\u0020diffs.",
+            "url": "classes/Horde-Text-Diff-ShellEngine.html"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\BlockBuilder\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html#method___construct"
+            "fqsen": "\\Horde\\Text\\Diff\\ShellEngine\u003A\u003Adiff\u0028\u0029",
+            "name": "diff",
+            "summary": "Returns\u0020the\u0020array\u0020of\u0020differences.",
+            "url": "classes/Horde-Text-Diff-ShellEngine.html#method_diff"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\BlockBuilder\u003A\u003Ainput\u0028\u0029",
-            "name": "input",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html#method_input"
+            "fqsen": "\\Horde\\Text\\Diff\\ShellEngine\u003A\u003A_getLines\u0028\u0029",
+            "name": "_getLines",
+            "summary": "Get\u0020lines\u0020from\u0020either\u0020the\u0020old\u0020or\u0020new\u0020text",
+            "url": "classes/Horde-Text-Diff-ShellEngine.html#method__getLines"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\BlockBuilder\u003A\u003Aout1\u0028\u0029",
-            "name": "out1",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html#method_out1"
+            "fqsen": "\\Horde\\Text\\Diff\\ShellEngine\u003A\u003A\u0024diffCommand",
+            "name": "diffCommand",
+            "summary": "Path\u0020to\u0020the\u0020diff\u0020executable",
+            "url": "classes/Horde-Text-Diff-ShellEngine.html#property_diffCommand"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\BlockBuilder\u003A\u003Aout2\u0028\u0029",
-            "name": "out2",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html#method_out2"
+            "fqsen": "\\Horde\\Text\\Diff\\StringEngine",
+            "name": "StringEngine",
+            "summary": "Parses\u0020unified\u0020or\u0020context\u0020diffs\u0020output\u0020from\u0020eg.\u0020the\u0020diff\u0020utility.",
+            "url": "classes/Horde-Text-Diff-StringEngine.html"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\BlockBuilder\u003A\u003AisEmpty\u0028\u0029",
-            "name": "isEmpty",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html#method_isEmpty"
+            "fqsen": "\\Horde\\Text\\Diff\\StringEngine\u003A\u003Adiff\u0028\u0029",
+            "name": "diff",
+            "summary": "Parses\u0020a\u0020unified\u0020or\u0020context\u0020diff.",
+            "url": "classes/Horde-Text-Diff-StringEngine.html#method_diff"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\BlockBuilder\u003A\u003Afinish\u0028\u0029",
-            "name": "finish",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html#method_finish"
+            "fqsen": "\\Horde\\Text\\Diff\\StringEngine\u003A\u003AparseUnifiedDiff\u0028\u0029",
+            "name": "parseUnifiedDiff",
+            "summary": "Parses\u0020an\u0020array\u0020containing\u0020the\u0020unified\u0020diff.",
+            "url": "classes/Horde-Text-Diff-StringEngine.html#method_parseUnifiedDiff"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\BlockBuilder\u003A\u003A_init\u0028\u0029",
-            "name": "_init",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html#method__init"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\BlockBuilder\u003A\u003A_append\u0028\u0029",
-            "name": "_append",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html#method__append"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\BlockBuilder\u003A\u003A\u0024orig",
-            "name": "orig",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html#property_orig"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\BlockBuilder\u003A\u003A\u0024final1",
-            "name": "final1",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html#property_final1"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\BlockBuilder\u003A\u003A\u0024final2",
-            "name": "final2",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-BlockBuilder.html#property_final2"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\Op\\Base",
-            "name": "Base",
-            "summary": "Copyright\u00202007\u002D2017\u0020Horde\u0020LLC\u0020\u0028http\u003A\/\/www.horde.org\/\u0029",
-            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\Op\\Base\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method___construct"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\Op\\Base\u003A\u003AgetFinal1\u0028\u0029",
-            "name": "getFinal1",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method_getFinal1"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\Op\\Base\u003A\u003AgetFinal2\u0028\u0029",
-            "name": "getFinal2",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method_getFinal2"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\Op\\Base\u003A\u003Amerged\u0028\u0029",
-            "name": "merged",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method_merged"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\Op\\Base\u003A\u003AisConflict\u0028\u0029",
-            "name": "isConflict",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#method_isConflict"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\Op\\Base\u003A\u003A\u0024orig",
-            "name": "orig",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property_orig"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\Op\\Base\u003A\u003A\u0024final1",
-            "name": "final1",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property_final1"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\Op\\Base\u003A\u003A\u0024final2",
-            "name": "final2",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property_final2"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\Op\\Base\u003A\u003A\u0024_merged",
-            "name": "_merged",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Base.html#property__merged"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\Op\\Copy",
-            "name": "Copy",
-            "summary": "Copyright\u00202007\u002D2017\u0020Horde\u0020LLC\u0020\u0028http\u003A\/\/www.horde.org\/\u0029",
-            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Copy.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\Op\\Copy\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Copy.html#method___construct"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\Op\\Copy\u003A\u003Amerged\u0028\u0029",
-            "name": "merged",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Copy.html#method_merged"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\Op\\Copy\u003A\u003AisConflict\u0028\u0029",
-            "name": "isConflict",
-            "summary": "",
-            "url": "classes/Horde-Text-Diff-ThreeWay-Op-Copy.html#method_isConflict"
+            "fqsen": "\\Horde\\Text\\Diff\\StringEngine\u003A\u003AparseContextDiff\u0028\u0029",
+            "name": "parseContextDiff",
+            "summary": "Parses\u0020an\u0020array\u0020containing\u0020the\u0020context\u0020diff.",
+            "url": "classes/Horde-Text-Diff-StringEngine.html#method_parseContextDiff"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\ThreeWay",
             "name": "ThreeWay",
@@ -1501,6 +1321,226 @@ Search.appendIndex(
             "summary": "Conflict\u0020counter.",
             "url": "classes/Horde-Text-Diff-ThreeWay.html#property__conflictingBlocks"
         },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBaseOperation",
+            "name": "ThreeWayBaseOperation",
+            "summary": "Copyright\u00202007\u002D2017\u0020Horde\u0020LLC\u0020\u0028http\u003A\/\/www.horde.org\/\u0029",
+            "url": "classes/Horde-Text-Diff-ThreeWayBaseOperation.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBaseOperation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBaseOperation.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBaseOperation\u003A\u003AgetOrig\u0028\u0029",
+            "name": "getOrig",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBaseOperation.html#method_getOrig"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBaseOperation\u003A\u003AgetFinal1\u0028\u0029",
+            "name": "getFinal1",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBaseOperation.html#method_getFinal1"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBaseOperation\u003A\u003AgetFinal2\u0028\u0029",
+            "name": "getFinal2",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBaseOperation.html#method_getFinal2"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBaseOperation\u003A\u003Anorig\u0028\u0029",
+            "name": "norig",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBaseOperation.html#method_norig"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBaseOperation\u003A\u003Amerged\u0028\u0029",
+            "name": "merged",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBaseOperation.html#method_merged"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBaseOperation\u003A\u003AisConflict\u0028\u0029",
+            "name": "isConflict",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBaseOperation.html#method_isConflict"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBaseOperation\u003A\u003A\u0024orig",
+            "name": "orig",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBaseOperation.html#property_orig"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBaseOperation\u003A\u003A\u0024final1",
+            "name": "final1",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBaseOperation.html#property_final1"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBaseOperation\u003A\u003A\u0024final2",
+            "name": "final2",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBaseOperation.html#property_final2"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBaseOperation\u003A\u003A\u0024_merged",
+            "name": "_merged",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBaseOperation.html#property__merged"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBlockBuilder",
+            "name": "ThreeWayBlockBuilder",
+            "summary": "Copyright\u00202007\u002D2017\u0020Horde\u0020LLC\u0020\u0028http\u003A\/\/www.horde.org\/\u0029",
+            "url": "classes/Horde-Text-Diff-ThreeWayBlockBuilder.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBlockBuilder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBlockBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBlockBuilder\u003A\u003Ainput\u0028\u0029",
+            "name": "input",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBlockBuilder.html#method_input"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBlockBuilder\u003A\u003Aout1\u0028\u0029",
+            "name": "out1",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBlockBuilder.html#method_out1"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBlockBuilder\u003A\u003Aout2\u0028\u0029",
+            "name": "out2",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBlockBuilder.html#method_out2"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBlockBuilder\u003A\u003AisEmpty\u0028\u0029",
+            "name": "isEmpty",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBlockBuilder.html#method_isEmpty"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBlockBuilder\u003A\u003Afinish\u0028\u0029",
+            "name": "finish",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBlockBuilder.html#method_finish"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBlockBuilder\u003A\u003A_init\u0028\u0029",
+            "name": "_init",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBlockBuilder.html#method__init"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBlockBuilder\u003A\u003A_append\u0028\u0029",
+            "name": "_append",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBlockBuilder.html#method__append"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBlockBuilder\u003A\u003A\u0024orig",
+            "name": "orig",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBlockBuilder.html#property_orig"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBlockBuilder\u003A\u003A\u0024final1",
+            "name": "final1",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBlockBuilder.html#property_final1"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayBlockBuilder\u003A\u003A\u0024final2",
+            "name": "final2",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayBlockBuilder.html#property_final2"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayCopyOperation",
+            "name": "ThreeWayCopyOperation",
+            "summary": "Copyright\u00202007\u002D2017\u0020Horde\u0020LLC\u0020\u0028http\u003A\/\/www.horde.org\/\u0029",
+            "url": "classes/Horde-Text-Diff-ThreeWayCopyOperation.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayCopyOperation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayCopyOperation.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayCopyOperation\u003A\u003Amerged\u0028\u0029",
+            "name": "merged",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayCopyOperation.html#method_merged"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWayCopyOperation\u003A\u003AisConflict\u0028\u0029",
+            "name": "isConflict",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWayCopyOperation.html#method_isConflict"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedColoredRenderer",
+            "name": "UnifiedColoredRenderer",
+            "summary": "\u0022Unified\u0022\u0020diff\u0020renderer\u0020with\u0020output\u0020coloring.",
+            "url": "classes/Horde-Text-Diff-Renderer-UnifiedColoredRenderer.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedColoredRenderer\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Horde-Text-Diff-Renderer-UnifiedColoredRenderer.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedColoredRenderer\u003A\u003A_blockHeader\u0028\u0029",
+            "name": "_blockHeader",
+            "summary": "Render\u0020a\u0020Diff\u0020Block\u0020Header",
+            "url": "classes/Horde-Text-Diff-Renderer-UnifiedColoredRenderer.html#method__blockHeader"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedColoredRenderer\u003A\u003A_added\u0028\u0029",
+            "name": "_added",
+            "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
+            "url": "classes/Horde-Text-Diff-Renderer-UnifiedColoredRenderer.html#method__added"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedColoredRenderer\u003A\u003A_deleted\u0028\u0029",
+            "name": "_deleted",
+            "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
+            "url": "classes/Horde-Text-Diff-Renderer-UnifiedColoredRenderer.html#method__deleted"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedColoredRenderer\u003A\u003A\u0024_cli",
+            "name": "_cli",
+            "summary": "CLI\u0020handler.",
+            "url": "classes/Horde-Text-Diff-Renderer-UnifiedColoredRenderer.html#property__cli"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer",
+            "name": "UnifiedRenderer",
+            "summary": "\u0022Unified\u0022\u0020diff\u0020renderer.",
+            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer\u003A\u003A_blockHeader\u0028\u0029",
+            "name": "_blockHeader",
+            "summary": "Render\u0020a\u0020Diff\u0020Block\u0020Header",
+            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html#method__blockHeader"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer\u003A\u003A_context\u0028\u0029",
+            "name": "_context",
+            "summary": "Glues\u0020array\u0020of\u0020context\u0020lines\u0020to\u0020a\u0020space\u002Dprefixed\u0020string",
+            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html#method__context"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer\u003A\u003A_added\u0028\u0029",
+            "name": "_added",
+            "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
+            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html#method__added"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer\u003A\u003A_deleted\u0028\u0029",
+            "name": "_deleted",
+            "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
+            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html#method__deleted"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer\u003A\u003A_changed\u0028\u0029",
+            "name": "_changed",
+            "summary": "Produces\u0020a\u0020comparison\u0020string\u0020out\u0020of\u0020arrays\u0020of\u0020deleted\u0020and\u0020added\u0020lines",
+            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html#method__changed"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer\u003A\u003A\u0024_leading_context_lines",
+            "name": "_leading_context_lines",
+            "summary": "Number\u0020of\u0020leading\u0020context\u0020\u0022lines\u0022\u0020to\u0020preserve.",
+            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html#property__leading_context_lines"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer\u003A\u003A\u0024_trailing_context_lines",
+            "name": "_trailing_context_lines",
+            "summary": "Number\u0020of\u0020trailing\u0020context\u0020\u0022lines\u0022\u0020to\u0020preserve.",
+            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html#property__trailing_context_lines"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\XdiffEngine",
+            "name": "XdiffEngine",
+            "summary": "Class\u0020used\u0020internally\u0020by\u0020Diff\u0020to\u0020actually\u0020compute\u0020the\u0020diffs.",
+            "url": "classes/Horde-Text-Diff-XdiffEngine.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\XdiffEngine\u003A\u003Adiff\u0028\u0029",
+            "name": "diff",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-XdiffEngine.html#method_diff"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -1521,34 +1561,9 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/horde.html"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Engine",
-            "name": "Engine",
-            "summary": "",
-            "url": "namespaces/horde-text-diff-engine.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Op",
-            "name": "Op",
-            "summary": "",
-            "url": "namespaces/horde-text-diff-op.html"
-        },                {
             "fqsen": "\\Horde\\Text\\Diff\\Renderer",
             "name": "Renderer",
             "summary": "",
             "url": "namespaces/horde-text-diff-renderer.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\Unified",
-            "name": "Unified",
-            "summary": "",
-            "url": "namespaces/horde-text-diff-renderer-unified.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay",
-            "name": "ThreeWay",
-            "summary": "",
-            "url": "namespaces/horde-text-diff-threeway.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\\Op",
-            "name": "Op",
-            "summary": "",
-            "url": "namespaces/horde-text-diff-threeway-op.html"
         }            ]
 );

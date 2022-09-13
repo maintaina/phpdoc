@@ -99,11 +99,14 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-text.html">Text</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-text-diff.html">Diff</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Horde_Text_Diff_Engine_Xdiff
+    XdiffEngine
 
     
             <div class="phpdocumentor-element__package">
@@ -118,9 +121,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Diff/Engine/Xdiff.php"><a href="files/horde-text-diff-engine-xdiff.html"><abbr title="Horde/Text/Diff/Engine/Xdiff.php">Xdiff.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="XdiffEngine.php"><a href="files/xdiffengine.html"><abbr title="XdiffEngine.php">XdiffEngine.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -162,7 +165,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                         <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Text-Diff-Engine-Xdiff.html#method_diff">diff()</a>
+    <a href="classes/Horde-Text-Diff-XdiffEngine.html#method_diff">diff()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -179,7 +182,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Text-Diff-Engine-Xdiff.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Text-Diff-XdiffEngine.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -189,26 +192,26 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_diff">
         diff()
-        <a href="classes/Horde-Text-Diff-Engine-Xdiff.html#method_diff" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-XdiffEngine.html#method_diff" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Diff/Engine/Xdiff.php"><a href="files/horde-text-diff-engine-xdiff.html"><abbr title="Horde/Text/Diff/Engine/Xdiff.php">Xdiff.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="XdiffEngine.php"><a href="files/xdiffengine.html"><abbr title="XdiffEngine.php">XdiffEngine.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">diff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from_lines</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to_lines</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">diff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from_lines</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to_lines</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$from_lines</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
@@ -216,7 +219,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$to_lines</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
@@ -310,7 +313,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Text-Diff-Engine-Xdiff.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Text-Diff-XdiffEngine.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
