@@ -963,8 +963,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003A\u0024edits",
             "name": "edits",
-            "summary": "Array\u0020of\u0020changes.",
+            "summary": "",
             "url": "classes/Horde-Text-Diff-Diff.html#property_edits"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\DiffEngineInterface",
+            "name": "DiffEngineInterface",
+            "summary": "Interface\u0020for\u0020Diff\u0020Engines",
+            "url": "classes/Horde-Text-Diff-DiffEngineInterface.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\DiffEngineInterface\u003A\u003Adiff\u0028\u0029",
+            "name": "diff",
+            "summary": "Create\u0020a\u0020list\u0020of\u0020differences",
+            "url": "classes/Horde-Text-Diff-DiffEngineInterface.html#method_diff"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\Exception",
             "name": "Exception",
@@ -1076,9 +1086,14 @@ Search.appendIndex(
             "summary": "Class\u0020used\u0020internally\u0020by\u0020Horde_Text_Diff\u0020to\u0020actually\u0020compute\u0020the\u0020diffs.",
             "url": "classes/Horde-Text-Diff-NativeEngine.html"
         },                {
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#method___construct"
+        },                {
             "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003Adiff\u0028\u0029",
             "name": "diff",
-            "summary": "",
+            "summary": "Returns\u0020the\u0020array\u0020of\u0020differences.",
             "url": "classes/Horde-Text-Diff-NativeEngine.html#method_diff"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A_diag\u0028\u0029",
@@ -1146,6 +1161,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Text-Diff-NativeEngine.html#property_lcs"
         },                {
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A\u0024fromLines",
+            "name": "fromLines",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#property_fromLines"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\NativeEngine\u003A\u003A\u0024toLines",
+            "name": "toLines",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-NativeEngine.html#property_toLines"
+        },                {
             "fqsen": "\\Horde\\Text\\Diff\\OperationInterface",
             "name": "OperationInterface",
             "summary": "The\u0020original\u0020PHP\u0020version\u0020of\u0020this\u0020code\u0020was\u0020written\u0020by\u0020Geoffrey\u0020T.\u0020Dairiki\n\u003Cdairiki\u0040dairiki.org\u003E,\u0020and\u0020is\u0020used\/adapted\u0020with\u0020his\u0020permission.",
@@ -1165,6 +1190,36 @@ Search.appendIndex(
             "name": "nfinal",
             "summary": "",
             "url": "classes/Horde-Text-Diff-OperationInterface.html#method_nfinal"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\OperationList",
+            "name": "OperationList",
+            "summary": "Interface\u0020for\u0020Diff\u0020Engines",
+            "url": "classes/Horde-Text-Diff-OperationList.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\OperationList\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-OperationList.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\OperationList\u003A\u003AgetIterator\u0028\u0029",
+            "name": "getIterator",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-OperationList.html#method_getIterator"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\OperationList\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-OperationList.html#method_toArray"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\OperationList\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-OperationList.html#method_count"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\OperationList\u003A\u003A\u0024ops",
+            "name": "ops",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-OperationList.html#property_ops"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\Renderer",
             "name": "Renderer",
@@ -1256,6 +1311,11 @@ Search.appendIndex(
             "summary": "Class\u0020used\u0020internally\u0020by\u0020Diff\u0020to\u0020actually\u0020compute\u0020the\u0020diffs.",
             "url": "classes/Horde-Text-Diff-ShellEngine.html"
         },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ShellEngine\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Horde-Text-Diff-ShellEngine.html#method___construct"
+        },                {
             "fqsen": "\\Horde\\Text\\Diff\\ShellEngine\u003A\u003Adiff\u0028\u0029",
             "name": "diff",
             "summary": "Returns\u0020the\u0020array\u0020of\u0020differences.",
@@ -1265,6 +1325,16 @@ Search.appendIndex(
             "name": "_getLines",
             "summary": "Get\u0020lines\u0020from\u0020either\u0020the\u0020old\u0020or\u0020new\u0020text",
             "url": "classes/Horde-Text-Diff-ShellEngine.html#method__getLines"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ShellEngine\u003A\u003A\u0024fromLines",
+            "name": "fromLines",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ShellEngine.html#property_fromLines"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ShellEngine\u003A\u003A\u0024toLines",
+            "name": "toLines",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ShellEngine.html#property_toLines"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\ShellEngine\u003A\u003A\u0024diffCommand",
             "name": "diffCommand",
@@ -1276,10 +1346,15 @@ Search.appendIndex(
             "summary": "Parses\u0020unified\u0020or\u0020context\u0020diffs\u0020output\u0020from\u0020eg.\u0020the\u0020diff\u0020utility.",
             "url": "classes/Horde-Text-Diff-StringEngine.html"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\StringEngine\u003A\u003Adiff\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\StringEngine\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-StringEngine.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\StringEngine\u003A\u003A\u0024diff",
             "name": "diff",
-            "summary": "Parses\u0020a\u0020unified\u0020or\u0020context\u0020diff.",
-            "url": "classes/Horde-Text-Diff-StringEngine.html#method_diff"
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-StringEngine.html#property_diff"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\StringEngine\u003A\u003AparseUnifiedDiff\u0028\u0029",
             "name": "parseUnifiedDiff",
@@ -1290,6 +1365,11 @@ Search.appendIndex(
             "name": "parseContextDiff",
             "summary": "Parses\u0020an\u0020array\u0020containing\u0020the\u0020context\u0020diff.",
             "url": "classes/Horde-Text-Diff-StringEngine.html#method_parseContextDiff"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\StringEngine\u003A\u003A\u0024mode",
+            "name": "mode",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-StringEngine.html#property_mode"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\ThreeWay",
             "name": "ThreeWay",
@@ -1536,10 +1616,25 @@ Search.appendIndex(
             "summary": "Class\u0020used\u0020internally\u0020by\u0020Diff\u0020to\u0020actually\u0020compute\u0020the\u0020diffs.",
             "url": "classes/Horde-Text-Diff-XdiffEngine.html"
         },                {
+            "fqsen": "\\Horde\\Text\\Diff\\XdiffEngine\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-XdiffEngine.html#method___construct"
+        },                {
             "fqsen": "\\Horde\\Text\\Diff\\XdiffEngine\u003A\u003Adiff\u0028\u0029",
             "name": "diff",
-            "summary": "",
+            "summary": "Create\u0020a\u0020list\u0020of\u0020differences",
             "url": "classes/Horde-Text-Diff-XdiffEngine.html#method_diff"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\XdiffEngine\u003A\u003A\u0024fromLines",
+            "name": "fromLines",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-XdiffEngine.html#property_fromLines"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\XdiffEngine\u003A\u003A\u0024toLines",
+            "name": "toLines",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-XdiffEngine.html#property_toLines"
         },                {
             "fqsen": "\\",
             "name": "\\",
