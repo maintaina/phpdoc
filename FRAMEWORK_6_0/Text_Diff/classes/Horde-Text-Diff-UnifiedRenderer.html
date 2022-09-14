@@ -106,7 +106,7 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    ContextRenderer
+    UnifiedRenderer
 
         <span class="phpdocumentor-element__extends">
         extends <a href="classes/Horde-Text-Diff-Renderer.html"><abbr title="\Horde\Text\Diff\Renderer">Renderer</abbr></a>
@@ -124,21 +124,36 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UnifiedRenderer.php"><a href="files/unifiedrenderer.html"><abbr title="UnifiedRenderer.php">UnifiedRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">&quot;Context&quot; diff renderer.</p>
+            <p class="phpdocumentor-summary">&quot;Unified&quot; diff renderer.</p>
 
-    <section class="phpdocumentor-description"><p>This class renders the diff in classic &quot;context diff&quot; format.</p>
+    <section class="phpdocumentor-description"><p>This class renders the diff in classic &quot;unified diff&quot; format.</p>
 <p>Copyright 2004-2017 Horde LLC (http://www.horde.org/)</p>
 <p>See the enclosed file LICENSE for license information (LGPL). If you did
 not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </section>
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>Ciprian Popovici</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
 
 
@@ -152,21 +167,14 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#property__leading_context_lines">$_leading_context_lines</a>
+    <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#property__leading_context_lines">$_leading_context_lines</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
 <dd>Number of leading context &quot;lines&quot; to preserve.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#property__second_block">$_second_block</a>
-    <span>
-                        &nbsp;: mixed            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#property__trailing_context_lines">$_trailing_context_lines</a>
+    <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#property__trailing_context_lines">$_trailing_context_lines</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
@@ -194,7 +202,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 <dd>Renders a diff.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__added">_added()</a>
+    <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#method__added">_added()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -208,35 +216,35 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 <dd>Render a diff block</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__blockHeader">_blockHeader()</a>
+    <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#method__blockHeader">_blockHeader()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Render a Diff Block Header</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__changed">_changed()</a>
+    <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#method__changed">_changed()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Produces a comparison string out of arrays of deleted and added lines</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__context">_context()</a>
+    <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#method__context">_context()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Glues array of context lines to a space-prefixed string</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__deleted">_deleted()</a>
+    <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#method__deleted">_deleted()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Glues array of added lines to a &gt;-prefixed string</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__endBlock">_endBlock()</a>
+    <a href="classes/Horde-Text-Diff-Renderer.html#method__endBlock">_endBlock()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -280,7 +288,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Horde-Text-Diff-ContextRenderer.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -291,14 +299,14 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property__leading_context_lines">
         $_leading_context_lines
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#property__leading_context_lines" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#property__leading_context_lines" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UnifiedRenderer.php"><a href="files/unifiedrenderer.html"><abbr title="UnifiedRenderer.php">UnifiedRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -323,50 +331,16 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__second_block">
-        $_second_block
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#property__second_block" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">31</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$_second_block</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="property__trailing_context_lines">
         $_trailing_context_lines
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#property__trailing_context_lines" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#property__trailing_context_lines" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UnifiedRenderer.php"><a href="files/unifiedrenderer.html"><abbr title="UnifiedRenderer.php">UnifiedRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -389,7 +363,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Text-Diff-ContextRenderer.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -525,12 +499,12 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__added">
         _added()
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__added" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#method__added" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UnifiedRenderer.php"><a href="files/unifiedrenderer.html"><abbr title="UnifiedRenderer.php">UnifiedRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -641,12 +615,12 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__blockHeader">
         _blockHeader()
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__blockHeader" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#method__blockHeader" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UnifiedRenderer.php"><a href="files/unifiedrenderer.html"><abbr title="UnifiedRenderer.php">UnifiedRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -707,12 +681,12 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__changed">
         _changed()
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__changed" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#method__changed" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UnifiedRenderer.php"><a href="files/unifiedrenderer.html"><abbr title="UnifiedRenderer.php">UnifiedRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -757,12 +731,12 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__context">
         _context()
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__context" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#method__context" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UnifiedRenderer.php"><a href="files/unifiedrenderer.html"><abbr title="UnifiedRenderer.php">UnifiedRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -800,12 +774,12 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__deleted">
         _deleted()
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__deleted" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#method__deleted" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UnifiedRenderer.php"><a href="files/unifiedrenderer.html"><abbr title="UnifiedRenderer.php">UnifiedRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -843,12 +817,12 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__endBlock">
         _endBlock()
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__endBlock" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-Renderer.html#method__endBlock" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Renderer.php"><a href="files/renderer.html"><abbr title="Renderer.php">Renderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">243</span>
 
     </aside>
 
@@ -1108,7 +1082,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Text-Diff-UnifiedRenderer.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

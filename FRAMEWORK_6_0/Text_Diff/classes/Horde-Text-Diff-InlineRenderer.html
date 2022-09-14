@@ -106,7 +106,7 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    ContextRenderer
+    InlineRenderer
 
         <span class="phpdocumentor-element__extends">
         extends <a href="classes/Horde-Text-Diff-Renderer.html"><abbr title="\Horde\Text\Diff\Renderer">Renderer</abbr></a>
@@ -124,21 +124,36 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">&quot;Context&quot; diff renderer.</p>
+            <p class="phpdocumentor-summary">&quot;Inline&quot; diff renderer.</p>
 
-    <section class="phpdocumentor-description"><p>This class renders the diff in classic &quot;context diff&quot; format.</p>
+    <section class="phpdocumentor-description"><p>This class renders diffs in the Wiki-style &quot;inline&quot; format.</p>
 <p>Copyright 2004-2017 Horde LLC (http://www.horde.org/)</p>
 <p>See the enclosed file LICENSE for license information (LGPL). If you did
 not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </section>
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>Ciprian Popovici</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
 
 
@@ -152,23 +167,66 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#property__leading_context_lines">$_leading_context_lines</a>
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__block_header">$_block_header</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>Header for each change block.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__del_prefix">$_del_prefix</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>Prefix for deleted text.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__del_suffix">$_del_suffix</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>Suffix for deleted text.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__ins_prefix">$_ins_prefix</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>Prefix for inserted text.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__ins_suffix">$_ins_suffix</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>Suffix for inserted text.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__leading_context_lines">$_leading_context_lines</a>
+    <span>
+                        &nbsp;: int            </span>
 </dt>
 <dd>Number of leading context &quot;lines&quot; to preserve.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#property__second_block">$_second_block</a>
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__split_characters">$_split_characters</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: bool            </span>
 </dt>
-<dd></dd>
+<dd>Whether to split down to character-level.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#property__trailing_context_lines">$_trailing_context_lines</a>
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__split_level">$_split_level</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>What are we currently splitting on? Used to recurse to show word-level
+or character-level changes.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__trailing_context_lines">$_trailing_context_lines</a>
+    <span>
+                        &nbsp;: int            </span>
 </dt>
 <dd>Number of trailing context &quot;lines&quot; to preserve.</dd>
 
@@ -194,7 +252,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 <dd>Renders a diff.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__added">_added()</a>
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__added">_added()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -208,35 +266,42 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 <dd>Render a diff block</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__blockHeader">_blockHeader()</a>
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__blockHeader">_blockHeader()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Render a Diff Block Header</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__changed">_changed()</a>
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__changed">_changed()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Produces a comparison string out of arrays of deleted and added lines</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__context">_context()</a>
+    <a href="classes/Horde-Text-Diff-Renderer.html#method__context">_context()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Glues array of context lines to a space-prefixed string</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__deleted">_deleted()</a>
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__deleted">_deleted()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Glues array of added lines to a &gt;-prefixed string</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__endBlock">_endBlock()</a>
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__encode">_encode()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Horde-Text-Diff-Renderer.html#method__endBlock">_endBlock()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -250,14 +315,21 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Text-Diff-Renderer.html#method__lines">_lines()</a>
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__lines">_lines()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Glue an array of lines to a string with prefixed lines</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Horde-Text-Diff-Renderer.html#method__startBlock">_startBlock()</a>
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__splitOnWords">_splitOnWords()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__startBlock">_startBlock()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -280,7 +352,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Horde-Text-Diff-ContextRenderer.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Text-Diff-InlineRenderer.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -289,30 +361,29 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__leading_context_lines">
-        $_leading_context_lines
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#property__leading_context_lines" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property__block_header">
+        $_block_header
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__block_header" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Number of leading context &quot;lines&quot; to preserve.</p>
+        <p class="phpdocumentor-summary">Header for each change block.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$_leading_context_lines</span>
-     = <span class="phpdocumentor-signature__default-value">4</span></code>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$_block_header</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -323,30 +394,228 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property__second_block">
-        $_second_block
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#property__second_block" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property__del_prefix">
+        $_del_prefix
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__del_prefix" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Prefix for deleted text.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$_second_block</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$_del_prefix</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;&lt;del&gt;&#039;</span></code>
 
-        <section class="phpdocumentor-description"></section>
+    
+    
+    
 
-        <section class="phpdocumentor-description"></section>
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property__del_suffix">
+        $_del_suffix
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__del_suffix" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
+    </aside>
+
+        <p class="phpdocumentor-summary">Suffix for deleted text.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$_del_suffix</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;&lt;/del&gt;&#039;</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property__ins_prefix">
+        $_ins_prefix
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__ins_prefix" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Prefix for inserted text.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$_ins_prefix</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;&lt;ins&gt;&#039;</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property__ins_suffix">
+        $_ins_suffix
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__ins_suffix" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">51</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Suffix for inserted text.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$_ins_suffix</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;&lt;/ins&gt;&#039;</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property__leading_context_lines">
+        $_leading_context_lines
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__leading_context_lines" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Number of leading context &quot;lines&quot; to preserve.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$_leading_context_lines</span>
+     = <span class="phpdocumentor-signature__default-value">10000</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property__split_characters">
+        $_split_characters
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__split_characters" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">79</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Whether to split down to character-level.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$_split_characters</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property__split_level">
+        $_split_level
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__split_level" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">87</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">What are we currently splitting on? Used to recurse to show word-level
+or character-level changes.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$_split_level</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;lines&#039;</span></code>
+
+    
+    
     
 
 </article>
@@ -359,14 +628,14 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property__trailing_context_lines">
         $_trailing_context_lines
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#property__trailing_context_lines" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#property__trailing_context_lines" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -374,13 +643,12 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$_trailing_context_lines</span>
-     = <span class="phpdocumentor-signature__default-value">4</span></code>
+     = <span class="phpdocumentor-signature__default-value">10000</span></code>
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -389,7 +657,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Text-Diff-ContextRenderer.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Text-Diff-InlineRenderer.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -525,12 +793,12 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__added">
         _added()
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__added" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__added" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -641,12 +909,12 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__blockHeader">
         _blockHeader()
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__blockHeader" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__blockHeader" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -707,12 +975,12 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__changed">
         _changed()
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__changed" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__changed" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -757,12 +1025,12 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__context">
         _context()
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__context" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-Renderer.html#method__context" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Renderer.php"><a href="files/renderer.html"><abbr title="Renderer.php">Renderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">266</span>
 
     </aside>
 
@@ -800,12 +1068,12 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__deleted">
         _deleted()
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__deleted" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__deleted" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
@@ -841,14 +1109,58 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__endBlock">
-        _endBlock()
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#method__endBlock" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method__encode">
+        _encode()
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__encode" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="ContextRenderer.php"><a href="files/contextrenderer.html"><abbr title="ContextRenderer.php">ContextRenderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">_encode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method__endBlock">
+        _endBlock()
+        <a href="classes/Horde-Text-Diff-Renderer.html#method__endBlock" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Renderer.php"><a href="files/renderer.html"><abbr title="Renderer.php">Renderer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">243</span>
 
     </aside>
 
@@ -909,12 +1221,12 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method__lines">
         _lines()
-        <a href="classes/Horde-Text-Diff-Renderer.html#method__lines" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__lines" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Renderer.php"><a href="files/renderer.html"><abbr title="Renderer.php">Renderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">255</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -922,7 +1234,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">_lines</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lines</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039; &#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">_lines</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lines</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039; &#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$encode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -930,7 +1242,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$lines</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -941,6 +1253,14 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>defaults to a single space</p>
 </section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$encode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
 
             </dd>
             </dl>
@@ -959,14 +1279,68 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__startBlock">
-        _startBlock()
-        <a href="classes/Horde-Text-Diff-Renderer.html#method__startBlock" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method__splitOnWords">
+        _splitOnWords()
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__splitOnWords" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Renderer.php"><a href="files/renderer.html"><abbr title="Renderer.php">Renderer.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">_splitOnWords</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$newlineEscape</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;
+&quot;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$newlineEscape</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&quot;
+&quot;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method__startBlock">
+        _startBlock()
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#method__startBlock" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="InlineRenderer.php"><a href="files/inlinerenderer.html"><abbr title="InlineRenderer.php">InlineRenderer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -1108,7 +1482,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Text-Diff-ContextRenderer.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Text-Diff-InlineRenderer.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

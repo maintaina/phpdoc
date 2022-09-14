@@ -117,6 +117,9 @@
                             </ul>
         </div>
     
+            <span class="phpdocumentor-element__implements">
+            implements
+                            <a href="classes/Horde-Text-Diff-DiffEngineInterface.html"><abbr title="\Horde\Text\Diff\DiffEngineInterface">DiffEngineInterface</abbr></a>                    </span>
     
     </h2>
 
@@ -162,6 +165,18 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
 
 
+<h3 id="interfaces_class_traits">
+    Interfaces, Classes, Traits and Enums
+    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-Text-Diff-DiffEngineInterface.html"><abbr title="\Horde\Text\Diff\DiffEngineInterface">DiffEngineInterface</abbr></a></dt>
+        <dd>Interface for Diff Engines</dd>
+    
+    
+    
+    </dl>
 
 
 <h3 id="toc">
@@ -194,7 +209,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Text-Diff-StringEngine.html#method_diff">diff()</a>
     <span>
-                                &nbsp;: array&lt;string|int, <a href="classes/Horde-Text-Diff-OperationInterface.html"><abbr title="\Horde\Text\Diff\OperationInterface">OperationInterface</abbr></a>&gt;    </span>
+                                &nbsp;: <a href="classes/Horde-Text-Diff-OperationList.html"><abbr title="\Horde\Text\Diff\OperationList">OperationList</abbr></a>    </span>
 </dt>
 <dd>Parses a unified or context diff.</dd>
 
@@ -208,7 +223,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Text-Diff-StringEngine.html#method_parseUnifiedDiff">parseUnifiedDiff()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: <a href="classes/Horde-Text-Diff-OperationList.html"><abbr title="\Horde\Text\Diff\OperationList">OperationList</abbr></a>    </span>
 </dt>
 <dd>Parses an array containing the unified diff.</dd>
 
@@ -372,7 +387,7 @@ not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">diff</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Horde-Text-Diff-OperationInterface.html"><abbr title="\Horde\Text\Diff\OperationInterface">OperationInterface</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">diff</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Text-Diff-OperationList.html"><abbr title="\Horde\Text\Diff\OperationList">OperationList</abbr></a></span></code>
 
         <section class="phpdocumentor-description"><p>First param contains the whole diff and the second can be used to force
 a specific diff type. If the second parameter is 'autodetect', the
@@ -397,7 +412,7 @@ diff will be examined to find out which type of diff this is.</p>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Horde-Text-Diff-OperationInterface.html"><abbr title="\Horde\Text\Diff\OperationInterface">OperationInterface</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Text-Diff-OperationList.html"><abbr title="\Horde\Text\Diff\OperationList">OperationList</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"><p>all changes made</p>
 </section>
@@ -417,7 +432,7 @@ diff will be examined to find out which type of diff this is.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="StringEngine.php"><a href="files/stringengine.html"><abbr title="StringEngine.php">StringEngine.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">155</span>
 
     </aside>
 
@@ -472,7 +487,7 @@ diff will be examined to find out which type of diff this is.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">parseUnifiedDiff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$diff</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">parseUnifiedDiff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$diff</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Text-Diff-OperationList.html"><abbr title="\Horde\Text\Diff\OperationList">OperationList</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -491,7 +506,7 @@ diff will be examined to find out which type of diff this is.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Horde-Text-Diff-OperationList.html"><abbr title="\Horde\Text\Diff\OperationList">OperationList</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"><p>List of all diff operations.</p>
 </section>

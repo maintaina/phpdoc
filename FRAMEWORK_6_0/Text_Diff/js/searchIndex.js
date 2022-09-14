@@ -901,6 +901,96 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Text-Diff-DeleteOperation.html#method_reverse"
         },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Diff",
+            "name": "Diff",
+            "summary": "General\u0020API\u0020for\u0020generating\u0020and\u0020formatting\u0020diffs\u0020\u002D\u0020the\u0020differences\u0020between\ntwo\u0020sequences\u0020of\u0020strings.",
+            "url": "classes/Horde-Text-Diff-Diff.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Computes\u0020diffs\u0020between\u0020sequences\u0020of\u0020strings.",
+            "url": "classes/Horde-Text-Diff-Diff.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003AfromFileLineArrays\u0028\u0029",
+            "name": "fromFileLineArrays",
+            "summary": "Shortcut\u0020constructor,\u0020internally\u0020creating\u0020the\u0020Engine\u0020instance.",
+            "url": "classes/Horde-Text-Diff-Diff.html#method_fromFileLineArrays"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003AfromString\u0028\u0029",
+            "name": "fromString",
+            "summary": "Shortcut\u0020constructor,\u0020internally\u0020creating\u0020the\u0020Engine\u0020instance.",
+            "url": "classes/Horde-Text-Diff-Diff.html#method_fromString"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003AgetDiff\u0028\u0029",
+            "name": "getDiff",
+            "summary": "Returns\u0020the\u0020array\u0020of\u0020differences.",
+            "url": "classes/Horde-Text-Diff-Diff.html#method_getDiff"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003AcountAddedLines\u0028\u0029",
+            "name": "countAddedLines",
+            "summary": "returns\u0020the\u0020number\u0020of\u0020new\u0020\u0028added\u0029\u0020lines\u0020in\u0020a\u0020given\u0020diff.",
+            "url": "classes/Horde-Text-Diff-Diff.html#method_countAddedLines"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003AcountDeletedLines\u0028\u0029",
+            "name": "countDeletedLines",
+            "summary": "Returns\u0020the\u0020number\u0020of\u0020deleted\u0020\u0028removed\u0029\u0020lines\u0020in\u0020a\u0020given\u0020diff.",
+            "url": "classes/Horde-Text-Diff-Diff.html#method_countDeletedLines"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003Areverse\u0028\u0029",
+            "name": "reverse",
+            "summary": "Computes\u0020a\u0020reversed\u0020diff.",
+            "url": "classes/Horde-Text-Diff-Diff.html#method_reverse"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003AisEmpty\u0028\u0029",
+            "name": "isEmpty",
+            "summary": "Checks\u0020for\u0020an\u0020empty\u0020diff.",
+            "url": "classes/Horde-Text-Diff-Diff.html#method_isEmpty"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003Alcs\u0028\u0029",
+            "name": "lcs",
+            "summary": "Computes\u0020the\u0020length\u0020of\u0020the\u0020Longest\u0020Common\u0020Subsequence\u0020\u0028LCS\u0029.",
+            "url": "classes/Horde-Text-Diff-Diff.html#method_lcs"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003AgetOriginal\u0028\u0029",
+            "name": "getOriginal",
+            "summary": "Gets\u0020the\u0020original\u0020set\u0020of\u0020lines.",
+            "url": "classes/Horde-Text-Diff-Diff.html#method_getOriginal"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003AgetFinal\u0028\u0029",
+            "name": "getFinal",
+            "summary": "Gets\u0020the\u0020final\u0020set\u0020of\u0020lines.",
+            "url": "classes/Horde-Text-Diff-Diff.html#method_getFinal"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003AtrimNewlines\u0028\u0029",
+            "name": "trimNewlines",
+            "summary": "Removes\u0020trailing\u0020newlines\u0020from\u0020a\u0020line\u0020of\u0020text.\u0020This\u0020is\u0020meant\u0020to\u0020be\u0020used\nwith\u0020array_walk\u0028\u0029.",
+            "url": "classes/Horde-Text-Diff-Diff.html#method_trimNewlines"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003A_check\u0028\u0029",
+            "name": "_check",
+            "summary": "Checks\u0020a\u0020diff\u0020for\u0020validity.",
+            "url": "classes/Horde-Text-Diff-Diff.html#method__check"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\Diff\u003A\u003A\u0024edits",
+            "name": "edits",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-Diff.html#property_edits"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\DiffEngineFactory",
+            "name": "DiffEngineFactory",
+            "summary": "Load\u0020a\u0020Diff\u0020Engine.",
+            "url": "classes/Horde-Text-Diff-DiffEngineFactory.html"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\DiffEngineFactory\u003A\u003AfromFileLineArrays\u0028\u0029",
+            "name": "fromFileLineArrays",
+            "summary": "Shortcut\u0020constructor,\u0020internally\u0020creating\u0020the\u0020Engine\u0020instance.",
+            "url": "classes/Horde-Text-Diff-DiffEngineFactory.html#method_fromFileLineArrays"
+        },                {
+            "fqsen": "\\Horde\\Text\\Diff\\DiffEngineFactory\u003A\u003AfromString\u0028\u0029",
+            "name": "fromString",
+            "summary": "Shortcut\u0020constructor,\u0020internally\u0020creating\u0020the\u0020Engine\u0020instance.",
+            "url": "classes/Horde-Text-Diff-DiffEngineFactory.html#method_fromString"
+        },                {
             "fqsen": "\\Horde\\Text\\Diff\\DiffEngineInterface",
             "name": "DiffEngineInterface",
             "summary": "Interface\u0020for\u0020Diff\u0020Engines",
@@ -916,95 +1006,95 @@ Search.appendIndex(
             "summary": "Exception\u0020handler\u0020for\u0020the\u0020Text_Diff\u0020package.",
             "url": "classes/Horde-Text-Diff-Exception.html"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer",
             "name": "InlineRenderer",
             "summary": "\u0022Inline\u0022\u0020diff\u0020renderer.",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_blockHeader\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A_blockHeader\u0028\u0029",
             "name": "_blockHeader",
             "summary": "Render\u0020a\u0020Diff\u0020Block\u0020Header",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__blockHeader"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#method__blockHeader"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_startBlock\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A_startBlock\u0028\u0029",
             "name": "_startBlock",
             "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__startBlock"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#method__startBlock"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_lines\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A_lines\u0028\u0029",
             "name": "_lines",
             "summary": "Glue\u0020an\u0020array\u0020of\u0020lines\u0020to\u0020a\u0020string\u0020with\u0020prefixed\u0020lines",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__lines"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#method__lines"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_added\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A_added\u0028\u0029",
             "name": "_added",
             "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__added"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#method__added"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_deleted\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A_deleted\u0028\u0029",
             "name": "_deleted",
             "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__deleted"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#method__deleted"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_changed\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A_changed\u0028\u0029",
             "name": "_changed",
             "summary": "Produces\u0020a\u0020comparison\u0020string\u0020out\u0020of\u0020arrays\u0020of\u0020deleted\u0020and\u0020added\u0020lines",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__changed"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#method__changed"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_splitOnWords\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A_splitOnWords\u0028\u0029",
             "name": "_splitOnWords",
             "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__splitOnWords"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#method__splitOnWords"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A_encode\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A_encode\u0028\u0029",
             "name": "_encode",
             "summary": "",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#method__encode"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#method__encode"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_leading_context_lines",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A\u0024_leading_context_lines",
             "name": "_leading_context_lines",
             "summary": "Number\u0020of\u0020leading\u0020context\u0020\u0022lines\u0022\u0020to\u0020preserve.",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__leading_context_lines"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#property__leading_context_lines"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_trailing_context_lines",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A\u0024_trailing_context_lines",
             "name": "_trailing_context_lines",
             "summary": "Number\u0020of\u0020trailing\u0020context\u0020\u0022lines\u0022\u0020to\u0020preserve.",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__trailing_context_lines"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#property__trailing_context_lines"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_ins_prefix",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A\u0024_ins_prefix",
             "name": "_ins_prefix",
             "summary": "Prefix\u0020for\u0020inserted\u0020text.",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__ins_prefix"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#property__ins_prefix"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_ins_suffix",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A\u0024_ins_suffix",
             "name": "_ins_suffix",
             "summary": "Suffix\u0020for\u0020inserted\u0020text.",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__ins_suffix"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#property__ins_suffix"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_del_prefix",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A\u0024_del_prefix",
             "name": "_del_prefix",
             "summary": "Prefix\u0020for\u0020deleted\u0020text.",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__del_prefix"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#property__del_prefix"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_del_suffix",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A\u0024_del_suffix",
             "name": "_del_suffix",
             "summary": "Suffix\u0020for\u0020deleted\u0020text.",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__del_suffix"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#property__del_suffix"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_block_header",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A\u0024_block_header",
             "name": "_block_header",
             "summary": "Header\u0020for\u0020each\u0020change\u0020block.",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__block_header"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#property__block_header"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_split_characters",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A\u0024_split_characters",
             "name": "_split_characters",
             "summary": "Whether\u0020to\u0020split\u0020down\u0020to\u0020character\u002Dlevel.",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__split_characters"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#property__split_characters"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\InlineRenderer\u003A\u003A\u0024_split_level",
+            "fqsen": "\\Horde\\Text\\Diff\\InlineRenderer\u003A\u003A\u0024_split_level",
             "name": "_split_level",
             "summary": "What\u0020are\u0020we\u0020currently\u0020splitting\u0020on\u003F\u0020Used\u0020to\u0020recurse\u0020to\u0020show\u0020word\u002Dlevel\nor\u0020character\u002Dlevel\u0020changes.",
-            "url": "classes/Horde-Text-Diff-Renderer-InlineRenderer.html#property__split_level"
+            "url": "classes/Horde-Text-Diff-InlineRenderer.html#property__split_level"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\MappedDiff",
             "name": "MappedDiff",
@@ -1316,6 +1406,11 @@ Search.appendIndex(
             "summary": "Computes\u0020diff\u0020between\u00203\u0020sequences\u0020of\u0020strings.",
             "url": "classes/Horde-Text-Diff-ThreeWay.html#method___construct"
         },                {
+            "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\u003A\u003AfromFileLineArrays\u0028\u0029",
+            "name": "fromFileLineArrays",
+            "summary": "",
+            "url": "classes/Horde-Text-Diff-ThreeWay.html#method_fromFileLineArrays"
+        },                {
             "fqsen": "\\Horde\\Text\\Diff\\ThreeWay\u003A\u003AmergedOutput\u0028\u0029",
             "name": "mergedOutput",
             "summary": "",
@@ -1476,75 +1571,75 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Text-Diff-ThreeWayCopyOperation.html#method_isConflict"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedColoredRenderer",
+            "fqsen": "\\Horde\\Text\\Diff\\UnifiedColoredRenderer",
             "name": "UnifiedColoredRenderer",
             "summary": "\u0022Unified\u0022\u0020diff\u0020renderer\u0020with\u0020output\u0020coloring.",
-            "url": "classes/Horde-Text-Diff-Renderer-UnifiedColoredRenderer.html"
+            "url": "classes/Horde-Text-Diff-UnifiedColoredRenderer.html"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedColoredRenderer\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\UnifiedColoredRenderer\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Constructor.",
-            "url": "classes/Horde-Text-Diff-Renderer-UnifiedColoredRenderer.html#method___construct"
+            "url": "classes/Horde-Text-Diff-UnifiedColoredRenderer.html#method___construct"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedColoredRenderer\u003A\u003A_blockHeader\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\UnifiedColoredRenderer\u003A\u003A_blockHeader\u0028\u0029",
             "name": "_blockHeader",
             "summary": "Render\u0020a\u0020Diff\u0020Block\u0020Header",
-            "url": "classes/Horde-Text-Diff-Renderer-UnifiedColoredRenderer.html#method__blockHeader"
+            "url": "classes/Horde-Text-Diff-UnifiedColoredRenderer.html#method__blockHeader"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedColoredRenderer\u003A\u003A_added\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\UnifiedColoredRenderer\u003A\u003A_added\u0028\u0029",
             "name": "_added",
             "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
-            "url": "classes/Horde-Text-Diff-Renderer-UnifiedColoredRenderer.html#method__added"
+            "url": "classes/Horde-Text-Diff-UnifiedColoredRenderer.html#method__added"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedColoredRenderer\u003A\u003A_deleted\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\UnifiedColoredRenderer\u003A\u003A_deleted\u0028\u0029",
             "name": "_deleted",
             "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
-            "url": "classes/Horde-Text-Diff-Renderer-UnifiedColoredRenderer.html#method__deleted"
+            "url": "classes/Horde-Text-Diff-UnifiedColoredRenderer.html#method__deleted"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedColoredRenderer\u003A\u003A\u0024_cli",
+            "fqsen": "\\Horde\\Text\\Diff\\UnifiedColoredRenderer\u003A\u003A\u0024_cli",
             "name": "_cli",
             "summary": "CLI\u0020handler.",
-            "url": "classes/Horde-Text-Diff-Renderer-UnifiedColoredRenderer.html#property__cli"
+            "url": "classes/Horde-Text-Diff-UnifiedColoredRenderer.html#property__cli"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer",
+            "fqsen": "\\Horde\\Text\\Diff\\UnifiedRenderer",
             "name": "UnifiedRenderer",
             "summary": "\u0022Unified\u0022\u0020diff\u0020renderer.",
-            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html"
+            "url": "classes/Horde-Text-Diff-UnifiedRenderer.html"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer\u003A\u003A_blockHeader\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\UnifiedRenderer\u003A\u003A_blockHeader\u0028\u0029",
             "name": "_blockHeader",
             "summary": "Render\u0020a\u0020Diff\u0020Block\u0020Header",
-            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html#method__blockHeader"
+            "url": "classes/Horde-Text-Diff-UnifiedRenderer.html#method__blockHeader"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer\u003A\u003A_context\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\UnifiedRenderer\u003A\u003A_context\u0028\u0029",
             "name": "_context",
             "summary": "Glues\u0020array\u0020of\u0020context\u0020lines\u0020to\u0020a\u0020space\u002Dprefixed\u0020string",
-            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html#method__context"
+            "url": "classes/Horde-Text-Diff-UnifiedRenderer.html#method__context"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer\u003A\u003A_added\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\UnifiedRenderer\u003A\u003A_added\u0028\u0029",
             "name": "_added",
             "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
-            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html#method__added"
+            "url": "classes/Horde-Text-Diff-UnifiedRenderer.html#method__added"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer\u003A\u003A_deleted\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\UnifiedRenderer\u003A\u003A_deleted\u0028\u0029",
             "name": "_deleted",
             "summary": "Glues\u0020array\u0020of\u0020added\u0020lines\u0020to\u0020a\u0020\u003E\u002Dprefixed\u0020string",
-            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html#method__deleted"
+            "url": "classes/Horde-Text-Diff-UnifiedRenderer.html#method__deleted"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer\u003A\u003A_changed\u0028\u0029",
+            "fqsen": "\\Horde\\Text\\Diff\\UnifiedRenderer\u003A\u003A_changed\u0028\u0029",
             "name": "_changed",
             "summary": "Produces\u0020a\u0020comparison\u0020string\u0020out\u0020of\u0020arrays\u0020of\u0020deleted\u0020and\u0020added\u0020lines",
-            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html#method__changed"
+            "url": "classes/Horde-Text-Diff-UnifiedRenderer.html#method__changed"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer\u003A\u003A\u0024_leading_context_lines",
+            "fqsen": "\\Horde\\Text\\Diff\\UnifiedRenderer\u003A\u003A\u0024_leading_context_lines",
             "name": "_leading_context_lines",
             "summary": "Number\u0020of\u0020leading\u0020context\u0020\u0022lines\u0022\u0020to\u0020preserve.",
-            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html#property__leading_context_lines"
+            "url": "classes/Horde-Text-Diff-UnifiedRenderer.html#property__leading_context_lines"
         },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer\\UnifiedRenderer\u003A\u003A\u0024_trailing_context_lines",
+            "fqsen": "\\Horde\\Text\\Diff\\UnifiedRenderer\u003A\u003A\u0024_trailing_context_lines",
             "name": "_trailing_context_lines",
             "summary": "Number\u0020of\u0020trailing\u0020context\u0020\u0022lines\u0022\u0020to\u0020preserve.",
-            "url": "classes/Horde-Text-Diff-Renderer-UnifiedRenderer.html#property__trailing_context_lines"
+            "url": "classes/Horde-Text-Diff-UnifiedRenderer.html#property__trailing_context_lines"
         },                {
             "fqsen": "\\Horde\\Text\\Diff\\XdiffEngine",
             "name": "XdiffEngine",
@@ -1590,10 +1685,5 @@ Search.appendIndex(
             "name": "Horde",
             "summary": "",
             "url": "namespaces/horde.html"
-        },                {
-            "fqsen": "\\Horde\\Text\\Diff\\Renderer",
-            "name": "Renderer",
-            "summary": "",
-            "url": "namespaces/horde-text-diff-renderer.html"
         }            ]
 );
