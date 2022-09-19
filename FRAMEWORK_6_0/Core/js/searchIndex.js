@@ -7363,7 +7363,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Core_Ui_VarRenderer_Html\u003A\u003A_renderVarInput_passwordconfirm\u0028\u0029",
             "name": "_renderVarInput_passwordconfirm",
-            "summary": "",
+            "summary": "Render\u0020two\u0020input\u0020fields\u0020to\u0020confirm\u0020a\u0020password",
             "url": "classes/Horde-Core-Ui-VarRenderer-Html.html#method__renderVarInput_passwordconfirm"
         },                {
             "fqsen": "\\Horde_Core_Ui_VarRenderer_Html\u003A\u003A_renderVarInput_boolean\u0028\u0029",
