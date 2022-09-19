@@ -631,6 +631,21 @@ Search.appendIndex(
             "summary": "Given\u0020an\u0020array,\u0020returns\u0020an\u0020associative\u0020array\u0020with\u0020each\u0020element\u0020key\nderived\u0020from\u0020its\u0020value.",
             "url": "classes/Horde-Util-ArrayUtils.html#method_valuesToKeys"
         },                {
+            "fqsen": "\\Horde\\Util\\CharacterSets",
+            "name": "CharacterSets",
+            "summary": "Lookup\u0020and\u0020conversion\u0020between\u0020character\u0020set\u0020names\u0020for\u0020different\u0020problem\u0020domains",
+            "url": "classes/Horde-Util-CharacterSets.html"
+        },                {
+            "fqsen": "\\Horde\\Util\\CharacterSets\u003A\u003AtoMbstring\u0028\u0029",
+            "name": "toMbstring",
+            "summary": "",
+            "url": "classes/Horde-Util-CharacterSets.html#method_toMbstring"
+        },                {
+            "fqsen": "\\Horde\\Util\\CharacterSets\u003A\u003A\u0024toMbString",
+            "name": "toMbString",
+            "summary": "",
+            "url": "classes/Horde-Util-CharacterSets.html#property_toMbString"
+        },                {
             "fqsen": "\\Horde\\Util\\Domhtml",
             "name": "Domhtml",
             "summary": "Parse\u0020DOM\u0020data\u0020from\u0020HTML\u0020strings.",
