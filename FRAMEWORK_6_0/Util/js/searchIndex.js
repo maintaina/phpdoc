@@ -183,7 +183,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_String",
             "name": "Horde_String",
-            "summary": "Provides\u0020static\u0020methods\u0020for\u0020charset\u0020and\u0020locale\u0020safe\u0020string\u0020manipulation.",
+            "summary": "",
             "url": "classes/Horde-String.html"
         },                {
             "fqsen": "\\Horde_String\u003A\u003AconvertCharset\u0028\u0029",
