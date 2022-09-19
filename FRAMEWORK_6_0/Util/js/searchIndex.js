@@ -701,20 +701,20 @@ Search.appendIndex(
             "summary": "DOM\u0020object.",
             "url": "classes/Horde-Util-Domhtml.html#property_dom"
         },                {
-            "fqsen": "\\Horde\\Util\\Domhtml\u003A\u003A\u0024iterator",
-            "name": "iterator",
+            "fqsen": "\\Horde\\Util\\Domhtml\u003A\u003A\u0024_iterator",
+            "name": "_iterator",
             "summary": "Iterator\u0020status.",
-            "url": "classes/Horde-Util-Domhtml.html#property_iterator"
+            "url": "classes/Horde-Util-Domhtml.html#property__iterator"
         },                {
-            "fqsen": "\\Horde\\Util\\Domhtml\u003A\u003A\u0024origCharset",
-            "name": "origCharset",
+            "fqsen": "\\Horde\\Util\\Domhtml\u003A\u003A\u0024_origCharset",
+            "name": "_origCharset",
             "summary": "Original\u0020charset\u0020of\u0020data.",
-            "url": "classes/Horde-Util-Domhtml.html#property_origCharset"
+            "url": "classes/Horde-Util-Domhtml.html#property__origCharset"
         },                {
-            "fqsen": "\\Horde\\Util\\Domhtml\u003A\u003A\u0024xmlencoding",
-            "name": "xmlencoding",
+            "fqsen": "\\Horde\\Util\\Domhtml\u003A\u003A\u0024_xmlencoding",
+            "name": "_xmlencoding",
             "summary": "Encoding\u0020tag\u0020added\u0020to\u0020beginning\u0020of\u0020output.",
-            "url": "classes/Horde-Util-Domhtml.html#property_xmlencoding"
+            "url": "classes/Horde-Util-Domhtml.html#property__xmlencoding"
         },                {
             "fqsen": "\\Horde\\Util\\HordeString",
             "name": "HordeString",
@@ -851,20 +851,35 @@ Search.appendIndex(
             "summary": "Strip\u0020UTF\u002D8\u0020byte\u0020order\u0020mark\u0020\u0028BOM\u0029\u0020from\u0020string\u0020data.",
             "url": "classes/Horde-Util-HordeString.html#method_trimUtf8Bom"
         },                {
-            "fqsen": "\\Horde\\Util\\HordeString\u003A\u003AconvertToUtf8\u0028\u0029",
-            "name": "convertToUtf8",
-            "summary": "Try\u0020to\u0020convert\u0020a\u0020string\u0020to\u0020UTF\u002D8.",
-            "url": "classes/Horde-Util-HordeString.html#method_convertToUtf8"
-        },                {
-            "fqsen": "\\Horde\\Util\\HordeString\u003A\u003A\u0024lowers",
-            "name": "lowers",
+            "fqsen": "\\Horde\\Util\\HordeString\u003A\u003A\u0024_lowers",
+            "name": "_lowers",
             "summary": "lower\u0028\u0029\u0020cache.",
-            "url": "classes/Horde-Util-HordeString.html#property_lowers"
+            "url": "classes/Horde-Util-HordeString.html#property__lowers"
         },                {
-            "fqsen": "\\Horde\\Util\\HordeString\u003A\u003A\u0024uppers",
-            "name": "uppers",
+            "fqsen": "\\Horde\\Util\\HordeString\u003A\u003A\u0024_uppers",
+            "name": "_uppers",
             "summary": "upper\u0028\u0029\u0020cache.",
-            "url": "classes/Horde-Util-HordeString.html#property_uppers"
+            "url": "classes/Horde-Util-HordeString.html#property__uppers"
+        },                {
+            "fqsen": "\\Horde\\Util\\Stringable",
+            "name": "Stringable",
+            "summary": "OO\u0020wrapper\u0020for\u0020HordeString\u0020for\u0020charset\u0020and\u0020locale\u0020safe\u0020string\u0020manipulation.",
+            "url": "classes/Horde-Util-Stringable.html"
+        },                {
+            "fqsen": "\\Horde\\Util\\Stringable\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Util-Stringable.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Util\\Stringable\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Horde-Util-Stringable.html#method___toString"
+        },                {
+            "fqsen": "\\Horde\\Util\\Stringable\u003A\u003A\u0024string",
+            "name": "string",
+            "summary": "",
+            "url": "classes/Horde-Util-Stringable.html#property_string"
         },                {
             "fqsen": "\\Horde\\Util\\StringTransliterate",
             "name": "StringTransliterate",
@@ -891,19 +906,19 @@ Search.appendIndex(
             "summary": "Transliterate\u0020using\u0020a\u0020built\u002Din\u0020ASCII\u0020mapping.",
             "url": "classes/Horde-Util-StringTransliterate.html#method__fallbackToAscii"
         },                {
-            "fqsen": "\\Horde\\Util\\StringTransliterate\u003A\u003A\u0024map",
-            "name": "map",
+            "fqsen": "\\Horde\\Util\\StringTransliterate\u003A\u003A\u0024_map",
+            "name": "_map",
             "summary": "Transliterate\u0020mapping\u0020cache.",
-            "url": "classes/Horde-Util-StringTransliterate.html#property_map"
+            "url": "classes/Horde-Util-StringTransliterate.html#property__map"
         },                {
-            "fqsen": "\\Horde\\Util\\StringTransliterate\u003A\u003A\u0024transliterator",
-            "name": "transliterator",
+            "fqsen": "\\Horde\\Util\\StringTransliterate\u003A\u003A\u0024_transliterator",
+            "name": "_transliterator",
             "summary": "Transliterator\u0020instance.",
-            "url": "classes/Horde-Util-StringTransliterate.html#property_transliterator"
+            "url": "classes/Horde-Util-StringTransliterate.html#property__transliterator"
         },                {
             "fqsen": "\\Horde\\Util\\Util",
             "name": "Util",
-            "summary": "The\u0020Horde_Util\u003A\u003A\u0020class\u0020provides\u0020generally\u0020useful\u0020methods.",
+            "summary": "The\u0020Util\u003A\u003A\u0020class\u0020provides\u0020generally\u0020useful\u0020methods.",
             "url": "classes/Horde-Util-Util.html"
         },                {
             "fqsen": "\\Horde\\Util\\Util\u003A\u003AnonInputVar\u0028\u0029",
@@ -920,11 +935,6 @@ Search.appendIndex(
             "name": "pformInput",
             "summary": "Prints\u0020a\u0020hidden\u0020form\u0020input\u0020containing\u0020the\u0020session\u0020name\u0020and\u0020id.",
             "url": "classes/Horde-Util-Util.html#method_pformInput"
-        },                {
-            "fqsen": "\\Horde\\Util\\Util\u003A\u003AdispelMagicQuotes\u0028\u0029",
-            "name": "dispelMagicQuotes",
-            "summary": "If\u0020magic_quotes_gpc\u0020is\u0020in\u0020use,\u0020run\u0020stripslashes\u0028\u0029\u0020on\u0020\u0024var.",
-            "url": "classes/Horde-Util-Util.html#method_dispelMagicQuotes"
         },                {
             "fqsen": "\\Horde\\Util\\Util\u003A\u003AgetFormData\u0028\u0029",
             "name": "getFormData",
@@ -981,11 +991,6 @@ Search.appendIndex(
             "summary": "Caches\u0020the\u0020result\u0020of\u0020extension_loaded\u0028\u0029\u0020calls.",
             "url": "classes/Horde-Util-Util.html#method_extensionExists"
         },                {
-            "fqsen": "\\Horde\\Util\\Util\u003A\u003AloadExtension\u0028\u0029",
-            "name": "loadExtension",
-            "summary": "Tries\u0020to\u0020load\u0020a\u0020PHP\u0020extension,\u0020behaving\u0020correctly\u0020for\u0020all\u0020operating\nsystems.",
-            "url": "classes/Horde-Util-Util.html#method_loadExtension"
-        },                {
             "fqsen": "\\Horde\\Util\\Util\u003A\u003AgetPathInfo\u0028\u0029",
             "name": "getPathInfo",
             "summary": "Utility\u0020function\u0020to\u0020obtain\u0020PATH_INFO\u0020information.",
@@ -995,11 +1000,6 @@ Search.appendIndex(
             "name": "patterns",
             "summary": "A\u0020list\u0020of\u0020random\u0020patterns\u0020to\u0020use\u0020for\u0020overwriting\u0020purposes.",
             "url": "classes/Horde-Util-Util.html#property_patterns"
-        },                {
-            "fqsen": "\\Horde\\Util\\Util\u003A\u003A\u0024magicquotes",
-            "name": "magicquotes",
-            "summary": "Are\u0020magic\u0020quotes\u0020in\u0020use\u003F",
-            "url": "classes/Horde-Util-Util.html#property_magicquotes"
         },                {
             "fqsen": "\\Horde\\Util\\Util\u003A\u003A\u0024shutdowndata",
             "name": "shutdowndata",
