@@ -791,6 +791,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Composer-PresetHandler.html#property_filesystem"
         },                {
+            "fqsen": "\\Horde\\Composer\\RecursiveCopy",
+            "name": "RecursiveCopy",
+            "summary": "Recursive\u0020copy\u0020handler",
+            "url": "classes/Horde-Composer-RecursiveCopy.html"
+        },                {
+            "fqsen": "\\Horde\\Composer\\RecursiveCopy\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Composer-RecursiveCopy.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Composer\\RecursiveCopy\u003A\u003Acopy\u0028\u0029",
+            "name": "copy",
+            "summary": "",
+            "url": "classes/Horde-Composer-RecursiveCopy.html#method_copy"
+        },                {
+            "fqsen": "\\Horde\\Composer\\RecursiveCopy\u003A\u003AcopyLevel\u0028\u0029",
+            "name": "copyLevel",
+            "summary": "",
+            "url": "classes/Horde-Composer-RecursiveCopy.html#method_copyLevel"
+        },                {
+            "fqsen": "\\Horde\\Composer\\RecursiveCopy\u003A\u003A\u0024sourceDir",
+            "name": "sourceDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-RecursiveCopy.html#property_sourceDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\RecursiveCopy\u003A\u003A\u0024targetDir",
+            "name": "targetDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-RecursiveCopy.html#property_targetDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\RecursiveCopy\u003A\u003A\u0024filter",
+            "name": "filter",
+            "summary": "",
+            "url": "classes/Horde-Composer-RecursiveCopy.html#property_filter"
+        },                {
             "fqsen": "\\Horde\\Composer\\RegistrySnippetFileWriter",
             "name": "RegistrySnippetFileWriter",
             "summary": "",
@@ -893,7 +928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Composer\\ThemesHandler\u003A\u003AsetupDefaultTheme\u0028\u0029",
             "name": "setupDefaultTheme",
-            "summary": "Cycle\u0020through\u0020applications\u0020to\u0020setup\u0020the\u0020directories\u0020for\u0020the\u0020default\u0020folder",
+            "summary": "Setup\u0020themes\u0020shipped\u0020with\u0020an\u0020app",
             "url": "classes/Horde-Composer-ThemesHandler.html#method_setupDefaultTheme"
         },                {
             "fqsen": "\\Horde\\Composer\\ThemesHandler\u003A\u003AsetupPackagedThemes\u0028\u0029",
@@ -915,6 +950,11 @@ Search.appendIndex(
             "name": "rootDir",
             "summary": "The\u0020root\u0020package\u0027s\u0020dir",
             "url": "classes/Horde-Composer-ThemesHandler.html#property_rootDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\ThemesHandler\u003A\u003A\u0024vendorDir",
+            "name": "vendorDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-ThemesHandler.html#property_vendorDir"
         },                {
             "fqsen": "\\Horde\\Composer\\ThemesHandler\u003A\u003A\u0024themesCatalog",
             "name": "themesCatalog",
