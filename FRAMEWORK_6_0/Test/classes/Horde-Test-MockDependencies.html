@@ -99,19 +99,17 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde.html">Horde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-test.html">Test</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-test-stub.html">Stub</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/horde-test-stub-registry.html">Registry</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Loadconfig
+    MockDependencies
 
     
             <div class="phpdocumentor-element__package">
             in package
             <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Core.html">Core</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
                             </ul>
         </div>
     
@@ -119,58 +117,17 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Stub/Registry/Loadconfig.php"><a href="files/stub-registry-loadconfig.html"><abbr title="Stub/Registry/Loadconfig.php">Loadconfig.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="MockDependencies.php"><a href="files/mockdependencies.html"><abbr title="MockDependencies.php">MockDependencies.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">11</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">A test replacement for Horde_Registry_Loadconfig.</p>
+            <p class="phpdocumentor-summary">Class that hold a number of dependencies and a class name
+Can be used to create instances of that class or modify dependencies</p>
 
 
 
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">author</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Michael Slusarz <a href="mailto:slusarz@horde.org">slusarz@horde.org</a></p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">category</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Horde</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">copyright</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>2014-2021 Horde LLC</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">license</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>http://www.horde.org/licenses/lgpl21 LGPL 2.1</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
 
 
@@ -183,29 +140,50 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Horde-Test-Stub-Registry-Loadconfig.html#property_app">$app</a>
+                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Test-MockDependencies.html#property_class">$class</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Horde-Test-Stub-Registry-Loadconfig.html#property_confFile">$confFile</a>
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Test-MockDependencies.html#property_dependencies">$dependencies</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Horde-Test-Stub-Registry-Loadconfig.html#property_vars">$vars</a>
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Horde-Test-MockDependencies.html#property_dependenciesMap">$dependenciesMap</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Test-Stub-Registry-Loadconfig.html#method___construct">__construct()</a>
+    <a href="classes/Horde-Test-MockDependencies.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Test-MockDependencies.html#method_get">get()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Test-MockDependencies.html#method_getValues">getValues()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Test-MockDependencies.html#method_instantiate">instantiate()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -221,33 +199,33 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Horde-Test-Stub-Registry-Loadconfig.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Test-MockDependencies.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
             phpdocumentor-element
             -property
-            -public
+            -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_app">
-        $app
-        <a href="classes/Horde-Test-Stub-Registry-Loadconfig.html#property_app" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_class">
+        $class
+        <a href="classes/Horde-Test-MockDependencies.html#property_class" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Stub/Registry/Loadconfig.php"><a href="files/stub-registry-loadconfig.html"><abbr title="Stub/Registry/Loadconfig.php">Loadconfig.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="MockDependencies.php"><a href="files/mockdependencies.html"><abbr title="MockDependencies.php">MockDependencies.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$app</span>
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$class</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -261,27 +239,27 @@
         class="
             phpdocumentor-element
             -property
-            -public
+            -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_confFile">
-        $confFile
-        <a href="classes/Horde-Test-Stub-Registry-Loadconfig.html#property_confFile" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_dependencies">
+        $dependencies
+        <a href="classes/Horde-Test-MockDependencies.html#property_dependencies" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Stub/Registry/Loadconfig.php"><a href="files/stub-registry-loadconfig.html"><abbr title="Stub/Registry/Loadconfig.php">Loadconfig.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="MockDependencies.php"><a href="files/mockdependencies.html"><abbr title="MockDependencies.php">MockDependencies.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$confFile</span>
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$dependencies</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -295,27 +273,27 @@
         class="
             phpdocumentor-element
             -property
-            -public
+            -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_vars">
-        $vars
-        <a href="classes/Horde-Test-Stub-Registry-Loadconfig.html#property_vars" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_dependenciesMap">
+        $dependenciesMap
+        <a href="classes/Horde-Test-MockDependencies.html#property_dependenciesMap" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Stub/Registry/Loadconfig.php"><a href="files/stub-registry-loadconfig.html"><abbr title="Stub/Registry/Loadconfig.php">Loadconfig.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="MockDependencies.php"><a href="files/mockdependencies.html"><abbr title="MockDependencies.php">MockDependencies.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$vars</span>
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$dependenciesMap</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -330,7 +308,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Horde-Test-Stub-Registry-Loadconfig.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Test-MockDependencies.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -340,43 +318,35 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Horde-Test-Stub-Registry-Loadconfig.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Test-MockDependencies.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Stub/Registry/Loadconfig.php"><a href="files/stub-registry-loadconfig.html"><abbr title="Stub/Registry/Loadconfig.php">Loadconfig.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="MockDependencies.php"><a href="files/mockdependencies.html"><abbr title="MockDependencies.php">MockDependencies.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$app</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$confFile</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vars</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dependencies</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$app</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                <span class="phpdocumentor-signature__argument__name">$class</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$confFile</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$vars</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                <span class="phpdocumentor-signature__argument__name">$dependencies</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
@@ -384,6 +354,116 @@
             </dd>
             </dl>
 
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get">
+        get()
+        <a href="classes/Horde-Test-MockDependencies.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="MockDependencies.php"><a href="files/mockdependencies.html"><abbr title="MockDependencies.php">MockDependencies.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getValues">
+        getValues()
+        <a href="classes/Horde-Test-MockDependencies.html#method_getValues" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="MockDependencies.php"><a href="files/mockdependencies.html"><abbr title="MockDependencies.php">MockDependencies.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getValues</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_instantiate">
+        instantiate()
+        <a href="classes/Horde-Test-MockDependencies.html#method_instantiate" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="MockDependencies.php"><a href="files/mockdependencies.html"><abbr title="MockDependencies.php">MockDependencies.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">instantiate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -470,7 +550,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Test-Stub-Registry-Loadconfig.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Test-MockDependencies.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

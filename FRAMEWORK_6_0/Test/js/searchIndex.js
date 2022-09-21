@@ -791,6 +791,46 @@ Search.appendIndex(
             "summary": "The\u0020log\u0020handler.",
             "url": "classes/Horde-Test-Log.html#property_logHandler"
         },                {
+            "fqsen": "\\Horde\\Test\\MockDependencies",
+            "name": "MockDependencies",
+            "summary": "Class\u0020that\u0020hold\u0020a\u0020number\u0020of\u0020dependencies\u0020and\u0020a\u0020class\u0020name\nCan\u0020be\u0020used\u0020to\u0020create\u0020instances\u0020of\u0020that\u0020class\u0020or\u0020modify\u0020dependencies",
+            "url": "classes/Horde-Test-MockDependencies.html"
+        },                {
+            "fqsen": "\\Horde\\Test\\MockDependencies\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Test-MockDependencies.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Test\\MockDependencies\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Horde-Test-MockDependencies.html#method_get"
+        },                {
+            "fqsen": "\\Horde\\Test\\MockDependencies\u003A\u003AgetValues\u0028\u0029",
+            "name": "getValues",
+            "summary": "",
+            "url": "classes/Horde-Test-MockDependencies.html#method_getValues"
+        },                {
+            "fqsen": "\\Horde\\Test\\MockDependencies\u003A\u003Ainstantiate\u0028\u0029",
+            "name": "instantiate",
+            "summary": "",
+            "url": "classes/Horde-Test-MockDependencies.html#method_instantiate"
+        },                {
+            "fqsen": "\\Horde\\Test\\MockDependencies\u003A\u003A\u0024dependencies",
+            "name": "dependencies",
+            "summary": "",
+            "url": "classes/Horde-Test-MockDependencies.html#property_dependencies"
+        },                {
+            "fqsen": "\\Horde\\Test\\MockDependencies\u003A\u003A\u0024dependenciesMap",
+            "name": "dependenciesMap",
+            "summary": "",
+            "url": "classes/Horde-Test-MockDependencies.html#property_dependenciesMap"
+        },                {
+            "fqsen": "\\Horde\\Test\\MockDependencies\u003A\u003A\u0024class",
+            "name": "class",
+            "summary": "",
+            "url": "classes/Horde-Test-MockDependencies.html#property_class"
+        },                {
             "fqsen": "\\Horde\\Test\\Setup",
             "name": "Setup",
             "summary": "A\u0020test\u0020helper\u0020for\u0020generating\u0020complex\u0020test\u0020setups.",
@@ -1010,6 +1050,11 @@ Search.appendIndex(
             "name": "getConfig",
             "summary": "Helper\u0020method\u0020for\u0020loading\u0020test\u0020configuration\u0020from\u0020a\u0020file.",
             "url": "classes/Horde-Test-TestCase.html#method_getConfig"
+        },                {
+            "fqsen": "\\Horde\\Test\\TestCase\u003A\u003AgetMockDependencies\u0028\u0029",
+            "name": "getMockDependencies",
+            "summary": "Create\u0020a\u0020MockDependencies\u0020instance\u0020from\u0020a\u0020class\u0020name\u0020to\u0020simplyfy\u0020creation\u0020of\u0020classes\u0020where\u0020all\u0020or\u0020most\u0020dependencies\u0020are\u0020mocked.",
+            "url": "classes/Horde-Test-TestCase.html#method_getMockDependencies"
         },                {
             "fqsen": "\\",
             "name": "\\",
