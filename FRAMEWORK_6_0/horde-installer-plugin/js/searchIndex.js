@@ -798,17 +798,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Composer\\RecursiveCopy\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Create\u0020a\u0020recursive\u0020copy\u0020operation\u0020pending\u0020execution",
             "url": "classes/Horde-Composer-RecursiveCopy.html#method___construct"
         },                {
             "fqsen": "\\Horde\\Composer\\RecursiveCopy\u003A\u003Acopy\u0028\u0029",
             "name": "copy",
-            "summary": "",
+            "summary": "Run\u0020a\u0020recursive\u0020copy",
             "url": "classes/Horde-Composer-RecursiveCopy.html#method_copy"
         },                {
             "fqsen": "\\Horde\\Composer\\RecursiveCopy\u003A\u003AcopyLevel\u0028\u0029",
             "name": "copyLevel",
-            "summary": "",
+            "summary": "Internal\u0020recursion\u0020function\u0020for\u0020copy\u0028\u0029",
             "url": "classes/Horde-Composer-RecursiveCopy.html#method_copyLevel"
         },                {
             "fqsen": "\\Horde\\Composer\\RecursiveCopy\u003A\u003A\u0024sourceDir",
@@ -865,51 +865,6 @@ Search.appendIndex(
             "name": "filesystem",
             "summary": "",
             "url": "classes/Horde-Composer-RegistrySnippetFileWriter.html#property_filesystem"
-        },                {
-            "fqsen": "\\Horde\\Composer\\ThemesCatalog",
-            "name": "ThemesCatalog",
-            "summary": "Encapsulate\u0020handling\u0020the\u0020themes\u0020catalog",
-            "url": "classes/Horde-Composer-ThemesCatalog.html"
-        },                {
-            "fqsen": "\\Horde\\Composer\\ThemesCatalog\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Horde-Composer-ThemesCatalog.html#method___construct"
-        },                {
-            "fqsen": "\\Horde\\Composer\\ThemesCatalog\u003A\u003Asave\u0028\u0029",
-            "name": "save",
-            "summary": "",
-            "url": "classes/Horde-Composer-ThemesCatalog.html#method_save"
-        },                {
-            "fqsen": "\\Horde\\Composer\\ThemesCatalog\u003A\u003Aregister\u0028\u0029",
-            "name": "register",
-            "summary": "",
-            "url": "classes/Horde-Composer-ThemesCatalog.html#method_register"
-        },                {
-            "fqsen": "\\Horde\\Composer\\ThemesCatalog\u003A\u003Aunregister\u0028\u0029",
-            "name": "unregister",
-            "summary": "",
-            "url": "classes/Horde-Composer-ThemesCatalog.html#method_unregister"
-        },                {
-            "fqsen": "\\Horde\\Composer\\ThemesCatalog\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
-            "summary": "Return\u0020an\u0020array\u0020representation",
-            "url": "classes/Horde-Composer-ThemesCatalog.html#method_toArray"
-        },                {
-            "fqsen": "\\Horde\\Composer\\ThemesCatalog\u003A\u003A\u0024rootDir",
-            "name": "rootDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-ThemesCatalog.html#property_rootDir"
-        },                {
-            "fqsen": "\\Horde\\Composer\\ThemesCatalog\u003A\u003A\u0024catalog",
-            "name": "catalog",
-            "summary": "Nested\u0020structure",
-            "url": "classes/Horde-Composer-ThemesCatalog.html#property_catalog"
-        },                {
-            "fqsen": "\\Horde\\Composer\\ThemesCatalog\u003A\u003A\u0024themesFile",
-            "name": "themesFile",
-            "summary": "",
-            "url": "classes/Horde-Composer-ThemesCatalog.html#property_themesFile"
         },                {
             "fqsen": "\\Horde\\Composer\\ThemesHandler",
             "name": "ThemesHandler",
