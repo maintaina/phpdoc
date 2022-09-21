@@ -61,6 +61,26 @@ Search.appendIndex(
             "summary": "CLI\u0020Application\u0020kernel\u0020interface",
             "url": "classes/Horde-Cli-Application-KernelInterface.html"
         },                {
+            "fqsen": "\\Horde\\Cli\\Application\\ModularKernel",
+            "name": "ModularKernel",
+            "summary": "Modular\u0020Kernel",
+            "url": "classes/Horde-Cli-Application-ModularKernel.html"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Application\\ModularKernel\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Cli-Application-ModularKernel.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Application\\ModularKernel\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "",
+            "url": "classes/Horde-Cli-Application-ModularKernel.html#method_build"
+        },                {
+            "fqsen": "\\Horde\\Cli\\Application\\ModularKernel\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "",
+            "url": "classes/Horde-Cli-Application-ModularKernel.html#method_run"
+        },                {
             "fqsen": "\\Horde\\Cli\\Application\\SingleCommandKernel",
             "name": "SingleCommandKernel",
             "summary": "Single\u0020Command\u0020Kernel",
