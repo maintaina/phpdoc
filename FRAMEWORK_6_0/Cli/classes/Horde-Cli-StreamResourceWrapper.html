@@ -95,11 +95,8 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Translation
+    StreamResourceWrapper
 
-        <span class="phpdocumentor-element__extends">
-        extends <abbr title="\Horde_Translation_Autodetect">Horde_Translation_Autodetect</abbr>
-    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -112,14 +109,19 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Translation.php"><a href="files/translation.html"><abbr title="Translation.php">Translation.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StreamResourceWrapper.php"><a href="files/streamresourcewrapper.html"><abbr title="StreamResourceWrapper.php">StreamResourceWrapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Horde_Cli_Translation is the translation wrapper class for Horde_Cli.</p>
+            <p class="phpdocumentor-summary">Minimalistic wrapper of stream resources</p>
 
+    <section class="phpdocumentor-description"><p>This is not a fancy API.</p>
+<p>It is mostly for type-safe passing around,
+allowing for injection-friendly interfaces and unwrapping the actual resource for consumption</p>
+<p>Think about moving this somewhere but don't put it into a dependency-heavy environment</p>
+</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -132,7 +134,7 @@
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>Jan Schneider <a href="mailto:jan@horde.org">jan@horde.org</a></p>
+                                                 <section class="phpdocumentor-description"><p>Ralf Lang <a href="mailto:ralf.lang@ralf-lang.de">ralf.lang@ralf-lang.de</a></p>
 </section>
 
                                     </dd>
@@ -150,7 +152,7 @@
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>2010-2017 Horde LLC</p>
+                                                 <section class="phpdocumentor-description"><p>2003-2022 Horde LLC</p>
 </section>
 
                                     </dd>
@@ -176,21 +178,28 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Cli-Translation.html#property__domain">$_domain</a>
+                    <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Horde-Cli-StreamResourceWrapper.html#property_resource">$resource</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: mixed            </span>
 </dt>
-<dd>The translation domain</dd>
+<dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-Cli-Translation.html#property__pearDirectory">$_pearDirectory</a>
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Cli-StreamResourceWrapper.html#method___construct">__construct()</a>
     <span>
-                        &nbsp;: string            </span>
+                                &nbsp;: mixed    </span>
 </dt>
-<dd>The absolute PEAR path to the translations for the default gettext handler.</dd>
+<dd>Detect from SAPI if running CLI</dd>
 
-            </dl>
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Horde-Cli-StreamResourceWrapper.html#method___invoke">__invoke()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>Expose the resource to consuming functions</dd>
+
+        </dl>
 
 
 
@@ -200,77 +209,128 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Horde-Cli-Translation.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Horde-Cli-StreamResourceWrapper.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
             phpdocumentor-element
             -property
-            -protected
-            -static                                            "
+            -private
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="property__domain">
-        $_domain
-        <a href="classes/Horde-Cli-Translation.html#property__domain" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_resource">
+        $resource
+        <a href="classes/Horde-Cli-StreamResourceWrapper.html#property_resource" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Translation.php"><a href="files/translation.html"><abbr title="Translation.php">Translation.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="StreamResourceWrapper.php"><a href="files/streamresourcewrapper.html"><abbr title="StreamResourceWrapper.php">StreamResourceWrapper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The translation domain</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$_domain</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;Horde_Cli&#039;</span></code>
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$resource</span>
+    </code>
 
-    
-    
-    
+        <section class="phpdocumentor-description"></section>
 
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-            -static                                            "
->
-    <h4 class="phpdocumentor-element__name" id="property__pearDirectory">
-        $_pearDirectory
-        <a href="classes/Horde-Cli-Translation.html#property__pearDirectory" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Translation.php"><a href="files/translation.html"><abbr title="Translation.php">Translation.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+        <section class="phpdocumentor-description"></section>
 
-    </aside>
-
-        <p class="phpdocumentor-summary">The absolute PEAR path to the translations for the default gettext handler.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$_pearDirectory</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;@data_dir@&#039;</span></code>
-
-    
-    
     
 
 </article>
             </section>
 
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Horde-Cli-StreamResourceWrapper.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Horde-Cli-StreamResourceWrapper.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="StreamResourceWrapper.php"><a href="files/streamresourcewrapper.html"><abbr title="StreamResourceWrapper.php">StreamResourceWrapper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Detect from SAPI if running CLI</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resource</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
         
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___invoke">
+        __invoke()
+        <a href="classes/Horde-Cli-StreamResourceWrapper.html#method___invoke" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="StreamResourceWrapper.php"><a href="files/streamresourcewrapper.html"><abbr title="StreamResourceWrapper.php">StreamResourceWrapper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">59</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Expose the resource to consuming functions</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__invoke</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+            </section>
+
         
     <script type="text/javascript">
         function loadExternalCodeSnippets(line) {
@@ -347,7 +407,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Horde-Cli-Translation.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Horde-Cli-StreamResourceWrapper.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
