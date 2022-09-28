@@ -156,6 +156,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Composer-DirectoryTree.html#method_getBinDir"
         },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AgetWebDir\u0028\u0029",
+            "name": "getWebDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method_getWebDir"
+        },                {
             "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AgetPresetDir\u0028\u0029",
             "name": "getPresetDir",
             "summary": "",
@@ -860,6 +865,11 @@ Search.appendIndex(
             "name": "tree",
             "summary": "",
             "url": "classes/Horde-Composer-PackageDocRegistrySnippetHandler.html#property_tree"
+        },                {
+            "fqsen": "\\Horde\\Composer\\PackageDocRegistrySnippetHandler\u003A\u003A\u0024configRegistryDir",
+            "name": "configRegistryDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-PackageDocRegistrySnippetHandler.html#property_configRegistryDir"
         },                {
             "fqsen": "\\Horde\\Composer\\PresetHandler",
             "name": "PresetHandler",
