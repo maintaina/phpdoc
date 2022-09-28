@@ -128,12 +128,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AgetVendors\u0028\u0029",
             "name": "getVendors",
-            "summary": "",
+            "summary": "List\u0020all\u0020vendors\u0020from\u0020which\u0020a\u0020package\u0020is\u0020installed",
             "url": "classes/Horde-Composer-DirectoryTree.html#method_getVendors"
         },                {
             "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AgetPackagesByVendor\u0028\u0029",
             "name": "getPackagesByVendor",
-            "summary": "",
+            "summary": "List\u0020packages\u0020installed\u0020from\u0020a\u0020specific\u0020vendor",
             "url": "classes/Horde-Composer-DirectoryTree.html#method_getPackagesByVendor"
         },                {
             "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AgetDependencyDir\u0028\u0029",
