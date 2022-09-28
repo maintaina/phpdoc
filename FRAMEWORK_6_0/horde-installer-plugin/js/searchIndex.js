@@ -81,6 +81,101 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Composer-ConfigLinker.html#property_mode"
         },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree",
+            "name": "DirectoryTree",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AfromComposerJsonPath\u0028\u0029",
+            "name": "fromComposerJsonPath",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method_fromComposerJsonPath"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AwithRootPackageDir\u0028\u0029",
+            "name": "withRootPackageDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method_withRootPackageDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AwithVendorDir\u0028\u0029",
+            "name": "withVendorDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method_withVendorDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AwithBinDir\u0028\u0029",
+            "name": "withBinDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method_withBinDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AgetRootPackageDir\u0028\u0029",
+            "name": "getRootPackageDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method_getRootPackageDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AgetVendorDir\u0028\u0029",
+            "name": "getVendorDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method_getVendorDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AgetVendorSpecificDir\u0028\u0029",
+            "name": "getVendorSpecificDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method_getVendorSpecificDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AgetVendorPackageDir\u0028\u0029",
+            "name": "getVendorPackageDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method_getVendorPackageDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AgetVendors\u0028\u0029",
+            "name": "getVendors",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method_getVendors"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AgetPackagesByVendor\u0028\u0029",
+            "name": "getPackagesByVendor",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method_getPackagesByVendor"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AgetDependencyDir\u0028\u0029",
+            "name": "getDependencyDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method_getDependencyDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AgetVarConfigDir\u0028\u0029",
+            "name": "getVarConfigDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method_getVarConfigDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AgetWebReadableRootDir\u0028\u0029",
+            "name": "getWebReadableRootDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method_getWebReadableRootDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003A\u0024rootPackageDir",
+            "name": "rootPackageDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#property_rootPackageDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003A\u0024vendorDir",
+            "name": "vendorDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#property_vendorDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003A\u0024binDir",
+            "name": "binDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#property_binDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003A\u0024presetDir",
+            "name": "presetDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#property_presetDir"
+        },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003A\u0024webDir",
+            "name": "webDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#property_webDir"
+        },                {
             "fqsen": "\\Horde\\Composer\\HordeInstaller",
             "name": "HordeInstaller",
             "summary": "Installer\u0020implementation\u0020for\u0020horde\u0020apps\u0020and\u0020themes",
@@ -216,6 +311,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Composer-HordeReconfigureFlow.html#method___construct"
         },                {
+            "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow\u003A\u003AfromComposer\u0028\u0029",
+            "name": "fromComposer",
+            "summary": "",
+            "url": "classes/Horde-Composer-HordeReconfigureFlow.html#method_fromComposer"
+        },                {
             "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow\u003A\u003Arun\u0028\u0029",
             "name": "run",
             "summary": "Run\u0020the\u0020reconfigure\u0020flow",
@@ -226,15 +326,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Composer-HordeReconfigureFlow.html#property_io"
         },                {
-            "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow\u003A\u003A\u0024composer",
-            "name": "composer",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeReconfigureFlow.html#property_composer"
-        },                {
             "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow\u003A\u003A\u0024mode",
             "name": "mode",
             "summary": "Modes\u003A\u0020symlink,\u0020copy",
             "url": "classes/Horde-Composer-HordeReconfigureFlow.html#property_mode"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow\u003A\u003A\u0024tree",
+            "name": "tree",
+            "summary": "",
+            "url": "classes/Horde-Composer-HordeReconfigureFlow.html#property_tree"
         },                {
             "fqsen": "\\Horde\\Composer\\HordeYmlFormat\\Authors",
             "name": "Authors",
@@ -738,28 +838,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Composer\\PackageDocRegistrySnippetHandler\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
-            "summary": "",
+            "summary": "Scan\u0020all\u0020packages\u0020for\u0020a\u0020registry\u0020snippet",
             "url": "classes/Horde-Composer-PackageDocRegistrySnippetHandler.html#method_handle"
-        },                {
-            "fqsen": "\\Horde\\Composer\\PackageDocRegistrySnippetHandler\u003A\u003A\u0024apps",
-            "name": "apps",
-            "summary": "List\u0020of\u0020installed\u0020apps",
-            "url": "classes/Horde-Composer-PackageDocRegistrySnippetHandler.html#property_apps"
-        },                {
-            "fqsen": "\\Horde\\Composer\\PackageDocRegistrySnippetHandler\u003A\u003A\u0024configDir",
-            "name": "configDir",
-            "summary": "",
-            "url": "classes/Horde-Composer-PackageDocRegistrySnippetHandler.html#property_configDir"
         },                {
             "fqsen": "\\Horde\\Composer\\PackageDocRegistrySnippetHandler\u003A\u003A\u0024filesystem",
             "name": "filesystem",
             "summary": "",
             "url": "classes/Horde-Composer-PackageDocRegistrySnippetHandler.html#property_filesystem"
         },                {
-            "fqsen": "\\Horde\\Composer\\PackageDocRegistrySnippetHandler\u003A\u003A\u0024webDir",
-            "name": "webDir",
+            "fqsen": "\\Horde\\Composer\\PackageDocRegistrySnippetHandler\u003A\u003A\u0024tree",
+            "name": "tree",
             "summary": "",
-            "url": "classes/Horde-Composer-PackageDocRegistrySnippetHandler.html#property_webDir"
+            "url": "classes/Horde-Composer-PackageDocRegistrySnippetHandler.html#property_tree"
         },                {
             "fqsen": "\\Horde\\Composer\\PresetHandler",
             "name": "PresetHandler",
