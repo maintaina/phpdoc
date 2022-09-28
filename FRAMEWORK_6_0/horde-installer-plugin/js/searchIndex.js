@@ -151,6 +151,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Composer-DirectoryTree.html#method_getWebReadableRootDir"
         },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AgetBinDir\u0028\u0029",
+            "name": "getBinDir",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method_getBinDir"
+        },                {
             "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003A\u0024rootPackageDir",
             "name": "rootPackageDir",
             "summary": "",
