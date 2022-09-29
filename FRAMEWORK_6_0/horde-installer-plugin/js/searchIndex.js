@@ -91,6 +91,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Composer-DirectoryTree.html#method_fromComposerJsonPath"
         },                {
+            "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Composer-DirectoryTree.html#method___construct"
+        },                {
             "fqsen": "\\Horde\\Composer\\DirectoryTree\u003A\u003AwithRootPackageDir\u0028\u0029",
             "name": "withRootPackageDir",
             "summary": "",
