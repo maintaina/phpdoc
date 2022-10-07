@@ -9536,6 +9536,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Themes-Cache.html#method_serialize"
         },                {
+            "fqsen": "\\Horde_Themes_Cache\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Themes-Cache.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Themes_Cache\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Themes-Cache.html#method___unserialize"
+        },                {
             "fqsen": "\\Horde_Themes_Cache\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
