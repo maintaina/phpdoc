@@ -3171,6 +3171,11 @@ Search.appendIndex(
             "summary": "View\u0020URL.",
             "url": "classes/Horde-Core-Block-Layout.html#property__viewUrl"
         },                {
+            "fqsen": "\\Horde_Core_Block_Layout\u003A\u003A\u0024_layout",
+            "name": "_layout",
+            "summary": "",
+            "url": "classes/Horde-Core-Block-Layout.html#property__layout"
+        },                {
             "fqsen": "\\Horde_Core_Block_Upgrade",
             "name": "Horde_Core_Block_Upgrade",
             "summary": "This\u0020class\u0020allows\u0020upgrading\u0020portal\u0020config\u0020preferences\u0020from\u0020H3\u0020\u002D\u003E\u0020H4\u0020format.",
@@ -8950,6 +8955,11 @@ Search.appendIndex(
             "name": "_params",
             "summary": "Configuration\u0020parameters.",
             "url": "classes/Horde-Script-Cache.html#property__params"
+        },                {
+            "fqsen": "\\Horde_Script_Cache\u003A\u003A\u0024_compress",
+            "name": "_compress",
+            "summary": "",
+            "url": "classes/Horde-Script-Cache.html#property__compress"
         },                {
             "fqsen": "\\Horde_Script_Compress",
             "name": "Horde_Script_Compress",
