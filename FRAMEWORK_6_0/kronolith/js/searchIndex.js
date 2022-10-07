@@ -676,10 +676,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Kronolith-Attendee-List.html#method_serialize"
         },                {
+            "fqsen": "\\Kronolith_Attendee_List\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Kronolith-Attendee-List.html#method___serialize"
+        },                {
             "fqsen": "\\Kronolith_Attendee_List\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/Kronolith-Attendee-List.html#method_unserialize"
+        },                {
+            "fqsen": "\\Kronolith_Attendee_List\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Kronolith-Attendee-List.html#method___unserialize"
         },                {
             "fqsen": "\\Kronolith_Attendee_List\u003A\u003A\u0024_list",
             "name": "_list",
@@ -3941,6 +3951,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Kronolith-Icalendar-Handler-Base.html#property__exceptions"
         },                {
+            "fqsen": "\\Kronolith_Icalendar_Handler_Base\u003A\u003A\u0024_params",
+            "name": "_params",
+            "summary": "",
+            "url": "classes/Kronolith-Icalendar-Handler-Base.html#property__params"
+        },                {
             "fqsen": "\\Kronolith_Icalendar_Handler_Dav",
             "name": "Kronolith_Icalendar_Handler_Dav",
             "summary": "Wraps\u0020logic\u0020responsible\u0020for\u0020importing\u0020iCalendar\u0020data\u0020via\u0020DAV\u0020taking\u0020into\naccount\u0020necessary\u0020steps\u0020to\u0020deal\u0020with\u0020recurrence\u0020series\u0020and\u0020exceptions.",
@@ -5560,6 +5575,41 @@ Search.appendIndex(
             "name": "_currentCalendars",
             "summary": "",
             "url": "classes/Kronolith-View-Week.html#property__currentCalendars"
+        },                {
+            "fqsen": "\\Kronolith_View_Week\u003A\u003A\u0024first",
+            "name": "first",
+            "summary": "",
+            "url": "classes/Kronolith-View-Week.html#property_first"
+        },                {
+            "fqsen": "\\Kronolith_View_Week\u003A\u003A\u0024last",
+            "name": "last",
+            "summary": "",
+            "url": "classes/Kronolith-View-Week.html#property_last"
+        },                {
+            "fqsen": "\\Kronolith_View_Week\u003A\u003A\u0024slotLength",
+            "name": "slotLength",
+            "summary": "",
+            "url": "classes/Kronolith-View-Week.html#property_slotLength"
+        },                {
+            "fqsen": "\\Kronolith_View_Week\u003A\u003A\u0024slotsPerDay",
+            "name": "slotsPerDay",
+            "summary": "",
+            "url": "classes/Kronolith-View-Week.html#property_slotsPerDay"
+        },                {
+            "fqsen": "\\Kronolith_View_Week\u003A\u003A\u0024slotsPerHour",
+            "name": "slotsPerHour",
+            "summary": "",
+            "url": "classes/Kronolith-View-Week.html#property_slotsPerHour"
+        },                {
+            "fqsen": "\\Kronolith_View_Week\u003A\u003A\u0024totalspan",
+            "name": "totalspan",
+            "summary": "",
+            "url": "classes/Kronolith-View-Week.html#property_totalspan"
+        },                {
+            "fqsen": "\\Kronolith_View_Week\u003A\u003A\u0024span",
+            "name": "span",
+            "summary": "",
+            "url": "classes/Kronolith-View-Week.html#property_span"
         },                {
             "fqsen": "\\Kronolith_View_Week\u003A\u003A\u0024_slotsPerHour",
             "name": "_slotsPerHour",
