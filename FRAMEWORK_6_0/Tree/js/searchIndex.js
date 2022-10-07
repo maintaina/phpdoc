@@ -201,6 +201,11 @@ Search.appendIndex(
             "summary": "Current\u0020value\u0020of\u0020the\u0020alt\u0020tag\u0020count.",
             "url": "classes/Horde-Tree-Renderer-Html.html#property__altCount"
         },                {
+            "fqsen": "\\Horde_Tree_Renderer_Html\u003A\u003A\u0024_root_nodes",
+            "name": "_root_nodes",
+            "summary": "Unsure\u0020if\u0020using\u0020this\u0020variable\u0020is\u0020actually\u0020a\u0020mistake\u0020and\u0020_nodes\u0020should\u0020be\u0020used\u0020instead.",
+            "url": "classes/Horde-Tree-Renderer-Html.html#property__root_nodes"
+        },                {
             "fqsen": "\\Horde_Tree_Renderer_Html\u003A\u003A\u0024_images",
             "name": "_images",
             "summary": "Images\u0020array.",
@@ -350,6 +355,11 @@ Search.appendIndex(
             "name": "instance",
             "summary": "The\u0020name\u0020of\u0020this\u0020instance.",
             "url": "classes/Horde-Tree.html#property_instance"
+        },                {
+            "fqsen": "\\Horde_Tree\u003A\u003A\u0024_sortCriteria",
+            "name": "_sortCriteria",
+            "summary": "",
+            "url": "classes/Horde-Tree.html#property__sortCriteria"
         },                {
             "fqsen": "\\Horde_Tree\u003A\u003A\u0024_session",
             "name": "_session",
