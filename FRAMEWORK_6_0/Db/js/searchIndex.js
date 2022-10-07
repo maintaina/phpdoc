@@ -2816,6 +2816,11 @@ Search.appendIndex(
             "summary": "The\u0020write\u0020adapter",
             "url": "classes/Horde-Db-Adapter-SplitRead.html#property__write"
         },                {
+            "fqsen": "\\Horde_Db_Adapter_SplitRead\u003A\u003A\u0024_lastQuery",
+            "name": "_lastQuery",
+            "summary": "",
+            "url": "classes/Horde-Db-Adapter-SplitRead.html#property__lastQuery"
+        },                {
             "fqsen": "\\Horde_Db_Adapter_Sqlite_Column",
             "name": "Horde_Db_Adapter_Sqlite_Column",
             "summary": "",
@@ -3326,6 +3331,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Db-Migration-Migrator.html#property__schemaTableName"
         },                {
+            "fqsen": "\\Horde_Db_Migration_Migrator\u003A\u003A\u0024_logger",
+            "name": "_logger",
+            "summary": "",
+            "url": "classes/Horde-Db-Migration-Migrator.html#property__logger"
+        },                {
+            "fqsen": "\\Horde_Db_Migration_Migrator\u003A\u003A\u0024_connection",
+            "name": "_connection",
+            "summary": "",
+            "url": "classes/Horde-Db-Migration-Migrator.html#property__connection"
+        },                {
+            "fqsen": "\\Horde_Db_Migration_Migrator\u003A\u003A\u0024_inflector",
+            "name": "_inflector",
+            "summary": "",
+            "url": "classes/Horde-Db-Migration-Migrator.html#property__inflector"
+        },                {
             "fqsen": "\\Horde_Db_SearchParser",
             "name": "Horde_Db_SearchParser",
             "summary": "This\u0020class\u0020provides\u0020a\u0020parser\u0020which\u0020can\u0020construct\u0020an\u0020SQL\u0020WHERE\u0020clause\u0020from\u0020a\nGoogle\u002Dlike\u0020search\u0020expression.",
@@ -3405,6 +3425,11 @@ Search.appendIndex(
             "name": "_currentStatement",
             "summary": "",
             "url": "classes/Horde-Db-StatementParser.html#property__currentStatement"
+        },                {
+            "fqsen": "\\Horde_Db_StatementParser\u003A\u003A\u0024_file",
+            "name": "_file",
+            "summary": "",
+            "url": "classes/Horde-Db-StatementParser.html#property__file"
         },                {
             "fqsen": "\\Horde_Db_Value_Binary",
             "name": "Horde_Db_Value_Binary",
