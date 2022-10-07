@@ -466,10 +466,20 @@ Search.appendIndex(
             "summary": "Serialize\u0020this\u0020object.",
             "url": "classes/Horde-Share-Object-Sqlng.html#method_serialize"
         },                {
+            "fqsen": "\\Horde_Share_Object_Sqlng\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Share-Object-Sqlng.html#method___serialize"
+        },                {
             "fqsen": "\\Horde_Share_Object_Sqlng\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "Reconstruct\u0020the\u0020object\u0020from\u0020serialized\u0020data.",
             "url": "classes/Horde-Share-Object-Sqlng.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde_Share_Object_Sqlng\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Share-Object-Sqlng.html#method___unserialize"
         },                {
             "fqsen": "\\Horde_Share_Object_Sqlng\u003A\u003A_save\u0028\u0029",
             "name": "_save",
@@ -885,6 +895,11 @@ Search.appendIndex(
             "name": "_table",
             "summary": "Main\u0020share\u0020table\u0020for\u0020the\u0020current\u0020scope.",
             "url": "classes/Horde-Share-Sql.html#property__table"
+        },                {
+            "fqsen": "\\Horde_Share_Sql\u003A\u003A\u0024_driverConversions",
+            "name": "_driverConversions",
+            "summary": "",
+            "url": "classes/Horde-Share-Sql.html#property__driverConversions"
         },                {
             "fqsen": "\\Horde_Share_Sql\u003A\u003A\u0024_shareObject",
             "name": "_shareObject",
