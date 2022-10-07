@@ -416,10 +416,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Prefs-Scope.html#method_serialize"
         },                {
+            "fqsen": "\\Horde_Prefs_Scope\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Prefs-Scope.html#method___serialize"
+        },                {
             "fqsen": "\\Horde_Prefs_Scope\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/Horde-Prefs-Scope.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde_Prefs_Scope\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Prefs-Scope.html#method___unserialize"
+        },                {
+            "fqsen": "\\Horde_Prefs_Scope\u003A\u003AjsonSerialize\u0028\u0029",
+            "name": "jsonSerialize",
+            "summary": "",
+            "url": "classes/Horde-Prefs-Scope.html#method_jsonSerialize"
         },                {
             "fqsen": "\\Horde_Prefs_Scope\u003A\u003A\u0024init",
             "name": "init",
