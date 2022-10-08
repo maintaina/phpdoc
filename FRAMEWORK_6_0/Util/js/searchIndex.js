@@ -866,6 +866,11 @@ Search.appendIndex(
             "summary": "Strip\u0020UTF\u002D8\u0020byte\u0020order\u0020mark\u0020\u0028BOM\u0029\u0020from\u0020string\u0020data.",
             "url": "classes/Horde-Util-HordeString.html#method_trimUtf8Bom"
         },                {
+            "fqsen": "\\Horde\\Util\\HordeString\u003A\u003AconvertToUtf8\u0028\u0029",
+            "name": "convertToUtf8",
+            "summary": "Try\u0020to\u0020convert\u0020a\u0020string\u0020to\u0020UTF\u002D8.",
+            "url": "classes/Horde-Util-HordeString.html#method_convertToUtf8"
+        },                {
             "fqsen": "\\Horde\\Util\\HordeString\u003A\u003A\u0024_lowers",
             "name": "_lowers",
             "summary": "lower\u0028\u0029\u0020cache.",
