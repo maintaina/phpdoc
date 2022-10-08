@@ -266,6 +266,11 @@ Search.appendIndex(
             "summary": "Name\u0020that\u0020will\u0020become\u0020\u0022\u0024this\u002D\u003EcontentForName\u0022.",
             "url": "classes/Horde-View-Helper-Capture-ContentFor.html#property__name"
         },                {
+            "fqsen": "\\Horde_View_Helper_Capture_ContentFor\u003A\u003A\u0024_view",
+            "name": "_view",
+            "summary": "",
+            "url": "classes/Horde-View-Helper-Capture-ContentFor.html#property__view"
+        },                {
             "fqsen": "\\Horde_View_Helper_Capture",
             "name": "Horde_View_Helper_Capture",
             "summary": "Capture\u0020lets\u0020you\u0020extract\u0020parts\u0020of\u0020code\u0020which\u0020can\u0020be\u0020used\u0020in\u0020other\u0020points\u0020of\nthe\u0020template\u0020or\u0020even\u0020layout\u0020file.",
