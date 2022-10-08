@@ -71,10 +71,10 @@ Search.appendIndex(
             "summary": "Reply\u0020mapping\u0020of\u0020id\u0020\u002D\u003E\u0020compose\u0020object\u0020constant.",
             "url": "classes/IMP-Ajax-Application-Compose.html#property_reply_map"
         },                {
-            "fqsen": "\\IMP_Ajax_Application_Compose\u003A\u003A\u0024_compose",
-            "name": "_compose",
+            "fqsen": "\\IMP_Ajax_Application_Compose\u003A\u003A\u0024_composeOb",
+            "name": "_composeOb",
             "summary": "Compose\u0020object.",
-            "url": "classes/IMP-Ajax-Application-Compose.html#property__compose"
+            "url": "classes/IMP-Ajax-Application-Compose.html#property__composeOb"
         },                {
             "fqsen": "\\IMP_Ajax_Application_Compose\u003A\u003A\u0024_type",
             "name": "_type",
@@ -2671,10 +2671,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Contacts.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Contacts\u003A\u003AjsonSerialize\u0028\u0029",
+            "name": "jsonSerialize",
+            "summary": "",
+            "url": "classes/IMP-Contacts.html#method_jsonSerialize"
+        },                {
+            "fqsen": "\\IMP_Contacts\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Contacts.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Contacts\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/IMP-Contacts.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Contacts\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Contacts.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Contacts\u003A\u003A\u0024_changed",
             "name": "_changed",
@@ -4511,10 +4526,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Flags.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Flags\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Flags.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Flags\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/IMP-Flags.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Flags\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Flags.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Flags\u003A\u003A\u0024_flaghook",
             "name": "_flaghook",
@@ -5401,10 +5426,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Ftree.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Ftree\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Ftree.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Ftree\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/IMP-Ftree.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Ftree\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Ftree.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Ftree\u003A\u003AcreateTree\u0028\u0029",
             "name": "createTree",
@@ -7011,6 +7046,11 @@ Search.appendIndex(
             "summary": "Serialization.",
             "url": "classes/IMP-Mailbox-List.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Mailbox_List\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Mailbox-List.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Mailbox_List\u003A\u003A_serialize\u0028\u0029",
             "name": "_serialize",
             "summary": "",
@@ -7020,6 +7060,11 @@ Search.appendIndex(
             "name": "unserialize",
             "summary": "Unserialization.",
             "url": "classes/IMP-Mailbox-List.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Mailbox_List\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Mailbox-List.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Mailbox_List\u003A\u003A_unserialize\u0028\u0029",
             "name": "_unserialize",
@@ -11236,10 +11281,20 @@ Search.appendIndex(
             "summary": "Serialize.",
             "url": "classes/IMP-Search.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Search\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Search.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Search\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "Unserialize.",
             "url": "classes/IMP-Search.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Search\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Search.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Search\u003A\u003AMBOX_PREFIX",
             "name": "MBOX_PREFIX",

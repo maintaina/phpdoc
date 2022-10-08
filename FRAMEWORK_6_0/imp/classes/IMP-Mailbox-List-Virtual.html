@@ -259,6 +259,20 @@ mailboxes.</p>
 <dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/IMP-Mailbox-List.html#method___serialize">__serialize()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/IMP-Mailbox-List.html#method___unserialize">__unserialize()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Mailbox-List.html#method_count">count()</a>
     <span>
                                 &nbsp;: int    </span>
@@ -340,7 +354,7 @@ on the user&#039;s preferences.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Mailbox-List.html#method_offsetExists">offsetExists()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: bool    </span>
 </dt>
 <dd></dd>
 
@@ -361,7 +375,7 @@ on the user&#039;s preferences.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Mailbox-List.html#method_offsetUnset">offsetUnset()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
@@ -411,7 +425,7 @@ UNDELETED if we&#039;re hiding deleted messages).</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Mailbox-List.html#method_valid">valid()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: bool    </span>
 </dt>
 <dd></dd>
 
@@ -928,6 +942,83 @@ UNDELETED if we&#039;re hiding deleted messages).</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method___serialize">
+        __serialize()
+        <a href="classes/IMP-Mailbox-List.html#method___serialize" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">738</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__serialize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___unserialize">
+        __unserialize()
+        <a href="classes/IMP-Mailbox-List.html#method___unserialize" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">799</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__unserialize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_count">
         count()
         <a href="classes/IMP-Mailbox-List.html#method_count" class="headerlink"><i class="fas fa-link"></i></a>
@@ -935,7 +1026,7 @@ UNDELETED if we&#039;re hiding deleted messages).</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">671</span>
+    <span class="phpdocumentor-element-found-in__line">674</span>
 
     </aside>
 
@@ -970,7 +1061,7 @@ UNDELETED if we&#039;re hiding deleted messages).</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">684</span>
+    <span class="phpdocumentor-element-found-in__line">687</span>
 
     </aside>
 
@@ -1122,7 +1213,7 @@ the current mailbox. Returns null if not found.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">487</span>
+    <span class="phpdocumentor-element-found-in__line">488</span>
 
     </aside>
 
@@ -1275,7 +1366,7 @@ mailbox).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">503</span>
+    <span class="phpdocumentor-element-found-in__line">504</span>
 
     </aside>
 
@@ -1322,7 +1413,7 @@ mailbox).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">692</span>
+    <span class="phpdocumentor-element-found-in__line">696</span>
 
     </aside>
 
@@ -1404,7 +1495,7 @@ on the user&#039;s preferences.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">699</span>
+    <span class="phpdocumentor-element-found-in__line">704</span>
 
     </aside>
 
@@ -1436,14 +1527,14 @@ on the user&#039;s preferences.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">622</span>
+    <span class="phpdocumentor-element-found-in__line">623</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">offsetExists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">offsetExists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1462,7 +1553,7 @@ on the user&#039;s preferences.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     
@@ -1480,7 +1571,7 @@ on the user&#039;s preferences.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">634</span>
+    <span class="phpdocumentor-element-found-in__line">635</span>
 
     </aside>
 
@@ -1530,7 +1621,7 @@ on the user&#039;s preferences.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">651</span>
+    <span class="phpdocumentor-element-found-in__line">653</span>
 
     </aside>
 
@@ -1595,14 +1686,14 @@ on the user&#039;s preferences.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">659</span>
+    <span class="phpdocumentor-element-found-in__line">662</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">offsetUnset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">offsetUnset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1634,7 +1725,7 @@ on the user&#039;s preferences.</p>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -1652,7 +1743,7 @@ on the user&#039;s preferences.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">431</span>
+    <span class="phpdocumentor-element-found-in__line">432</span>
 
     </aside>
 
@@ -1748,7 +1839,7 @@ on the user&#039;s preferences.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">706</span>
+    <span class="phpdocumentor-element-found-in__line">712</span>
 
     </aside>
 
@@ -1780,7 +1871,7 @@ on the user&#039;s preferences.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">725</span>
+    <span class="phpdocumentor-element-found-in__line">733</span>
 
     </aside>
 
@@ -1879,7 +1970,7 @@ DEFAULT: false</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">778</span>
+    <span class="phpdocumentor-element-found-in__line">794</span>
 
     </aside>
 
@@ -1938,21 +2029,21 @@ DEFAULT: false</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">713</span>
+    <span class="phpdocumentor-element-found-in__line">720</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">valid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">valid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     
@@ -2138,7 +2229,7 @@ DEFAULT: false</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/List.php"><a href="files/mailbox-list.html"><abbr title="Mailbox/List.php">List.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">554</span>
+    <span class="phpdocumentor-element-found-in__line">555</span>
 
     </aside>
 
