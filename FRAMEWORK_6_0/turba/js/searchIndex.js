@@ -681,6 +681,11 @@ Search.appendIndex(
             "summary": "TODO",
             "url": "classes/Turba-Driver-Group.html#method__getAddressBook"
         },                {
+            "fqsen": "\\Turba_Driver_Group\u003A\u003A\u0024_gid",
+            "name": "_gid",
+            "summary": "",
+            "url": "classes/Turba-Driver-Group.html#property__gid"
+        },                {
             "fqsen": "\\Turba_Driver_Imsp",
             "name": "Turba_Driver_Imsp",
             "summary": "Turba\u0020directory\u0020driver\u0020implementation\u0020for\u0020an\u0020IMSP\u0020server.",
@@ -1496,6 +1501,11 @@ Search.appendIndex(
             "summary": "The\u0020composed\u0020driver.",
             "url": "classes/Turba-Driver-Vbook.html#property__driver"
         },                {
+            "fqsen": "\\Turba_Driver_Vbook\u003A\u003A\u0024_share",
+            "name": "_share",
+            "summary": "",
+            "url": "classes/Turba-Driver-Vbook.html#property__share"
+        },                {
             "fqsen": "\\Turba_Driver",
             "name": "Turba_Driver",
             "summary": "Provides\u0020a\u0020common\u0020abstracted\u0020interface\u0020to\u0020the\u0020various\u0020directory\u0020search\ndrivers.\u0020\u0020It\u0020includes\u0020functions\u0020for\u0020searching,\u0020adding,\u0020removing,\u0020and\nmodifying\u0020directory\u0020entries.",
@@ -1866,15 +1876,20 @@ Search.appendIndex(
             "summary": "A\u0020Horde_Injector\u003A\u003A\u0020based\u0020Turba_Driver\u003A\u003A\u0020factory.",
             "url": "classes/Turba-Factory-Driver.html"
         },                {
+            "fqsen": "\\Turba_Factory_Driver\u003A\u003AcreateFromConfig\u0028\u0029",
+            "name": "createFromConfig",
+            "summary": "Return\u0020the\u0020Turba_Driver\u003A\u003A\u0020instance.",
+            "url": "classes/Turba-Factory-Driver.html#method_createFromConfig"
+        },                {
             "fqsen": "\\Turba_Factory_Driver\u003A\u003Acreate\u0028\u0029",
             "name": "create",
-            "summary": "",
+            "summary": "Return\u0020the\u0020Turba_Driver\u003A\u003A\u0020instance.",
             "url": "classes/Turba-Factory-Driver.html#method_create"
         },                {
-            "fqsen": "\\Turba_Factory_Driver\u003A\u003AcreateTrusted\u0028\u0029",
-            "name": "createTrusted",
-            "summary": "Return\u0020the\u0020Turba_Driver\u003A\u003A\u0020instance.",
-            "url": "classes/Turba-Factory-Driver.html#method_createTrusted"
+            "fqsen": "\\Turba_Factory_Driver\u003A\u003A_create\u0028\u0029",
+            "name": "_create",
+            "summary": "",
+            "url": "classes/Turba-Factory-Driver.html#method__create"
         },                {
             "fqsen": "\\Turba_Factory_Driver\u003A\u003A\u0024_instances",
             "name": "_instances",
