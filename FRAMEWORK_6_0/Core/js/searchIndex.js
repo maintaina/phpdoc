@@ -2831,10 +2831,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Core-Block-Collection.html#method_serialize"
         },                {
+            "fqsen": "\\Horde_Core_Block_Collection\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/Horde-Core-Block-Collection.html#method___serialize"
+        },                {
+            "fqsen": "\\Horde_Core_Block_Collection\u003A\u003AjsonSerialize\u0028\u0029",
+            "name": "jsonSerialize",
+            "summary": "",
+            "url": "classes/Horde-Core-Block-Collection.html#method_jsonSerialize"
+        },                {
             "fqsen": "\\Horde_Core_Block_Collection\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/Horde-Core-Block-Collection.html#method_unserialize"
+        },                {
+            "fqsen": "\\Horde_Core_Block_Collection\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/Horde-Core-Block-Collection.html#method___unserialize"
         },                {
             "fqsen": "\\Horde_Core_Block_Collection\u003A\u003A\u0024_apps",
             "name": "_apps",
