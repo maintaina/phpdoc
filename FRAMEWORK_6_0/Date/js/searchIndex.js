@@ -1111,6 +1111,11 @@ Search.appendIndex(
             "summary": "Tries\u0020to\u0020convert\u0020strftime\u0028\u0029\u0020formatters\u0020to\u0020date\u0028\u0029\u0020formatters.",
             "url": "classes/Horde-Date-Utils.html#method_strftime2date"
         },                {
+            "fqsen": "\\Horde_Date_Utils\u003A\u003AlegacyDateFormatter\u0028\u0029",
+            "name": "legacyDateFormatter",
+            "summary": "Unify\u0020date\u0020formatters\u0020and\u0020then\u0020format\u0020the\u0020date.",
+            "url": "classes/Horde-Date-Utils.html#method_legacyDateFormatter"
+        },                {
             "fqsen": "\\Horde_Date",
             "name": "Horde_Date",
             "summary": "Horde\u0020Date\u0020wrapper\/logic\u0020class,\u0020including\u0020some\u0020calculation\u0020functions.",
