@@ -436,6 +436,11 @@ Search.appendIndex(
             "summary": "An\u0020array\u0020of\u0020words\u0020with\u0020the\u0020same\u0020singular\u0020and\u0020plural\u0020spellings.",
             "url": "classes/Horde-Support-Inflector.html#property__uncountables"
         },                {
+            "fqsen": "\\Horde_Support_Inflector\u003A\u003A\u0024_uncountables_keys",
+            "name": "_uncountables_keys",
+            "summary": "",
+            "url": "classes/Horde-Support-Inflector.html#property__uncountables_keys"
+        },                {
             "fqsen": "\\Horde_Support_Memory",
             "name": "Horde_Support_Memory",
             "summary": "Simple\u0020interface\u0020for\u0020tracking\u0020memory\u0020consumption.",
@@ -465,6 +470,11 @@ Search.appendIndex(
             "name": "Horde_Support_Numerizer_Locale_Base",
             "summary": "",
             "url": "classes/Horde-Support-Numerizer-Locale-Base.html"
+        },                {
+            "fqsen": "\\Horde_Support_Numerizer_Locale_Base\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Formal\u0020constructor.",
+            "url": "classes/Horde-Support-Numerizer-Locale-Base.html#method___construct"
         },                {
             "fqsen": "\\Horde_Support_Numerizer_Locale_Base\u003A\u003Anumerize\u0028\u0029",
             "name": "numerize",
