@@ -1541,9 +1541,24 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Date.html#property__formatCache"
         },                {
+            "fqsen": "\\Horde\\Date\\Date",
+            "name": "Date",
+            "summary": "",
+            "url": "classes/Horde-Date-Date.html"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
+        },                {
+            "fqsen": "\\Horde\\Date",
+            "name": "Date",
+            "summary": "",
+            "url": "namespaces/horde-date.html"
+        },                {
+            "fqsen": "\\Horde",
+            "name": "Horde",
+            "summary": "",
+            "url": "namespaces/horde.html"
         }            ]
 );
