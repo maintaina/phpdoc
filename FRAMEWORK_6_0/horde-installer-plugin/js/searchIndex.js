@@ -301,21 +301,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Composer-HordeLocalFileWriter.html#property_filesystem"
         },                {
-            "fqsen": "\\Horde\\Composer\\HordeReconfigureCommand",
-            "name": "HordeReconfigureCommand",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeReconfigureCommand.html"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeReconfigureCommand\u003A\u003Aconfigure\u0028\u0029",
-            "name": "configure",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeReconfigureCommand.html#method_configure"
-        },                {
-            "fqsen": "\\Horde\\Composer\\HordeReconfigureCommand\u003A\u003Aexecute\u0028\u0029",
-            "name": "execute",
-            "summary": "",
-            "url": "classes/Horde-Composer-HordeReconfigureCommand.html#method_execute"
-        },                {
             "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow",
             "name": "HordeReconfigureFlow",
             "summary": "",
@@ -328,8 +313,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow\u003A\u003AfromComposer\u0028\u0029",
             "name": "fromComposer",
-            "summary": "",
+            "summary": "Named\u0020Constructor.",
             "url": "classes/Horde-Composer-HordeReconfigureFlow.html#method_fromComposer"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow\u003A\u003AfromPartialComposer\u0028\u0029",
+            "name": "fromPartialComposer",
+            "summary": "",
+            "url": "classes/Horde-Composer-HordeReconfigureFlow.html#method_fromPartialComposer"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow\u003A\u003AfromAnyComposer\u0028\u0029",
+            "name": "fromAnyComposer",
+            "summary": "Actual\u0020implementation\u0020of\u0020fromComposer\u0020\/\u0020fromPartialComposer\u0020named\u0020constructors",
+            "url": "classes/Horde-Composer-HordeReconfigureFlow.html#method_fromAnyComposer"
         },                {
             "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow\u003A\u003Arun\u0028\u0029",
             "name": "run",
