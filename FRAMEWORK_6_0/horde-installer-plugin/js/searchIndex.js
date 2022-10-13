@@ -301,6 +301,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Composer-HordeLocalFileWriter.html#property_filesystem"
         },                {
+            "fqsen": "\\Horde\\Composer\\HordeReconfigureCommand",
+            "name": "HordeReconfigureCommand",
+            "summary": "",
+            "url": "classes/Horde-Composer-HordeReconfigureCommand.html"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeReconfigureCommand\u003A\u003Aconfigure\u0028\u0029",
+            "name": "configure",
+            "summary": "",
+            "url": "classes/Horde-Composer-HordeReconfigureCommand.html#method_configure"
+        },                {
+            "fqsen": "\\Horde\\Composer\\HordeReconfigureCommand\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "",
+            "url": "classes/Horde-Composer-HordeReconfigureCommand.html#method_execute"
+        },                {
             "fqsen": "\\Horde\\Composer\\HordeReconfigureFlow",
             "name": "HordeReconfigureFlow",
             "summary": "",
