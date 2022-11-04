@@ -116,7 +116,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Filter/Linkurls.php"><a href="files/horde-text-filter-linkurls.html"><abbr title="Horde/Text/Filter/Linkurls.php">Linkurls.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -151,6 +151,10 @@ links.
 DEFAULT: false</li>
 <li>target: (string) The link target.
 DEFAULT: '_blank'</li>
+<li>secretKey: (string) A key to use for Horde_Secret encryption of encoded
+html tags (see the 'encode' paramter).
+DEFAULT: A default key will be created by an instance of
+Horde_Secret.</li>
 </ul>
 <p>Copyright 2003-2017 Horde LLC (http://www.horde.org/)</p>
 <p>See the enclosed file LICENSE for license information (LGPL). If you
@@ -327,7 +331,7 @@ systems. Adapted from php.net/parse_url comments.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Filter/Linkurls.php"><a href="files/horde-text-filter-linkurls.html"><abbr title="Horde/Text/Filter/Linkurls.php">Linkurls.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -361,7 +365,7 @@ systems. Adapted from php.net/parse_url comments.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Filter/Linkurls.php"><a href="files/horde-text-filter-linkurls.html"><abbr title="Horde/Text/Filter/Linkurls.php">Linkurls.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -371,7 +375,7 @@ systems. Adapted from php.net/parse_url comments.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$_params</span>
-     = <span class="phpdocumentor-signature__default-value">array(&#039;callback&#039; =&gt; \null, &#039;class&#039; =&gt; &#039;&#039;, &#039;encode&#039; =&gt; \false, &#039;nofollow&#039; =&gt; \false, &#039;target&#039; =&gt; &#039;_blank&#039;)</span></code>
+     = <span class="phpdocumentor-signature__default-value">array(&#039;callback&#039; =&gt; \null, &#039;class&#039; =&gt; &#039;&#039;, &#039;encode&#039; =&gt; \false, &#039;nofollow&#039; =&gt; \false, &#039;target&#039; =&gt; &#039;_blank&#039;, &#039;secretKey&#039; =&gt; \null)</span></code>
 
     
     
@@ -443,7 +447,7 @@ systems. Adapted from php.net/parse_url comments.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Filter/Linkurls.php"><a href="files/horde-text-filter-linkurls.html"><abbr title="Horde/Text/Filter/Linkurls.php">Linkurls.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 
     </aside>
 
@@ -486,7 +490,7 @@ systems. Adapted from php.net/parse_url comments.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Filter/Linkurls.php"><a href="files/horde-text-filter-linkurls.html"><abbr title="Horde/Text/Filter/Linkurls.php">Linkurls.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
     </aside>
 
@@ -494,7 +498,7 @@ systems. Adapted from php.net/parse_url comments.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">decode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">decode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -505,6 +509,17 @@ systems. Adapted from php.net/parse_url comments.</dd>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>An encoded text.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>An optional key to use with Horde_Secret encryption.
+If omitted a key will be fetched from a Horde_Secret
+instance.</p>
 </section>
 
             </dd>
@@ -533,7 +548,7 @@ systems. Adapted from php.net/parse_url comments.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Filter/Linkurls.php"><a href="files/horde-text-filter-linkurls.html"><abbr title="Horde/Text/Filter/Linkurls.php">Linkurls.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -568,7 +583,7 @@ systems. Adapted from php.net/parse_url comments.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Filter/Linkurls.php"><a href="files/horde-text-filter-linkurls.html"><abbr title="Horde/Text/Filter/Linkurls.php">Linkurls.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -603,7 +618,7 @@ systems. Adapted from php.net/parse_url comments.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Filter/Linkurls.php"><a href="files/horde-text-filter-linkurls.html"><abbr title="Horde/Text/Filter/Linkurls.php">Linkurls.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -730,7 +745,7 @@ systems. Adapted from php.net/parse_url comments.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Horde/Text/Filter/Linkurls.php"><a href="files/horde-text-filter-linkurls.html"><abbr title="Horde/Text/Filter/Linkurls.php">Linkurls.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">211</span>
+    <span class="phpdocumentor-element-found-in__line">229</span>
 
     </aside>
 
