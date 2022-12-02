@@ -10396,6 +10396,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Core-Middleware-DemandAuthHeader.html#property_responseFactory"
         },                {
+            "fqsen": "\\Horde\\Core\\Middleware\\DemandGlobalAdmin",
+            "name": "DemandGlobalAdmin",
+            "summary": "DemandGlobalAdmin\u0020middleware\nReturns\u0020403\u0020response\u0020if\u0020authenticated\u0020user\u0020is\u0020not\u0020global\u0020admin",
+            "url": "classes/Horde-Core-Middleware-DemandGlobalAdmin.html"
+        },                {
+            "fqsen": "\\Horde\\Core\\Middleware\\DemandGlobalAdmin\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Core-Middleware-DemandGlobalAdmin.html#method___construct"
+        },                {
+            "fqsen": "\\Horde\\Core\\Middleware\\DemandGlobalAdmin\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Horde-Core-Middleware-DemandGlobalAdmin.html#method_process"
+        },                {
+            "fqsen": "\\Horde\\Core\\Middleware\\DemandGlobalAdmin\u003A\u003A\u0024responseFactory",
+            "name": "responseFactory",
+            "summary": "",
+            "url": "classes/Horde-Core-Middleware-DemandGlobalAdmin.html#property_responseFactory"
+        },                {
             "fqsen": "\\Horde\\Core\\Middleware\\DemandSessionToken",
             "name": "DemandSessionToken",
             "summary": "DemandSessionToken\u0020middleware\nChecks\u0020if\u0020the\u0020current\u0020session\u0020token\u0020is\u0020in\u0020the\u0020Horde\u002DSession\u002DToken\u0020header.",
