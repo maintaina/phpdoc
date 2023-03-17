@@ -10246,6 +10246,11 @@ Search.appendIndex(
             "summary": "Identify\u0020the\u0020correct\u0020app\u0020to\u0020handle\u0020the\u0020request",
             "url": "classes/Horde-Core-Middleware-AppFinder.html#method_identifyApp"
         },                {
+            "fqsen": "\\Horde\\Core\\Middleware\\AppFinder\u003A\u003AmatchesAppPath\u0028\u0029",
+            "name": "matchesAppPath",
+            "summary": "",
+            "url": "classes/Horde-Core-Middleware-AppFinder.html#method_matchesAppPath"
+        },                {
             "fqsen": "\\Horde\\Core\\Middleware\\AppFinder\u003A\u003Aprocess\u0028\u0029",
             "name": "process",
             "summary": "Configure\u0020the",
