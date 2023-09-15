@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -109,8 +110,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
     </ul>
 
     <article class="phpdocumentor-element -class">
@@ -128,8 +130,13 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">20</span>
 
@@ -144,7 +151,8 @@ and the ActiveSync Horde driver.</p>
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -174,20 +182,31 @@ and the ActiveSync Horde driver.</p>
 </section>
 
                                     </dd>
-                        </dl>
-
-
-
+                                            </dl>
 
 
 
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Horde-Core-ActiveSync-Connector.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Horde-Core-ActiveSync-Connector.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Horde-Core-ActiveSync-Connector.html#property__capabilities">$_capabilities</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
@@ -222,7 +241,15 @@ and the ActiveSync Horde driver.</p>
 </dt>
 <dd>Horde registry</dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Horde-Core-ActiveSync-Connector.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Core-ActiveSync-Connector.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: <abbr title="\Horde_ActiveSync_Driver_Horde_Connector_Registry">Horde_ActiveSync_Driver_Horde_Connector_Registry</abbr>    </span>
@@ -512,14 +539,12 @@ interface.</dd>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Core-ActiveSync-Connector.html#method_mdnSend">mdnSend()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_delete">notes_delete()</a>
@@ -656,7 +681,8 @@ $soruce.</dd>
 </dt>
 <dd>Normalize the collection ids to interface names.</dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -667,6 +693,7 @@ $soruce.</dd>
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/Horde-Core-ActiveSync-Connector.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -678,11 +705,12 @@ $soruce.</dd>
     <h4 class="phpdocumentor-element__name" id="property__capabilities">
         $_capabilities
         <a href="classes/Horde-Core-ActiveSync-Connector.html#property__capabilities" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">48</span>
 
@@ -711,11 +739,12 @@ $soruce.</dd>
     <h4 class="phpdocumentor-element__name" id="property__folderCache">
         $_folderCache
         <a href="classes/Horde-Core-ActiveSync-Connector.html#property__folderCache" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">55</span>
 
@@ -744,11 +773,12 @@ $soruce.</dd>
     <h4 class="phpdocumentor-element__name" id="property__gal">
         $_gal
         <a href="classes/Horde-Core-ActiveSync-Connector.html#property__gal" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">41</span>
 
@@ -777,11 +807,12 @@ $soruce.</dd>
     <h4 class="phpdocumentor-element__name" id="property__logger">
         $_logger
         <a href="classes/Horde-Core-ActiveSync-Connector.html#property__logger" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">34</span>
 
@@ -810,11 +841,12 @@ $soruce.</dd>
     <h4 class="phpdocumentor-element__name" id="property__registry">
         $_registry
         <a href="classes/Horde-Core-ActiveSync-Connector.html#property__registry" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">27</span>
 
@@ -839,6 +871,7 @@ $soruce.</dd>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Horde-Core-ActiveSync-Connector.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -849,9 +882,10 @@ $soruce.</dd>
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">66</span>
 
@@ -863,6 +897,8 @@ $soruce.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_ActiveSync_Driver_Horde_Connector_Registry">Horde_ActiveSync_Driver_Horde_Connector_Registry</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -883,7 +919,8 @@ $soruce.</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method___construct#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -894,13 +931,13 @@ $soruce.</dd>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_ActiveSync_Driver_Horde_Connector_Registry">Horde_ActiveSync_Driver_Horde_Connector_Registry</abbr></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_ActiveSync_Driver_Horde_Connector_Registry">Horde_ActiveSync_Driver_Horde_Connector_Registry</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -911,9 +948,10 @@ $soruce.</dd>
     <h4 class="phpdocumentor-element__name" id="method_calendar_delete">
         calendar_delete()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_delete" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">249</span>
 
@@ -925,6 +963,8 @@ $soruce.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">calendar_delete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$calendar</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$instanceid</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -960,10 +1000,6 @@ $soruce.</dd>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -975,9 +1011,10 @@ $soruce.</dd>
     <h4 class="phpdocumentor-element__name" id="method_calendar_export">
         calendar_export()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_export" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">121</span>
 
@@ -989,6 +1026,8 @@ $soruce.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">calendar_export</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$calendar</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_ActiveSync_Message_Appointment">Horde_ActiveSync_Message_Appointment</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1032,13 +1071,15 @@ DEFAULT: none (No truncation).</li>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_ActiveSync_Message_Appointment">Horde_ActiveSync_Message_Appointment</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The requested event.</p>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_ActiveSync_Message_Appointment">Horde_ActiveSync_Message_Appointment</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The requested event.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1049,9 +1090,10 @@ DEFAULT: none (No truncation).</li>
     <h4 class="phpdocumentor-element__name" id="method_calendar_getActionTimestamp">
         calendar_getActionTimestamp()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_getActionTimestamp" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">266</span>
 
@@ -1063,6 +1105,8 @@ DEFAULT: none (No truncation).</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">calendar_getActionTimestamp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$calendar</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1097,11 +1141,11 @@ DEFAULT: none (No truncation).</li>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1112,9 +1156,10 @@ DEFAULT: none (No truncation).</li>
     <h4 class="phpdocumentor-element__name" id="method_calendar_getAttachment">
         calendar_getAttachment()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_getAttachment" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">306</span>
 
@@ -1126,6 +1171,8 @@ DEFAULT: none (No truncation).</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">calendar_getAttachment</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filereference</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1143,14 +1190,16 @@ calendar:{calendar_id}:{event_uid}:{filename}</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>An array containing:
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array containing:
 'content-type' and 'data'.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1161,9 +1210,10 @@ calendar:{calendar_id}:{event_uid}:{filename}</p>
     <h4 class="phpdocumentor-element__name" id="method_calendar_import">
         calendar_import()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_import" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">136</span>
 
@@ -1175,6 +1225,8 @@ calendar:{calendar_id}:{event_uid}:{filename}</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">calendar_import</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_ActiveSync_Message_Appointment">Horde_ActiveSync_Message_Appointment</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$calendar</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1201,13 +1253,15 @@ calendar:{calendar_id}:{event_uid}:{filename}</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The event's UID.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The event's UID.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1218,9 +1272,10 @@ calendar:{calendar_id}:{event_uid}:{filename}</p>
     <h4 class="phpdocumentor-element__name" id="method_calendar_import16">
         calendar_import16()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_import16" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">155</span>
 
@@ -1232,6 +1287,8 @@ calendar:{calendar_id}:{event_uid}:{filename}</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">calendar_import16</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_ActiveSync_Message_Appointment">Horde_ActiveSync_Message_Appointment</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$calendar</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>Needed for EAS 16 support in order to deal with the fact that
 attachment actions are handled within the Message object.</p>
 </section>
@@ -1261,7 +1318,8 @@ attachment actions are handled within the Message object.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_import16#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1281,13 +1339,13 @@ attachment actions are handled within the Message object.</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1298,9 +1356,10 @@ attachment actions are handled within the Message object.</p>
     <h4 class="phpdocumentor-element__name" id="method_calendar_import_attendee">
         calendar_import_attendee()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_import_attendee" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">191</span>
 
@@ -1313,6 +1372,8 @@ attendee information from a meeting response.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">calendar_import_attendee</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Icalendar_vEvent">Horde_Icalendar_vEvent</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vEvent</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attendee</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1338,10 +1399,6 @@ attendee information from a meeting response.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1353,9 +1410,10 @@ attendee information from a meeting response.</p>
     <h4 class="phpdocumentor-element__name" id="method_calendar_import_vevent">
         calendar_import_vevent()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_import_vevent" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">179</span>
 
@@ -1368,6 +1426,8 @@ events from meeting invitations.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">calendar_import_vevent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Icalendar_vEvent">Horde_Icalendar_vEvent</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vEvent</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1384,13 +1444,15 @@ events from meeting invitations.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The event's UID.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The event's UID.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1401,9 +1463,10 @@ events from meeting invitations.</p>
     <h4 class="phpdocumentor-element__name" id="method_calendar_listUids">
         calendar_listUids()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_listUids" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">95</span>
 
@@ -1415,6 +1478,8 @@ events from meeting invitations.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">calendar_listUids</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$startstamp</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$endstamp</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$calendar</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1450,11 +1515,11 @@ events from meeting invitations.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1465,9 +1530,10 @@ events from meeting invitations.</p>
     <h4 class="phpdocumentor-element__name" id="method_calendar_move">
         calendar_move()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_move" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">282</span>
 
@@ -1479,6 +1545,8 @@ events from meeting invitations.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">calendar_move</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$target</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1514,7 +1582,8 @@ events from meeting invitations.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_move#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1525,15 +1594,17 @@ events from meeting invitations.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The UID if successfully moved otherwise false.</p>
+        <span class="phpdocumentor-signature__response_type">string|bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The UID if successfully moved otherwise false.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1544,9 +1615,10 @@ events from meeting invitations.</p>
     <h4 class="phpdocumentor-element__name" id="method_calendar_replace">
         calendar_replace()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_replace" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">236</span>
 
@@ -1558,6 +1630,8 @@ events from meeting invitations.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">calendar_replace</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_ActiveSync_Message_Appointment">Horde_ActiveSync_Message_Appointment</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$calendar</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1592,13 +1666,15 @@ events from meeting invitations.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">null|array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>May return an array of 'uid' and 'atchash' or null.</p>
+        <span class="phpdocumentor-signature__response_type">null|array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>May return an array of 'uid' and 'atchash' or null.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1609,9 +1685,10 @@ events from meeting invitations.</p>
     <h4 class="phpdocumentor-element__name" id="method_changeFolder">
         changeFolder()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_changeFolder" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1357</span>
 
@@ -1623,6 +1700,8 @@ events from meeting invitations.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">changeFolder</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1659,7 +1738,8 @@ A Horde_ActiveSync::CLASS_* constant.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_changeFolder#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1678,12 +1758,8 @@ A Horde_ActiveSync::CLASS_* constant.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1695,9 +1771,10 @@ A Horde_ActiveSync::CLASS_* constant.</p>
     <h4 class="phpdocumentor-element__name" id="method_clearAuth">
         clearAuth()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_clearAuth" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1480</span>
 
@@ -1709,14 +1786,12 @@ A Horde_ActiveSync::CLASS_* constant.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">clearAuth</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1728,9 +1803,10 @@ A Horde_ActiveSync::CLASS_* constant.</p>
     <h4 class="phpdocumentor-element__name" id="method_contacts_delete">
         contacts_delete()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_delete" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">388</span>
 
@@ -1742,6 +1818,8 @@ A Horde_ActiveSync::CLASS_* constant.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">contacts_delete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1758,11 +1836,11 @@ A Horde_ActiveSync::CLASS_* constant.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1773,9 +1851,10 @@ A Horde_ActiveSync::CLASS_* constant.</p>
     <h4 class="phpdocumentor-element__name" id="method_contacts_export">
         contacts_export()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_export" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">351</span>
 
@@ -1787,6 +1866,8 @@ A Horde_ActiveSync::CLASS_* constant.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">contacts_export</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_ActiveSync_Message_Contact">Horde_ActiveSync_Message_Contact</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1821,13 +1902,15 @@ DEFAULT: none (No truncation).</li>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_ActiveSync_Message_Contact">Horde_ActiveSync_Message_Contact</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The contact object.</p>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_ActiveSync_Message_Contact">Horde_ActiveSync_Message_Contact</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The contact object.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1838,9 +1921,10 @@ DEFAULT: none (No truncation).</li>
     <h4 class="phpdocumentor-element__name" id="method_contacts_getActionTimestamp">
         contacts_getActionTimestamp()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_getActionTimestamp" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">403</span>
 
@@ -1853,6 +1937,8 @@ specifed contact</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">contacts_getActionTimestamp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$addressbook</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1887,11 +1973,11 @@ specifed contact</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1902,9 +1988,10 @@ specifed contact</p>
     <h4 class="phpdocumentor-element__name" id="method_contacts_getGal">
         contacts_getGal()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_getGal" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">543</span>
 
@@ -1916,18 +2003,22 @@ specifed contact</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">contacts_getGal</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>| boolean  The address book id of the GAL, or false if
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>| boolean  The address book id of the GAL, or false if
 not available.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1938,9 +2029,10 @@ not available.</p>
     <h4 class="phpdocumentor-element__name" id="method_contacts_import">
         contacts_import()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_import" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">365</span>
 
@@ -1952,6 +2044,8 @@ not available.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">contacts_import</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_ActiveSync_Message_Contact">Horde_ActiveSync_Message_Contact</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$addressbook</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1978,13 +2072,15 @@ not available.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>string|boolean  The new UID or false on failure.</p>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>string|boolean  The new UID or false on failure.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1995,9 +2091,10 @@ not available.</p>
     <h4 class="phpdocumentor-element__name" id="method_contacts_listUids">
         contacts_listUids()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_listUids" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">331</span>
 
@@ -2009,6 +2106,8 @@ not available.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">contacts_listUids</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2026,13 +2125,15 @@ not available.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>An array of contact UIDs</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array of contact UIDs</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2043,9 +2144,10 @@ not available.</p>
     <h4 class="phpdocumentor-element__name" id="method_contacts_replace">
         contacts_replace()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_replace" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">376</span>
 
@@ -2057,6 +2159,8 @@ not available.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">contacts_replace</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2082,10 +2186,6 @@ not available.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2097,9 +2197,10 @@ not available.</p>
     <h4 class="phpdocumentor-element__name" id="method_contacts_search">
         contacts_search()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_search" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">447</span>
 
@@ -2111,6 +2212,8 @@ not available.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">contacts_search</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2143,13 +2246,15 @@ of fields.</li>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The search results.</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The search results.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2160,9 +2265,10 @@ of fields.</li>
     <h4 class="phpdocumentor-element__name" id="method_createFolder">
         createFolder()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_createFolder" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1299</span>
 
@@ -2174,6 +2280,8 @@ of fields.</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">createFolder</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$foldername</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2201,7 +2309,8 @@ A Horde_ActiveSync::CLASS_* constant.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_createFolder#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2220,15 +2329,17 @@ A Horde_ActiveSync::CLASS_* constant.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|int</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The new folder serverid.</p>
+        <span class="phpdocumentor-signature__response_type">string|int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The new folder serverid.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2239,9 +2350,10 @@ A Horde_ActiveSync::CLASS_* constant.</p>
     <h4 class="phpdocumentor-element__name" id="method_deleteFolder">
         deleteFolder()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_deleteFolder" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1428</span>
 
@@ -2253,6 +2365,8 @@ A Horde_ActiveSync::CLASS_* constant.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deleteFolder</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2279,7 +2393,8 @@ A Horde_ActiveSync::CLASS_* constant.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_deleteFolder#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2290,12 +2405,8 @@ A Horde_ActiveSync::CLASS_* constant.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2307,9 +2418,10 @@ A Horde_ActiveSync::CLASS_* constant.</p>
     <h4 class="phpdocumentor-element__name" id="method_files_browse">
         files_browse()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_files_browse" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">573</span>
 
@@ -2321,6 +2433,8 @@ A Horde_ActiveSync::CLASS_* constant.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">files_browse</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2340,10 +2454,11 @@ backend name. e.g., \file\mike\file.txt or
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>An array of data arrays with the following structure:
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array of data arrays with the following structure:
 linkid:         (string)  The UNC path for this resource.
 name:           (string)  The display name of the resource.
 content-length: (integer)  The byte size of the resource (if a file).
@@ -2358,7 +2473,8 @@ available.
 @since 2.12.0</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2369,9 +2485,10 @@ available.
     <h4 class="phpdocumentor-element__name" id="method_filters_getVacation">
         filters_getVacation()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_filters_getVacation" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">925</span>
 
@@ -2383,18 +2500,22 @@ available.
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">filters_getVacation</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The vacation rule properties or false if
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The vacation rule properties or false if
 interface unavailable.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2405,9 +2526,10 @@ interface unavailable.</p>
     <h4 class="phpdocumentor-element__name" id="method_filters_setVacation">
         filters_setVacation()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_filters_setVacation" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">941</span>
 
@@ -2419,6 +2541,8 @@ interface unavailable.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">filters_setVacation</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$setting</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2436,7 +2560,8 @@ interface unavailable.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_filters_setVacation#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2447,12 +2572,8 @@ interface unavailable.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2464,9 +2585,10 @@ interface unavailable.</p>
     <h4 class="phpdocumentor-element__name" id="method_getChanges">
         getChanges()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_getChanges" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1083</span>
 
@@ -2478,6 +2600,8 @@ interface unavailable.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getChanges</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$collection</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from_ts</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to_ts</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$server_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2524,27 +2648,31 @@ multiplexed.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_getChanges#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>InvalidArgumentException, Horde_Exception</p>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>Horde_Exception</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>A hash of add, modify, and delete uids</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>A hash of add, modify, and delete uids</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2555,9 +2683,10 @@ multiplexed.</p>
     <h4 class="phpdocumentor-element__name" id="method_getFolders">
         getFolders()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_getFolders" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1219</span>
 
@@ -2569,6 +2698,8 @@ multiplexed.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getFolders</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$collection</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$multiplex</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2597,7 +2728,8 @@ be multiplexed, regardless of horde's settings</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_getFolders#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2617,18 +2749,20 @@ be multiplexed, regardless of horde's settings</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>A list of folder uids or $collection if supporting
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>A list of folder uids or $collection if supporting
 API is not found. If a list is returned, it is in
 the following format:
 'uid' =&gt; array('display' =&gt; &quot;Display Name&quot;, 'primary' =&gt; boolean)</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2639,9 +2773,10 @@ the following format:
     <h4 class="phpdocumentor-element__name" id="method_getHighestModSeq">
         getHighestModSeq()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_getHighestModSeq" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">850</span>
 
@@ -2654,6 +2789,8 @@ collection</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getHighestModSeq</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$collection</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2662,23 +2799,22 @@ collection</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$id</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_getHighestModSeq#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2689,15 +2825,17 @@ collection</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The modseq value.</p>
+        <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The modseq value.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2708,9 +2846,10 @@ collection</p>
     <h4 class="phpdocumentor-element__name" id="method_getRecipientCache">
         getRecipientCache()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_getRecipientCache" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">416</span>
 
@@ -2722,6 +2861,8 @@ collection</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getRecipientCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$max</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">100</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2738,13 +2879,15 @@ collection</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>An array of email addresses.</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array of email addresses.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2755,9 +2898,10 @@ collection</p>
     <h4 class="phpdocumentor-element__name" id="method_hasFeature">
         hasFeature()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_hasFeature" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">833</span>
 
@@ -2769,6 +2913,8 @@ collection</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">hasFeature</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$feature</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$collection</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2795,7 +2941,8 @@ collection</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_hasFeature#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2806,13 +2953,13 @@ collection</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2823,9 +2970,10 @@ collection</p>
     <h4 class="phpdocumentor-element__name" id="method_horde_getPref">
         horde_getPref()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_horde_getPref" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">888</span>
 
@@ -2837,6 +2985,8 @@ collection</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">horde_getPref</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$app</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pref</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2863,7 +3013,8 @@ collection</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_horde_getPref#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2875,15 +3026,17 @@ collection</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The preference value</p>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The preference value</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2894,9 +3047,10 @@ collection</p>
     <h4 class="phpdocumentor-element__name" id="method_horde_hasInterface">
         horde_hasInterface()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_horde_hasInterface" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">901</span>
 
@@ -2909,6 +3063,8 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">horde_hasInterface</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$api</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2925,13 +3081,15 @@ interface.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The application name.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The application name.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2942,9 +3100,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_horde_hasMethod">
         horde_hasMethod()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_horde_hasMethod" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">914</span>
 
@@ -2956,6 +3115,8 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">horde_hasMethod</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$api</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2981,11 +3142,11 @@ interface.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2996,9 +3157,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_horde_listApis">
         horde_listApis()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_horde_listApis" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">803</span>
 
@@ -3010,17 +3172,21 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">horde_listApis</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>An array of interface names.</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array of interface names.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3031,9 +3197,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_mail_ensureMessageFlags">
         mail_ensureMessageFlags()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_mail_ensureMessageFlags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1062</span>
 
@@ -3045,6 +3212,8 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">mail_ensureMessageFlags</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$flags</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3061,10 +3230,6 @@ interface.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -3076,9 +3241,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_mail_getMaillog">
         mail_getMaillog()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_mail_getMaillog" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">986</span>
 
@@ -3090,6 +3256,8 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">mail_getMaillog</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_History_Log">Horde_History_Log</abbr>|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3106,13 +3274,15 @@ interface.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_History_Log">Horde_History_Log</abbr>|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The history log or false if not found.</p>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_History_Log">Horde_History_Log</abbr>|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The history log or false if not found.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3123,9 +3293,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_mail_getMaillogChanges">
         mail_getMaillogChanges()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_mail_getMaillogChanges" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1046</span>
 
@@ -3137,6 +3308,8 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">mail_getMaillogChanges</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ts</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3153,13 +3326,15 @@ interface.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>An array of Message-IDs that have changed since $ts.</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array of Message-IDs that have changed since $ts.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3170,9 +3345,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_mail_logMaillog">
         mail_logMaillog()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_mail_logMaillog" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1008</span>
 
@@ -3184,6 +3360,8 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">mail_logMaillog</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mid</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$recipients</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$folder</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3228,10 +3406,6 @@ interface.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -3243,9 +3417,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_mail_logRecipient">
         mail_logRecipient()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_mail_logRecipient" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1028</span>
 
@@ -3256,8 +3431,9 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">mail_logRecipient</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$recipients</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3265,33 +3441,26 @@ interface.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$recipients</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$message_id</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -3303,9 +3472,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_mdnSend">
         mdnSend()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_mdnSend" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1485</span>
 
@@ -3316,8 +3486,9 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">mdnSend</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mdn</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3325,17 +3496,12 @@ interface.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -3347,9 +3513,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_notes_delete">
         notes_delete()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_delete" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">777</span>
 
@@ -3361,6 +3528,8 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">notes_delete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3378,7 +3547,8 @@ interface.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_delete#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3389,12 +3559,8 @@ interface.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -3406,9 +3572,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_notes_export">
         notes_export()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_export" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">739</span>
 
@@ -3420,6 +3587,8 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">notes_export</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_ActiveSync_Message_Note">Horde_ActiveSync_Message_Note</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3446,7 +3615,8 @@ interface.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_export#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3457,15 +3627,17 @@ interface.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_ActiveSync_Message_Note">Horde_ActiveSync_Message_Note</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The note message object</p>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_ActiveSync_Message_Note">Horde_ActiveSync_Message_Note</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The note message object</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3476,9 +3648,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_notes_getActionTimestamp">
         notes_getActionTimestamp()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_getActionTimestamp" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">792</span>
 
@@ -3490,6 +3663,8 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">notes_getActionTimestamp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$notepad</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3525,7 +3700,8 @@ interface.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_getActionTimestamp#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3536,13 +3712,13 @@ interface.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3553,9 +3729,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_notes_import">
         notes_import()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_import" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">754</span>
 
@@ -3567,6 +3744,8 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">notes_import</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_ActiveSync_Message_Note">Horde_ActiveSync_Message_Note</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$notebook</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3594,7 +3773,8 @@ interface.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_import#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3605,15 +3785,17 @@ interface.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The newly added notes's uid.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The newly added notes's uid.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3624,9 +3806,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_notes_listNotepads">
         notes_listNotepads()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_listNotepads" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">711</span>
 
@@ -3638,12 +3821,15 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">notes_listNotepads</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_listNotepads#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3665,13 +3851,13 @@ interface.</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3682,9 +3868,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_notes_listUids">
         notes_listUids()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_listUids" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">725</span>
 
@@ -3696,6 +3883,8 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">notes_listUids</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$notepad</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3714,7 +3903,8 @@ interface.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_listUids#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3725,15 +3915,17 @@ interface.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>An array of note uids.</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array of note uids.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3744,9 +3936,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_notes_replace">
         notes_replace()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_replace" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">766</span>
 
@@ -3758,6 +3951,8 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">notes_replace</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_ActiveSync_Message_Note">Horde_ActiveSync_Message_Note</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3784,7 +3979,8 @@ interface.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_replace#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3795,12 +3991,8 @@ interface.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -3812,9 +4004,10 @@ interface.</p>
     <h4 class="phpdocumentor-element__name" id="method_resolveRecipient">
         resolveRecipient()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_resolveRecipient" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">501</span>
 
@@ -3826,6 +4019,8 @@ interface.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">resolveRecipient</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3866,13 +4061,15 @@ DEFAULT: - (No limit).</li>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The search results, keyed by the $query.</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The search results, keyed by the $query.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3883,9 +4080,10 @@ DEFAULT: - (No limit).</li>
     <h4 class="phpdocumentor-element__name" id="method_setLogger">
         setLogger()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_setLogger" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">80</span>
 
@@ -3897,6 +4095,8 @@ DEFAULT: - (No limit).</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setLogger</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logger</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3905,17 +4105,12 @@ DEFAULT: - (No limit).</li>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -3927,9 +4122,10 @@ DEFAULT: - (No limit).</li>
     <h4 class="phpdocumentor-element__name" id="method_softDelete">
         softDelete()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_softDelete" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1171</span>
 
@@ -3941,6 +4137,8 @@ DEFAULT: - (No limit).</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">softDelete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$collection</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\long">long</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from_ts</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\long">long</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to_ts</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3984,15 +4182,17 @@ DEFAULT: - (No limit).</li>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>An array of message UIDs that occur within the $from_ts
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array of message UIDs that occur within the $from_ts
 and $to_ts range that are to be SOFTDELETEd from the
 client.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4003,9 +4203,10 @@ client.</p>
     <h4 class="phpdocumentor-element__name" id="method_tasks_delete">
         tasks_delete()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_tasks_delete" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">684</span>
 
@@ -4017,6 +4218,8 @@ client.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">tasks_delete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4033,10 +4236,6 @@ client.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -4048,9 +4247,10 @@ client.</p>
     <h4 class="phpdocumentor-element__name" id="method_tasks_export">
         tasks_export()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_tasks_export" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">650</span>
 
@@ -4062,6 +4262,8 @@ client.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">tasks_export</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_ActiveSync_Message_Task">Horde_ActiveSync_Message_Task</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4087,13 +4289,15 @@ client.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_ActiveSync_Message_Task">Horde_ActiveSync_Message_Task</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The task message object</p>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_ActiveSync_Message_Task">Horde_ActiveSync_Message_Task</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The task message object</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4104,9 +4308,10 @@ client.</p>
     <h4 class="phpdocumentor-element__name" id="method_tasks_getActionTimestamp">
         tasks_getActionTimestamp()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_tasks_getActionTimestamp" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">698</span>
 
@@ -4118,6 +4323,8 @@ client.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">tasks_getActionTimestamp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tasklist</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4144,18 +4351,17 @@ client.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4166,9 +4372,10 @@ client.</p>
     <h4 class="phpdocumentor-element__name" id="method_tasks_import">
         tasks_import()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_tasks_import" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">663</span>
 
@@ -4180,6 +4387,8 @@ client.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">tasks_import</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_ActiveSync_Message_Task">Horde_ActiveSync_Message_Task</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tasklist</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4205,13 +4414,15 @@ client.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The newly added task's uid.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The newly added task's uid.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4222,9 +4433,10 @@ client.</p>
     <h4 class="phpdocumentor-element__name" id="method_tasks_listUids">
         tasks_listUids()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_tasks_listUids" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">637</span>
 
@@ -4236,6 +4448,8 @@ client.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">tasks_listUids</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tasklist</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4252,13 +4466,15 @@ client.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>An array of task uids.</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array of task uids.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4269,9 +4485,10 @@ client.</p>
     <h4 class="phpdocumentor-element__name" id="method_tasks_replace">
         tasks_replace()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method_tasks_replace" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">674</span>
 
@@ -4283,6 +4500,8 @@ client.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">tasks_replace</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_ActiveSync_Message_Task">Horde_ActiveSync_Message_Task</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4308,10 +4527,6 @@ client.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -4323,9 +4538,10 @@ client.</p>
     <h4 class="phpdocumentor-element__name" id="method__ensureCalendar">
         _ensureCalendar()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method__ensureCalendar" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">1130</span>
 
@@ -4339,6 +4555,8 @@ $soruce.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_ensureCalendar</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4355,13 +4573,15 @@ $soruce.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>An array containing the calendar id.</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array containing the calendar id.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4372,9 +4592,10 @@ $soruce.</p>
     <h4 class="phpdocumentor-element__name" id="method__getAppFromCollectionId">
         _getAppFromCollectionId()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method__getAppFromCollectionId" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">862</span>
 
@@ -4386,6 +4607,8 @@ $soruce.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_getAppFromCollectionId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$collection</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4402,13 +4625,15 @@ $soruce.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The horde application name e.g., nag.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The horde application name e.g., nag.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4419,9 +4644,10 @@ $soruce.</p>
     <h4 class="phpdocumentor-element__name" id="method__getInterfaceFromCollectionId">
         _getInterfaceFromCollectionId()
         <a href="classes/Horde-Core-ActiveSync-Connector.html#method__getInterfaceFromCollectionId" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/ActiveSync/Connector.php"><a href="files/horde-core-activesync-connector.html"><abbr title="Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/ActiveSync/Connector.php"><a href="files/lib-horde-core-activesync-connector.html"><abbr title="lib/Horde/Core/ActiveSync/Connector.php">Connector.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">874</span>
 
@@ -4433,6 +4659,8 @@ $soruce.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_getInterfaceFromCollectionId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$collection</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4449,80 +4677,209 @@ $soruce.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The Horde interface name e.g., notes</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The Horde interface name e.g., notes</p>
 </section>
 
-    
+            </section>
+
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/lib/Horde/Core/ActiveSync/Connector.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Horde-Core-ActiveSync-Connector.html#property__capabilities">$_capabilities<a href="classes/Horde-Core-ActiveSync-Connector.html"></li>
+                                                    <li><a href="classes/Horde-Core-ActiveSync-Connector.html#property__folderCache">$_folderCache<a href="classes/Horde-Core-ActiveSync-Connector.html"></li>
+                                                    <li><a href="classes/Horde-Core-ActiveSync-Connector.html#property__gal">$_gal<a href="classes/Horde-Core-ActiveSync-Connector.html"></li>
+                                                    <li><a href="classes/Horde-Core-ActiveSync-Connector.html#property__logger">$_logger<a href="classes/Horde-Core-ActiveSync-Connector.html"></li>
+                                                    <li><a href="classes/Horde-Core-ActiveSync-Connector.html#property__registry">$_registry<a href="classes/Horde-Core-ActiveSync-Connector.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_delete">calendar_delete()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_export">calendar_export()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_getActionTimestamp">calendar_getActionTimestamp()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_getAttachment">calendar_getAttachment()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_import">calendar_import()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_import16">calendar_import16()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_import_attendee">calendar_import_attendee()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_import_vevent">calendar_import_vevent()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_listUids">calendar_listUids()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_move">calendar_move()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_calendar_replace">calendar_replace()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_changeFolder">changeFolder()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_clearAuth">clearAuth()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_delete">contacts_delete()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_export">contacts_export()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_getActionTimestamp">contacts_getActionTimestamp()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_getGal">contacts_getGal()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_import">contacts_import()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_listUids">contacts_listUids()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_replace">contacts_replace()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_contacts_search">contacts_search()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_createFolder">createFolder()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_deleteFolder">deleteFolder()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_files_browse">files_browse()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_filters_getVacation">filters_getVacation()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_filters_setVacation">filters_setVacation()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_getChanges">getChanges()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_getFolders">getFolders()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_getHighestModSeq">getHighestModSeq()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_getRecipientCache">getRecipientCache()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_hasFeature">hasFeature()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_horde_getPref">horde_getPref()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_horde_hasInterface">horde_hasInterface()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_horde_hasMethod">horde_hasMethod()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_horde_listApis">horde_listApis()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_mail_ensureMessageFlags">mail_ensureMessageFlags()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_mail_getMaillog">mail_getMaillog()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_mail_getMaillogChanges">mail_getMaillogChanges()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_mail_logMaillog">mail_logMaillog()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_mail_logRecipient">mail_logRecipient()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_mdnSend">mdnSend()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_delete">notes_delete()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_export">notes_export()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_getActionTimestamp">notes_getActionTimestamp()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_import">notes_import()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_listNotepads">notes_listNotepads()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_listUids">notes_listUids()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_notes_replace">notes_replace()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_resolveRecipient">resolveRecipient()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_setLogger">setLogger()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_softDelete">softDelete()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_tasks_delete">tasks_delete()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_tasks_export">tasks_export()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_tasks_getActionTimestamp">tasks_getActionTimestamp()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_tasks_import">tasks_import()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_tasks_listUids">tasks_listUids()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method_tasks_replace">tasks_replace()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method__ensureCalendar">_ensureCalendar()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method__getAppFromCollectionId">_getAppFromCollectionId()</a></li>
+                                            <li><a href="classes/Horde-Core-ActiveSync-Connector.html#method__getInterfaceFromCollectionId">_getInterfaceFromCollectionId()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -4533,7 +4890,6 @@ $soruce.</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/Horde-Core-ActiveSync-Connector.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

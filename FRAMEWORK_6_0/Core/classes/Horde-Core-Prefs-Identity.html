@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -109,8 +110,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
     </ul>
 
     <article class="phpdocumentor-element -class">
@@ -131,8 +133,13 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/Prefs/Identity.php"><a href="files/horde-core-prefs-identity.html"><abbr title="Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/Prefs/Identity.php"><a href="files/lib-horde-core-prefs-identity.html"><abbr title="lib/Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">25</span>
 
@@ -145,7 +152,8 @@ class.</p>
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-Prefs-Identity.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -193,18 +201,27 @@ class.</p>
 </section>
 
                                     </dd>
-                        </dl>
-
-
-
+                                            </dl>
 
 
 
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Horde-Core-Prefs-Identity.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Horde-Core-Prefs-Identity.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Horde-Core-Prefs-Identity.html#constant_EXPIRE">EXPIRE</a>
@@ -220,7 +237,17 @@ class.</p>
 </dt>
 <dd>Expiration (in seconds) of a confirmation request.</dd>
 
-                        <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Horde-Core-Prefs-Identity.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Core-Prefs-Identity.html#method_confirmIdentity">confirmIdentity()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -264,7 +291,8 @@ identity.</dd>
 </dt>
 <dd>Manage the storage of the confirm_email preference.</dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -273,15 +301,17 @@ identity.</dd>
         <h3 class="phpdocumentor-elements__header" id="constants">
             Constants
             <a href="classes/Horde-Core-Prefs-Identity.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_EXPIRE">
         EXPIRE
         <a href="classes/Horde-Core-Prefs-Identity.html#constant_EXPIRE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/Prefs/Identity.php"><a href="files/horde-core-prefs-identity.html"><abbr title="Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/Prefs/Identity.php"><a href="files/lib-horde-core-prefs-identity.html"><abbr title="lib/Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">28</span>
 
@@ -298,8 +328,7 @@ identity.</dd>
 
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -307,10 +336,11 @@ identity.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_EXPIRE_SECS">
         EXPIRE_SECS
         <a href="classes/Horde-Core-Prefs-Identity.html#constant_EXPIRE_SECS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/Prefs/Identity.php"><a href="files/horde-core-prefs-identity.html"><abbr title="Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/Prefs/Identity.php"><a href="files/lib-horde-core-prefs-identity.html"><abbr title="lib/Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">31</span>
 
@@ -327,8 +357,7 @@ identity.</dd>
 
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -340,6 +369,7 @@ identity.</dd>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Horde-Core-Prefs-Identity.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -350,9 +380,10 @@ identity.</dd>
     <h4 class="phpdocumentor-element__name" id="method_confirmIdentity">
         confirmIdentity()
         <a href="classes/Horde-Core-Prefs-Identity.html#method_confirmIdentity" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/Prefs/Identity.php"><a href="files/horde-core-prefs-identity.html"><abbr title="Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/Prefs/Identity.php"><a href="files/lib-horde-core-prefs-identity.html"><abbr title="lib/Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">102</span>
 
@@ -365,6 +396,8 @@ validated identity.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">confirmIdentity</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hash</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -381,10 +414,6 @@ validated identity.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -396,9 +425,10 @@ validated identity.</p>
     <h4 class="phpdocumentor-element__name" id="method_getMatchingIdentity">
         getMatchingIdentity()
         <a href="classes/Horde-Core-Prefs-Identity.html#method_getMatchingIdentity" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/Prefs/Identity.php"><a href="files/horde-core-prefs-identity.html"><abbr title="Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/Prefs/Identity.php"><a href="files/lib-horde-core-prefs-identity.html"><abbr title="lib/Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">205</span>
 
@@ -410,6 +440,8 @@ validated identity.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getMatchingIdentity</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$addresses</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$search_own</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -437,15 +469,17 @@ addresses also?</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The id of the first identity that from or alias
+        <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The id of the first identity that from or alias
 addresses match (one of) the passed addresses or
 null if none matches.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -456,9 +490,10 @@ null if none matches.</p>
     <h4 class="phpdocumentor-element__name" id="method_getName">
         getName()
         <a href="classes/Horde-Core-Prefs-Identity.html#method_getName" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/Prefs/Identity.php"><a href="files/horde-core-prefs-identity.html"><abbr title="Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/Prefs/Identity.php"><a href="files/lib-horde-core-prefs-identity.html"><abbr title="lib/Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">181</span>
 
@@ -470,6 +505,8 @@ null if none matches.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getName</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ident</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -486,14 +523,16 @@ null if none matches.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The user's full name, or the user name if it doesn't
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The user's full name, or the user name if it doesn't
 exist.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -504,9 +543,10 @@ exist.</p>
     <h4 class="phpdocumentor-element__name" id="method_prefsGc">
         prefsGc()
         <a href="classes/Horde-Core-Prefs-Identity.html#method_prefsGc" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/Prefs/Identity.php"><a href="files/horde-core-prefs-identity.html"><abbr title="Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/Prefs/Identity.php"><a href="files/lib-horde-core-prefs-identity.html"><abbr title="lib/Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">155</span>
 
@@ -518,14 +558,12 @@ exist.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">prefsGc</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -537,9 +575,10 @@ exist.</p>
     <h4 class="phpdocumentor-element__name" id="method_verifyIdentity">
         verifyIdentity()
         <a href="classes/Horde-Core-Prefs-Identity.html#method_verifyIdentity" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/Prefs/Identity.php"><a href="files/horde-core-prefs-identity.html"><abbr title="Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/Prefs/Identity.php"><a href="files/lib-horde-core-prefs-identity.html"><abbr title="lib/Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">45</span>
 
@@ -552,6 +591,8 @@ identity.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">verifyIdentity</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$old_addr</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>A message is send to this address containing a time-sensitive link to
 confirm that the address really belongs to that user.</p>
 </section>
@@ -581,7 +622,8 @@ confirm that the address really belongs to that user.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Core-Prefs-Identity.html#method_verifyIdentity#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -592,12 +634,8 @@ confirm that the address really belongs to that user.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -609,9 +647,10 @@ confirm that the address really belongs to that user.</p>
     <h4 class="phpdocumentor-element__name" id="method__confirmEmail">
         _confirmEmail()
         <a href="classes/Horde-Core-Prefs-Identity.html#method__confirmEmail" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Core/Prefs/Identity.php"><a href="files/horde-core-prefs-identity.html"><abbr title="Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Core/Prefs/Identity.php"><a href="files/lib-horde-core-prefs-identity.html"><abbr title="lib/Horde/Core/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">217</span>
 
@@ -623,6 +662,8 @@ confirm that the address really belongs to that user.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_confirmEmail</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$confirm</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -639,80 +680,151 @@ confirm that the address really belongs to that user.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Confirm email array.</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Confirm email array.</p>
 </section>
 
-    
+            </section>
+
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/lib/Horde/Core/Prefs/Identity.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Horde-Core-Prefs-Identity.html#toc-constants">Constants</a></li>
+                                                                                <li><a href="classes/Horde-Core-Prefs-Identity.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Horde-Core-Prefs-Identity.html#constant_EXPIRE">EXPIRE</a></li>
+                                                    <li><a href="classes/Horde-Core-Prefs-Identity.html#constant_EXPIRE_SECS">EXPIRE_SECS</a></li>
+                                            </ul>
+                </li>
+            
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/Horde-Core-Prefs-Identity.html#method_confirmIdentity">confirmIdentity()</a></li>
+                                            <li><a href="classes/Horde-Core-Prefs-Identity.html#method_getMatchingIdentity">getMatchingIdentity()</a></li>
+                                            <li><a href="classes/Horde-Core-Prefs-Identity.html#method_getName">getName()</a></li>
+                                            <li><a href="classes/Horde-Core-Prefs-Identity.html#method_prefsGc">prefsGc()</a></li>
+                                            <li><a href="classes/Horde-Core-Prefs-Identity.html#method_verifyIdentity">verifyIdentity()</a></li>
+                                            <li><a href="classes/Horde-Core-Prefs-Identity.html#method__confirmEmail">_confirmEmail()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -723,7 +835,6 @@ confirm that the address really belongs to that user.</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/Horde-Core-Prefs-Identity.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

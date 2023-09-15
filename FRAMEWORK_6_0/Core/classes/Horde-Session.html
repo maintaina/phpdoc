@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -109,8 +110,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
     </ul>
 
     <article class="phpdocumentor-element -class">
@@ -128,8 +130,13 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">32</span>
 
@@ -142,7 +149,8 @@ administration and contents of the Horde session variable.</p>
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Session.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -172,109 +180,114 @@ administration and contents of the Horde session variable.</p>
 </section>
 
                                     </dd>
-                        </dl>
-
-
-
+                                            </dl>
 
 
 
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Horde-Session.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Horde-Session.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Horde-Session.html#constant_BEGIN">BEGIN</a>
     <span>
         &nbsp;= &#039;_b&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Horde-Session.html#constant_DATA">DATA</a>
     <span>
         &nbsp;= &#039;_d&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Horde-Session.html#constant_ENCRYPT">ENCRYPT</a>
     <span>
         &nbsp;= 4                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Horde-Session.html#constant_ENCRYPTED">ENCRYPTED</a>
     <span>
         &nbsp;= &#039;_e&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Horde-Session.html#constant_MODIFIED">MODIFIED</a>
     <span>
         &nbsp;= &#039;_m&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Horde-Session.html#constant_NONCE_ID">NONCE_ID</a>
     <span>
         &nbsp;= &#039;session_nonce&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Horde-Session.html#constant_NOT_SERIALIZED">NOT_SERIALIZED</a>
     <span>
         &nbsp;= &quot;\x00&quot;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Horde-Session.html#constant_PRUNE">PRUNE</a>
     <span>
         &nbsp;= &#039;_p&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Horde-Session.html#constant_REGENERATE">REGENERATE</a>
     <span>
         &nbsp;= &#039;_r&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Horde-Session.html#constant_TOKEN_ID">TOKEN_ID</a>
     <span>
         &nbsp;= &#039;session_token&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Horde-Session.html#constant_TYPE_ARRAY">TYPE_ARRAY</a>
     <span>
         &nbsp;= 1                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Horde-Session.html#constant_TYPE_OBJECT">TYPE_OBJECT</a>
     <span>
         &nbsp;= 2                            </span>
 </dt>
-<dd></dd>
 
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Horde-Session.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Horde-Session.html#property_begin">$begin</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Horde-Session.html#property_maxStore">$maxStore</a>
@@ -288,21 +301,18 @@ administration and contents of the Horde session variable.</p>
     <span>
                         &nbsp;: bool            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Horde-Session.html#property_regenerate_interval">$regenerate_interval</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Horde-Session.html#property_session_data">$session_data</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Horde-Session.html#property_sessionHandler">$sessionHandler</a>
@@ -346,7 +356,15 @@ administration and contents of the Horde session variable.</p>
 </dt>
 <dd>On re-login, indicate whether we were previously authenticated.</dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Horde-Session.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Session.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -358,14 +376,12 @@ administration and contents of the Horde session variable.</p>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Session.html#method___set">__set()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Session.html#method_checkNonce">checkNonce()</a>
@@ -444,7 +460,6 @@ checking a login.</dd>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Session.html#method_regenerate">regenerate()</a>
@@ -465,7 +480,6 @@ checking a login.</dd>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Horde-Session.html#method_set">set()</a>
@@ -493,7 +507,6 @@ checking a login.</dd>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Horde-Session.html#method__getKey">_getKey()</a>
@@ -516,7 +529,8 @@ checking a login.</dd>
 </dt>
 <dd>Return the list of subkeys for a master key.</dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -525,15 +539,17 @@ checking a login.</dd>
         <h3 class="phpdocumentor-elements__header" id="constants">
             Constants
             <a href="classes/Horde-Session.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_BEGIN">
         BEGIN
         <a href="classes/Horde-Session.html#constant_BEGIN" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">35</span>
 
@@ -548,10 +564,8 @@ checking a login.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -559,10 +573,11 @@ checking a login.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_DATA">
         DATA
         <a href="classes/Horde-Session.html#constant_DATA" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">591</span>
 
@@ -578,12 +593,12 @@ checking a login.</dd>
 
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Session.html#constant_DATA#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -593,17 +608,18 @@ checking a login.</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
 </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_ENCRYPT">
         ENCRYPT
         <a href="classes/Horde-Session.html#constant_ENCRYPT" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">43</span>
 
@@ -618,10 +634,8 @@ checking a login.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -629,10 +643,11 @@ checking a login.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_ENCRYPTED">
         ENCRYPTED
         <a href="classes/Horde-Session.html#constant_ENCRYPTED" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">36</span>
 
@@ -647,10 +662,8 @@ checking a login.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -658,10 +671,11 @@ checking a login.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_MODIFIED">
         MODIFIED
         <a href="classes/Horde-Session.html#constant_MODIFIED" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">37</span>
 
@@ -676,10 +690,8 @@ checking a login.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -687,10 +699,11 @@ checking a login.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_NONCE_ID">
         NONCE_ID
         <a href="classes/Horde-Session.html#constant_NONCE_ID" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">47</span>
 
@@ -705,10 +718,8 @@ checking a login.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -716,10 +727,11 @@ checking a login.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_NOT_SERIALIZED">
         NOT_SERIALIZED
         <a href="classes/Horde-Session.html#constant_NOT_SERIALIZED" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">45</span>
 
@@ -734,10 +746,8 @@ checking a login.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -745,10 +755,11 @@ checking a login.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_PRUNE">
         PRUNE
         <a href="classes/Horde-Session.html#constant_PRUNE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">38</span>
 
@@ -763,10 +774,8 @@ checking a login.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -774,10 +783,11 @@ checking a login.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_REGENERATE">
         REGENERATE
         <a href="classes/Horde-Session.html#constant_REGENERATE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">39</span>
 
@@ -792,10 +802,8 @@ checking a login.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -803,10 +811,11 @@ checking a login.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_TOKEN_ID">
         TOKEN_ID
         <a href="classes/Horde-Session.html#constant_TOKEN_ID" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">48</span>
 
@@ -821,10 +830,8 @@ checking a login.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -832,10 +839,11 @@ checking a login.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_TYPE_ARRAY">
         TYPE_ARRAY
         <a href="classes/Horde-Session.html#constant_TYPE_ARRAY" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">41</span>
 
@@ -850,10 +858,8 @@ checking a login.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -861,10 +867,11 @@ checking a login.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_TYPE_OBJECT">
         TYPE_OBJECT
         <a href="classes/Horde-Session.html#constant_TYPE_OBJECT" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">42</span>
 
@@ -879,10 +886,8 @@ checking a login.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -893,6 +898,7 @@ checking a login.</dd>
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/Horde-Session.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -904,11 +910,12 @@ checking a login.</dd>
     <h4 class="phpdocumentor-element__name" id="property_begin">
         $begin
         <a href="classes/Horde-Session.html#property_begin" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
 
@@ -925,8 +932,7 @@ checking a login.</dd>
 session is not active).</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -940,11 +946,12 @@ session is not active).</p>
     <h4 class="phpdocumentor-element__name" id="property_maxStore">
         $maxStore
         <a href="classes/Horde-Session.html#property_maxStore" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">55</span>
 
@@ -973,11 +980,12 @@ session is not active).</p>
     <h4 class="phpdocumentor-element__name" id="property_regenerate_due">
         $regenerate_due
         <a href="classes/Horde-Session.html#property_regenerate_due" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
 
@@ -994,8 +1002,7 @@ session is not active).</p>
 regeneration (since 2.5.0).</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -1009,11 +1016,12 @@ regeneration (since 2.5.0).</p>
     <h4 class="phpdocumentor-element__name" id="property_regenerate_interval">
         $regenerate_interval
         <a href="classes/Horde-Session.html#property_regenerate_interval" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
 
@@ -1030,8 +1038,7 @@ regeneration (since 2.5.0).</p>
 (since 2.5.0).</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -1045,11 +1052,12 @@ regeneration (since 2.5.0).</p>
     <h4 class="phpdocumentor-element__name" id="property_session_data">
         $session_data
         <a href="classes/Horde-Session.html#property_session_data" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
             <small class="phpdocumentor-element__modifier">write-only</small>                    </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
 
@@ -1066,8 +1074,7 @@ regeneration (since 2.5.0).</p>
 2.5.0).</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -1081,11 +1088,12 @@ regeneration (since 2.5.0).</p>
     <h4 class="phpdocumentor-element__name" id="property_sessionHandler">
         $sessionHandler
         <a href="classes/Horde-Session.html#property_sessionHandler" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">62</span>
 
@@ -1114,11 +1122,12 @@ regeneration (since 2.5.0).</p>
     <h4 class="phpdocumentor-element__name" id="property__active">
         $_active
         <a href="classes/Horde-Session.html#property__active" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">69</span>
 
@@ -1147,11 +1156,12 @@ regeneration (since 2.5.0).</p>
     <h4 class="phpdocumentor-element__name" id="property__cleansession">
         $_cleansession
         <a href="classes/Horde-Session.html#property__cleansession" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">76</span>
 
@@ -1180,11 +1190,12 @@ regeneration (since 2.5.0).</p>
     <h4 class="phpdocumentor-element__name" id="property__data">
         $_data
         <a href="classes/Horde-Session.html#property__data" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">83</span>
 
@@ -1213,11 +1224,12 @@ regeneration (since 2.5.0).</p>
     <h4 class="phpdocumentor-element__name" id="property__readonly">
         $_readonly
         <a href="classes/Horde-Session.html#property__readonly" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">90</span>
 
@@ -1246,11 +1258,12 @@ regeneration (since 2.5.0).</p>
     <h4 class="phpdocumentor-element__name" id="property__relogin">
         $_relogin
         <a href="classes/Horde-Session.html#property__relogin" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">97</span>
 
@@ -1275,6 +1288,7 @@ regeneration (since 2.5.0).</p>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Horde-Session.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -1285,9 +1299,10 @@ regeneration (since 2.5.0).</p>
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/Horde-Session.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">102</span>
 
@@ -1299,14 +1314,12 @@ regeneration (since 2.5.0).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1318,9 +1331,10 @@ regeneration (since 2.5.0).</p>
     <h4 class="phpdocumentor-element__name" id="method___get">
         __get()
         <a href="classes/Horde-Session.html#method___get" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">111</span>
 
@@ -1331,6 +1345,8 @@ regeneration (since 2.5.0).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1339,17 +1355,12 @@ regeneration (since 2.5.0).</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1361,9 +1372,10 @@ regeneration (since 2.5.0).</p>
     <h4 class="phpdocumentor-element__name" id="method___set">
         __set()
         <a href="classes/Horde-Session.html#method___set" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">131</span>
 
@@ -1374,6 +1386,8 @@ regeneration (since 2.5.0).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1382,25 +1396,19 @@ regeneration (since 2.5.0).</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$value</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1412,9 +1420,10 @@ regeneration (since 2.5.0).</p>
     <h4 class="phpdocumentor-element__name" id="method_checkNonce">
         checkNonce()
         <a href="classes/Horde-Session.html#method_checkNonce" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">578</span>
 
@@ -1426,6 +1435,8 @@ regeneration (since 2.5.0).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">checkNonce</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nonce</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1443,7 +1454,8 @@ regeneration (since 2.5.0).</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Session.html#method_checkNonce#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1462,12 +1474,8 @@ regeneration (since 2.5.0).</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1479,9 +1487,10 @@ regeneration (since 2.5.0).</p>
     <h4 class="phpdocumentor-element__name" id="method_checkToken">
         checkToken()
         <a href="classes/Horde-Session.html#method_checkToken" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">542</span>
 
@@ -1493,6 +1502,8 @@ regeneration (since 2.5.0).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">checkToken</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1510,7 +1521,8 @@ regeneration (since 2.5.0).</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Session.html#method_checkToken#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1521,12 +1533,8 @@ regeneration (since 2.5.0).</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1538,9 +1546,10 @@ regeneration (since 2.5.0).</p>
     <h4 class="phpdocumentor-element__name" id="method_clean">
         clean()
         <a href="classes/Horde-Session.html#method_clean" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">269</span>
 
@@ -1554,17 +1563,21 @@ checking a login.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">clean</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>True if the session was cleaned.</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if the session was cleaned.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1575,9 +1588,10 @@ checking a login.</p>
     <h4 class="phpdocumentor-element__name" id="method_close">
         close()
         <a href="classes/Horde-Session.html#method_close" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">292</span>
 
@@ -1589,14 +1603,12 @@ checking a login.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">close</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1608,9 +1620,10 @@ checking a login.</p>
     <h4 class="phpdocumentor-element__name" id="method_destroy">
         destroy()
         <a href="classes/Horde-Session.html#method_destroy" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">302</span>
 
@@ -1622,14 +1635,12 @@ checking a login.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">destroy</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1641,9 +1652,10 @@ checking a login.</p>
     <h4 class="phpdocumentor-element__name" id="method_exists">
         exists()
         <a href="classes/Horde-Session.html#method_exists" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">332</span>
 
@@ -1655,6 +1667,8 @@ checking a login.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">exists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$app</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1680,13 +1694,15 @@ checking a login.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>True if session variable exists.</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if session variable exists.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1697,9 +1713,10 @@ checking a login.</p>
     <h4 class="phpdocumentor-element__name" id="method_get">
         get()
         <a href="classes/Horde-Session.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">348</span>
 
@@ -1709,8 +1726,10 @@ checking a login.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$app</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mask</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$app</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mask</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1735,7 +1754,7 @@ checking a login.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$mask</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>One of:</p>
 <ul>
@@ -1749,13 +1768,15 @@ checking a login.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The value or null if the value doesn't exist.</p>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The value or null if the value doesn't exist.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1766,9 +1787,10 @@ checking a login.</p>
     <h4 class="phpdocumentor-element__name" id="method_getNonce">
         getNonce()
         <a href="classes/Horde-Session.html#method_getNonce" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">558</span>
 
@@ -1780,12 +1802,15 @@ checking a login.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getNonce</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Session.html#method_getNonce#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1796,15 +1821,17 @@ checking a login.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Session nonce.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Session nonce.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1815,9 +1842,10 @@ checking a login.</p>
     <h4 class="phpdocumentor-element__name" id="method_getToken">
         getToken()
         <a href="classes/Horde-Session.html#method_getToken" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">523</span>
 
@@ -1829,17 +1857,21 @@ checking a login.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getToken</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Session token.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Session token.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1850,9 +1882,10 @@ checking a login.</p>
     <h4 class="phpdocumentor-element__name" id="method_isActive">
         isActive()
         <a href="classes/Horde-Session.html#method_isActive" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">317</span>
 
@@ -1864,17 +1897,21 @@ checking a login.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isActive</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>True if the current session is active.</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if the current session is active.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1885,9 +1922,10 @@ checking a login.</p>
     <h4 class="phpdocumentor-element__name" id="method_purge">
         purge()
         <a href="classes/Horde-Session.html#method_purge" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">628</span>
 
@@ -1898,6 +1936,8 @@ checking a login.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">purge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1906,15 +1946,15 @@ checking a login.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Session.html#method_purge#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1926,12 +1966,8 @@ checking a login.</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1943,9 +1979,10 @@ checking a login.</p>
     <h4 class="phpdocumentor-element__name" id="method_regenerate">
         regenerate()
         <a href="classes/Horde-Session.html#method_regenerate" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">237</span>
 
@@ -1957,12 +1994,15 @@ checking a login.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">regenerate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Session.html#method_regenerate#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1973,12 +2013,8 @@ checking a login.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1990,9 +2026,10 @@ checking a login.</p>
     <h4 class="phpdocumentor-element__name" id="method_remove">
         remove()
         <a href="classes/Horde-Session.html#method_remove" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">456</span>
 
@@ -2004,6 +2041,8 @@ checking a login.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">remove</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$app</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2029,10 +2068,6 @@ checking a login.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2044,9 +2079,10 @@ checking a login.</p>
     <h4 class="phpdocumentor-element__name" id="method_retrieve">
         retrieve()
         <a href="classes/Horde-Session.html#method_retrieve" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">613</span>
 
@@ -2057,6 +2093,8 @@ checking a login.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">retrieve</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2065,15 +2103,15 @@ checking a login.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Session.html#method_retrieve#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2085,12 +2123,8 @@ checking a login.</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2102,9 +2136,10 @@ checking a login.</p>
     <h4 class="phpdocumentor-element__name" id="method_set">
         set()
         <a href="classes/Horde-Session.html#method_set" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">409</span>
 
@@ -2114,8 +2149,10 @@ checking a login.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$app</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mask</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$app</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mask</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2149,7 +2186,7 @@ checking a login.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$mask</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>One of:</p>
 <ul>
@@ -2164,10 +2201,6 @@ checking a login.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2179,9 +2212,10 @@ checking a login.</p>
     <h4 class="phpdocumentor-element__name" id="method_setup">
         setup()
         <a href="classes/Horde-Session.html#method_setup" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">150</span>
 
@@ -2193,6 +2227,8 @@ checking a login.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setup</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cache_limiter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$session_id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2229,7 +2265,8 @@ value.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Session.html#method_setup#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2240,12 +2277,8 @@ value.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2257,9 +2290,10 @@ value.</p>
     <h4 class="phpdocumentor-element__name" id="method_start">
         start()
         <a href="classes/Horde-Session.html#method_start" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">196</span>
 
@@ -2271,14 +2305,12 @@ value.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">start</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2290,9 +2322,10 @@ value.</p>
     <h4 class="phpdocumentor-element__name" id="method_store">
         store()
         <a href="classes/Horde-Session.html#method_store" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">596</span>
 
@@ -2303,6 +2336,8 @@ value.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">store</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prune</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2311,31 +2346,29 @@ value.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$prune</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$id</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-Session.html#method_store#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2347,12 +2380,8 @@ value.</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2364,9 +2393,10 @@ value.</p>
     <h4 class="phpdocumentor-element__name" id="method__getKey">
         _getKey()
         <a href="classes/Horde-Session.html#method__getKey" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">486</span>
 
@@ -2378,6 +2408,8 @@ value.</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">_getKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$app</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2403,13 +2435,15 @@ value.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The unique storage key.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The unique storage key.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2420,9 +2454,10 @@ value.</p>
     <h4 class="phpdocumentor-element__name" id="method__start">
         _start()
         <a href="classes/Horde-Session.html#method__start" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">221</span>
 
@@ -2434,14 +2469,12 @@ value.</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">_start</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2453,9 +2486,10 @@ value.</p>
     <h4 class="phpdocumentor-element__name" id="method__subkeys">
         _subkeys()
         <a href="classes/Horde-Session.html#method__subkeys" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/Session.php"><a href="files/horde-session.html"><abbr title="Horde/Session.php">Session.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/Session.php"><a href="files/lib-horde-session.html"><abbr title="lib/Horde/Session.php">Session.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">499</span>
 
@@ -2467,6 +2501,8 @@ value.</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">_subkeys</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$app</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2492,80 +2528,196 @@ value.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Subkeyname (keys) and session variable name (values).</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Subkeyname (keys) and session variable name (values).</p>
 </section>
 
-    
+            </section>
+
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/lib/Horde/Session.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Horde-Session.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/Horde-Session.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Horde-Session.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Horde-Session.html#constant_BEGIN">BEGIN</a></li>
+                                                    <li><a href="classes/Horde-Session.html#constant_DATA">DATA</a></li>
+                                                    <li><a href="classes/Horde-Session.html#constant_ENCRYPT">ENCRYPT</a></li>
+                                                    <li><a href="classes/Horde-Session.html#constant_ENCRYPTED">ENCRYPTED</a></li>
+                                                    <li><a href="classes/Horde-Session.html#constant_MODIFIED">MODIFIED</a></li>
+                                                    <li><a href="classes/Horde-Session.html#constant_NONCE_ID">NONCE_ID</a></li>
+                                                    <li><a href="classes/Horde-Session.html#constant_NOT_SERIALIZED">NOT_SERIALIZED</a></li>
+                                                    <li><a href="classes/Horde-Session.html#constant_PRUNE">PRUNE</a></li>
+                                                    <li><a href="classes/Horde-Session.html#constant_REGENERATE">REGENERATE</a></li>
+                                                    <li><a href="classes/Horde-Session.html#constant_TOKEN_ID">TOKEN_ID</a></li>
+                                                    <li><a href="classes/Horde-Session.html#constant_TYPE_ARRAY">TYPE_ARRAY</a></li>
+                                                    <li><a href="classes/Horde-Session.html#constant_TYPE_OBJECT">TYPE_OBJECT</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Horde-Session.html#property_begin">$begin<a href="classes/Horde-Session.html"></li>
+                                                    <li><a href="classes/Horde-Session.html#property_maxStore">$maxStore<a href="classes/Horde-Session.html"></li>
+                                                    <li><a href="classes/Horde-Session.html#property_regenerate_due">$regenerate_due<a href="classes/Horde-Session.html"></li>
+                                                    <li><a href="classes/Horde-Session.html#property_regenerate_interval">$regenerate_interval<a href="classes/Horde-Session.html"></li>
+                                                    <li><a href="classes/Horde-Session.html#property_session_data">$session_data<a href="classes/Horde-Session.html"></li>
+                                                    <li><a href="classes/Horde-Session.html#property_sessionHandler">$sessionHandler<a href="classes/Horde-Session.html"></li>
+                                                    <li><a href="classes/Horde-Session.html#property__active">$_active<a href="classes/Horde-Session.html"></li>
+                                                    <li><a href="classes/Horde-Session.html#property__cleansession">$_cleansession<a href="classes/Horde-Session.html"></li>
+                                                    <li><a href="classes/Horde-Session.html#property__data">$_data<a href="classes/Horde-Session.html"></li>
+                                                    <li><a href="classes/Horde-Session.html#property__readonly">$_readonly<a href="classes/Horde-Session.html"></li>
+                                                    <li><a href="classes/Horde-Session.html#property__relogin">$_relogin<a href="classes/Horde-Session.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/Horde-Session.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method___get">__get()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method___set">__set()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_checkNonce">checkNonce()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_checkToken">checkToken()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_clean">clean()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_close">close()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_destroy">destroy()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_exists">exists()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_get">get()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_getNonce">getNonce()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_getToken">getToken()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_isActive">isActive()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_purge">purge()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_regenerate">regenerate()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_remove">remove()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_retrieve">retrieve()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_set">set()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_setup">setup()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_start">start()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method_store">store()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method__getKey">_getKey()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method__start">_start()</a></li>
+                                            <li><a href="classes/Horde-Session.html#method__subkeys">_subkeys()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -2576,7 +2728,6 @@ value.</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/Horde-Session.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
