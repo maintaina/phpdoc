@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -78,8 +79,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="packages/IMP.html">IMP</a></li>
     </ul>
 
@@ -101,8 +103,13 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">25</span>
 
@@ -114,7 +121,8 @@
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Mailbox-SessionCache.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -153,30 +161,34 @@
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
-
-
-
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Serializable">Serializable</abbr></dt>
-        <dd></dd>
-    
-    
-    
-    </dl>
 
 
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/IMP-Mailbox-SessionCache.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="classes/IMP-Mailbox-SessionCache.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Serializable">Serializable</abbr></dt>    </dl>
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/IMP-Mailbox-SessionCache.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_ACL">CACHE_ACL</a>
@@ -190,7 +202,6 @@
     <span>
         &nbsp;= &#039;d&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_EXISTS">CACHE_EXISTS</a>
@@ -204,42 +215,36 @@
     <span>
         &nbsp;= &#039;ic&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_ICONS">CACHE_ICONS</a>
     <span>
         &nbsp;= &#039;i&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_LABEL">CACHE_LABEL</a>
     <span>
         &nbsp;= &#039;l&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_PREFTO">CACHE_PREFTO</a>
     <span>
         &nbsp;= &#039;pt&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_SPECIALMBOXES">CACHE_SPECIALMBOXES</a>
     <span>
         &nbsp;= &#039;s&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_UIDVALIDITY">CACHE_UIDVALIDITY</a>
     <span>
         &nbsp;= &#039;v&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/IMP-Mailbox-SessionCache.html#constant_CHANGED_NO">CHANGED_NO</a>
@@ -253,14 +258,21 @@
     <span>
         &nbsp;= 1                            </span>
 </dt>
-<dd></dd>
 
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/IMP-Mailbox-SessionCache.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/IMP-Mailbox-SessionCache.html#property_changed">$changed</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/IMP-Mailbox-SessionCache.html#property__cache">$_cache</a>
@@ -283,12 +295,19 @@
 </dt>
 <dd>Temporary (access-only) cached data.</dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/IMP-Mailbox-SessionCache.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Mailbox-SessionCache.html#method___get">__get()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Mailbox-SessionCache.html#method_exists">exists()</a>
@@ -358,7 +377,6 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Mailbox-SessionCache.html#method_setAcl">setAcl()</a>
@@ -400,9 +418,9 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -411,15 +429,17 @@
         <h3 class="phpdocumentor-elements__header" id="constants">
             Constants
             <a href="classes/IMP-Mailbox-SessionCache.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_CACHE_ACL">
         CACHE_ACL
         <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_ACL" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">32</span>
 
@@ -436,8 +456,7 @@
 
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -445,10 +464,11 @@
     <h4 class="phpdocumentor-element__name" id="constant_CACHE_DISPLAY">
         CACHE_DISPLAY
         <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_DISPLAY" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">33</span>
 
@@ -463,10 +483,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -474,10 +492,11 @@
     <h4 class="phpdocumentor-element__name" id="constant_CACHE_EXISTS">
         CACHE_EXISTS
         <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_EXISTS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">39</span>
 
@@ -494,8 +513,7 @@
 
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -503,10 +521,11 @@
     <h4 class="phpdocumentor-element__name" id="constant_CACHE_ICONHOOK">
         CACHE_ICONHOOK
         <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_ICONHOOK" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">40</span>
 
@@ -521,10 +540,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -532,10 +549,11 @@
     <h4 class="phpdocumentor-element__name" id="constant_CACHE_ICONS">
         CACHE_ICONS
         <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_ICONS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">34</span>
 
@@ -550,10 +568,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -561,10 +577,11 @@
     <h4 class="phpdocumentor-element__name" id="constant_CACHE_LABEL">
         CACHE_LABEL
         <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_LABEL" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">35</span>
 
@@ -579,10 +596,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -590,10 +605,11 @@
     <h4 class="phpdocumentor-element__name" id="constant_CACHE_PREFTO">
         CACHE_PREFTO
         <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_PREFTO" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">41</span>
 
@@ -608,10 +624,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -619,10 +633,11 @@
     <h4 class="phpdocumentor-element__name" id="constant_CACHE_SPECIALMBOXES">
         CACHE_SPECIALMBOXES
         <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_SPECIALMBOXES" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">42</span>
 
@@ -637,10 +652,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -648,10 +661,11 @@
     <h4 class="phpdocumentor-element__name" id="constant_CACHE_UIDVALIDITY">
         CACHE_UIDVALIDITY
         <a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_UIDVALIDITY" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">36</span>
 
@@ -666,10 +680,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -677,10 +689,11 @@
     <h4 class="phpdocumentor-element__name" id="constant_CHANGED_NO">
         CHANGED_NO
         <a href="classes/IMP-Mailbox-SessionCache.html#constant_CHANGED_NO" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">28</span>
 
@@ -697,8 +710,7 @@
 
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -706,10 +718,11 @@
     <h4 class="phpdocumentor-element__name" id="constant_CHANGED_YES">
         CHANGED_YES
         <a href="classes/IMP-Mailbox-SessionCache.html#constant_CHANGED_YES" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">29</span>
 
@@ -724,10 +737,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -738,6 +749,7 @@
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/IMP-Mailbox-SessionCache.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -749,11 +761,12 @@
     <h4 class="phpdocumentor-element__name" id="property_changed">
         $changed
         <a href="classes/IMP-Mailbox-SessionCache.html#property_changed" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
 
@@ -769,8 +782,7 @@
         <section class="phpdocumentor-description"><p>Has the internal object storage changed?</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -784,11 +796,12 @@
     <h4 class="phpdocumentor-element__name" id="property__cache">
         $_cache
         <a href="classes/IMP-Mailbox-SessionCache.html#property__cache" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">49</span>
 
@@ -817,11 +830,12 @@
     <h4 class="phpdocumentor-element__name" id="property__changed">
         $_changed
         <a href="classes/IMP-Mailbox-SessionCache.html#property__changed" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">56</span>
 
@@ -850,11 +864,12 @@
     <h4 class="phpdocumentor-element__name" id="property__temp">
         $_temp
         <a href="classes/IMP-Mailbox-SessionCache.html#property__temp" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">63</span>
 
@@ -879,6 +894,7 @@
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/IMP-Mailbox-SessionCache.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -889,9 +905,10 @@
     <h4 class="phpdocumentor-element__name" id="method___get">
         __get()
         <a href="classes/IMP-Mailbox-SessionCache.html#method___get" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">67</span>
 
@@ -902,6 +919,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -910,17 +929,12 @@
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -932,9 +946,10 @@
     <h4 class="phpdocumentor-element__name" id="method_exists">
         exists()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_exists" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">295</span>
 
@@ -946,6 +961,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">exists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mbox</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -962,13 +979,15 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>True if mailbox exists.</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if mailbox exists.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -979,9 +998,10 @@
     <h4 class="phpdocumentor-element__name" id="method_expire">
         expire()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_expire" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">334</span>
 
@@ -993,6 +1013,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">expire</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entries</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/IMP-Mailbox.html"><abbr title="\IMP_Mailbox">IMP_Mailbox</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mbox</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1020,10 +1042,6 @@ entries.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1035,9 +1053,10 @@ entries.</p>
     <h4 class="phpdocumentor-element__name" id="method_getAcl">
         getAcl()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_getAcl" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">83</span>
 
@@ -1049,6 +1068,8 @@ entries.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getAcl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mbox</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1065,14 +1086,16 @@ entries.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>A Horde_Imap_Client_Data_Acl object, null if no ACL
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>A Horde_Imap_Client_Data_Acl object, null if no ACL
 data, or false if not set.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1083,9 +1106,10 @@ data, or false if not set.</p>
     <h4 class="phpdocumentor-element__name" id="method_getDisplay">
         getDisplay()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_getDisplay" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">202</span>
 
@@ -1097,6 +1121,8 @@ data, or false if not set.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getDisplay</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mbox</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1113,13 +1139,15 @@ data, or false if not set.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Mailbox display label, or false if not set.</p>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Mailbox display label, or false if not set.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1130,9 +1158,10 @@ data, or false if not set.</p>
     <h4 class="phpdocumentor-element__name" id="method_getIcons">
         getIcons()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_getIcons" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">228</span>
 
@@ -1144,6 +1173,8 @@ data, or false if not set.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getIcons</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mbox</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1160,13 +1191,15 @@ data, or false if not set.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Icon information (array), or false if not set.</p>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Icon information (array), or false if not set.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1177,9 +1210,10 @@ data, or false if not set.</p>
     <h4 class="phpdocumentor-element__name" id="method_getLabel">
         getLabel()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_getLabel" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">118</span>
 
@@ -1191,6 +1225,8 @@ data, or false if not set.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getLabel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mbox</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1207,13 +1243,15 @@ data, or false if not set.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Mailbox label, or false if not set.</p>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Mailbox label, or false if not set.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1224,9 +1262,10 @@ data, or false if not set.</p>
     <h4 class="phpdocumentor-element__name" id="method_getPrefTo">
         getPrefTo()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_getPrefTo" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">150</span>
 
@@ -1238,6 +1277,8 @@ data, or false if not set.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getPrefTo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mbox</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1254,13 +1295,15 @@ data, or false if not set.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Preference string, or false if not set.</p>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Preference string, or false if not set.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1271,9 +1314,10 @@ data, or false if not set.</p>
     <h4 class="phpdocumentor-element__name" id="method_getSpecialMailboxes">
         getSpecialMailboxes()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_getSpecialMailboxes" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">262</span>
 
@@ -1285,20 +1329,24 @@ data, or false if not set.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getSpecialMailboxes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>A list of mailboxes, with the SPECIAL_* constants
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>A list of mailboxes, with the SPECIAL_* constants
 as keys and values containing the IMP_Mailbox objects or
 null if the mailbox doesn't exist (SPECIAL_SENT
 contains an array of objects).</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1309,9 +1357,10 @@ contains an array of objects).</p>
     <h4 class="phpdocumentor-element__name" id="method_getUidvalidity">
         getUidvalidity()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_getUidvalidity" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">176</span>
 
@@ -1323,6 +1372,8 @@ contains an array of objects).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getUidvalidity</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mbox</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1339,13 +1390,15 @@ contains an array of objects).</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>UIDVALIDITY, or false if not set.</p>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>UIDVALIDITY, or false if not set.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1356,9 +1409,10 @@ contains an array of objects).</p>
     <h4 class="phpdocumentor-element__name" id="method_serialize">
         serialize()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_serialize" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">398</span>
 
@@ -1369,14 +1423,12 @@ contains an array of objects).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">serialize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1388,9 +1440,10 @@ contains an array of objects).</p>
     <h4 class="phpdocumentor-element__name" id="method_setAcl">
         setAcl()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_setAcl" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">101</span>
 
@@ -1402,6 +1455,8 @@ contains an array of objects).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setAcl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$acl</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1427,10 +1482,6 @@ contains an array of objects).</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1442,9 +1493,10 @@ contains an array of objects).</p>
     <h4 class="phpdocumentor-element__name" id="method_setDisplay">
         setDisplay()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_setDisplay" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">215</span>
 
@@ -1456,6 +1508,8 @@ contains an array of objects).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setDisplay</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$display</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1481,10 +1535,6 @@ contains an array of objects).</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1496,9 +1546,10 @@ contains an array of objects).</p>
     <h4 class="phpdocumentor-element__name" id="method_setLabel">
         setLabel()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_setLabel" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">135</span>
 
@@ -1510,6 +1561,8 @@ contains an array of objects).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setLabel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$label</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1535,10 +1588,6 @@ contains an array of objects).</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1550,9 +1599,10 @@ contains an array of objects).</p>
     <h4 class="phpdocumentor-element__name" id="method_setPrefTo">
         setPrefTo()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_setPrefTo" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">163</span>
 
@@ -1564,6 +1614,8 @@ contains an array of objects).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setPrefTo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pref_to</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1589,10 +1641,6 @@ contains an array of objects).</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1604,9 +1652,10 @@ contains an array of objects).</p>
     <h4 class="phpdocumentor-element__name" id="method_setUidvalidity">
         setUidvalidity()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_setUidvalidity" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">189</span>
 
@@ -1618,6 +1667,8 @@ contains an array of objects).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setUidvalidity</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uidvalid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1643,10 +1694,6 @@ contains an array of objects).</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1658,9 +1705,10 @@ contains an array of objects).</p>
     <h4 class="phpdocumentor-element__name" id="method_unserialize">
         unserialize()
         <a href="classes/IMP-Mailbox-SessionCache.html#method_unserialize" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Mailbox/SessionCache.php"><a href="files/mailbox-sessioncache.html"><abbr title="Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Mailbox/SessionCache.php"><a href="files/lib-mailbox-sessioncache.html"><abbr title="lib/Mailbox/SessionCache.php">SessionCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">411</span>
 
@@ -1671,6 +1719,8 @@ contains an array of objects).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">unserialize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1679,85 +1729,179 @@ contains an array of objects).</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/lib/Mailbox/SessionCache.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/IMP-Mailbox-SessionCache.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_ACL">CACHE_ACL</a></li>
+                                                    <li><a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_DISPLAY">CACHE_DISPLAY</a></li>
+                                                    <li><a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_EXISTS">CACHE_EXISTS</a></li>
+                                                    <li><a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_ICONHOOK">CACHE_ICONHOOK</a></li>
+                                                    <li><a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_ICONS">CACHE_ICONS</a></li>
+                                                    <li><a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_LABEL">CACHE_LABEL</a></li>
+                                                    <li><a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_PREFTO">CACHE_PREFTO</a></li>
+                                                    <li><a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_SPECIALMBOXES">CACHE_SPECIALMBOXES</a></li>
+                                                    <li><a href="classes/IMP-Mailbox-SessionCache.html#constant_CACHE_UIDVALIDITY">CACHE_UIDVALIDITY</a></li>
+                                                    <li><a href="classes/IMP-Mailbox-SessionCache.html#constant_CHANGED_NO">CHANGED_NO</a></li>
+                                                    <li><a href="classes/IMP-Mailbox-SessionCache.html#constant_CHANGED_YES">CHANGED_YES</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/IMP-Mailbox-SessionCache.html#property_changed">$changed<a href="classes/IMP-Mailbox-SessionCache.html"></li>
+                                                    <li><a href="classes/IMP-Mailbox-SessionCache.html#property__cache">$_cache<a href="classes/IMP-Mailbox-SessionCache.html"></li>
+                                                    <li><a href="classes/IMP-Mailbox-SessionCache.html#property__changed">$_changed<a href="classes/IMP-Mailbox-SessionCache.html"></li>
+                                                    <li><a href="classes/IMP-Mailbox-SessionCache.html#property__temp">$_temp<a href="classes/IMP-Mailbox-SessionCache.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method___get">__get()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_exists">exists()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_expire">expire()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_getAcl">getAcl()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_getDisplay">getDisplay()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_getIcons">getIcons()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_getLabel">getLabel()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_getPrefTo">getPrefTo()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_getSpecialMailboxes">getSpecialMailboxes()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_getUidvalidity">getUidvalidity()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_serialize">serialize()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_setAcl">setAcl()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_setDisplay">setDisplay()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_setLabel">setLabel()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_setPrefTo">setPrefTo()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_setUidvalidity">setUidvalidity()</a></li>
+                                            <li><a href="classes/IMP-Mailbox-SessionCache.html#method_unserialize">unserialize()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -1768,7 +1912,6 @@ contains an array of objects).</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/IMP-Mailbox-SessionCache.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

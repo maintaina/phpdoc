@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -78,8 +79,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="packages/IMP.html">IMP</a></li>
     </ul>
 
@@ -101,8 +103,13 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices/Mailbox.php"><a href="files/indices-mailbox.html"><abbr title="Indices/Mailbox.php">Mailbox.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices/Mailbox.php"><a href="files/lib-indices-mailbox.html"><abbr title="lib/Indices/Mailbox.php">Mailbox.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">23</span>
 
@@ -114,7 +121,8 @@
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Indices-Mailbox.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -153,20 +161,31 @@
 </section>
 
                                     </dd>
-                        </dl>
-
-
-
+                                            </dl>
 
 
 
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/IMP-Indices-Mailbox.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/IMP-Indices-Mailbox.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/IMP-Indices-Mailbox.html#property_buids">$buids</a>
     <span>
                         &nbsp;: <a href="classes/IMP-Indices.html"><abbr title="\IMP_Indices">IMP_Indices</abbr></a>            </span>
@@ -187,7 +206,15 @@
 </dt>
 <dd>The indices list.</dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/IMP-Indices-Mailbox.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Indices-Mailbox.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -227,7 +254,6 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Indices.html#method_delete">delete()</a>
@@ -262,7 +288,6 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Indices.html#method_mdnCheck">mdnCheck()</a>
@@ -276,42 +301,36 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Indices.html#method_offsetExists">offsetExists()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Indices.html#method_offsetGet">offsetGet()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Indices.html#method_offsetSet">offsetSet()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Indices.html#method_offsetUnset">offsetUnset()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Indices.html#method_rewind">rewind()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Indices.html#method_stripPart">stripPart()</a>
@@ -332,7 +351,6 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/IMP-Indices.html#method__fromSequenceString">_fromSequenceString()</a>
@@ -348,7 +366,8 @@
 </dt>
 <dd>Create an IMAP message sequence string from a list of indices.</dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -359,6 +378,7 @@
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/IMP-Indices-Mailbox.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -370,11 +390,12 @@
     <h4 class="phpdocumentor-element__name" id="property_buids">
         $buids
         <a href="classes/IMP-Indices-Mailbox.html#property_buids" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices/Mailbox.php"><a href="files/indices-mailbox.html"><abbr title="Indices/Mailbox.php">Mailbox.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices/Mailbox.php"><a href="files/lib-indices-mailbox.html"><abbr title="lib/Indices/Mailbox.php">Mailbox.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">30</span>
 
@@ -403,11 +424,12 @@
     <h4 class="phpdocumentor-element__name" id="property_mailbox">
         $mailbox
         <a href="classes/IMP-Indices-Mailbox.html#property_mailbox" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices/Mailbox.php"><a href="files/indices-mailbox.html"><abbr title="Indices/Mailbox.php">Mailbox.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices/Mailbox.php"><a href="files/lib-indices-mailbox.html"><abbr title="lib/Indices/Mailbox.php">Mailbox.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">37</span>
 
@@ -436,11 +458,12 @@
     <h4 class="phpdocumentor-element__name" id="property__indices">
         $_indices
         <a href="classes/IMP-Indices.html#property__indices" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">30</span>
 
@@ -465,6 +488,7 @@
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/IMP-Indices-Mailbox.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -475,9 +499,10 @@
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/IMP-Indices-Mailbox.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices/Mailbox.php"><a href="files/indices-mailbox.html"><abbr title="Indices/Mailbox.php">Mailbox.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices/Mailbox.php"><a href="files/lib-indices-mailbox.html"><abbr title="lib/Indices/Mailbox.php">Mailbox.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">51</span>
 
@@ -489,14 +514,12 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -508,9 +531,10 @@
     <h4 class="phpdocumentor-element__name" id="method___toString">
         __toString()
         <a href="classes/IMP-Indices.html#method___toString" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">915</span>
 
@@ -522,17 +546,21 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__toString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>String representation (IMAP sequence string).</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>String representation (IMAP sequence string).</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -543,9 +571,10 @@
     <h4 class="phpdocumentor-element__name" id="method_add">
         add()
         <a href="classes/IMP-Indices.html#method_add" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">73</span>
 
@@ -557,6 +586,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">add</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>Input format:</p>
 <pre class="prettyprint">
 1 argument:
@@ -584,10 +615,6 @@
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -599,9 +626,10 @@
     <h4 class="phpdocumentor-element__name" id="method_copy">
         copy()
         <a href="classes/IMP-Indices.html#method_copy" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">266</span>
 
@@ -613,6 +641,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">copy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$targetMbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>Also handles moves to the tasklist and/or notepad applications.</p>
 </section>
 
@@ -654,13 +684,15 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>True if successful, false if not.</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if successful, false if not.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -671,9 +703,10 @@
     <h4 class="phpdocumentor-element__name" id="method_count">
         count()
         <a href="classes/IMP-Indices.html#method_count" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">897</span>
 
@@ -685,17 +718,21 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">count</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The number of indices.</p>
+        <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The number of indices.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -706,9 +743,10 @@
     <h4 class="phpdocumentor-element__name" id="method_current">
         current()
         <a href="classes/IMP-Indices.html#method_current" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">922</span>
 
@@ -719,15 +757,12 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">current</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -739,9 +774,10 @@
     <h4 class="phpdocumentor-element__name" id="method_delete">
         delete()
         <a href="classes/IMP-Indices.html#method_delete" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">364</span>
 
@@ -753,6 +789,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">delete</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -777,14 +815,16 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The number of messages deleted if successful,
+        <span class="phpdocumentor-signature__response_type">int|bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The number of messages deleted if successful,
 false if not successful.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -795,9 +835,10 @@ false if not successful.</p>
     <h4 class="phpdocumentor-element__name" id="method_flag">
         flag()
         <a href="classes/IMP-Indices.html#method_flag" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">687</span>
 
@@ -809,6 +850,8 @@ false if not successful.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">flag</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$add</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$remove</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -852,13 +895,15 @@ false if not successful.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>True if successful, false if not.</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if successful, false if not.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -869,9 +914,10 @@ false if not successful.</p>
     <h4 class="phpdocumentor-element__name" id="method_getSingle">
         getSingle()
         <a href="classes/IMP-Indices.html#method_getSingle" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">147</span>
 
@@ -883,6 +929,8 @@ false if not successful.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getSingle</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$all</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -891,22 +939,23 @@ false if not successful.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>$all  If true, returns all UIDs for the first index
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>$all  If true, returns all UIDs for the first index
 in an array. If false, returns the first UID for
 the first index as a string.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -917,9 +966,10 @@ the first index as a string.</p>
     <h4 class="phpdocumentor-element__name" id="method_indices">
         indices()
         <a href="classes/IMP-Indices.html#method_indices" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">162</span>
 
@@ -931,18 +981,22 @@ the first index as a string.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">indices</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The indices array (keys are mailbox names, values are
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The indices array (keys are mailbox names, values are
 arrays of UIDs).</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -953,9 +1007,10 @@ arrays of UIDs).</p>
     <h4 class="phpdocumentor-element__name" id="method_key">
         key()
         <a href="classes/IMP-Indices.html#method_key" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">936</span>
 
@@ -966,15 +1021,12 @@ arrays of UIDs).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">key</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -986,9 +1038,10 @@ arrays of UIDs).</p>
     <h4 class="phpdocumentor-element__name" id="method_mdnCheck">
         mdnCheck()
         <a href="classes/IMP-Indices.html#method_mdnCheck" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">781</span>
 
@@ -1000,6 +1053,8 @@ arrays of UIDs).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">mdnCheck</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Mime_Headers">Horde_Mime_Headers</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$headers</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$confirmed</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1025,13 +1080,15 @@ arrays of UIDs).</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>True if the MDN request needs to be confirmed.</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if the MDN request needs to be confirmed.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1042,9 +1099,10 @@ arrays of UIDs).</p>
     <h4 class="phpdocumentor-element__name" id="method_next">
         next()
         <a href="classes/IMP-Indices.html#method_next" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">942</span>
 
@@ -1055,15 +1113,12 @@ arrays of UIDs).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">next</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1075,9 +1130,10 @@ arrays of UIDs).</p>
     <h4 class="phpdocumentor-element__name" id="method_offsetExists">
         offsetExists()
         <a href="classes/IMP-Indices.html#method_offsetExists" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">859</span>
 
@@ -1088,6 +1144,8 @@ arrays of UIDs).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">offsetExists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1096,18 +1154,17 @@ arrays of UIDs).</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1118,9 +1175,10 @@ arrays of UIDs).</p>
     <h4 class="phpdocumentor-element__name" id="method_offsetGet">
         offsetGet()
         <a href="classes/IMP-Indices.html#method_offsetGet" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">866</span>
 
@@ -1131,6 +1189,8 @@ arrays of UIDs).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">offsetGet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1139,17 +1199,12 @@ arrays of UIDs).</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1161,9 +1216,10 @@ arrays of UIDs).</p>
     <h4 class="phpdocumentor-element__name" id="method_offsetSet">
         offsetSet()
         <a href="classes/IMP-Indices.html#method_offsetSet" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">876</span>
 
@@ -1174,6 +1230,8 @@ arrays of UIDs).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">offsetSet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1182,25 +1240,19 @@ arrays of UIDs).</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$value</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1212,9 +1264,10 @@ arrays of UIDs).</p>
     <h4 class="phpdocumentor-element__name" id="method_offsetUnset">
         offsetUnset()
         <a href="classes/IMP-Indices.html#method_offsetUnset" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">885</span>
 
@@ -1225,6 +1278,8 @@ arrays of UIDs).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">offsetUnset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1233,17 +1288,12 @@ arrays of UIDs).</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1255,9 +1305,10 @@ arrays of UIDs).</p>
     <h4 class="phpdocumentor-element__name" id="method_rewind">
         rewind()
         <a href="classes/IMP-Indices.html#method_rewind" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">950</span>
 
@@ -1268,15 +1319,12 @@ arrays of UIDs).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">rewind</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1288,9 +1336,10 @@ arrays of UIDs).</p>
     <h4 class="phpdocumentor-element__name" id="method_stripPart">
         stripPart()
         <a href="classes/IMP-Indices.html#method_stripPart" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">528</span>
 
@@ -1302,6 +1351,8 @@ arrays of UIDs).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">stripPart</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$partid</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/IMP-Indices.html"><abbr title="\IMP_Indices">IMP_Indices</abbr></a></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1320,7 +1371,8 @@ stripped if null.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Indices.html#method_stripPart#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1331,15 +1383,17 @@ stripped if null.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/IMP-Indices.html"><abbr title="\IMP_Indices">IMP_Indices</abbr></a></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns the new indices object.</p>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/IMP-Indices.html"><abbr title="\IMP_Indices">IMP_Indices</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns the new indices object.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1350,9 +1404,10 @@ stripped if null.</p>
     <h4 class="phpdocumentor-element__name" id="method_toArray">
         toArray()
         <a href="classes/IMP-Indices.html#method_toArray" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">173</span>
 
@@ -1364,18 +1419,22 @@ stripped if null.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Keys are base64 encoded mailbox names, values are
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Keys are base64 encoded mailbox names, values are
 sequence strings.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1386,9 +1445,10 @@ sequence strings.</p>
     <h4 class="phpdocumentor-element__name" id="method_valid">
         valid()
         <a href="classes/IMP-Indices.html#method_valid" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">956</span>
 
@@ -1399,15 +1459,12 @@ sequence strings.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">valid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1419,9 +1476,10 @@ sequence strings.</p>
     <h4 class="phpdocumentor-element__name" id="method__fromSequenceString">
         _fromSequenceString()
         <a href="classes/IMP-Indices.html#method__fromSequenceString" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">197</span>
 
@@ -1433,6 +1491,8 @@ sequence strings.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_fromSequenceString</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>Extends Horde_Imap_Client_Ids by allowing mailbox information to appear
 in the string.</p>
 </section>
@@ -1452,16 +1512,18 @@ in the string.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>An array of indices.  If string contains mailbox info,
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array of indices.  If string contains mailbox info,
 return value will be an array of arrays, with keys as
 mailbox names and values as IDs. Otherwise, return the
 list of IDs.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1472,9 +1534,10 @@ list of IDs.</p>
     <h4 class="phpdocumentor-element__name" id="method__toSequenceString">
         _toSequenceString()
         <a href="classes/IMP-Indices.html#method__toSequenceString" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Indices.php"><a href="files/indices.html"><abbr title="Indices.php">Indices.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Indices.php"><a href="files/lib-indices.html"><abbr title="lib/Indices.php">Indices.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">237</span>
 
@@ -1486,6 +1549,8 @@ list of IDs.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_toSequenceString</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$in</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>Extends Horde_Imap_Client_Ids by allowing mailbox information to appear
 in the string.</p>
 </section>
@@ -1505,80 +1570,169 @@ in the string.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The message sequence string.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The message sequence string.</p>
 </section>
 
-    
+            </section>
+
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/lib/Indices/Mailbox.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/IMP-Indices-Mailbox.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/IMP-Indices-Mailbox.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/IMP-Indices-Mailbox.html#property_buids">$buids<a href="classes/IMP-Indices-Mailbox.html"></li>
+                                                    <li><a href="classes/IMP-Indices-Mailbox.html#property_mailbox">$mailbox<a href="classes/IMP-Indices-Mailbox.html"></li>
+                                                    <li><a href="classes/IMP-Indices.html#property__indices">$_indices<a href="classes/IMP-Indices-Mailbox.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/IMP-Indices-Mailbox.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method___toString">__toString()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_add">add()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_copy">copy()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_count">count()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_current">current()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_delete">delete()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_flag">flag()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_getSingle">getSingle()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_indices">indices()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_key">key()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_mdnCheck">mdnCheck()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_next">next()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_offsetExists">offsetExists()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_offsetGet">offsetGet()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_offsetSet">offsetSet()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_offsetUnset">offsetUnset()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_rewind">rewind()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_stripPart">stripPart()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_toArray">toArray()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method_valid">valid()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method__fromSequenceString">_fromSequenceString()</a></li>
+                                            <li><a href="classes/IMP-Indices.html#method__toSequenceString">_toSequenceString()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -1589,7 +1743,6 @@ in the string.</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/IMP-Indices-Mailbox.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

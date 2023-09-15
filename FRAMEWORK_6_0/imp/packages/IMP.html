@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -78,753 +79,135 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
     </ul>
 
     <article class="phpdocumentor-element -package">
         <h2 class="phpdocumentor-content__title">IMP</h2>
 
         
-
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Compose-Attachment-Linked.html"><abbr title="\IMP_Compose_Attachment_Linked">IMP_Compose_Attachment_Linked</abbr></a></dt>
-        <dd>Interface for storage backends that support linked attachments.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Contacts-Avatar-Backend.html"><abbr title="\IMP_Contacts_Avatar_Backend">IMP_Contacts_Avatar_Backend</abbr></a></dt>
-        <dd>Interface for a contact avatar image backend.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Contacts-Flag-Backend.html"><abbr title="\IMP_Contacts_Flag_Backend">IMP_Contacts_Flag_Backend</abbr></a></dt>
-        <dd>Interface for a contacts flag image backend.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Flag-Match-Address.html"><abbr title="\IMP_Flag_Match_Address">IMP_Flag_Match_Address</abbr></a></dt>
-        <dd>Interface to allow flagging a message based on address matches.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Flag-Match-Flag.html"><abbr title="\IMP_Flag_Match_Flag">IMP_Flag_Match_Flag</abbr></a></dt>
-        <dd>Interface to allow flagging a message based on IMAP flags.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Flag-Match-Header.html"><abbr title="\IMP_Flag_Match_Header">IMP_Flag_Match_Header</abbr></a></dt>
-        <dd>Interface to allow flagging a message based on headers data.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Flag-Match-Order.html"><abbr title="\IMP_Flag_Match_Order">IMP_Flag_Match_Order</abbr></a></dt>
-        <dd>Interface to allow specifying the order that match interfaces are run.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Flag-Match-Structure.html"><abbr title="\IMP_Flag_Match_Structure">IMP_Flag_Match_Structure</abbr></a></dt>
-        <dd>Interface to allow flagging a message based on bodystructure data.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Search-Element-Callback.html"><abbr title="\IMP_Search_Element_Callback">IMP_Search_Element_Callback</abbr></a></dt>
-        <dd>Interface implementing callbacks to reduce/filter search results.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Spam-Base.html"><abbr title="\IMP_Spam_Base">IMP_Spam_Base</abbr></a></dt>
-        <dd>Spam reporting driver base interface.</dd>
-    
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Addresses.html"><abbr title="\IMP_Ajax_Addresses">IMP_Ajax_Addresses</abbr></a></dt>
-        <dd>Outputs an address list in the form used by the browser-side javascript
-code.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Compose.html"><abbr title="\IMP_Ajax_Application_Compose">IMP_Ajax_Application_Compose</abbr></a></dt>
-        <dd>Compose view utilities for AJAX data.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Common.html"><abbr title="\IMP_Ajax_Application_Handler_Common">IMP_Ajax_Application_Handler_Common</abbr></a></dt>
-        <dd>Defines common (i.e. used in dynamic and smartmobile views) AJAX actions
-used in IMP.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-ComposeAttach.html"><abbr title="\IMP_Ajax_Application_Handler_ComposeAttach">IMP_Ajax_Application_Handler_ComposeAttach</abbr></a></dt>
-        <dd>Defines AJAX actions used to attach files to a compose message.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Contacts.html"><abbr title="\IMP_Ajax_Application_Handler_Contacts">IMP_Ajax_Application_Handler_Contacts</abbr></a></dt>
-        <dd>Defines AJAX actions used in the contacts popup.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Draft.html"><abbr title="\IMP_Ajax_Application_Handler_Draft">IMP_Ajax_Application_Handler_Draft</abbr></a></dt>
-        <dd>Defines AJAX actions used for saving compose drafts.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Dynamic.html"><abbr title="\IMP_Ajax_Application_Handler_Dynamic">IMP_Ajax_Application_Handler_Dynamic</abbr></a></dt>
-        <dd>Defines AJAX actions used exclusively in the IMP dynamic view.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-ImageUnblock.html"><abbr title="\IMP_Ajax_Application_Handler_ImageUnblock">IMP_Ajax_Application_Handler_ImageUnblock</abbr></a></dt>
-        <dd>Defines AJAX actions used for unblocking images in HTML messages.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Mboxtoggle.html"><abbr title="\IMP_Ajax_Application_Handler_Mboxtoggle">IMP_Ajax_Application_Handler_Mboxtoggle</abbr></a></dt>
-        <dd>Defines AJAX actions used to toggle expand/collapse state of mailboxes.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Passphrase.html"><abbr title="\IMP_Ajax_Application_Handler_Passphrase">IMP_Ajax_Application_Handler_Passphrase</abbr></a></dt>
-        <dd>Defines AJAX actions used in the IMP passphrase dialog.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Remote.html"><abbr title="\IMP_Ajax_Application_Handler_Remote">IMP_Ajax_Application_Handler_Remote</abbr></a></dt>
-        <dd>Defines AJAX actions used for remote server access.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-RemotePrefs.html"><abbr title="\IMP_Ajax_Application_Handler_RemotePrefs">IMP_Ajax_Application_Handler_RemotePrefs</abbr></a></dt>
-        <dd>Defines AJAX actions used on the remote accounts preference page.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Search.html"><abbr title="\IMP_Ajax_Application_Handler_Search">IMP_Ajax_Application_Handler_Search</abbr></a></dt>
-        <dd>Defines AJAX actions used in the IMP advanced search page.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Smartmobile.html"><abbr title="\IMP_Ajax_Application_Handler_Smartmobile">IMP_Ajax_Application_Handler_Smartmobile</abbr></a></dt>
-        <dd>Defines AJAX actions used exclusively in the IMP smartmobile view.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-ListMessages.html"><abbr title="\IMP_Ajax_Application_ListMessages">IMP_Ajax_Application_ListMessages</abbr></a></dt>
-        <dd>Message listing action for AJAX application handler.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Viewport-Error.html"><abbr title="\IMP_Ajax_Application_Viewport_Error">IMP_Ajax_Application_Viewport_Error</abbr></a></dt>
-        <dd>Viewport error object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Viewport.html"><abbr title="\IMP_Ajax_Application_Viewport">IMP_Ajax_Application_Viewport</abbr></a></dt>
-        <dd>Viewport data object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application.html"><abbr title="\IMP_Ajax_Application">IMP_Ajax_Application</abbr></a></dt>
-        <dd>Defines the AJAX interface for IMP.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Imple-ImportEncryptKey.html"><abbr title="\IMP_Ajax_Imple_ImportEncryptKey">IMP_Ajax_Imple_ImportEncryptKey</abbr></a></dt>
-        <dd>Attach the import encrpyt key javascript code into a page.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Imple-ItipRequest.html"><abbr title="\IMP_Ajax_Imple_ItipRequest">IMP_Ajax_Imple_ItipRequest</abbr></a></dt>
-        <dd>Attach javascript used to process Itip actions into a page.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Imple-PassphraseDialog.html"><abbr title="\IMP_Ajax_Imple_PassphraseDialog">IMP_Ajax_Imple_PassphraseDialog</abbr></a></dt>
-        <dd>Attach the passphrase dialog to the page.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Imple-VcardImport.html"><abbr title="\IMP_Ajax_Imple_VcardImport">IMP_Ajax_Imple_VcardImport</abbr></a></dt>
-        <dd>Attach javascript used to process a Vcard import request from IMP.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Queue.html"><abbr title="\IMP_Ajax_Queue">IMP_Ajax_Queue</abbr></a></dt>
-        <dd>Defines an AJAX variable queue for IMP.  These are variables that may be
-generated by various IMP code that should be added to the eventual output
-sent to the browser.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Api.html"><abbr title="\IMP_Api">IMP_Api</abbr></a></dt>
-        <dd>IMP external API interface.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Application.html"><abbr title="\IMP_Application">IMP_Application</abbr></a></dt>
-        <dd>IMP application API.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Auth.html"><abbr title="\IMP_Auth">IMP_Auth</abbr></a></dt>
-        <dd>This class provides authentication for IMP.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Base.html"><abbr title="\IMP_Basic_Base">IMP_Basic_Base</abbr></a></dt>
-        <dd>Base class for basic view pages.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Contacts.html"><abbr title="\IMP_Basic_Contacts">IMP_Basic_Contacts</abbr></a></dt>
-        <dd>Contacts selection page.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Error.html"><abbr title="\IMP_Basic_Error">IMP_Basic_Error</abbr></a></dt>
-        <dd>Used to dispay page when fatal error occurs in basic view.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Listinfo.html"><abbr title="\IMP_Basic_Listinfo">IMP_Basic_Listinfo</abbr></a></dt>
-        <dd>List information display.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Pgp.html"><abbr title="\IMP_Basic_Pgp">IMP_Basic_Pgp</abbr></a></dt>
-        <dd>PGP display.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Saveimage.html"><abbr title="\IMP_Basic_Saveimage">IMP_Basic_Saveimage</abbr></a></dt>
-        <dd>Save an image to a registry-defined application.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Search.html"><abbr title="\IMP_Basic_Search">IMP_Basic_Search</abbr></a></dt>
-        <dd>Advanced search. This search script only works with javascript enabled
-browsers. All other browsers are limited to the basic search only.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Smime.html"><abbr title="\IMP_Basic_Smime">IMP_Basic_Smime</abbr></a></dt>
-        <dd>S/MIME display.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Thread.html"><abbr title="\IMP_Basic_Thread">IMP_Basic_Thread</abbr></a></dt>
-        <dd>Message thread display.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Block-Newmail.html"><abbr title="\IMP_Block_Newmail">IMP_Block_Newmail</abbr></a></dt>
-        <dd>Block: show list of new mail messages.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Block-Summary.html"><abbr title="\IMP_Block_Summary">IMP_Block_Summary</abbr></a></dt>
-        <dd>Block: show mailbox summary.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Attachment-Linked-Metadata.html"><abbr title="\IMP_Compose_Attachment_Linked_Metadata">IMP_Compose_Attachment_Linked_Metadata</abbr></a></dt>
-        <dd>Metadata information for linked attachments.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Attachment-Metadata.html"><abbr title="\IMP_Compose_Attachment_Metadata">IMP_Compose_Attachment_Metadata</abbr></a></dt>
-        <dd>Metadata information for attachments.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Attachment-Storage-AutoDetermine.html"><abbr title="\IMP_Compose_Attachment_Storage_AutoDetermine">IMP_Compose_Attachment_Storage_AutoDetermine</abbr></a></dt>
-        <dd>Auto-determine attachment storage status based on IMP configuration and
-attachment data.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Attachment-Storage-Temp.html"><abbr title="\IMP_Compose_Attachment_Storage_Temp">IMP_Compose_Attachment_Storage_Temp</abbr></a></dt>
-        <dd>Temporary data storage implementation for attachment data storage.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Attachment-Storage-VfsLinked.html"><abbr title="\IMP_Compose_Attachment_Storage_VfsLinked">IMP_Compose_Attachment_Storage_VfsLinked</abbr></a></dt>
-        <dd>VFS implementation for attachment data storage that will be stored/served
-from the VFS backend (i.e. linked attachment).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Attachment-Storage.html"><abbr title="\IMP_Compose_Attachment_Storage">IMP_Compose_Attachment_Storage</abbr></a></dt>
-        <dd>Abstract base class for attachment data storage.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Attachment.html"><abbr title="\IMP_Compose_Attachment">IMP_Compose_Attachment</abbr></a></dt>
-        <dd>Attachment data for an outgoing compose message.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Exception-Address.html"><abbr title="\IMP_Compose_Exception_Address">IMP_Compose_Exception_Address</abbr></a></dt>
-        <dd>Extension of IMP_Compose_Exception that handles the situation of invalid
-address input. Allows details of individual e-mail address errors to be
-communicated to the user.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Exception.html"><abbr title="\IMP_Compose_Exception">IMP_Compose_Exception</abbr></a></dt>
-        <dd>The IMP_Compose_Exception:: class handles exceptions thrown from the
-IMP_Compose class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-HtmlSignature.html"><abbr title="\IMP_Compose_HtmlSignature">IMP_Compose_HtmlSignature</abbr></a></dt>
-        <dd>Parse HTML signature data.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Link.html"><abbr title="\IMP_Compose_Link">IMP_Compose_Link</abbr></a></dt>
-        <dd>Process incoming compose arguments and generate compose links.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-LinkedAttachment.html"><abbr title="\IMP_Compose_LinkedAttachment">IMP_Compose_LinkedAttachment</abbr></a></dt>
-        <dd>Linked attachment data.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Ui.html"><abbr title="\IMP_Compose_Ui">IMP_Compose_Ui</abbr></a></dt>
-        <dd>Common UI code shared among IMP&#039;s compose pages.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-View.html"><abbr title="\IMP_Compose_View">IMP_Compose_View</abbr></a></dt>
-        <dd>Provides logic to format compose message data for delivery to the browser.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose.html"><abbr title="\IMP_Compose">IMP_Compose</abbr></a></dt>
-        <dd>An object representing an outgoing mail message.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contacts-Avatar-Addressbook.html"><abbr title="\IMP_Contacts_Avatar_Addressbook">IMP_Contacts_Avatar_Addressbook</abbr></a></dt>
-        <dd>Generate contact avatar image by using local addressbook.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contacts-Avatar-Gravatar.html"><abbr title="\IMP_Contacts_Avatar_Gravatar">IMP_Contacts_Avatar_Gravatar</abbr></a></dt>
-        <dd>Generate contact avatar image using the Gravatar service.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contacts-Avatar-Unknown.html"><abbr title="\IMP_Contacts_Avatar_Unknown">IMP_Contacts_Avatar_Unknown</abbr></a></dt>
-        <dd>Generate avatar image for an unknown contact.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contacts-Flag-Host.html"><abbr title="\IMP_Contacts_Flag_Host">IMP_Contacts_Flag_Host</abbr></a></dt>
-        <dd>Interface for a contacts flag image backend based on the sending host.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contacts-Image.html"><abbr title="\IMP_Contacts_Image">IMP_Contacts_Image</abbr></a></dt>
-        <dd>Generates a contact image to use for a given e-mail address.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contacts.html"><abbr title="\IMP_Contacts">IMP_Contacts</abbr></a></dt>
-        <dd>Common code dealing with contacts handling.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contents-Message.html"><abbr title="\IMP_Contents_Message">IMP_Contents_Message</abbr></a></dt>
-        <dd>Prepare details for viewing a message.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contents-View.html"><abbr title="\IMP_Contents_View">IMP_Contents_View</abbr></a></dt>
-        <dd>Provides logic to format message content for delivery to the browser.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contents.html"><abbr title="\IMP_Contents">IMP_Contents</abbr></a></dt>
-        <dd>Contains all functions related to handling the content and output of mail
-messages in IMP.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-AddressList.html"><abbr title="\IMP_Dynamic_AddressList">IMP_Dynamic_AddressList</abbr></a></dt>
-        <dd>Utility methods to parse address lists used by dynamic code.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-Base.html"><abbr title="\IMP_Dynamic_Base">IMP_Dynamic_Base</abbr></a></dt>
-        <dd>Base class for dynamic view pages.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-Compose-Common.html"><abbr title="\IMP_Dynamic_Compose_Common">IMP_Dynamic_Compose_Common</abbr></a></dt>
-        <dd>Compose code common to various dynamic views.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-Compose.html"><abbr title="\IMP_Dynamic_Compose">IMP_Dynamic_Compose</abbr></a></dt>
-        <dd>Compose page for dynamic view.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-Helper-Base.html"><abbr title="\IMP_Dynamic_Helper_Base">IMP_Dynamic_Helper_Base</abbr></a></dt>
-        <dd>View helper class for all dynamic pages.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-Mailbox.html"><abbr title="\IMP_Dynamic_Mailbox">IMP_Dynamic_Mailbox</abbr></a></dt>
-        <dd>Mailbox page for dynamic view.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-Maillog.html"><abbr title="\IMP_Dynamic_Maillog">IMP_Dynamic_Maillog</abbr></a></dt>
-        <dd>Maillog message ID lookup page for dynamic view.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-Message.html"><abbr title="\IMP_Dynamic_Message">IMP_Dynamic_Message</abbr></a></dt>
-        <dd>Message page for dynamic view.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Exception.html"><abbr title="\IMP_Exception">IMP_Exception</abbr></a></dt>
-        <dd>Base exception class for IMP.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-AuthImap.html"><abbr title="\IMP_Factory_AuthImap">IMP_Factory_AuthImap</abbr></a></dt>
-        <dd>A Horde_Injector based Horde_Auth_Imap factory.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Compose.html"><abbr title="\IMP_Factory_Compose">IMP_Factory_Compose</abbr></a></dt>
-        <dd>A Horde_Injector based IMP_Compose factory.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-ComposeAtc.html"><abbr title="\IMP_Factory_ComposeAtc">IMP_Factory_ComposeAtc</abbr></a></dt>
-        <dd>A factory for creating the storage object to use for compose attachments.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Contacts.html"><abbr title="\IMP_Factory_Contacts">IMP_Factory_Contacts</abbr></a></dt>
-        <dd>A Horde_Injector based factory for the IMP_Contacts object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Contents.html"><abbr title="\IMP_Factory_Contents">IMP_Factory_Contents</abbr></a></dt>
-        <dd>A Horde_Injector based IMP_Contents factory.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Flags.html"><abbr title="\IMP_Factory_Flags">IMP_Factory_Flags</abbr></a></dt>
-        <dd>A Horde_Injector based factory for the IMP_Flags object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Ftree.html"><abbr title="\IMP_Factory_Ftree">IMP_Factory_Ftree</abbr></a></dt>
-        <dd>A Horde_Injector based factory for the IMP_Ftree object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Identity.html"><abbr title="\IMP_Factory_Identity">IMP_Factory_Identity</abbr></a></dt>
-        <dd>A Horde_Injector based factory for IMP&#039;s identity object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Imap.html"><abbr title="\IMP_Factory_Imap">IMP_Factory_Imap</abbr></a></dt>
-        <dd>A Horde_Injector based IMP_Imap factory.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Mail.html"><abbr title="\IMP_Factory_Mail">IMP_Factory_Mail</abbr></a></dt>
-        <dd>A factory to allow for IMP&#039;s mail configuration to override the default
-Horde configuration.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-MailAutoconfig.html"><abbr title="\IMP_Factory_MailAutoconfig">IMP_Factory_MailAutoconfig</abbr></a></dt>
-        <dd>A Horde_Injector based factory for the Mail autoconfiguration object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Mailbox.html"><abbr title="\IMP_Factory_Mailbox">IMP_Factory_Mailbox</abbr></a></dt>
-        <dd>A Horde_Injector based IMP_Mailbox factory.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-MailboxCache.html"><abbr title="\IMP_Factory_MailboxCache">IMP_Factory_MailboxCache</abbr></a></dt>
-        <dd>A Horde_Injector based IMP_Mailbox_SessionCache factory.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-MailboxList.html"><abbr title="\IMP_Factory_MailboxList">IMP_Factory_MailboxList</abbr></a></dt>
-        <dd>A Horde_Injector based IMP_Mailbox_List factory.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Maillog.html"><abbr title="\IMP_Factory_Maillog">IMP_Factory_Maillog</abbr></a></dt>
-        <dd>A Horde_Injector based factory for the IMP_Maillog object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-MimeViewer.html"><abbr title="\IMP_Factory_MimeViewer">IMP_Factory_MimeViewer</abbr></a></dt>
-        <dd>A Horde_Injector based Horde_Mime_Viewer factory for IMP drivers.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Pgp.html"><abbr title="\IMP_Factory_Pgp">IMP_Factory_Pgp</abbr></a></dt>
-        <dd>A Horde_Injector based factory for the IMP_Pgp object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-PrefsSort.html"><abbr title="\IMP_Factory_PrefsSort">IMP_Factory_PrefsSort</abbr></a></dt>
-        <dd>A Horde_Injector based factory for the IMP_Prefs_Sort object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Quota.html"><abbr title="\IMP_Factory_Quota">IMP_Factory_Quota</abbr></a></dt>
-        <dd>A Horde_Injector based factory for the IMP_Quota object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Search.html"><abbr title="\IMP_Factory_Search">IMP_Factory_Search</abbr></a></dt>
-        <dd>A Horde_Injector based factory for the IMP_Search object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Sentmail.html"><abbr title="\IMP_Factory_Sentmail">IMP_Factory_Sentmail</abbr></a></dt>
-        <dd>A Horde_Injector based factory for the IMP_Sentmail object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Smime.html"><abbr title="\IMP_Factory_Smime">IMP_Factory_Smime</abbr></a></dt>
-        <dd>A Horde_Injector based factory for the IMP_Smime object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Spam.html"><abbr title="\IMP_Factory_Spam">IMP_Factory_Spam</abbr></a></dt>
-        <dd>A Horde_Injector based IMP_Spam factory.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Filter.html"><abbr title="\IMP_Filter">IMP_Filter</abbr></a></dt>
-        <dd>The IMP_Filter class contains all functions related to handling filtering
-messages in IMP.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Base.html"><abbr title="\IMP_Flag_Base">IMP_Flag_Base</abbr></a></dt>
-        <dd>This class provides the data structure for a message flag.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-Answered.html"><abbr title="\IMP_Flag_Imap_Answered">IMP_Flag_Imap_Answered</abbr></a></dt>
-        <dd>This class implements the answered flag (RFC 3501 [2.3.2]).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-Deleted.html"><abbr title="\IMP_Flag_Imap_Deleted">IMP_Flag_Imap_Deleted</abbr></a></dt>
-        <dd>This class implements the deleted flag (RFC 3501 [2.3.2]).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-Draft.html"><abbr title="\IMP_Flag_Imap_Draft">IMP_Flag_Imap_Draft</abbr></a></dt>
-        <dd>This class implements the draft flag (RFC 3501 [2.3.2]).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-Flagged.html"><abbr title="\IMP_Flag_Imap_Flagged">IMP_Flag_Imap_Flagged</abbr></a></dt>
-        <dd>This class implements the flagged for followup flag (RFC 3501 [2.3.2]).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-Forwarded.html"><abbr title="\IMP_Flag_Imap_Forwarded">IMP_Flag_Imap_Forwarded</abbr></a></dt>
-        <dd>This class implements the forwarded flag (RFC 5550 [5.9]).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-Junk.html"><abbr title="\IMP_Flag_Imap_Junk">IMP_Flag_Imap_Junk</abbr></a></dt>
-        <dd>This class implements the junk flag.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-NotJunk.html"><abbr title="\IMP_Flag_Imap_NotJunk">IMP_Flag_Imap_NotJunk</abbr></a></dt>
-        <dd>This class implements the not junk flag.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-Seen.html"><abbr title="\IMP_Flag_Imap_Seen">IMP_Flag_Imap_Seen</abbr></a></dt>
-        <dd>This class implements the seen flag (RFC 3501 [2.3.2]).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap.html"><abbr title="\IMP_Flag_Imap">IMP_Flag_Imap</abbr></a></dt>
-        <dd>This class provides the data structure for a message flag.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-Attachment.html"><abbr title="\IMP_Flag_System_Attachment">IMP_Flag_System_Attachment</abbr></a></dt>
-        <dd>This class implements the attachment flag.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-Encrypted.html"><abbr title="\IMP_Flag_System_Encrypted">IMP_Flag_System_Encrypted</abbr></a></dt>
-        <dd>This class implements the encrypted message flag.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-HighPriority.html"><abbr title="\IMP_Flag_System_HighPriority">IMP_Flag_System_HighPriority</abbr></a></dt>
-        <dd>This class implements the high priority flag.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-List.html"><abbr title="\IMP_Flag_System_List">IMP_Flag_System_List</abbr></a></dt>
-        <dd>This class implements the mailing list message flag.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-LowPriority.html"><abbr title="\IMP_Flag_System_LowPriority">IMP_Flag_System_LowPriority</abbr></a></dt>
-        <dd>This class implements the low priority flag.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-Personal.html"><abbr title="\IMP_Flag_System_Personal">IMP_Flag_System_Personal</abbr></a></dt>
-        <dd>This class implements the personal message flag.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-Signed.html"><abbr title="\IMP_Flag_System_Signed">IMP_Flag_System_Signed</abbr></a></dt>
-        <dd>This class implements the signed message flag.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-Unseen.html"><abbr title="\IMP_Flag_System_Unseen">IMP_Flag_System_Unseen</abbr></a></dt>
-        <dd>This class implements formatting for unseen messages. Unseen occurs when
-the seen flag (RFC 3501 [2.3.2]) is NOT set; thus, it can not be handled
-in the seen flag object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-User.html"><abbr title="\IMP_Flag_User">IMP_Flag_User</abbr></a></dt>
-        <dd>This class provides the data structure for a user-defined message flag.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flags.html"><abbr title="\IMP_Flags">IMP_Flags</abbr></a></dt>
-        <dd>Provides an interface to deal with display of flags/keywords/labels on
-messages.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Account-Imap.html"><abbr title="\IMP_Ftree_Account_Imap">IMP_Ftree_Account_Imap</abbr></a></dt>
-        <dd>Implementation of the account object for an IMAP server.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Account-Inboxonly.html"><abbr title="\IMP_Ftree_Account_Inboxonly">IMP_Ftree_Account_Inboxonly</abbr></a></dt>
-        <dd>Implementation of the account object for an INBOX-only server.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Account-Remote.html"><abbr title="\IMP_Ftree_Account_Remote">IMP_Ftree_Account_Remote</abbr></a></dt>
-        <dd>Implementation of the account object for a remote server.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Account-Vfolder.html"><abbr title="\IMP_Ftree_Account_Vfolder">IMP_Ftree_Account_Vfolder</abbr></a></dt>
-        <dd>Implementation of the account object for Virtual Folders.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Account.html"><abbr title="\IMP_Ftree_Account">IMP_Ftree_Account</abbr></a></dt>
-        <dd>Abstract class definining an account source for the IMP folder tree.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Element.html"><abbr title="\IMP_Ftree_Element">IMP_Ftree_Element</abbr></a></dt>
-        <dd>A tree element.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Eltdiff.html"><abbr title="\IMP_Ftree_Eltdiff">IMP_Ftree_Eltdiff</abbr></a></dt>
-        <dd>Track element changes in the folder tree.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Iterator-Ancestors.html"><abbr title="\IMP_Ftree_Iterator_Ancestors">IMP_Ftree_Iterator_Ancestors</abbr></a></dt>
-        <dd>Iterator that returns all the ancestors (and their siblings) for an
-element.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Iterator.html"><abbr title="\IMP_Ftree_Iterator">IMP_Ftree_Iterator</abbr></a></dt>
-        <dd>Iterator for the IMP_Ftree object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Children.html"><abbr title="\IMP_Ftree_IteratorFilter_Children">IMP_Ftree_IteratorFilter_Children</abbr></a></dt>
-        <dd>Iterator filter for IMP_Ftree that filters child elements.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Containers.html"><abbr title="\IMP_Ftree_IteratorFilter_Containers">IMP_Ftree_IteratorFilter_Containers</abbr></a></dt>
-        <dd>Iterator filter for IMP_Ftree that allows filtering of container elements.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Expanded.html"><abbr title="\IMP_Ftree_IteratorFilter_Expanded">IMP_Ftree_IteratorFilter_Expanded</abbr></a></dt>
-        <dd>Iterator filter for IMP_Ftree that filters unexpanded elements.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Mailboxes.html"><abbr title="\IMP_Ftree_IteratorFilter_Mailboxes">IMP_Ftree_IteratorFilter_Mailboxes</abbr></a></dt>
-        <dd>Iterator filter for IMP_Ftree that allows filtering of specific mailboxes.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Nonimap.html"><abbr title="\IMP_Ftree_IteratorFilter_Nonimap">IMP_Ftree_IteratorFilter_Nonimap</abbr></a></dt>
-        <dd>Iterator filter for IMP_Ftree that filters non-IMAP elements.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Polled.html"><abbr title="\IMP_Ftree_IteratorFilter_Polled">IMP_Ftree_IteratorFilter_Polled</abbr></a></dt>
-        <dd>Iterator filter for IMP_Ftree that filters by polled elements.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Remote.html"><abbr title="\IMP_Ftree_IteratorFilter_Remote">IMP_Ftree_IteratorFilter_Remote</abbr></a></dt>
-        <dd>Iterator filter for IMP_Ftree that filters remote elements.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Special.html"><abbr title="\IMP_Ftree_IteratorFilter_Special">IMP_Ftree_IteratorFilter_Special</abbr></a></dt>
-        <dd>Iterator filter for IMP_Ftree that filters special mailboxes.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Subscribed.html"><abbr title="\IMP_Ftree_IteratorFilter_Subscribed">IMP_Ftree_IteratorFilter_Subscribed</abbr></a></dt>
-        <dd>Iterator filter for IMP_Ftree that filters by subscribed status.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Vfolder.html"><abbr title="\IMP_Ftree_IteratorFilter_Vfolder">IMP_Ftree_IteratorFilter_Vfolder</abbr></a></dt>
-        <dd>Iterator filter for IMP_Ftree that filters Virtual Folders.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter.html"><abbr title="\IMP_Ftree_IteratorFilter">IMP_Ftree_IteratorFilter</abbr></a></dt>
-        <dd>Iterator filter for IMP_Ftree.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Prefs-Expanded.html"><abbr title="\IMP_Ftree_Prefs_Expanded">IMP_Ftree_Prefs_Expanded</abbr></a></dt>
-        <dd>Manage the expanded folders list.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Prefs-Poll.html"><abbr title="\IMP_Ftree_Prefs_Poll">IMP_Ftree_Prefs_Poll</abbr></a></dt>
-        <dd>Manage the mailbox poll list.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Prefs.html"><abbr title="\IMP_Ftree_Prefs">IMP_Ftree_Prefs</abbr></a></dt>
-        <dd>Abstract object handling folder tree prefereces.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Select.html"><abbr title="\IMP_Ftree_Select">IMP_Ftree_Select</abbr></a></dt>
-        <dd>Generate a select form HTML input tag.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree.html"><abbr title="\IMP_Ftree">IMP_Ftree</abbr></a></dt>
-        <dd>IMP_Ftree (folder tree) provides a tree view of the mailboxes on a backend
-(a/k/a a folder list; in IMP, folders = collection of mailboxes), along
-with other display elements (Remote Accounts; Virtual Folders).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Images.html"><abbr title="\IMP_Images">IMP_Images</abbr></a></dt>
-        <dd>Common code relating to image viewing preferences.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap-Acl.html"><abbr title="\IMP_Imap_Acl">IMP_Imap_Acl</abbr></a></dt>
-        <dd>Management of IMAP Access Control Lists.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap-Cache-Wrapper.html"><abbr title="\IMP_Imap_Cache_Wrapper">IMP_Imap_Cache_Wrapper</abbr></a></dt>
-        <dd>A serializable wrapper for the IMAP cache backend. Ensures that IMAP object
-uses global Horde object for caching.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap-Config.html"><abbr title="\IMP_Imap_Config">IMP_Imap_Config</abbr></a></dt>
-        <dd>The configuration for a IMP backend.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap-Exception.html"><abbr title="\IMP_Imap_Exception">IMP_Imap_Exception</abbr></a></dt>
-        <dd>Exception class for handling Horde_Imap_Client exceptions in IMP.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap-Password.html"><abbr title="\IMP_Imap_Password">IMP_Imap_Password</abbr></a></dt>
-        <dd>Dynamically generate the password needed for the mail server connection.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap-PermanentFlags.html"><abbr title="\IMP_Imap_PermanentFlags">IMP_Imap_PermanentFlags</abbr></a></dt>
-        <dd>Provides an interface to query a mailbox&#039;s settable permanent flags.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap-Remote.html"><abbr title="\IMP_Imap_Remote">IMP_Imap_Remote</abbr></a></dt>
-        <dd>Provides common functions for interaction with IMAP/POP3 servers via the
-Horde_Imap_Client package (for remote servers).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap.html"><abbr title="\IMP_Imap">IMP_Imap</abbr></a></dt>
-        <dd>Provides common functions for interaction with IMAP/POP3 servers via the
-Horde_Imap_Client package.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP.html"><abbr title="\IMP">IMP</abbr></a></dt>
-        <dd>IMP base class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Indices-Copy-Notepad.html"><abbr title="\IMP_Indices_Copy_Notepad">IMP_Indices_Copy_Notepad</abbr></a></dt>
-        <dd>Copy a message to a notepad.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Indices-Copy-Tasklist.html"><abbr title="\IMP_Indices_Copy_Tasklist">IMP_Indices_Copy_Tasklist</abbr></a></dt>
-        <dd>Copy a message to a tasklist.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Indices-Copy.html"><abbr title="\IMP_Indices_Copy">IMP_Indices_Copy</abbr></a></dt>
-        <dd>Abstract object implementing non-mail server copy actions.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Indices-Mailbox.html"><abbr title="\IMP_Indices_Mailbox">IMP_Indices_Mailbox</abbr></a></dt>
-        <dd>Extends base Indices object by incorporating base mailbox information.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Indices.html"><abbr title="\IMP_Indices">IMP_Indices</abbr></a></dt>
-        <dd>Object representing a list of message indices.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-SystemTask-GarbageCollection.html"><abbr title="\IMP_LoginTasks_SystemTask_GarbageCollection">IMP_LoginTasks_SystemTask_GarbageCollection</abbr></a></dt>
-        <dd>Login system task for performing periodical garbage collection.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-SystemTask-Upgrade.html"><abbr title="\IMP_LoginTasks_SystemTask_Upgrade">IMP_LoginTasks_SystemTask_Upgrade</abbr></a></dt>
-        <dd>Login system task for automated upgrade tasks.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-SystemTask-UpgradeAuth.html"><abbr title="\IMP_LoginTasks_SystemTask_UpgradeAuth">IMP_LoginTasks_SystemTask_UpgradeAuth</abbr></a></dt>
-        <dd>Login system task for automated upgrade tasks.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-Autocreate.html"><abbr title="\IMP_LoginTasks_Task_Autocreate">IMP_LoginTasks_Task_Autocreate</abbr></a></dt>
-        <dd>Autocreate special mailboxes on login.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-DeleteAttachmentsMonthly.html"><abbr title="\IMP_LoginTasks_Task_DeleteAttachmentsMonthly">IMP_LoginTasks_Task_DeleteAttachmentsMonthly</abbr></a></dt>
-        <dd>Login tasks module that deletes old linked attachments.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-DeleteSentmailMonthly.html"><abbr title="\IMP_LoginTasks_Task_DeleteSentmailMonthly">IMP_LoginTasks_Task_DeleteSentmailMonthly</abbr></a></dt>
-        <dd>Login tasks module that deletes old sent-mail mailboxes.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-FilterOnLogin.html"><abbr title="\IMP_LoginTasks_Task_FilterOnLogin">IMP_LoginTasks_Task_FilterOnLogin</abbr></a></dt>
-        <dd>Login task that filters INBOX on login.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-PurgeSentmail.html"><abbr title="\IMP_LoginTasks_Task_PurgeSentmail">IMP_LoginTasks_Task_PurgeSentmail</abbr></a></dt>
-        <dd>Login tasks module that purges old messages in the sent-mail mailbox.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-PurgeSpam.html"><abbr title="\IMP_LoginTasks_Task_PurgeSpam">IMP_LoginTasks_Task_PurgeSpam</abbr></a></dt>
-        <dd>Login tasks module that purges old messages in the Spam mailbox.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-PurgeTrash.html"><abbr title="\IMP_LoginTasks_Task_PurgeTrash">IMP_LoginTasks_Task_PurgeTrash</abbr></a></dt>
-        <dd>Login tasks module that purges old messages in the Trash mailbox.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-RecoverDraft.html"><abbr title="\IMP_LoginTasks_Task_RecoverDraft">IMP_LoginTasks_Task_RecoverDraft</abbr></a></dt>
-        <dd>Login task that checks for drafts to be recovered.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-RenameSentmailMonthly.html"><abbr title="\IMP_LoginTasks_Task_RenameSentmailMonthly">IMP_LoginTasks_Task_RenameSentmailMonthly</abbr></a></dt>
-        <dd>Login tasks module that renames sent-mail mailboxes every month.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mailbox-List-Pop3.html"><abbr title="\IMP_Mailbox_List_Pop3">IMP_Mailbox_List_Pop3</abbr></a></dt>
-        <dd>This class contains code related to generating and handling a mailbox
-message list for POP3 servers.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mailbox-List-Thread.html"><abbr title="\IMP_Mailbox_List_Thread">IMP_Mailbox_List_Thread</abbr></a></dt>
-        <dd>This class represents thread information for a single message.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mailbox-List-Virtual.html"><abbr title="\IMP_Mailbox_List_Virtual">IMP_Mailbox_List_Virtual</abbr></a></dt>
-        <dd>This class extends the mailbox message list handling code for virtual
-mailboxes.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mailbox-List.html"><abbr title="\IMP_Mailbox_List">IMP_Mailbox_List</abbr></a></dt>
-        <dd>This class contains code related to generating and handling a mailbox
-message list.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mailbox-SessionCache.html"><abbr title="\IMP_Mailbox_SessionCache">IMP_Mailbox_SessionCache</abbr></a></dt>
-        <dd>This object manages IMP_Mailbox cache data that is stored in the session.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mailbox-Ui.html"><abbr title="\IMP_Mailbox_Ui">IMP_Mailbox_Ui</abbr></a></dt>
-        <dd>Common UI code for IMP&#039;s various mailbox views.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mailbox.html"><abbr title="\IMP_Mailbox">IMP_Mailbox</abbr></a></dt>
-        <dd>This object is a clearinghouse for actions related to an IMP mailbox.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Base.html"><abbr title="\IMP_Maillog_Log_Base">IMP_Maillog_Log_Base</abbr></a></dt>
-        <dd>Abstract log entry.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Forward.html"><abbr title="\IMP_Maillog_Log_Forward">IMP_Maillog_Log_Forward</abbr></a></dt>
-        <dd>Forward log entry.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Mdn.html"><abbr title="\IMP_Maillog_Log_Mdn">IMP_Maillog_Log_Mdn</abbr></a></dt>
-        <dd>MDN log entry.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Redirect.html"><abbr title="\IMP_Maillog_Log_Redirect">IMP_Maillog_Log_Redirect</abbr></a></dt>
-        <dd>Redirect log entry.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Reply.html"><abbr title="\IMP_Maillog_Log_Reply">IMP_Maillog_Log_Reply</abbr></a></dt>
-        <dd>Reply log entry.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Replyall.html"><abbr title="\IMP_Maillog_Log_Replyall">IMP_Maillog_Log_Replyall</abbr></a></dt>
-        <dd>Reply-all log entry.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Replylist.html"><abbr title="\IMP_Maillog_Log_Replylist">IMP_Maillog_Log_Replylist</abbr></a></dt>
-        <dd>Reply-list log entry.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Sentmail.html"><abbr title="\IMP_Maillog_Log_Sentmail">IMP_Maillog_Log_Sentmail</abbr></a></dt>
-        <dd>Log entry that references a sent-mail action.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Message.html"><abbr title="\IMP_Maillog_Message">IMP_Maillog_Message</abbr></a></dt>
-        <dd>Object representing a message to be logged.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Messages.html"><abbr title="\IMP_Maillog_Messages">IMP_Maillog_Messages</abbr></a></dt>
-        <dd>Object representing a series of logged messages.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Storage-Base.html"><abbr title="\IMP_Maillog_Storage_Base">IMP_Maillog_Storage_Base</abbr></a></dt>
-        <dd>Abstract storage driver for the IMP_Maillog class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Storage-Composite.html"><abbr title="\IMP_Maillog_Storage_Composite">IMP_Maillog_Storage_Composite</abbr></a></dt>
-        <dd>Composite storage driver for the IMP_Maillog class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Storage-History.html"><abbr title="\IMP_Maillog_Storage_History">IMP_Maillog_Storage_History</abbr></a></dt>
-        <dd>Horde_History storage driver for the IMP_Maillog class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Storage-Mdnsent.html"><abbr title="\IMP_Maillog_Storage_Mdnsent">IMP_Maillog_Storage_Mdnsent</abbr></a></dt>
-        <dd>IMAP flag storage driver for the MDNSent keyword (RFC 3503 [3.1]).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Storage-Null.html"><abbr title="\IMP_Maillog_Storage_Null">IMP_Maillog_Storage_Null</abbr></a></dt>
-        <dd>Null storage driver for the IMP_Maillog class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog.html"><abbr title="\IMP_Maillog">IMP_Maillog</abbr></a></dt>
-        <dd>Base class implementing logging of responses to e-mail messages.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mbox-Generate.html"><abbr title="\IMP_Mbox_Generate">IMP_Mbox_Generate</abbr></a></dt>
-        <dd>Method to generate MBOX data.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mbox-Import.html"><abbr title="\IMP_Mbox_Import">IMP_Mbox_Import</abbr></a></dt>
-        <dd>Method to import MBOX data into a mailbox.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mbox-Size.html"><abbr title="\IMP_Mbox_Size">IMP_Mbox_Size</abbr></a></dt>
-        <dd>Determine the size of a mailbox.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Message-Date.html"><abbr title="\IMP_Message_Date">IMP_Message_Date</abbr></a></dt>
-        <dd>Common code dealing with date formatting for messages.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Headers.html"><abbr title="\IMP_Mime_Headers">IMP_Mime_Headers</abbr></a></dt>
-        <dd>Code for manipulating/parsing MIME header data.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Status-RenderIssue-Display.html"><abbr title="\IMP_Mime_Status_RenderIssue_Display">IMP_Mime_Status_RenderIssue_Display</abbr></a></dt>
-        <dd>Wraps all display issues for a message part in a status message that hides
-the details by default.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Status-RenderIssue.html"><abbr title="\IMP_Mime_Status_RenderIssue">IMP_Mime_Status_RenderIssue</abbr></a></dt>
-        <dd>A status message that indicates a non-critical issue with rendering the
-data of a message part. These issues are not displayed by default.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Status.html"><abbr title="\IMP_Mime_Status">IMP_Mime_Status</abbr></a></dt>
-        <dd>Provides the object that contains the status data to output when viewing
-MIME parts in IMP.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Alternative.html"><abbr title="\IMP_Mime_Viewer_Alternative">IMP_Mime_Viewer_Alternative</abbr></a></dt>
-        <dd>Renderer for multipart/alternative content (RFC 2046 [5.1.4]).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Appledouble.html"><abbr title="\IMP_Mime_Viewer_Appledouble">IMP_Mime_Viewer_Appledouble</abbr></a></dt>
-        <dd>Handler for multipart/appledouble data (RFC 1740).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Audio.html"><abbr title="\IMP_Mime_Viewer_Audio">IMP_Mime_Viewer_Audio</abbr></a></dt>
-        <dd>Extension of base audio driver by outputting information on the duration
-of the audio data if that information was provided in the original message.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Enriched.html"><abbr title="\IMP_Mime_Viewer_Enriched">IMP_Mime_Viewer_Enriched</abbr></a></dt>
-        <dd>Handler to render plain text from enriched content tags (RFC 1896).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Externalbody.html"><abbr title="\IMP_Mime_Viewer_Externalbody">IMP_Mime_Viewer_Externalbody</abbr></a></dt>
-        <dd>Renderer for message/external-body (RFC 2046 [5.2.3]) data.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Html.html"><abbr title="\IMP_Mime_Viewer_Html">IMP_Mime_Viewer_Html</abbr></a></dt>
-        <dd>Renderer of HTML data, attempting to remove malicious code.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Images.html"><abbr title="\IMP_Mime_Viewer_Images">IMP_Mime_Viewer_Images</abbr></a></dt>
-        <dd>Renderer for image data.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Itip.html"><abbr title="\IMP_Mime_Viewer_Itip">IMP_Mime_Viewer_Itip</abbr></a></dt>
-        <dd>Displays vCalendar/iCalendar data and provides an option to import the data
-into a calendar source, if available.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Mdn.html"><abbr title="\IMP_Mime_Viewer_Mdn">IMP_Mime_Viewer_Mdn</abbr></a></dt>
-        <dd>Handler for multipart/report messages that refer to message disposition
-notification (MDN) messages (RFC 3798).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Partial.html"><abbr title="\IMP_Mime_Viewer_Partial">IMP_Mime_Viewer_Partial</abbr></a></dt>
-        <dd>Renderer for message/partial data (RFC 2046 [5.2.2]).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Pdf.html"><abbr title="\IMP_Mime_Viewer_Pdf">IMP_Mime_Viewer_Pdf</abbr></a></dt>
-        <dd>Handler to generate thumbnails for PDF attachments.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Pgp.html"><abbr title="\IMP_Mime_Viewer_Pgp">IMP_Mime_Viewer_Pgp</abbr></a></dt>
-        <dd>Renderer to allow viewing/decrypting of PGP formatted messages (RFC 3156).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Plain.html"><abbr title="\IMP_Mime_Viewer_Plain">IMP_Mime_Viewer_Plain</abbr></a></dt>
-        <dd>Renderer for text/plain MIME parts with URLs made into hyperlinks.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Related.html"><abbr title="\IMP_Mime_Viewer_Related">IMP_Mime_Viewer_Related</abbr></a></dt>
-        <dd>Renderer for multipart/related messages (RFC 2387).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Rfc822.html"><abbr title="\IMP_Mime_Viewer_Rfc822">IMP_Mime_Viewer_Rfc822</abbr></a></dt>
-        <dd>Renderer that indicates that all subparts should be wrapped in a parent
-display DIV element.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Smil.html"><abbr title="\IMP_Mime_Viewer_Smil">IMP_Mime_Viewer_Smil</abbr></a></dt>
-        <dd>Renderer for SMIL documents to very basic HTML.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Smime.html"><abbr title="\IMP_Mime_Viewer_Smime">IMP_Mime_Viewer_Smime</abbr></a></dt>
-        <dd>Renderer for viewing/decrypting of S/MIME v3.2 messages (RFC 5751).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Status.html"><abbr title="\IMP_Mime_Viewer_Status">IMP_Mime_Viewer_Status</abbr></a></dt>
-        <dd>Renderer for multipart/report data referring to mail system administrative
-messages (RFC 3464).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Syntaxhighlighter.html"><abbr title="\IMP_Mime_Viewer_Syntaxhighlighter">IMP_Mime_Viewer_Syntaxhighlighter</abbr></a></dt>
-        <dd>The IMP_Mime_Viewer_Syntaxhighlighter class extends
-Horde_Core_Mime_Viewer_Syntaxhighlighter in order to catch when the preview
-pane is updated.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Tgz.html"><abbr title="\IMP_Mime_Viewer_Tgz">IMP_Mime_Viewer_Tgz</abbr></a></dt>
-        <dd>Handler to render the contents of gzip/tar files, allowing downloading of
-extractable files.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Vcard.html"><abbr title="\IMP_Mime_Viewer_Vcard">IMP_Mime_Viewer_Vcard</abbr></a></dt>
-        <dd>Handler to render the contents of vCard files in HTML format, allowing
-inline display of embedded photos.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Video.html"><abbr title="\IMP_Mime_Viewer_Video">IMP_Mime_Viewer_Video</abbr></a></dt>
-        <dd>Renderer to output information on:
-  1. The duration of the video data, if that information was provided in
-     the original message.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Zip.html"><abbr title="\IMP_Mime_Viewer_Zip">IMP_Mime_Viewer_Zip</abbr></a></dt>
-        <dd>Handler to render the contents of ZIP files, allowing downloading of
-extractable files.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Notification-Event-Status.html"><abbr title="\IMP_Notification_Event_Status">IMP_Notification_Event_Status</abbr></a></dt>
-        <dd>This class defines the base IMP status notification types.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Notification-Handler-Decorator-NewmailNotify.html"><abbr title="\IMP_Notification_Handler_Decorator_NewmailNotify">IMP_Notification_Handler_Decorator_NewmailNotify</abbr></a></dt>
-        <dd>Add new mail notifications to the stack.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Perms.html"><abbr title="\IMP_Perms">IMP_Perms</abbr></a></dt>
-        <dd>Permission handling for IMP.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Pgp.html"><abbr title="\IMP_Pgp">IMP_Pgp</abbr></a></dt>
-        <dd>Contains code related to handling PGP data within IMP.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-AttribText.html"><abbr title="\IMP_Prefs_AttribText">IMP_Prefs_AttribText</abbr></a></dt>
-        <dd>This class manages the attrib_text preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Identity.html"><abbr title="\IMP_Prefs_Identity">IMP_Prefs_Identity</abbr></a></dt>
-        <dd>This class provides an IMP-specific interface to all identities a
-user might have. Its methods take care of any site-specific
-restrictions configured in prefs.php and conf.php.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Sort-FixedDate.html"><abbr title="\IMP_Prefs_Sort_FixedDate">IMP_Prefs_Sort_FixedDate</abbr></a></dt>
-        <dd>A fixed date (read-only) implementation of the sortpref preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Sort-None.html"><abbr title="\IMP_Prefs_Sort_None">IMP_Prefs_Sort_None</abbr></a></dt>
-        <dd>A fixed (read-only) implementation of the sortpref preference (arrival
-sort) that does no sorting on either mail server or web server.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Sort-Sortpref-Locked.html"><abbr title="\IMP_Prefs_Sort_Sortpref_Locked">IMP_Prefs_Sort_Sortpref_Locked</abbr></a></dt>
-        <dd>A mailbox sort object that has the sortby value locked.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Sort-Sortpref.html"><abbr title="\IMP_Prefs_Sort_Sortpref">IMP_Prefs_Sort_Sortpref</abbr></a></dt>
-        <dd>This class provides the object representation for the sort preference for
-a mailbox.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Sort.html"><abbr title="\IMP_Prefs_Sort">IMP_Prefs_Sort</abbr></a></dt>
-        <dd>This class manages the sortpref preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Acl.html"><abbr title="\IMP_Prefs_Special_Acl">IMP_Prefs_Special_Acl</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;aclmanagement&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-ComposeTemplates.html"><abbr title="\IMP_Prefs_Special_ComposeTemplates">IMP_Prefs_Special_ComposeTemplates</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;composetemplates_management&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Drafts.html"><abbr title="\IMP_Prefs_Special_Drafts">IMP_Prefs_Special_Drafts</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;draftsselect&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Encrypt.html"><abbr title="\IMP_Prefs_Special_Encrypt">IMP_Prefs_Special_Encrypt</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;encryptselect&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Flag.html"><abbr title="\IMP_Prefs_Special_Flag">IMP_Prefs_Special_Flag</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;flagmanagement&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-HtmlSignature.html"><abbr title="\IMP_Prefs_Special_HtmlSignature">IMP_Prefs_Special_HtmlSignature</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;signature_html_select&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-ImageReplacement.html"><abbr title="\IMP_Prefs_Special_ImageReplacement">IMP_Prefs_Special_ImageReplacement</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;image_replacement_addrs&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-InitialPage.html"><abbr title="\IMP_Prefs_Special_InitialPage">IMP_Prefs_Special_InitialPage</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;initialpageselect&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Mailto.html"><abbr title="\IMP_Prefs_Special_Mailto">IMP_Prefs_Special_Mailto</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;mailto_handler&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-NewmailSound.html"><abbr title="\IMP_Prefs_Special_NewmailSound">IMP_Prefs_Special_NewmailSound</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;newmail_soundselect&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-PgpPrivateKey.html"><abbr title="\IMP_Prefs_Special_PgpPrivateKey">IMP_Prefs_Special_PgpPrivateKey</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;pgpprivatekey&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-PgpPublicKey.html"><abbr title="\IMP_Prefs_Special_PgpPublicKey">IMP_Prefs_Special_PgpPublicKey</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;pgppublickey&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Remote.html"><abbr title="\IMP_Prefs_Special_Remote">IMP_Prefs_Special_Remote</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;remotemanagement&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Searches.html"><abbr title="\IMP_Prefs_Special_Searches">IMP_Prefs_Special_Searches</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;searchesmanagement&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Sentmail.html"><abbr title="\IMP_Prefs_Special_Sentmail">IMP_Prefs_Special_Sentmail</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;sentmailselect&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html"><abbr title="\IMP_Prefs_Special_SmimePrivateKey">IMP_Prefs_Special_SmimePrivateKey</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;smimeprivatekey&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-SmimePublicKey.html"><abbr title="\IMP_Prefs_Special_SmimePublicKey">IMP_Prefs_Special_SmimePublicKey</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;smimepublickey&#039; preference, the list of
-public certificates from the user&#039;s address book(s).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Sourceselect.html"><abbr title="\IMP_Prefs_Special_Sourceselect">IMP_Prefs_Special_Sourceselect</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;sourceselect&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Spam.html"><abbr title="\IMP_Prefs_Special_Spam">IMP_Prefs_Special_Spam</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;spamselect&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-SpecialMboxes.html"><abbr title="\IMP_Prefs_Special_SpecialMboxes">IMP_Prefs_Special_SpecialMboxes</abbr></a></dt>
-        <dd>Shared code for handling special mailboxes preferences.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Trash.html"><abbr title="\IMP_Prefs_Special_Trash">IMP_Prefs_Special_Trash</abbr></a></dt>
-        <dd>Special prefs handling for the &#039;trashselect&#039; preference.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Quota-Hook.html"><abbr title="\IMP_Quota_Hook">IMP_Quota_Hook</abbr></a></dt>
-        <dd>Implementation of IMP_Quota API for a generic hook function.  This
-requires the quota hook to be set in config/hooks.php.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Quota-Imap.html"><abbr title="\IMP_Quota_Imap">IMP_Quota_Imap</abbr></a></dt>
-        <dd>Quota driver for IMAP servers.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Quota-Null.html"><abbr title="\IMP_Quota_Null">IMP_Quota_Null</abbr></a></dt>
-        <dd>Null implementation of the quota driver.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Quota-Ui.html"><abbr title="\IMP_Quota_Ui">IMP_Quota_Ui</abbr></a></dt>
-        <dd>Common code dealing with quota UI display.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Quota.html"><abbr title="\IMP_Quota">IMP_Quota</abbr></a></dt>
-        <dd>The abstract class that all quota drivers inherit from.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Remote-Account.html"><abbr title="\IMP_Remote_Account">IMP_Remote_Account</abbr></a></dt>
-        <dd>Object representation of a remote mail account.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Remote.html"><abbr title="\IMP_Remote">IMP_Remote</abbr></a></dt>
-        <dd>Interface to deal with storing connection details of remote accounts.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Script-Package-Autocomplete.html"><abbr title="\IMP_Script_Package_Autocomplete">IMP_Script_Package_Autocomplete</abbr></a></dt>
-        <dd>This class identifies the javascript necessary to output the autocompleter
-javascript to the browser.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Script-Package-Compose.html"><abbr title="\IMP_Script_Package_Compose">IMP_Script_Package_Compose</abbr></a></dt>
-        <dd>This class identifies the javascript necessary to output the compose
-javascript script to the browser.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Script-Package-DynamicBase.html"><abbr title="\IMP_Script_Package_DynamicBase">IMP_Script_Package_DynamicBase</abbr></a></dt>
-        <dd>This class identifies the javascript necessary to output the base
-javascript needed for dynamic views.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Script-Package-Editor.html"><abbr title="\IMP_Script_Package_Editor">IMP_Script_Package_Editor</abbr></a></dt>
-        <dd>This class identifies the javascript necessary to initialize CKEditor on
-the browser.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Script-Package-Imp.html"><abbr title="\IMP_Script_Package_Imp">IMP_Script_Package_Imp</abbr></a></dt>
-        <dd>This class identifies the javascript necessary to output the IMP_JS
-javascript script to the browser.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Attachment.html"><abbr title="\IMP_Search_Element_Attachment">IMP_Search_Element_Attachment</abbr></a></dt>
-        <dd>The attachment search query.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Autogenerated.html"><abbr title="\IMP_Search_Element_Autogenerated">IMP_Search_Element_Autogenerated</abbr></a></dt>
-        <dd>Handle &quot;automatically generated&quot; message search query.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Bulk.html"><abbr title="\IMP_Search_Element_Bulk">IMP_Search_Element_Bulk</abbr></a></dt>
-        <dd>Bulk message search query.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Contacts.html"><abbr title="\IMP_Search_Element_Contacts">IMP_Search_Element_Contacts</abbr></a></dt>
-        <dd>Search query for messages sent from a contact located in a user&#039;s
-addressbook.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Daterange.html"><abbr title="\IMP_Search_Element_Daterange">IMP_Search_Element_Daterange</abbr></a></dt>
-        <dd>Date-related search queries.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Flag.html"><abbr title="\IMP_Search_Element_Flag">IMP_Search_Element_Flag</abbr></a></dt>
-        <dd>Flag/keyword search queries.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Header.html"><abbr title="\IMP_Search_Element_Header">IMP_Search_Element_Header</abbr></a></dt>
-        <dd>This class handles header-related search queries.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Mailinglist.html"><abbr title="\IMP_Search_Element_Mailinglist">IMP_Search_Element_Mailinglist</abbr></a></dt>
-        <dd>Handles the mailing list search query.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Or.html"><abbr title="\IMP_Search_Element_Or">IMP_Search_Element_Or</abbr></a></dt>
-        <dd>Handles an OR clause in a search query.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Personal.html"><abbr title="\IMP_Search_Element_Personal">IMP_Search_Element_Personal</abbr></a></dt>
-        <dd>Personal recipient search query.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Recipient.html"><abbr title="\IMP_Search_Element_Recipient">IMP_Search_Element_Recipient</abbr></a></dt>
-        <dd>Recipient (To/Cc/Bcc) search query.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Size.html"><abbr title="\IMP_Search_Element_Size">IMP_Search_Element_Size</abbr></a></dt>
-        <dd>Size-related search queries.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Text.html"><abbr title="\IMP_Search_Element_Text">IMP_Search_Element_Text</abbr></a></dt>
-        <dd>Text-related search queries.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Within.html"><abbr title="\IMP_Search_Element_Within">IMP_Search_Element_Within</abbr></a></dt>
-        <dd>Within (date) search queries.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element.html"><abbr title="\IMP_Search_Element">IMP_Search_Element</abbr></a></dt>
-        <dd>Abstract framework for a search query element.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter-Attachment.html"><abbr title="\IMP_Search_Filter_Attachment">IMP_Search_Filter_Attachment</abbr></a></dt>
-        <dd>Filter for messages with attachments.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter-Autogenerated.html"><abbr title="\IMP_Search_Filter_Autogenerated">IMP_Search_Filter_Autogenerated</abbr></a></dt>
-        <dd>Filter for automatically generated messages.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter-Builtin.html"><abbr title="\IMP_Search_Filter_Builtin">IMP_Search_Filter_Builtin</abbr></a></dt>
-        <dd>Base definition for built-in filters.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter-Bulk.html"><abbr title="\IMP_Search_Filter_Bulk">IMP_Search_Filter_Bulk</abbr></a></dt>
-        <dd>Filter for bulk mail.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter-Contacts.html"><abbr title="\IMP_Search_Filter_Contacts">IMP_Search_Filter_Contacts</abbr></a></dt>
-        <dd>Filter for messages sent from addresses contained within a user&#039;s personal
-contacts.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter-Mailinglist.html"><abbr title="\IMP_Search_Filter_Mailinglist">IMP_Search_Filter_Mailinglist</abbr></a></dt>
-        <dd>Filter for mailing list messages.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter-Personal.html"><abbr title="\IMP_Search_Filter_Personal">IMP_Search_Filter_Personal</abbr></a></dt>
-        <dd>Filter for the personal recipient search.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter.html"><abbr title="\IMP_Search_Filter">IMP_Search_Filter</abbr></a></dt>
-        <dd>A data structure for storing a stored filter.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-IteratorFilter.html"><abbr title="\IMP_Search_IteratorFilter">IMP_Search_IteratorFilter</abbr></a></dt>
-        <dd>Iterator filter for the IMP_Search object.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Query.html"><abbr title="\IMP_Search_Query">IMP_Search_Query</abbr></a></dt>
-        <dd>Data structure for a search query.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Vfolder-Builtin.html"><abbr title="\IMP_Search_Vfolder_Builtin">IMP_Search_Vfolder_Builtin</abbr></a></dt>
-        <dd>Base definition for built-in Virtual Folders.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Vfolder-Vinbox.html"><abbr title="\IMP_Search_Vfolder_Vinbox">IMP_Search_Vfolder_Vinbox</abbr></a></dt>
-        <dd>Data structure for storing the virtual inbox.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Vfolder-Vtrash.html"><abbr title="\IMP_Search_Vfolder_Vtrash">IMP_Search_Vfolder_Vtrash</abbr></a></dt>
-        <dd>Data structure for storing the virtual trash.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Vfolder.html"><abbr title="\IMP_Search_Vfolder">IMP_Search_Vfolder</abbr></a></dt>
-        <dd>Data structure for storing a virtual folder.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search.html"><abbr title="\IMP_Search">IMP_Search</abbr></a></dt>
-        <dd>Object handling mailbox searching in IMP.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Sentmail-Mongo.html"><abbr title="\IMP_Sentmail_Mongo">IMP_Sentmail_Mongo</abbr></a></dt>
-        <dd>Sentmail driver implementation for MongoDB databases.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Sentmail-Null.html"><abbr title="\IMP_Sentmail_Null">IMP_Sentmail_Null</abbr></a></dt>
-        <dd>A null implementation of the sentmail driver.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Sentmail-Sql.html"><abbr title="\IMP_Sentmail_Sql">IMP_Sentmail_Sql</abbr></a></dt>
-        <dd>Sentmail driver implementation for SQL databases.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Sentmail.html"><abbr title="\IMP_Sentmail">IMP_Sentmail</abbr></a></dt>
-        <dd>The abstract class that all sentmail implementations inherit from.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Smartmobile.html"><abbr title="\IMP_Smartmobile">IMP_Smartmobile</abbr></a></dt>
-        <dd>Base class for smartmobile view pages.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Smime.html"><abbr title="\IMP_Smime">IMP_Smime</abbr></a></dt>
-        <dd>Contains code related to handling S/MIME messages within IMP.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Spam-Email.html"><abbr title="\IMP_Spam_Email">IMP_Spam_Email</abbr></a></dt>
-        <dd>Spam reporting driver via e-mail.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Spam-Null.html"><abbr title="\IMP_Spam_Null">IMP_Spam_Null</abbr></a></dt>
-        <dd>Null spam reporting.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Spam-Program.html"><abbr title="\IMP_Spam_Program">IMP_Spam_Program</abbr></a></dt>
-        <dd>Spam reporting driver utilizing a local binary.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Spam.html"><abbr title="\IMP_Spam">IMP_Spam</abbr></a></dt>
-        <dd>Handles spam/innocent reporting within IMP.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Test.html"><abbr title="\IMP_Test">IMP_Test</abbr></a></dt>
-        <dd>Provides the IMP configuration for the Horde test script.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Tree-Flist.html"><abbr title="\IMP_Tree_Flist">IMP_Tree_Flist</abbr></a></dt>
-        <dd>The IMP_Tree_Flist class provides an IMP dropdown mailbox (folder tree)
-list.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Tree-Jquerymobile.html"><abbr title="\IMP_Tree_Jquerymobile">IMP_Tree_Jquerymobile</abbr></a></dt>
-        <dd>This class defines Jquerymobile output for a mailbox (folder tree) list.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-View-Subinfo.html"><abbr title="\IMP_View_Subinfo">IMP_View_Subinfo</abbr></a></dt>
-        <dd>This is a view of the IMP subinfo bar.</dd>
-    
-    
-    </dl>
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="packages/IMP.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="packages/IMP.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Compose-Attachment-Linked.html"><abbr title="\IMP_Compose_Attachment_Linked">IMP_Compose_Attachment_Linked</abbr></a></dt><dd>Interface for storage backends that support linked attachments.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Contacts-Avatar-Backend.html"><abbr title="\IMP_Contacts_Avatar_Backend">IMP_Contacts_Avatar_Backend</abbr></a></dt><dd>Interface for a contact avatar image backend.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Contacts-Flag-Backend.html"><abbr title="\IMP_Contacts_Flag_Backend">IMP_Contacts_Flag_Backend</abbr></a></dt><dd>Interface for a contacts flag image backend.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Flag-Match-Address.html"><abbr title="\IMP_Flag_Match_Address">IMP_Flag_Match_Address</abbr></a></dt><dd>Interface to allow flagging a message based on address matches.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Flag-Match-Flag.html"><abbr title="\IMP_Flag_Match_Flag">IMP_Flag_Match_Flag</abbr></a></dt><dd>Interface to allow flagging a message based on IMAP flags.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Flag-Match-Header.html"><abbr title="\IMP_Flag_Match_Header">IMP_Flag_Match_Header</abbr></a></dt><dd>Interface to allow flagging a message based on headers data.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Flag-Match-Order.html"><abbr title="\IMP_Flag_Match_Order">IMP_Flag_Match_Order</abbr></a></dt><dd>Interface to allow specifying the order that match interfaces are run.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Flag-Match-Structure.html"><abbr title="\IMP_Flag_Match_Structure">IMP_Flag_Match_Structure</abbr></a></dt><dd>Interface to allow flagging a message based on bodystructure data.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Search-Element-Callback.html"><abbr title="\IMP_Search_Element_Callback">IMP_Search_Element_Callback</abbr></a></dt><dd>Interface implementing callbacks to reduce/filter search results.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/IMP-Spam-Base.html"><abbr title="\IMP_Spam_Base">IMP_Spam_Base</abbr></a></dt><dd>Spam reporting driver base interface.</dd>    </dl>
+
+    <h4 id="toc-classes">
+        Classes
+        <a href="packages/IMP.html#toc-classes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Addresses.html"><abbr title="\IMP_Ajax_Addresses">IMP_Ajax_Addresses</abbr></a></dt><dd>Outputs an address list in the form used by the browser-side javascript
+code.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Compose.html"><abbr title="\IMP_Ajax_Application_Compose">IMP_Ajax_Application_Compose</abbr></a></dt><dd>Compose view utilities for AJAX data.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Common.html"><abbr title="\IMP_Ajax_Application_Handler_Common">IMP_Ajax_Application_Handler_Common</abbr></a></dt><dd>Defines common (i.e. used in dynamic and smartmobile views) AJAX actions
+used in IMP.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-ComposeAttach.html"><abbr title="\IMP_Ajax_Application_Handler_ComposeAttach">IMP_Ajax_Application_Handler_ComposeAttach</abbr></a></dt><dd>Defines AJAX actions used to attach files to a compose message.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Contacts.html"><abbr title="\IMP_Ajax_Application_Handler_Contacts">IMP_Ajax_Application_Handler_Contacts</abbr></a></dt><dd>Defines AJAX actions used in the contacts popup.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Draft.html"><abbr title="\IMP_Ajax_Application_Handler_Draft">IMP_Ajax_Application_Handler_Draft</abbr></a></dt><dd>Defines AJAX actions used for saving compose drafts.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Dynamic.html"><abbr title="\IMP_Ajax_Application_Handler_Dynamic">IMP_Ajax_Application_Handler_Dynamic</abbr></a></dt><dd>Defines AJAX actions used exclusively in the IMP dynamic view.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-ImageUnblock.html"><abbr title="\IMP_Ajax_Application_Handler_ImageUnblock">IMP_Ajax_Application_Handler_ImageUnblock</abbr></a></dt><dd>Defines AJAX actions used for unblocking images in HTML messages.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Mboxtoggle.html"><abbr title="\IMP_Ajax_Application_Handler_Mboxtoggle">IMP_Ajax_Application_Handler_Mboxtoggle</abbr></a></dt><dd>Defines AJAX actions used to toggle expand/collapse state of mailboxes.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Passphrase.html"><abbr title="\IMP_Ajax_Application_Handler_Passphrase">IMP_Ajax_Application_Handler_Passphrase</abbr></a></dt><dd>Defines AJAX actions used in the IMP passphrase dialog.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Remote.html"><abbr title="\IMP_Ajax_Application_Handler_Remote">IMP_Ajax_Application_Handler_Remote</abbr></a></dt><dd>Defines AJAX actions used for remote server access.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-RemotePrefs.html"><abbr title="\IMP_Ajax_Application_Handler_RemotePrefs">IMP_Ajax_Application_Handler_RemotePrefs</abbr></a></dt><dd>Defines AJAX actions used on the remote accounts preference page.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Search.html"><abbr title="\IMP_Ajax_Application_Handler_Search">IMP_Ajax_Application_Handler_Search</abbr></a></dt><dd>Defines AJAX actions used in the IMP advanced search page.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Handler-Smartmobile.html"><abbr title="\IMP_Ajax_Application_Handler_Smartmobile">IMP_Ajax_Application_Handler_Smartmobile</abbr></a></dt><dd>Defines AJAX actions used exclusively in the IMP smartmobile view.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-ListMessages.html"><abbr title="\IMP_Ajax_Application_ListMessages">IMP_Ajax_Application_ListMessages</abbr></a></dt><dd>Message listing action for AJAX application handler.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Viewport-Error.html"><abbr title="\IMP_Ajax_Application_Viewport_Error">IMP_Ajax_Application_Viewport_Error</abbr></a></dt><dd>Viewport error object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application-Viewport.html"><abbr title="\IMP_Ajax_Application_Viewport">IMP_Ajax_Application_Viewport</abbr></a></dt><dd>Viewport data object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Application.html"><abbr title="\IMP_Ajax_Application">IMP_Ajax_Application</abbr></a></dt><dd>Defines the AJAX interface for IMP.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Imple-ImportEncryptKey.html"><abbr title="\IMP_Ajax_Imple_ImportEncryptKey">IMP_Ajax_Imple_ImportEncryptKey</abbr></a></dt><dd>Attach the import encrpyt key javascript code into a page.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Imple-ItipRequest.html"><abbr title="\IMP_Ajax_Imple_ItipRequest">IMP_Ajax_Imple_ItipRequest</abbr></a></dt><dd>Attach javascript used to process Itip actions into a page.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Imple-PassphraseDialog.html"><abbr title="\IMP_Ajax_Imple_PassphraseDialog">IMP_Ajax_Imple_PassphraseDialog</abbr></a></dt><dd>Attach the passphrase dialog to the page.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Imple-VcardImport.html"><abbr title="\IMP_Ajax_Imple_VcardImport">IMP_Ajax_Imple_VcardImport</abbr></a></dt><dd>Attach javascript used to process a Vcard import request from IMP.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ajax-Queue.html"><abbr title="\IMP_Ajax_Queue">IMP_Ajax_Queue</abbr></a></dt><dd>Defines an AJAX variable queue for IMP.  These are variables that may be
+generated by various IMP code that should be added to the eventual output
+sent to the browser.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Application.html"><abbr title="\IMP_Application">IMP_Application</abbr></a></dt><dd>IMP application API.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Auth.html"><abbr title="\IMP_Auth">IMP_Auth</abbr></a></dt><dd>This class provides authentication for IMP.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Base.html"><abbr title="\IMP_Basic_Base">IMP_Basic_Base</abbr></a></dt><dd>Base class for basic view pages.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Contacts.html"><abbr title="\IMP_Basic_Contacts">IMP_Basic_Contacts</abbr></a></dt><dd>Contacts selection page.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Error.html"><abbr title="\IMP_Basic_Error">IMP_Basic_Error</abbr></a></dt><dd>Used to dispay page when fatal error occurs in basic view.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Listinfo.html"><abbr title="\IMP_Basic_Listinfo">IMP_Basic_Listinfo</abbr></a></dt><dd>List information display.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Pgp.html"><abbr title="\IMP_Basic_Pgp">IMP_Basic_Pgp</abbr></a></dt><dd>PGP display.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Saveimage.html"><abbr title="\IMP_Basic_Saveimage">IMP_Basic_Saveimage</abbr></a></dt><dd>Save an image to a registry-defined application.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Search.html"><abbr title="\IMP_Basic_Search">IMP_Basic_Search</abbr></a></dt><dd>Advanced search. This search script only works with javascript enabled
+browsers. All other browsers are limited to the basic search only.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Smime.html"><abbr title="\IMP_Basic_Smime">IMP_Basic_Smime</abbr></a></dt><dd>S/MIME display.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Basic-Thread.html"><abbr title="\IMP_Basic_Thread">IMP_Basic_Thread</abbr></a></dt><dd>Message thread display.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Block-Newmail.html"><abbr title="\IMP_Block_Newmail">IMP_Block_Newmail</abbr></a></dt><dd>Block: show list of new mail messages.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Block-Summary.html"><abbr title="\IMP_Block_Summary">IMP_Block_Summary</abbr></a></dt><dd>Block: show mailbox summary.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Attachment-Linked-Metadata.html"><abbr title="\IMP_Compose_Attachment_Linked_Metadata">IMP_Compose_Attachment_Linked_Metadata</abbr></a></dt><dd>Metadata information for linked attachments.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Attachment-Metadata.html"><abbr title="\IMP_Compose_Attachment_Metadata">IMP_Compose_Attachment_Metadata</abbr></a></dt><dd>Metadata information for attachments.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Attachment-Storage-AutoDetermine.html"><abbr title="\IMP_Compose_Attachment_Storage_AutoDetermine">IMP_Compose_Attachment_Storage_AutoDetermine</abbr></a></dt><dd>Auto-determine attachment storage status based on IMP configuration and
+attachment data.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Attachment-Storage-Temp.html"><abbr title="\IMP_Compose_Attachment_Storage_Temp">IMP_Compose_Attachment_Storage_Temp</abbr></a></dt><dd>Temporary data storage implementation for attachment data storage.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Attachment-Storage-VfsLinked.html"><abbr title="\IMP_Compose_Attachment_Storage_VfsLinked">IMP_Compose_Attachment_Storage_VfsLinked</abbr></a></dt><dd>VFS implementation for attachment data storage that will be stored/served
+from the VFS backend (i.e. linked attachment).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Attachment-Storage.html"><abbr title="\IMP_Compose_Attachment_Storage">IMP_Compose_Attachment_Storage</abbr></a></dt><dd>Abstract base class for attachment data storage.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Attachment.html"><abbr title="\IMP_Compose_Attachment">IMP_Compose_Attachment</abbr></a></dt><dd>Attachment data for an outgoing compose message.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Exception-Address.html"><abbr title="\IMP_Compose_Exception_Address">IMP_Compose_Exception_Address</abbr></a></dt><dd>Extension of IMP_Compose_Exception that handles the situation of invalid
+address input. Allows details of individual e-mail address errors to be
+communicated to the user.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Exception.html"><abbr title="\IMP_Compose_Exception">IMP_Compose_Exception</abbr></a></dt><dd>The IMP_Compose_Exception:: class handles exceptions thrown from the
+IMP_Compose class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-HtmlSignature.html"><abbr title="\IMP_Compose_HtmlSignature">IMP_Compose_HtmlSignature</abbr></a></dt><dd>Parse HTML signature data.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Link.html"><abbr title="\IMP_Compose_Link">IMP_Compose_Link</abbr></a></dt><dd>Process incoming compose arguments and generate compose links.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-LinkedAttachment.html"><abbr title="\IMP_Compose_LinkedAttachment">IMP_Compose_LinkedAttachment</abbr></a></dt><dd>Linked attachment data.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-Ui.html"><abbr title="\IMP_Compose_Ui">IMP_Compose_Ui</abbr></a></dt><dd>Common UI code shared among IMP&#039;s compose pages.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose-View.html"><abbr title="\IMP_Compose_View">IMP_Compose_View</abbr></a></dt><dd>Provides logic to format compose message data for delivery to the browser.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Compose.html"><abbr title="\IMP_Compose">IMP_Compose</abbr></a></dt><dd>An object representing an outgoing mail message.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contacts-Avatar-Addressbook.html"><abbr title="\IMP_Contacts_Avatar_Addressbook">IMP_Contacts_Avatar_Addressbook</abbr></a></dt><dd>Generate contact avatar image by using local addressbook.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contacts-Avatar-Gravatar.html"><abbr title="\IMP_Contacts_Avatar_Gravatar">IMP_Contacts_Avatar_Gravatar</abbr></a></dt><dd>Generate contact avatar image using the Gravatar service.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contacts-Avatar-Unknown.html"><abbr title="\IMP_Contacts_Avatar_Unknown">IMP_Contacts_Avatar_Unknown</abbr></a></dt><dd>Generate avatar image for an unknown contact.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contacts-Flag-Host.html"><abbr title="\IMP_Contacts_Flag_Host">IMP_Contacts_Flag_Host</abbr></a></dt><dd>Interface for a contacts flag image backend based on the sending host.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contacts-Image.html"><abbr title="\IMP_Contacts_Image">IMP_Contacts_Image</abbr></a></dt><dd>Generates a contact image to use for a given e-mail address.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contacts.html"><abbr title="\IMP_Contacts">IMP_Contacts</abbr></a></dt><dd>Common code dealing with contacts handling.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contents-Message.html"><abbr title="\IMP_Contents_Message">IMP_Contents_Message</abbr></a></dt><dd>Prepare details for viewing a message.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contents-View.html"><abbr title="\IMP_Contents_View">IMP_Contents_View</abbr></a></dt><dd>Provides logic to format message content for delivery to the browser.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Contents.html"><abbr title="\IMP_Contents">IMP_Contents</abbr></a></dt><dd>Contains all functions related to handling the content and output of mail
+messages in IMP.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-AddressList.html"><abbr title="\IMP_Dynamic_AddressList">IMP_Dynamic_AddressList</abbr></a></dt><dd>Utility methods to parse address lists used by dynamic code.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-Base.html"><abbr title="\IMP_Dynamic_Base">IMP_Dynamic_Base</abbr></a></dt><dd>Base class for dynamic view pages.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-Compose-Common.html"><abbr title="\IMP_Dynamic_Compose_Common">IMP_Dynamic_Compose_Common</abbr></a></dt><dd>Compose code common to various dynamic views.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-Compose.html"><abbr title="\IMP_Dynamic_Compose">IMP_Dynamic_Compose</abbr></a></dt><dd>Compose page for dynamic view.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-Helper-Base.html"><abbr title="\IMP_Dynamic_Helper_Base">IMP_Dynamic_Helper_Base</abbr></a></dt><dd>View helper class for all dynamic pages.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-Mailbox.html"><abbr title="\IMP_Dynamic_Mailbox">IMP_Dynamic_Mailbox</abbr></a></dt><dd>Mailbox page for dynamic view.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-Maillog.html"><abbr title="\IMP_Dynamic_Maillog">IMP_Dynamic_Maillog</abbr></a></dt><dd>Maillog message ID lookup page for dynamic view.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Dynamic-Message.html"><abbr title="\IMP_Dynamic_Message">IMP_Dynamic_Message</abbr></a></dt><dd>Message page for dynamic view.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Exception.html"><abbr title="\IMP_Exception">IMP_Exception</abbr></a></dt><dd>Base exception class for IMP.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-AuthImap.html"><abbr title="\IMP_Factory_AuthImap">IMP_Factory_AuthImap</abbr></a></dt><dd>A Horde_Injector based Horde_Auth_Imap factory.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Compose.html"><abbr title="\IMP_Factory_Compose">IMP_Factory_Compose</abbr></a></dt><dd>A Horde_Injector based IMP_Compose factory.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-ComposeAtc.html"><abbr title="\IMP_Factory_ComposeAtc">IMP_Factory_ComposeAtc</abbr></a></dt><dd>A factory for creating the storage object to use for compose attachments.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Contacts.html"><abbr title="\IMP_Factory_Contacts">IMP_Factory_Contacts</abbr></a></dt><dd>A Horde_Injector based factory for the IMP_Contacts object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Contents.html"><abbr title="\IMP_Factory_Contents">IMP_Factory_Contents</abbr></a></dt><dd>A Horde_Injector based IMP_Contents factory.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Flags.html"><abbr title="\IMP_Factory_Flags">IMP_Factory_Flags</abbr></a></dt><dd>A Horde_Injector based factory for the IMP_Flags object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Ftree.html"><abbr title="\IMP_Factory_Ftree">IMP_Factory_Ftree</abbr></a></dt><dd>A Horde_Injector based factory for the IMP_Ftree object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Identity.html"><abbr title="\IMP_Factory_Identity">IMP_Factory_Identity</abbr></a></dt><dd>A Horde_Injector based factory for IMP&#039;s identity object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Imap.html"><abbr title="\IMP_Factory_Imap">IMP_Factory_Imap</abbr></a></dt><dd>A Horde_Injector based IMP_Imap factory.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Mail.html"><abbr title="\IMP_Factory_Mail">IMP_Factory_Mail</abbr></a></dt><dd>A factory to allow for IMP&#039;s mail configuration to override the default
+Horde configuration.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-MailAutoconfig.html"><abbr title="\IMP_Factory_MailAutoconfig">IMP_Factory_MailAutoconfig</abbr></a></dt><dd>A Horde_Injector based factory for the Mail autoconfiguration object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Mailbox.html"><abbr title="\IMP_Factory_Mailbox">IMP_Factory_Mailbox</abbr></a></dt><dd>A Horde_Injector based IMP_Mailbox factory.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-MailboxCache.html"><abbr title="\IMP_Factory_MailboxCache">IMP_Factory_MailboxCache</abbr></a></dt><dd>A Horde_Injector based IMP_Mailbox_SessionCache factory.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-MailboxList.html"><abbr title="\IMP_Factory_MailboxList">IMP_Factory_MailboxList</abbr></a></dt><dd>A Horde_Injector based IMP_Mailbox_List factory.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Maillog.html"><abbr title="\IMP_Factory_Maillog">IMP_Factory_Maillog</abbr></a></dt><dd>A Horde_Injector based factory for the IMP_Maillog object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-MimeViewer.html"><abbr title="\IMP_Factory_MimeViewer">IMP_Factory_MimeViewer</abbr></a></dt><dd>A Horde_Injector based Horde_Mime_Viewer factory for IMP drivers.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Pgp.html"><abbr title="\IMP_Factory_Pgp">IMP_Factory_Pgp</abbr></a></dt><dd>A Horde_Injector based factory for the IMP_Pgp object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-PrefsSort.html"><abbr title="\IMP_Factory_PrefsSort">IMP_Factory_PrefsSort</abbr></a></dt><dd>A Horde_Injector based factory for the IMP_Prefs_Sort object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Quota.html"><abbr title="\IMP_Factory_Quota">IMP_Factory_Quota</abbr></a></dt><dd>A Horde_Injector based factory for the IMP_Quota object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Search.html"><abbr title="\IMP_Factory_Search">IMP_Factory_Search</abbr></a></dt><dd>A Horde_Injector based factory for the IMP_Search object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Sentmail.html"><abbr title="\IMP_Factory_Sentmail">IMP_Factory_Sentmail</abbr></a></dt><dd>A Horde_Injector based factory for the IMP_Sentmail object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Smime.html"><abbr title="\IMP_Factory_Smime">IMP_Factory_Smime</abbr></a></dt><dd>A Horde_Injector based factory for the IMP_Smime object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Factory-Spam.html"><abbr title="\IMP_Factory_Spam">IMP_Factory_Spam</abbr></a></dt><dd>A Horde_Injector based IMP_Spam factory.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Filter.html"><abbr title="\IMP_Filter">IMP_Filter</abbr></a></dt><dd>The IMP_Filter class contains all functions related to handling filtering
+messages in IMP.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Base.html"><abbr title="\IMP_Flag_Base">IMP_Flag_Base</abbr></a></dt><dd>This class provides the data structure for a message flag.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-Answered.html"><abbr title="\IMP_Flag_Imap_Answered">IMP_Flag_Imap_Answered</abbr></a></dt><dd>This class implements the answered flag (RFC 3501 [2.3.2]).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-Deleted.html"><abbr title="\IMP_Flag_Imap_Deleted">IMP_Flag_Imap_Deleted</abbr></a></dt><dd>This class implements the deleted flag (RFC 3501 [2.3.2]).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-Draft.html"><abbr title="\IMP_Flag_Imap_Draft">IMP_Flag_Imap_Draft</abbr></a></dt><dd>This class implements the draft flag (RFC 3501 [2.3.2]).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-Flagged.html"><abbr title="\IMP_Flag_Imap_Flagged">IMP_Flag_Imap_Flagged</abbr></a></dt><dd>This class implements the flagged for followup flag (RFC 3501 [2.3.2]).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-Forwarded.html"><abbr title="\IMP_Flag_Imap_Forwarded">IMP_Flag_Imap_Forwarded</abbr></a></dt><dd>This class implements the forwarded flag (RFC 5550 [5.9]).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-Junk.html"><abbr title="\IMP_Flag_Imap_Junk">IMP_Flag_Imap_Junk</abbr></a></dt><dd>This class implements the junk flag.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-NotJunk.html"><abbr title="\IMP_Flag_Imap_NotJunk">IMP_Flag_Imap_NotJunk</abbr></a></dt><dd>This class implements the not junk flag.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap-Seen.html"><abbr title="\IMP_Flag_Imap_Seen">IMP_Flag_Imap_Seen</abbr></a></dt><dd>This class implements the seen flag (RFC 3501 [2.3.2]).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-Imap.html"><abbr title="\IMP_Flag_Imap">IMP_Flag_Imap</abbr></a></dt><dd>This class provides the data structure for a message flag.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-Attachment.html"><abbr title="\IMP_Flag_System_Attachment">IMP_Flag_System_Attachment</abbr></a></dt><dd>This class implements the attachment flag.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-Encrypted.html"><abbr title="\IMP_Flag_System_Encrypted">IMP_Flag_System_Encrypted</abbr></a></dt><dd>This class implements the encrypted message flag.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-HighPriority.html"><abbr title="\IMP_Flag_System_HighPriority">IMP_Flag_System_HighPriority</abbr></a></dt><dd>This class implements the high priority flag.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-List.html"><abbr title="\IMP_Flag_System_List">IMP_Flag_System_List</abbr></a></dt><dd>This class implements the mailing list message flag.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-LowPriority.html"><abbr title="\IMP_Flag_System_LowPriority">IMP_Flag_System_LowPriority</abbr></a></dt><dd>This class implements the low priority flag.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-Personal.html"><abbr title="\IMP_Flag_System_Personal">IMP_Flag_System_Personal</abbr></a></dt><dd>This class implements the personal message flag.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-Signed.html"><abbr title="\IMP_Flag_System_Signed">IMP_Flag_System_Signed</abbr></a></dt><dd>This class implements the signed message flag.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-System-Unseen.html"><abbr title="\IMP_Flag_System_Unseen">IMP_Flag_System_Unseen</abbr></a></dt><dd>This class implements formatting for unseen messages. Unseen occurs when
+the seen flag (RFC 3501 [2.3.2]) is NOT set; thus, it can not be handled
+in the seen flag object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flag-User.html"><abbr title="\IMP_Flag_User">IMP_Flag_User</abbr></a></dt><dd>This class provides the data structure for a user-defined message flag.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Flags.html"><abbr title="\IMP_Flags">IMP_Flags</abbr></a></dt><dd>Provides an interface to deal with display of flags/keywords/labels on
+messages.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Account-Imap.html"><abbr title="\IMP_Ftree_Account_Imap">IMP_Ftree_Account_Imap</abbr></a></dt><dd>Implementation of the account object for an IMAP server.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Account-Inboxonly.html"><abbr title="\IMP_Ftree_Account_Inboxonly">IMP_Ftree_Account_Inboxonly</abbr></a></dt><dd>Implementation of the account object for an INBOX-only server.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Account-Remote.html"><abbr title="\IMP_Ftree_Account_Remote">IMP_Ftree_Account_Remote</abbr></a></dt><dd>Implementation of the account object for a remote server.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Account-Vfolder.html"><abbr title="\IMP_Ftree_Account_Vfolder">IMP_Ftree_Account_Vfolder</abbr></a></dt><dd>Implementation of the account object for Virtual Folders.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Account.html"><abbr title="\IMP_Ftree_Account">IMP_Ftree_Account</abbr></a></dt><dd>Abstract class definining an account source for the IMP folder tree.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Element.html"><abbr title="\IMP_Ftree_Element">IMP_Ftree_Element</abbr></a></dt><dd>A tree element.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Eltdiff.html"><abbr title="\IMP_Ftree_Eltdiff">IMP_Ftree_Eltdiff</abbr></a></dt><dd>Track element changes in the folder tree.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Iterator-Ancestors.html"><abbr title="\IMP_Ftree_Iterator_Ancestors">IMP_Ftree_Iterator_Ancestors</abbr></a></dt><dd>Iterator that returns all the ancestors (and their siblings) for an
+element.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Iterator.html"><abbr title="\IMP_Ftree_Iterator">IMP_Ftree_Iterator</abbr></a></dt><dd>Iterator for the IMP_Ftree object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Children.html"><abbr title="\IMP_Ftree_IteratorFilter_Children">IMP_Ftree_IteratorFilter_Children</abbr></a></dt><dd>Iterator filter for IMP_Ftree that filters child elements.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Containers.html"><abbr title="\IMP_Ftree_IteratorFilter_Containers">IMP_Ftree_IteratorFilter_Containers</abbr></a></dt><dd>Iterator filter for IMP_Ftree that allows filtering of container elements.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Expanded.html"><abbr title="\IMP_Ftree_IteratorFilter_Expanded">IMP_Ftree_IteratorFilter_Expanded</abbr></a></dt><dd>Iterator filter for IMP_Ftree that filters unexpanded elements.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Mailboxes.html"><abbr title="\IMP_Ftree_IteratorFilter_Mailboxes">IMP_Ftree_IteratorFilter_Mailboxes</abbr></a></dt><dd>Iterator filter for IMP_Ftree that allows filtering of specific mailboxes.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Nonimap.html"><abbr title="\IMP_Ftree_IteratorFilter_Nonimap">IMP_Ftree_IteratorFilter_Nonimap</abbr></a></dt><dd>Iterator filter for IMP_Ftree that filters non-IMAP elements.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Polled.html"><abbr title="\IMP_Ftree_IteratorFilter_Polled">IMP_Ftree_IteratorFilter_Polled</abbr></a></dt><dd>Iterator filter for IMP_Ftree that filters by polled elements.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Remote.html"><abbr title="\IMP_Ftree_IteratorFilter_Remote">IMP_Ftree_IteratorFilter_Remote</abbr></a></dt><dd>Iterator filter for IMP_Ftree that filters remote elements.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Special.html"><abbr title="\IMP_Ftree_IteratorFilter_Special">IMP_Ftree_IteratorFilter_Special</abbr></a></dt><dd>Iterator filter for IMP_Ftree that filters special mailboxes.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Subscribed.html"><abbr title="\IMP_Ftree_IteratorFilter_Subscribed">IMP_Ftree_IteratorFilter_Subscribed</abbr></a></dt><dd>Iterator filter for IMP_Ftree that filters by subscribed status.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter-Vfolder.html"><abbr title="\IMP_Ftree_IteratorFilter_Vfolder">IMP_Ftree_IteratorFilter_Vfolder</abbr></a></dt><dd>Iterator filter for IMP_Ftree that filters Virtual Folders.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-IteratorFilter.html"><abbr title="\IMP_Ftree_IteratorFilter">IMP_Ftree_IteratorFilter</abbr></a></dt><dd>Iterator filter for IMP_Ftree.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Prefs-Expanded.html"><abbr title="\IMP_Ftree_Prefs_Expanded">IMP_Ftree_Prefs_Expanded</abbr></a></dt><dd>Manage the expanded folders list.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Prefs-Poll.html"><abbr title="\IMP_Ftree_Prefs_Poll">IMP_Ftree_Prefs_Poll</abbr></a></dt><dd>Manage the mailbox poll list.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Prefs.html"><abbr title="\IMP_Ftree_Prefs">IMP_Ftree_Prefs</abbr></a></dt><dd>Abstract object handling folder tree prefereces.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree-Select.html"><abbr title="\IMP_Ftree_Select">IMP_Ftree_Select</abbr></a></dt><dd>Generate a select form HTML input tag.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Ftree.html"><abbr title="\IMP_Ftree">IMP_Ftree</abbr></a></dt><dd>IMP_Ftree (folder tree) provides a tree view of the mailboxes on a backend
+(a/k/a a folder list; in IMP, folders = collection of mailboxes), along
+with other display elements (Remote Accounts; Virtual Folders).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Images.html"><abbr title="\IMP_Images">IMP_Images</abbr></a></dt><dd>Common code relating to image viewing preferences.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap-Acl.html"><abbr title="\IMP_Imap_Acl">IMP_Imap_Acl</abbr></a></dt><dd>Management of IMAP Access Control Lists.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap-Cache-Wrapper.html"><abbr title="\IMP_Imap_Cache_Wrapper">IMP_Imap_Cache_Wrapper</abbr></a></dt><dd>A serializable wrapper for the IMAP cache backend. Ensures that IMAP object
+uses global Horde object for caching.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap-Config.html"><abbr title="\IMP_Imap_Config">IMP_Imap_Config</abbr></a></dt><dd>The configuration for a IMP backend.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap-Exception.html"><abbr title="\IMP_Imap_Exception">IMP_Imap_Exception</abbr></a></dt><dd>Exception class for handling Horde_Imap_Client exceptions in IMP.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap-Password.html"><abbr title="\IMP_Imap_Password">IMP_Imap_Password</abbr></a></dt><dd>Dynamically generate the password needed for the mail server connection.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap-PermanentFlags.html"><abbr title="\IMP_Imap_PermanentFlags">IMP_Imap_PermanentFlags</abbr></a></dt><dd>Provides an interface to query a mailbox&#039;s settable permanent flags.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap-Remote.html"><abbr title="\IMP_Imap_Remote">IMP_Imap_Remote</abbr></a></dt><dd>Provides common functions for interaction with IMAP/POP3 servers via the
+Horde_Imap_Client package (for remote servers).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Imap.html"><abbr title="\IMP_Imap">IMP_Imap</abbr></a></dt><dd>Provides common functions for interaction with IMAP/POP3 servers via the
+Horde_Imap_Client package.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP.html"><abbr title="\IMP">IMP</abbr></a></dt><dd>IMP base class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Indices-Copy-Notepad.html"><abbr title="\IMP_Indices_Copy_Notepad">IMP_Indices_Copy_Notepad</abbr></a></dt><dd>Copy a message to a notepad.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Indices-Copy-Tasklist.html"><abbr title="\IMP_Indices_Copy_Tasklist">IMP_Indices_Copy_Tasklist</abbr></a></dt><dd>Copy a message to a tasklist.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Indices-Copy.html"><abbr title="\IMP_Indices_Copy">IMP_Indices_Copy</abbr></a></dt><dd>Abstract object implementing non-mail server copy actions.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Indices-Mailbox.html"><abbr title="\IMP_Indices_Mailbox">IMP_Indices_Mailbox</abbr></a></dt><dd>Extends base Indices object by incorporating base mailbox information.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Indices.html"><abbr title="\IMP_Indices">IMP_Indices</abbr></a></dt><dd>Object representing a list of message indices.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-SystemTask-GarbageCollection.html"><abbr title="\IMP_LoginTasks_SystemTask_GarbageCollection">IMP_LoginTasks_SystemTask_GarbageCollection</abbr></a></dt><dd>Login system task for performing periodical garbage collection.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-SystemTask-Upgrade.html"><abbr title="\IMP_LoginTasks_SystemTask_Upgrade">IMP_LoginTasks_SystemTask_Upgrade</abbr></a></dt><dd>Login system task for automated upgrade tasks.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-SystemTask-UpgradeAuth.html"><abbr title="\IMP_LoginTasks_SystemTask_UpgradeAuth">IMP_LoginTasks_SystemTask_UpgradeAuth</abbr></a></dt><dd>Login system task for automated upgrade tasks.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-Autocreate.html"><abbr title="\IMP_LoginTasks_Task_Autocreate">IMP_LoginTasks_Task_Autocreate</abbr></a></dt><dd>Autocreate special mailboxes on login.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-DeleteAttachmentsMonthly.html"><abbr title="\IMP_LoginTasks_Task_DeleteAttachmentsMonthly">IMP_LoginTasks_Task_DeleteAttachmentsMonthly</abbr></a></dt><dd>Login tasks module that deletes old linked attachments.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-DeleteSentmailMonthly.html"><abbr title="\IMP_LoginTasks_Task_DeleteSentmailMonthly">IMP_LoginTasks_Task_DeleteSentmailMonthly</abbr></a></dt><dd>Login tasks module that deletes old sent-mail mailboxes.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-FilterOnLogin.html"><abbr title="\IMP_LoginTasks_Task_FilterOnLogin">IMP_LoginTasks_Task_FilterOnLogin</abbr></a></dt><dd>Login task that filters INBOX on login.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-PurgeSentmail.html"><abbr title="\IMP_LoginTasks_Task_PurgeSentmail">IMP_LoginTasks_Task_PurgeSentmail</abbr></a></dt><dd>Login tasks module that purges old messages in the sent-mail mailbox.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-PurgeSpam.html"><abbr title="\IMP_LoginTasks_Task_PurgeSpam">IMP_LoginTasks_Task_PurgeSpam</abbr></a></dt><dd>Login tasks module that purges old messages in the Spam mailbox.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-PurgeTrash.html"><abbr title="\IMP_LoginTasks_Task_PurgeTrash">IMP_LoginTasks_Task_PurgeTrash</abbr></a></dt><dd>Login tasks module that purges old messages in the Trash mailbox.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-RecoverDraft.html"><abbr title="\IMP_LoginTasks_Task_RecoverDraft">IMP_LoginTasks_Task_RecoverDraft</abbr></a></dt><dd>Login task that checks for drafts to be recovered.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-LoginTasks-Task-RenameSentmailMonthly.html"><abbr title="\IMP_LoginTasks_Task_RenameSentmailMonthly">IMP_LoginTasks_Task_RenameSentmailMonthly</abbr></a></dt><dd>Login tasks module that renames sent-mail mailboxes every month.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mailbox-List-Pop3.html"><abbr title="\IMP_Mailbox_List_Pop3">IMP_Mailbox_List_Pop3</abbr></a></dt><dd>This class contains code related to generating and handling a mailbox
+message list for POP3 servers.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mailbox-List-Thread.html"><abbr title="\IMP_Mailbox_List_Thread">IMP_Mailbox_List_Thread</abbr></a></dt><dd>This class represents thread information for a single message.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mailbox-List-Virtual.html"><abbr title="\IMP_Mailbox_List_Virtual">IMP_Mailbox_List_Virtual</abbr></a></dt><dd>This class extends the mailbox message list handling code for virtual
+mailboxes.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mailbox-List.html"><abbr title="\IMP_Mailbox_List">IMP_Mailbox_List</abbr></a></dt><dd>This class contains code related to generating and handling a mailbox
+message list.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mailbox-SessionCache.html"><abbr title="\IMP_Mailbox_SessionCache">IMP_Mailbox_SessionCache</abbr></a></dt><dd>This object manages IMP_Mailbox cache data that is stored in the session.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mailbox-Ui.html"><abbr title="\IMP_Mailbox_Ui">IMP_Mailbox_Ui</abbr></a></dt><dd>Common UI code for IMP&#039;s various mailbox views.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mailbox.html"><abbr title="\IMP_Mailbox">IMP_Mailbox</abbr></a></dt><dd>This object is a clearinghouse for actions related to an IMP mailbox.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Base.html"><abbr title="\IMP_Maillog_Log_Base">IMP_Maillog_Log_Base</abbr></a></dt><dd>Abstract log entry.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Forward.html"><abbr title="\IMP_Maillog_Log_Forward">IMP_Maillog_Log_Forward</abbr></a></dt><dd>Forward log entry.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Mdn.html"><abbr title="\IMP_Maillog_Log_Mdn">IMP_Maillog_Log_Mdn</abbr></a></dt><dd>MDN log entry.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Redirect.html"><abbr title="\IMP_Maillog_Log_Redirect">IMP_Maillog_Log_Redirect</abbr></a></dt><dd>Redirect log entry.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Reply.html"><abbr title="\IMP_Maillog_Log_Reply">IMP_Maillog_Log_Reply</abbr></a></dt><dd>Reply log entry.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Replyall.html"><abbr title="\IMP_Maillog_Log_Replyall">IMP_Maillog_Log_Replyall</abbr></a></dt><dd>Reply-all log entry.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Replylist.html"><abbr title="\IMP_Maillog_Log_Replylist">IMP_Maillog_Log_Replylist</abbr></a></dt><dd>Reply-list log entry.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Log-Sentmail.html"><abbr title="\IMP_Maillog_Log_Sentmail">IMP_Maillog_Log_Sentmail</abbr></a></dt><dd>Log entry that references a sent-mail action.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Message.html"><abbr title="\IMP_Maillog_Message">IMP_Maillog_Message</abbr></a></dt><dd>Object representing a message to be logged.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Messages.html"><abbr title="\IMP_Maillog_Messages">IMP_Maillog_Messages</abbr></a></dt><dd>Object representing a series of logged messages.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Storage-Base.html"><abbr title="\IMP_Maillog_Storage_Base">IMP_Maillog_Storage_Base</abbr></a></dt><dd>Abstract storage driver for the IMP_Maillog class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Storage-Composite.html"><abbr title="\IMP_Maillog_Storage_Composite">IMP_Maillog_Storage_Composite</abbr></a></dt><dd>Composite storage driver for the IMP_Maillog class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Storage-History.html"><abbr title="\IMP_Maillog_Storage_History">IMP_Maillog_Storage_History</abbr></a></dt><dd>Horde_History storage driver for the IMP_Maillog class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Storage-Mdnsent.html"><abbr title="\IMP_Maillog_Storage_Mdnsent">IMP_Maillog_Storage_Mdnsent</abbr></a></dt><dd>IMAP flag storage driver for the MDNSent keyword (RFC 3503 [3.1]).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog-Storage-Null.html"><abbr title="\IMP_Maillog_Storage_Null">IMP_Maillog_Storage_Null</abbr></a></dt><dd>Null storage driver for the IMP_Maillog class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Maillog.html"><abbr title="\IMP_Maillog">IMP_Maillog</abbr></a></dt><dd>Base class implementing logging of responses to e-mail messages.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mbox-Generate.html"><abbr title="\IMP_Mbox_Generate">IMP_Mbox_Generate</abbr></a></dt><dd>Method to generate MBOX data.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mbox-Import.html"><abbr title="\IMP_Mbox_Import">IMP_Mbox_Import</abbr></a></dt><dd>Method to import MBOX data into a mailbox.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mbox-Size.html"><abbr title="\IMP_Mbox_Size">IMP_Mbox_Size</abbr></a></dt><dd>Determine the size of a mailbox.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Message-Date.html"><abbr title="\IMP_Message_Date">IMP_Message_Date</abbr></a></dt><dd>Common code dealing with date formatting for messages.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Headers.html"><abbr title="\IMP_Mime_Headers">IMP_Mime_Headers</abbr></a></dt><dd>Code for manipulating/parsing MIME header data.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Status-RenderIssue-Display.html"><abbr title="\IMP_Mime_Status_RenderIssue_Display">IMP_Mime_Status_RenderIssue_Display</abbr></a></dt><dd>Wraps all display issues for a message part in a status message that hides
+the details by default.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Status-RenderIssue.html"><abbr title="\IMP_Mime_Status_RenderIssue">IMP_Mime_Status_RenderIssue</abbr></a></dt><dd>A status message that indicates a non-critical issue with rendering the
+data of a message part. These issues are not displayed by default.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Status.html"><abbr title="\IMP_Mime_Status">IMP_Mime_Status</abbr></a></dt><dd>Provides the object that contains the status data to output when viewing
+MIME parts in IMP.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Alternative.html"><abbr title="\IMP_Mime_Viewer_Alternative">IMP_Mime_Viewer_Alternative</abbr></a></dt><dd>Renderer for multipart/alternative content (RFC 2046 [5.1.4]).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Appledouble.html"><abbr title="\IMP_Mime_Viewer_Appledouble">IMP_Mime_Viewer_Appledouble</abbr></a></dt><dd>Handler for multipart/appledouble data (RFC 1740).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Audio.html"><abbr title="\IMP_Mime_Viewer_Audio">IMP_Mime_Viewer_Audio</abbr></a></dt><dd>Extension of base audio driver by outputting information on the duration
+of the audio data if that information was provided in the original message.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Enriched.html"><abbr title="\IMP_Mime_Viewer_Enriched">IMP_Mime_Viewer_Enriched</abbr></a></dt><dd>Handler to render plain text from enriched content tags (RFC 1896).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Externalbody.html"><abbr title="\IMP_Mime_Viewer_Externalbody">IMP_Mime_Viewer_Externalbody</abbr></a></dt><dd>Renderer for message/external-body (RFC 2046 [5.2.3]) data.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Html.html"><abbr title="\IMP_Mime_Viewer_Html">IMP_Mime_Viewer_Html</abbr></a></dt><dd>Renderer of HTML data, attempting to remove malicious code.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Images.html"><abbr title="\IMP_Mime_Viewer_Images">IMP_Mime_Viewer_Images</abbr></a></dt><dd>Renderer for image data.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Itip.html"><abbr title="\IMP_Mime_Viewer_Itip">IMP_Mime_Viewer_Itip</abbr></a></dt><dd>Displays vCalendar/iCalendar data and provides an option to import the data
+into a calendar source, if available.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Mdn.html"><abbr title="\IMP_Mime_Viewer_Mdn">IMP_Mime_Viewer_Mdn</abbr></a></dt><dd>Handler for multipart/report messages that refer to message disposition
+notification (MDN) messages (RFC 3798).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Partial.html"><abbr title="\IMP_Mime_Viewer_Partial">IMP_Mime_Viewer_Partial</abbr></a></dt><dd>Renderer for message/partial data (RFC 2046 [5.2.2]).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Pdf.html"><abbr title="\IMP_Mime_Viewer_Pdf">IMP_Mime_Viewer_Pdf</abbr></a></dt><dd>Handler to generate thumbnails for PDF attachments.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Pgp.html"><abbr title="\IMP_Mime_Viewer_Pgp">IMP_Mime_Viewer_Pgp</abbr></a></dt><dd>Renderer to allow viewing/decrypting of PGP formatted messages (RFC 3156).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Plain.html"><abbr title="\IMP_Mime_Viewer_Plain">IMP_Mime_Viewer_Plain</abbr></a></dt><dd>Renderer for text/plain MIME parts with URLs made into hyperlinks.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Related.html"><abbr title="\IMP_Mime_Viewer_Related">IMP_Mime_Viewer_Related</abbr></a></dt><dd>Renderer for multipart/related messages (RFC 2387).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Rfc822.html"><abbr title="\IMP_Mime_Viewer_Rfc822">IMP_Mime_Viewer_Rfc822</abbr></a></dt><dd>Renderer that indicates that all subparts should be wrapped in a parent
+display DIV element.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Smil.html"><abbr title="\IMP_Mime_Viewer_Smil">IMP_Mime_Viewer_Smil</abbr></a></dt><dd>Renderer for SMIL documents to very basic HTML.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Smime.html"><abbr title="\IMP_Mime_Viewer_Smime">IMP_Mime_Viewer_Smime</abbr></a></dt><dd>Renderer for viewing/decrypting of S/MIME v3.2 messages (RFC 5751).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Status.html"><abbr title="\IMP_Mime_Viewer_Status">IMP_Mime_Viewer_Status</abbr></a></dt><dd>Renderer for multipart/report data referring to mail system administrative
+messages (RFC 3464).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Syntaxhighlighter.html"><abbr title="\IMP_Mime_Viewer_Syntaxhighlighter">IMP_Mime_Viewer_Syntaxhighlighter</abbr></a></dt><dd>The IMP_Mime_Viewer_Syntaxhighlighter class extends
+Horde_Core_Mime_Viewer_Syntaxhighlighter in order to catch when the preview
+pane is updated.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Tgz.html"><abbr title="\IMP_Mime_Viewer_Tgz">IMP_Mime_Viewer_Tgz</abbr></a></dt><dd>Handler to render the contents of gzip/tar files, allowing downloading of
+extractable files.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Vcard.html"><abbr title="\IMP_Mime_Viewer_Vcard">IMP_Mime_Viewer_Vcard</abbr></a></dt><dd>Handler to render the contents of vCard files in HTML format, allowing
+inline display of embedded photos.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Video.html"><abbr title="\IMP_Mime_Viewer_Video">IMP_Mime_Viewer_Video</abbr></a></dt><dd>Renderer to output information on:
+  1. The duration of the video data, if that information was provided in
+     the original message.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Mime-Viewer-Zip.html"><abbr title="\IMP_Mime_Viewer_Zip">IMP_Mime_Viewer_Zip</abbr></a></dt><dd>Handler to render the contents of ZIP files, allowing downloading of
+extractable files.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Notification-Event-Status.html"><abbr title="\IMP_Notification_Event_Status">IMP_Notification_Event_Status</abbr></a></dt><dd>This class defines the base IMP status notification types.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Notification-Handler-Decorator-NewmailNotify.html"><abbr title="\IMP_Notification_Handler_Decorator_NewmailNotify">IMP_Notification_Handler_Decorator_NewmailNotify</abbr></a></dt><dd>Add new mail notifications to the stack.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Perms.html"><abbr title="\IMP_Perms">IMP_Perms</abbr></a></dt><dd>Permission handling for IMP.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Pgp.html"><abbr title="\IMP_Pgp">IMP_Pgp</abbr></a></dt><dd>Contains code related to handling PGP data within IMP.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-AttribText.html"><abbr title="\IMP_Prefs_AttribText">IMP_Prefs_AttribText</abbr></a></dt><dd>This class manages the attrib_text preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Identity.html"><abbr title="\IMP_Prefs_Identity">IMP_Prefs_Identity</abbr></a></dt><dd>This class provides an IMP-specific interface to all identities a
+user might have. Its methods take care of any site-specific
+restrictions configured in prefs.php and conf.php.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Sort-FixedDate.html"><abbr title="\IMP_Prefs_Sort_FixedDate">IMP_Prefs_Sort_FixedDate</abbr></a></dt><dd>A fixed date (read-only) implementation of the sortpref preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Sort-None.html"><abbr title="\IMP_Prefs_Sort_None">IMP_Prefs_Sort_None</abbr></a></dt><dd>A fixed (read-only) implementation of the sortpref preference (arrival
+sort) that does no sorting on either mail server or web server.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Sort-Sortpref-Locked.html"><abbr title="\IMP_Prefs_Sort_Sortpref_Locked">IMP_Prefs_Sort_Sortpref_Locked</abbr></a></dt><dd>A mailbox sort object that has the sortby value locked.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Sort-Sortpref.html"><abbr title="\IMP_Prefs_Sort_Sortpref">IMP_Prefs_Sort_Sortpref</abbr></a></dt><dd>This class provides the object representation for the sort preference for
+a mailbox.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Sort.html"><abbr title="\IMP_Prefs_Sort">IMP_Prefs_Sort</abbr></a></dt><dd>This class manages the sortpref preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Acl.html"><abbr title="\IMP_Prefs_Special_Acl">IMP_Prefs_Special_Acl</abbr></a></dt><dd>Special prefs handling for the &#039;aclmanagement&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-ComposeTemplates.html"><abbr title="\IMP_Prefs_Special_ComposeTemplates">IMP_Prefs_Special_ComposeTemplates</abbr></a></dt><dd>Special prefs handling for the &#039;composetemplates_management&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Drafts.html"><abbr title="\IMP_Prefs_Special_Drafts">IMP_Prefs_Special_Drafts</abbr></a></dt><dd>Special prefs handling for the &#039;draftsselect&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Encrypt.html"><abbr title="\IMP_Prefs_Special_Encrypt">IMP_Prefs_Special_Encrypt</abbr></a></dt><dd>Special prefs handling for the &#039;encryptselect&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Flag.html"><abbr title="\IMP_Prefs_Special_Flag">IMP_Prefs_Special_Flag</abbr></a></dt><dd>Special prefs handling for the &#039;flagmanagement&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-HtmlSignature.html"><abbr title="\IMP_Prefs_Special_HtmlSignature">IMP_Prefs_Special_HtmlSignature</abbr></a></dt><dd>Special prefs handling for the &#039;signature_html_select&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-ImageReplacement.html"><abbr title="\IMP_Prefs_Special_ImageReplacement">IMP_Prefs_Special_ImageReplacement</abbr></a></dt><dd>Special prefs handling for the &#039;image_replacement_addrs&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-InitialPage.html"><abbr title="\IMP_Prefs_Special_InitialPage">IMP_Prefs_Special_InitialPage</abbr></a></dt><dd>Special prefs handling for the &#039;initialpageselect&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Mailto.html"><abbr title="\IMP_Prefs_Special_Mailto">IMP_Prefs_Special_Mailto</abbr></a></dt><dd>Special prefs handling for the &#039;mailto_handler&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-NewmailSound.html"><abbr title="\IMP_Prefs_Special_NewmailSound">IMP_Prefs_Special_NewmailSound</abbr></a></dt><dd>Special prefs handling for the &#039;newmail_soundselect&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-PgpPrivateKey.html"><abbr title="\IMP_Prefs_Special_PgpPrivateKey">IMP_Prefs_Special_PgpPrivateKey</abbr></a></dt><dd>Special prefs handling for the &#039;pgpprivatekey&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-PgpPublicKey.html"><abbr title="\IMP_Prefs_Special_PgpPublicKey">IMP_Prefs_Special_PgpPublicKey</abbr></a></dt><dd>Special prefs handling for the &#039;pgppublickey&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Remote.html"><abbr title="\IMP_Prefs_Special_Remote">IMP_Prefs_Special_Remote</abbr></a></dt><dd>Special prefs handling for the &#039;remotemanagement&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Searches.html"><abbr title="\IMP_Prefs_Special_Searches">IMP_Prefs_Special_Searches</abbr></a></dt><dd>Special prefs handling for the &#039;searchesmanagement&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Sentmail.html"><abbr title="\IMP_Prefs_Special_Sentmail">IMP_Prefs_Special_Sentmail</abbr></a></dt><dd>Special prefs handling for the &#039;sentmailselect&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html"><abbr title="\IMP_Prefs_Special_SmimePrivateKey">IMP_Prefs_Special_SmimePrivateKey</abbr></a></dt><dd>Special prefs handling for the &#039;smimeprivatekey&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-SmimePublicKey.html"><abbr title="\IMP_Prefs_Special_SmimePublicKey">IMP_Prefs_Special_SmimePublicKey</abbr></a></dt><dd>Special prefs handling for the &#039;smimepublickey&#039; preference, the list of
+public certificates from the user&#039;s address book(s).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Sourceselect.html"><abbr title="\IMP_Prefs_Special_Sourceselect">IMP_Prefs_Special_Sourceselect</abbr></a></dt><dd>Special prefs handling for the &#039;sourceselect&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Spam.html"><abbr title="\IMP_Prefs_Special_Spam">IMP_Prefs_Special_Spam</abbr></a></dt><dd>Special prefs handling for the &#039;spamselect&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-SpecialMboxes.html"><abbr title="\IMP_Prefs_Special_SpecialMboxes">IMP_Prefs_Special_SpecialMboxes</abbr></a></dt><dd>Shared code for handling special mailboxes preferences.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Prefs-Special-Trash.html"><abbr title="\IMP_Prefs_Special_Trash">IMP_Prefs_Special_Trash</abbr></a></dt><dd>Special prefs handling for the &#039;trashselect&#039; preference.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Quota-Hook.html"><abbr title="\IMP_Quota_Hook">IMP_Quota_Hook</abbr></a></dt><dd>Implementation of IMP_Quota API for a generic hook function.  This
+requires the quota hook to be set in config/hooks.php.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Quota-Imap.html"><abbr title="\IMP_Quota_Imap">IMP_Quota_Imap</abbr></a></dt><dd>Quota driver for IMAP servers.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Quota-Null.html"><abbr title="\IMP_Quota_Null">IMP_Quota_Null</abbr></a></dt><dd>Null implementation of the quota driver.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Quota-Ui.html"><abbr title="\IMP_Quota_Ui">IMP_Quota_Ui</abbr></a></dt><dd>Common code dealing with quota UI display.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Quota.html"><abbr title="\IMP_Quota">IMP_Quota</abbr></a></dt><dd>The abstract class that all quota drivers inherit from.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Remote-Account.html"><abbr title="\IMP_Remote_Account">IMP_Remote_Account</abbr></a></dt><dd>Object representation of a remote mail account.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Remote.html"><abbr title="\IMP_Remote">IMP_Remote</abbr></a></dt><dd>Interface to deal with storing connection details of remote accounts.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Script-Package-Autocomplete.html"><abbr title="\IMP_Script_Package_Autocomplete">IMP_Script_Package_Autocomplete</abbr></a></dt><dd>This class identifies the javascript necessary to output the autocompleter
+javascript to the browser.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Script-Package-Compose.html"><abbr title="\IMP_Script_Package_Compose">IMP_Script_Package_Compose</abbr></a></dt><dd>This class identifies the javascript necessary to output the compose
+javascript script to the browser.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Script-Package-DynamicBase.html"><abbr title="\IMP_Script_Package_DynamicBase">IMP_Script_Package_DynamicBase</abbr></a></dt><dd>This class identifies the javascript necessary to output the base
+javascript needed for dynamic views.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Script-Package-Editor.html"><abbr title="\IMP_Script_Package_Editor">IMP_Script_Package_Editor</abbr></a></dt><dd>This class identifies the javascript necessary to initialize CKEditor on
+the browser.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Script-Package-Imp.html"><abbr title="\IMP_Script_Package_Imp">IMP_Script_Package_Imp</abbr></a></dt><dd>This class identifies the javascript necessary to output the IMP_JS
+javascript script to the browser.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Attachment.html"><abbr title="\IMP_Search_Element_Attachment">IMP_Search_Element_Attachment</abbr></a></dt><dd>The attachment search query.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Autogenerated.html"><abbr title="\IMP_Search_Element_Autogenerated">IMP_Search_Element_Autogenerated</abbr></a></dt><dd>Handle &quot;automatically generated&quot; message search query.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Bulk.html"><abbr title="\IMP_Search_Element_Bulk">IMP_Search_Element_Bulk</abbr></a></dt><dd>Bulk message search query.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Contacts.html"><abbr title="\IMP_Search_Element_Contacts">IMP_Search_Element_Contacts</abbr></a></dt><dd>Search query for messages sent from a contact located in a user&#039;s
+addressbook.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Daterange.html"><abbr title="\IMP_Search_Element_Daterange">IMP_Search_Element_Daterange</abbr></a></dt><dd>Date-related search queries.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Flag.html"><abbr title="\IMP_Search_Element_Flag">IMP_Search_Element_Flag</abbr></a></dt><dd>Flag/keyword search queries.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Header.html"><abbr title="\IMP_Search_Element_Header">IMP_Search_Element_Header</abbr></a></dt><dd>This class handles header-related search queries.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Mailinglist.html"><abbr title="\IMP_Search_Element_Mailinglist">IMP_Search_Element_Mailinglist</abbr></a></dt><dd>Handles the mailing list search query.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Or.html"><abbr title="\IMP_Search_Element_Or">IMP_Search_Element_Or</abbr></a></dt><dd>Handles an OR clause in a search query.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Personal.html"><abbr title="\IMP_Search_Element_Personal">IMP_Search_Element_Personal</abbr></a></dt><dd>Personal recipient search query.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Recipient.html"><abbr title="\IMP_Search_Element_Recipient">IMP_Search_Element_Recipient</abbr></a></dt><dd>Recipient (To/Cc/Bcc) search query.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Size.html"><abbr title="\IMP_Search_Element_Size">IMP_Search_Element_Size</abbr></a></dt><dd>Size-related search queries.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Text.html"><abbr title="\IMP_Search_Element_Text">IMP_Search_Element_Text</abbr></a></dt><dd>Text-related search queries.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element-Within.html"><abbr title="\IMP_Search_Element_Within">IMP_Search_Element_Within</abbr></a></dt><dd>Within (date) search queries.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Element.html"><abbr title="\IMP_Search_Element">IMP_Search_Element</abbr></a></dt><dd>Abstract framework for a search query element.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter-Attachment.html"><abbr title="\IMP_Search_Filter_Attachment">IMP_Search_Filter_Attachment</abbr></a></dt><dd>Filter for messages with attachments.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter-Autogenerated.html"><abbr title="\IMP_Search_Filter_Autogenerated">IMP_Search_Filter_Autogenerated</abbr></a></dt><dd>Filter for automatically generated messages.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter-Builtin.html"><abbr title="\IMP_Search_Filter_Builtin">IMP_Search_Filter_Builtin</abbr></a></dt><dd>Base definition for built-in filters.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter-Bulk.html"><abbr title="\IMP_Search_Filter_Bulk">IMP_Search_Filter_Bulk</abbr></a></dt><dd>Filter for bulk mail.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter-Contacts.html"><abbr title="\IMP_Search_Filter_Contacts">IMP_Search_Filter_Contacts</abbr></a></dt><dd>Filter for messages sent from addresses contained within a user&#039;s personal
+contacts.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter-Mailinglist.html"><abbr title="\IMP_Search_Filter_Mailinglist">IMP_Search_Filter_Mailinglist</abbr></a></dt><dd>Filter for mailing list messages.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter-Personal.html"><abbr title="\IMP_Search_Filter_Personal">IMP_Search_Filter_Personal</abbr></a></dt><dd>Filter for the personal recipient search.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Filter.html"><abbr title="\IMP_Search_Filter">IMP_Search_Filter</abbr></a></dt><dd>A data structure for storing a stored filter.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-IteratorFilter.html"><abbr title="\IMP_Search_IteratorFilter">IMP_Search_IteratorFilter</abbr></a></dt><dd>Iterator filter for the IMP_Search object.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Query.html"><abbr title="\IMP_Search_Query">IMP_Search_Query</abbr></a></dt><dd>Data structure for a search query.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Vfolder-Builtin.html"><abbr title="\IMP_Search_Vfolder_Builtin">IMP_Search_Vfolder_Builtin</abbr></a></dt><dd>Base definition for built-in Virtual Folders.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Vfolder-Vinbox.html"><abbr title="\IMP_Search_Vfolder_Vinbox">IMP_Search_Vfolder_Vinbox</abbr></a></dt><dd>Data structure for storing the virtual inbox.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Vfolder-Vtrash.html"><abbr title="\IMP_Search_Vfolder_Vtrash">IMP_Search_Vfolder_Vtrash</abbr></a></dt><dd>Data structure for storing the virtual trash.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search-Vfolder.html"><abbr title="\IMP_Search_Vfolder">IMP_Search_Vfolder</abbr></a></dt><dd>Data structure for storing a virtual folder.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Search.html"><abbr title="\IMP_Search">IMP_Search</abbr></a></dt><dd>Object handling mailbox searching in IMP.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Sentmail-Mongo.html"><abbr title="\IMP_Sentmail_Mongo">IMP_Sentmail_Mongo</abbr></a></dt><dd>Sentmail driver implementation for MongoDB databases.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Sentmail-Null.html"><abbr title="\IMP_Sentmail_Null">IMP_Sentmail_Null</abbr></a></dt><dd>A null implementation of the sentmail driver.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Sentmail-Sql.html"><abbr title="\IMP_Sentmail_Sql">IMP_Sentmail_Sql</abbr></a></dt><dd>Sentmail driver implementation for SQL databases.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Sentmail.html"><abbr title="\IMP_Sentmail">IMP_Sentmail</abbr></a></dt><dd>The abstract class that all sentmail implementations inherit from.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Smartmobile.html"><abbr title="\IMP_Smartmobile">IMP_Smartmobile</abbr></a></dt><dd>Base class for smartmobile view pages.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Smime.html"><abbr title="\IMP_Smime">IMP_Smime</abbr></a></dt><dd>Contains code related to handling S/MIME messages within IMP.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Spam-Email.html"><abbr title="\IMP_Spam_Email">IMP_Spam_Email</abbr></a></dt><dd>Spam reporting driver via e-mail.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Spam-Null.html"><abbr title="\IMP_Spam_Null">IMP_Spam_Null</abbr></a></dt><dd>Null spam reporting.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Spam-Program.html"><abbr title="\IMP_Spam_Program">IMP_Spam_Program</abbr></a></dt><dd>Spam reporting driver utilizing a local binary.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Spam.html"><abbr title="\IMP_Spam">IMP_Spam</abbr></a></dt><dd>Handles spam/innocent reporting within IMP.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Test.html"><abbr title="\IMP_Test">IMP_Test</abbr></a></dt><dd>Provides the IMP configuration for the Horde test script.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Tree-Flist.html"><abbr title="\IMP_Tree_Flist">IMP_Tree_Flist</abbr></a></dt><dd>The IMP_Tree_Flist class provides an IMP dropdown mailbox (folder tree)
+list.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-Tree-Jquerymobile.html"><abbr title="\IMP_Tree_Jquerymobile">IMP_Tree_Jquerymobile</abbr></a></dt><dd>This class defines Jquerymobile output for a mailbox (folder tree) list.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IMP-View-Subinfo.html"><abbr title="\IMP_View_Subinfo">IMP_View_Subinfo</abbr></a></dt><dd>This is a view of the IMP subinfo bar.</dd>    </dl>
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="packages/IMP.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_HORDE_BASE">HORDE_BASE</a>
     <span>
         &nbsp;= \realpath(\IMP_BASE . &#039;/..&#039;)                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_IMP_BASE">IMP_BASE</a>
     <span>
         &nbsp;= \realpath(__DIR__ . &#039;/..&#039;)                            </span>
 </dt>
-<dd></dd>
 
-                    </dl>
+    </dl>
+
+
+
+
 
         
     <section class="phpdocumentor-constants">
         <h3 class="phpdocumentor-elements__header" id="constants">
             Constants
             <a href="packages/IMP.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_HORDE_BASE">
         HORDE_BASE
         <a href="namespaces/default.html#constant_HORDE_BASE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Application.php"><a href="files/application.html"><abbr title="Application.php">Application.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Application.php"><a href="files/lib-application.html"><abbr title="lib/Application.php">Application.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">25</span>
 
@@ -839,10 +222,8 @@ list.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -850,10 +231,11 @@ list.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_IMP_BASE">
         IMP_BASE
         <a href="namespaces/default.html#constant_IMP_BASE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Application.php"><a href="files/application.html"><abbr title="Application.php">Application.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Application.php"><a href="files/lib-application.html"><abbr title="lib/Application.php">Application.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">16</span>
 
@@ -868,18 +250,137 @@ list.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
             </section>
 
         
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
+
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
+
+                    var xhr = new XMLHttpRequest();
+
+                    xhr.open('GET', src, true);
+
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+                            Prism.highlightElement(code);
+                            return;
+                        }
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
+                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
+                    }
+                    modal.classList.add("phpdocumentor-modal__open");
+
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
+                    });
+                });
+            });
+        })();
+    </script>
+
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                            
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                                                    <li><a href="packages/IMP.html#toc-interfaces">Interfaces</a></li>
+                                                                <li><a href="packages/IMP.html#toc-classes">Classes</a></li>
+                                                                                                        <li><a href="packages/IMP.html#toc-constants">Constants</a></li>
+                                                        </ul>
+            </li>
+
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="namespaces/default.html#constant_HORDE_BASE">HORDE_BASE</a></li>
+                                                    <li><a href="namespaces/default.html#constant_IMP_BASE">IMP_BASE</a></li>
+                                            </ul>
+                </li>
+            
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -890,7 +391,6 @@ list.</dd>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="packages/IMP.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

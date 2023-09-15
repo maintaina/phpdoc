@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -78,8 +79,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="packages/IMP.html">IMP</a></li>
     </ul>
 
@@ -98,8 +100,13 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">23</span>
 
@@ -111,7 +118,8 @@
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -150,69 +158,89 @@
 </section>
 
                                     </dd>
-                        </dl>
-
-
-
+                                            </dl>
 
 
 
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/IMP-Pgp.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/IMP-Pgp.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/IMP-Pgp.html#constant_ENCRYPT">ENCRYPT</a>
     <span>
         &nbsp;= &#039;pgp_encrypt&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/IMP-Pgp.html#constant_PUBKEY_FIELD">PUBKEY_FIELD</a>
     <span>
         &nbsp;= &#039;pgpPublicKey&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/IMP-Pgp.html#constant_SIGN">SIGN</a>
     <span>
         &nbsp;= &#039;pgp_sign&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/IMP-Pgp.html#constant_SIGNENC">SIGNENC</a>
     <span>
         &nbsp;= &#039;pgp_signenc&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/IMP-Pgp.html#constant_SYM_ENCRYPT">SYM_ENCRYPT</a>
     <span>
         &nbsp;= &#039;pgp_sym_enc&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/IMP-Pgp.html#constant_SYM_SIGNENC">SYM_SIGNENC</a>
     <span>
         &nbsp;= &#039;pgp_syn_sign&#039;                            </span>
 </dt>
-<dd></dd>
 
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/IMP-Pgp.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/IMP-Pgp.html#property__pgp">$_pgp</a>
     <span>
                         &nbsp;: <abbr title="\Horde_Crypt_Pgp">Horde_Crypt_Pgp</abbr>            </span>
 </dt>
 <dd>Pgp object.</dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/IMP-Pgp.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Pgp.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -301,7 +329,6 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Pgp.html#method_getKeys">getKeys()</a>
@@ -446,7 +473,8 @@ parameters.</dd>
 </dt>
 <dd>Provide the list of parameters needed for signing a message.</dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -455,15 +483,17 @@ parameters.</dd>
         <h3 class="phpdocumentor-elements__header" id="constants">
             Constants
             <a href="classes/IMP-Pgp.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_ENCRYPT">
         ENCRYPT
         <a href="classes/IMP-Pgp.html#constant_ENCRYPT" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">29</span>
 
@@ -478,10 +508,8 @@ parameters.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -489,10 +517,11 @@ parameters.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_PUBKEY_FIELD">
         PUBKEY_FIELD
         <a href="classes/IMP-Pgp.html#constant_PUBKEY_FIELD" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">26</span>
 
@@ -507,10 +536,8 @@ parameters.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -518,10 +545,11 @@ parameters.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_SIGN">
         SIGN
         <a href="classes/IMP-Pgp.html#constant_SIGN" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">30</span>
 
@@ -536,10 +564,8 @@ parameters.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -547,10 +573,11 @@ parameters.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_SIGNENC">
         SIGNENC
         <a href="classes/IMP-Pgp.html#constant_SIGNENC" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">31</span>
 
@@ -565,10 +592,8 @@ parameters.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -576,10 +601,11 @@ parameters.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_SYM_ENCRYPT">
         SYM_ENCRYPT
         <a href="classes/IMP-Pgp.html#constant_SYM_ENCRYPT" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">32</span>
 
@@ -594,10 +620,8 @@ parameters.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -605,10 +629,11 @@ parameters.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_SYM_SIGNENC">
         SYM_SIGNENC
         <a href="classes/IMP-Pgp.html#constant_SYM_SIGNENC" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">33</span>
 
@@ -623,10 +648,8 @@ parameters.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -637,6 +660,7 @@ parameters.</dd>
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/IMP-Pgp.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -648,11 +672,12 @@ parameters.</dd>
     <h4 class="phpdocumentor-element__name" id="property__pgp">
         $_pgp
         <a href="classes/IMP-Pgp.html#property__pgp" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">40</span>
 
@@ -677,6 +702,7 @@ parameters.</dd>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/IMP-Pgp.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -687,9 +713,10 @@ parameters.</dd>
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/IMP-Pgp.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">59</span>
 
@@ -701,6 +728,8 @@ parameters.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Crypt_Pgp">Horde_Crypt_Pgp</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pgp</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -717,10 +746,6 @@ parameters.</dd>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -732,9 +757,10 @@ parameters.</dd>
     <h4 class="phpdocumentor-element__name" id="method_addPersonalPrivateKey">
         addPersonalPrivateKey()
         <a href="classes/IMP-Pgp.html#method_addPersonalPrivateKey" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">136</span>
 
@@ -746,6 +772,8 @@ parameters.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">addPersonalPrivateKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$private_key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -763,10 +791,6 @@ array).</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -778,9 +802,10 @@ array).</p>
     <h4 class="phpdocumentor-element__name" id="method_addPersonalPublicKey">
         addPersonalPublicKey()
         <a href="classes/IMP-Pgp.html#method_addPersonalPublicKey" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">125</span>
 
@@ -792,6 +817,8 @@ array).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">addPersonalPublicKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$public_key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -809,10 +836,6 @@ array).</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -824,9 +847,10 @@ array).</p>
     <h4 class="phpdocumentor-element__name" id="method_addPublicKey">
         addPublicKey()
         <a href="classes/IMP-Pgp.html#method_addPublicKey" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">181</span>
 
@@ -838,6 +862,8 @@ array).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">addPublicKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$public_key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -855,7 +881,8 @@ array).</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#method_addPublicKey#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -874,15 +901,17 @@ array).</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>See Horde_Crypt_Pgp::pgpPacketInformationMultiple()</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>See Horde_Crypt_Pgp::pgpPacketInformationMultiple()</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -893,9 +922,10 @@ array).</p>
     <h4 class="phpdocumentor-element__name" id="method_decryptMessage">
         decryptMessage()
         <a href="classes/IMP-Pgp.html#method_decryptMessage" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">471</span>
 
@@ -907,6 +937,8 @@ array).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">decryptMessage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -948,7 +980,8 @@ if message is both encrypted &amp; signed).</li>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#method_decryptMessage#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -959,15 +992,17 @@ if message is both encrypted &amp; signed).</li>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>See Horde_Crypt_Pgp::decrypt().</p>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>See Horde_Crypt_Pgp::decrypt().</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -978,9 +1013,10 @@ if message is both encrypted &amp; signed).</li>
     <h4 class="phpdocumentor-element__name" id="method_deletePersonalKeys">
         deletePersonalKeys()
         <a href="classes/IMP-Pgp.html#method_deletePersonalKeys" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">164</span>
 
@@ -992,14 +1028,12 @@ if message is both encrypted &amp; signed).</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deletePersonalKeys</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1011,9 +1045,10 @@ if message is both encrypted &amp; signed).</li>
     <h4 class="phpdocumentor-element__name" id="method_deletePublicKey">
         deletePublicKey()
         <a href="classes/IMP-Pgp.html#method_deletePublicKey" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">390</span>
 
@@ -1025,6 +1060,8 @@ if message is both encrypted &amp; signed).</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deletePublicKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$email</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1042,7 +1079,8 @@ if message is both encrypted &amp; signed).</li>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#method_deletePublicKey#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1053,12 +1091,8 @@ if message is both encrypted &amp; signed).</li>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1070,9 +1104,10 @@ if message is both encrypted &amp; signed).</li>
     <h4 class="phpdocumentor-element__name" id="method_enabled">
         enabled()
         <a href="classes/IMP-Pgp.html#method_enabled" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">47</span>
 
@@ -1084,17 +1119,21 @@ if message is both encrypted &amp; signed).</li>
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">enabled</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>True if PGP support is enabled.</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if PGP support is enabled.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1105,9 +1144,10 @@ if message is both encrypted &amp; signed).</li>
     <h4 class="phpdocumentor-element__name" id="method_encryptedSymmetrically">
         encryptedSymmetrically()
         <a href="classes/IMP-Pgp.html#method_encryptedSymmetrically" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">863</span>
 
@@ -1119,6 +1159,8 @@ if message is both encrypted &amp; signed).</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">encryptedSymmetrically</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1136,7 +1178,8 @@ if message is both encrypted &amp; signed).</li>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#method_encryptedSymmetrically#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1157,15 +1200,17 @@ determine whether data was encrypted symmetrically.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>True if the text is symmetrically encrypted.</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if the text is symmetrically encrypted.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1176,9 +1221,10 @@ determine whether data was encrypted symmetrically.</p>
     <h4 class="phpdocumentor-element__name" id="method_encryptList">
         encryptList()
         <a href="classes/IMP-Pgp.html#method_encryptList" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">70</span>
 
@@ -1190,18 +1236,22 @@ determine whether data was encrypted symmetrically.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">encryptList</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Keys are encryption type constants, values are gettext
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Keys are encryption type constants, values are gettext
 strings describing the encryption type.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1212,9 +1262,10 @@ strings describing the encryption type.</p>
     <h4 class="phpdocumentor-element__name" id="method_encryptMimePart">
         encryptMimePart()
         <a href="classes/IMP-Pgp.html#method_encryptMimePart" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">672</span>
 
@@ -1226,6 +1277,8 @@ strings describing the encryption type.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">encryptMimePart</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Mime_Part">Horde_Mime_Part</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mime_part</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Mail_Rfc822_List">Horde_Mail_Rfc822_List</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$addresses</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$symmetric</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Mime_Part">Horde_Mime_Part</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1265,7 +1318,8 @@ personal key.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#method_encryptMimePart#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1276,15 +1330,17 @@ personal key.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Mime_Part">Horde_Mime_Part</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>See Horde_Crypt_Pgp::encryptMimePart().</p>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Mime_Part">Horde_Mime_Part</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>See Horde_Crypt_Pgp::encryptMimePart().</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1295,9 +1351,10 @@ personal key.</p>
     <h4 class="phpdocumentor-element__name" id="method_generatePersonalKeys">
         generatePersonalKeys()
         <a href="classes/IMP-Pgp.html#method_generatePersonalKeys" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">101</span>
 
@@ -1309,6 +1366,8 @@ personal key.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">generatePersonalKeys</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$email</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$passphrase</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$comment</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keylength</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1024</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$expire</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1371,7 +1430,8 @@ personal key.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#method_generatePersonalKeys#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1382,12 +1442,8 @@ personal key.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1399,9 +1455,10 @@ personal key.</p>
     <h4 class="phpdocumentor-element__name" id="method_getKeyIdString">
         getKeyIdString()
         <a href="classes/IMP-Pgp.html#method_getKeyIdString" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">840</span>
 
@@ -1412,8 +1469,9 @@ personal key.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getKeyIdString</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keyid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1421,17 +1479,12 @@ personal key.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1443,9 +1496,10 @@ personal key.</p>
     <h4 class="phpdocumentor-element__name" id="method_getKeys">
         getKeys()
         <a href="classes/IMP-Pgp.html#method_getKeys" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">729</span>
 
@@ -1457,6 +1511,8 @@ personal key.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getKeys</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1473,17 +1529,19 @@ personal key.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Array with these keys:</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Array with these keys:</p>
 <ul>
 <li>public: (array) Array of public keys.</li>
 <li>private: (array) Array of private keys.</li>
 </ul>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1494,9 +1552,10 @@ personal key.</p>
     <h4 class="phpdocumentor-element__name" id="method_getPassphrase">
         getPassphrase()
         <a href="classes/IMP-Pgp.html#method_getPassphrase" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">522</span>
 
@@ -1508,6 +1567,8 @@ personal key.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getPassphrase</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1535,13 +1596,15 @@ passphrase.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The passphrase, if set, or null.</p>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The passphrase, if set, or null.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1552,9 +1615,10 @@ passphrase.</p>
     <h4 class="phpdocumentor-element__name" id="method_getPersonalPrivateKey">
         getPersonalPrivateKey()
         <a href="classes/IMP-Pgp.html#method_getPersonalPrivateKey" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">156</span>
 
@@ -1566,17 +1630,21 @@ passphrase.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getPersonalPrivateKey</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The personal PGP private key.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The personal PGP private key.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1587,9 +1655,10 @@ passphrase.</p>
     <h4 class="phpdocumentor-element__name" id="method_getPersonalPublicKey">
         getPersonalPublicKey()
         <a href="classes/IMP-Pgp.html#method_getPersonalPublicKey" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">146</span>
 
@@ -1601,17 +1670,21 @@ passphrase.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getPersonalPublicKey</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The personal PGP public key.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The personal PGP public key.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1622,9 +1695,10 @@ passphrase.</p>
     <h4 class="phpdocumentor-element__name" id="method_getPublicKey">
         getPublicKey()
         <a href="classes/IMP-Pgp.html#method_getPublicKey" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">270</span>
 
@@ -1636,6 +1710,8 @@ passphrase.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getPublicKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$address</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>First, the key will be attempted to be retrieved from a user's address
 book(s).
 Second, if unsuccessful, the key is attempted to be retrieved via a
@@ -1678,7 +1754,8 @@ DEFAULT: false</li>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#method_getPublicKey#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1689,15 +1766,17 @@ DEFAULT: false</li>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The PGP public key requested.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The PGP public key requested.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1708,9 +1787,10 @@ DEFAULT: false</li>
     <h4 class="phpdocumentor-element__name" id="method_getSymmetricId">
         getSymmetricId()
         <a href="classes/IMP-Pgp.html#method_getSymmetricId" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">592</span>
 
@@ -1722,6 +1802,8 @@ DEFAULT: false</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getSymmetricId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1756,13 +1838,15 @@ DEFAULT: false</li>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>A unique symmetric cache ID.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>A unique symmetric cache ID.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1773,9 +1857,10 @@ DEFAULT: false</li>
     <h4 class="phpdocumentor-element__name" id="method_listPublicKeys">
         listPublicKeys()
         <a href="classes/IMP-Pgp.html#method_listPublicKeys" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">374</span>
 
@@ -1787,12 +1872,15 @@ DEFAULT: false</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">listPublicKeys</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#method_listPublicKeys#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1803,15 +1891,17 @@ DEFAULT: false</li>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>All PGP public keys available.</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>All PGP public keys available.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1822,9 +1912,10 @@ DEFAULT: false</li>
     <h4 class="phpdocumentor-element__name" id="method_pgpPacketInformation">
         pgpPacketInformation()
         <a href="classes/IMP-Pgp.html#method_pgpPacketInformation" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">914</span>
 
@@ -1836,6 +1927,8 @@ DEFAULT: false</li>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">pgpPacketInformation</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pgpdata</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1852,10 +1945,11 @@ DEFAULT: false</li>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>An array with information on the PGP data block. If an
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array with information on the PGP data block. If an
 element is not present in the data block, it will
 likewise not be set in the array.</p>
 <pre class="prettyprint">
@@ -1896,7 +1990,8 @@ UID (e.g. revocation signatures and sub keys) will be stored under the
 special keyword '_SIGNATURE'.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1907,9 +2002,10 @@ special keyword '_SIGNATURE'.</p>
     <h4 class="phpdocumentor-element__name" id="method_pgpPacketSignature">
         pgpPacketSignature()
         <a href="classes/IMP-Pgp.html#method_pgpPacketSignature" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">940</span>
 
@@ -1922,6 +2018,8 @@ input.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">pgpPacketSignature</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pgpdata</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$email</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1947,10 +2045,11 @@ input.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>An array with information on the PGP data block. If an
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array with information on the PGP data block. If an
 element is not present in the data block, it will
 likewise not be set in the array. Array elements:</p>
 <ul>
@@ -1967,7 +2066,8 @@ likewise not be set in the array. Array elements:</p>
 </ul>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1978,9 +2078,10 @@ likewise not be set in the array. Array elements:</p>
     <h4 class="phpdocumentor-element__name" id="method_prettyKey">
         prettyKey()
         <a href="classes/IMP-Pgp.html#method_prettyKey" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">773</span>
 
@@ -1992,6 +2093,8 @@ likewise not be set in the array. Array elements:</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">prettyKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pgpdata</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2009,7 +2112,8 @@ likewise not be set in the array. Array elements:</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#method_prettyKey#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2020,15 +2124,17 @@ likewise not be set in the array. Array elements:</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Tabular information on the PGP key.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Tabular information on the PGP key.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2039,9 +2145,10 @@ likewise not be set in the array. Array elements:</p>
     <h4 class="phpdocumentor-element__name" id="method_publicKeyMimePart">
         publicKeyMimePart()
         <a href="classes/IMP-Pgp.html#method_publicKeyMimePart" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">715</span>
 
@@ -2054,17 +2161,21 @@ that contains the user&#039;s public key.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">publicKeyMimePart</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Mime_Part">Horde_Mime_Part</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Mime_Part">Horde_Mime_Part</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>See Horde_Crypt_Pgp::publicKeyMimePart().</p>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Mime_Part">Horde_Mime_Part</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>See Horde_Crypt_Pgp::publicKeyMimePart().</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2075,9 +2186,10 @@ that contains the user&#039;s public key.</p>
     <h4 class="phpdocumentor-element__name" id="method_sendToPublicKeyserver">
         sendToPublicKeyserver()
         <a href="classes/IMP-Pgp.html#method_sendToPublicKeyserver" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">409</span>
 
@@ -2089,6 +2201,8 @@ that contains the user&#039;s public key.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">sendToPublicKeyserver</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pubkey</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2106,7 +2220,8 @@ that contains the user&#039;s public key.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#method_sendToPublicKeyserver#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2117,12 +2232,8 @@ that contains the user&#039;s public key.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2134,9 +2245,10 @@ that contains the user&#039;s public key.</p>
     <h4 class="phpdocumentor-element__name" id="method_signAndEncryptMimePart">
         signAndEncryptMimePart()
         <a href="classes/IMP-Pgp.html#method_signAndEncryptMimePart" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">698</span>
 
@@ -2149,6 +2261,8 @@ parameters.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">signAndEncryptMimePart</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Mime_Part">Horde_Mime_Part</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mime_part</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Mail_Rfc822_List">Horde_Mail_Rfc822_List</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$addresses</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$symmetric</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Mime_Part">Horde_Mime_Part</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2189,7 +2303,8 @@ personal key.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#method_signAndEncryptMimePart#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2200,15 +2315,17 @@ personal key.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Mime_Part">Horde_Mime_Part</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>See Horde_Crypt_Pgp::signAndencryptMimePart().</p>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Mime_Part">Horde_Mime_Part</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>See Horde_Crypt_Pgp::signAndencryptMimePart().</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2219,9 +2336,10 @@ personal key.</p>
     <h4 class="phpdocumentor-element__name" id="method_signMimePart">
         signMimePart()
         <a href="classes/IMP-Pgp.html#method_signMimePart" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">653</span>
 
@@ -2233,6 +2351,8 @@ personal key.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">signMimePart</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Mime_Part">Horde_Mime_Part</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mime_part</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Mime_Part">Horde_Mime_Part</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2250,7 +2370,8 @@ personal key.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#method_signMimePart#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2261,15 +2382,17 @@ personal key.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Mime_Part">Horde_Mime_Part</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>See Horde_Crypt_Pgp::signMIMEPart().</p>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Mime_Part">Horde_Mime_Part</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>See Horde_Crypt_Pgp::signMIMEPart().</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2280,9 +2403,10 @@ personal key.</p>
     <h4 class="phpdocumentor-element__name" id="method_storePassphrase">
         storePassphrase()
         <a href="classes/IMP-Pgp.html#method_storePassphrase" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">544</span>
 
@@ -2294,6 +2418,8 @@ personal key.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">storePassphrase</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$passphrase</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2330,13 +2456,15 @@ stored passphrase.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns true if correct passphrase, false if incorrect.</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns true if correct passphrase, false if incorrect.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2347,9 +2475,10 @@ stored passphrase.</p>
     <h4 class="phpdocumentor-element__name" id="method_unsetPassphrase">
         unsetPassphrase()
         <a href="classes/IMP-Pgp.html#method_unsetPassphrase" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">571</span>
 
@@ -2361,6 +2490,8 @@ stored passphrase.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">unsetPassphrase</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2389,10 +2520,6 @@ are deleted.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2404,9 +2531,10 @@ are deleted.</p>
     <h4 class="phpdocumentor-element__name" id="method_verifySignature">
         verifySignature()
         <a href="classes/IMP-Pgp.html#method_verifySignature" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">426</span>
 
@@ -2418,6 +2546,8 @@ are deleted.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">verifySignature</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$address</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$signature</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$charset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2462,7 +2592,8 @@ are deleted.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#method_verifySignature#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2473,15 +2604,17 @@ are deleted.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>See Horde_Crypt_Pgp::decrypt().</p>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>See Horde_Crypt_Pgp::decrypt().</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2492,9 +2625,10 @@ are deleted.</p>
     <h4 class="phpdocumentor-element__name" id="method__encryptParameters">
         _encryptParameters()
         <a href="classes/IMP-Pgp.html#method__encryptParameters" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">624</span>
 
@@ -2506,6 +2640,8 @@ are deleted.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_encryptParameters</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Mail_Rfc822_List">Horde_Mail_Rfc822_List</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$addresses</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$symmetric</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2536,7 +2672,8 @@ personal key.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#method__encryptParameters#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2547,15 +2684,17 @@ personal key.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The list of parameters needed by encrypt().</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The list of parameters needed by encrypt().</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2566,9 +2705,10 @@ personal key.</p>
     <h4 class="phpdocumentor-element__name" id="method__keyserverList">
         _keyserverList()
         <a href="classes/IMP-Pgp.html#method__keyserverList" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">951</span>
 
@@ -2580,12 +2720,15 @@ personal key.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_keyserverList</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Pgp.html#method__keyserverList#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2596,15 +2739,17 @@ personal key.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>List of Horde_Crypt_Pgp_Keyserver objects.</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>List of Horde_Crypt_Pgp_Keyserver objects.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2615,9 +2760,10 @@ personal key.</p>
     <h4 class="phpdocumentor-element__name" id="method__signParameters">
         _signParameters()
         <a href="classes/IMP-Pgp.html#method__signParameters" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Pgp.php"><a href="files/pgp.html"><abbr title="Pgp.php">Pgp.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Pgp.php"><a href="files/lib-pgp.html"><abbr title="lib/Pgp.php">Pgp.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">602</span>
 
@@ -2629,84 +2775,195 @@ personal key.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_signParameters</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The list of parameters needed by encrypt().</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The list of parameters needed by encrypt().</p>
 </section>
 
-    
+            </section>
+
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/lib/Pgp.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/IMP-Pgp.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/IMP-Pgp.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/IMP-Pgp.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/IMP-Pgp.html#constant_ENCRYPT">ENCRYPT</a></li>
+                                                    <li><a href="classes/IMP-Pgp.html#constant_PUBKEY_FIELD">PUBKEY_FIELD</a></li>
+                                                    <li><a href="classes/IMP-Pgp.html#constant_SIGN">SIGN</a></li>
+                                                    <li><a href="classes/IMP-Pgp.html#constant_SIGNENC">SIGNENC</a></li>
+                                                    <li><a href="classes/IMP-Pgp.html#constant_SYM_ENCRYPT">SYM_ENCRYPT</a></li>
+                                                    <li><a href="classes/IMP-Pgp.html#constant_SYM_SIGNENC">SYM_SIGNENC</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/IMP-Pgp.html#property__pgp">$_pgp<a href="classes/IMP-Pgp.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/IMP-Pgp.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_addPersonalPrivateKey">addPersonalPrivateKey()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_addPersonalPublicKey">addPersonalPublicKey()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_addPublicKey">addPublicKey()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_decryptMessage">decryptMessage()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_deletePersonalKeys">deletePersonalKeys()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_deletePublicKey">deletePublicKey()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_enabled">enabled()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_encryptedSymmetrically">encryptedSymmetrically()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_encryptList">encryptList()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_encryptMimePart">encryptMimePart()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_generatePersonalKeys">generatePersonalKeys()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_getKeyIdString">getKeyIdString()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_getKeys">getKeys()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_getPassphrase">getPassphrase()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_getPersonalPrivateKey">getPersonalPrivateKey()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_getPersonalPublicKey">getPersonalPublicKey()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_getPublicKey">getPublicKey()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_getSymmetricId">getSymmetricId()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_listPublicKeys">listPublicKeys()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_pgpPacketInformation">pgpPacketInformation()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_pgpPacketSignature">pgpPacketSignature()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_prettyKey">prettyKey()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_publicKeyMimePart">publicKeyMimePart()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_sendToPublicKeyserver">sendToPublicKeyserver()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_signAndEncryptMimePart">signAndEncryptMimePart()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_signMimePart">signMimePart()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_storePassphrase">storePassphrase()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_unsetPassphrase">unsetPassphrase()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method_verifySignature">verifySignature()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method__encryptParameters">_encryptParameters()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method__keyserverList">_keyserverList()</a></li>
+                                            <li><a href="classes/IMP-Pgp.html#method__signParameters">_signParameters()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -2717,7 +2974,6 @@ personal key.</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/IMP-Pgp.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
