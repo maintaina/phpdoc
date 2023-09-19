@@ -1701,10 +1701,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Compose-Attachment.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Compose_Attachment\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Compose-Attachment.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Compose_Attachment\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/IMP-Compose-Attachment.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Compose_Attachment\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Compose-Attachment.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Compose_Attachment\u003A\u003A\u0024forceLinked",
             "name": "forceLinked",
@@ -3781,10 +3791,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Flag-Base.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Flag_Base\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Flag-Base.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Flag_Base\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/IMP-Flag-Base.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Flag_Base\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Flag-Base.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Flag_Base\u003A\u003ADEFAULT_BG",
             "name": "DEFAULT_BG",
@@ -4331,10 +4351,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Flag-User.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Flag_User\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Flag-User.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Flag_User\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/IMP-Flag-User.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Flag_User\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Flag-User.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Flag_User\u003A\u003A\u0024_canset",
             "name": "_canset",
@@ -4571,10 +4601,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Ftree-Account.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Ftree_Account\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Ftree-Account.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Ftree_Account\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/IMP-Ftree-Account.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Ftree_Account\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Ftree-Account.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Ftree_Account\u003A\u003AINIT",
             "name": "INIT",
@@ -4676,10 +4716,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Ftree-Eltdiff.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Ftree_Eltdiff\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Ftree-Eltdiff.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Ftree_Eltdiff\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/IMP-Ftree-Eltdiff.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Ftree_Eltdiff\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Ftree-Eltdiff.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Ftree_Eltdiff\u003A\u003AADD",
             "name": "ADD",
@@ -5536,10 +5586,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Imap-Cache-Wrapper.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Imap_Cache_Wrapper\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Imap-Cache-Wrapper.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Imap_Cache_Wrapper\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/IMP-Imap-Cache-Wrapper.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Imap_Cache_Wrapper\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Imap-Cache-Wrapper.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Imap_Cache_Wrapper\u003A\u003A\u0024backend",
             "name": "backend",
@@ -5586,10 +5646,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Imap-Config.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Imap_Config\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Imap-Config.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Imap_Config\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/IMP-Imap-Config.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Imap_Config\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Imap-Config.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Imap_Config\u003A\u003APASSWORDS_KEY",
             "name": "PASSWORDS_KEY",
@@ -5686,10 +5756,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Imap-Password.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Imap_Password\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Imap-Password.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Imap_Password\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/IMP-Imap-Password.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Imap_Password\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Imap-Password.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Imap_Password\u003A\u003APASSWORD_KEY",
             "name": "PASSWORD_KEY",
@@ -5891,10 +5971,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Imap.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Imap\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Imap.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Imap\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/IMP-Imap.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Imap\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Imap.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Imap\u003A\u003AACCESS_FOLDERS",
             "name": "ACCESS_FOLDERS",
@@ -7096,10 +7186,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Mailbox-SessionCache.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Mailbox_SessionCache\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Mailbox-SessionCache.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Mailbox_SessionCache\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/IMP-Mailbox-SessionCache.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Mailbox_SessionCache\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Mailbox-SessionCache.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Mailbox_SessionCache\u003A\u003ACHANGED_NO",
             "name": "CHANGED_NO",
@@ -10186,10 +10286,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Remote-Account.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Remote_Account\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Remote-Account.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Remote_Account\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "",
             "url": "classes/IMP-Remote-Account.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Remote_Account\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Remote-Account.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Remote_Account\u003A\u003AIMAP",
             "name": "IMAP",
@@ -10691,10 +10801,20 @@ Search.appendIndex(
             "summary": "Serialization.",
             "url": "classes/IMP-Search-Element.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Search_Element\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Search-Element.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Search_Element\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "Unserialization.",
             "url": "classes/IMP-Search-Element.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Search_Element\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Search-Element.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Search_Element\u003A\u003AVERSION",
             "name": "VERSION",
@@ -10750,6 +10870,11 @@ Search.appendIndex(
             "name": "unserialize",
             "summary": "",
             "url": "classes/IMP-Search-Filter-Builtin.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Search_Filter_Builtin\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Search-Filter-Builtin.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Search_Filter_Builtin\u003A\u003A\u0024_canEdit",
             "name": "_canEdit",
@@ -10911,10 +11036,20 @@ Search.appendIndex(
             "summary": "Serialization.",
             "url": "classes/IMP-Search-Query.html#method_serialize"
         },                {
+            "fqsen": "\\IMP_Search_Query\u003A\u003A__serialize\u0028\u0029",
+            "name": "__serialize",
+            "summary": "",
+            "url": "classes/IMP-Search-Query.html#method___serialize"
+        },                {
             "fqsen": "\\IMP_Search_Query\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
             "summary": "Unserialization.",
             "url": "classes/IMP-Search-Query.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Search_Query\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Search-Query.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Search_Query\u003A\u003AVERSION",
             "name": "VERSION",
@@ -10990,6 +11125,11 @@ Search.appendIndex(
             "name": "unserialize",
             "summary": "Unserialization.",
             "url": "classes/IMP-Search-Vfolder-Builtin.html#method_unserialize"
+        },                {
+            "fqsen": "\\IMP_Search_Vfolder_Builtin\u003A\u003A__unserialize\u0028\u0029",
+            "name": "__unserialize",
+            "summary": "",
+            "url": "classes/IMP-Search-Vfolder-Builtin.html#method___unserialize"
         },                {
             "fqsen": "\\IMP_Search_Vfolder_Builtin\u003A\u003A\u0024_canEdit",
             "name": "_canEdit",
