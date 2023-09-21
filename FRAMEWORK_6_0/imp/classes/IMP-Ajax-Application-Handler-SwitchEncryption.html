@@ -87,8 +87,11 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    IMP_Prefs_Special_SmimePublicKey
+    IMP_Ajax_Application_Handler_SwitchEncryption
 
+        <span class="phpdocumentor-element__extends">
+        extends <abbr title="\Horde_Core_Ajax_Application_Handler">Horde_Core_Ajax_Application_Handler</abbr>
+    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -97,9 +100,6 @@
                             </ul>
         </div>
     
-            <span class="phpdocumentor-element__implements">
-            implements
-                            <abbr title="\Horde_Core_Prefs_Ui_Special">Horde_Core_Prefs_Ui_Special</abbr>                    </span>
     
     </h2>
 
@@ -109,20 +109,19 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePublicKey.php"><a href="files/lib-prefs-special-smimepublickey.html"><abbr title="lib/Prefs/Special/SmimePublicKey.php">SmimePublicKey.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Ajax/Application/Handler/SwitchEncryption.php"><a href="files/lib-ajax-application-handler-switchencryption.html"><abbr title="lib/Ajax/Application/Handler/SwitchEncryption.php">SwitchEncryption.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Special prefs handling for the &#039;smimepublickey&#039; preference, the list of
-public certificates from the user&#039;s address book(s).</p>
+            <p class="phpdocumentor-summary">Defines AJAX actions used in the IMP alias dialog.</p>
 
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="classes/IMP-Prefs-Special-SmimePublicKey.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Ajax-Application-Handler-SwitchEncryption.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -131,7 +130,7 @@ public certificates from the user&#039;s address book(s).</p>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>Michael Slusarz <a href="mailto:slusarz@horde.org">slusarz@horde.org</a></p>
+                                                 <section class="phpdocumentor-description"><p>Rafael te Boekhorst <a href="mailto:boekhorst@b1-systems.de">boekhorst@b1-systems.de</a></p>
 </section>
 
                                     </dd>
@@ -168,19 +167,12 @@ public certificates from the user&#039;s address book(s).</p>
 
 <h3 id="toc">
     Table of Contents
-    <a href="classes/IMP-Prefs-Special-SmimePublicKey.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/IMP-Ajax-Application-Handler-SwitchEncryption.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h3>
 
 
 
-    <h4 id="toc-interfaces">
-        Interfaces
-        <a href="classes/IMP-Prefs-Special-SmimePublicKey.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Horde_Core_Prefs_Ui_Special">Horde_Core_Prefs_Ui_Special</abbr></dt>    </dl>
 
 
 
@@ -190,27 +182,23 @@ public certificates from the user&#039;s address book(s).</p>
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/IMP-Prefs-Special-SmimePublicKey.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/IMP-Ajax-Application-Handler-SwitchEncryption.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Prefs-Special-SmimePublicKey.html#method_display">display()</a>
+    <a href="classes/IMP-Ajax-Application-Handler-SwitchEncryption.html#method_getIdentityPubKey">getIdentityPubKey()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
+<dd>AJAX action: Get Keys from Identity of adressbook.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Prefs-Special-SmimePublicKey.html#method_init">init()</a>
+    <a href="classes/IMP-Ajax-Application-Handler-SwitchEncryption.html#method_getPubKeyInfos">getPubKeyInfos()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: string    </span>
 </dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Prefs-Special-SmimePublicKey.html#method_update">update()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
+<dd>AJAX action: Get Translated text wiht information.</dd>
 
     </dl>
 
@@ -224,7 +212,7 @@ public certificates from the user&#039;s address book(s).</p>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/IMP-Prefs-Special-SmimePublicKey.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/IMP-Ajax-Application-Handler-SwitchEncryption.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -233,40 +221,39 @@ public certificates from the user&#039;s address book(s).</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_display">
-        display()
-        <a href="classes/IMP-Prefs-Special-SmimePublicKey.html#method_display" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getIdentityPubKey">
+        getIdentityPubKey()
+        <a href="classes/IMP-Ajax-Application-Handler-SwitchEncryption.html#method_getIdentityPubKey" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePublicKey.php"><a href="files/lib-prefs-special-smimepublickey.html"><abbr title="lib/Prefs/Special/SmimePublicKey.php">SmimePublicKey.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Ajax/Application/Handler/SwitchEncryption.php"><a href="files/lib-ajax-application-handler-switchencryption.html"><abbr title="lib/Ajax/Application/Handler/SwitchEncryption.php">SwitchEncryption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">AJAX action: Get Keys from Identity of adressbook.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">display</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Core_Prefs_Ui">Horde_Core_Prefs_Ui</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ui</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">getIdentityPubKey</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$ui</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Core_Prefs_Ui">Horde_Core_Prefs_Ui</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
-    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Array with keys of identity.</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -274,81 +261,39 @@ public certificates from the user&#039;s address book(s).</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_init">
-        init()
-        <a href="classes/IMP-Prefs-Special-SmimePublicKey.html#method_init" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getPubKeyInfos">
+        getPubKeyInfos()
+        <a href="classes/IMP-Ajax-Application-Handler-SwitchEncryption.html#method_getPubKeyInfos" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePublicKey.php"><a href="files/lib-prefs-special-smimepublickey.html"><abbr title="lib/Prefs/Special/SmimePublicKey.php">SmimePublicKey.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Ajax/Application/Handler/SwitchEncryption.php"><a href="files/lib-ajax-application-handler-switchencryption.html"><abbr title="lib/Ajax/Application/Handler/SwitchEncryption.php">SwitchEncryption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">AJAX action: Get Translated text wiht information.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">init</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Core_Prefs_Ui">Horde_Core_Prefs_Ui</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ui</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">getPubKeyInfos</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$ui</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Core_Prefs_Ui">Horde_Core_Prefs_Ui</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_update">
-        update()
-        <a href="classes/IMP-Prefs-Special-SmimePublicKey.html#method_update" class="headerlink"><i class="fas fa-link"></i></a>
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Text with information concerning key-management.</p>
+</section>
 
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePublicKey.php"><a href="files/lib-prefs-special-smimepublickey.html"><abbr title="lib/Prefs/Special/SmimePublicKey.php">SmimePublicKey.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+            </section>
 
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">update</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Core_Prefs_Ui">Horde_Core_Prefs_Ui</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ui</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$ui</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Core_Prefs_Ui">Horde_Core_Prefs_Ui</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
 </article>
             </section>
 
@@ -356,7 +301,7 @@ public certificates from the user&#039;s address book(s).</p>
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/lib/Prefs/Special/SmimePublicKey.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/lib/Ajax/Application/Handler/SwitchEncryption.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -455,7 +400,7 @@ public certificates from the user&#039;s address book(s).</p>
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                <li><a href="classes/IMP-Prefs-Special-SmimePublicKey.html#toc-methods">Methods</a></li>
+                                                                                <li><a href="classes/IMP-Ajax-Application-Handler-SwitchEncryption.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
@@ -463,9 +408,8 @@ public certificates from the user&#039;s address book(s).</p>
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/IMP-Prefs-Special-SmimePublicKey.html#method_display">display()</a></li>
-                                            <li><a href="classes/IMP-Prefs-Special-SmimePublicKey.html#method_init">init()</a></li>
-                                            <li><a href="classes/IMP-Prefs-Special-SmimePublicKey.html#method_update">update()</a></li>
+                                            <li><a href="classes/IMP-Ajax-Application-Handler-SwitchEncryption.html#method_getIdentityPubKey">getIdentityPubKey()</a></li>
+                                            <li><a href="classes/IMP-Ajax-Application-Handler-SwitchEncryption.html#method_getPubKeyInfos">getPubKeyInfos()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -485,7 +429,7 @@ public certificates from the user&#039;s address book(s).</p>
     </section>
 </section>
         </div>
-        <a href="classes/IMP-Prefs-Special-SmimePublicKey.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/IMP-Ajax-Application-Handler-SwitchEncryption.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

@@ -195,6 +195,55 @@
 
 
 
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_identities">$identities</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Identities variable: set to true if the users loads the prefs page to set identities</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_identity">$identity</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Identity: class that holds methods to get information about the identities saved in the prefs table</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_smime">$smime</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Smime: class that holds the variable that interact with the database</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_smime_prefs_url">$smime_prefs_url</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Smime prefs url: generate the url for the prefs for smime</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_smime_url">$smime_url</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Smime url: generates the URL needed for the links to the SMIME keys</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_view">$view</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>View variable to share accross functions in this class, contains the ui?</dd>
+
+    </dl>
 
 <h4 id="toc-methods">
     Methods
@@ -207,6 +256,7 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
+<dd>Displays function of Horde_Core_Prefs_Ui, called after init()</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#method_init">init()</a>
@@ -220,6 +270,25 @@
                                 &nbsp;: mixed    </span>
 </dt>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#method_checkIdentityPageIsUsed">checkIdentityPageIsUsed()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#method_listExtraKeys">listExtraKeys()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>Function to list all extra keys</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#method_setUploadScripts">setUploadScripts()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
     </dl>
 
 
@@ -228,6 +297,217 @@
         
 
         
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_identities">
+        $identities
+        <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_identities" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePrivateKey.php"><a href="files/lib-prefs-special-smimeprivatekey.html"><abbr title="lib/Prefs/Special/SmimePrivateKey.php">SmimePrivateKey.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Identities variable: set to true if the users loads the prefs page to set identities</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$identities</span>
+     = <span class="phpdocumentor-signature__default-value">\false</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_identity">
+        $identity
+        <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_identity" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePrivateKey.php"><a href="files/lib-prefs-special-smimeprivatekey.html"><abbr title="lib/Prefs/Special/SmimePrivateKey.php">SmimePrivateKey.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">54</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Identity: class that holds methods to get information about the identities saved in the prefs table</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$identity</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_smime">
+        $smime
+        <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_smime" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePrivateKey.php"><a href="files/lib-prefs-special-smimeprivatekey.html"><abbr title="lib/Prefs/Special/SmimePrivateKey.php">SmimePrivateKey.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Smime: class that holds the variable that interact with the database</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$smime</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_smime_prefs_url">
+        $smime_prefs_url
+        <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_smime_prefs_url" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePrivateKey.php"><a href="files/lib-prefs-special-smimeprivatekey.html"><abbr title="lib/Prefs/Special/SmimePrivateKey.php">SmimePrivateKey.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Smime prefs url: generate the url for the prefs for smime</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$smime_prefs_url</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_smime_url">
+        $smime_url
+        <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_smime_url" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePrivateKey.php"><a href="files/lib-prefs-special-smimeprivatekey.html"><abbr title="lib/Prefs/Special/SmimePrivateKey.php">SmimePrivateKey.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">39</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Smime url: generates the URL needed for the links to the SMIME keys</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$smime_url</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_view">
+        $view
+        <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_view" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePrivateKey.php"><a href="files/lib-prefs-special-smimeprivatekey.html"><abbr title="lib/Prefs/Special/SmimePrivateKey.php">SmimePrivateKey.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">29</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">View variable to share accross functions in this class, contains the ui?</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$view</span>
+     = <span class="phpdocumentor-signature__default-value">\null</span></code>
+
+    
+    
+    
+
+</article>
+            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
@@ -249,14 +529,15 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePrivateKey.php"><a href="files/lib-prefs-special-smimeprivatekey.html"><abbr title="lib/Prefs/Special/SmimePrivateKey.php">SmimePrivateKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Displays function of Horde_Core_Prefs_Ui, called after init()</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">display</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Core_Prefs_Ui">Horde_Core_Prefs_Ui</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ui</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">display</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Core_Prefs_Ui">Horde_Core_Prefs_Ui</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ui</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identityID</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -267,6 +548,13 @@
                 <span class="phpdocumentor-signature__argument__name">$ui</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Core_Prefs_Ui">Horde_Core_Prefs_Ui</abbr></span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$identityID</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -290,7 +578,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePrivateKey.php"><a href="files/lib-prefs-special-smimeprivatekey.html"><abbr title="lib/Prefs/Special/SmimePrivateKey.php">SmimePrivateKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -331,7 +619,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePrivateKey.php"><a href="files/lib-prefs-special-smimeprivatekey.html"><abbr title="lib/Prefs/Special/SmimePrivateKey.php">SmimePrivateKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">359</span>
 
     </aside>
 
@@ -349,6 +637,137 @@
                 <span class="phpdocumentor-signature__argument__name">$ui</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Core_Prefs_Ui">Horde_Core_Prefs_Ui</abbr></span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_checkIdentityPageIsUsed">
+        checkIdentityPageIsUsed()
+        <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#method_checkIdentityPageIsUsed" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePrivateKey.php"><a href="files/lib-prefs-special-smimeprivatekey.html"><abbr title="lib/Prefs/Special/SmimePrivateKey.php">SmimePrivateKey.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">checkIdentityPageIsUsed</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Core_Prefs_Ui">Horde_Core_Prefs_Ui</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ui</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$ui</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Core_Prefs_Ui">Horde_Core_Prefs_Ui</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_listExtraKeys">
+        listExtraKeys()
+        <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#method_listExtraKeys" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePrivateKey.php"><a href="files/lib-prefs-special-smimeprivatekey.html"><abbr title="lib/Prefs/Special/SmimePrivateKey.php">SmimePrivateKey.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">108</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Function to list all extra keys</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">listExtraKeys</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identityID</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$identityID</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setUploadScripts">
+        setUploadScripts()
+        <a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#method_setUploadScripts" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Special/SmimePrivateKey.php"><a href="files/lib-prefs-special-smimeprivatekey.html"><abbr title="lib/Prefs/Special/SmimePrivateKey.php">SmimePrivateKey.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">84</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">setUploadScripts</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ui</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identityID</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$ui</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$identityID</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -463,10 +882,22 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                <li><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#toc-methods">Methods</a></li>
+                                                            <li><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_identities">$identities<a href="classes/IMP-Prefs-Special-SmimePrivateKey.html"></li>
+                                                    <li><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_identity">$identity<a href="classes/IMP-Prefs-Special-SmimePrivateKey.html"></li>
+                                                    <li><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_smime">$smime<a href="classes/IMP-Prefs-Special-SmimePrivateKey.html"></li>
+                                                    <li><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_smime_prefs_url">$smime_prefs_url<a href="classes/IMP-Prefs-Special-SmimePrivateKey.html"></li>
+                                                    <li><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_smime_url">$smime_url<a href="classes/IMP-Prefs-Special-SmimePrivateKey.html"></li>
+                                                    <li><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#property_view">$view<a href="classes/IMP-Prefs-Special-SmimePrivateKey.html"></li>
+                                            </ul>
+                </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
@@ -474,6 +905,9 @@
                                             <li><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#method_display">display()</a></li>
                                             <li><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#method_init">init()</a></li>
                                             <li><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#method_update">update()</a></li>
+                                            <li><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#method_checkIdentityPageIsUsed">checkIdentityPageIsUsed()</a></li>
+                                            <li><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#method_listExtraKeys">listExtraKeys()</a></li>
+                                            <li><a href="classes/IMP-Prefs-Special-SmimePrivateKey.html#method_setUploadScripts">setUploadScripts()</a></li>
                                     </ul>
             </li>
                     </ul>

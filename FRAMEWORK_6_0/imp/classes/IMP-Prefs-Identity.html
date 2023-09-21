@@ -111,7 +111,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -277,6 +277,20 @@ both from addresses and tie addreses.</dd>
 <dd>Returns the BCC addresses for a given identity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/IMP-Prefs-Identity.html#method_getEmail">getEmail()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Returns the email adress in a human readable form. Constructed from the Horde_Mail_Rfc822_Address object.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/IMP-Prefs-Identity.html#method_getEmailsOfIds">getEmailsOfIds()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Returns all email adress in a human readable form. Constructed from the Horde_Mail_Rfc822_Address object.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/IMP-Prefs-Identity.html#method_getFromAddress">getFromAddress()</a>
     <span>
                                 &nbsp;: <abbr title="\Horde_Mail_Rfc822_Address">Horde_Mail_Rfc822_Address</abbr>    </span>
@@ -424,7 +438,7 @@ first.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -434,7 +448,7 @@ first.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$_cached</span>
-     = <span class="phpdocumentor-signature__default-value">array(&#039;aliases&#039; =&gt; array(), &#039;from&#039; =&gt; array(), &#039;names&#039; =&gt; array(), &#039;signatures&#039; =&gt; array())</span></code>
+     = <span class="phpdocumentor-signature__default-value">[&#039;aliases&#039; =&gt; [], &#039;from&#039; =&gt; [], &#039;names&#039; =&gt; [], &#039;signatures&#039; =&gt; []]</span></code>
 
     
     
@@ -458,7 +472,7 @@ first.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -468,7 +482,7 @@ first.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$_impPrefs</span>
-     = <span class="phpdocumentor-signature__default-value">array(&#039;replyto_addr&#039;, &#039;alias_addr&#039;, &#039;tieto_addr&#039;, &#039;bcc_addr&#039;, &#039;signature&#039;, &#039;signature_html&#039;, &#039;save_sent_mail&#039;, \IMP_Mailbox::MBOX_SENT)</span></code>
+     = <span class="phpdocumentor-signature__default-value">[&#039;replyto_addr&#039;, &#039;alias_addr&#039;, &#039;tieto_addr&#039;, &#039;bcc_addr&#039;, &#039;signature&#039;, &#039;signature_html&#039;, &#039;save_sent_mail&#039;, \IMP_Mailbox::MBOX_SENT, &#039;smimeselect&#039;, &#039;privkey&#039;, &#039;privsignkey&#039;, &#039;pubkey&#039;, &#039;pubsignkey&#039;]</span></code>
 
     
     
@@ -497,7 +511,7 @@ first.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -555,7 +569,7 @@ a new identity from the standard values given in prefs.php.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">216</span>
+    <span class="phpdocumentor-element-found-in__line">248</span>
 
     </aside>
 
@@ -607,7 +621,7 @@ a new identity from the standard values given in prefs.php.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">252</span>
+    <span class="phpdocumentor-element-found-in__line">284</span>
 
     </aside>
 
@@ -647,7 +661,7 @@ a new identity from the standard values given in prefs.php.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">298</span>
+    <span class="phpdocumentor-element-found-in__line">330</span>
 
     </aside>
 
@@ -688,7 +702,7 @@ both from addresses and tie addreses.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">559</span>
+    <span class="phpdocumentor-element-found-in__line">594</span>
 
     </aside>
 
@@ -743,7 +757,7 @@ to the identity.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">464</span>
+    <span class="phpdocumentor-element-found-in__line">496</span>
 
     </aside>
 
@@ -795,7 +809,7 @@ to the identity.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">281</span>
+    <span class="phpdocumentor-element-found-in__line">313</span>
 
     </aside>
 
@@ -835,7 +849,7 @@ to the identity.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">327</span>
+    <span class="phpdocumentor-element-found-in__line">359</span>
 
     </aside>
 
@@ -879,6 +893,86 @@ to the identity.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getEmail">
+        getEmail()
+        <a href="classes/IMP-Prefs-Identity.html#method_getEmail" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">218</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the email adress in a human readable form. Constructed from the Horde_Mail_Rfc822_Address object.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getEmail</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>A humanreadale email-address.</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getEmailsOfIds">
+        getEmailsOfIds()
+        <a href="classes/IMP-Prefs-Identity.html#method_getEmailsOfIds" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">231</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns all email adress in a human readable form. Constructed from the Horde_Mail_Rfc822_Address object.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getEmailsOfIds</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array of humanreadale email-addresses (strings).</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getFromAddress">
         getFromAddress()
         <a href="classes/IMP-Prefs-Identity.html#method_getFromAddress" class="headerlink"><i class="fas fa-link"></i></a>
@@ -887,7 +981,7 @@ to the identity.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">181</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
@@ -941,7 +1035,7 @@ the specified maildomain.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">239</span>
+    <span class="phpdocumentor-element-found-in__line">271</span>
 
     </aside>
 
@@ -994,7 +1088,7 @@ from.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -1073,7 +1167,7 @@ preference is locked.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">386</span>
+    <span class="phpdocumentor-element-found-in__line">418</span>
 
     </aside>
 
@@ -1125,7 +1219,7 @@ preference is locked.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">344</span>
+    <span class="phpdocumentor-element-found-in__line">376</span>
 
     </aside>
 
@@ -1190,7 +1284,7 @@ null if none matches.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -1231,7 +1325,7 @@ box in the IMP compose window.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">411</span>
+    <span class="phpdocumentor-element-found-in__line">443</span>
 
     </aside>
 
@@ -1308,7 +1402,7 @@ signature itself, the dashes and the position.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">271</span>
+    <span class="phpdocumentor-element-found-in__line">303</span>
 
     </aside>
 
@@ -1361,7 +1455,7 @@ from.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">502</span>
+    <span class="phpdocumentor-element-found-in__line">534</span>
 
     </aside>
 
@@ -1425,7 +1519,7 @@ from.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">159</span>
+    <span class="phpdocumentor-element-found-in__line">160</span>
 
     </aside>
 
@@ -1479,7 +1573,7 @@ from.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">481</span>
+    <span class="phpdocumentor-element-found-in__line">513</span>
 
     </aside>
 
@@ -1532,7 +1626,7 @@ the compose pages.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -1563,7 +1657,7 @@ the compose pages.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">581</span>
+    <span class="phpdocumentor-element-found-in__line">616</span>
 
     </aside>
 
@@ -1615,7 +1709,7 @@ the compose pages.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">522</span>
+    <span class="phpdocumentor-element-found-in__line">554</span>
 
     </aside>
 
@@ -1686,7 +1780,7 @@ the compose pages.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -1745,7 +1839,7 @@ the compose pages.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Prefs/Identity.php"><a href="files/lib-prefs-identity.html"><abbr title="lib/Prefs/Identity.php">Identity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">312</span>
+    <span class="phpdocumentor-element-found-in__line">344</span>
 
     </aside>
 
@@ -1901,6 +1995,8 @@ first.</p>
                                             <li><a href="classes/IMP-Prefs-Identity.html#method_getAllSignatures">getAllSignatures()</a></li>
                                             <li><a href="classes/IMP-Prefs-Identity.html#method_getAllTieAddresses">getAllTieAddresses()</a></li>
                                             <li><a href="classes/IMP-Prefs-Identity.html#method_getBccAddresses">getBccAddresses()</a></li>
+                                            <li><a href="classes/IMP-Prefs-Identity.html#method_getEmail">getEmail()</a></li>
+                                            <li><a href="classes/IMP-Prefs-Identity.html#method_getEmailsOfIds">getEmailsOfIds()</a></li>
                                             <li><a href="classes/IMP-Prefs-Identity.html#method_getFromAddress">getFromAddress()</a></li>
                                             <li><a href="classes/IMP-Prefs-Identity.html#method_getFromAddresses">getFromAddresses()</a></li>
                                             <li><a href="classes/IMP-Prefs-Identity.html#method_getFromLine">getFromLine()</a></li>

@@ -81,6 +81,16 @@ Search.appendIndex(
             "summary": "Compose\u0020type.",
             "url": "classes/IMP-Ajax-Application-Compose.html#property__type"
         },                {
+            "fqsen": "\\IMP_Ajax_Application_Handler_Alias",
+            "name": "IMP_Ajax_Application_Handler_Alias",
+            "summary": "Defines\u0020AJAX\u0020actions\u0020used\u0020in\u0020the\u0020IMP\u0020alias\u0020dialog.",
+            "url": "classes/IMP-Ajax-Application-Handler-Alias.html"
+        },                {
+            "fqsen": "\\IMP_Ajax_Application_Handler_Alias\u003A\u003AcheckAlias\u0028\u0029",
+            "name": "checkAlias",
+            "summary": "AJAX\u0020action\u003A\u0020Check\u0020passphrase.",
+            "url": "classes/IMP-Ajax-Application-Handler-Alias.html#method_checkAlias"
+        },                {
             "fqsen": "\\IMP_Ajax_Application_Handler_Common",
             "name": "IMP_Ajax_Application_Handler_Common",
             "summary": "Defines\u0020common\u0020\u0028i.e.\u0020used\u0020in\u0020dynamic\u0020and\u0020smartmobile\u0020views\u0029\u0020AJAX\u0020actions\nused\u0020in\u0020IMP.",
@@ -496,6 +506,21 @@ Search.appendIndex(
             "summary": "AJAX\u0020action\u003A\u0020Send\u0020message.",
             "url": "classes/IMP-Ajax-Application-Handler-Smartmobile.html#method_smartmobileSendMessage"
         },                {
+            "fqsen": "\\IMP_Ajax_Application_Handler_SwitchEncryption",
+            "name": "IMP_Ajax_Application_Handler_SwitchEncryption",
+            "summary": "Defines\u0020AJAX\u0020actions\u0020used\u0020in\u0020the\u0020IMP\u0020alias\u0020dialog.",
+            "url": "classes/IMP-Ajax-Application-Handler-SwitchEncryption.html"
+        },                {
+            "fqsen": "\\IMP_Ajax_Application_Handler_SwitchEncryption\u003A\u003AgetIdentityPubKey\u0028\u0029",
+            "name": "getIdentityPubKey",
+            "summary": "AJAX\u0020action\u003A\u0020Get\u0020Keys\u0020from\u0020Identity\u0020of\u0020adressbook.",
+            "url": "classes/IMP-Ajax-Application-Handler-SwitchEncryption.html#method_getIdentityPubKey"
+        },                {
+            "fqsen": "\\IMP_Ajax_Application_Handler_SwitchEncryption\u003A\u003AgetPubKeyInfos\u0028\u0029",
+            "name": "getPubKeyInfos",
+            "summary": "AJAX\u0020action\u003A\u0020Get\u0020Translated\u0020text\u0020wiht\u0020information.",
+            "url": "classes/IMP-Ajax-Application-Handler-SwitchEncryption.html#method_getPubKeyInfos"
+        },                {
             "fqsen": "\\IMP_Ajax_Application_ListMessages",
             "name": "IMP_Ajax_Application_ListMessages",
             "summary": "Message\u0020listing\u0020action\u0020for\u0020AJAX\u0020application\u0020handler.",
@@ -650,6 +675,26 @@ Search.appendIndex(
             "name": "queue",
             "summary": "Queue\u0020object.",
             "url": "classes/IMP-Ajax-Application.html#property_queue"
+        },                {
+            "fqsen": "\\IMP_Ajax_Imple_AliasDialog",
+            "name": "IMP_Ajax_Imple_AliasDialog",
+            "summary": "Attach\u0020the\u0020passphrase\u0020dialog\u0020to\u0020the\u0020page.",
+            "url": "classes/IMP-Ajax-Imple-AliasDialog.html"
+        },                {
+            "fqsen": "\\IMP_Ajax_Imple_AliasDialog\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/IMP-Ajax-Imple-AliasDialog.html#method___construct"
+        },                {
+            "fqsen": "\\IMP_Ajax_Imple_AliasDialog\u003A\u003A_attach\u0028\u0029",
+            "name": "_attach",
+            "summary": "",
+            "url": "classes/IMP-Ajax-Imple-AliasDialog.html#method__attach"
+        },                {
+            "fqsen": "\\IMP_Ajax_Imple_AliasDialog\u003A\u003A_handle\u0028\u0029",
+            "name": "_handle",
+            "summary": "",
+            "url": "classes/IMP-Ajax-Imple-AliasDialog.html#method__handle"
         },                {
             "fqsen": "\\IMP_Ajax_Imple_ImportEncryptKey",
             "name": "IMP_Ajax_Imple_ImportEncryptKey",
@@ -1270,6 +1315,11 @@ Search.appendIndex(
             "name": "_smime",
             "summary": "",
             "url": "classes/IMP-Basic-Smime.html#property__smime"
+        },                {
+            "fqsen": "\\IMP_Basic_Smime\u003A\u003A\u0024_identity",
+            "name": "_identity",
+            "summary": "",
+            "url": "classes/IMP-Basic-Smime.html#property__identity"
         },                {
             "fqsen": "\\IMP_Basic_Thread",
             "name": "IMP_Basic_Thread",
@@ -9431,6 +9481,16 @@ Search.appendIndex(
             "summary": "Returns\u0020the\u0020from\u0020address\u0020based\u0020on\u0020the\u0020chosen\u0020identity.\u0020If\u0020no\naddress\u0020can\u0020be\u0020found\u0020it\u0020is\u0020built\u0020from\u0020the\u0020current\u0020user\u0020name\u0020and\nthe\u0020specified\u0020maildomain.",
             "url": "classes/IMP-Prefs-Identity.html#method_getFromAddress"
         },                {
+            "fqsen": "\\IMP_Prefs_Identity\u003A\u003AgetEmail\u0028\u0029",
+            "name": "getEmail",
+            "summary": "Returns\u0020the\u0020email\u0020adress\u0020in\u0020a\u0020human\u0020readable\u0020form.\u0020Constructed\u0020from\u0020the\u0020Horde_Mail_Rfc822_Address\u0020object.",
+            "url": "classes/IMP-Prefs-Identity.html#method_getEmail"
+        },                {
+            "fqsen": "\\IMP_Prefs_Identity\u003A\u003AgetEmailsOfIds\u0028\u0029",
+            "name": "getEmailsOfIds",
+            "summary": "Returns\u0020all\u0020email\u0020adress\u0020in\u0020a\u0020human\u0020readable\u0020form.\u0020Constructed\u0020from\u0020the\u0020Horde_Mail_Rfc822_Address\u0020object.",
+            "url": "classes/IMP-Prefs-Identity.html#method_getEmailsOfIds"
+        },                {
             "fqsen": "\\IMP_Prefs_Identity\u003A\u003AgetAliasAddress\u0028\u0029",
             "name": "getAliasAddress",
             "summary": "Returns\u0020all\u0020aliases\u0020based\u0020on\u0020the\u0020chosen\u0020identity.",
@@ -10026,6 +10086,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Prefs-Special-Sentmail.html#method_update"
         },                {
+            "fqsen": "\\IMP_Prefs_Special_SmimeAliasHandler",
+            "name": "IMP_Prefs_Special_SmimeAliasHandler",
+            "summary": "Handler\u0020that\u0020passes\u0020Alias\u0020options\u0020to\u0020the\u0020SmimePrivateKey\u0020Class",
+            "url": "classes/IMP-Prefs-Special-SmimeAliasHandler.html"
+        },                {
+            "fqsen": "\\IMP_Prefs_Special_SmimeAliasHandler\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/IMP-Prefs-Special-SmimeAliasHandler.html#method_handle"
+        },                {
+            "fqsen": "\\IMP_Prefs_Special_SmimeIdentities",
+            "name": "IMP_Prefs_Special_SmimeIdentities",
+            "summary": "Special\u0020prefs\u0020handling\u0020to\u0020give\u0020information\u0020on\u0020which\u0020identity\u0020is\u0020currenlty\u0020set.\u0020This\u0020is\u0020for\u0020the\u0020SMIME\u0020prefs\u0020section.",
+            "url": "classes/IMP-Prefs-Special-SmimeIdentities.html"
+        },                {
+            "fqsen": "\\IMP_Prefs_Special_SmimeIdentities\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/IMP-Prefs-Special-SmimeIdentities.html#method_init"
+        },                {
+            "fqsen": "\\IMP_Prefs_Special_SmimeIdentities\u003A\u003Adisplay\u0028\u0029",
+            "name": "display",
+            "summary": "",
+            "url": "classes/IMP-Prefs-Special-SmimeIdentities.html#method_display"
+        },                {
+            "fqsen": "\\IMP_Prefs_Special_SmimeIdentities\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/IMP-Prefs-Special-SmimeIdentities.html#method_update"
+        },                {
             "fqsen": "\\IMP_Prefs_Special_SmimePrivateKey",
             "name": "IMP_Prefs_Special_SmimePrivateKey",
             "summary": "Special\u0020prefs\u0020handling\u0020for\u0020the\u0020\u0027smimeprivatekey\u0027\u0020preference.",
@@ -10036,15 +10126,60 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Prefs-Special-SmimePrivateKey.html#method_init"
         },                {
+            "fqsen": "\\IMP_Prefs_Special_SmimePrivateKey\u003A\u003AcheckIdentityPageIsUsed\u0028\u0029",
+            "name": "checkIdentityPageIsUsed",
+            "summary": "",
+            "url": "classes/IMP-Prefs-Special-SmimePrivateKey.html#method_checkIdentityPageIsUsed"
+        },                {
+            "fqsen": "\\IMP_Prefs_Special_SmimePrivateKey\u003A\u003AsetUploadScripts\u0028\u0029",
+            "name": "setUploadScripts",
+            "summary": "",
+            "url": "classes/IMP-Prefs-Special-SmimePrivateKey.html#method_setUploadScripts"
+        },                {
+            "fqsen": "\\IMP_Prefs_Special_SmimePrivateKey\u003A\u003AlistExtraKeys\u0028\u0029",
+            "name": "listExtraKeys",
+            "summary": "Function\u0020to\u0020list\u0020all\u0020extra\u0020keys",
+            "url": "classes/IMP-Prefs-Special-SmimePrivateKey.html#method_listExtraKeys"
+        },                {
             "fqsen": "\\IMP_Prefs_Special_SmimePrivateKey\u003A\u003Adisplay\u0028\u0029",
             "name": "display",
-            "summary": "",
+            "summary": "Displays\u0020function\u0020of\u0020Horde_Core_Prefs_Ui,\u0020called\u0020after\u0020init\u0028\u0029",
             "url": "classes/IMP-Prefs-Special-SmimePrivateKey.html#method_display"
         },                {
             "fqsen": "\\IMP_Prefs_Special_SmimePrivateKey\u003A\u003Aupdate\u0028\u0029",
             "name": "update",
             "summary": "",
             "url": "classes/IMP-Prefs-Special-SmimePrivateKey.html#method_update"
+        },                {
+            "fqsen": "\\IMP_Prefs_Special_SmimePrivateKey\u003A\u003A\u0024view",
+            "name": "view",
+            "summary": "View\u0020variable\u0020to\u0020share\u0020accross\u0020functions\u0020in\u0020this\u0020class,\u0020contains\u0020the\u0020ui\u003F",
+            "url": "classes/IMP-Prefs-Special-SmimePrivateKey.html#property_view"
+        },                {
+            "fqsen": "\\IMP_Prefs_Special_SmimePrivateKey\u003A\u003A\u0024identities",
+            "name": "identities",
+            "summary": "Identities\u0020variable\u003A\u0020set\u0020to\u0020true\u0020if\u0020the\u0020users\u0020loads\u0020the\u0020prefs\u0020page\u0020to\u0020set\u0020identities",
+            "url": "classes/IMP-Prefs-Special-SmimePrivateKey.html#property_identities"
+        },                {
+            "fqsen": "\\IMP_Prefs_Special_SmimePrivateKey\u003A\u003A\u0024smime_url",
+            "name": "smime_url",
+            "summary": "Smime\u0020url\u003A\u0020generates\u0020the\u0020URL\u0020needed\u0020for\u0020the\u0020links\u0020to\u0020the\u0020SMIME\u0020keys",
+            "url": "classes/IMP-Prefs-Special-SmimePrivateKey.html#property_smime_url"
+        },                {
+            "fqsen": "\\IMP_Prefs_Special_SmimePrivateKey\u003A\u003A\u0024smime_prefs_url",
+            "name": "smime_prefs_url",
+            "summary": "Smime\u0020prefs\u0020url\u003A\u0020generate\u0020the\u0020url\u0020for\u0020the\u0020prefs\u0020for\u0020smime",
+            "url": "classes/IMP-Prefs-Special-SmimePrivateKey.html#property_smime_prefs_url"
+        },                {
+            "fqsen": "\\IMP_Prefs_Special_SmimePrivateKey\u003A\u003A\u0024smime",
+            "name": "smime",
+            "summary": "Smime\u003A\u0020class\u0020that\u0020holds\u0020the\u0020variable\u0020that\u0020interact\u0020with\u0020the\u0020database",
+            "url": "classes/IMP-Prefs-Special-SmimePrivateKey.html#property_smime"
+        },                {
+            "fqsen": "\\IMP_Prefs_Special_SmimePrivateKey\u003A\u003A\u0024identity",
+            "name": "identity",
+            "summary": "Identity\u003A\u0020class\u0020that\u0020holds\u0020methods\u0020to\u0020get\u0020information\u0020about\u0020the\u0020identities\u0020saved\u0020in\u0020the\u0020prefs\u0020table",
+            "url": "classes/IMP-Prefs-Special-SmimePrivateKey.html#property_identity"
         },                {
             "fqsen": "\\IMP_Prefs_Special_SmimePublicKey",
             "name": "IMP_Prefs_Special_SmimePublicKey",
@@ -10160,6 +10295,16 @@ Search.appendIndex(
             "name": "update",
             "summary": "",
             "url": "classes/IMP-Prefs-Special-Trash.html#method_update"
+        },                {
+            "fqsen": "\\IMP_Prefs_SwitchHandler",
+            "name": "IMP_Prefs_SwitchHandler",
+            "summary": "",
+            "url": "classes/IMP-Prefs-SwitchHandler.html"
+        },                {
+            "fqsen": "\\IMP_Prefs_SwitchHandler\u003A\u003AgetPublicKeysForPrefsIdentities\u0028\u0029",
+            "name": "getPublicKeysForPrefsIdentities",
+            "summary": "gets\u0020the\u0020keys\u0020form\u0020the\u0020address\u0020book\u0020for\u0020the\u0020prefs\u0020identity\u0020frontend",
+            "url": "classes/IMP-Prefs-SwitchHandler.html#method_getPublicKeysForPrefsIdentities"
         },                {
             "fqsen": "\\IMP_Quota_Hook",
             "name": "IMP_Quota_Hook",
@@ -11646,6 +11791,11 @@ Search.appendIndex(
             "summary": "Adds\u0020the\u0020personal\u0020private\u0020key\u0020to\u0020the\u0020prefs.",
             "url": "classes/IMP-Smime.html#method_addPersonalPrivateKey"
         },                {
+            "fqsen": "\\IMP_Smime\u003A\u003AaddExtraPersonalKeys\u0028\u0029",
+            "name": "addExtraPersonalKeys",
+            "summary": "Adds\u0020extra\u0020personal\u0020keys\u0020to\u0020the\u0020extra\u0020keys\u0020table.",
+            "url": "classes/IMP-Smime.html#method_addExtraPersonalKeys"
+        },                {
             "fqsen": "\\IMP_Smime\u003A\u003AaddAdditionalCert\u0028\u0029",
             "name": "addAdditionalCert",
             "summary": "Adds\u0020a\u0020list\u0020of\u0020additional\u0020certs\u0020to\u0020the\u0020prefs.",
@@ -11661,6 +11811,66 @@ Search.appendIndex(
             "summary": "Returns\u0020the\u0020personal\u0020private\u0020key\u0020from\u0020the\u0020prefs.",
             "url": "classes/IMP-Smime.html#method_getPersonalPrivateKey"
         },                {
+            "fqsen": "\\IMP_Smime\u003A\u003AgetExtraPublicKey\u0028\u0029",
+            "name": "getExtraPublicKey",
+            "summary": "Retrieves\u0020a\u0020specific\u0020public\u0020key\u0020from\u0020the\u0020extrakeys\u0020table\u0020or\u0020throws\u0020an\u0020exception.",
+            "url": "classes/IMP-Smime.html#method_getExtraPublicKey"
+        },                {
+            "fqsen": "\\IMP_Smime\u003A\u003AgetExtraPrivateKey\u0028\u0029",
+            "name": "getExtraPrivateKey",
+            "summary": "Retrieves\u0020a\u0020specific\u0020private\u0020key\u0020from\u0020the\u0020extrakeys\u0020table.",
+            "url": "classes/IMP-Smime.html#method_getExtraPrivateKey"
+        },                {
+            "fqsen": "\\IMP_Smime\u003A\u003AgetSetPrivateKeyId\u0028\u0029",
+            "name": "getSetPrivateKeyId",
+            "summary": "Get\u0020private\u0020key\u0020id\u0020of\u0020the\u0020set\u0020Personal\u0020Certificate\u0020\u0028if\u0020it\u0020exists\u0020in\u0020the\u0020database\u0029",
+            "url": "classes/IMP-Smime.html#method_getSetPrivateKeyId"
+        },                {
+            "fqsen": "\\IMP_Smime\u003A\u003AprivateKeyExists\u0028\u0029",
+            "name": "privateKeyExists",
+            "summary": "Check\u0020if\u0020the\u0020private\u0020keys\u0020allready\u0020exist.",
+            "url": "classes/IMP-Smime.html#method_privateKeyExists"
+        },                {
+            "fqsen": "\\IMP_Smime\u003A\u003AlistAllKeys\u0028\u0029",
+            "name": "listAllKeys",
+            "summary": "Retrieves\u0020all\u0020public\u0020and\u0020private\u0020keys\u0020and\u0020their\u0020aliases\u0020from\u0020imp_smime_extrakeys\u0020table.",
+            "url": "classes/IMP-Smime.html#method_listAllKeys"
+        },                {
+            "fqsen": "\\IMP_Smime\u003A\u003AlistPrivateKeyIds\u0028\u0029",
+            "name": "listPrivateKeyIds",
+            "summary": "Retrieves\u0020all\u0020private\u0020key\u0020ids\u0020from\u0020imp_smime_extrakeys\u0020table.",
+            "url": "classes/IMP-Smime.html#method_listPrivateKeyIds"
+        },                {
+            "fqsen": "\\IMP_Smime\u003A\u003AupdateAlias\u0028\u0029",
+            "name": "updateAlias",
+            "summary": "Setting\u0020an\u0020alias\u0020in\u0020the\u0020database",
+            "url": "classes/IMP-Smime.html#method_updateAlias"
+        },                {
+            "fqsen": "\\IMP_Smime\u003A\u003AgetAlias\u0028\u0029",
+            "name": "getAlias",
+            "summary": "Getting\u0020an\u0020alias\u0020from\u0020the\u0020database",
+            "url": "classes/IMP-Smime.html#method_getAlias"
+        },                {
+            "fqsen": "\\IMP_Smime\u003A\u003AsetSmimePersonal\u0028\u0029",
+            "name": "setSmimePersonal",
+            "summary": "Setting\u0020a\u0020new\u0020Personal\u0020Certificate\u0020and\u0020belonging\u0020Public\u0020Certificate\u003A\nTransfers\u0020a\u0020Certificate\u0020and\u0020belonging\u0020Public\u0020Certificate\u0020from\u0020the\u0020Extra\u0020Keys\u0020table\u0020to\u0020Horde_Prefs",
+            "url": "classes/IMP-Smime.html#method_setSmimePersonal"
+        },                {
+            "fqsen": "\\IMP_Smime\u003A\u003AsetSmimeSecondary\u0028\u0029",
+            "name": "setSmimeSecondary",
+            "summary": "Setting\u0020a\u0020new\u0020certificate\u0020for\u0020signing\u0020SMIME\u0020mails",
+            "url": "classes/IMP-Smime.html#method_setSmimeSecondary"
+        },                {
+            "fqsen": "\\IMP_Smime\u003A\u003AunsetSmimePersonal\u0028\u0029",
+            "name": "unsetSmimePersonal",
+            "summary": "Unsetting\u0020a\u0020Personal\u0020Certificate\u0020and\u0020belonging\u0020Public\u0020Certificate\u003A\nTransfers\u0020a\u0020Personal\u0020Certificate\u0020and\u0020belonging\u0020Public\u0020Certificate\u0020to\u0020the\u0020Extra\u0020Keys\u0020table\u0020in\u0020the\u0020DB",
+            "url": "classes/IMP-Smime.html#method_unsetSmimePersonal"
+        },                {
+            "fqsen": "\\IMP_Smime\u003A\u003AunsetSmimeSecondary\u0028\u0029",
+            "name": "unsetSmimeSecondary",
+            "summary": "Unsetting\u0020a\u0020Certificate\u0020for\u0020Singing\u0020and\u0020transerfing\u0020it\u0020to\u0020extra\u0020tables",
+            "url": "classes/IMP-Smime.html#method_unsetSmimeSecondary"
+        },                {
             "fqsen": "\\IMP_Smime\u003A\u003AgetAdditionalCert\u0028\u0029",
             "name": "getAdditionalCert",
             "summary": "Returns\u0020any\u0020additional\u0020certificates\u0020from\u0020the\u0020prefs.",
@@ -11670,6 +11880,11 @@ Search.appendIndex(
             "name": "deletePersonalKeys",
             "summary": "Deletes\u0020the\u0020specified\u0020personal\u0020keys\u0020from\u0020the\u0020prefs.",
             "url": "classes/IMP-Smime.html#method_deletePersonalKeys"
+        },                {
+            "fqsen": "\\IMP_Smime\u003A\u003AdeleteExtraKey\u0028\u0029",
+            "name": "deleteExtraKey",
+            "summary": "Deletes\u0020the\u0020specified\u0020extra\u0020keys\u0020from\u0020the\u0020extra\u002Dkeys\u002Dtable.",
+            "url": "classes/IMP-Smime.html#method_deleteExtraKey"
         },                {
             "fqsen": "\\IMP_Smime\u003A\u003AaddPublicKey\u0028\u0029",
             "name": "addPublicKey",
@@ -11806,10 +12021,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/IMP-Smime.html#constant_KEY_SECONDARY_OR_PRIMARY"
         },                {
+            "fqsen": "\\IMP_Smime\u003A\u003A\u0024defaultIdentity",
+            "name": "defaultIdentity",
+            "summary": "",
+            "url": "classes/IMP-Smime.html#property_defaultIdentity"
+        },                {
             "fqsen": "\\IMP_Smime\u003A\u003A\u0024_smime",
             "name": "_smime",
             "summary": "S\/MIME\u0020object.",
             "url": "classes/IMP-Smime.html#property__smime"
+        },                {
+            "fqsen": "\\IMP_Smime\u003A\u003A\u0024_db",
+            "name": "_db",
+            "summary": "Handle\u0020for\u0020the\u0020current\u0020database\u0020connection.",
+            "url": "classes/IMP-Smime.html#property__db"
         },                {
             "fqsen": "\\IMP_Spam_Base",
             "name": "IMP_Spam_Base",
