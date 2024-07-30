@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/horde.html" class="">Horde</a>
@@ -67,7 +67,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -97,14 +97,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -147,6 +147,15 @@
 
             <p class="phpdocumentor-summary">Cache storage implementation using Horde_Session.</p>
 
+            <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                <p>Use Horde_Prefs_Cache_HordeCache with the
+Horde_Core_Cache_Session driver instead.</p>
+
+            </article>
+        </div>
+    
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -183,16 +192,6 @@
 
                                     </dd>
                                                 <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">deprecated</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Use Horde_Prefs_Cache_HordeCache with the
-Horde_Core_Cache_Session driver instead.</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">license</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
@@ -202,6 +201,8 @@ Horde_Core_Cache_Session driver instead.</p>
 
                                     </dd>
                                             </dl>
+
+
 
 
 
@@ -224,7 +225,7 @@ Horde_Core_Cache_Session driver instead.</p>
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/Horde-Core-Prefs-Cache-Session.html#constant_SESS_KEY">SESS_KEY</a>
+    <a class="" href="classes/Horde-Core-Prefs-Cache-Session.html#constant_SESS_KEY">SESS_KEY</a>
     <span>
         &nbsp;= &#039;prefs_cache/&#039;                            </span>
 </dt>
@@ -240,25 +241,24 @@ Horde_Core_Cache_Session driver instead.</p>
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Core-Prefs-Cache-Session.html#method_get">get()</a>
+    <a class="" href="classes/Horde-Core-Prefs-Cache-Session.html#method_get">get()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Core-Prefs-Cache-Session.html#method_remove">remove()</a>
+    <a class="" href="classes/Horde-Core-Prefs-Cache-Session.html#method_remove">remove()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-Core-Prefs-Cache-Session.html#method_store">store()</a>
+    <a class="" href="classes/Horde-Core-Prefs-Cache-Session.html#method_store">store()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -284,6 +284,7 @@ Horde_Core_Cache_Session driver instead.</p>
     </aside>
 
     
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -294,6 +295,8 @@ Horde_Core_Cache_Session driver instead.</p>
 
     
     
+    
+
     
 
 </article>
@@ -333,6 +336,7 @@ Horde_Core_Cache_Session driver instead.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -343,6 +347,8 @@ Horde_Core_Cache_Session driver instead.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -374,6 +380,7 @@ Horde_Core_Cache_Session driver instead.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -384,6 +391,8 @@ Horde_Core_Cache_Session driver instead.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -415,6 +424,7 @@ Horde_Core_Cache_Session driver instead.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -425,6 +435,8 @@ Horde_Core_Cache_Session driver instead.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -542,7 +554,7 @@ Horde_Core_Cache_Session driver instead.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Horde-Core-Prefs-Cache-Session.html#constant_SESS_KEY">SESS_KEY</a></li>
+                                                    <li class=""><a href="classes/Horde-Core-Prefs-Cache-Session.html#constant_SESS_KEY">SESS_KEY</a></li>
                                             </ul>
                 </li>
             
@@ -550,9 +562,9 @@ Horde_Core_Cache_Session driver instead.</p>
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Horde-Core-Prefs-Cache-Session.html#method_get">get()</a></li>
-                                            <li><a href="classes/Horde-Core-Prefs-Cache-Session.html#method_remove">remove()</a></li>
-                                            <li><a href="classes/Horde-Core-Prefs-Cache-Session.html#method_store">store()</a></li>
+                                            <li class=""><a href="classes/Horde-Core-Prefs-Cache-Session.html#method_get">get()</a></li>
+                                            <li class=""><a href="classes/Horde-Core-Prefs-Cache-Session.html#method_remove">remove()</a></li>
+                                            <li class=""><a href="classes/Horde-Core-Prefs-Cache-Session.html#method_store">store()</a></li>
                                     </ul>
             </li>
                     </ul>

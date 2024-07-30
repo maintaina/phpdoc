@@ -1803,12 +1803,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Core_Ajax_Imple_WeatherLocationAutoCompleter_Metar\u003A\u003A_getAutoCompleter\u0028\u0029",
             "name": "_getAutoCompleter",
-            "summary": "",
+            "summary": "Get\u0020the\u0020autocompleter\u0020object\u0020to\u0020use\u0020on\u0020the\u0020browser.",
             "url": "classes/Horde-Core-Ajax-Imple-WeatherLocationAutoCompleter-Metar.html#method__getAutoCompleter"
         },                {
             "fqsen": "\\Horde_Core_Ajax_Imple_WeatherLocationAutoCompleter_Metar\u003A\u003A_handleAutoCompleter\u0028\u0029",
             "name": "_handleAutoCompleter",
-            "summary": "",
+            "summary": "Do\u0020the\u0020auto\u002Dcompletion\u0020on\u0020the\u0020server.",
             "url": "classes/Horde-Core-Ajax-Imple-WeatherLocationAutoCompleter-Metar.html#method__handleAutoCompleter"
         },                {
             "fqsen": "\\Horde_Core_Ajax_Imple_WeatherLocationAutoCompleter_Weather",
@@ -1818,12 +1818,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Horde_Core_Ajax_Imple_WeatherLocationAutoCompleter_Weather\u003A\u003A_getAutoCompleter\u0028\u0029",
             "name": "_getAutoCompleter",
-            "summary": "",
+            "summary": "Get\u0020the\u0020autocompleter\u0020object\u0020to\u0020use\u0020on\u0020the\u0020browser.",
             "url": "classes/Horde-Core-Ajax-Imple-WeatherLocationAutoCompleter-Weather.html#method__getAutoCompleter"
         },                {
             "fqsen": "\\Horde_Core_Ajax_Imple_WeatherLocationAutoCompleter_Weather\u003A\u003A_handleAutoCompleter\u0028\u0029",
             "name": "_handleAutoCompleter",
-            "summary": "",
+            "summary": "Do\u0020the\u0020auto\u002Dcompletion\u0020on\u0020the\u0020server.",
             "url": "classes/Horde-Core-Ajax-Imple-WeatherLocationAutoCompleter-Weather.html#method__handleAutoCompleter"
         },                {
             "fqsen": "\\Horde_Core_Ajax_Imple_WeatherLocationAutoCompleter",
@@ -7791,6 +7791,16 @@ Search.appendIndex(
             "summary": "Catch\u0020fatal\u0020errors.",
             "url": "classes/Horde-ErrorHandler.html#method_catchFatalError"
         },                {
+            "fqsen": "\\Horde_ErrorHandler\u003A\u003AgetHtmlForError\u0028\u0029",
+            "name": "getHtmlForError",
+            "summary": "Returns\u0020html\u0020for\u0020an\u0020error",
+            "url": "classes/Horde-ErrorHandler.html#method_getHtmlForError"
+        },                {
+            "fqsen": "\\Horde_ErrorHandler\u003A\u003AgetErrorDetailsAsHtml\u0028\u0029",
+            "name": "getErrorDetailsAsHtml",
+            "summary": "Get\u0020the\u0020details\u0020of\u0020an\u0020error\u0020as\u0020html.\u0020This\u0020should\u0020usually\u0020only\u0020be\u0020output\u0020to\u0020admin\u0020users",
+            "url": "classes/Horde-ErrorHandler.html#method_getErrorDetailsAsHtml"
+        },                {
             "fqsen": "\\Horde_Exception_AuthenticationFailure",
             "name": "Horde_Exception_AuthenticationFailure",
             "summary": "This\u0020exception\u0020is\u0020used\u0020to\u0020indicate\u0020a\u0020fatal\u0020authentication\u0020error.",
@@ -10491,6 +10501,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Horde-Core-Middleware-AppFinder.html#property_registry"
         },                {
+            "fqsen": "\\Horde\\Core\\Middleware\\AppFinder\u003A\u003A\u0024responseFactory",
+            "name": "responseFactory",
+            "summary": "",
+            "url": "classes/Horde-Core-Middleware-AppFinder.html#property_responseFactory"
+        },                {
+            "fqsen": "\\Horde\\Core\\Middleware\\AppFinder\u003A\u003A\u0024streamFactory",
+            "name": "streamFactory",
+            "summary": "",
+            "url": "classes/Horde-Core-Middleware-AppFinder.html#property_streamFactory"
+        },                {
             "fqsen": "\\Horde\\Core\\Middleware\\AppRouter",
             "name": "AppRouter",
             "summary": "AppRouter\u0020middleware",
@@ -10686,10 +10706,45 @@ Search.appendIndex(
             "summary": "ErrorFilter\u0020middleware",
             "url": "classes/Horde-Core-Middleware-ErrorFilter.html"
         },                {
+            "fqsen": "\\Horde\\Core\\Middleware\\ErrorFilter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Horde-Core-Middleware-ErrorFilter.html#method___construct"
+        },                {
             "fqsen": "\\Horde\\Core\\Middleware\\ErrorFilter\u003A\u003Aprocess\u0028\u0029",
             "name": "process",
             "summary": "",
             "url": "classes/Horde-Core-Middleware-ErrorFilter.html#method_process"
+        },                {
+            "fqsen": "\\Horde\\Core\\Middleware\\ErrorFilter\u003A\u003AgetErrorResponse\u0028\u0029",
+            "name": "getErrorResponse",
+            "summary": "",
+            "url": "classes/Horde-Core-Middleware-ErrorFilter.html#method_getErrorResponse"
+        },                {
+            "fqsen": "\\Horde\\Core\\Middleware\\ErrorFilter\u003A\u003AgetJsonResponse\u0028\u0029",
+            "name": "getJsonResponse",
+            "summary": "",
+            "url": "classes/Horde-Core-Middleware-ErrorFilter.html#method_getJsonResponse"
+        },                {
+            "fqsen": "\\Horde\\Core\\Middleware\\ErrorFilter\u003A\u003AgetHtmlResponse\u0028\u0029",
+            "name": "getHtmlResponse",
+            "summary": "",
+            "url": "classes/Horde-Core-Middleware-ErrorFilter.html#method_getHtmlResponse"
+        },                {
+            "fqsen": "\\Horde\\Core\\Middleware\\ErrorFilter\u003A\u003A\u0024registry",
+            "name": "registry",
+            "summary": "",
+            "url": "classes/Horde-Core-Middleware-ErrorFilter.html#property_registry"
+        },                {
+            "fqsen": "\\Horde\\Core\\Middleware\\ErrorFilter\u003A\u003A\u0024responseFactory",
+            "name": "responseFactory",
+            "summary": "",
+            "url": "classes/Horde-Core-Middleware-ErrorFilter.html#property_responseFactory"
+        },                {
+            "fqsen": "\\Horde\\Core\\Middleware\\ErrorFilter\u003A\u003A\u0024streamFactory",
+            "name": "streamFactory",
+            "summary": "",
+            "url": "classes/Horde-Core-Middleware-ErrorFilter.html#property_streamFactory"
         },                {
             "fqsen": "\\Horde\\Core\\Middleware\\H5Controller",
             "name": "H5Controller",
