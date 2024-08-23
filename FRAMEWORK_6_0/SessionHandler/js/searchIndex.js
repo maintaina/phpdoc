@@ -541,6 +541,11 @@ Search.appendIndex(
             "summary": "Get\u0020a\u0020list\u0020of\u0020the\u0020valid\u0020session\u0020identifiers.",
             "url": "classes/Horde-SessionHandler-Storage.html#method_getSessionIDs"
         },                {
+            "fqsen": "\\Horde_SessionHandler_Storage\u003A\u003AisValidSessionID\u0028\u0029",
+            "name": "isValidSessionID",
+            "summary": "Validate\u0020a\u0020session\u0020id\u0020against\u0020the\u0020schema\u0020mentioned\u0020in\u0020the\u0020PHP\u0020manual\u0020page\u0020for\u0020session_id\u0028\u0029",
+            "url": "classes/Horde-SessionHandler-Storage.html#method_isValidSessionID"
+        },                {
             "fqsen": "\\Horde_SessionHandler_Storage\u003A\u003A\u0024readonly",
             "name": "readonly",
             "summary": "Access\u0020session\u0020read\u002Donly\u003F",
