@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,8 +53,21 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/horde.html" class="">Horde</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-dns.html" class="">Dns</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -71,21 +85,22 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="packages/horde.html">horde</a></li>
     </ul>
 
@@ -93,101 +108,177 @@
         <h2 class="phpdocumentor-content__title">dns</h2>
 
         
+<h3 id="toc">
+    Table of Contents
+    <a href="packages/horde-dns.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
 </h3>
 
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-DNS-Backend.html"><abbr title="\Horde_DNS_Backend">Horde_DNS_Backend</abbr></a></dt>
-        <dd>The interface defining the functions for the available backends</dd>
-    
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Bind9.html"><abbr title="\Horde_DNS_Bind9">Horde_DNS_Bind9</abbr></a></dt>
-        <dd>The Bind9 backend of the DNS service
-TODO: Only usable for a SLES12 server (paths change for every distribution)! For later usage it is recommended to read the file path from the named.conf-file to avoid inconsistencies.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Backend-Mock.html"><abbr title="\Horde_DNS_Backend_Mock">Horde_DNS_Backend_Mock</abbr></a></dt>
-        <dd>The Mock backend of the DNS service for testing purposes
-TODO: Needs content</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Backend-Rdo-RecordEntity.html"><abbr title="\Horde_DNS_Backend_Rdo_RecordEntity">Horde_DNS_Backend_Rdo_RecordEntity</abbr></a></dt>
-        <dd>The Record RDO Entity</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Backend-Rdo-RecordMapper.html"><abbr title="\Horde_DNS_Backend_Rdo_RecordMapper">Horde_DNS_Backend_Rdo_RecordMapper</abbr></a></dt>
-        <dd>The Record RDO Mapper</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Backend-Rdo-ZoneEntity.html"><abbr title="\Horde_DNS_Backend_Rdo_ZoneEntity">Horde_DNS_Backend_Rdo_ZoneEntity</abbr></a></dt>
-        <dd>The Zone RDO Entity</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Backend-Rdo-ZoneMapper.html"><abbr title="\Horde_DNS_Backend_Rdo_ZoneMapper">Horde_DNS_Backend_Rdo_ZoneMapper</abbr></a></dt>
-        <dd>The Zone RDO Mapper</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Backend-Rdo.html"><abbr title="\Horde_DNS_Backend_Rdo">Horde_DNS_Backend_Rdo</abbr></a></dt>
-        <dd>The RDO backend of the DNS service
-TODO: Needs Refactoring</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Backend-Route53.html"><abbr title="\Horde_DNS_Backend_Route53">Horde_DNS_Backend_Route53</abbr></a></dt>
-        <dd>The AWS backend of the DNS service
-NOTE: works only with aws-cli installed</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Changeset-Entity.html"><abbr title="\Horde_DNS_Changeset_Entity">Horde_DNS_Changeset_Entity</abbr></a></dt>
-        <dd>The Changeset Entity
-NOTE: It is Rdo specific, maybe include in the regular Rdo update process of the record?</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Changeset-Manager.html"><abbr title="\Horde_DNS_Changeset_Manager">Horde_DNS_Changeset_Manager</abbr></a></dt>
-        <dd>The Changeset Manager
-NOTE: It is Rdo specific, maybe include in the regular Rdo update process of the record?</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Changeset-Mapper.html"><abbr title="\Horde_DNS_Changeset_Mapper">Horde_DNS_Changeset_Mapper</abbr></a></dt>
-        <dd>The Changeset Mapper
-NOTE: It is Rdo specific, maybe include in the regular Rdo update process of the record?</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Factory-Lock.html"><abbr title="\Horde_DNS_Factory_Lock">Horde_DNS_Factory_Lock</abbr></a></dt>
-        <dd>Factory Lock
-NOTE: I don&#039;t think this is necessary anymore as this factory isn&#039;t used</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Factory-Manager.html"><abbr title="\Horde_DNS_Factory_Manager">Horde_DNS_Factory_Manager</abbr></a></dt>
-        <dd>Factory Mapper
-NOTE: I don&#039;t think this is necessary anymore as this factory isn&#039;t used</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Factory-Mapper.html"><abbr title="\Horde_DNS_Factory_Mapper">Horde_DNS_Factory_Mapper</abbr></a></dt>
-        <dd>Factory Manager
-NOTE: I don&#039;t think this is necessary anymore as this factory isn&#039;t used</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Manager.html"><abbr title="\Horde_DNS_Manager">Horde_DNS_Manager</abbr></a></dt>
-        <dd>The old and outdated Manager
+
+
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="packages/horde-dns.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Horde-DNS-Backend.html"><abbr title="\Horde_DNS_Backend">Horde_DNS_Backend</abbr></a></dt><dd>The interface defining the functions for the available backends</dd>    </dl>
+
+    <h4 id="toc-classes">
+        Classes
+        <a href="packages/horde-dns.html#toc-classes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Bind9.html"><abbr title="\Horde_DNS_Bind9">Horde_DNS_Bind9</abbr></a></dt><dd>The Bind9 backend of the DNS service
+TODO: Only usable for a SLES12 server (paths change for every distribution)! For later usage it is recommended to read the file path from the named.conf-file to avoid inconsistencies.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Backend-Mock.html"><abbr title="\Horde_DNS_Backend_Mock">Horde_DNS_Backend_Mock</abbr></a></dt><dd>The Mock backend of the DNS service for testing purposes
+TODO: Needs content</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Backend-Rdo-RecordEntity.html"><abbr title="\Horde_DNS_Backend_Rdo_RecordEntity">Horde_DNS_Backend_Rdo_RecordEntity</abbr></a></dt><dd>The Record RDO Entity</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Backend-Rdo-RecordMapper.html"><abbr title="\Horde_DNS_Backend_Rdo_RecordMapper">Horde_DNS_Backend_Rdo_RecordMapper</abbr></a></dt><dd>The Record RDO Mapper</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Backend-Rdo-ZoneEntity.html"><abbr title="\Horde_DNS_Backend_Rdo_ZoneEntity">Horde_DNS_Backend_Rdo_ZoneEntity</abbr></a></dt><dd>The Zone RDO Entity</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Backend-Rdo-ZoneMapper.html"><abbr title="\Horde_DNS_Backend_Rdo_ZoneMapper">Horde_DNS_Backend_Rdo_ZoneMapper</abbr></a></dt><dd>The Zone RDO Mapper</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Backend-Rdo.html"><abbr title="\Horde_DNS_Backend_Rdo">Horde_DNS_Backend_Rdo</abbr></a></dt><dd>The RDO backend of the DNS service
+TODO: Needs Refactoring</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Backend-Route53.html"><abbr title="\Horde_DNS_Backend_Route53">Horde_DNS_Backend_Route53</abbr></a></dt><dd>The AWS backend of the DNS service
+NOTE: works only with aws-cli installed</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Changeset-Entity.html"><abbr title="\Horde_DNS_Changeset_Entity">Horde_DNS_Changeset_Entity</abbr></a></dt><dd>The Changeset Entity
+NOTE: It is Rdo specific, maybe include in the regular Rdo update process of the record?</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Changeset-Manager.html"><abbr title="\Horde_DNS_Changeset_Manager">Horde_DNS_Changeset_Manager</abbr></a></dt><dd>The Changeset Manager
+NOTE: It is Rdo specific, maybe include in the regular Rdo update process of the record?</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Changeset-Mapper.html"><abbr title="\Horde_DNS_Changeset_Mapper">Horde_DNS_Changeset_Mapper</abbr></a></dt><dd>The Changeset Mapper
+NOTE: It is Rdo specific, maybe include in the regular Rdo update process of the record?</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Factory-Lock.html"><abbr title="\Horde_DNS_Factory_Lock">Horde_DNS_Factory_Lock</abbr></a></dt><dd>Factory Lock
+NOTE: I don&#039;t think this is necessary anymore as this factory isn&#039;t used</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Factory-Manager.html"><abbr title="\Horde_DNS_Factory_Manager">Horde_DNS_Factory_Manager</abbr></a></dt><dd>Factory Mapper
+NOTE: I don&#039;t think this is necessary anymore as this factory isn&#039;t used</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Factory-Mapper.html"><abbr title="\Horde_DNS_Factory_Mapper">Horde_DNS_Factory_Mapper</abbr></a></dt><dd>Factory Manager
+NOTE: I don&#039;t think this is necessary anymore as this factory isn&#039;t used</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Manager.html"><abbr title="\Horde_DNS_Manager">Horde_DNS_Manager</abbr></a></dt><dd>The old and outdated Manager
 TODO: Cut it out, check if something is required before
-No need for additional comments here</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Record-Entity.html"><abbr title="\Horde_DNS_Record_Entity">Horde_DNS_Record_Entity</abbr></a></dt>
-        <dd>The old Record Entity
-NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Record-Manager.html"><abbr title="\Horde_DNS_Record_Manager">Horde_DNS_Record_Manager</abbr></a></dt>
-        <dd>The old Record Manager
-NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Record-Mapper.html"><abbr title="\Horde_DNS_Record_Mapper">Horde_DNS_Record_Mapper</abbr></a></dt>
-        <dd>The old Record Mapper
-NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Record-Mock.html"><abbr title="\Horde_DNS_Record_Mock">Horde_DNS_Record_Mock</abbr></a></dt>
-        <dd>The old Record Mock
-NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Record.html"><abbr title="\Horde_DNS_Record">Horde_DNS_Record</abbr></a></dt>
-        <dd>A DNS Record with all required attributes, but no backend handling
-This is mostly a data object which holds attributes encapsulated behind sanity-checked setters</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Zone-Entity.html"><abbr title="\Horde_DNS_Zone_Entity">Horde_DNS_Zone_Entity</abbr></a></dt>
-        <dd>The old Zone Entity
-NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Zone-Manager.html"><abbr title="\Horde_DNS_Zone_Manager">Horde_DNS_Zone_Manager</abbr></a></dt>
-        <dd>The old Zone Manager
-NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Zone-Mapper.html"><abbr title="\Horde_DNS_Zone_Mapper">Horde_DNS_Zone_Mapper</abbr></a></dt>
-        <dd>The old Zone Mapper
-NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Record-Mock.html"><abbr title="\Horde_DNS_Record_Mock">Horde_DNS_Record_Mock</abbr></a></dt>
-        <dd>The old Zone Mock
-NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Zone.html"><abbr title="\Horde_DNS_Zone">Horde_DNS_Zone</abbr></a></dt>
-        <dd>A DNS Zone with all required attributes, but no backend handling
-This is mostly a data object which holds attributes encapsulated behind sanity-checked setters</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS.html"><abbr title="\Horde_DNS">Horde_DNS</abbr></a></dt>
-        <dd>The wrapper function to call the available functions on a given backend</dd>
-    
-    
-    </dl>
+No need for additional comments here</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Record-Entity.html"><abbr title="\Horde_DNS_Record_Entity">Horde_DNS_Record_Entity</abbr></a></dt><dd>The old Record Entity
+NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Record-Manager.html"><abbr title="\Horde_DNS_Record_Manager">Horde_DNS_Record_Manager</abbr></a></dt><dd>The old Record Manager
+NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Record-Mapper.html"><abbr title="\Horde_DNS_Record_Mapper">Horde_DNS_Record_Mapper</abbr></a></dt><dd>The old Record Mapper
+NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Record-Mock.html"><abbr title="\Horde_DNS_Record_Mock">Horde_DNS_Record_Mock</abbr></a></dt><dd>The old Record Mock
+NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Record.html"><abbr title="\Horde_DNS_Record">Horde_DNS_Record</abbr></a></dt><dd>A DNS Record with all required attributes, but no backend handling
+This is mostly a data object which holds attributes encapsulated behind sanity-checked setters</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Zone-Entity.html"><abbr title="\Horde_DNS_Zone_Entity">Horde_DNS_Zone_Entity</abbr></a></dt><dd>The old Zone Entity
+NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Zone-Manager.html"><abbr title="\Horde_DNS_Zone_Manager">Horde_DNS_Zone_Manager</abbr></a></dt><dd>The old Zone Manager
+NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Zone-Mapper.html"><abbr title="\Horde_DNS_Zone_Mapper">Horde_DNS_Zone_Mapper</abbr></a></dt><dd>The old Zone Mapper
+NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Record-Mock.html"><abbr title="\Horde_DNS_Record_Mock">Horde_DNS_Record_Mock</abbr></a></dt><dd>The old Zone Mock
+NOTE: I don&#039;t think this is necessary anymore as this rdo class isn&#039;t used</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS-Zone.html"><abbr title="\Horde_DNS_Zone">Horde_DNS_Zone</abbr></a></dt><dd>A DNS Zone with all required attributes, but no backend handling
+This is mostly a data object which holds attributes encapsulated behind sanity-checked setters</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Horde-DNS.html"><abbr title="\Horde_DNS">Horde_DNS</abbr></a></dt><dd>The wrapper function to call the available functions on a given backend</dd>    </dl>
+
+
+
+
+
 
 
 
         
 
         
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
+
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
+
+                    var xhr = new XMLHttpRequest();
+
+                    xhr.open('GET', src, true);
+
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+                            Prism.highlightElement(code);
+                            return;
+                        }
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
+                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
+                    }
+                    modal.classList.add("phpdocumentor-modal__open");
+
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
+                    });
+                });
+            });
+        })();
+    </script>
+
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                            
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                                                    <li><a href="packages/horde-dns.html#toc-interfaces">Interfaces</a></li>
+                                                                <li><a href="packages/horde-dns.html#toc-classes">Classes</a></li>
+                                                                                                                    </ul>
+            </li>
+
+            
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -198,7 +289,6 @@ This is mostly a data object which holds attributes encapsulated behind sanity-c
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="packages/horde-dns.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

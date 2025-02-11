@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,8 +53,21 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/horde.html" class="">Horde</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/horde-dns.html" class="">Dns</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -71,23 +85,22 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="packages/horde.html">horde</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="packages/horde-dns.html">dns</a></li>
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
     </ul>
 
     <article class="phpdocumentor-element -class">
@@ -106,8 +119,13 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/DNS/Backend/Rdo.php"><a href="files/horde-dns-backend-rdo.html"><abbr title="Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/DNS/Backend/Rdo.php"><a href="files/lib-horde-dns-backend-rdo.html"><abbr title="lib/Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">16</span>
 
@@ -116,6 +134,7 @@
             <p class="phpdocumentor-summary">The RDO backend of the DNS service
 TODO: Needs Refactoring</p>
 
+
     <section class="phpdocumentor-description"><p>See the enclosed file LICENSE for license information (LGPL). If you
 did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </section>
@@ -123,7 +142,8 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Horde-DNS-Backend-Rdo.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -153,8 +173,7 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 </section>
 
                                     </dd>
-                        </dl>
-
+                                            </dl>
 
 
 
@@ -162,26 +181,47 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Horde-DNS-Backend-Rdo.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Horde-DNS-Backend-Rdo.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-DNS-Backend-Rdo.html#property__rm">$_rm</a>
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Horde-DNS-Backend-Rdo.html#property__rm">$_rm</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
 <dd>The mapper variables</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Horde-DNS-Backend-Rdo.html#property__zm">$_zm</a>
+    <a class="" href="classes/Horde-DNS-Backend-Rdo.html#property__zm">$_zm</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-DNS-Backend-Rdo.html#method___construct">__construct()</a>
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Horde-DNS-Backend-Rdo.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Horde-DNS-Backend-Rdo.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -189,14 +229,14 @@ did not receive this file, see http://www.horde.org/licenses/lgpl21.</p>
 Sets the Mapper for the Record and the Zone</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-DNS-Backend-Rdo.html#method_addRecord">addRecord()</a>
+    <a class="" href="classes/Horde-DNS-Backend-Rdo.html#method_addRecord">addRecord()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Adds a record to the RDO backend</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-DNS-Backend-Rdo.html#method_addZone">addZone()</a>
+    <a class="" href="classes/Horde-DNS-Backend-Rdo.html#method_addZone">addZone()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -206,27 +246,27 @@ TODO: Zones with the same name should not exist (as records are added to the fir
 TODO: Add a full array instead of a zone or do the validation checks somewhere else</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-DNS-Backend-Rdo.html#method_deleteRecord">deleteRecord()</a>
+    <a class="" href="classes/Horde-DNS-Backend-Rdo.html#method_deleteRecord">deleteRecord()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Deletes a record from the RDO backend</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-DNS-Backend-Rdo.html#method_deleteZone">deleteZone()</a>
+    <a class="" href="classes/Horde-DNS-Backend-Rdo.html#method_deleteZone">deleteZone()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Deletes a zone from the RDO backend</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Horde-DNS-Backend-Rdo.html#method_updateRecord">updateRecord()</a>
+    <a class="" href="classes/Horde-DNS-Backend-Rdo.html#method_updateRecord">updateRecord()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Updates a record in the RDO backend</dd>
 
-        </dl>
+    </dl>
 
 
 
@@ -237,6 +277,7 @@ TODO: Add a full array instead of a zone or do the validation checks somewhere e
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/Horde-DNS-Backend-Rdo.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -248,11 +289,12 @@ TODO: Add a full array instead of a zone or do the validation checks somewhere e
     <h4 class="phpdocumentor-element__name" id="property__rm">
         $_rm
         <a href="classes/Horde-DNS-Backend-Rdo.html#property__rm" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/DNS/Backend/Rdo.php"><a href="files/horde-dns-backend-rdo.html"><abbr title="Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/DNS/Backend/Rdo.php"><a href="files/lib-horde-dns-backend-rdo.html"><abbr title="lib/Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">21</span>
 
@@ -260,6 +302,7 @@ TODO: Add a full array instead of a zone or do the validation checks somewhere e
 
         <p class="phpdocumentor-summary">The mapper variables</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -267,7 +310,8 @@ TODO: Add a full array instead of a zone or do the validation checks somewhere e
     </code>
 
     
-        <section class="phpdocumentor-description"></section>
+    
+    
 
     
 
@@ -282,16 +326,18 @@ TODO: Add a full array instead of a zone or do the validation checks somewhere e
     <h4 class="phpdocumentor-element__name" id="property__zm">
         $_zm
         <a href="classes/Horde-DNS-Backend-Rdo.html#property__zm" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/DNS/Backend/Rdo.php"><a href="files/horde-dns-backend-rdo.html"><abbr title="Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/DNS/Backend/Rdo.php"><a href="files/lib-horde-dns-backend-rdo.html"><abbr title="lib/Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
+    
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
@@ -299,9 +345,9 @@ TODO: Add a full array instead of a zone or do the validation checks somewhere e
     <span class="phpdocumentor-signature__name">$_zm</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
+    
+    
+    
 
     
 
@@ -312,6 +358,7 @@ TODO: Add a full array instead of a zone or do the validation checks somewhere e
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Horde-DNS-Backend-Rdo.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -322,9 +369,10 @@ TODO: Add a full array instead of a zone or do the validation checks somewhere e
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/Horde-DNS-Backend-Rdo.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/DNS/Backend/Rdo.php"><a href="files/horde-dns-backend-rdo.html"><abbr title="Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/DNS/Backend/Rdo.php"><a href="files/lib-horde-dns-backend-rdo.html"><abbr title="lib/Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">30</span>
 
@@ -337,6 +385,9 @@ Sets the Mapper for the Record and the Zone</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Rdo_Factory">Horde_Rdo_Factory</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$factory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -353,10 +404,8 @@ Sets the Mapper for the Record and the Zone</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
+    
+
     
 </article>
                     <article
@@ -368,9 +417,10 @@ Sets the Mapper for the Record and the Zone</p>
     <h4 class="phpdocumentor-element__name" id="method_addRecord">
         addRecord()
         <a href="classes/Horde-DNS-Backend-Rdo.html#method_addRecord" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/DNS/Backend/Rdo.php"><a href="files/horde-dns-backend-rdo.html"><abbr title="Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/DNS/Backend/Rdo.php"><a href="files/lib-horde-dns-backend-rdo.html"><abbr title="lib/Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">163</span>
 
@@ -382,6 +432,9 @@ Sets the Mapper for the Record and the Zone</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">addRecord</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-DNS-Record.html"><abbr title="\Horde_DNS_Record">Horde_DNS_Record</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$record</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -399,10 +452,8 @@ TODO: Add a full array instead of a record or do the validation checks somewhere
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
+    
+
     
 </article>
                     <article
@@ -414,9 +465,10 @@ TODO: Add a full array instead of a record or do the validation checks somewhere
     <h4 class="phpdocumentor-element__name" id="method_addZone">
         addZone()
         <a href="classes/Horde-DNS-Backend-Rdo.html#method_addZone" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/DNS/Backend/Rdo.php"><a href="files/horde-dns-backend-rdo.html"><abbr title="Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/DNS/Backend/Rdo.php"><a href="files/lib-horde-dns-backend-rdo.html"><abbr title="lib/Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">44</span>
 
@@ -431,6 +483,9 @@ TODO: Add a full array instead of a zone or do the validation checks somewhere e
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">addZone</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-DNS-Zone.html"><abbr title="\Horde_DNS_Zone">Horde_DNS_Zone</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$zone</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -447,10 +502,8 @@ TODO: Add a full array instead of a zone or do the validation checks somewhere e
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
+    
+
     
 </article>
                     <article
@@ -462,9 +515,10 @@ TODO: Add a full array instead of a zone or do the validation checks somewhere e
     <h4 class="phpdocumentor-element__name" id="method_deleteRecord">
         deleteRecord()
         <a href="classes/Horde-DNS-Backend-Rdo.html#method_deleteRecord" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/DNS/Backend/Rdo.php"><a href="files/horde-dns-backend-rdo.html"><abbr title="Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/DNS/Backend/Rdo.php"><a href="files/lib-horde-dns-backend-rdo.html"><abbr title="lib/Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">210</span>
 
@@ -476,6 +530,9 @@ TODO: Add a full array instead of a zone or do the validation checks somewhere e
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deleteRecord</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-DNS-Record.html"><abbr title="\Horde_DNS_Record">Horde_DNS_Record</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$record</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -493,10 +550,8 @@ TODO: Use the record_id instead of the full Horde_DNS_Record</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
+    
+
     
 </article>
                     <article
@@ -508,9 +563,10 @@ TODO: Use the record_id instead of the full Horde_DNS_Record</p>
     <h4 class="phpdocumentor-element__name" id="method_deleteZone">
         deleteZone()
         <a href="classes/Horde-DNS-Backend-Rdo.html#method_deleteZone" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/DNS/Backend/Rdo.php"><a href="files/horde-dns-backend-rdo.html"><abbr title="Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/DNS/Backend/Rdo.php"><a href="files/lib-horde-dns-backend-rdo.html"><abbr title="lib/Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">84</span>
 
@@ -522,6 +578,9 @@ TODO: Use the record_id instead of the full Horde_DNS_Record</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deleteZone</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-DNS-Zone.html"><abbr title="\Horde_DNS_Zone">Horde_DNS_Zone</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$zone</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -539,10 +598,8 @@ TODO: Use the zone_id instead of the full Horde_DNS_zone</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
+    
+
     
 </article>
                     <article
@@ -554,9 +611,10 @@ TODO: Use the zone_id instead of the full Horde_DNS_zone</p>
     <h4 class="phpdocumentor-element__name" id="method_updateRecord">
         updateRecord()
         <a href="classes/Horde-DNS-Backend-Rdo.html#method_updateRecord" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Horde/DNS/Backend/Rdo.php"><a href="files/horde-dns-backend-rdo.html"><abbr title="Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Horde/DNS/Backend/Rdo.php"><a href="files/lib-horde-dns-backend-rdo.html"><abbr title="lib/Horde/DNS/Backend/Rdo.php">Rdo.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">127</span>
 
@@ -568,6 +626,9 @@ TODO: Use the zone_id instead of the full Horde_DNS_zone</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">updateRecord</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Horde-DNS-Record.html"><abbr title="\Horde_DNS_Record">Horde_DNS_Record</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$record</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -585,78 +646,145 @@ TODO: Use record_id instead of the full Horde_DNS_Record</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
+    
+
     
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/lib/Horde/DNS/Backend/Rdo.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/Horde-DNS-Backend-Rdo.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Horde-DNS-Backend-Rdo.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Horde-DNS-Backend-Rdo.html#property__rm">$_rm</a></li>
+                                                    <li class=""><a href="classes/Horde-DNS-Backend-Rdo.html#property__zm">$_zm</a></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Horde-DNS-Backend-Rdo.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Horde-DNS-Backend-Rdo.html#method_addRecord">addRecord()</a></li>
+                                            <li class=""><a href="classes/Horde-DNS-Backend-Rdo.html#method_addZone">addZone()</a></li>
+                                            <li class=""><a href="classes/Horde-DNS-Backend-Rdo.html#method_deleteRecord">deleteRecord()</a></li>
+                                            <li class=""><a href="classes/Horde-DNS-Backend-Rdo.html#method_deleteZone">deleteZone()</a></li>
+                                            <li class=""><a href="classes/Horde-DNS-Backend-Rdo.html#method_updateRecord">updateRecord()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -667,7 +795,6 @@ TODO: Use record_id instead of the full Horde_DNS_Record</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/Horde-DNS-Backend-Rdo.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
