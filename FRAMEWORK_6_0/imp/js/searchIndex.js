@@ -881,6 +881,116 @@ Search.appendIndex(
             "summary": "Add\u0020quota\u0020information\u0020to\u0020response\u003F",
             "url": "classes/IMP-Ajax-Queue.html#property__quota"
         },                {
+            "fqsen": "\\IMP_Api",
+            "name": "IMP_Api",
+            "summary": "IMP\u0020external\u0020API\u0020interface.",
+            "url": "classes/IMP-Api.html"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003Acompose\u0028\u0029",
+            "name": "compose",
+            "summary": "Returns\u0020a\u0020compose\u0020window\u0020link.",
+            "url": "classes/IMP-Api.html#method_compose"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AbatchCompose\u0028\u0029",
+            "name": "batchCompose",
+            "summary": "Return\u0020a\u0020list\u0020of\u0020compose\u0020window\u0020links.",
+            "url": "classes/IMP-Api.html#method_batchCompose"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AmailboxList\u0028\u0029",
+            "name": "mailboxList",
+            "summary": "Returns\u0020the\u0020list\u0020of\u0020mailboxes.",
+            "url": "classes/IMP-Api.html#method_mailboxList"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AcreateMailbox\u0028\u0029",
+            "name": "createMailbox",
+            "summary": "Creates\u0020a\u0020new\u0020mailbox.",
+            "url": "classes/IMP-Api.html#method_createMailbox"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AdeleteMessages\u0028\u0029",
+            "name": "deleteMessages",
+            "summary": "Deletes\u0020messages\u0020from\u0020a\u0020mailbox.",
+            "url": "classes/IMP-Api.html#method_deleteMessages"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AcopyMessages\u0028\u0029",
+            "name": "copyMessages",
+            "summary": "Copies\u0020messages\u0020to\u0020a\u0020mailbox.",
+            "url": "classes/IMP-Api.html#method_copyMessages"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AmoveMessages\u0028\u0029",
+            "name": "moveMessages",
+            "summary": "Moves\u0020messages\u0020to\u0020a\u0020mailbox.",
+            "url": "classes/IMP-Api.html#method_moveMessages"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AflagMessages\u0028\u0029",
+            "name": "flagMessages",
+            "summary": "Flag\u0020messages.",
+            "url": "classes/IMP-Api.html#method_flagMessages"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AaddFlags\u0028\u0029",
+            "name": "addFlags",
+            "summary": "Ensures\u0020a\u0020list\u0020of\u0020user\u002Ddefined\u0020IMAP\u0020flag\u0028s\u0029\u0020for\u0020the\u0020current\u0020user\u0020exist.",
+            "url": "classes/IMP-Api.html#method_addFlags"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AsearchMailbox\u0028\u0029",
+            "name": "searchMailbox",
+            "summary": "Perform\u0020a\u0020search\u0020query\u0020on\u0020the\u0020remote\u0020IMAP\u0020server.",
+            "url": "classes/IMP-Api.html#method_searchMailbox"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003Aserver\u0028\u0029",
+            "name": "server",
+            "summary": "Returns\u0020information\u0020on\u0020the\u0020currently\u0020logged\u0020on\u0020IMAP\u0020server.",
+            "url": "classes/IMP-Api.html#method_server"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AfavouriteRecipients\u0028\u0029",
+            "name": "favouriteRecipients",
+            "summary": "Returns\u0020the\u0020list\u0020of\u0020favorite\u0020recipients.",
+            "url": "classes/IMP-Api.html#method_favouriteRecipients"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AlogRecipient\u0028\u0029",
+            "name": "logRecipient",
+            "summary": "Log\u0020an\u0020entry\u0020to\u0020the\u0020IMP_Sentmail\u0020system.",
+            "url": "classes/IMP-Api.html#method_logRecipient"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AimapOb\u0028\u0029",
+            "name": "imapOb",
+            "summary": "Returns\u0020the\u0020Horde_Imap_Client\u0020object\u0020created\u0020using\u0020the\u0020IMP\u0020credentials.",
+            "url": "classes/IMP-Api.html#method_imapOb"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AflagList\u0028\u0029",
+            "name": "flagList",
+            "summary": "Return\u0020the\u0020list\u0020of\u0020user\u002Dsettable\u0020IMAP\u0020flags.",
+            "url": "classes/IMP-Api.html#method_flagList"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AgetSpecialMailboxes\u0028\u0029",
+            "name": "getSpecialMailboxes",
+            "summary": "Return\u0020the\u0020list\u0020of\u0020special\u0020mailboxes.",
+            "url": "classes/IMP-Api.html#method_getSpecialMailboxes"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AgetMaillog\u0028\u0029",
+            "name": "getMaillog",
+            "summary": "Obtain\u0020the\u0020Maillog\u0020for\u0020a\u0020given\u0020message.",
+            "url": "classes/IMP-Api.html#method_getMaillog"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AlogMaillog\u0028\u0029",
+            "name": "logMaillog",
+            "summary": "Log\u0020an\u0020entry\u0020in\u0020the\u0020Maillog.",
+            "url": "classes/IMP-Api.html#method_logMaillog"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AgetMaillogChanges\u0028\u0029",
+            "name": "getMaillogChanges",
+            "summary": "Returns\u0020a\u0020list\u0020of\u0020Message\u002DIDs\u0020that\u0020have\u0020been\u0020added\u0020to\u0020the\u0020Maillog\u0020since\nthe\u0020specified\u0020timestamp.",
+            "url": "classes/IMP-Api.html#method_getMaillogChanges"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003AmdnSend\u0028\u0029",
+            "name": "mdnSend",
+            "summary": "Check\u0020if\u0020we\u0020need\u0020to\u0020send\u0020a\u0020MDN,\u0020and\u0020send\u0020if\u0020needed\/able.\u0020Will\u0020only\u0020send\nMDN\u0020if\u0020the\u0020request\u0020does\u0020NOT\u0020need\u0020to\u0020be\u0020confirmed\u0020by\u0020the\u0020user.",
+            "url": "classes/IMP-Api.html#method_mdnSend"
+        },                {
+            "fqsen": "\\IMP_Api\u003A\u003A\u0024_noPerms",
+            "name": "_noPerms",
+            "summary": "The\u0020listing\u0020of\u0020API\u0020calls\u0020that\u0020do\u0020not\u0020require\u0020permissions\u0020checking.",
+            "url": "classes/IMP-Api.html#property__noPerms"
+        },                {
             "fqsen": "\\IMP_BASE",
             "name": "IMP_BASE",
             "summary": "",
@@ -3843,7 +3953,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Flag_Imap_Answered\u003A\u003A_getLabel\u0028\u0029",
             "name": "_getLabel",
-            "summary": "",
+            "summary": "Return\u0020the\u0020flag\u0020label.",
             "url": "classes/IMP-Flag-Imap-Answered.html#method__getLabel"
         },                {
             "fqsen": "\\IMP_Flag_Imap_Answered\u003A\u003A\u0024_bgcolor",
@@ -3868,7 +3978,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Flag_Imap_Deleted\u003A\u003A_getLabel\u0028\u0029",
             "name": "_getLabel",
-            "summary": "",
+            "summary": "Return\u0020the\u0020flag\u0020label.",
             "url": "classes/IMP-Flag-Imap-Deleted.html#method__getLabel"
         },                {
             "fqsen": "\\IMP_Flag_Imap_Deleted\u003A\u003A\u0024_bgcolor",
@@ -3893,7 +4003,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Flag_Imap_Draft\u003A\u003A_getLabel\u0028\u0029",
             "name": "_getLabel",
-            "summary": "",
+            "summary": "Return\u0020the\u0020flag\u0020label.",
             "url": "classes/IMP-Flag-Imap-Draft.html#method__getLabel"
         },                {
             "fqsen": "\\IMP_Flag_Imap_Draft\u003A\u003A\u0024_bgcolor",
@@ -3918,7 +4028,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Flag_Imap_Flagged\u003A\u003A_getLabel\u0028\u0029",
             "name": "_getLabel",
-            "summary": "",
+            "summary": "Return\u0020the\u0020flag\u0020label.",
             "url": "classes/IMP-Flag-Imap-Flagged.html#method__getLabel"
         },                {
             "fqsen": "\\IMP_Flag_Imap_Flagged\u003A\u003A\u0024_bgcolor",
@@ -3948,7 +4058,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Flag_Imap_Forwarded\u003A\u003A_getLabel\u0028\u0029",
             "name": "_getLabel",
-            "summary": "",
+            "summary": "Return\u0020the\u0020flag\u0020label.",
             "url": "classes/IMP-Flag-Imap-Forwarded.html#method__getLabel"
         },                {
             "fqsen": "\\IMP_Flag_Imap_Forwarded\u003A\u003A\u0024_bgcolor",
@@ -3973,7 +4083,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Flag_Imap_Junk\u003A\u003A_getLabel\u0028\u0029",
             "name": "_getLabel",
-            "summary": "",
+            "summary": "Return\u0020the\u0020flag\u0020label.",
             "url": "classes/IMP-Flag-Imap-Junk.html#method__getLabel"
         },                {
             "fqsen": "\\IMP_Flag_Imap_Junk\u003A\u003A\u0024_css",
@@ -3993,7 +4103,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Flag_Imap_NotJunk\u003A\u003A_getLabel\u0028\u0029",
             "name": "_getLabel",
-            "summary": "",
+            "summary": "Return\u0020the\u0020flag\u0020label.",
             "url": "classes/IMP-Flag-Imap-NotJunk.html#method__getLabel"
         },                {
             "fqsen": "\\IMP_Flag_Imap_NotJunk\u003A\u003A\u0024_css",
@@ -4013,7 +4123,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Flag_Imap_Seen\u003A\u003A_getLabel\u0028\u0029",
             "name": "_getLabel",
-            "summary": "",
+            "summary": "Return\u0020the\u0020flag\u0020label.",
             "url": "classes/IMP-Flag-Imap-Seen.html#method__getLabel"
         },                {
             "fqsen": "\\IMP_Flag_Imap_Seen\u003A\u003A\u0024_canset",
@@ -4338,12 +4448,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Flag_User\u003A\u003A__set\u0028\u0029",
             "name": "__set",
-            "summary": "",
+            "summary": "Set\u0020properties.",
             "url": "classes/IMP-Flag-User.html#method___set"
         },                {
             "fqsen": "\\IMP_Flag_User\u003A\u003A_getLabel\u0028\u0029",
             "name": "_getLabel",
-            "summary": "",
+            "summary": "Return\u0020the\u0020flag\u0020label.",
             "url": "classes/IMP-Flag-User.html#method__getLabel"
         },                {
             "fqsen": "\\IMP_Flag_User\u003A\u003Aserialize\u0028\u0029",
@@ -4528,7 +4638,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Ftree_Account_Remote\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Constructor.",
             "url": "classes/IMP-Ftree-Account-Remote.html#method___construct"
         },                {
             "fqsen": "\\IMP_Ftree_Account_Remote\u003A\u003AgetList\u0028\u0029",
@@ -7633,7 +7743,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Maillog_Log_Forward\u003A\u003A_getMessage\u0028\u0029",
             "name": "_getMessage",
-            "summary": "",
+            "summary": "The\u0020log\u0020message.",
             "url": "classes/IMP-Maillog-Log-Forward.html#method__getMessage"
         },                {
             "fqsen": "\\IMP_Maillog_Log_Forward\u003A\u003A\u0024_action",
@@ -7683,7 +7793,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Maillog_Log_Redirect\u003A\u003A_getMessage\u0028\u0029",
             "name": "_getMessage",
-            "summary": "",
+            "summary": "The\u0020log\u0020message.",
             "url": "classes/IMP-Maillog-Log-Redirect.html#method__getMessage"
         },                {
             "fqsen": "\\IMP_Maillog_Log_Redirect\u003A\u003A\u0024_action",
@@ -7708,7 +7818,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Maillog_Log_Reply\u003A\u003A_getMessage\u0028\u0029",
             "name": "_getMessage",
-            "summary": "",
+            "summary": "The\u0020log\u0020message.",
             "url": "classes/IMP-Maillog-Log-Reply.html#method__getMessage"
         },                {
             "fqsen": "\\IMP_Maillog_Log_Reply\u003A\u003A\u0024_action",
@@ -7723,7 +7833,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Maillog_Log_Replyall\u003A\u003A_getMessage\u0028\u0029",
             "name": "_getMessage",
-            "summary": "",
+            "summary": "The\u0020log\u0020message.",
             "url": "classes/IMP-Maillog-Log-Replyall.html#method__getMessage"
         },                {
             "fqsen": "\\IMP_Maillog_Log_Replyall\u003A\u003A\u0024_action",
@@ -7738,7 +7848,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Maillog_Log_Replylist\u003A\u003A_getMessage\u0028\u0029",
             "name": "_getMessage",
-            "summary": "",
+            "summary": "The\u0020log\u0020message.",
             "url": "classes/IMP-Maillog-Log-Replylist.html#method__getMessage"
         },                {
             "fqsen": "\\IMP_Maillog_Log_Replylist\u003A\u003A\u0024_action",
@@ -10868,7 +10978,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\IMP_Search_Filter_Builtin\u003A\u003Aunserialize\u0028\u0029",
             "name": "unserialize",
-            "summary": "",
+            "summary": "Unserialization.",
             "url": "classes/IMP-Search-Filter-Builtin.html#method_unserialize"
         },                {
             "fqsen": "\\IMP_Search_Filter_Builtin\u003A\u003A__unserialize\u0028\u0029",

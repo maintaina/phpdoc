@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,8 +53,8 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/IMP.html" class="">IMP</a>
@@ -65,21 +66,22 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="packages/IMP.html">IMP</a></li>
     </ul>
 
@@ -101,14 +103,20 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">IMP external API interface.</p>
+
 
     <section class="phpdocumentor-description"><p>This file defines IMP's external API interface. Other applications
 can interact with IMP through this API.</p>
@@ -117,7 +125,8 @@ can interact with IMP through this API.</p>
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Api.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -156,8 +165,7 @@ can interact with IMP through this API.</p>
 </section>
 
                                     </dd>
-                        </dl>
-
+                                            </dl>
 
 
 
@@ -165,89 +173,111 @@ can interact with IMP through this API.</p>
 
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/IMP-Api.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/IMP-Api.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/IMP-Api.html#property__noPerms">$_noPerms</a>
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/IMP-Api.html#property__noPerms">$_noPerms</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>The listing of API calls that do not require permissions checking.</dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_addFlags">addFlags()</a>
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/IMP-Api.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/IMP-Api.html#method_addFlags">addFlags()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Ensures a list of user-defined IMAP flag(s) for the current user exist.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_batchCompose">batchCompose()</a>
+    <a class="" href="classes/IMP-Api.html#method_batchCompose">batchCompose()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Return a list of compose window links.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_compose">compose()</a>
+    <a class="" href="classes/IMP-Api.html#method_compose">compose()</a>
     <span>
                                 &nbsp;: <abbr title="\Horde_Url">Horde_Url</abbr>    </span>
 </dt>
 <dd>Returns a compose window link.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_copyMessages">copyMessages()</a>
+    <a class="" href="classes/IMP-Api.html#method_copyMessages">copyMessages()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Copies messages to a mailbox.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_createMailbox">createMailbox()</a>
+    <a class="" href="classes/IMP-Api.html#method_createMailbox">createMailbox()</a>
     <span>
                                 &nbsp;: <abbr title="\Horde_Imap_Client_Mailbox">Horde_Imap_Client_Mailbox</abbr>    </span>
 </dt>
 <dd>Creates a new mailbox.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_deleteMessages">deleteMessages()</a>
+    <a class="" href="classes/IMP-Api.html#method_deleteMessages">deleteMessages()</a>
     <span>
                                 &nbsp;: int|bool    </span>
 </dt>
 <dd>Deletes messages from a mailbox.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_favouriteRecipients">favouriteRecipients()</a>
+    <a class="" href="classes/IMP-Api.html#method_favouriteRecipients">favouriteRecipients()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Returns the list of favorite recipients.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_flagList">flagList()</a>
+    <a class="" href="classes/IMP-Api.html#method_flagList">flagList()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Return the list of user-settable IMAP flags.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_flagMessages">flagMessages()</a>
+    <a class="" href="classes/IMP-Api.html#method_flagMessages">flagMessages()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Flag messages.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_getMaillog">getMaillog()</a>
+    <a class="" href="classes/IMP-Api.html#method_getMaillog">getMaillog()</a>
     <span>
                                 &nbsp;: <abbr title="\Horde_History_Log">Horde_History_Log</abbr>    </span>
 </dt>
 <dd>Obtain the Maillog for a given message.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_getMaillogChanges">getMaillogChanges()</a>
+    <a class="" href="classes/IMP-Api.html#method_getMaillogChanges">getMaillogChanges()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
@@ -255,42 +285,42 @@ can interact with IMP through this API.</p>
 the specified timestamp.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_getSpecialMailboxes">getSpecialMailboxes()</a>
+    <a class="" href="classes/IMP-Api.html#method_getSpecialMailboxes">getSpecialMailboxes()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Return the list of special mailboxes.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_imapOb">imapOb()</a>
+    <a class="" href="classes/IMP-Api.html#method_imapOb">imapOb()</a>
     <span>
                                 &nbsp;: <abbr title="\Horde_Imap_Client_Base">Horde_Imap_Client_Base</abbr>    </span>
 </dt>
 <dd>Returns the Horde_Imap_Client object created using the IMP credentials.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_logMaillog">logMaillog()</a>
+    <a class="" href="classes/IMP-Api.html#method_logMaillog">logMaillog()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Log an entry in the Maillog.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_logRecipient">logRecipient()</a>
+    <a class="" href="classes/IMP-Api.html#method_logRecipient">logRecipient()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Log an entry to the IMP_Sentmail system.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_mailboxList">mailboxList()</a>
+    <a class="" href="classes/IMP-Api.html#method_mailboxList">mailboxList()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Returns the list of mailboxes.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_mdnSend">mdnSend()</a>
+    <a class="" href="classes/IMP-Api.html#method_mdnSend">mdnSend()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
@@ -298,27 +328,27 @@ the specified timestamp.</dd>
 MDN if the request does NOT need to be confirmed by the user.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_moveMessages">moveMessages()</a>
+    <a class="" href="classes/IMP-Api.html#method_moveMessages">moveMessages()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Moves messages to a mailbox.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_searchMailbox">searchMailbox()</a>
+    <a class="" href="classes/IMP-Api.html#method_searchMailbox">searchMailbox()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Perform a search query on the remote IMAP server.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/IMP-Api.html#method_server">server()</a>
+    <a class="" href="classes/IMP-Api.html#method_server">server()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Returns information on the currently logged on IMAP server.</dd>
 
-        </dl>
+    </dl>
 
 
 
@@ -329,6 +359,7 @@ MDN if the request does NOT need to be confirmed by the user.</dd>
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/IMP-Api.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -340,11 +371,12 @@ MDN if the request does NOT need to be confirmed by the user.</dd>
     <h4 class="phpdocumentor-element__name" id="property__noPerms">
         $_noPerms
         <a href="classes/IMP-Api.html#property__noPerms" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">33</span>
 
@@ -352,6 +384,7 @@ MDN if the request does NOT need to be confirmed by the user.</dd>
 
         <p class="phpdocumentor-summary">The listing of API calls that do not require permissions checking.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
@@ -362,6 +395,8 @@ MDN if the request does NOT need to be confirmed by the user.</dd>
     
     
 
+    
+
 </article>
             </section>
 
@@ -369,6 +404,7 @@ MDN if the request does NOT need to be confirmed by the user.</dd>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/IMP-Api.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -379,9 +415,10 @@ MDN if the request does NOT need to be confirmed by the user.</dd>
     <h4 class="phpdocumentor-element__name" id="method_addFlags">
         addFlags()
         <a href="classes/IMP-Api.html#method_addFlags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">249</span>
 
@@ -393,6 +430,9 @@ MDN if the request does NOT need to be confirmed by the user.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">addFlags</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$flags</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <section class="phpdocumentor-description"><p>Silently ignores any flags that are already defined.</p>
 </section>
 
@@ -411,10 +451,8 @@ MDN if the request does NOT need to be confirmed by the user.</dd>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
+    
+
     
 </article>
                     <article
@@ -426,9 +464,10 @@ MDN if the request does NOT need to be confirmed by the user.</dd>
     <h4 class="phpdocumentor-element__name" id="method_batchCompose">
         batchCompose()
         <a href="classes/IMP-Api.html#method_batchCompose" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">70</span>
 
@@ -440,6 +479,9 @@ MDN if the request does NOT need to be confirmed by the user.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">batchCompose</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$args</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$extra</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -470,14 +512,18 @@ arguments to pass to compose page.</p>
 
     
 
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The list of Horde_Url objects with links to the message
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The list of Horde_Url objects with links to the message
 composition screen.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -488,9 +534,10 @@ composition screen.</p>
     <h4 class="phpdocumentor-element__name" id="method_compose">
         compose()
         <a href="classes/IMP-Api.html#method_compose" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">50</span>
 
@@ -502,6 +549,9 @@ composition screen.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">compose</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$args</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$extra</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Url">Horde_Url</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -532,13 +582,17 @@ pass to compose page.</p>
 
     
 
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Url">Horde_Url</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The link to the message composition screen.</p>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Url">Horde_Url</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The link to the message composition screen.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -549,9 +603,10 @@ pass to compose page.</p>
     <h4 class="phpdocumentor-element__name" id="method_copyMessages">
         copyMessages()
         <a href="classes/IMP-Api.html#method_copyMessages" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">193</span>
 
@@ -563,6 +618,9 @@ pass to compose page.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">copyMessages</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$indices</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$target</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -597,13 +655,17 @@ pass to compose page.</p>
 
     
 
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>True if successful, false if not.</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if successful, false if not.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -614,9 +676,10 @@ pass to compose page.</p>
     <h4 class="phpdocumentor-element__name" id="method_createMailbox">
         createMailbox()
         <a href="classes/IMP-Api.html#method_createMailbox" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">157</span>
 
@@ -628,6 +691,9 @@ pass to compose page.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">createMailbox</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mbox</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Imap_Client_Mailbox">Horde_Imap_Client_Mailbox</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -659,7 +725,8 @@ DEFAULT: false</li>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Api.html#method_createMailbox#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -670,16 +737,20 @@ DEFAULT: false</li>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Imap_Client_Mailbox">Horde_Imap_Client_Mailbox</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The mailbox name created or false on
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Imap_Client_Mailbox">Horde_Imap_Client_Mailbox</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The mailbox name created or false on
 failure.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -690,9 +761,10 @@ failure.</p>
     <h4 class="phpdocumentor-element__name" id="method_deleteMessages">
         deleteMessages()
         <a href="classes/IMP-Api.html#method_deleteMessages" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">178</span>
 
@@ -704,6 +776,9 @@ failure.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deleteMessages</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$indices</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -729,14 +804,18 @@ failure.</p>
 
     
 
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The number of messages deleted if successful,
+        <span class="phpdocumentor-signature__response_type">int|bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The number of messages deleted if successful,
 false if not.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -747,9 +826,10 @@ false if not.</p>
     <h4 class="phpdocumentor-element__name" id="method_favouriteRecipients">
         favouriteRecipients()
         <a href="classes/IMP-Api.html#method_favouriteRecipients" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">310</span>
 
@@ -761,6 +841,9 @@ false if not.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">favouriteRecipients</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array(&#039;new&#039;, &#039;forward&#039;, &#039;reply&#039;, &#039;redirect&#039;)</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -790,7 +873,8 @@ all message types.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Api.html#method_favouriteRecipients#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -801,15 +885,19 @@ all message types.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>A list with the $limit most favourite recipients.</p>
-</section>
+                                            </dl>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>A list with the $limit most favourite recipients.</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -820,9 +908,10 @@ all message types.</p>
     <h4 class="phpdocumentor-element__name" id="method_flagList">
         flagList()
         <a href="classes/IMP-Api.html#method_flagList" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">388</span>
 
@@ -834,6 +923,9 @@ all message types.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">flagList</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -851,13 +943,17 @@ what the mailbox allows (UTF-8).</p>
 
     
 
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>A list of IMP_Flag_Base objects.</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>A list of IMP_Flag_Base objects.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -868,9 +964,10 @@ what the mailbox allows (UTF-8).</p>
     <h4 class="phpdocumentor-element__name" id="method_flagMessages">
         flagMessages()
         <a href="classes/IMP-Api.html#method_flagMessages" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">234</span>
 
@@ -882,6 +979,9 @@ what the mailbox allows (UTF-8).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">flagMessages</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$indices</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$flags</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$set</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -925,13 +1025,17 @@ what the mailbox allows (UTF-8).</p>
 
     
 
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>True if successful, false if not.</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if successful, false if not.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -942,9 +1046,10 @@ what the mailbox allows (UTF-8).</p>
     <h4 class="phpdocumentor-element__name" id="method_getMaillog">
         getMaillog()
         <a href="classes/IMP-Api.html#method_getMaillog" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">415</span>
 
@@ -956,6 +1061,9 @@ what the mailbox allows (UTF-8).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getMaillog</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_History_Log">Horde_History_Log</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -973,7 +1081,8 @@ what the mailbox allows (UTF-8).</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Api.html#method_getMaillog#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -985,15 +1094,19 @@ what the mailbox allows (UTF-8).</p>
 </section>
 
                                     </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_History_Log">Horde_History_Log</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The log object.</p>
-</section>
+                                            </dl>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_History_Log">Horde_History_Log</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The log object.</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1004,9 +1117,10 @@ what the mailbox allows (UTF-8).</p>
     <h4 class="phpdocumentor-element__name" id="method_getMaillogChanges">
         getMaillogChanges()
         <a href="classes/IMP-Api.html#method_getMaillogChanges" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">498</span>
 
@@ -1019,6 +1133,9 @@ the specified timestamp.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getMaillogChanges</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ts</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1037,7 +1154,8 @@ after this timestamp will be returned.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Api.html#method_getMaillogChanges#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1049,15 +1167,19 @@ after this timestamp will be returned.</p>
 </section>
 
                                     </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>An array of Message-IDs that have been changed since $ts.</p>
-</section>
+                                            </dl>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array of Message-IDs that have been changed since $ts.</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1068,9 +1190,10 @@ after this timestamp will be returned.</p>
     <h4 class="phpdocumentor-element__name" id="method_getSpecialMailboxes">
         getSpecialMailboxes()
         <a href="classes/IMP-Api.html#method_getSpecialMailboxes" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">401</span>
 
@@ -1082,14 +1205,31 @@ after this timestamp will be returned.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getSpecialMailboxes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/IMP-Api.html#method_getSpecialMailboxes#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">@return</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>@see IMP_Mailbox::getSpecialMailboxes()</p>
+</section>
+
+                                    </dd>
+                                            </dl>
+
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1101,9 +1241,10 @@ after this timestamp will be returned.</p>
     <h4 class="phpdocumentor-element__name" id="method_imapOb">
         imapOb()
         <a href="classes/IMP-Api.html#method_imapOb" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">375</span>
 
@@ -1115,17 +1256,24 @@ after this timestamp will be returned.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">imapOb</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Imap_Client_Base">Horde_Imap_Client_Base</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
     
     
 
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Imap_Client_Base">Horde_Imap_Client_Base</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The imap object.</p>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Horde_Imap_Client_Base">Horde_Imap_Client_Base</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The imap object.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1136,9 +1284,10 @@ after this timestamp will be returned.</p>
     <h4 class="phpdocumentor-element__name" id="method_logMaillog">
         logMaillog()
         <a href="classes/IMP-Api.html#method_logMaillog" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">449</span>
 
@@ -1150,6 +1299,9 @@ after this timestamp will be returned.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">logMaillog</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mid</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1185,7 +1337,8 @@ after this timestamp will be returned.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/IMP-Api.html#method_logMaillog#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1199,12 +1352,10 @@ be replaced by mailbox/UID.</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
+    
+
     
 </article>
                     <article
@@ -1216,9 +1367,10 @@ be replaced by mailbox/UID.</p>
     <h4 class="phpdocumentor-element__name" id="method_logRecipient">
         logRecipient()
         <a href="classes/IMP-Api.html#method_logRecipient" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">358</span>
 
@@ -1230,6 +1382,9 @@ be replaced by mailbox/UID.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">logRecipient</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$reason</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$recipients</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message_id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$success</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1238,8 +1393,7 @@ be replaced by mailbox/UID.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$recipients</span>
@@ -1272,10 +1426,8 @@ be replaced by mailbox/UID.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
+    
+
     
 </article>
                     <article
@@ -1287,9 +1439,10 @@ be replaced by mailbox/UID.</p>
     <h4 class="phpdocumentor-element__name" id="method_mailboxList">
         mailboxList()
         <a href="classes/IMP-Api.html#method_mailboxList" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">103</span>
 
@@ -1301,6 +1454,9 @@ be replaced by mailbox/UID.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">mailboxList</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$opts</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1322,10 +1478,13 @@ be replaced by mailbox/UID.</p>
 
     
 
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The list of IMAP mailboxes. A list of arrays with the
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The list of IMAP mailboxes. A list of arrays with the
 following keys:</p>
 <pre class="prettyprint">
   - d: (string) The namespace delimiter.
@@ -1336,7 +1495,8 @@ following keys:</p>
 </pre>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1347,9 +1507,10 @@ following keys:</p>
     <h4 class="phpdocumentor-element__name" id="method_mdnSend">
         mdnSend()
         <a href="classes/IMP-Api.html#method_mdnSend" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">514</span>
 
@@ -1362,6 +1523,9 @@ MDN if the request does NOT need to be confirmed by the user.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">mdnSend</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Mime_Headers">Horde_Mime_Headers</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$headers</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1379,28 +1543,30 @@ MDN if the request does NOT need to be confirmed by the user.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$uid</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>True if the MDN request was able to be sent.</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if the MDN request was able to be sent.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1411,9 +1577,10 @@ MDN if the request does NOT need to be confirmed by the user.</p>
     <h4 class="phpdocumentor-element__name" id="method_moveMessages">
         moveMessages()
         <a href="classes/IMP-Api.html#method_moveMessages" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">213</span>
 
@@ -1425,6 +1592,9 @@ MDN if the request does NOT need to be confirmed by the user.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">moveMessages</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$indices</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$target</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1459,13 +1629,17 @@ MDN if the request does NOT need to be confirmed by the user.</p>
 
     
 
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>True if successful, false if not.</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if successful, false if not.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1476,9 +1650,10 @@ MDN if the request does NOT need to be confirmed by the user.</p>
     <h4 class="phpdocumentor-element__name" id="method_searchMailbox">
         searchMailbox()
         <a href="classes/IMP-Api.html#method_searchMailbox" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">269</span>
 
@@ -1490,6 +1665,9 @@ MDN if the request does NOT need to be confirmed by the user.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">searchMailbox</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailbox</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Horde_Imap_Client_Search_Query">Horde_Imap_Client_Search_Query</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1516,13 +1694,17 @@ mailbox (UTF-8).</p>
 
     
 
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The search results (UID list).</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The search results (UID list).</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1533,9 +1715,10 @@ mailbox (UTF-8).</p>
     <h4 class="phpdocumentor-element__name" id="method_server">
         server()
         <a href="classes/IMP-Api.html#method_server" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Api.php"><a href="files/api.html"><abbr title="Api.php">Api.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Api.php"><a href="files/lib-api.html"><abbr title="lib/Api.php">Api.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">286</span>
 
@@ -1547,14 +1730,20 @@ mailbox (UTF-8).</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">server</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
     
     
 
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>An array with the following entries:</p>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>An array with the following entries:</p>
 <ul>
 <li>hostspec: (string) The server hostname.</li>
 <li>port: (integer) The server port.</li>
@@ -1563,74 +1752,157 @@ mailbox (UTF-8).</p>
 </ul>
 </section>
 
-    
+            </section>
+
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/lib/Api.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/IMP-Api.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/IMP-Api.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/IMP-Api.html#property__noPerms">$_noPerms</a></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/IMP-Api.html#method_addFlags">addFlags()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_batchCompose">batchCompose()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_compose">compose()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_copyMessages">copyMessages()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_createMailbox">createMailbox()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_deleteMessages">deleteMessages()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_favouriteRecipients">favouriteRecipients()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_flagList">flagList()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_flagMessages">flagMessages()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_getMaillog">getMaillog()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_getMaillogChanges">getMaillogChanges()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_getSpecialMailboxes">getSpecialMailboxes()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_imapOb">imapOb()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_logMaillog">logMaillog()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_logRecipient">logRecipient()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_mailboxList">mailboxList()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_mdnSend">mdnSend()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_moveMessages">moveMessages()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_searchMailbox">searchMailbox()</a></li>
+                                            <li class=""><a href="classes/IMP-Api.html#method_server">server()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -1641,7 +1913,6 @@ mailbox (UTF-8).</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/IMP-Api.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
